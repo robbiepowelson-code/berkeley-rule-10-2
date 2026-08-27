@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How the Rule 10.2 Map Works</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..900&family=Public+Sans:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --paper:#F2F4F1; --panel:#FBFCFA; --card:#EDF0EC; --ink:#20281F; --ink-2:#55604F; --ink-3:#8A937F;
+  --line:#D8DDD2; --accent:#3E5C41;
+  --res:#A4392C; --mixres:#D9A62B; --com:#22885A; --man:#5E6CCF; --other:#9AA096;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#1A201D; --panel:#141915; --card:#222923; --ink:#E4E9E0; --ink-2:#A8B2A2; --ink-3:#6E7A68;
+    --line:#333B33; --accent:#8FB894;
+    --res:#D14F58; --mixres:#AC8A1A; --com:#1F8A6B; --man:#6E7BDB; --other:#5C655B;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#1A201D; --panel:#141915; --card:#222923; --ink:#E4E9E0; --ink-2:#A8B2A2; --ink-3:#6E7A68;
+  --line:#333B33; --accent:#8FB894;
+  --res:#D14F58; --mixres:#AC8A1A; --com:#1F8A6B; --man:#6E7BDB; --other:#5C655B;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:"Public Sans",system-ui,sans-serif; font-size:16px; line-height:1.62;
+}
+.wrap{max-width:720px; margin:0 auto; padding:56px 24px 96px}
+.eyebrow{font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-3); margin:0 0 12px}
+h1{font-family:"Archivo",sans-serif; font-weight:800; font-stretch:112%; font-size:40px; line-height:1.06; letter-spacing:-.01em; margin:0 0 14px; text-wrap:balance}
+.standfirst{font-size:18px; color:var(--ink-2); margin:0 0 8px; max-width:38em}
+.backlink{display:inline-block; margin:18px 0 0; font-weight:600; color:var(--accent); text-decoration:none; border:1px solid var(--line); border-radius:8px; padding:8px 14px; background:var(--panel)}
+.backlink:hover{border-color:var(--accent)}
+h2{font-family:"Archivo",sans-serif; font-weight:700; font-size:22px; margin:44px 0 10px; letter-spacing:-.005em}
+h2 .no{font-family:"IBM Plex Mono",monospace; font-size:12px; color:var(--ink-3); letter-spacing:.1em; display:block; margin-bottom:4px}
+p{margin:0 0 14px; max-width:42em}
+a{color:var(--accent)}
+strong{font-weight:700}
+code{font-family:"IBM Plex Mono",monospace; font-size:13.5px; background:var(--card); border:1px solid var(--line); border-radius:4px; padding:0 5px}
+.callout{border-left:3px solid var(--mixres); background:var(--card); border-radius:0 10px 10px 0; padding:14px 18px; margin:18px 0; color:var(--ink-2)}
+.callout strong{color:var(--ink)}
+table{border-collapse:collapse; width:100%; font-size:14px; margin:14px 0 20px}
+th,td{text-align:left; padding:8px 10px 8px 0; border-bottom:1px solid var(--line); vertical-align:top}
+th{font-size:11px; text-transform:uppercase; letter-spacing:.08em; color:var(--ink-3); font-weight:600}
+td.num{font-variant-numeric:tabular-nums; text-align:right; padding-right:0}
+th.num{text-align:right; padding-right:0}
+.dot{display:inline-block; width:10px; height:10px; border-radius:3px; margin-right:8px}
+.tblwrap{overflow-x:auto}
+footer{margin-top:56px; padding-top:18px; border-top:1px solid var(--line); font-size:13px; color:var(--ink-3)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">City of Berkeley · Administrative Regulation 10.2 · Method &amp; sources</p>
+  <h1>How the Rule&nbsp;10.2 Map Works</h1>
+  <p class="standfirst">What Berkeley’s sidewalk-objects regulation actually says, where the zoning data comes from, and exactly how the map was built.</p>
+  <a class="backlink" href="./index.html">← Open the interactive map</a>
+
+  <h2><span class="no">01</span>The regulation</h2>
+  <p>Administrative Regulation 10.2 is issued by Berkeley’s City Manager, not by the City Council — it is an administrative rule implementing the municipal code, originally dated November 13, 2018 and most recently reissued in January 2025. It governs “temporary non-commercial objects” (TNC objects): personal belongings placed on public sidewalks and parklets. Despite the bureaucratic name, this is the rule that determines where an unhoused person’s tent, cart, or bedding may lawfully sit on a Berkeley sidewalk, which is why the map reads it through that lens.</p>
+  <p>The regulation draws one bright line by zoning: on sidewalks in <strong>residential districts</strong>, TNC objects are prohibited outright, with an exception for objects actively in transit. In <strong>commercial and manufacturing districts</strong> they are permitted, but only within tight limits — an object may not be left unattended for more than two hours, must fit within a nine-square-foot footprint and stand under five feet tall, must sit at least three feet clear of building entrances, and must leave a pedestrian path of travel of six feet (ten feet on wide sidewalks). Nothing may be placed in parklets, in BART access corridors, at blue or white curb zones, or in posted no-object areas. Objects that violate these rules can be moved or removed by the city after notice.</p>
+  <div class="callout"><strong>The regulation never defines “Residential District.”</strong> The map resolves that gap with the city’s own zoning classifications, and separately flags the three mixed-use residential districts (MU-R, R-SMU, R-BMU), whose treatment under the regulation is genuinely ambiguous.</div>
+
+  <h2><span class="no">02</span>The data</h2>
+  <p>All geometry comes from the City of Berkeley’s own GIS, the same services that power the city’s <a href="https://berkeleyca.gov/city-services/community-gis-portal">Community GIS Portal</a>. Three layers of the <code>Planning/Land_Use_Planning</code> ArcGIS map service were retrieved on August 27, 2026: the <strong>Zoning Districts</strong> polygon layer (layer 41 — 42 multipolygon features covering 41 district codes), the <strong>street centerline</strong> layer (layer 42 — 6,971 segments with street names, types, and speeds), and the <strong>city boundary</strong> layer (layer 43). Geometry was requested in WGS-84 with roughly five-meter simplification and five-decimal coordinates, which keeps the page light while staying accurate at neighborhood scale.</p>
+  <p>Each zoning district was assigned to one of five categories according to what AR 10.2 says about it. Acreage was computed from the polygon geometry itself.</p>
+  <div class="tblwrap">
+  <table>
+    <thead><tr><th>Category</th><th>Districts</th><th>Under AR 10.2</th><th class="num">Acres</th></tr></thead>
+    <tbody>
+      <tr><td><span class="dot" style="background:var(--res)"></span>Residential</td><td>R-1 through R-5 (and hillside variants), R-S, ES-R</td><td>Belongings prohibited on sidewalks</td><td class="num">3,680</td></tr>
+      <tr><td><span class="dot" style="background:var(--mixres)"></span>Mixed-use residential</td><td>MU-R, R-SMU, R-BMU</td><td>Ambiguous — likely treated as residential</td><td class="num">138</td></tr>
+      <tr><td><span class="dot" style="background:var(--com)"></span>Commercial</td><td>All 16 C-* districts</td><td>Allowed, with limits</td><td class="num">357</td></tr>
+      <tr><td><span class="dot" style="background:var(--man)"></span>Manufacturing</td><td>M, MM, MU-LI, MRD</td><td>Allowed, with limits</td><td class="num">313</td></tr>
+      <tr><td><span class="dot" style="background:var(--other)"></span>Parks, campus &amp; special plan</td><td>U, X, SP</td><td>Outside the rule’s categories — separate laws</td><td class="num">448</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Residential districts cover about 75 percent of Berkeley’s zoned land. The land where AR 10.2 permits belongings on sidewalks at all — commercial plus manufacturing — amounts to about 670 acres, concentrated along Shattuck, University, San Pablo, Telegraph, Adeline, Solano, and the West Berkeley industrial flats.</p>
+
+  <h2><span class="no">03</span>The program</h2>
+  <p>The map is a single self-contained HTML file with no server, no database, and no build step required to view it. The zoning polygons, street centerlines, boundary, and labels are embedded directly in the page as GeoJSON, and <a href="https://leafletjs.com/">Leaflet 1.9.4</a> — inlined into the same file — renders them as interactive vector layers. Because everything is embedded, the file works offline and can be hosted anywhere static files can, which is how this site is published.</p>
+  <p>A few details of the pipeline are worth recording. Street segments were merged by name and type into one feature per street, and label points were placed along each street at intervals, keeping only points that fall within about eighty meters of a zoning polygon — a practical test for “inside Berkeley,” since street rights-of-way are excluded from the zoning polygons themselves. Labels appear in three tiers as you zoom: nine major arterials first, the remaining arterials next, and every named street when zoomed well in; hovering any street shows its name at any zoom. District acreage uses an equirectangular projection of each ring with the shoelace formula, accurate to well under a percent at city scale. The five category colors were chosen in OKLCH and validated programmatically — in both light and dark themes — for color-vision-deficiency separation and contrast, which is also why identity is never carried by color alone: every district popup and the table below the legend name the category in text.</p>
+  <p>An optional OpenStreetMap/CARTO raster basemap can be toggled under the legend for extra street context. It loads in the standalone copies of the map (like this site); on the Claude-hosted artifact version, the page’s security policy blocks outside tile servers, so the map falls back to its built-in vector streets automatically.</p>
+
+  <h2><span class="no">04</span>How to read the map</h2>
+  <p>Colors fill whole zoning districts, but the regulation itself applies to the public sidewalks within them — a green district means AR 10.2 permits a compliant object on its sidewalks, not on private lots. Click any district for its code, name, and what the rule says there; click legend rows to isolate categories (turning residential off leaves precisely the areas where belongings could lawfully sit); the <strong>B</strong> markers are the three BART stations, whose access corridors are excluded everywhere.</p>
+
+  <h2><span class="no">05</span>Limitations</h2>
+  <p>This is information, not legal advice, and AR 10.2 is not a camping permit. Camping and lodging remain restricted by other city, state, and university rules; Berkeley’s separate encampment policy still allows closures and removals anywhere on health-and-safety grounds; and city parks prohibit camping under their own provisions. Boundaries are simplified about five meters for display and should be verified against the city’s official zoning viewer before anything consequential. Two quirks of the source data are preserved rather than corrected: the central UC campus appears with an R-5 designation in the city’s layer even though university land is largely exempt from local zoning, and the R-2 district is stored as two separate features (merged in the acreage figures).</p>
+
+  <h2><span class="no">06</span>Sources</h2>
+  <p><a href="https://berkeleyca.gov/sites/default/files/documents/Administrative%20Regulation%2010.2.pdf">Administrative Regulation 10.2</a> (City of Berkeley, City Manager’s Office, revised January 2025) · <a href="https://berkeleyca.gov/city-services/community-gis-portal">Community GIS Portal</a> · <a href="https://gis.cityofberkeley.info/arcgis3/rest/services/Planning/Land_Use_Planning/MapServer">Land Use Planning map service</a> (Zoning Districts, layer 41; street centerlines, layer 42; boundary, layer 43) · <a href="https://city-of-berkeley.hub.arcgis.com/">City of Berkeley Geospatial Hub</a> · Basemap tiles, when enabled: © OpenStreetMap contributors, © CARTO.</p>
+
+  <footer>Data retrieved August 27, 2026. Map and report generated with Claude. Not affiliated with the City of Berkeley.</footer>
+</div>
+</body>
+</html>
