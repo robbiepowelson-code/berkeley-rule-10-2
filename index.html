@@ -1010,7 +1010,7 @@ map.createPane("streets").style.zIndex = 420;
 map.createPane("bnd").style.zIndex     = 430;
 map.createPane("lbls").style.zIndex    = 640;
 
-/* ---- basemap (OSM/CARTO raster). Blocked on the hosted artifact page;
+/* ---- basemap (OpenStreetMap raster). Blocked on the hosted artifact page;
        works in the downloaded copy. Auto-detects. ---- */
 var basemapWanted = false, basemapOK = null, tileLayer = null, attrib = null;
 function setBasemapUI(){
@@ -1030,14 +1030,14 @@ function setBasemapUI(){
 function applyBasemapState(){
   var on = basemapWanted && basemapOK !== false;
   if(on && !tileLayer){
-    tileLayer = L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {pane:"tiles", subdomains:"abcd", maxZoom:19});
+    tileLayer = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {pane:"tiles", maxZoom:19});
     tileLayer.on("tileerror", function(){
       if(basemapOK === null){ basemapOK = false; basemapWanted = false; applyBasemapState(); setBasemapUI(); }
     });
     tileLayer.on("tileload", function(){ if(basemapOK === null){ basemapOK = true; setBasemapUI(); } });
     tileLayer.addTo(map);
     attrib = L.control.attribution({prefix:false, position:"bottomleft"});
-    attrib.addAttribution("&copy; OpenStreetMap contributors &copy; CARTO");
+    attrib.addAttribution("&copy; OpenStreetMap contributors");
     attrib.addTo(map);
   }
   if(!on && tileLayer){
