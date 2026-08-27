@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Interactive map of the City of Berkeley's 41 zoning districts, from the city's official GIS.">
+<meta name="description" content="Interactive map of Berkeley zoning districts with a plain-language reading of Administrative Regulation 10.2, the city's sidewalk-objects rule.">
 </head>
 <body>
-<title>Berkeley Zoning Districts</title>
+<title>Where Rule 10.2 Applies</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..900&family=Public+Sans:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
 /* required styles */
@@ -864,24 +864,46 @@ th.num{text-align:right; padding-right:0}
 
 <div id="app">
   <aside id="panel">
-    <p class="eyebrow">City of Berkeley · Zoning</p>
-    <h1>Berkeley Zoning Districts</h1>
-    <p class="lede">Every zoning district in Berkeley, drawn from the city’s official GIS. The 41 districts are grouped into five broad categories. Click any district for its code, name, and size; click legend rows to show or hide categories; zoom in for street names, or hover any street.</p>
+    <p class="eyebrow">City of Berkeley · Administrative Regulation 10.2</p>
+    <h1>Where Rule&nbsp;10.2 Applies</h1>
+    <p class="lede">AR&nbsp;10.2 governs where personal belongings — “temporary non-commercial objects” — may sit on a public sidewalk. As written, it <strong>prohibits them on sidewalks in residential districts</strong> and permits them, within stated limits, in commercial and manufacturing districts. This map shows the city’s zoning districts by category, with a plain-language reading of what the rule’s text appears to say about each. It asserts no legal conclusions.</p>
 
     <div class="stats">
-      <div class="stat"><div class="n">75%</div><div class="l">of zoned land is residential (3,680 of 4,936 acres)</div></div>
-      <div class="stat"><div class="n">41</div><div class="l">zoning districts across residential, mixed-use, commercial, manufacturing &amp; special areas</div></div>
+      <div class="stat"><div class="n">75%</div><div class="l">of zoned land is residential — presumptively off-limits under AR 10.2 (3,680 ac)</div></div>
+      <div class="stat"><div class="n">670<span style="font-size:14px"> ac</span></div><div class="l">commercial + manufacturing, where AR 10.2 appears to allow belongings within its limits</div></div>
     </div>
 
     <h2>Legend — click to toggle</h2>
     <div class="legend">
-      <button class="lg" data-cat="res" aria-pressed="true"><span class="sw"></span><span class="tt"><span class="name">Residential districts</span><br><span class="sub">R-1 through R-5 (+ hillside variants), R-S, ES-R</span></span><span class="ac">3,680&nbsp;ac</span></button>
-      <button class="lg" data-cat="mixres" aria-pressed="true"><span class="sw"></span><span class="tt"><span class="name">Mixed-use residential</span><br><span class="sub">MU-R, R-SMU, R-BMU</span></span><span class="ac">138&nbsp;ac</span></button>
-      <button class="lg" data-cat="com" aria-pressed="true"><span class="sw"></span><span class="tt"><span class="name">Commercial districts</span><br><span class="sub">All 16 C-* districts</span></span><span class="ac">357&nbsp;ac</span></button>
-      <button class="lg" data-cat="man" aria-pressed="true"><span class="sw"></span><span class="tt"><span class="name">Manufacturing districts</span><br><span class="sub">M, MM, MU-LI, MRD</span></span><span class="ac">313&nbsp;ac</span></button>
-      <button class="lg" data-cat="other" aria-pressed="true"><span class="sw"></span><span class="tt"><span class="name">Parks, campus &amp; special plan</span><br><span class="sub">Unclassified, Green Space, Specific Plan</span></span><span class="ac">448&nbsp;ac</span></button>
+      <button class="lg" data-cat="res" aria-pressed="true"><span class="sw"></span><span class="tt"><span class="name">Residential districts</span><br><span class="sub">Presumptively prohibited to campers by the City of Berkeley</span></span><span class="ac">3,680&nbsp;ac</span></button>
+      <button class="lg" data-cat="mixres" aria-pressed="true"><span class="sw"></span><span class="tt"><span class="name">Mixed-use residential</span><br><span class="sub">Undefined in AR 10.2 — status unclear</span></span><span class="ac">138&nbsp;ac</span></button>
+      <button class="lg" data-cat="com" aria-pressed="true"><span class="sw"></span><span class="tt"><span class="name">Commercial districts</span><br><span class="sub">Likely available for BHU members under AR 10.2, within its limits</span></span><span class="ac">357&nbsp;ac</span></button>
+      <button class="lg" data-cat="man" aria-pressed="true"><span class="sw"></span><span class="tt"><span class="name">Manufacturing districts</span><br><span class="sub">Likely available for BHU members under AR 10.2, within its limits</span></span><span class="ac">313&nbsp;ac</span></button>
+      <button class="lg" data-cat="other" aria-pressed="true"><span class="sw"></span><span class="tt"><span class="name">Parks, campus &amp; special plan</span><br><span class="sub">Outside AR 10.2’s categories — other rules likely apply</span></span><span class="ac">448&nbsp;ac</span></button>
       <button class="lg off" id="bmToggle" aria-pressed="false"><span class="sw" style="border-color:var(--ink-3)"></span><span class="tt"><span class="name">Street basemap (OpenStreetMap)</span><br><span class="sub">Raster streets &amp; buildings under the districts</span></span></button>
       <p class="sub" id="bmNote" style="display:none;font-size:12px;color:var(--ink-3);margin:2px 0 0 9px">Basemap tiles are blocked on this hosted page — open the downloadable copy of the map to use it. Street names here are built in: zoom in for labels, hover any street.</p>
+    </div>
+
+    <h2>What the rule’s text says</h2>
+    <div class="rules">
+      <p><span class="no">Residential districts:</span> the regulation states that objects are prohibited on sidewalks, except objects actively in transit or otherwise authorized by the municipal code.</p>
+      <p><span class="ok">Commercial &amp; manufacturing districts:</span> the regulation permits objects on the sidewalk subject to its stated limits —</p>
+      <ul>
+        <li>not left unattended more than <span class="chip">2 hrs</span></li>
+        <li>within a <span class="chip">9 sq ft</span> footprint and under <span class="chip">5 ft</span> tall</li>
+        <li>clear of a <span class="chip">6 ft</span> pedestrian path (<span class="chip">10 ft</span> on wide sidewalks)</li>
+        <li>at least <span class="chip">3 ft</span> from building entrances</li>
+        <li>outside parklets, BART access corridors (<b>B</b> markers), blue/white curb zones, and posted no-object areas</li>
+      </ul>
+      <p>The rule provides for objects violating these terms to be moved or removed by the city after notice.</p>
+    </div>
+
+    <h2>Read this before relying on it</h2>
+    <div class="caveat">
+      <p><strong>This map asserts no legal conclusions</strong> — it summarizes what AR 10.2’s text appears to say, using the city’s own zoning layer. How the city or a court would actually apply the rule in any location is not something this map decides.</p>
+      <p><strong>“Residential District” is undefined</strong> in the regulation. The zoning classes shown here are one reasonable reading; mixed-use residential districts are flagged separately because their status is unclear.</p>
+      <p><strong>Other laws still exist.</strong> Camping and lodging are addressed by other city, state, and university provisions, and the city’s separate encampment policy provides for closures on health-and-safety grounds. Districts are colored whole; the rule itself speaks to the public sidewalks within them.</p>
+      <p>Boundaries are simplified for display. Verify against the city’s official zoning viewer. This is information, not legal advice.</p>
     </div>
 
     <details class="tbl">
@@ -936,14 +958,9 @@ th.num{text-align:right; padding-right:0}
       </div>
     </details>
 
-    <h2>About this map</h2>
-    <div class="caveat">
-      <p>District boundaries are simplified about five meters for display and category groupings are this map’s own; verify anything consequential against the city’s official zoning viewer. This is not an official city map. The <strong>B</strong> markers are the three BART stations.</p>
-    </div>
-
-    <p class="src"><a href="./report.html"><strong>How this map was made — method &amp; sources →</strong></a><br>Zoning data: City of Berkeley Community GIS Portal, “Zoning Districts” layer (Land Use Planning map service), retrieved Aug 27, 2026. Basemap, when enabled: © OpenStreetMap contributors.</p>
+    <p class="src"><a href="./report.html"><strong>How this map was made — method &amp; sources →</strong></a><br>Zoning data: City of Berkeley Community GIS Portal, “Zoning Districts” layer (Land Use Planning map service), retrieved Aug 27, 2026. Rule text: <a href="https://berkeleyca.gov/sites/default/files/documents/Administrative%20Regulation%2010.2.pdf" target="_blank" rel="noopener">Administrative Regulation 10.2</a> (City Manager, rev. Jan 2025). Basemap, when enabled: © OpenStreetMap contributors.</p>
   </aside>
-  <div id="map" role="application" aria-label="Map of Berkeley zoning districts by category"></div>
+  <div id="map" role="application" aria-label="Map of Berkeley zoning districts with a plain-language reading of AR 10.2"></div>
 </div>
 
 <script>
@@ -972,6 +989,13 @@ var CATS = {
   com:    {name:"Commercial district", varname:"--com"},
   man:    {name:"Manufacturing district", varname:"--man"},
   other:  {name:"Parks, campus & special plan", varname:"--other"}
+};
+var AR_TEXT = {
+  res: "AR 10.2's text prohibits temporary non-commercial objects (personal belongings) on sidewalks in residential districts, except objects actively in transit — so sidewalks here are <b>presumptively prohibited to campers by the City of Berkeley</b>. This map asserts no legal conclusion about any particular spot.",
+  mixres: "AR 10.2 addresses “Residential Districts” but never defines the term. This district mixes housing with other uses, so its status under the rule is unclear.",
+  com: "Under AR 10.2's text, sidewalks here appear <b>likely available for placing belongings</b> — within the rule's stated limits: not left unattended over 2 hours, ≤9 sq ft footprint, ≤5 ft tall, a 6–10 ft path of travel kept clear, ≥3 ft from building entrances, and outside parklets, BART access corridors, and posted no-object areas. This map asserts no legal conclusion about any particular spot.",
+  man: "Under AR 10.2's text, sidewalks here appear <b>likely available for placing belongings</b> — within the rule's stated limits: not left unattended over 2 hours, ≤9 sq ft footprint, ≤5 ft tall, a 6–10 ft path of travel kept clear, ≥3 ft from building entrances, and outside parklets, BART access corridors, and posted no-object areas. This map asserts no legal conclusion about any particular spot.",
+  other: "AR 10.2 speaks only to residential vs. commercial/manufacturing districts. This land (parks, green space, campus, or special-plan areas) likely falls under separate rules of its own."
 };
 
 
@@ -1046,7 +1070,8 @@ Object.keys(CATS).forEach(function(cat){
           + '<div class="code">'+p.z+'</div>'
           + '<h3>'+p.d+'</h3>'
           + '<span class="tag" style="color:'+c+';border-color:'+c+'">'+CATS[p.c].name+'</span>'
-          + '<div class="a">≈ '+p.a.toLocaleString()+' acres citywide in this district</div>'
+          + '<div class="body">'+AR_TEXT[p.c]+'</div>'
+          + '<div class="ar a">≈ '+p.a.toLocaleString()+' acres citywide in this district</div>'
           + '</div>';
       }, {maxWidth: 300});
       ly.on("mouseover", function(){ ly.setStyle({weight:2.5, fillOpacity:0.55}); });
@@ -1111,7 +1136,7 @@ var BART = [
 BART.forEach(function(b){
   L.marker([b.lat,b.lng], {pane:"lbls", icon:L.divIcon({className:"bart-ic", html:'<div class="bx">B</div>', iconSize:[22,22], iconAnchor:[11,11]})})
    .addTo(map)
-   .bindTooltip(b.n+" BART", {direction:"top", offset:[0,-12]});
+   .bindTooltip(b.n+" BART — AR 10.2 lists BART access corridors among its excluded areas", {direction:"top", offset:[0,-12]});
 });
 
 /* fit */
