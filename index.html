@@ -1198,8 +1198,12 @@ var sitePins = (window.SITES || []).filter(function(s){ return !s.hidden; }).map
     var cat = s.cat, c = cat ? cssv(CATS[cat].varname) : cssv("--ink-3");
     var h = '<div class="pp">';
     if(s.photo){
-      h += '<img class="ph" src="' + esc(s.photo) + '" alt="Field photo of ' +
-           esc(s.label || ("surveyed site " + (i + 1))) + '" loading="lazy">';
+      // width/height are set so the popup reserves the right space before the
+      // image arrives - without them the popup jumps as each photo loads
+      h += '<img class="ph" src="' + esc(s.photo) + '"' +
+           (s.w && s.h ? ' width="' + s.w + '" height="' + s.h + '"' : '') +
+           ' alt="Field photo of ' + esc(s.label || ("surveyed site " + (i + 1))) +
+           '" loading="lazy">';
     }
     h += '<div class="code">SURVEYED SITE ' + (i + 1) + (s.zone ? ' \u00b7 ' + esc(s.zone) : '') + '</div>';
     h += '<h3>' + esc(s.label || s.district || "Surveyed site") + '</h3>';
