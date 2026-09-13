@@ -1,0 +1,1261 @@
+{
+ "source": "OpenStreetMap contributors",
+ "licence": "ODbL 1.0",
+ "licence_url": "https://www.openstreetmap.org/copyright",
+ "retrieved": "2026-09-13",
+ "features": [
+  {
+   "id": "n34496815",
+   "lat": 37.864998,
+   "lon": -122.245347,
+   "k": "W"
+  },
+  {
+   "id": "n258766858",
+   "lat": 37.895629,
+   "lon": -122.251629,
+   "k": "T",
+   "fee": "no",
+   "disposal": "flush"
+  },
+  {
+   "id": "n288990501",
+   "lat": 37.885099,
+   "lon": -122.255956,
+   "k": "T",
+   "fee": "no",
+   "opening_hours": "Mo-Su 06:00-22:00",
+   "wheelchair": "no"
+  },
+  {
+   "id": "n288991200",
+   "lat": 37.885931,
+   "lon": -122.26287,
+   "k": "T"
+  },
+  {
+   "id": "n306073368",
+   "lat": 37.860444,
+   "lon": -122.299507,
+   "k": "W",
+   "check_date": "2023-09-02"
+  },
+  {
+   "id": "n306073369",
+   "lat": 37.860426,
+   "lon": -122.29958,
+   "k": "T",
+   "wheelchair": "yes",
+   "disposal": "flush"
+  },
+  {
+   "id": "n308299018",
+   "lat": 37.876662,
+   "lon": -122.28849,
+   "k": "W"
+  },
+  {
+   "id": "n308301423",
+   "lat": 37.878183,
+   "lon": -122.288664,
+   "k": "W"
+  },
+  {
+   "id": "n308302795",
+   "lat": 37.870468,
+   "lon": -122.287039,
+   "k": "W"
+  },
+  {
+   "id": "n308302802",
+   "lat": 37.866786,
+   "lon": -122.286387,
+   "k": "W"
+  },
+  {
+   "id": "n308302803",
+   "lat": 37.866792,
+   "lon": -122.286405,
+   "k": "T",
+   "disposal": "flush"
+  },
+  {
+   "id": "n308813316",
+   "lat": 37.848868,
+   "lon": -122.27116,
+   "k": "W"
+  },
+  {
+   "id": "n310473251",
+   "lat": 37.877512,
+   "lon": -122.309675,
+   "k": "W"
+  },
+  {
+   "id": "n312002188",
+   "lat": 37.869003,
+   "lon": -122.272013,
+   "k": "W"
+  },
+  {
+   "id": "n312031036",
+   "lat": 37.850934,
+   "lon": -122.300062,
+   "k": "W"
+  },
+  {
+   "id": "n312804520",
+   "lat": 37.883956,
+   "lon": -122.268784,
+   "k": "T",
+   "fee": "no",
+   "wheelchair": "yes",
+   "changing_table": "no",
+   "disposal": "flush",
+   "desc": "Concrete with no solid walls"
+  },
+  {
+   "id": "n312804521",
+   "lat": 37.883918,
+   "lon": -122.268769,
+   "k": "W",
+   "check_date": "2022-02-02"
+  },
+  {
+   "id": "n312804704",
+   "lat": 37.884344,
+   "lon": -122.26827,
+   "k": "W",
+   "access": "yes",
+   "fee": "no",
+   "indoor": "no",
+   "bottle": "no",
+   "check_date": "2023-05-20"
+  },
+  {
+   "id": "n332313322",
+   "lat": 37.892225,
+   "lon": -122.272794,
+   "k": "W",
+   "bottle": "no",
+   "check_date": "2023-04-15",
+   "desc": "Frequently used fountain with a step stool. Unusual in that it has no formal drain: the overflow waters plants."
+  },
+  {
+   "id": "n339928418",
+   "lat": 37.885492,
+   "lon": -122.261998,
+   "k": "T",
+   "access": "yes",
+   "fee": "no",
+   "wheelchair": "yes",
+   "disposal": "flush"
+  },
+  {
+   "id": "n354228913",
+   "lat": 37.885327,
+   "lon": -122.262417,
+   "k": "W"
+  },
+  {
+   "id": "n392186602",
+   "lat": 37.904529,
+   "lon": -122.270412,
+   "k": "W"
+  },
+  {
+   "id": "n517872460",
+   "lat": 37.873013,
+   "lon": -122.278083,
+   "k": "W"
+  },
+  {
+   "id": "n517872516",
+   "lat": 37.873026,
+   "lon": -122.276433,
+   "k": "W"
+  },
+  {
+   "id": "n517872517",
+   "lat": 37.873275,
+   "lon": -122.275347,
+   "k": "W"
+  },
+  {
+   "id": "n517872520",
+   "lat": 37.873675,
+   "lon": -122.271856,
+   "k": "W"
+  },
+  {
+   "id": "n527744055",
+   "lat": 37.880944,
+   "lon": -122.303965,
+   "k": "T",
+   "disposal": "flush"
+  },
+  {
+   "id": "n539604086",
+   "lat": 37.856189,
+   "lon": -122.271727,
+   "k": "W",
+   "check_date": "2025-10-15"
+  },
+  {
+   "id": "n543928485",
+   "lat": 37.869251,
+   "lon": -122.271091,
+   "k": "T",
+   "fee": "no",
+   "wheelchair": "yes",
+   "changing_table": "yes",
+   "disposal": "flush"
+  },
+  {
+   "id": "n939007755",
+   "lat": 37.861072,
+   "lon": -122.256944,
+   "k": "W",
+   "bottle": "no"
+  },
+  {
+   "id": "n979998770",
+   "lat": 37.885485,
+   "lon": -122.255421,
+   "k": "W",
+   "opening_hours": "Mo-Su 06:00-22:00"
+  },
+  {
+   "id": "n1303944623",
+   "lat": 37.881059,
+   "lon": -122.303927,
+   "k": "W"
+  },
+  {
+   "id": "n1314521399",
+   "lat": 37.885855,
+   "lon": -122.262913,
+   "k": "W",
+   "bottle": "no",
+   "desc": "In Rose Garden by tennis court"
+  },
+  {
+   "id": "n1314521439",
+   "lat": 37.887251,
+   "lon": -122.278678,
+   "k": "W",
+   "desc": "In traffic triangle Monterey and Colusa Streets"
+  },
+  {
+   "id": "n1314521484",
+   "lat": 37.88356,
+   "lon": -122.26962,
+   "k": "W",
+   "access": "yes",
+   "fee": "no",
+   "indoor": "no",
+   "bottle": "no",
+   "check_date": "2022-02-02",
+   "desc": "On basketball court near fence"
+  },
+  {
+   "id": "n1314521534",
+   "lat": 37.885853,
+   "lon": -122.262057,
+   "k": "W",
+   "bottle": "no",
+   "desc": "Cordonices Park"
+  },
+  {
+   "id": "n1314521566",
+   "lat": 37.882991,
+   "lon": -122.278214,
+   "k": "W",
+   "bottle": "no",
+   "desc": "Near stairs to running track"
+  },
+  {
+   "id": "n1314521648",
+   "lat": 37.885508,
+   "lon": -122.261997,
+   "k": "W",
+   "desc": "Cordonices Park by bathrooms"
+  },
+  {
+   "id": "n1314521803",
+   "lat": 37.86954,
+   "lon": -122.261448,
+   "k": "W",
+   "desc": "Inside Alumni House"
+  },
+  {
+   "id": "n1314521916",
+   "lat": 37.885382,
+   "lon": -122.263351,
+   "k": "W",
+   "bottle": "yes",
+   "desc": "In Rose Garden north side"
+  },
+  {
+   "id": "n1314521946",
+   "lat": 37.901245,
+   "lon": -122.269871,
+   "k": "W",
+   "bottle": "no",
+   "desc": "Dorothy Bolte Park near playground"
+  },
+  {
+   "id": "n1326065126",
+   "lat": 37.869898,
+   "lon": -122.318944,
+   "k": "T",
+   "access": "yes",
+   "disposal": "chemical"
+  },
+  {
+   "id": "n1504407637",
+   "lat": 37.877553,
+   "lon": -122.288353,
+   "k": "W",
+   "name": "Cedar Rose Park",
+   "check_date": "2023-09-12",
+   "desc": "Near tennis courts"
+  },
+  {
+   "id": "n1601847802",
+   "lat": 37.873283,
+   "lon": -122.29084,
+   "k": "W",
+   "desc": "In parking area"
+  },
+  {
+   "id": "n1601847803",
+   "lat": 37.873892,
+   "lon": -122.283383,
+   "k": "W",
+   "indoor": "yes",
+   "desc": "Inside paid area at BART. Agent will usually let you in to drink."
+  },
+  {
+   "id": "n1601847807",
+   "lat": 37.878914,
+   "lon": -122.28379,
+   "k": "W",
+   "wheelchair": "yes",
+   "desc": "School yard open to public only during non-school hours."
+  },
+  {
+   "id": "n1601847809",
+   "lat": 37.892414,
+   "lon": -122.28109,
+   "k": "W"
+  },
+  {
+   "id": "n1723439987",
+   "lat": 37.868908,
+   "lon": -122.272431,
+   "k": "T",
+   "fee": "no",
+   "wheelchair": "yes",
+   "disposal": "flush"
+  },
+  {
+   "id": "n2016837909",
+   "lat": 37.875297,
+   "lon": -122.278434,
+   "k": "W",
+   "opening_hours": "Mo-Su 06:00-22:00"
+  },
+  {
+   "id": "n2350705219",
+   "lat": 37.89681,
+   "lon": -122.27823,
+   "k": "W",
+   "desc": "Dog bowl"
+  },
+  {
+   "id": "n2351681856",
+   "lat": 37.853016,
+   "lon": -122.27335,
+   "k": "W",
+   "access": "permissive",
+   "check_date": "2026-09-05",
+   "desc": "Malcolm X School playground near garden; open to public during non-school daytime hours."
+  },
+  {
+   "id": "n2351681862",
+   "lat": 37.853382,
+   "lon": -122.2738,
+   "k": "W",
+   "access": "permissive",
+   "check_date": "2026-09-05",
+   "desc": "Malcolm X playground; open to public during non-school daytime hours."
+  },
+  {
+   "id": "n2351681865",
+   "lat": 37.85481,
+   "lon": -122.28392,
+   "k": "W",
+   "check_date": "2026-07-30",
+   "desc": "San Pablo Park next to tennis courts"
+  },
+  {
+   "id": "n2351681867",
+   "lat": 37.855675,
+   "lon": -122.2835,
+   "k": "W",
+   "desc": "San Pablo Park basketball courts"
+  },
+  {
+   "id": "n2351681869",
+   "lat": 37.856663,
+   "lon": -122.27301,
+   "k": "W",
+   "bottle": "yes",
+   "desc": "Grove Park playground, open drain fountain"
+  },
+  {
+   "id": "n2351681872",
+   "lat": 37.866471,
+   "lon": -122.284002,
+   "k": "W"
+  },
+  {
+   "id": "n2351681875",
+   "lat": 37.868031,
+   "lon": -122.301418,
+   "k": "W",
+   "indoor": "yes",
+   "desc": "Truitt & White Lumber, inside near restroom"
+  },
+  {
+   "id": "n2351681877",
+   "lat": 37.87003,
+   "lon": -122.25759,
+   "k": "W",
+   "indoor": "yes",
+   "desc": "Barrows Hall first floor, near room 190"
+  },
+  {
+   "id": "n2351681880",
+   "lat": 37.872234,
+   "lon": -122.29742,
+   "k": "W"
+  },
+  {
+   "id": "n2411694725",
+   "lat": 37.892635,
+   "lon": -122.263237,
+   "k": "T",
+   "operator": "City of Berkeley",
+   "access": "yes",
+   "wheelchair": "limited",
+   "disposal": "chemical"
+  },
+  {
+   "id": "n2425989842",
+   "lat": 37.89216,
+   "lon": -122.26376,
+   "k": "W",
+   "desc": "Cragmont Park"
+  },
+  {
+   "id": "n2477391425",
+   "lat": 37.855564,
+   "lon": -122.256292,
+   "k": "W"
+  },
+  {
+   "id": "n2477391426",
+   "lat": 37.872063,
+   "lon": -122.31589,
+   "k": "W",
+   "operator": "City of Berkeley"
+  },
+  {
+   "id": "n2525888429",
+   "lat": 37.867902,
+   "lon": -122.286321,
+   "k": "W",
+   "check_date": "2023-02-25"
+  },
+  {
+   "id": "n2582763330",
+   "lat": 37.871974,
+   "lon": -122.248123,
+   "k": "W",
+   "bottle": "yes"
+  },
+  {
+   "id": "n2819388301",
+   "lat": 37.866924,
+   "lon": -122.286386,
+   "k": "W"
+  },
+  {
+   "id": "n2932064606",
+   "lat": 37.880707,
+   "lon": -122.259216,
+   "k": "W",
+   "access": "yes",
+   "fee": "no",
+   "wheelchair": "yes",
+   "indoor": "no",
+   "bottle": "yes"
+  },
+  {
+   "id": "n2973521337",
+   "lat": 37.894631,
+   "lon": -122.254363,
+   "k": "W",
+   "bottle": "no"
+  },
+  {
+   "id": "n2997183915",
+   "lat": 37.866952,
+   "lon": -122.292492,
+   "k": "W",
+   "bottle": "no",
+   "check_date": "2022-10-19"
+  },
+  {
+   "id": "n3078844011",
+   "lat": 37.874433,
+   "lon": -122.308287,
+   "k": "T",
+   "operator": "City of Berkeley",
+   "access": "permissive",
+   "fee": "no",
+   "wheelchair": "yes",
+   "disposal": "chemical"
+  },
+  {
+   "id": "n3078844012",
+   "lat": 37.877652,
+   "lon": -122.308782,
+   "k": "T",
+   "operator": "City of Berkeley",
+   "access": "permissive",
+   "fee": "no",
+   "wheelchair": "yes",
+   "disposal": "chemical"
+  },
+  {
+   "id": "n3455918285",
+   "lat": 37.869247,
+   "lon": -122.315842,
+   "k": "T",
+   "access": "customers",
+   "disposal": "flush"
+  },
+  {
+   "id": "n3795571180",
+   "lat": 37.869854,
+   "lon": -122.267568,
+   "k": "T",
+   "access": "customers"
+  },
+  {
+   "id": "n3796356054",
+   "lat": 37.872648,
+   "lon": -122.279017,
+   "k": "T",
+   "access": "yes",
+   "fee": "no",
+   "wheelchair": "yes",
+   "disposal": "chemical"
+  },
+  {
+   "id": "n4034055044",
+   "lat": 37.876347,
+   "lon": -122.288357,
+   "k": "W"
+  },
+  {
+   "id": "n4173937153",
+   "lat": 37.882179,
+   "lon": -122.276158,
+   "k": "W"
+  },
+  {
+   "id": "n4216107778",
+   "lat": 37.866113,
+   "lon": -122.302789,
+   "k": "W",
+   "fee": "no",
+   "wheelchair": "yes"
+  },
+  {
+   "id": "n4392879233",
+   "lat": 37.864232,
+   "lon": -122.314063,
+   "k": "W",
+   "desc": "Drinking fountain outside the corporation yard"
+  },
+  {
+   "id": "n4392884076",
+   "lat": 37.863106,
+   "lon": -122.315477,
+   "k": "W",
+   "bottle": "yes",
+   "desc": "Drinking fountain outside bathrooms"
+  },
+  {
+   "id": "n4807137369",
+   "lat": 37.866708,
+   "lon": -122.312536,
+   "k": "T",
+   "access": "customers"
+  },
+  {
+   "id": "n4807137371",
+   "lat": 37.865512,
+   "lon": -122.317128,
+   "k": "T",
+   "access": "customers"
+  },
+  {
+   "id": "n5775968465",
+   "lat": 37.851893,
+   "lon": -122.296373,
+   "k": "W"
+  },
+  {
+   "id": "n5775969407",
+   "lat": 37.851461,
+   "lon": -122.296575,
+   "k": "T",
+   "disposal": "chemical"
+  },
+  {
+   "id": "n5833608186",
+   "lat": 37.884128,
+   "lon": -122.250692,
+   "k": "W",
+   "access": "yes",
+   "opening_hours": "Mo-Su 06:00-22:00",
+   "wheelchair": "yes"
+  },
+  {
+   "id": "n6693370055",
+   "lat": 37.848176,
+   "lon": -122.271428,
+   "k": "T"
+  },
+  {
+   "id": "n6743277374",
+   "lat": 37.864557,
+   "lon": -122.313872,
+   "k": "T",
+   "access": "yes",
+   "fee": "no",
+   "changing_table": "no",
+   "desc": "Automatically closed at night. Hours not specified."
+  },
+  {
+   "id": "n6743283946",
+   "lat": 37.863325,
+   "lon": -122.312751,
+   "k": "T",
+   "desc": "Opening hours unlisted, and often closed during the day."
+  },
+  {
+   "id": "n7070861910",
+   "lat": 37.883953,
+   "lon": -122.250554,
+   "k": "W"
+  },
+  {
+   "id": "n7326684084",
+   "lat": 37.863683,
+   "lon": -122.276053,
+   "k": "W"
+  },
+  {
+   "id": "n7554603943",
+   "lat": 37.855902,
+   "lon": -122.283654,
+   "k": "W"
+  },
+  {
+   "id": "n7847068671",
+   "lat": 37.884568,
+   "lon": -122.262617,
+   "k": "T",
+   "fee": "no",
+   "wheelchair": "yes"
+  },
+  {
+   "id": "n7932870026",
+   "lat": 37.860671,
+   "lon": -122.299422,
+   "k": "W"
+  },
+  {
+   "id": "n8010012922",
+   "lat": 37.857238,
+   "lon": -122.24525,
+   "k": "W"
+  },
+  {
+   "id": "n8072326989",
+   "lat": 37.85429,
+   "lon": -122.257331,
+   "k": "W"
+  },
+  {
+   "id": "n9041110272",
+   "lat": 37.885544,
+   "lon": -122.263278,
+   "k": "W"
+  },
+  {
+   "id": "n9064988442",
+   "lat": 37.857907,
+   "lon": -122.263678,
+   "k": "W"
+  },
+  {
+   "id": "n9121349347",
+   "lat": 37.857521,
+   "lon": -122.245422,
+   "k": "W",
+   "bottle": "yes"
+  },
+  {
+   "id": "n9406372653",
+   "lat": 37.882886,
+   "lon": -122.279401,
+   "k": "W",
+   "opening_hours": "24/7"
+  },
+  {
+   "id": "n9459929058",
+   "lat": 37.890279,
+   "lon": -122.256038,
+   "k": "W"
+  },
+  {
+   "id": "n9595807814",
+   "lat": 37.864812,
+   "lon": -122.30559,
+   "k": "W",
+   "name": "Drinking Fountain"
+  },
+  {
+   "id": "n9830465804",
+   "lat": 37.85793,
+   "lon": -122.262807,
+   "k": "W",
+   "bottle": "no"
+  },
+  {
+   "id": "n9831610492",
+   "lat": 37.858203,
+   "lon": -122.278538,
+   "k": "W"
+  },
+  {
+   "id": "n9866858601",
+   "lat": 37.86513,
+   "lon": -122.247561,
+   "k": "W",
+   "access": "yes",
+   "fee": "no",
+   "bottle": "no"
+  },
+  {
+   "id": "n10057311384",
+   "lat": 37.856075,
+   "lon": -122.283596,
+   "k": "T",
+   "wheelchair": "yes"
+  },
+  {
+   "id": "n10057327053",
+   "lat": 37.854582,
+   "lon": -122.283436,
+   "k": "W"
+  },
+  {
+   "id": "n11084307626",
+   "lat": 37.859988,
+   "lon": -122.257655,
+   "k": "W"
+  },
+  {
+   "id": "n11084307646",
+   "lat": 37.860661,
+   "lon": -122.258453,
+   "k": "W"
+  },
+  {
+   "id": "n11983832993",
+   "lat": 37.882454,
+   "lon": -122.278543,
+   "k": "T"
+  },
+  {
+   "id": "n12111342012",
+   "lat": 37.878565,
+   "lon": -122.24652,
+   "k": "T"
+  },
+  {
+   "id": "n12161135863",
+   "lat": 37.876812,
+   "lon": -122.308985,
+   "k": "T",
+   "operator": "City of Berkeley",
+   "access": "yes",
+   "fee": "no",
+   "wheelchair": "limited",
+   "disposal": "pitlatrine"
+  },
+  {
+   "id": "n12166876755",
+   "lat": 37.869705,
+   "lon": -122.25515,
+   "k": "T",
+   "fee": "no",
+   "disposal": "flush"
+  },
+  {
+   "id": "n12166876759",
+   "lat": 37.869713,
+   "lon": -122.25509,
+   "k": "W",
+   "access": "permissive",
+   "fee": "no",
+   "indoor": "yes",
+   "bottle": "yes"
+  },
+  {
+   "id": "n12167164005",
+   "lat": 37.87079,
+   "lon": -122.251769,
+   "k": "T",
+   "access": "permissive",
+   "fee": "no",
+   "disposal": "flush"
+  },
+  {
+   "id": "n12167164006",
+   "lat": 37.870808,
+   "lon": -122.251776,
+   "k": "W",
+   "fee": "no",
+   "indoor": "yes",
+   "bottle": "yes"
+  },
+  {
+   "id": "n12277590621",
+   "lat": 37.869876,
+   "lon": -122.253686,
+   "k": "T",
+   "access": "permissive",
+   "fee": "no",
+   "wheelchair": "yes",
+   "changing_table": "yes",
+   "disposal": "flush",
+   "check_date": "2024-10-21"
+  },
+  {
+   "id": "n12717366147",
+   "lat": 37.869086,
+   "lon": -122.259504,
+   "k": "T",
+   "disposal": "flush"
+  },
+  {
+   "id": "n12720796005",
+   "lat": 37.870754,
+   "lon": -122.269855,
+   "k": "T",
+   "access": "yes",
+   "indoor": "yes",
+   "disposal": "flush",
+   "check_date": "2025-04-01"
+  },
+  {
+   "id": "n12773351532",
+   "lat": 37.871523,
+   "lon": -122.253732,
+   "k": "T",
+   "fee": "no",
+   "wheelchair": "yes",
+   "changing_table": "no",
+   "disposal": "flush"
+  },
+  {
+   "id": "n12773351534",
+   "lat": 37.871522,
+   "lon": -122.253681,
+   "k": "W",
+   "fee": "no",
+   "indoor": "yes",
+   "bottle": "yes"
+  },
+  {
+   "id": "n12773351536",
+   "lat": 37.871525,
+   "lon": -122.253633,
+   "k": "T",
+   "fee": "no",
+   "wheelchair": "yes",
+   "changing_table": "no",
+   "disposal": "flush"
+  },
+  {
+   "id": "n12773351539",
+   "lat": 37.871544,
+   "lon": -122.253684,
+   "k": "W",
+   "access": "permissive",
+   "fee": "no",
+   "indoor": "yes"
+  },
+  {
+   "id": "n12773351540",
+   "lat": 37.871705,
+   "lon": -122.254314,
+   "k": "W",
+   "fee": "no",
+   "indoor": "yes",
+   "bottle": "yes"
+  },
+  {
+   "id": "n12773351555",
+   "lat": 37.87155,
+   "lon": -122.253642,
+   "k": "T",
+   "fee": "no",
+   "disposal": "flush"
+  },
+  {
+   "id": "n12773351557",
+   "lat": 37.87165,
+   "lon": -122.254268,
+   "k": "T",
+   "fee": "no",
+   "wheelchair": "yes",
+   "changing_table": "no",
+   "disposal": "flush"
+  },
+  {
+   "id": "n12773351565",
+   "lat": 37.871693,
+   "lon": -122.254268,
+   "k": "T",
+   "fee": "no",
+   "wheelchair": "yes",
+   "disposal": "flush"
+  },
+  {
+   "id": "n12845316260",
+   "lat": 37.86695,
+   "lon": -122.258983,
+   "k": "T",
+   "access": "yes",
+   "wheelchair": "yes",
+   "disposal": "flush"
+  },
+  {
+   "id": "n12900569256",
+   "lat": 37.868129,
+   "lon": -122.268584,
+   "k": "T",
+   "access": "yes",
+   "fee": "no",
+   "wheelchair": "yes",
+   "disposal": "flush"
+  },
+  {
+   "id": "n12900569260",
+   "lat": 37.868024,
+   "lon": -122.268937,
+   "k": "W",
+   "access": "yes",
+   "fee": "no",
+   "indoor": "yes"
+  },
+  {
+   "id": "n12900569262",
+   "lat": 37.868121,
+   "lon": -122.268563,
+   "k": "T",
+   "access": "yes",
+   "fee": "no",
+   "disposal": "flush"
+  },
+  {
+   "id": "n12900569263",
+   "lat": 37.86811,
+   "lon": -122.268768,
+   "k": "T",
+   "access": "yes",
+   "fee": "no",
+   "disposal": "flush"
+  },
+  {
+   "id": "n12965306852",
+   "lat": 37.873857,
+   "lon": -122.261139,
+   "k": "W",
+   "access": "permissive",
+   "fee": "no",
+   "indoor": "yes",
+   "bottle": "yes"
+  },
+  {
+   "id": "n12965306857",
+   "lat": 37.873816,
+   "lon": -122.261042,
+   "k": "T",
+   "access": "permissive",
+   "fee": "yes",
+   "wheelchair": "yes",
+   "changing_table": "no",
+   "disposal": "flush"
+  },
+  {
+   "id": "n12990278101",
+   "lat": 37.892637,
+   "lon": -122.263609,
+   "k": "W"
+  },
+  {
+   "id": "n13007788701",
+   "lat": 37.869227,
+   "lon": -122.257891,
+   "k": "W"
+  },
+  {
+   "id": "n13095348812",
+   "lat": 37.894691,
+   "lon": -122.272939,
+   "k": "T",
+   "access": "yes",
+   "changing_table": "no",
+   "disposal": "pitlatrine",
+   "check_date": "2025-08-24"
+  },
+  {
+   "id": "n13606874001",
+   "lat": 37.894133,
+   "lon": -122.267022,
+   "k": "W",
+   "name": "Water fountain at Cragmont School",
+   "check_date": "2026-02-27"
+  },
+  {
+   "id": "n14003323877",
+   "lat": 37.859554,
+   "lon": -122.269237,
+   "k": "T",
+   "access": "permissive",
+   "wheelchair": "yes"
+  },
+  {
+   "id": "n14003323878",
+   "lat": 37.859669,
+   "lon": -122.269253,
+   "k": "T",
+   "access": "permissive",
+   "wheelchair": "yes"
+  },
+  {
+   "id": "n14072062705",
+   "lat": 37.866577,
+   "lon": -122.270585,
+   "k": "W"
+  },
+  {
+   "id": "n14072062706",
+   "lat": 37.866501,
+   "lon": -122.272252,
+   "k": "W"
+  },
+  {
+   "id": "n14072062707",
+   "lat": 37.865791,
+   "lon": -122.272165,
+   "k": "W"
+  },
+  {
+   "id": "n14072062708",
+   "lat": 37.865895,
+   "lon": -122.271164,
+   "k": "W"
+  },
+  {
+   "id": "n14072062809",
+   "lat": 37.868717,
+   "lon": -122.27185,
+   "k": "T"
+  },
+  {
+   "id": "n14072062810",
+   "lat": 37.868412,
+   "lon": -122.272333,
+   "k": "T"
+  },
+  {
+   "id": "n14072062811",
+   "lat": 37.867802,
+   "lon": -122.271649,
+   "k": "T"
+  },
+  {
+   "id": "n14072062812",
+   "lat": 37.867832,
+   "lon": -122.271219,
+   "k": "T"
+  },
+  {
+   "id": "n14072062813",
+   "lat": 37.866877,
+   "lon": -122.270528,
+   "k": "T"
+  },
+  {
+   "id": "n14072062814",
+   "lat": 37.86706,
+   "lon": -122.271159,
+   "k": "T"
+  },
+  {
+   "id": "n14072062815",
+   "lat": 37.867074,
+   "lon": -122.270898,
+   "k": "T"
+  },
+  {
+   "id": "n14072062816",
+   "lat": 37.867062,
+   "lon": -122.270929,
+   "k": "W"
+  },
+  {
+   "id": "n14072062817",
+   "lat": 37.866881,
+   "lon": -122.270486,
+   "k": "W"
+  },
+  {
+   "id": "n14072062818",
+   "lat": 37.867577,
+   "lon": -122.272256,
+   "k": "T"
+  },
+  {
+   "id": "n14072062819",
+   "lat": 37.868583,
+   "lon": -122.271233,
+   "k": "T"
+  },
+  {
+   "id": "n14072062820",
+   "lat": 37.868695,
+   "lon": -122.270795,
+   "k": "T"
+  },
+  {
+   "id": "n14072062821",
+   "lat": 37.868638,
+   "lon": -122.270756,
+   "k": "W"
+  },
+  {
+   "id": "n14072062822",
+   "lat": 37.867756,
+   "lon": -122.27065,
+   "k": "W"
+  },
+  {
+   "id": "n14072062823",
+   "lat": 37.867724,
+   "lon": -122.270645,
+   "k": "T"
+  },
+  {
+   "id": "w43075596",
+   "lat": 37.856513,
+   "lon": -122.271926,
+   "k": "T"
+  },
+  {
+   "id": "w282349723",
+   "lat": 37.863158,
+   "lon": -122.315442,
+   "k": "T",
+   "operator": "City of Berkeley",
+   "access": "permissive",
+   "fee": "no",
+   "opening_hours": "Mo-Su 10:00-17:00",
+   "wheelchair": "yes",
+   "disposal": "flush",
+   "desc": "Exact open time unknown; closes at 5pm"
+  },
+  {
+   "id": "w400908963",
+   "lat": 37.876169,
+   "lon": -122.287959,
+   "k": "T",
+   "fee": "no",
+   "disposal": "flush"
+  },
+  {
+   "id": "w772824546",
+   "lat": 37.873985,
+   "lon": -122.283581,
+   "k": "T",
+   "access": "yes",
+   "wheelchair": "yes",
+   "indoor": "room",
+   "desc": "Inside paid area"
+  },
+  {
+   "id": "w774522204",
+   "lat": 37.873945,
+   "lon": -122.28358,
+   "k": "T",
+   "access": "yes",
+   "wheelchair": "yes",
+   "indoor": "room",
+   "desc": "Inside paid area"
+  },
+  {
+   "id": "w930043357",
+   "lat": 37.869017,
+   "lon": -122.317053,
+   "k": "T",
+   "access": "customers",
+   "disposal": "flush"
+  },
+  {
+   "id": "w1457062388",
+   "lat": 37.864611,
+   "lon": -122.305655,
+   "k": "T"
+  },
+  {
+   "id": "n9831610493",
+   "lat": 37.858184,
+   "lon": -122.278534,
+   "k": "T",
+   "access": "school",
+   "wheelchair": "yes",
+   "disposal": "flush"
+  },
+  {
+   "id": "n9831610494",
+   "lat": 37.858221,
+   "lon": -122.278542,
+   "k": "T",
+   "access": "school",
+   "wheelchair": "yes",
+   "disposal": "flush"
+  }
+ ]
+}

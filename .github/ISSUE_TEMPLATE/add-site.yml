@@ -1,0 +1,78 @@
+name: Add a surveyed site
+description: Put a place you have seen on the map, with a photo.
+title: "Site: "
+labels: ["add-site"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for adding to the map.
+
+        **One thing to know first:** GitHub removes location data from photos
+        when you attach them here, so the photo alone cannot tell us where it
+        was taken. You have to type the coordinates in yourself. Two easy ways:
+
+        - **iPhone:** open the photo in Photos, swipe up (or tap the ⓘ button).
+          The map at the bottom shows the location; tap it, then tap the
+          coordinates to copy them.
+        - **Any phone or computer:** find the spot on
+          [openstreetmap.org](https://www.openstreetmap.org/#map=15/37.8690/-122.2990),
+          right-click it and choose "Show address" — the coordinates appear in
+          the search box, latitude first.
+
+        A pin says where a photo was taken. It is not a claim that a spot is
+        lawful, safe, or available, and nothing you submit here will be treated
+        as one. Please do not photograph people or their belongings without
+        asking, and do not submit anything that identifies where a specific
+        person is staying.
+  - type: input
+    id: lat
+    attributes:
+      label: Latitude
+      description: Around 37.87 in Berkeley. This is the first of the two numbers.
+      placeholder: "37.86495"
+    validations:
+      required: true
+  - type: input
+    id: lon
+    attributes:
+      label: Longitude
+      description: Around -122.29 in Berkeley. Keep the minus sign.
+      placeholder: "-122.29835"
+    validations:
+      required: true
+  - type: input
+    id: label
+    attributes:
+      label: What to call this spot
+      description: A short name — a cross street, a landmark, whatever you would say out loud.
+      placeholder: "Second & Cedar, west side"
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: What is it like
+      description: >
+        Whatever would matter to someone deciding whether to walk there.
+        Sidewalk width, shade, lighting, noise, slope, how exposed it is,
+        what is nearby, whether anything is posted.
+    validations:
+      required: false
+  - type: textarea
+    id: photo
+    attributes:
+      label: Photo
+      description: Drag a photo into this box. One photo per issue.
+      placeholder: "Drop the image here"
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Before you submit
+      options:
+        - label: This photo is mine to share, and it does not show a person or an identifiable individual's belongings.
+          required: true
+        - label: I understand this is a record of a place, not advice about it.
+          required: true

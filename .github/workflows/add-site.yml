@@ -1,0 +1,115 @@
+name: Add surveyed site from issue
+
+# A contributor fills in the "Add a surveyed site" issue form. This reads the
+# form, pulls the photo out of it, rebuilds the map, and opens a pull request
+# for a human to look at. Nothing reaches the published map without that review.
+
+on:
+  issues:
+    types: [opened, edited, labeled]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  add-site:
+    if: contains(github.event.issue.labels.*.name, 'add-site')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install image libraries
+        run: pip install --quiet pillow pillow-heif
+
+      - name: Read the issue form
+        id: parse
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = context.payload.issue.body || "";
+            // Issue forms render as "### Label\n\nvalue\n\n"; pull each field out.
+            const field = (label) => {
+              const re = new RegExp("###\\\\s*" + label + "\\\\s*\\\\n+([\\\\s\\\\S]*?)(?=\\\\n###|$)", "i");
+              const m = body.match(re);
+              if (!m) return "";
+              const v = m[1].trim();
+              return (v === "_No response_") ? "" : v;
+            };
+            const photoBlock = field("Photo");
+            // Markdown image or bare attachment link
+            const photo = (photoBlock.match(/https:\/\/[^\s)"'>]+/) || [""])[0];
+            core.setOutput("lat", field("Latitude"));
+            core.setOutput("lon", field("Longitude"));
+            core.setOutput("label", field("What to call this spot"));
+            core.setOutput("notes", field("What is it like"));
+            core.setOutput("photo", photo);
+            core.setOutput("author", context.payload.issue.user.login);
+
+      - name: Add the site and rebuild the map
+        id: build
+        run: |
+          set -o pipefail
+          python3 tools/add_site.py \
+            --issue "${{ github.event.issue.number }}" \
+            --lat "${{ steps.parse.outputs.lat }}" \
+            --lon "${{ steps.parse.outputs.lon }}" \
+            --label "${{ steps.parse.outputs.label }}" \
+            --notes "${{ steps.parse.outputs.notes }}" \
+            --author "${{ steps.parse.outputs.author }}" \
+            --photo-url "${{ steps.parse.outputs.photo }}" 2>&1 | tee add.log
+          python3 tools/survey_sites.py --photos does-not-exist 2>&1 | tee -a add.log
+          {
+            echo 'log<<EOF'
+            cat add.log
+            echo EOF
+          } >> "$GITHUB_OUTPUT"
+          rm -f add.log
+
+      - name: Open a pull request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: "add-site/issue-${{ github.event.issue.number }}"
+          commit-message: "Add surveyed site from issue #${{ github.event.issue.number }}"
+          title: "Add surveyed site: ${{ steps.parse.outputs.label }} (#${{ github.event.issue.number }})"
+          body: |
+            Submitted by @${{ steps.parse.outputs.author }} in #${{ github.event.issue.number }}.
+
+            - **Coordinates:** ${{ steps.parse.outputs.lat }}, ${{ steps.parse.outputs.lon }}
+            - **Label:** ${{ steps.parse.outputs.label }}
+
+            ${{ steps.parse.outputs.notes }}
+
+            <details><summary>Build log</summary>
+
+            ```
+            ${{ steps.build.outputs.log }}
+            ```
+            </details>
+
+            Check before merging: the pin lands where the photo was taken, the
+            district the script matched looks right, and the photo shows a place
+            rather than a person.
+
+            Closes #${{ github.event.issue.number }}
+
+      - name: Say what happened
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: "Couldn't add this one automatically — most often the coordinates " +
+                    "are swapped or missing a minus sign, or the photo didn't attach. " +
+                    "Edit the issue to fix it and this will run again. " +
+                    "[Build log](" + context.payload.repository.html_url +
+                    "/actions/runs/" + context.runId + ")"
+            })

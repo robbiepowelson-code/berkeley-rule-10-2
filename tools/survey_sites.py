@@ -42,6 +42,9 @@ EXTS = (".heic", ".heif", ".jpg", ".jpeg", ".png", ".tif", ".tiff")
 MAX_PX = 1400          # longest side of the web copy
 QUALITY = 78
 KEEP_FIELDS = ("label", "notes", "hidden")   # never overwritten by a re-run
+# Sites submitted through the issue form (tools/add_site.py writes this file).
+# They carry their own coordinates because GitHub strips EXIF from uploads.
+CONTRIBUTED = os.path.join("data", "contributed-sites.json")
 
 # AR 10.2 categories, mirroring the CATS object in index.html
 CAT_NAME = {
@@ -267,11 +270,25 @@ def inject(index_html, sites, dry_run=False):
 def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--photos", default=os.path.join(os.path.dirname(REPO), "survey-photos"),
-                    help="folder of geotagged field photos (default: ../survey-photos)")
+    ap.add_argument("--photos", default=None,
+                    help="folder of geotagged field photos (default: whatever the last "
+                         "run used, recorded in survey.config.json, else ../survey-photos)")
     ap.add_argument("--repo", default=REPO, help="repo root (default: this script's parent)")
     ap.add_argument("--dry-run", action="store_true", help="report only, write nothing")
     args = ap.parse_args()
+
+    # A local, gitignored note of where this machine keeps its photos, so
+    # re-runs need no arguments. Written on the first successful run.
+    cfg_path = os.path.join(REPO, "survey.config.json")
+    cfg = {}
+    if os.path.exists(cfg_path):
+        try:
+            with open(cfg_path, encoding="utf-8") as fh:
+                cfg = json.load(fh)
+        except (ValueError, OSError):
+            cfg = {}
+    if args.photos is None:
+        args.photos = cfg.get("photos_dir") or os.path.join(os.path.dirname(REPO), "survey-photos")
 
     src = os.path.expanduser(args.photos)
     repo = os.path.expanduser(args.repo)
@@ -279,8 +296,10 @@ def main():
     photos_dir = os.path.join(repo, "photos")
     sites_json = os.path.join(repo, "sites.json")
 
-    if not os.path.isdir(src):
-        raise SystemExit("no such photo folder: " + src)
+    have_src = os.path.isdir(src)
+    if not have_src:
+        print("no photo folder at %s - building from contributed sites only" % src,
+              file=sys.stderr)
 
     # keep hand-written fields from the previous run
     previous = {}
@@ -294,7 +313,7 @@ def main():
         os.makedirs(photos_dir, exist_ok=True)
 
     sites, skipped = [], []
-    names = sorted(n for n in os.listdir(src) if n.lower().endswith(EXTS))
+    names = sorted(n for n in os.listdir(src) if n.lower().endswith(EXTS)) if have_src else []
     for name in names:
         path = os.path.join(src, name)
         if name.lower().endswith((".heic", ".heif")) and not HEIC:
@@ -346,7 +365,44 @@ def main():
 
         sites.append(site)
 
+    # ---- sites submitted through the issue form -------------------------
+    seen = {x["id"] for x in sites}
+    cpath = os.path.join(repo, CONTRIBUTED)
+    if os.path.exists(cpath):
+        with open(cpath, encoding="utf-8") as fh:
+            for c in json.load(fh):
+                if c.get("hidden") or c["id"] in seen:
+                    continue
+                site = dict(c)
+                props, dist_m, other = district_for(c["lon"], c["lat"], zoning)
+                if props:
+                    site["zone"] = props.get("z")
+                    site["district"] = props.get("d")
+                    site["cat"] = props.get("c")
+                    site["dist_m"] = round(dist_m, 1)
+                    if other:
+                        site["ambiguous"] = {"zone": other.get("z"),
+                                             "district": other.get("d"),
+                                             "cat": other.get("c")}
+                else:
+                    site["zone"] = None
+                    site["district"] = "Outside the mapped zoning layer"
+                    site["cat"] = None
+                    site["dist_m"] = round(dist_m, 1) if dist_m else None
+                site.setdefault("label", "")
+                site.setdefault("notes", "")
+                sites.append(site)
+                seen.add(site["id"])
+
     sites.sort(key=lambda s: (s.get("taken") or "", s["id"]))
+
+    if not args.dry_run and have_src and os.path.abspath(src) != cfg.get("photos_dir"):
+        try:
+            with open(cfg_path, "w", encoding="utf-8") as fh:
+                json.dump({"photos_dir": os.path.abspath(src)}, fh, indent=2)
+                fh.write("\n")
+        except OSError:
+            pass
 
     if not args.dry_run:
         with open(sites_json, "w", encoding="utf-8") as fh:
@@ -363,7 +419,8 @@ def main():
         print("%-12s %9.5f,%11.5f  %-8s %-26s %-11s%s" % (
             s["id"], s["lat"], s["lon"], s.get("zone") or "-",
             CAT_NAME.get(s.get("cat"), "outside zoning layer"), where,
-            "  also near " + str(amb["zone"]) if amb else ""))
+            "  also near " + str(amb["zone"]) if amb else ""),
+            end="  [contributed]\n" if s.get("source") else "\n")
     for name, why in skipped:
         print("skipped  %s — %s" % (name, why), file=sys.stderr)
     print("\n%d site(s)%s" % (len(sites), " (dry run — nothing written)" if args.dry_run else ""))
