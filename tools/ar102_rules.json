@@ -1,0 +1,67 @@
+{
+  "_about": "Every distance the campable-sites model uses, with where it comes from. Edit values here, not in the code. Units are feet unless the key says otherwise. 'source' is the authority; 'basis' is AR 10.2 (City Manager, rev. Jan 2025) unless noted. Entries marked assumption are NOT in AR 10.2 and should be confirmed or turned off with enabled=false.",
+
+  "footprint": {
+    "tent_short_ft": 5,
+    "tent_long_ft": 7,
+    "source": "user choice: standard 2-person tent. AR 10.2 itself limits a TNC object to 9 sq ft and 5 ft tall; a tent exceeds that, so this counts places a tent could physically fit under the clearance rules, not places a 9 sq ft object is lawful.",
+    "note": "The pipeline also reports counts for a 3x3 ft (9 sq ft) AR-10.2-sized object footprint."
+  },
+
+  "path_of_travel": {
+    "narrow_sidewalk_path_ft": 6,
+    "wide_sidewalk_threshold_ft": 14,
+    "wide_sidewalk_path_ft": 10,
+    "source": "AR 10.2: sidewalks under 14 ft wide keep a 6 ft Path of Travel; 14 ft or wider keep 10 ft.",
+    "position": "best",
+    "position_note": "Where the clear path is assumed to run: 'building' (objects at the curb), 'curb' (objects against the building line), or 'best' (whichever fits more)."
+  },
+
+  "building_setback": {
+    "ft": 3,
+    "enabled": true,
+    "source": "AR 10.2: objects may not be placed directly in front of or within 3 ft of a building entrance. Applied to the whole property line because entrance locations are not in any city dataset - conservative; field data/field/exclusions.geojson can replace it with real entrances."
+  },
+
+  "curb_setback": {
+    "ft": 1.5,
+    "enabled": true,
+    "source": "assumption (user-stated 18 in from curb). Not a distance in AR 10.2; keeps objects off the curb face / car-door zone. Set enabled=false to drop it."
+  },
+
+  "corner_clearance": {
+    "ft": 20,
+    "enabled": true,
+    "source": "assumption. AR 10.2 bars obstructing crosswalks and curb/wheelchair ramps but gives no distance; no ramp or crosswalk dataset exists, so intersections are cleared by radius from the sidewalk corner. Matches the 20 ft no-parking-from-crosswalk zone in CVC 22500(e)."
+  },
+
+  "point_obstructions": {
+    "hydrant_ft": 3,
+    "hydrant_source": "AR 10.2 bars obstructing fire hydrants; 3 ft clear space per California Fire Code 507.5.5.",
+    "bus_stop_ft": 20,
+    "bus_stop_source": "assumption. AR 10.2 bars obstructing bus stops/benches; 20 ft along the curb approximates a boarding zone. Replace with measured zones in data/field/exclusions.geojson.",
+    "bike_rack_ft": 3,
+    "bike_rack_source": "assumption. AR 10.2 bars obstructing bicycle racks; 3 ft clear for a bike on each side.",
+    "bart_entrance_ft": 25,
+    "bart_source": "AR 10.2: no objects within 25 ft of a BART station entrance. No pilot-area entrances; encode in data/field/exclusions.geojson if needed."
+  },
+
+  "curb_zones": {
+    "blue_white_source": "AR 10.2: no objects at or adjacent to blue or white curb. Not in any city dataset - draw them in data/field/curb_zones.geojson (LineString, properties.color = blue|white|red|yellow|green).",
+    "colors_excluded": ["blue", "white", "red"],
+    "red_source": "assumption (user-stated). Red curbs are not named in AR 10.2; included because the user's rule list has them. Remove 'red' from colors_excluded to drop.",
+    "adjacent_ft": 2,
+    "adjacent_note": "how far inland from a painted curb the exclusion reaches"
+  },
+
+  "roadway": {
+    "default_pavement_width_ft": {"ST": 36, "AVE": 40, "WAY": 30, "DR": 30, "BLVD": 48, "HWY": 60, "*": 36},
+    "source": "City centerline layer field PAV_WIDTH_RD (curb-to-curb). About 20 percent of pilot segments have no width; these defaults fill in and the block face is flagged width_source=default so it can be measured."
+  },
+
+  "zoning": {
+    "campable_categories": ["com", "man", "mixres"],
+    "source": "AR 10.2: prohibited on residential-district sidewalks, permitted with limits in commercial and manufacturing districts. mixres districts are counted separately so the number can be shown with and without them.",
+    "snap_m": 60
+  }
+}

@@ -1,3 +1,5 @@
 __pycache__/
 *.pyc
 survey.config.json
+_to_delete/
+data/campable/check_*.png
