@@ -935,12 +935,14 @@ th.num{text-align:right; padding-right:0}
       <button class="lg" data-cat="com" aria-pressed="true"><span class="sw"></span><span class="tt"><span class="name">Commercial districts</span><br><span class="sub">Likely available for BHU members under AR 10.2, within its limits</span></span><span class="ac">357&nbsp;ac</span></button>
       <button class="lg" data-cat="man" aria-pressed="true"><span class="sw"></span><span class="tt"><span class="name">Manufacturing districts</span><br><span class="sub">Likely available for BHU members under AR 10.2, within its limits</span></span><span class="ac">313&nbsp;ac</span></button>
       <button class="lg" data-cat="other" aria-pressed="true"><span class="sw"></span><span class="tt"><span class="name">Parks, campus &amp; special plan</span><br><span class="sub">Outside AR 10.2’s categories — other rules likely apply</span></span><span class="ac">448&nbsp;ac</span></button>
+      <button class="lg" id="lblToggle" aria-pressed="true"><span class="sw" style="border-color:var(--ink-3);background:var(--ink-3);opacity:.9"></span><span class="tt"><span class="name">Street names</span><br><span class="sub">Labels appear as you zoom in.</span></span></button>
       <button class="lg off" id="bmToggle" aria-pressed="false"><span class="sw" style="border-color:var(--ink-3)"></span><span class="tt"><span class="name">Street basemap (OpenStreetMap)</span><br><span class="sub">Raster streets &amp; buildings under the districts</span></span></button>
       <p class="sub" id="bmNote" style="display:none;font-size:12px;color:var(--ink-3);margin:2px 0 0 9px">Basemap tiles are blocked on this hosted page — open the downloadable copy of the map to use it. Street names here are built in: zoom in for labels, hover any street.</p>
       <button class="lg" id="siteToggle" aria-pressed="true"><span class="sw" id="siteSw"></span><span class="tt"><span class="name">Surveyed sites</span><br><span class="sub">Field photos with GPS — click a pin for the photo and its district</span></span><span class="ac" id="siteCount"></span></button>
       <button class="lg" id="waterToggle" aria-pressed="true"><span class="sw" id="waterSw"></span><span class="tt"><span class="name">Drinking water</span><br><span class="sub">OpenStreetMap fountains &amp; taps — zoom in to see them</span></span><span class="ac" id="waterCount"></span></button>
       <button class="lg" id="wcToggle" aria-pressed="true"><span class="sw" id="wcSw"></span><span class="tt"><span class="name">Toilets</span><br><span class="sub">OpenStreetMap restrooms — zoom in to see them</span></span><span class="ac" id="wcCount"></span></button>
       <button class="lg" id="campToggle" aria-pressed="true"><span class="sw" id="campSw"></span><span class="tt"><span class="name">Campable locations</span><br><span class="sub">Where a tent fits under AR 10.2's clearances — <span id="campCount">…</span>. Zoom in for the tent outlines and block-face widths.</span></span></button>
+      <button class="lg" id="quickToggle" aria-pressed="true"><span class="sw" id="quickSw"></span><span class="tt"><span class="name">Click-to-check</span><br><span class="sub">On: click a green box to mark it wrong (red), click again to restore. Off: click opens the details popup.</span></span></button>
       <button class="lg" id="pinToggle" aria-pressed="true"><span class="sw" id="pinSw"></span><span class="tt"><span class="name">Larger footprint</span><br><span class="sub"><span id="pinCount">…</span></span></span></button>
       <div class="vsum" id="vsum">Tap any location to mark it right or wrong. <button id="vExport">Export checks</button><button id="vImport">Import</button><input type="file" id="vFile" accept=".geojson,.json" style="display:none"></div>
     </div>
@@ -1184,6 +1186,12 @@ var lblMarkers = STREET_LABELS.map(function(s){
   m._tier = s.t;
   return m;
 });
+var labelsOn = true;
+var lblBtn = document.getElementById("lblToggle");
+if(lblBtn) lblBtn.addEventListener("click", function(){
+  labelsOn = !labelsOn; lblBtn.classList.toggle("off", !labelsOn); lblBtn.setAttribute("aria-pressed", String(labelsOn));
+  lblBtn.querySelector(".sw").style.background = labelsOn ? cssv("--ink-3") : "transparent"; syncStreets();
+});
 function syncStreets(){
   var z = map.getZoom();
   var basemapOn = basemapWanted && basemapOK !== false;
@@ -1194,7 +1202,7 @@ function syncStreets(){
   if(showMajor && !map.hasLayer(majorLayer)) majorLayer.addTo(map);
   if(!showMajor && map.hasLayer(majorLayer)) map.removeLayer(majorLayer);
   lblMarkers.forEach(function(m){
-    var show = !basemapOn && z >= TIER_Z[m._tier];
+    var show = labelsOn && !basemapOn && z >= TIER_Z[m._tier];
     if(show && !map.hasLayer(m)) m.addTo(map);
     if(!show && map.hasLayer(m)) map.removeLayer(m);
   });
@@ -1396,6 +1404,7 @@ function wireAmenity(btnId, swId, ctId, built, state){
     sw.style.opacity = 0.9;
   };
   btn._paint();
+  btn.classList.toggle("off", !state.on); btn.setAttribute("aria-pressed", String(state.on));
   if(!built.n){ btn.disabled = true; btn.classList.add("off"); }
   btn.addEventListener("click", function(){
     if(!built.n) return;
@@ -1408,8 +1417,8 @@ function wireAmenity(btnId, swId, ctId, built, state){
   return btn;
 }
 
-var waterState = {on:true, varname:"--water"};
-var wcState    = {on:true, varname:"--wc"};
+var waterState = {on:false, varname:"--water"};
+var wcState    = {on:false, varname:"--wc"};
 var waterBtn = wireAmenity("waterToggle", "waterSw", "waterCount", waterL, waterState);
 var wcBtn    = wireAmenity("wcToggle", "wcSw", "wcCount", wcL, wcState);
 
@@ -1492,6 +1501,12 @@ if(vFile) vFile.addEventListener("change", function(){
 });
 vSummary();
 
+var quickOn = true;
+var quickBtn = document.getElementById("quickToggle"), quickSw = document.getElementById("quickSw");
+function paintQuick(){ if(!quickSw) return; var c = cssv("--face-no"); quickSw.style.borderColor = c; quickSw.style.background = quickOn ? c : "transparent"; quickSw.style.opacity = 0.9; }
+paintQuick();
+if(quickBtn) quickBtn.addEventListener("click", function(){ quickOn = !quickOn; quickBtn.classList.toggle("off", !quickOn); quickBtn.setAttribute("aria-pressed", String(quickOn)); paintQuick(); });
+
 /* ---- campable locations (exclusion-buffer model; see tools/campable_sites.py) ---- */
 map.createPane("faces").style.zIndex = 425;
 map.createPane("camp").style.zIndex  = 644;
@@ -1526,6 +1541,7 @@ if(window.CAMPABLE && CAMPABLE.sites){
     style: function(){ return {color: cssv("--camp"), weight: 1, opacity: 0.9, fillColor: cssv("--camp"), fillOpacity: 0.55}; },
     onEachFeature: function(f, ly){
       var p = FACE[f.properties.f] || {}, idx = f.properties.n;
+      ly.on("popupopen", function(){ if(quickOn) ly.closePopup(); });
       ly.bindPopup(function(){
         var cat = p.c, c = cat && CATS[cat] ? cssv(CATS[cat].varname) : cssv("--ink-3");
         var h = '<div class="pp">';
@@ -1542,11 +1558,21 @@ if(window.CAMPABLE && CAMPABLE.sites){
         h += '</div>';
         return h;
       }, {maxWidth: 320, minWidth: 240});
-      var vv = verify["tent:" + f.properties.f + "-" + idx];
-      if(vv) ly.setStyle({fillColor: vv.ok ? cssv("--camp") : cssv("--face-no"), color: vv.ok ? cssv("--camp") : cssv("--face-no"), fillOpacity: vv.ok ? 0.55 : 0.25});
+      var vid = "tent:" + f.properties.f + "-" + idx;
+      function paintV(){ var vv = verify[vid]; if(vv) ly.setStyle({fillColor: vv.ok ? cssv("--camp") : cssv("--face-no"), color: vv.ok ? cssv("--camp") : cssv("--face-no"), fillOpacity: vv.ok ? 0.55 : 0.2}); else ly.setStyle({fillColor: cssv("--camp"), color: cssv("--camp"), fillOpacity: 0.55}); }
+      paintV();
+      ly.on("click", function(ev){
+        if(!quickOn) return;                       // normal click: popup
+        L.DomEvent.stop(ev); ly.closePopup();
+        var vv = verify[vid], c0 = ly.getBounds().getCenter();
+        if(vv && vv.ok === false){ delete verify[vid]; }
+        else verify[vid] = {ok:false, reason:"other", note:"", lat:+c0.lat.toFixed(6), lon:+c0.lng.toFixed(6), label:(p.st || "") + " " + fp[0] + "x" + fp[1], when:new Date().toISOString().slice(0,10), who:(localStorage.getItem("ar102-who") || "")};
+        vSave(); paintV();
+      });
     }
   }).addTo(campGroup);
   if(campCt) campCt.textContent = CAMPABLE.total.toLocaleString() + " in the " + (CAMPABLE.area || "study area");
+  campGroup.eachLayer(function(l){ if(l.options && l.options.pane === "camp") l.options.bubblingMouseEvents = false; });
 } else if(campCt){ campCt.textContent = "not computed yet"; if(campBtn){ campBtn.disabled = true; campBtn.classList.add("off"); } }
 function paintCamp(){
   if(!campSw) return;
@@ -1573,7 +1599,7 @@ map.on("zoomend", syncCamp);
 
 
 /* ---- pins for an alternative footprint (tools/campable_sites.py --footprint WxL --pins) ---- */
-map.createPane("pins").style.zIndex = 646;
+map.createPane("pins").style.zIndex = 643;   /* under the green boxes so they stay clickable */
 var pinBtn = document.getElementById("pinToggle"), pinSw = document.getElementById("pinSw"), pinCt = document.getElementById("pinCount");
 var pinOn = true, pinGroup = L.layerGroup();
 if(window.CAMPABLE_PINS && CAMPABLE_PINS.pins){
