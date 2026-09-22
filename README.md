@@ -16,7 +16,7 @@ Over the districts sit three point layers: **surveyed sites** photographed in th
 - **`data/contributed-sites.json`** — sites submitted through the issue form, which carry typed coordinates because GitHub strips EXIF from uploads.
 - **`data/gis/`** — City of Berkeley right-of-way, street centerlines (with pavement width), AC Transit stops, hydrants, bike racks; and OpenStreetMap buildings, driveways, crossings, curb ramps and street furniture for the study area.
 - **`data/campable/`** + **`tools/ar102_rules.json`** — the campable-locations model's output and every distance it uses.
-- **`data/field/`** — ground truth: measured widths, painted curbs, reviewer exports from `review.html`, and `verify-*.geojson` checks made with the **Fits / Wrong** buttons in any location's popup on the map (a location marked wrong is excluded on the next run; "no sidewalk" or "too narrow" clears the whole stretch).
+- **`data/field/`** — ground truth: measured widths, painted curbs, reviewer exports from `review.html`, `verify-*.geojson` checks made with the **Fits / Wrong** buttons in any location's popup on the map, and `edits-*.geojson` from the map's **Editor mode** (click a box to turn it off/on, drag to move, rotate, add, delete; Export edits). The model applies them on the next run: off/deleted boxes are dropped, moved boxes keep their new place, added boxes are kept as reviewer-placed (a location marked wrong is excluded on the next run; "no sidewalk" or "too narrow" clears the whole stretch).
 
 ## The tools
 

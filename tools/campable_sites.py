@@ -379,9 +379,14 @@ def main():
                 excl.append(g.buffer(ft(pr.get("radius_ft", 2))))
             elif kind == "nogo" and g is not None:
                 excl.append(g)
-    # Field checks from the map's Fits / Wrong buttons (data/field/verify*.geojson)
+    # Field checks from the map's Fits / Wrong buttons (data/field/verify*.geojson, edits*.geojson)
     n_wrong = n_right = 0
-    for vf in sorted(glob.glob(os.path.join(field, "verify*.geojson"))):
+    box_edits = {}                        # id -> box feature from the editor
+    for vf in sorted(glob.glob(os.path.join(field, "edits*.geojson"))):
+        for f in load_geojson(vf):
+            if f["properties"].get("kind") == "box":
+                box_edits[f["properties"]["id"]] = f
+    for vf in sorted(glob.glob(os.path.join(field, "verify*.geojson")) + glob.glob(os.path.join(field, "edits*.geojson"))):
         for f in load_geojson(vf):
             pr = f["properties"]
             if pr.get("kind") != "verify" or not f.get("geometry"):
@@ -548,6 +553,28 @@ def main():
                     placed_tree = STRtree(placed)
                 tally[(cat, face["zone"], s["street"])] += best[0]
             faces.append({"type": "Feature", "geometry": mapping(transform(to_ll, curb)), "properties": face})
+
+    # ---- editor overrides (data/field/edits*.geojson) --------------------
+    if box_edits:
+        by_id = {"tent:%s-%d" % (f["properties"]["face"], f["properties"]["n"]): f for f in sites}
+        dropped = moved = added = 0
+        for bid, bf in box_edits.items():
+            pr = bf["properties"]
+            if bid in by_id and (pr.get("off") or pr.get("deleted")):
+                by_id[bid]["properties"]["edit"] = "off"; dropped += 1
+            elif bid in by_id and pr.get("moved") and bf.get("geometry"):
+                by_id[bid]["geometry"] = bf["geometry"]; by_id[bid]["properties"]["edit"] = "moved"; moved += 1
+            elif pr.get("added") and not pr.get("deleted") and bf.get("geometry"):
+                fid = pr.get("face") or ""
+                sites.append({"type": "Feature", "geometry": bf["geometry"],
+                              "properties": {"face": fid, "n": 900 + added, "street": next((x["properties"]["street"] for x in faces if x["properties"]["id"] == fid), "Added"),
+                                             "side": fid[-1:] if fid else "", "zone": None, "cat": None, "placement": "manual", "width_source": "reviewer", "edit": "added"}})
+                added += 1
+        sites[:] = [f for f in sites if f["properties"].get("edit") != "off"]
+        counts = Counter(f["properties"]["face"] for f in sites)
+        for fc_ in faces:
+            fc_["properties"]["count"] = counts.get(fc_["properties"]["id"], 0)
+        print("  editor: %d boxes turned off, %d moved, %d added" % (dropped, moved, added), file=sys.stderr)
 
     # ---- outputs --------------------------------------------------------
     total = sum(f["properties"]["count"] for f in faces)

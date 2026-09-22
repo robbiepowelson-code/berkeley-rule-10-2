@@ -757,6 +757,19 @@ h2{
 .vf .st{margin-top:4px;color:var(--ink-3)}
 .pin-ic.v-yes .px{background:var(--camp)} .pin-ic.v-no .px{background:var(--face-no);opacity:.75}
 .vsum{font-size:12px;color:var(--ink-3);margin:6px 0 0 2px} .vsum button{font:inherit;font-size:12px;padding:3px 8px;border:1px solid var(--line);border-radius:5px;background:transparent;color:var(--ink);cursor:pointer;margin-left:6px}
+
+/* editor mode */
+#edbar{position:absolute;top:12px;right:12px;z-index:900;display:none;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:8px 10px;font-size:12px;box-shadow:0 2px 10px rgba(0,0,0,.18);max-width:290px}
+#edbar.on{display:block}
+#edbar b{display:block;margin-bottom:4px}
+#edbar .row{display:flex;flex-wrap:wrap;gap:4px;margin:4px 0}
+#edbar button{font:inherit;font-size:12px;padding:5px 8px;border:1px solid var(--line);border-radius:6px;background:transparent;color:var(--ink);cursor:pointer}
+#edbar button.on{background:var(--camp);color:#fff;border-color:var(--camp)}
+#edbar button:disabled{opacity:.4;cursor:default}
+#edbar .hint{color:var(--ink-3);margin-top:4px;line-height:1.35}
+.leaflet-camp-pane path.sel{stroke:#FFB300;stroke-width:3px}
+body.editing .leaflet-camp-pane path{cursor:move}
+body.adding #map{cursor:crosshair}
 .lg{
   display:flex; align-items:center; gap:11px; width:100%; text-align:left;
   background:none; border:0; border-radius:7px; padding:8px 9px; cursor:pointer;
@@ -930,7 +943,8 @@ th.num{text-align:right; padding-right:0}
 
     <h2>Legend — click to toggle</h2>
     <div class="legend">
-      <button class="lg" data-cat="res" aria-pressed="true"><span class="sw"></span><span class="tt"><span class="name">Residential districts</span><br><span class="sub">Presumptively prohibited to campers by the City of Berkeley</span></span><span class="ac">3,680&nbsp;ac</span></button>
+            <button class="lg off" id="plainToggle" aria-pressed="false"><span class="sw" style="border-color:var(--ink-3)"></span><span class="tt"><span class="name">Zoning only</span><br><span class="sub">The original map: districts and streets, nothing else on top.</span></span></button>
+<button class="lg" data-cat="res" aria-pressed="true"><span class="sw"></span><span class="tt"><span class="name">Residential districts</span><br><span class="sub">Presumptively prohibited to campers by the City of Berkeley</span></span><span class="ac">3,680&nbsp;ac</span></button>
       <button class="lg" data-cat="mixres" aria-pressed="true"><span class="sw"></span><span class="tt"><span class="name">Mixed-use residential</span><br><span class="sub">Undefined in AR 10.2 — status unclear</span></span><span class="ac">138&nbsp;ac</span></button>
       <button class="lg" data-cat="com" aria-pressed="true"><span class="sw"></span><span class="tt"><span class="name">Commercial districts</span><br><span class="sub">Likely available for BHU members under AR 10.2, within its limits</span></span><span class="ac">357&nbsp;ac</span></button>
       <button class="lg" data-cat="man" aria-pressed="true"><span class="sw"></span><span class="tt"><span class="name">Manufacturing districts</span><br><span class="sub">Likely available for BHU members under AR 10.2, within its limits</span></span><span class="ac">313&nbsp;ac</span></button>
@@ -942,7 +956,7 @@ th.num{text-align:right; padding-right:0}
       <button class="lg" id="waterToggle" aria-pressed="true"><span class="sw" id="waterSw"></span><span class="tt"><span class="name">Drinking water</span><br><span class="sub">OpenStreetMap fountains &amp; taps — zoom in to see them</span></span><span class="ac" id="waterCount"></span></button>
       <button class="lg" id="wcToggle" aria-pressed="true"><span class="sw" id="wcSw"></span><span class="tt"><span class="name">Toilets</span><br><span class="sub">OpenStreetMap restrooms — zoom in to see them</span></span><span class="ac" id="wcCount"></span></button>
       <button class="lg" id="campToggle" aria-pressed="true"><span class="sw" id="campSw"></span><span class="tt"><span class="name">Campable locations</span><br><span class="sub">Where a <span id="campFp">7×16 ft</span> footprint fits under AR 10.2's clearances — <span id="campCount">…</span>. Zoom in for the tent outlines and block-face widths.</span></span></button>
-      <button class="lg" id="quickToggle" aria-pressed="true"><span class="sw" id="quickSw"></span><span class="tt"><span class="name">Click-to-check</span><br><span class="sub">On: click a green box to mark it wrong (red), click again to restore. Off: click opens the details popup.</span></span></button>
+      <button class="lg off" id="editToggle" aria-pressed="false"><span class="sw" id="editSw"></span><span class="tt"><span class="name">Editor mode</span><br><span class="sub">Click a box to turn it off or on, drag to move it, use the toolbar to rotate, add or delete. Edits export to a file the model reads.</span></span></button>
       <button class="lg" id="pinToggle" aria-pressed="true"><span class="sw" id="pinSw"></span><span class="tt"><span class="name">Larger footprint</span><br><span class="sub"><span id="pinCount">…</span></span></span></button>
       <div class="vsum" id="vsum">Tap any location to mark it right or wrong. <button id="vExport">Export checks</button><button id="vImport">Import</button><input type="file" id="vFile" accept=".geojson,.json" style="display:none"></div>
     </div>
@@ -1023,7 +1037,8 @@ th.num{text-align:right; padding-right:0}
 
     <p class="src"><a href="./report.html"><strong>How this map was made — method &amp; sources →</strong></a><br>Zoning data: City of Berkeley Community GIS Portal, “Zoning Districts” layer (Land Use Planning map service), retrieved Aug 27, 2026. Rule text: <a href="https://berkeleyca.gov/sites/default/files/documents/Administrative%20Regulation%2010.2.pdf" target="_blank" rel="noopener">Administrative Regulation 10.2</a> (City Manager, rev. Jan 2025). Basemap, when enabled: © OpenStreetMap contributors.</p>
   </aside>
-  <div id="map" role="application" aria-label="Map of Berkeley zoning districts with a plain-language reading of AR 10.2"></div>
+  <div id="edbar"><b>Editor</b><div class="row"><button id="edAdd">+ Add box</button><button id="edRotL" title="rotate 5° left">⟲ 5°</button><button id="edRotR" title="rotate 5° right">⟳ 5°</button><button id="edDel">Delete</button><button id="edUndo">Undo</button></div><div class="row"><button id="edExport">Export edits</button><button id="edReset">Reset all</button></div><div class="hint" id="edHint">Click a box: on/off. Drag: move. Select then rotate. Add box: click on the sidewalk.</div></div>
+<div id="map" role="application" aria-label="Map of Berkeley zoning districts with a plain-language reading of AR 10.2"></div>
 </div>
 
 <script>
@@ -1501,7 +1516,7 @@ if(vFile) vFile.addEventListener("change", function(){
 });
 vSummary();
 
-var quickOn = true;
+var quickOn = false;   /* on/off-by-click now lives in editor mode */
 var quickBtn = document.getElementById("quickToggle"), quickSw = document.getElementById("quickSw");
 function paintQuick(){ if(!quickSw) return; var c = cssv("--face-no"); quickSw.style.borderColor = c; quickSw.style.background = quickOn ? c : "transparent"; quickSw.style.opacity = 0.9; }
 paintQuick();
@@ -1536,44 +1551,194 @@ if(window.CAMPABLE && CAMPABLE.sites){
         {sticky:true, direction:"top", opacity:0.95});
     }
   }).addTo(faceGroup);
-  L.geoJSON(CAMPABLE.sites, {
-    pane: "camp",
-    style: function(){ return {color: cssv("--camp"), weight: 1, opacity: 0.9, fillColor: cssv("--camp"), fillOpacity: 0.55}; },
-    onEachFeature: function(f, ly){
-      var p = FACE[f.properties.f] || {}, idx = f.properties.n;
-      ly.on("popupopen", function(){ if(quickOn) ly.closePopup(); });
-      ly.bindPopup(function(){
-        var cat = p.c, c = cat && CATS[cat] ? cssv(CATS[cat].varname) : cssv("--ink-3");
-        var h = '<div class="pp">';
-        h += '<div class="code">CAMPABLE LOCATION · ' + esc(p.f) + '-' + idx + (p.z ? ' · ' + esc(p.z) : '') + '</div>';
-        h += '<h3>' + esc(p.st) + '</h3>';
-        h += '<span class="tag" style="color:' + c + ';border-color:' + c + '">' + esc(cat && CATS[cat] ? CATS[cat].name : "Outside the zoning layer") + '</span>';
-        h += '<div class="body">A ' + fp[0] + '×' + fp[1] + ' ft footprint placed ' +
-             (p.pl === "curb" ? 'along the curb, leaving the path of travel on the building side' : 'against the property line, leaving the path of travel on the curb side') +
-             ', clear of the building-line setback, curb setback, intersection corners, hydrants, bus stops and bike racks in <code>tools/ar102_rules.json</code>.</div>';
-        h += '<div class="meta">Sidewalk width from ' + (p.ws === "measured" ? 'a field measurement' : 'the city GIS (right-of-way minus pavement width)') +
-             '.<br>A model output, not a finding that this spot is lawful, safe or free — driveways, entrances, painted curbs and posted areas are only excluded where someone has mapped them.</div>';
-        var c0 = ly.getBounds().getCenter();
-        h += vBlock("tent:" + f.properties.f + "-" + idx, c0.lat.toFixed(6), c0.lng.toFixed(6), (p.st || "") + " " + fp[0] + "x" + fp[1]);
-        h += '</div>';
-        return h;
-      }, {maxWidth: 320, minWidth: 240});
-      var vid = "tent:" + f.properties.f + "-" + idx;
-      function paintV(){ var vv = verify[vid]; if(vv) ly.setStyle({fillColor: vv.ok ? cssv("--camp") : cssv("--face-no"), color: vv.ok ? cssv("--camp") : cssv("--face-no"), fillOpacity: vv.ok ? 0.55 : 0.2}); else ly.setStyle({fillColor: cssv("--camp"), color: cssv("--camp"), fillOpacity: 0.55}); }
-      paintV();
-      ly.on("click", function(ev){
-        if(!quickOn) return;                       // normal click: popup
-        L.DomEvent.stop(ev); ly.closePopup();
-        var vv = verify[vid], c0 = ly.getBounds().getCenter();
-        if(vv && vv.ok === false){ delete verify[vid]; }
-        else verify[vid] = {ok:false, reason:"other", note:"", lat:+c0.lat.toFixed(6), lon:+c0.lng.toFixed(6), label:(p.st || "") + " " + fp[0] + "x" + fp[1], when:new Date().toISOString().slice(0,10), who:(localStorage.getItem("ar102-who") || "")};
-        vSave(); paintV();
-      });
-    }
-  }).addTo(campGroup);
-  if(campCt) campCt.textContent = CAMPABLE.total.toLocaleString() + " in the " + (CAMPABLE.area || "study area");
+  /* --- boxes: model output plus the editor's overrides (localStorage "ar102-edits") --- */
+  var edits = {};                         // id -> {off:bool, ring:[[lon,lat]x4]|null, added:bool, deleted:bool, face:str}
+  try { edits = JSON.parse(localStorage.getItem("ar102-edits") || "{}"); } catch(e){}
+  var undoStack = [];
+  function edSave(){ try { localStorage.setItem("ar102-edits", JSON.stringify(edits)); } catch(e){} edCount(); }
+  var BOX = {};                           // id -> {ly, p (face props), idx, base ring}
+  var selected = null;
+  function ringOf(ly){ return ly.getLatLngs()[0].map(function(ll){ return [+ll.lng.toFixed(7), +ll.lat.toFixed(7)]; }); }
+  function paintBox(id){
+    var b = BOX[id]; if(!b) return;
+    var e = edits[id] || {}, vv = verify[id];
+    var off = e.off || (vv && vv.ok === false);
+    var col = off ? cssv("--face-no") : cssv("--camp");
+    b.ly.setStyle({fillColor: col, color: col, fillOpacity: off ? 0.18 : 0.55, weight: 1, dashArray: e.ring || e.added ? "4 3" : null});
+    if(b.ly._path) b.ly._path.classList.toggle("sel", selected === id);
+  }
+  function edCount(){
+    var on = 0, off = 0; Object.keys(BOX).forEach(function(id){ var e = edits[id] || {}; if(e.deleted) return; (e.off || (verify[id] && verify[id].ok === false)) ? off++ : on++; });
+    if(campCt) campCt.textContent = on.toLocaleString() + " on, " + off + " off, in the " + (CAMPABLE.area || "study area");
+  }
+  function makeBox(id, ring, p, idx, added){
+    var ly = L.polygon(ring.map(function(c){ return [c[1], c[0]]; }), {pane:"camp", bubblingMouseEvents:false});
+    BOX[id] = {ly: ly, p: p, idx: idx, base: ring, added: !!added};
+    ly.bindPopup(function(){
+      var cat = p.c, c = cat && CATS[cat] ? cssv(CATS[cat].varname) : cssv("--ink-3");
+      var h = '<div class="pp">';
+      h += '<div class="code">' + (added ? 'ADDED BY HAND' : 'CAMPABLE LOCATION') + ' · ' + esc(id.replace(/^tent:/, "")) + (p.z ? ' · ' + esc(p.z) : '') + '</div>';
+      h += '<h3>' + esc(p.st || "Sidewalk") + '</h3>';
+      h += '<span class="tag" style="color:' + c + ';border-color:' + c + '">' + esc(cat && CATS[cat] ? CATS[cat].name : "Outside the zoning layer") + '</span>';
+      h += '<div class="body">A ' + fp[0] + '×' + fp[1] + ' ft footprint' + (added ? ' placed by a reviewer.' : ' placed ' +
+           (p.pl === "curb" ? 'along the curb, leaving the path of travel on the building side' : 'against the property line, leaving the path of travel on the curb side') +
+           ', clear of the setbacks and obstructions in <code>tools/ar102_rules.json</code>.') + '</div>';
+      if(!added) h += '<div class="meta">Sidewalk width from ' + (p.ws === "measured" ? 'a field measurement' : 'the city GIS (right-of-way minus pavement width)') +
+           '.<br>A model output, not a finding that this spot is lawful, safe or free.</div>';
+      var c0 = ly.getBounds().getCenter();
+      h += vBlock(id, c0.lat.toFixed(6), c0.lng.toFixed(6), (p.st || "") + " " + fp[0] + "x" + fp[1]);
+      h += '</div>';
+      return h;
+    }, {maxWidth: 320, minWidth: 240});
+    ly.on("popupopen", function(){ if(quickOn || editOn) ly.closePopup(); });
+
+    /* click = toggle on/off (quick mode or editor); drag = move (editor) */
+    var drag = null, justDragged = false;
+    ly.on("mousedown", function(ev){
+      if(!editOn) return;
+      L.DomEvent.stop(ev);
+      map.dragging.disable();
+      drag = {start: ev.containerPoint, orig: ly.getLatLngs()[0].map(function(l){ return map.latLngToContainerPoint(l); }), moved: false};
+      function mm(e){
+        var pt = map.mouseEventToContainerPoint(e.originalEvent || e);
+        var dx = pt.x - drag.start.x, dy = pt.y - drag.start.y;
+        if(Math.abs(dx) + Math.abs(dy) > 3) drag.moved = true;
+        if(drag.moved) ly.setLatLngs([drag.orig.map(function(o){ return map.containerPointToLatLng(L.point(o.x + dx, o.y + dy)); })]);
+      }
+      function mu(){
+        map.off("mousemove", mm); map.off("mouseup", mu); map.dragging.enable();
+        if(drag && drag.moved){
+          pushUndo(id); edits[id] = Object.assign({}, edits[id] || {}, {ring: ringOf(ly), face: p.f || null}); edSave(); select(id);
+          justDragged = true; setTimeout(function(){ justDragged = false; }, 50);
+        }
+        drag = null;
+      }
+      map.on("mousemove", mm); map.on("mouseup", mu);
+    });
+    ly.on("click", function(ev){
+      if(justDragged || (drag && drag.moved)){ return; }
+      if(!(quickOn || editOn)) return;            // plain mode: popup
+      L.DomEvent.stop(ev); ly.closePopup();
+      if(editOn){ select(id); }
+      pushUndo(id);
+      var e = edits[id] || {};
+      e.off = !(e.off || (verify[id] && verify[id].ok === false));
+      if(!e.off && verify[id] && verify[id].ok === false) delete verify[id];
+      if(e.off){ var c0 = ly.getBounds().getCenter(); verify[id] = {ok:false, reason:"other", note:"", lat:+c0.lat.toFixed(6), lon:+c0.lng.toFixed(6), label:(p.st || "") + " " + fp[0] + "x" + fp[1], when:new Date().toISOString().slice(0,10), who:(localStorage.getItem("ar102-who") || "")}; }
+      edits[id] = e; vSave(); edSave(); paintBox(id);
+    });
+    ly.addTo(campGroup);
+    paintBox(id);
+    return ly;
+  }
+  CAMPABLE.sites.features.forEach(function(f){
+    var id = "tent:" + f.properties.f + "-" + f.properties.n;
+    var e = edits[id] || {};
+    if(e.deleted) return;
+    makeBox(id, e.ring || f.geometry.coordinates[0], FACE[f.properties.f] || {}, f.properties.n, false);
+  });
+  Object.keys(edits).forEach(function(id){ var e = edits[id]; if(e.added && !e.deleted && e.ring) makeBox(id, e.ring, Object.assign({st: e.st || "Added"}, FACE[e.face] || {}), 0, true); });
+  edCount();
+
+  /* --- editor toolbar --- */
+  var editOn = false, adding = false;
+  var edBtn = document.getElementById("editToggle"), edSw = document.getElementById("editSw"), edbar = document.getElementById("edbar");
+  function select(id){ var prev = selected; selected = id; if(prev) paintBox(prev); if(id) paintBox(id); ["edRotL","edRotR","edDel"].forEach(function(b){ document.getElementById(b).disabled = !selected; }); }
+  function pushUndo(id){ undoStack.push({id: id, e: JSON.parse(JSON.stringify(edits[id] || null)), v: JSON.parse(JSON.stringify(verify[id] || null)), ring: BOX[id] ? ringOf(BOX[id].ly) : null}); if(undoStack.length > 60) undoStack.shift(); }
+  function paintEd(){ if(edSw){ var c = cssv("--camp"); edSw.style.borderColor = c; edSw.style.background = editOn ? c : "transparent"; edSw.style.opacity = 0.9; } }
+  paintEd();
+  function setEdit(on){
+    editOn = on; adding = false; document.body.classList.toggle("editing", on); document.body.classList.toggle("adding", false);
+    document.getElementById("edAdd").classList.remove("on");
+    edbar.classList.toggle("on", on); if(edBtn){ edBtn.classList.toggle("off", !on); edBtn.setAttribute("aria-pressed", String(on)); }
+    if(on && map.getZoom() < 17) map.setZoom(17);
+    if(!on) select(null);
+    paintEd();
+  }
+  if(edBtn) edBtn.addEventListener("click", function(){ setEdit(!editOn); });
+  window.__setEdit = setEdit;
+  function rotateSel(deg){
+    if(!selected || !BOX[selected]) return;
+    var ly = BOX[selected].ly, pts = ly.getLatLngs()[0].map(function(l){ return map.latLngToLayerPoint(l); });
+    var cx = pts.reduce(function(a, q){ return a + q.x; }, 0) / pts.length, cy = pts.reduce(function(a, q){ return a + q.y; }, 0) / pts.length;
+    var r = deg * Math.PI / 180, cs = Math.cos(r), sn = Math.sin(r);
+    pushUndo(selected);
+    ly.setLatLngs([pts.map(function(q){ var x = q.x - cx, y = q.y - cy; return map.layerPointToLatLng(L.point(cx + x * cs - y * sn, cy + x * sn + y * cs)); })]);
+    edits[selected] = Object.assign({}, edits[selected] || {}, {ring: ringOf(ly), face: BOX[selected].p.f || null}); edSave(); paintBox(selected);
+  }
+  document.getElementById("edRotL").addEventListener("click", function(){ rotateSel(-5); });
+  document.getElementById("edRotR").addEventListener("click", function(){ rotateSel(5); });
+  document.getElementById("edDel").addEventListener("click", function(){
+    if(!selected || !BOX[selected]) return;
+    pushUndo(selected);
+    var id = selected; edits[id] = Object.assign({}, edits[id] || {}, {deleted: true}); delete verify[id];
+    campGroup.removeLayer(BOX[id].ly); delete BOX[id]; select(null); vSave(); edSave();
+  });
+  document.getElementById("edUndo").addEventListener("click", function(){
+    var u = undoStack.pop(); if(!u) return;
+    if(u.e) edits[u.id] = u.e; else delete edits[u.id];
+    if(u.v) verify[u.id] = u.v; else delete verify[u.id];
+    if(edits[u.id] && edits[u.id].deleted){ /* undoing an add */ if(BOX[u.id]){ campGroup.removeLayer(BOX[u.id].ly); delete BOX[u.id]; } }
+    else if(!BOX[u.id] && u.ring){ makeBox(u.id, u.ring, (edits[u.id] && edits[u.id].added) ? {st: edits[u.id].st || "Added"} : {}, 0, !!(edits[u.id] && edits[u.id].added)); }
+    else if(BOX[u.id] && u.ring){ BOX[u.id].ly.setLatLngs([u.ring.map(function(c){ return [c[1], c[0]]; })]); }
+    if(BOX[u.id]) paintBox(u.id);
+    vSave(); edSave();
+  });
+  document.getElementById("edAdd").addEventListener("click", function(){ adding = !adding; this.classList.toggle("on", adding); document.body.classList.toggle("adding", adding); document.getElementById("edHint").textContent = adding ? "Click where the box should go - it lines up with the nearest sidewalk. Click Add box again to stop." : "Click a box: on/off. Drag: move. Select then rotate. Add box: click on the sidewalk."; });
+  function nearestFaceBearing(ll){
+    var best = null, bd = 1e9, pt = map.latLngToLayerPoint(ll);
+    CAMPABLE.faces.features.forEach(function(f){
+      var cs = f.geometry.coordinates;
+      for(var i = 1; i < cs.length; i++){
+        var a = map.latLngToLayerPoint([cs[i-1][1], cs[i-1][0]]), b = map.latLngToLayerPoint([cs[i][1], cs[i][0]]);
+        var d = L.LineUtil.pointToSegmentDistance(pt, a, b);
+        if(d < bd){ bd = d; best = {ang: Math.atan2(b.y - a.y, b.x - a.x), face: f.properties.f, st: f.properties.st}; }
+      }
+    });
+    return best || {ang: 0, face: null, st: "Added"};
+  }
+  map.on("click", function(ev){
+    if(!editOn || !adding) return;
+    var nf = nearestFaceBearing(ev.latlng);
+    var c = map.latLngToLayerPoint(ev.latlng);
+    var mpp = 40075016.686 * Math.cos(ev.latlng.lat * Math.PI / 180) / (256 * Math.pow(2, map.getZoom()));   // metres per layer pixel
+    var L2 = fp[1] * 0.3048 / mpp / 2, W2 = fp[0] * 0.3048 / mpp / 2, cs = Math.cos(nf.ang), sn = Math.sin(nf.ang);
+    var ring = [[-L2, -W2], [L2, -W2], [L2, W2], [-L2, W2]].map(function(q){ return map.layerPointToLatLng(L.point(c.x + q[0] * cs - q[1] * sn, c.y + q[0] * sn + q[1] * cs)); }).map(function(l){ return [+l.lng.toFixed(7), +l.lat.toFixed(7)]; });
+    var id = "new:" + Date.now().toString(36);
+    edits[id] = {added: true, ring: ring, face: nf.face, st: nf.st};
+    makeBox(id, ring, Object.assign({st: nf.st}, FACE[nf.face] || {}), 0, true);
+    undoStack.push({id: id, e: {deleted: true, added: true, ring: ring}, v: null, ring: null});
+    edSave(); select(id);
+  });
+  document.getElementById("edReset").addEventListener("click", function(){
+    if(!confirm("Throw away every edit and check on this device?")) return;
+    edits = {}; verify = {}; undoStack = []; vSave(); edSave(); location.reload();
+  });
+  document.getElementById("edExport").addEventListener("click", function(){
+    var who = prompt("Your initials (for the record):", localStorage.getItem("ar102-who") || "") || "";
+    try { localStorage.setItem("ar102-who", who); } catch(e){}
+    var feats = [];
+    Object.keys(edits).forEach(function(id){
+      var e = edits[id]; var ring = e.ring || (BOX[id] ? ringOf(BOX[id].ly) : null);
+      feats.push({type:"Feature", geometry: ring ? {type:"Polygon", coordinates:[ring.concat([ring[0]])]} : null,
+        properties:{kind:"box", id:id, off:!!e.off, deleted:!!e.deleted, added:!!e.added, moved:!!(e.ring && !e.added), face:e.face || (id.split(":")[1] || "").replace(/-\d+$/, ""), footprint_ft:fp, who:who, when:new Date().toISOString().slice(0,10)}});
+    });
+    Object.keys(verify).forEach(function(k){ var v = verify[k]; feats.push({type:"Feature", geometry:{type:"Point", coordinates:[v.lon, v.lat]},
+      properties:{kind:"verify", id:k, ok:v.ok, reason:v.reason || "", note:v.note || "", label:v.label || "", when:v.when, who:v.who || who}}); });
+    if(!feats.length){ alert("No edits yet."); return; }
+    var blob = new Blob([JSON.stringify({type:"FeatureCollection", name:"AR 10.2 map edits", footprint_ft: fp, features:feats}, null, 1)], {type:"application/geo+json"});
+    var a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = "edits-" + new Date().toISOString().slice(0, 10) + ".geojson";
+    document.body.appendChild(a); a.click(); a.remove();
+  });
+  document.addEventListener("keydown", function(e){
+    if(!editOn || /input|textarea|select/i.test(e.target.tagName)) return;
+    if(e.key === "[") rotateSel(-5); if(e.key === "]") rotateSel(5);
+    if(e.key === "Delete" || e.key === "Backspace"){ document.getElementById("edDel").click(); }
+    if((e.metaKey || e.ctrlKey) && e.key === "z"){ e.preventDefault(); document.getElementById("edUndo").click(); }
+    if(e.key === "Escape"){ if(adding) document.getElementById("edAdd").click(); else select(null); }
+    if(e.key === "a") document.getElementById("edAdd").click();
+  });
   var cfp = document.getElementById("campFp"); if(cfp) cfp.textContent = fp[0] + "\u00d7" + fp[1] + " ft";
-  campGroup.eachLayer(function(l){ if(l.options && l.options.pane === "camp") l.options.bubblingMouseEvents = false; });
 } else if(campCt){ campCt.textContent = "not computed yet"; if(campBtn){ campBtn.disabled = true; campBtn.classList.add("off"); } }
 function paintCamp(){
   if(!campSw) return;
@@ -1625,7 +1790,7 @@ if(window.CAMPABLE_PINS && CAMPABLE_PINS.pins){
   pinGroup.addTo(map);
   if(pinCt) pinCt.textContent = CAMPABLE_PINS.total.toLocaleString() + ' places a ' + PF[0] + '\u00d7' + PF[1] + '\u00a0ft footprint fits in the ' + (CAMPABLE_PINS.area || 'study area');
   if(pinBtn) pinBtn.querySelector('.name').textContent = PF[0] + '\u00d7' + PF[1] + ' ft locations';
-} else if(pinCt){ pinCt.textContent = 'not computed'; if(pinBtn){ pinBtn.disabled = true; pinBtn.classList.add('off'); } }
+} else if(pinBtn){ pinBtn.style.display = 'none'; }
 function paintPin(){ if(!pinSw) return; var c = cssv("--pin"); pinSw.style.borderColor = c; pinSw.style.background = pinOn ? c : "transparent"; pinSw.style.opacity = 0.9; }
 paintPin();
 if(pinBtn) pinBtn.addEventListener("click", function(){
@@ -1635,6 +1800,28 @@ if(pinBtn) pinBtn.addEventListener("click", function(){
   paintPin();
 });
 
+
+/* ---- zoning-only view: the original map ---- */
+var plainBtn = document.getElementById("plainToggle"), plainOn = false, plainSaved = null;
+if(plainBtn) plainBtn.addEventListener("click", function(){
+  plainOn = !plainOn; plainBtn.classList.toggle("off", !plainOn); plainBtn.setAttribute("aria-pressed", String(plainOn));
+  plainBtn.querySelector(".sw").style.background = plainOn ? cssv("--ink-3") : "transparent";
+  if(plainOn){
+    plainSaved = {site: typeof siteOn !== "undefined" ? siteOn : true, water: waterState.on, wc: wcState.on, camp: campOn, pin: typeof pinOn !== "undefined" ? pinOn : true, edit: typeof editOn !== "undefined" && editOn};
+    if(typeof siteOn !== "undefined" && siteOn && siteBtn) siteBtn.click();
+    if(waterState.on && waterBtn) waterBtn.click();
+    if(wcState.on && wcBtn) wcBtn.click();
+    if(campOn && campBtn) campBtn.click();
+    if(typeof pinOn !== "undefined" && pinOn && pinBtn && !pinBtn.disabled) pinBtn.click();
+    if(typeof editOn !== "undefined" && editOn && window.__setEdit) window.__setEdit(false);
+  } else if(plainSaved){
+    if(plainSaved.site && siteBtn && !siteOn) siteBtn.click();
+    if(plainSaved.water && waterBtn && !waterState.on) waterBtn.click();
+    if(plainSaved.wc && wcBtn && !wcState.on) wcBtn.click();
+    if(plainSaved.camp && campBtn && !campOn) campBtn.click();
+    if(plainSaved.pin && pinBtn && !pinBtn.disabled && !pinOn) pinBtn.click();
+  }
+});
 /* fit */
 map.fitBounds(L.geoJSON(ZONING).getBounds(), {padding:[10,10]});
 syncStreets();
