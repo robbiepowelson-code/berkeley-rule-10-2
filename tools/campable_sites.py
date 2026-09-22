@@ -44,6 +44,7 @@ Needs shapely>=2 and pyproj.
 
 import argparse
 import csv
+import glob
 import json
 import math
 import os
@@ -143,7 +144,8 @@ def rnd(coords, nd=5):
 def inject(index_html, sites, faces, summary, area_name):
     """Rewrite the CAMPABLE block in index.html with a compact copy of the results."""
     keep = {"id": "f", "street": "st", "side": "sd", "width_ft": "w", "width_source": "ws",
-            "path_ft": "p", "depth_ft": "d", "count": "n", "zone": "z", "cat": "c", "placement": "pl"}
+            "path_ft": "p", "depth_ft": "d", "count": "n", "zone": "z", "cat": "c", "placement": "pl",
+            "review": "rv"}
     fc_faces = {"type": "FeatureCollection", "features": [
         {"type": "Feature",
          "geometry": {"type": "LineString",
@@ -276,6 +278,84 @@ def main():
             excl.append(unary_union([p.buffer(ft(P[key])) for p in pts]))
         print("  %-18s %4d points, %s ft clear" % (fname, len(pts), P[key]), file=sys.stderr)
 
+    # OpenStreetMap obstacles and buildings (data/gis/osm-*.geojson, see tools/fetch_osm.md)
+    OSM = R.get("osm", {})
+    osm_pts = load_geojson(os.path.join(gis, "osm-points.geojson"), required=False)
+    osm_ways = load_geojson(os.path.join(gis, "osm-ways.geojson"), required=False)
+    osm_bld = []
+    for i in range(1, 9):
+        osm_bld += load_geojson(os.path.join(gis, "osm-buildings-%d.geojson" % i), required=False)
+    osm_used = Counter()
+    if osm_pts:
+        radii = OSM.get("point_radius_ft", {})
+        for f in osm_pts:
+            k = f["properties"]["k"].split(":")[0]
+            r = radii.get(k)
+            if not r:
+                continue
+            g = transform(to_m, shape(f["geometry"]))
+            if g.intersects(bbox):
+                excl.append(g.buffer(ft(r)))
+                osm_used[k] += 1
+    if osm_ways:
+        for f in osm_ways:
+            k = f["properties"]["k"].split(":")[0]
+            t = f["properties"].get("t", {})
+            g = transform(to_m, shape(f["geometry"]))
+            if not g.intersects(bbox):
+                continue
+            if k == "service":                       # driveways crossing the sidewalk
+                try:
+                    w = float(str(t.get("width", "")).split()[0])
+                except (ValueError, IndexError):
+                    w = OSM.get("driveway_width_ft", 10) * FT
+                excl.append(g.buffer(w / 2 + ft(OSM.get("driveway_flare_ft", 2))))
+                osm_used["driveway"] += 1
+            elif k == "footway" and f["properties"]["k"] == "footway:crossing":
+                excl.append(g.buffer(ft(OSM.get("crossing_ft", 4))))
+                osm_used["crosswalk"] += 1
+            elif k in ("fence", "wall", "retaining_wall", "hedge", "bollard", "jersey_barrier", "kerb", "gate"):
+                excl.append(g.buffer(ft(OSM.get("barrier_ft", 0.5))))
+                osm_used["barrier"] += 1
+    building_edges = None
+    if osm_bld:
+        polys = [polygonal(make_valid(transform(to_m, shape(f["geometry"])))) for f in osm_bld]
+        polys = [g for g in polys if not g.is_empty and g.intersects(bbox)]
+        building_edges = unary_union(polys).boundary
+        osm_used["building"] = len(polys)
+    if osm_used:
+        print("  OSM: " + ", ".join("%s %d" % kv for kv in osm_used.most_common()), file=sys.stderr)
+
+    # Reviewer output from review.html (data/field/review*.geojson)
+    review_faces = {}          # face id -> properties
+    drawn = defaultdict(lambda: defaultdict(list))   # face id -> kind -> [geoms]
+    review_files = sorted(glob.glob(os.path.join(field, "review*.geojson")))
+    n_rev = 0
+    for rf in review_files:
+        for f in load_geojson(rf):
+            pr = f["properties"]
+            kind = pr.get("kind")
+            g = transform(to_m, shape(f["geometry"])) if f.get("geometry") else None
+            n_rev += 1
+            if kind == "face":
+                review_faces[pr["face"]] = pr
+            elif kind in ("curb", "building") and g is not None:
+                drawn[pr.get("face")][kind].append(g)
+            elif kind == "driveway" and g is not None:
+                excl.append(g.buffer(ft(pr.get("width_ft", OSM.get("driveway_width_ft", 10))) / 2 + ft(OSM.get("driveway_flare_ft", 2))))
+            elif kind == "curbpaint" and g is not None:
+                if (pr.get("color") or "").lower() in R["curb_zones"]["colors_excluded"]:
+                    excl.append(g.buffer(ft(R["curb_zones"]["adjacent_ft"])))
+            elif kind == "entrance" and g is not None:
+                excl.append(g.buffer(ft(R["building_setback"]["ft"])))
+            elif kind == "obstacle" and g is not None:
+                excl.append(g.buffer(ft(pr.get("radius_ft", 2))))
+            elif kind == "nogo" and g is not None:
+                excl.append(g)
+    if review_files:
+        print("  %d reviewer features from %d review file(s); %d faces reviewed" %
+              (n_rev, len(review_files), len(review_faces)), file=sys.stderr)
+
     CZ = R["curb_zones"]
     for f in load_geojson(os.path.join(field, "curb_zones.geojson"), required=False):
         if (f["properties"].get("color") or "").lower() in CZ["colors_excluded"]:
@@ -337,11 +417,30 @@ def main():
                 continue
             # sidewalk width: curb line -> property line, sampled every 3 m
             n = max(3, int(curb.length // 3))
-            ds = [property_line.distance(curb.interpolate(i / (n - 1), normalized=True)) for i in range(n)]
-            ds.sort()
+            samples = [curb.interpolate(i / (n - 1), normalized=True) for i in range(n)]
+            ds = sorted(property_line.distance(pt) for pt in samples)
             w_m = ds[len(ds) // 2]
             w_src = s["width_source"]
+            if building_edges is not None:
+                db = sorted(building_edges.distance(pt) for pt in samples)
+                bm = db[len(db) // 2]
+                if bm < w_m - 0.3 and bm < 40 * FT:
+                    w_m, w_src = bm, "osm-building"
             key = (s["id"], side)
+            fid = key[0] + side
+            status = None
+            if fid in drawn and drawn[fid]["curb"] and drawn[fid]["building"]:
+                cl = unary_union(drawn[fid]["curb"]); bl = unary_union(drawn[fid]["building"])
+                dd = sorted(bl.distance(cl.interpolate(i / 9.0, normalized=True)) for i in range(10))
+                w_m, w_src = dd[5], "drawn"
+                curb = cl if cl.geom_type == "LineString" else curb
+            if fid in review_faces:
+                rv = review_faces[fid]
+                status = rv.get("status")
+                if status == "no-sidewalk":
+                    w_m, w_src = 0.0, "reviewed"
+                elif rv.get("width_ft") not in (None, ""):
+                    w_m, w_src = ft(float(rv["width_ft"])), "reviewed-" + (rv.get("method") or "imagery")
             if key in measured:
                 w_m, w_src = ft(measured[key]), "measured"
             w_ft = w_m / FT
@@ -363,8 +462,11 @@ def main():
                 "zone": zp["z"] if zp else None, "district": zp["d"] if zp else None,
                 "cat": cat, "zone_dist_m": round(zd, 1) if zp else None,
                 "campable_zone": in_zone, "count": 0, "placement": None,
+                "review": status,
             }
-            if depth_m < short_m:
+            if w_m <= 0:
+                why["reviewed: no sidewalk"] += 1
+            elif depth_m < short_m:
                 why["strip too shallow for footprint"] += 1
             elif not (in_zone or args.all_zones):
                 why["not a campable zoning category"] += 1
