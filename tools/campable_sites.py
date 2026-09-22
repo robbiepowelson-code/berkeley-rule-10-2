@@ -379,6 +379,25 @@ def main():
                 excl.append(g.buffer(ft(pr.get("radius_ft", 2))))
             elif kind == "nogo" and g is not None:
                 excl.append(g)
+    # Field checks from the map's Fits / Wrong buttons (data/field/verify*.geojson)
+    n_wrong = n_right = 0
+    for vf in sorted(glob.glob(os.path.join(field, "verify*.geojson"))):
+        for f in load_geojson(vf):
+            pr = f["properties"]
+            if pr.get("kind") != "verify" or not f.get("geometry"):
+                continue
+            if pr.get("ok"):
+                n_right += 1
+                continue
+            n_wrong += 1
+            g = transform(to_m, shape(f["geometry"]))
+            r = ft(max(short_ft, long_ft) / 2 + 1)          # wipe the footprint that was there
+            if (pr.get("reason") or "").startswith("no sidewalk") or (pr.get("reason") or "") == "too narrow":
+                r = ft(25)                                   # the whole stretch is wrong, not just the spot
+            excl.append(g.buffer(r))
+    if n_wrong or n_right:
+        print("  field checks: %d marked right, %d marked wrong (excluded)" % (n_right, n_wrong), file=sys.stderr)
+
     if review_files:
         print("  %d reviewer features from %d review file(s); %d faces reviewed" %
               (n_rev, len(review_files), len(review_faces)), file=sys.stderr)

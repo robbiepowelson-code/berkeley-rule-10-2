@@ -747,6 +747,16 @@ h2{
 
 /* legend */
 .legend{display:flex; flex-direction:column; gap:2px}
+
+/* field verification of model locations */
+.vf{margin-top:8px;padding-top:8px;border-top:1px solid var(--line);font-size:12px}
+.vf .vb{display:inline-block;padding:5px 10px;margin:2px 4px 2px 0;border:1px solid var(--line);border-radius:6px;background:transparent;color:var(--ink);font:inherit;font-size:12px;cursor:pointer}
+.vf .vb.yes{border-color:var(--camp);color:var(--camp)} .vf .vb.no{border-color:var(--face-no);color:var(--face-no)}
+.vf .vb.on.yes{background:var(--camp);color:#fff} .vf .vb.on.no{background:var(--face-no);color:#fff}
+.vf select,.vf input{font:inherit;font-size:12px;padding:3px 6px;border:1px solid var(--line);border-radius:5px;background:transparent;color:var(--ink);max-width:100%}
+.vf .st{margin-top:4px;color:var(--ink-3)}
+.pin-ic.v-yes .px{background:var(--camp)} .pin-ic.v-no .px{background:var(--face-no);opacity:.75}
+.vsum{font-size:12px;color:var(--ink-3);margin:6px 0 0 2px} .vsum button{font:inherit;font-size:12px;padding:3px 8px;border:1px solid var(--line);border-radius:5px;background:transparent;color:var(--ink);cursor:pointer;margin-left:6px}
 .lg{
   display:flex; align-items:center; gap:11px; width:100%; text-align:left;
   background:none; border:0; border-radius:7px; padding:8px 9px; cursor:pointer;
@@ -932,6 +942,7 @@ th.num{text-align:right; padding-right:0}
       <button class="lg" id="wcToggle" aria-pressed="true"><span class="sw" id="wcSw"></span><span class="tt"><span class="name">Toilets</span><br><span class="sub">OpenStreetMap restrooms — zoom in to see them</span></span><span class="ac" id="wcCount"></span></button>
       <button class="lg" id="campToggle" aria-pressed="true"><span class="sw" id="campSw"></span><span class="tt"><span class="name">Campable locations</span><br><span class="sub">Where a tent fits under AR 10.2's clearances — <span id="campCount">…</span>. Zoom in for the tent outlines and block-face widths.</span></span></button>
       <button class="lg" id="pinToggle" aria-pressed="true"><span class="sw" id="pinSw"></span><span class="tt"><span class="name">Larger footprint</span><br><span class="sub"><span id="pinCount">…</span></span></span></button>
+      <div class="vsum" id="vsum">Tap any location to mark it right or wrong. <button id="vExport">Export checks</button><button id="vImport">Import</button><input type="file" id="vFile" accept=".geojson,.json" style="display:none"></div>
     </div>
 
     <h2>What the rule’s text says</h2>
@@ -1418,6 +1429,69 @@ function syncAmenities(){
 map.on("zoomend", syncAmenities);
 
 
+
+/* ---- field verification: mark a model location right or wrong ---- */
+var VREASONS = ["no sidewalk here", "too narrow", "driveway", "red / blue / white curb", "building entrance", "tree, pole or furniture", "bus stop or ramp", "other"];
+var verify = {};
+try { verify = JSON.parse(localStorage.getItem("ar102-verify") || "{}"); } catch(e){}
+function vSave(){ try { localStorage.setItem("ar102-verify", JSON.stringify(verify)); } catch(e){} vSummary(); }
+function vSummary(){
+  var el = document.getElementById("vsum"); if(!el) return;
+  var yes = 0, no = 0; Object.keys(verify).forEach(function(k){ if(verify[k].ok) yes++; else no++; });
+  el.firstChild.textContent = (yes + no) ? ("Checked: " + yes + " right, " + no + " wrong. ") : "Tap any location to mark it right or wrong. ";
+}
+function vBlock(id, lat, lon, label){
+  var v = verify[id] || {};
+  var h = '<div class="vf" data-vid="' + esc(id) + '" data-lat="' + lat + '" data-lon="' + lon + '" data-label="' + esc(label) + '">';
+  h += '<b>Is this right on the ground?</b><br>';
+  h += '<button class="vb yes' + (v.ok === true ? ' on' : '') + '" data-v="yes">✓ Fits</button>';
+  h += '<button class="vb no' + (v.ok === false ? ' on' : '') + '" data-v="no">✗ Wrong</button>';
+  h += '<select class="vr"' + (v.ok === false ? '' : ' style="display:none"') + '><option value="">why?</option>' +
+       VREASONS.map(function(r){ return '<option' + (v.reason === r ? ' selected' : '') + '>' + r + '</option>'; }).join('') + '</select>';
+  h += '<div><input class="vn" placeholder="note (optional)" value="' + esc(v.note || '') + '"></div>';
+  h += '<div class="st">' + (v.when ? 'checked ' + esc(v.when) + (v.who ? ' by ' + esc(v.who) : '') : 'not checked yet') + '</div></div>';
+  return h;
+}
+map.on("popupopen", function(e){
+  var root = e.popup.getElement(); if(!root) return;
+  var box = root.querySelector(".vf"); if(!box) return;
+  var id = box.getAttribute("data-vid");
+  function commit(ok){
+    var sel = box.querySelector(".vr"), note = box.querySelector(".vn");
+    verify[id] = {ok: ok, reason: ok ? "" : sel.value, note: note.value.trim(), lat: +box.getAttribute("data-lat"), lon: +box.getAttribute("data-lon"),
+                  label: box.getAttribute("data-label"), when: new Date().toISOString().slice(0, 10), who: (localStorage.getItem("ar102-who") || "")};
+    vSave();
+    box.querySelectorAll(".vb").forEach(function(b){ b.classList.toggle("on", (b.getAttribute("data-v") === "yes") === ok); });
+    sel.style.display = ok ? "none" : "";
+    box.querySelector(".st").textContent = "checked " + verify[id].when;
+    var src = e.popup._source;
+    if(src && src._icon) src._icon.className = src._icon.className.replace(/ v-(yes|no)/g, "") + (ok ? " v-yes" : " v-no");
+    if(src && src.setStyle) src.setStyle({fillColor: ok ? cssv("--camp") : cssv("--face-no"), color: ok ? cssv("--camp") : cssv("--face-no"), fillOpacity: ok ? 0.55 : 0.25});
+  }
+  box.querySelectorAll(".vb").forEach(function(b){ b.addEventListener("click", function(){ commit(b.getAttribute("data-v") === "yes"); }); });
+  box.querySelector(".vr").addEventListener("change", function(){ if(verify[id]) { verify[id].reason = this.value; vSave(); } });
+  box.querySelector(".vn").addEventListener("change", function(){ if(verify[id]) { verify[id].note = this.value.trim(); vSave(); } });
+});
+var vExp = document.getElementById("vExport");
+if(vExp) vExp.addEventListener("click", function(){
+  var who = prompt("Your initials (for the record):", localStorage.getItem("ar102-who") || "") || "";
+  try { localStorage.setItem("ar102-who", who); } catch(e){}
+  var feats = Object.keys(verify).map(function(k){ var v = verify[k]; return {type:"Feature", geometry:{type:"Point", coordinates:[v.lon, v.lat]},
+    properties:{kind:"verify", id:k, ok:v.ok, reason:v.reason || "", note:v.note || "", label:v.label || "", when:v.when, who:v.who || who}}; });
+  if(!feats.length){ alert("Nothing checked yet - open a location and tap Fits or Wrong."); return; }
+  var blob = new Blob([JSON.stringify({type:"FeatureCollection", name:"AR 10.2 location checks", features:feats}, null, 1)], {type:"application/geo+json"});
+  var a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = "verify-" + new Date().toISOString().slice(0, 10) + ".geojson";
+  document.body.appendChild(a); a.click(); a.remove();
+});
+var vImp = document.getElementById("vImport"), vFile = document.getElementById("vFile");
+if(vImp) vImp.addEventListener("click", function(){ vFile.click(); });
+if(vFile) vFile.addEventListener("change", function(){
+  var f = this.files[0]; if(!f) return; var rd = new FileReader();
+  rd.onload = function(){ try { var fc = JSON.parse(rd.result); (fc.features || []).forEach(function(x){ var p = x.properties || {}; if(p.kind === "verify" && p.id) verify[p.id] = {ok: !!p.ok, reason: p.reason, note: p.note, label: p.label, when: p.when, who: p.who, lon: x.geometry.coordinates[0], lat: x.geometry.coordinates[1]}; }); vSave(); alert("Imported. Re-open a location to see its status."); } catch(e){ alert("Could not read that file"); } };
+  rd.readAsText(f);
+});
+vSummary();
+
 /* ---- campable locations (exclusion-buffer model; see tools/campable_sites.py) ---- */
 map.createPane("faces").style.zIndex = 425;
 map.createPane("camp").style.zIndex  = 644;
@@ -1463,9 +1537,13 @@ if(window.CAMPABLE && CAMPABLE.sites){
              ', clear of the building-line setback, curb setback, intersection corners, hydrants, bus stops and bike racks in <code>tools/ar102_rules.json</code>.</div>';
         h += '<div class="meta">Sidewalk width from ' + (p.ws === "measured" ? 'a field measurement' : 'the city GIS (right-of-way minus pavement width)') +
              '.<br>A model output, not a finding that this spot is lawful, safe or free — driveways, entrances, painted curbs and posted areas are only excluded where someone has mapped them.</div>';
+        var c0 = ly.getBounds().getCenter();
+        h += vBlock("tent:" + f.properties.f + "-" + idx, c0.lat.toFixed(6), c0.lng.toFixed(6), (p.st || "") + " " + fp[0] + "x" + fp[1]);
         h += '</div>';
         return h;
       }, {maxWidth: 320, minWidth: 240});
+      var vv = verify["tent:" + f.properties.f + "-" + idx];
+      if(vv) ly.setStyle({fillColor: vv.ok ? cssv("--camp") : cssv("--face-no"), color: vv.ok ? cssv("--camp") : cssv("--face-no"), fillOpacity: vv.ok ? 0.55 : 0.25});
     }
   }).addTo(campGroup);
   if(campCt) campCt.textContent = CAMPABLE.total.toLocaleString() + " in the " + (CAMPABLE.area || "study area");
@@ -1509,8 +1587,11 @@ if(window.CAMPABLE_PINS && CAMPABLE_PINS.pins){
         '<span class="tag" style="color:' + c + ';border-color:' + c + '">' + esc(cat && CATS[cat] ? CATS[cat].name : "") + '</span>' +
         '<div class="body">A ' + PF[0] + '\u00a0ft deep, ' + PF[1] + '\u00a0ft long footprint fits here under the same clearances as the tent layer' +
         (p[3] ? ', on a sidewalk about ' + p[3] + '\u00a0ft wide' : '') + (p[6] ? ' (' + p[6] + ' side)' : '') + '.</div>' +
-        '<div class="meta">' + p[0].toFixed(5) + ', ' + p[1].toFixed(5) + '<br>Model output \u2014 not a finding that the spot is lawful or free.</div></div>';
+        '<div class="meta">' + p[0].toFixed(5) + ', ' + p[1].toFixed(5) + '<br>Model output \u2014 not a finding that the spot is lawful or free.</div>' +
+        vBlock("pin:" + p[0] + "," + p[1], p[0], p[1], p[2] + " " + PF[0] + "x" + PF[1]) + '</div>';
     }, {maxWidth:300});
+    var vv = verify["pin:" + p[0] + "," + p[1]];
+    if(vv) m.on("add", function(){ if(m._icon) m._icon.className += vv.ok ? " v-yes" : " v-no"; });
     m.bindTooltip(esc(p[2]) + ' \u00b7 ' + PF[0] + '\u00d7' + PF[1] + ' ft', {direction:"top", offset:[0,-12]});
     m.addTo(pinGroup);
   });
