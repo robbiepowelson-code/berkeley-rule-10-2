@@ -736,7 +736,7 @@ button.on{outline:2px solid var(--accent);outline-offset:-1px;background:color-m
   <div class="box">
     <h2>Faces <span id="counts" style="text-transform:none;letter-spacing:0"></span></h2>
     <div class="grid">
-      <select id="fZone"><option value="camp">Campable zones only</option><option value="all">All zones</option></select>
+      <select id="fZone"><option value="fits">Sidewalks where a tent fits</option><option value="camp">Campable zones only</option><option value="all">All zones</option></select>
       <select id="fRev"><option value="todo">Unreviewed first</option><option value="all">Everything</option><option value="done">Reviewed only</option></select>
     </div>
     <input type="text" id="fText" placeholder="Filter by street…" style="margin-top:6px">
@@ -785,7 +785,7 @@ button.on{outline:2px solid var(--accent);outline-offset:-1px;background:color-m
     <div id="feat"></div>
   </div>
   <div class="box hint">
-    Imagery: City of Berkeley 3-inch orthophoto, 2020 (things may have changed). Blue line = model's curb estimate; yellow = right-of-way (property) line; green boxes = where the model currently fits a 5×7 ft tent. <label style="display:inline"><input type="checkbox" id="chkOsm"> OpenStreetMap basemap instead</label>
+    Imagery: City of Berkeley 3-inch orthophoto, 2020 (things may have changed). Green line = a sidewalk where the model fits at least one tent (thin blue = none); yellow = right-of-way (property) line; green boxes = where the model currently fits a 5×7 ft tent. <label style="display:inline"><input type="checkbox" id="chkOsm"> OpenStreetMap basemap instead</label>
   </div>
 </div>
 <div id="map"><div id="msg"></div></div>
@@ -853,9 +853,9 @@ Promise.all([
   faces.forEach(function(f){ faceById[f.properties.id] = f; });
   sites.features.forEach(function(s){ (sitesByFace[s.properties.face] = sitesByFace[s.properties.face] || []).push(s); });
   if(row) L.geoJSON(row, {pane:"row", style:{color:css("--prop"), weight:1.2, opacity:0.9, fill:false, dashArray:"4 3"}, interactive:false}).addTo(rowLayer);
-  L.geoJSON(fc, {pane:"faces", style:function(f){ return {color:css("--face"), weight:2, opacity:0.7}; }, onEachFeature:function(f, ly){
+  L.geoJSON(fc, {pane:"faces", style:function(f){ var n = f.properties.count; return {color: n ? css("--camp") : css("--face"), weight: n ? 4 : 1.5, opacity: n ? 0.9 : 0.5}; }, onEachFeature:function(f, ly){
     ly.on("click", function(){ if(mode === "select") select(f.properties.id); });
-    ly.bindTooltip(f.properties.street + " · " + f.properties.width_ft + " ft", {sticky:true});
+    ly.bindTooltip(f.properties.street + " · " + f.properties.width_ft + " ft" + (f.properties.count ? " · " + f.properties.count + " tents fit" : " · no tent fits"), {sticky:true});
   }}).addTo(faceLayer);
   L.geoJSON(sites, {pane:"sites", style:{color:css("--camp"), weight:1, fillColor:css("--camp"), fillOpacity:0.35}, interactive:false}).addTo(siteLayer);
   if(osmP) L.geoJSON(osmP, {pane:"osm", pointToLayer:function(f, ll){ return L.circleMarker(ll, {radius:3, color:"#fff", weight:1, fillColor:"#111", fillOpacity:0.8}); },
@@ -884,6 +884,7 @@ function buildOrder(){
   order = faces.filter(function(f){
     var p = f.properties, r = state.reviews[p.id];
     if(zone === "camp" && !p.campable_zone) return false;
+    if(zone === "fits" && !p.count) return false;
     if(rev === "done" && !r) return false;
     if(txt && p.street.indexOf(txt) < 0) return false;
     return true;
