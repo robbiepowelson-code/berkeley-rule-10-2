@@ -955,7 +955,7 @@ th.num{text-align:right; padding-right:0}
       <button class="lg" id="siteToggle" aria-pressed="true"><span class="sw" id="siteSw"></span><span class="tt"><span class="name">Surveyed sites</span><br><span class="sub">Field photos with GPS — click a pin for the photo and its district</span></span><span class="ac" id="siteCount"></span></button>
       <button class="lg" id="waterToggle" aria-pressed="true"><span class="sw" id="waterSw"></span><span class="tt"><span class="name">Drinking water</span><br><span class="sub">OpenStreetMap fountains &amp; taps — zoom in to see them</span></span><span class="ac" id="waterCount"></span></button>
       <button class="lg" id="wcToggle" aria-pressed="true"><span class="sw" id="wcSw"></span><span class="tt"><span class="name">Toilets</span><br><span class="sub">OpenStreetMap restrooms — zoom in to see them</span></span><span class="ac" id="wcCount"></span></button>
-      <button class="lg" id="campToggle" aria-pressed="true"><span class="sw" id="campSw"></span><span class="tt"><span class="name">Campable locations</span><br><span class="sub">Where a <span id="campFp">7×16 ft</span> footprint fits under AR 10.2's clearances — <span id="campCount">…</span>. Zoom in for the tent outlines and block-face widths.</span></span></button>
+      <button class="lg" id="campToggle" aria-pressed="true"><span class="sw" id="campSw"></span><span class="tt"><span class="name">Campable locations</span><br><span class="sub">Where a <span id="campFp">7×16 ft</span> footprint fits under AR 10.2's clearances — <span id="campCount">…</span>. Zoom in, then <b>click a box to mark it good (green) or not (red)</b>; click again to switch back. Shift-click for details. Your marks save on this device; use Export checks to send them in.</span></span></button>
       <button class="lg off" id="editToggle" aria-pressed="false"><span class="sw" id="editSw"></span><span class="tt"><span class="name">Editor mode</span><br><span class="sub">Click a box to turn it off or on, drag to move it, use the toolbar to rotate, add or delete. Edits export to a file the model reads.</span></span></button>
       <button class="lg" id="pinToggle" aria-pressed="true"><span class="sw" id="pinSw"></span><span class="tt"><span class="name">Larger footprint</span><br><span class="sub"><span id="pinCount">…</span></span></span></button>
       <div class="vsum" id="vsum">Tap any location to mark it right or wrong. <button id="vExport">Export checks</button><button id="vImport">Import</button><input type="file" id="vFile" accept=".geojson,.json" style="display:none"></div>
@@ -1516,7 +1516,7 @@ if(vFile) vFile.addEventListener("change", function(){
 });
 vSummary();
 
-var quickOn = false;   /* on/off-by-click now lives in editor mode */
+var quickOn = true;    /* plain click on a box = good / not good; shift-click = details */
 var quickBtn = document.getElementById("quickToggle"), quickSw = document.getElementById("quickSw");
 function paintQuick(){ if(!quickSw) return; var c = cssv("--face-no"); quickSw.style.borderColor = c; quickSw.style.background = quickOn ? c : "transparent"; quickSw.style.opacity = 0.9; }
 paintQuick();
@@ -1590,7 +1590,8 @@ if(window.CAMPABLE && CAMPABLE.sites){
       h += '</div>';
       return h;
     }, {maxWidth: 320, minWidth: 240});
-    ly.on("popupopen", function(){ if(quickOn || editOn) ly.closePopup(); });
+    ly.on("popupopen", function(ev){ if((quickOn || editOn) && !(ly._shiftOpen)) ly.closePopup(); ly._shiftOpen = false; });
+    ly.on("preclick", function(ev){ ly._shiftOpen = !!(ev.originalEvent && ev.originalEvent.shiftKey); });
 
     /* click = toggle on/off (quick mode or editor); drag = move (editor) */
     var drag = null, justDragged = false;
@@ -1617,7 +1618,8 @@ if(window.CAMPABLE && CAMPABLE.sites){
     });
     ly.on("click", function(ev){
       if(justDragged || (drag && drag.moved)){ return; }
-      if(!(quickOn || editOn)) return;            // plain mode: popup
+      if(ev.originalEvent && ev.originalEvent.shiftKey){ return; }   // shift-click: details popup
+      if(!(quickOn || editOn)) return;
       L.DomEvent.stop(ev); ly.closePopup();
       if(editOn){ select(id); }
       pushUndo(id);
