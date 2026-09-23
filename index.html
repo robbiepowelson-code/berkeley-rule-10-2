@@ -756,6 +756,7 @@ h2{
 .vf select,.vf input{font:inherit;font-size:12px;padding:3px 6px;border:1px solid var(--line);border-radius:5px;background:transparent;color:var(--ink);max-width:100%}
 .vf .st{margin-top:4px;color:var(--ink-3)}
 .pin-ic.v-yes .px{background:var(--camp)} .pin-ic.v-no .px{background:var(--face-no);opacity:.75}
+.pin-ic.s-off .px{background:var(--ink-3);opacity:.25;transform:rotate(-45deg) scale(.7)}
 .vsum{font-size:12px;color:var(--ink-3);margin:6px 0 0 2px} .vsum button{font:inherit;font-size:12px;padding:3px 8px;border:1px solid var(--line);border-radius:5px;background:transparent;color:var(--ink);cursor:pointer;margin-left:6px}
 
 /* editor mode */
@@ -961,7 +962,7 @@ th.num{text-align:right; padding-right:0}
       <button class="lg" id="wcToggle" aria-pressed="true"><span class="sw" id="wcSw"></span><span class="tt"><span class="name">Toilets</span><br><span class="sub">OpenStreetMap restrooms — zoom in to see them</span></span><span class="ac" id="wcCount"></span></button>
       <button class="lg" id="campToggle" aria-pressed="true"><span class="sw" id="campSw"></span><span class="tt"><span class="name">Campable locations</span><br><span class="sub">Where a <span id="campFp">7×16 ft</span> footprint fits under AR 10.2's clearances — <span id="campCount">…</span>. Zoom in, then <b>click a box to mark it good (green) or not (red)</b>; click again to switch back. Shift-click for details. Your marks save on this device; use Export checks to send them in.</span></span></button>
       <button class="lg off" id="editToggle" aria-pressed="false"><span class="sw" id="editSw"></span><span class="tt"><span class="name">Editor mode</span><br><span class="sub">Click a box to turn it off or on, drag to move it, use the toolbar to rotate, add or delete. Edits export to a file the model reads.</span></span></button>
-      <button class="lg" id="pinToggle" aria-pressed="true"><span class="sw" id="pinSw"></span><span class="tt"><span class="name">Larger footprint</span><br><span class="sub"><span id="pinCount">…</span></span></span></button>
+      <button class="lg" id="pinToggle" aria-pressed="true"><span class="sw" id="pinSw"></span><span class="tt"><span class="name">Larger footprint</span><br><span class="sub"><span id="pinCount">…</span>. Click a pin to remove it (click again to restore); shift-click a pin for details and a button that removes the whole street.</span></span></button>
       <div class="vsum" id="vsum">Tap any location to mark it right or wrong. <button id="vExport">Export checks</button><button id="vImport">Import</button><input type="file" id="vFile" accept=".geojson,.json" style="display:none"></div>
     </div>
 
@@ -1508,6 +1509,8 @@ if(vExp) vExp.addEventListener("click", function(){
   try { localStorage.setItem("ar102-who", who); } catch(e){}
   var feats = Object.keys(verify).map(function(k){ var v = verify[k]; return {type:"Feature", geometry:{type:"Point", coordinates:[v.lon, v.lat]},
     properties:{kind:"verify", id:k, ok:v.ok, reason:v.reason || "", note:v.note || "", label:v.label || "", when:v.when, who:v.who || who}}; });
+  var so = window.__streetsOff ? window.__streetsOff() : {};
+  Object.keys(so).forEach(function(fpk){ (so[fpk] || []).forEach(function(st){ feats.push({type:"Feature", geometry:null, properties:{kind:"street_off", footprint:fpk, street:st, who:who, when:new Date().toISOString().slice(0,10)}}); }); });
   if(!feats.length){ alert("Nothing checked yet - open a location and tap Fits or Wrong."); return; }
   var blob = new Blob([JSON.stringify({type:"FeatureCollection", name:"AR 10.2 location checks", features:feats}, null, 1)], {type:"application/geo+json"});
   var a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = "verify-" + new Date().toISOString().slice(0, 10) + ".geojson";
@@ -1517,7 +1520,7 @@ var vImp = document.getElementById("vImport"), vFile = document.getElementById("
 if(vImp) vImp.addEventListener("click", function(){ vFile.click(); });
 if(vFile) vFile.addEventListener("change", function(){
   var f = this.files[0]; if(!f) return; var rd = new FileReader();
-  rd.onload = function(){ try { var fc = JSON.parse(rd.result); (fc.features || []).forEach(function(x){ var p = x.properties || {}; if(p.kind === "verify" && p.id) verify[p.id] = {ok: !!p.ok, reason: p.reason, note: p.note, label: p.label, when: p.when, who: p.who, lon: x.geometry.coordinates[0], lat: x.geometry.coordinates[1]}; }); vSave(); alert("Imported. Re-open a location to see its status."); } catch(e){ alert("Could not read that file"); } };
+  rd.onload = function(){ try { var fc = JSON.parse(rd.result); (fc.features || []).forEach(function(x){ var p = x.properties || {}; if(p.kind === "street_off" && p.street){ try { var so = JSON.parse(localStorage.getItem("ar102-streets-off") || "{}"); so[p.footprint] = so[p.footprint] || []; if(so[p.footprint].indexOf(p.street) < 0) so[p.footprint].push(p.street); localStorage.setItem("ar102-streets-off", JSON.stringify(so)); } catch(e){} } if(p.kind === "verify" && p.id) verify[p.id] = {ok: !!p.ok, reason: p.reason, note: p.note, label: p.label, when: p.when, who: p.who, lon: x.geometry.coordinates[0], lat: x.geometry.coordinates[1]}; }); vSave(); alert("Imported. Re-open a location to see its status."); } catch(e){ alert("Could not read that file"); } };
   rd.readAsText(f);
 });
 vSummary();
@@ -1780,25 +1783,61 @@ var pinBtn = document.getElementById("pinToggle"), pinSw = document.getElementBy
 var pinOn = true, pinGroup = L.layerGroup();
 if(window.CAMPABLE_PINS && CAMPABLE_PINS.pins){
   var PF = CAMPABLE_PINS.footprint_ft;
+  /* streets switched off by hand for this footprint (localStorage "ar102-streets-off") */
+  var streetsOff = {};
+  try { streetsOff = JSON.parse(localStorage.getItem("ar102-streets-off") || "{}"); } catch(e){}
+  var PFK = PF[0] + "x" + PF[1];
+  function streetOff(st){ return (streetsOff[PFK] || []).indexOf(st) >= 0; }
+  function saveStreets(){ try { localStorage.setItem("ar102-streets-off", JSON.stringify(streetsOff)); } catch(e){} pinCount(); }
+  var PINS = [];
+  function pinPaint(rec){
+    var vv = verify[rec.id], off = streetOff(rec.p[2]) || (vv && vv.ok === false);
+    if(rec.m._icon) rec.m._icon.className = rec.m._icon.className.replace(/ v-(yes|no)| s-off/g, "") + (streetOff(rec.p[2]) ? " s-off" : (vv ? (vv.ok ? " v-yes" : " v-no") : ""));
+  }
+  function pinCount(){
+    var on = 0, off = 0; PINS.forEach(function(r){ var vv = verify[r.id]; (streetOff(r.p[2]) || (vv && vv.ok === false)) ? off++ : on++; });
+    if(pinCt) pinCt.textContent = on.toLocaleString() + " on, " + off + " off (" + PF[0] + "×" + PF[1] + " ft) in the " + (CAMPABLE_PINS.area || "study area") +
+      ((streetsOff[PFK] || []).length ? " · streets off: " + streetsOff[PFK].join(", ") : "");
+  }
   CAMPABLE_PINS.pins.forEach(function(p, i){
     var m = L.marker([p[0], p[1]], {pane:"pins", icon:L.divIcon({className:"pin-ic", html:'<div class="px"></div>', iconSize:[13,13], iconAnchor:[6,13]})});
+    var rec = {id: "pin:" + p[0] + "," + p[1], p: p, m: m}; PINS.push(rec);
     m.bindPopup(function(){
       var cat = p[5], c = cat && CATS[cat] ? cssv(CATS[cat].varname) : cssv("--ink-3");
-      return '<div class="pp"><div class="code">' + PF[0] + '\u00d7' + PF[1] + ' FT LOCATION \u00b7 ' + (i + 1) + (p[4] ? ' \u00b7 ' + esc(p[4]) : '') + '</div>' +
+      return '<div class="pp"><div class="code">' + PF[0] + '×' + PF[1] + ' FT LOCATION · ' + (i + 1) + (p[4] ? ' · ' + esc(p[4]) : '') + '</div>' +
         '<h3>' + esc(p[2]) + '</h3>' +
         '<span class="tag" style="color:' + c + ';border-color:' + c + '">' + esc(cat && CATS[cat] ? CATS[cat].name : "") + '</span>' +
-        '<div class="body">A ' + PF[0] + '\u00a0ft deep, ' + PF[1] + '\u00a0ft long footprint fits here under the same clearances as the tent layer' +
-        (p[3] ? ', on a sidewalk about ' + p[3] + '\u00a0ft wide' : '') + (p[6] ? ' (' + p[6] + ' side)' : '') + '.</div>' +
-        '<div class="meta">' + p[0].toFixed(5) + ', ' + p[1].toFixed(5) + '<br>Model output \u2014 not a finding that the spot is lawful or free.</div>' +
-        vBlock("pin:" + p[0] + "," + p[1], p[0], p[1], p[2] + " " + PF[0] + "x" + PF[1]) + '</div>';
+        '<div class="body">A ' + PF[0] + ' ft deep, ' + PF[1] + ' ft long footprint fits here under the same clearances as the tent layer' +
+        (p[3] ? ', on a sidewalk about ' + p[3] + ' ft wide' : '') + (p[6] ? ' (' + p[6] + ' side)' : '') + '.</div>' +
+        '<div class="meta">' + p[0].toFixed(5) + ', ' + p[1].toFixed(5) + '<br>Model output — not a finding that the spot is lawful or free.</div>' +
+        vBlock(rec.id, p[0], p[1], p[2] + " " + PFK) +
+        '<div class="vf"><button class="vb no" data-street="' + esc(p[2]) + '">' + (streetOff(p[2]) ? '↺ Restore every pin on ' : '✗ Remove every pin on ') + esc(p[2]) + '</button></div></div>';
     }, {maxWidth:300});
-    var vv = verify["pin:" + p[0] + "," + p[1]];
-    if(vv) m.on("add", function(){ if(m._icon) m._icon.className += vv.ok ? " v-yes" : " v-no"; });
-    m.bindTooltip(esc(p[2]) + ' \u00b7 ' + PF[0] + '\u00d7' + PF[1] + ' ft', {direction:"top", offset:[0,-12]});
+    m.on("popupopen", function(ev){
+      if(!m._shiftOpen){ m.closePopup(); return; }
+      m._shiftOpen = false;
+      var b = ev.popup.getElement().querySelector("button[data-street]");
+      if(b) b.addEventListener("click", function(){
+        var st = b.getAttribute("data-street"), list = streetsOff[PFK] || [];
+        if(streetOff(st)) list = list.filter(function(x){ return x !== st; }); else list.push(st);
+        streetsOff[PFK] = list; saveStreets(); PINS.forEach(pinPaint); m.closePopup();
+      });
+    });
+    m.on("preclick", function(ev){ m._shiftOpen = !!(ev.originalEvent && ev.originalEvent.shiftKey); });
+    m.on("click", function(ev){
+      if(ev.originalEvent && ev.originalEvent.shiftKey){ return; }   // shift-click: details popup
+      var vv = verify[rec.id];
+      if(vv && vv.ok === false) delete verify[rec.id];
+      else verify[rec.id] = {ok:false, reason:"other", note:"", lat:p[0], lon:p[1], label:p[2] + " " + PFK, when:new Date().toISOString().slice(0,10), who:(localStorage.getItem("ar102-who") || "")};
+      vSave(); pinPaint(rec); pinCount();
+    });
+    m.on("add", function(){ pinPaint(rec); });
+    m.bindTooltip(esc(p[2]) + ' · ' + PF[0] + '×' + PF[1] + ' ft · click to remove, shift-click for details', {direction:"top", offset:[0,-12]});
     m.addTo(pinGroup);
   });
   pinGroup.addTo(map);
-  if(pinCt) pinCt.textContent = CAMPABLE_PINS.total.toLocaleString() + ' places a ' + PF[0] + '\u00d7' + PF[1] + '\u00a0ft footprint fits in the ' + (CAMPABLE_PINS.area || 'study area');
+  pinCount();
+  window.__streetsOff = function(){ return streetsOff; };
   if(pinBtn) pinBtn.querySelector('.name').textContent = PF[0] + '\u00d7' + PF[1] + ' ft locations';
 } else if(pinCt){ pinCt.textContent = 'not computed'; if(pinBtn){ pinBtn.disabled = true; pinBtn.classList.add('off'); } }
 function paintPin(){ if(!pinSw) return; var c = cssv("--pin"); pinSw.style.borderColor = c; pinSw.style.background = pinOn ? c : "transparent"; pinSw.style.opacity = 0.9; }

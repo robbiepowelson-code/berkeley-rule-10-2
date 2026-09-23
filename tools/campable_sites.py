@@ -381,6 +381,15 @@ def main():
                 excl.append(g)
     # Field checks from the map's Fits / Wrong buttons (data/field/verify*.geojson, edits*.geojson)
     n_wrong = n_right = 0
+    fpkey_now = "%gx%g" % (short_ft, long_ft)
+    SE = R.setdefault("street_exclusions", {})
+    for vf in sorted(glob.glob(os.path.join(field, "verify*.geojson")) + glob.glob(os.path.join(field, "edits*.geojson"))):
+        for f in load_geojson(vf):
+            pr = f["properties"]
+            if pr.get("kind") == "street_off" and pr.get("street"):
+                SE.setdefault(pr.get("footprint", fpkey_now), [])
+                if pr["street"] not in SE[pr.get("footprint", fpkey_now)]:
+                    SE[pr.get("footprint", fpkey_now)].append(pr["street"])
     box_edits = {}                        # id -> box feature from the editor
     for vf in sorted(glob.glob(os.path.join(field, "edits*.geojson"))):
         for f in load_geojson(vf):
