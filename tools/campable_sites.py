@@ -515,7 +515,10 @@ def main():
                 "campable_zone": in_zone, "count": 0, "placement": None,
                 "review": status,
             }
-            if w_m <= 0:
+            fpkey = "%gx%g" % (short_ft, long_ft)
+            if s["street"] in set(R.get("street_exclusions", {}).get(fpkey, [])):
+                why["street excluded by field observation"] += 1
+            elif w_m <= 0:
                 why["reviewed: no sidewalk"] += 1
             elif depth_m < short_m:
                 why["strip too shallow for footprint"] += 1

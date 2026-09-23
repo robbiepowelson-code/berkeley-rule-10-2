@@ -111,5 +111,13 @@
   },
   "review": {
     "_source": "review.html writes data/field/review-<date>.geojson. kind=face carries a reviewed width (method imagery|tape) or status no-sidewalk; kind=curb/building are drawn edge lines (width = distance between them); driveway (width_ft), curbpaint (color), entrance, obstacle (radius_ft, label) and nogo polygons are subtracted. Priority for a face's width: tape CSV > reviewed width > drawn edges > OSM building face > GIS."
+  },
+  "street_exclusions": {
+    "_source": "field observation by the user: whole streets where a given footprint does not work in practice. Keyed by footprint SHORTxLONG; street names as in the city centerline layer (name + type).",
+    "7x16": [
+      "ASHBY AVE",
+      "POTTER ST"
+    ],
+    "_note_7x16": "Sept 23 2026: Ashby Ave and Potter St checked on the ground, none of the 7x16 spots work."
   }
 }
