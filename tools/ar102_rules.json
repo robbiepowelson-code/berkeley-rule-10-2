@@ -1,9 +1,9 @@
 {
   "_about": "Every distance the campable-sites model uses, with where it comes from. Edit values here, not in the code. Units are feet unless the key says otherwise. 'source' is the authority; 'basis' is AR 10.2 (City Manager, rev. Jan 2025) unless noted. Entries marked assumption are NOT in AR 10.2 and should be confirmed or turned off with enabled=false.",
   "footprint": {
-    "tent_short_ft": 7,
-    "tent_long_ft": 16,
-    "source": "user choice: 7 ft deep x 16 ft along the sidewalk (tent plus belongings). Earlier runs used 5x7 (standard 2-person tent). AR 10.2 itself limits a TNC object to 9 sq ft and 5 ft tall, so this counts places the footprint physically fits under the clearance rules, not places a 9 sq ft object is lawful.",
+    "tent_short_ft": 5,
+    "tent_long_ft": 7,
+    "source": "user choice: standard 2-person tent, 5x7 ft (green boxes). The 7x16 ft tent-plus-belongings footprint is the purple pin layer (--footprint 7x16 --pins). AR 10.2 itself limits a TNC object to 9 sq ft and 5 ft tall, so these count places a footprint physically fits under the clearance rules, not places a 9 sq ft object is lawful.",
     "note": "The pipeline also reports counts for a 3x3 ft (9 sq ft) AR-10.2-sized object footprint."
   },
   "path_of_travel": {
