@@ -114,7 +114,10 @@
   },
   "street_exclusions": {
     "_source": "field observation by the user: whole streets where a given footprint does not work in practice. Keyed by footprint SHORTxLONG; street names as in the city centerline layer (name + type).",
-    "7x16": [
+    "7x16": [],
+    "_note_7x16": "Field finding, Sept 2026: every street where the model placed a 7x16 ft footprint was checked on the ground and none of the spots work (verges, parking aprons, driveways, obstructions the GIS does not show). The 7x16 count for the pilot area is zero.",
+    "7x16_field_finding": "No 7\u00d716 ft campsite location exists in the West Berkeley pilot area under AR 10.2's clearances \u2014 field-verified September 2026.",
+    "7x16_parked": [
       "ASHBY AVE",
       "EASTSHORE HWY",
       "GILMAN ST",
@@ -129,7 +132,6 @@
       "SIXTH ST",
       "UNIVERSITY AVE OVERPASS"
     ],
-    "_note_7x16": "Field finding, Sept 2026: every street where the model placed a 7x16 ft footprint was checked on the ground and none of the spots work (verges, parking aprons, driveways, obstructions the GIS does not show). The 7x16 count for the pilot area is zero.",
-    "7x16_field_finding": "No 7\u00d716 ft campsite location exists in the West Berkeley pilot area under AR 10.2's clearances \u2014 field-verified September 2026."
+    "_note_parked": "7x16 street list moved to 7x16_parked while the 263 candidates are culled one by one in the map editor (Sept 28 2026). Move it back to 7x16 to re-apply."
   }
 }
