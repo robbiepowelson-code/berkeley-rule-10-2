@@ -116,8 +116,20 @@
     "_source": "field observation by the user: whole streets where a given footprint does not work in practice. Keyed by footprint SHORTxLONG; street names as in the city centerline layer (name + type).",
     "7x16": [
       "ASHBY AVE",
-      "POTTER ST"
+      "EASTSHORE HWY",
+      "GILMAN ST",
+      "HOPKINS ST",
+      "I80 EAST (OFF RAMP) UNIV",
+      "NINTH ST",
+      "POTTER ST",
+      "SACRAMENTO ST",
+      "SAN PABLO AVE",
+      "SANTA FE AVE",
+      "SEVENTH ST",
+      "SIXTH ST",
+      "UNIVERSITY AVE OVERPASS"
     ],
-    "_note_7x16": "Sept 23 2026: Ashby Ave and Potter St checked on the ground, none of the 7x16 spots work."
+    "_note_7x16": "Field finding, Sept 2026: every street where the model placed a 7x16 ft footprint was checked on the ground and none of the spots work (verges, parking aprons, driveways, obstructions the GIS does not show). The 7x16 count for the pilot area is zero.",
+    "7x16_field_finding": "No 7\u00d716 ft campsite location exists in the West Berkeley pilot area under AR 10.2's clearances \u2014 field-verified September 2026."
   }
 }
