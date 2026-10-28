@@ -1,0 +1,13 @@
+face,street,side,cat,gis_width_ft,gis_source,model_spots,tile2net_width_ft,polygons,face_len_ft,diff_ft
+4056L,HEINZ AVE,L,mixres,7.9,gis,0,8.8,3,331.6,0.9
+4056R,HEINZ AVE,R,man,15.8,gis,0,9.0,4,331.6,-6.8
+4131L,HEINZ AVE,L,man,4.9,gis,0,4.4,3,1195.6,-0.5
+4131R,HEINZ AVE,R,man,1.9,gis,0,9.0,2,1195.6,7.1
+5116L,GRAYSON ST,L,man,3.2,gis,0,13.5,1,1206.4,10.3
+5116R,GRAYSON ST,R,man,17.9,gis,0,9.8,1,1206.4,-8.1
+6765L,SEVENTH ST,L,man,13.0,gis,0,9.8,1,471.8,-3.2
+6765R,SEVENTH ST,R,man,2.3,gis,0,10.6,1,471.8,8.3
+6767L,SEVENTH ST,L,mixres,11.9,gis,0,9.4,4,683.6,-2.5
+6767R,SEVENTH ST,R,man,10.8,gis,0,10.3,3,683.6,-0.5
+6790L,EIGHTH ST,L,mixres,13.2,gis,0,9.4,1,682.9,-3.8
+6790R,EIGHTH ST,R,mixres,11.3,gis,0,10.4,2,682.9,-0.9
