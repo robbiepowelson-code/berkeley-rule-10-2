@@ -764,6 +764,15 @@ h2{
 #edbar.on{display:block}
 #edFab{position:absolute;top:12px;right:12px;z-index:901;font:inherit;font-size:13px;padding:7px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.18)}
 #edFab.on{background:var(--camp);color:#fff;border-color:var(--camp)}
+#svFab{position:absolute;top:12px;right:132px;z-index:901;font:inherit;font-size:13px;padding:7px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.18)}
+#svFab.on{background:#1a73e8;color:#fff;border-color:#1a73e8}
+#map.sv-mode .leaflet-container,#map.sv-mode{cursor:crosshair!important}
+.pp .vl{margin-top:8px;padding-top:8px;border-top:1px solid var(--line);font-size:12px}
+.pp .vl b{display:block;margin-bottom:3px}
+.pp .vl a{display:inline-block;margin:2px 6px 2px 0;padding:4px 9px;border:1px solid var(--line);border-radius:6px;color:var(--ink);text-decoration:none;white-space:nowrap}
+.pp .vl a:hover{border-color:var(--ink)}
+.pp .vl a.sv{border-color:#1a73e8;color:#1a73e8}
+.pp .vl .hd{color:var(--ink-3);margin-top:3px}
 body.editing #edbar{top:48px}
 #edbar b{display:block;margin-bottom:4px}
 #edbar .row{display:flex;flex-wrap:wrap;gap:4px;margin:4px 0}
@@ -1040,8 +1049,10 @@ th.num{text-align:right; padding-right:0}
       </div>
     </details>
 
+    <p class="src"><strong>Check it yourself.</strong> Every popup carries Street View, satellite and Mapillary links for that exact spot, aimed at the sidewalk from the road. Right-click (long-press on a phone) anywhere on the map, or turn on <em>Street View</em> at the top right and click, to look at any other point. Imagery dates are shown in Street View under “See more dates.”</p>
     <p class="src"><a href="./report.html"><strong>How this map was made — method &amp; sources →</strong></a><br>Zoning data: City of Berkeley Community GIS Portal, “Zoning Districts” layer (Land Use Planning map service), retrieved Aug 27, 2026. Rule text: <a href="https://berkeleyca.gov/sites/default/files/documents/Administrative%20Regulation%2010.2.pdf" target="_blank" rel="noopener">Administrative Regulation 10.2</a> (City Manager, rev. Jan 2025). Basemap, when enabled: © OpenStreetMap contributors.</p>
   </aside>
+  <button id="svFab" title="Street View mode: click anywhere on the map to open Google Street View there, facing the sidewalk">👁 Street View</button>
   <button id="edFab" title="Editor mode: move, rotate, add, delete boxes">✎ Edit boxes</button>
 <div id="edbar"><b>Editor</b><div class="row"><button id="edAdd">+ Add box</button><select id="edAddLayer" title="which layer a new box belongs to"><option value="tent">5×7</option><option value="alt">7×16</option></select><button id="edRotL" title="rotate 5° left">⟲ 5°</button><button id="edRotR" title="rotate 5° right">⟳ 5°</button><button id="edDel">Delete</button><button id="edUndo">Undo</button></div><div class="row"><button id="edExport">Export edits</button><button id="edReset">Reset all</button></div><div class="hint" id="edHint">Click a box: on/off. Drag: move. Select then rotate. Add box: click on the sidewalk.</div></div>
 <div id="map" role="application" aria-label="Map of Berkeley zoning districts with a plain-language reading of AR 10.2"></div>
@@ -1105,6 +1116,13 @@ function cssv(name){ return getComputedStyle(document.documentElement).getProper
 
 var map = window.__map = L.map("map", {zoomControl:true, attributionControl:false, minZoom:11, maxZoom:18, zoomSnap:0.5});
 L.control.scale({imperial:true, metric:false, position:"bottomright"}).addTo(map);
+/* right-click / long-press anywhere: imagery links for that exact spot */
+map.on("contextmenu", function(ev){
+  var ll = ev.latlng;
+  L.popup({maxWidth: 300, minWidth: 220}).setLatLng(ll)
+    .setContent('<div class="pp"><div class="code">ANY POINT</div><h3>Look at this spot</h3>' + vLinks(ll.lat, ll.lng) + '</div>')
+    .openOn(map);
+});
 
 /* ---- panes ---- */
 map.createPane("tiles").style.zIndex   = 180;
@@ -1267,6 +1285,61 @@ function esc(s){
   });
 }
 
+/* ---- verification links: Street View, satellite, Mapillary ----
+   Every popup carries links that open outside imagery at that exact spot so a
+   reader can check the map's claim without trusting it. Google Street View is
+   opened through the public Maps URL scheme (no API key, no tracking script on
+   this page); the heading is computed so the view faces the sidewalk from the
+   roadway. Right-click (long-press on a phone) anywhere, or use the Street
+   View button, for a spot that has no popup of its own. */
+var SV_SEGS = null;
+function svSegs(){
+  if(SV_SEGS) return SV_SEGS;
+  SV_SEGS = [];
+  [window.STREETS_MAJOR, window.STREETS_MINOR].forEach(function(fc){
+    if(!fc || !fc.features) return;
+    fc.features.forEach(function(f){
+      var g = f.geometry; if(!g) return;
+      var lines = g.type === "LineString" ? [g.coordinates] : (g.type === "MultiLineString" ? g.coordinates : []);
+      lines.forEach(function(ln){ for(var i = 1; i < ln.length; i++) SV_SEGS.push([ln[i-1][0], ln[i-1][1], ln[i][0], ln[i][1]]); });
+    });
+  });
+  return SV_SEGS;
+}
+/* bearing (deg from north) from the nearest point on the nearest street to (lat,lon); null if no street within 45 m */
+function svHeading(lat, lon){
+  var kx = 111320 * Math.cos(lat * Math.PI / 180), ky = 110540;
+  var best = null, bd = 45 * 45;
+  svSegs().forEach(function(sg){
+    var ax = (sg[0] - lon) * kx, ay = (sg[1] - lat) * ky, bx = (sg[2] - lon) * kx, by = (sg[3] - lat) * ky;
+    var dx = bx - ax, dy = by - ay, l2 = dx * dx + dy * dy;
+    var t = l2 ? Math.max(0, Math.min(1, -(ax * dx + ay * dy) / l2)) : 0;
+    var px = ax + t * dx, py = ay + t * dy, d2 = px * px + py * py;
+    if(d2 < bd){ bd = d2; best = [px, py]; }
+  });
+  if(!best || bd < 1) return null;                     // on the centerline itself: no meaningful direction
+  var h = Math.atan2(-best[0], -best[1]) * 180 / Math.PI;  // from street point toward target
+  return ((h % 360) + 360) % 360;
+}
+function svUrl(lat, lon, heading){
+  var u = "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=" + (+lat).toFixed(6) + "," + (+lon).toFixed(6) + "&fov=80&pitch=0";
+  if(typeof heading === "number") u += "&heading=" + Math.round(heading);
+  return u;
+}
+function satUrl(lat, lon){ return "https://www.google.com/maps/@?api=1&map_action=map&center=" + (+lat).toFixed(6) + "," + (+lon).toFixed(6) + "&zoom=20&basemap=satellite"; }
+function mapillaryUrl(lat, lon){ return "https://www.mapillary.com/app/?lat=" + (+lat).toFixed(6) + "&lng=" + (+lon).toFixed(6) + "&z=18"; }
+/* heading: pass a number to use it (e.g. a photo's EXIF heading); omit to face the sidewalk from the nearest street */
+function vLinks(lat, lon, heading){
+  var h = typeof heading === "number" ? heading : svHeading(+lat, +lon);
+  var out = '<div class="vl"><b>Verify this spot yourself</b>';
+  out += '<a class="sv" href="' + svUrl(lat, lon, h) + '" target="_blank" rel="noopener">Street View \u2197</a>';
+  out += '<a href="' + satUrl(lat, lon) + '" target="_blank" rel="noopener">Satellite \u2197</a>';
+  out += '<a href="' + mapillaryUrl(lat, lon) + '" target="_blank" rel="noopener">Mapillary \u2197</a>';
+  out += '<div class="hd">' + (+lat).toFixed(5) + ', ' + (+lon).toFixed(5) + (typeof h === "number" ? ' \u00b7 view faces ' + facing(h) : '') +
+         '. Imagery dates vary; the sidewalk may have changed since it was photographed.</div></div>';
+  return out;
+}
+
 map.createPane("sites").style.zIndex = 645;
 var siteBtn = document.getElementById("siteToggle");
 var sitePins = (window.SITES || []).filter(function(s){ return !s.hidden; }).map(function(s, i){
@@ -1312,6 +1385,7 @@ var sitePins = (window.SITES || []).filter(function(s){ return !s.hidden; }).map
     }
     h += s.notes ? '<p class="note">' + esc(s.notes) + '</p>'
                  : '<p class="todo">No field notes recorded for this spot yet.</p>';
+    h += vLinks(s.lat, s.lon, typeof s.heading === "number" ? s.heading : undefined);
     h += '<div class="meta">' + s.lat.toFixed(5) + ', ' + s.lon.toFixed(5);
     if(s.taken) h += '<br>Photographed ' + esc(s.taken.replace("T", " ").slice(0, 16));
     if(facing(s.heading)) h += '<br>Camera facing ' + facing(s.heading);
@@ -1394,6 +1468,7 @@ function amPopup(a){
   if(a.check_date) h += '<br>Last surveyed on the ground ' + esc(a.check_date) + '.';
   if(AMENITIES.retrieved) h += '<br>Snapshot retrieved ' + esc(AMENITIES.retrieved) + '.';
   h += '<br>Community-maintained data \u2014 a fountain or restroom may be locked, broken, seasonal, or gone.</div>';
+  h += vLinks(a.lat, a.lon);
   h += '</div>';
   return h;
 }
@@ -1476,7 +1551,8 @@ function vSummary(){
 }
 function vBlock(id, lat, lon, label){
   var v = verify[id] || {};
-  var h = '<div class="vf" data-vid="' + esc(id) + '" data-lat="' + lat + '" data-lon="' + lon + '" data-label="' + esc(label) + '">';
+  var h = vLinks(lat, lon);
+  h += '<div class="vf" data-vid="' + esc(id) + '" data-lat="' + lat + '" data-lon="' + lon + '" data-label="' + esc(label) + '">';
   h += '<b>Is this right on the ground?</b><br>';
   h += '<button class="vb yes' + (v.ok === true ? ' on' : '') + '" data-v="yes">✓ Fits</button>';
   h += '<button class="vb no' + (v.ok === false ? ' on' : '') + '" data-v="no">✗ Wrong</button>';
@@ -1556,11 +1632,27 @@ if(window.CAMPABLE && CAMPABLE.sites){
     },
     onEachFeature: function(f, ly){
       var p = f.properties;
-      var src = {gis:"GIS estimate", "default":"GIS estimate, pavement width assumed", measured:"field-measured"}[p.ws] || p.ws;
+      var src = {gis:"GIS estimate", "default":"GIS estimate, pavement width assumed", measured:"field-measured", "osm-building":"aerial/OSM building face", reviewed:"reviewed on imagery", drawn:"drawn on imagery", tape:"tape-measured"}[p.ws] || p.ws;
+      var srcLong = {measured:'a tape measurement in <code>data/field/sidewalk_widths.csv</code>', tape:'a tape measurement in <code>data/field/sidewalk_widths.csv</code>',
+        "osm-building":'the distance from the curb to the OpenStreetMap building footprint, not yet measured on the ground',
+        reviewed:'a width read off the City\u2019s 2020 aerial in the review tool, not yet measured on the ground', drawn:'curb and building edges drawn on the City\u2019s 2020 aerial, not yet measured on the ground',
+        "default":'the city GIS with an assumed pavement width, not yet measured on the ground'}[p.ws] || 'the city GIS (right-of-way minus pavement width), not yet measured on the ground';
       ly.bindTooltip("<b>" + esc(p.st) + "</b> (" + (p.sd === "L" ? "left" : "right") + " side)<br>" +
         "Sidewalk " + p.w + " ft wide (" + src + ") · path of travel " + p.p + " ft<br>" +
         (p.n ? p.n + " tent location" + (p.n === 1 ? "" : "s") : "no tent fits: " + (p.d < fp[0] ? "only " + Math.max(0, p.d).toFixed(1) + " ft left after clearances" : p.why || "clearances")),
         {sticky:true, direction:"top", opacity:0.95});
+      ly.on("click", function(ev){
+        if(editOn) return;
+        var ll = ev.latlng;
+        var h = '<div class="pp"><div class="code">BLOCK FACE' + (p.f ? ' \u00b7 ' + esc(p.f) : '') + (p.z ? ' \u00b7 ' + esc(p.z) : '') + '</div>';
+        h += '<h3>' + esc(p.st || "Sidewalk") + ' (' + (p.sd === "L" ? "left" : "right") + ' side)</h3>';
+        h += '<div class="body">Sidewalk <b>' + p.w + ' ft</b> wide (' + src + '); AR 10.2 path of travel to keep clear: <b>' + p.p + ' ft</b>. ';
+        h += (p.n ? 'The model places ' + p.n + ' tent footprint' + (p.n === 1 ? '' : 's') + ' here.' :
+              'No ' + fp[0] + '\u00d7' + fp[1] + ' ft tent fits: ' + (p.d < fp[0] ? 'only ' + Math.max(0, p.d).toFixed(1) + ' ft of depth is left after clearances.' : esc(p.why || 'clearances') + '.')) + '</div>';
+        h += '<div class="meta">Width comes from ' + srcLong + '.</div>';
+        h += vLinks(ll.lat, ll.lng) + '</div>';
+        L.popup({maxWidth: 320, minWidth: 240}).setLatLng(ll).setContent(h).openOn(map);
+      });
     }
   }).addTo(faceGroup);
   /* --- boxes: model output plus the editor's overrides (localStorage "ar102-edits") --- */
@@ -1689,6 +1781,21 @@ if(window.CAMPABLE && CAMPABLE.sites){
   if(edBtn) edBtn.addEventListener("click", function(){ setEdit(!editOn); });
   var edFab = document.getElementById("edFab");
   if(edFab) edFab.addEventListener("click", function(){ setEdit(!editOn); });
+  /* Street View mode: click anywhere to open Google Street View at that spot, facing the sidewalk from the road */
+  var svOn = false, svFab = document.getElementById("svFab"), mapEl = document.getElementById("map");
+  function setSv(on){
+    svOn = on;
+    if(svFab){ svFab.classList.toggle("on", on); svFab.textContent = on ? "\u2715 Exit Street View mode" : "\ud83d\udc41 Street View"; }
+    if(mapEl) mapEl.classList.toggle("sv-mode", on);
+    if(on && editOn) setEdit(false);
+  }
+  if(svFab) svFab.addEventListener("click", function(){ setSv(!svOn); });
+  map.on("click", function(ev){
+    if(!svOn) return;
+    var ll = ev.latlng;
+    window.open(svUrl(ll.lat, ll.lng, svHeading(ll.lat, ll.lng)), "_blank", "noopener");
+  });
+  map.on("keydown", function(ev){ if(svOn && ev.originalEvent && ev.originalEvent.key === "Escape") setSv(false); });
   window.__setEdit = setEdit;
   function rotateSel(deg){
     if(!selected || !BOX[selected]) return;

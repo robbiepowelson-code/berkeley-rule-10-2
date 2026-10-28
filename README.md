@@ -9,6 +9,7 @@ Over the districts sit three point layers: **surveyed sites** photographed in th
 ## What's here
 
 - **`index.html`** — the map itself. Self-contained: Leaflet, the city's GIS data, and all three point layers are embedded, so it works offline.
+- **Verify-it-yourself links** — every popup (block face, tent box, 7×16 pin, surveyed site, water/toilet point) carries Google Street View, Google satellite and Mapillary links for that exact point, with the Street View heading computed so the view faces the sidewalk from the roadway. Right-click (long-press) anywhere on the map, or use the **Street View** button and click, for any other spot. The links use Google's public Maps URL scheme — no API key and no Google script on the page. Street View's "See more dates" shows older imagery, which matters where the sidewalk has been rebuilt.
 - **`report.html`** — the method: the regulation, the data, how each layer was built, and what it can't tell you.
 - **`CONTRIBUTING.md`** — how to add a site, either through an issue form or by running the script over a folder of photos.
 - **`sites.json`** + **`photos/`** — the surveyed sites and their images.
