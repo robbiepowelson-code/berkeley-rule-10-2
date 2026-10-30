@@ -3,3 +3,7 @@ centerlineid,side,width_ft,street,where,date,notes
 6649,L,4,FOURTH ST,"east side at 1409 Fourth St (37.87673, -122.30281), clear concrete walk between tree wells and the property line",2026-10-30,"field measurement by Robbie Powelson; tree wells and driveways excluded (GIS estimate 8.0 ft, 2023-imagery polygon 10.4 ft)"
 551,L,6,CEDAR ST,"north side, between First St and Second St",2026-10-30,"field measurement by Robbie Powelson; clear walk, landscaped areas excluded (GIS estimate 9.4 ft)"
 551,R,0,CEDAR ST,"south side, between First St and Second St",2026-10-30,"field observation by Robbie Powelson: no sidewalk, the whole strip is landscaped (GIS estimate 15.5 ft)"
+357,L,6,DELAWARE ST,"north side, between Sixth St and Seventh St",2026-10-30,"field measurement by Robbie Powelson; clear walk with tree wells subtracted (GIS estimate 13.9 ft)"
+357,R,6,DELAWARE ST,"south side, between Sixth St and Seventh St",2026-10-30,"field measurement by Robbie Powelson; clear walk with tree wells subtracted (GIS estimate 16.4 ft)"
+1465,L,0,EASTSHORE HWY,"west side along I-80, Gilman to Camelia",2026-10-30,"Street View (Mar 2025) observation, not a tape: grass embankment against the freeway fence, no pavement of any kind (GIS estimate 36.6 ft)"
+1211,L,0,HARRISON ST,"north side, 801 Harrison block",2026-10-30,"Street View (Mar 2025) observation, not a tape: continuous asphalt apron to the building wall with nose-in parking, no curb and no walk (GIS estimate 9.1 ft)"

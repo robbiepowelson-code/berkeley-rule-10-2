@@ -1,0 +1,65 @@
+{
+ "method": "clear walk width = GIS curb-to-property width x factor; factor = mean of tape/GIS over taped faces with a sidewalk",
+ "factor": 0.591,
+ "factor_sd": 0.259,
+ "n": 5,
+ "n_no_sidewalk": 3,
+ "points": {
+  "1084R": {
+   "street": "CAMELIA ST",
+   "tape_ft": 12.0,
+   "gis_ft": 11.8,
+   "ratio": 1.017,
+   "date": "2026-09-21"
+  },
+  "6649L": {
+   "street": "FOURTH ST",
+   "tape_ft": 4.0,
+   "gis_ft": 8.0,
+   "ratio": 0.5,
+   "date": "2026-10-30"
+  },
+  "551L": {
+   "street": "CEDAR ST",
+   "tape_ft": 6.0,
+   "gis_ft": 9.4,
+   "ratio": 0.638,
+   "date": "2026-10-30"
+  },
+  "551R": {
+   "street": "CEDAR ST",
+   "tape_ft": 0.0,
+   "gis_ft": 15.5,
+   "ratio": 0.0,
+   "date": "2026-10-30"
+  },
+  "357L": {
+   "street": "DELAWARE ST",
+   "tape_ft": 6.0,
+   "gis_ft": 13.9,
+   "ratio": 0.432,
+   "date": "2026-10-30"
+  },
+  "357R": {
+   "street": "DELAWARE ST",
+   "tape_ft": 6.0,
+   "gis_ft": 16.4,
+   "ratio": 0.366,
+   "date": "2026-10-30"
+  },
+  "1465L": {
+   "street": "EASTSHORE HWY",
+   "tape_ft": 0.0,
+   "gis_ft": 21.7,
+   "ratio": 0.0,
+   "date": "2026-10-30"
+  },
+  "1211L": {
+   "street": "HARRISON ST",
+   "tape_ft": 0.0,
+   "gis_ft": 10.8,
+   "ratio": 0.0,
+   "date": "2026-10-30"
+  }
+ }
+}

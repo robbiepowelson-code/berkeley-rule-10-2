@@ -480,6 +480,16 @@ def main():
     if imagery:
         print("  %d block faces with an imagery clear width" % sum(1 for v in imagery.values() if v[0] is not None), file=sys.stderr)
 
+    # ---- GIS calibration (tools/calibrate_gis.py) --------------------------
+    gis_cal = None
+    cpath = os.path.join(field, "gis_calibration.json")
+    if os.path.exists(cpath):
+        with open(cpath, encoding="utf-8") as fh:
+            c = json.load(fh)
+        if c.get("factor"):
+            gis_cal = c["factor"]
+            print("  GIS widths x %.2f (clear walk / GIS strip, n=%d tapes, sd %.2f)" % (gis_cal, c["n"], c.get("factor_sd") or 0), file=sys.stderr)
+
     # ---- block faces ----------------------------------------------------
     PT = R["path_of_travel"]
     bset = ft(R["building_setback"]["ft"]) if R["building_setback"].get("enabled", True) else 0
@@ -532,6 +542,10 @@ def main():
             if w_ft > 40:            # curb line is not next to a parcel (park, rail, freeway)
                 why["no property line within 40 ft"] += 1
                 continue
+            if w_src in ("gis", "default", "osm-building") and gis_cal:
+                # tape measurements show the clear walk is a fraction of the curb-to-property strip
+                w_m, w_src = w_m * gis_cal, "gis-calibrated"
+                w_ft = w_m / FT
             path_ft = PT["wide_sidewalk_path_ft"] if w_ft >= PT["wide_sidewalk_threshold_ft"] else PT["narrow_sidewalk_path_ft"]
             depth_m = w_m - cset - bset - ft(path_ft)
 

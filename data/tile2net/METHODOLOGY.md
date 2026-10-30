@@ -227,6 +227,54 @@ Effect on the count: re-running the model with the imagery widths and the
 Fourth St tape moved the pilot total from 1,081 to **991** tent locations
 (Ninth St 227 → 166, Carleton 159 → 144, Gilman 47 → 39, San Pablo 91 → 85).
 
+## 4c. Calibrating the GIS width with tape, corridor-wide
+
+By 30 October 2026 five block faces had been taped for clear walk width
+(tree wells, planting strips and driveways subtracted) and three more
+observed to have no sidewalk at all (`data/field/sidewalk_widths.csv`):
+
+| face | street | GIS strip (ft) | clear walk (ft) | ratio |
+|---|---|---|---|---|
+| 1084R | Camelia St, north | 11.8 | 12.0 | 1.02 |
+| 6649L | Fourth St, east (1409) | 8.0 | 4.0 | 0.50 |
+| 551L | Cedar St, north, First–Second | 9.4 | 6.0 | 0.64 |
+| 357L | Delaware St, north, Sixth–Seventh | 13.9 | 6.0 | 0.43 |
+| 357R | Delaware St, south, Sixth–Seventh | 16.4 | 6.0 | 0.37 |
+| 551R | Cedar St, south, First–Second | 15.5 | 0 — all landscaped | — |
+| 1465L | Eastshore Hwy, I-80 side | 36.6 | 0 — grass embankment (Street View) | — |
+| 1211L | Harrison St, north | 9.1 | 0 — asphalt apron, no curb (Street View) | — |
+
+The GIS strip is curb to property line; the walk is what is left after the
+landscaped and furnishing zone. Across the taped faces the walk is on average
+**0.59 × the GIS strip (sd 0.26, n = 5)**. `tools/calibrate_gis.py` computes
+this factor from the tape file each time it is run, and the tent model now
+applies it to every face that has neither a tape nor an imagery clear width
+(`width_source = gis-calibrated`, stated in the popup as interim). Faces
+taped or observed at 0 ft are treated as no sidewalk.
+
+The factor is deliberately crude — its spread is as large as its value is
+precise — and it exists to stop the raw GIS strip being presented as a
+sidewalk width anywhere in the corridor while the imagery run and the tape
+sample catch up. Its effect is large because the GIS strip was wrong by a
+lot: the pilot total fell from 991 to **90 locations on 8 block faces**:
+
+| face | street | width (ft) | source | locations |
+|---|---|---|---|---|
+| 5671R | San Pablo Ave | 22.3 | GIS × 0.59 | 20 |
+| 1409L | Eastshore Hwy | 21.7 | GIS × 0.59 | 20 |
+| 3652L / 3652R | University Ave overpass | 23.0 / 23.3 | GIS × 0.59 | 8 / 6 |
+| 433L | Gilman St | 20.3 | 2023 imagery | 13 |
+| 3635L | Ashby Ave | 23.4 | GIS × 0.59 | 11 |
+| 180R | I-80 east off-ramp at University | 21.0 | GIS × 0.59 | 10 |
+| 6770R | Seventh St | 19.6 | GIS × 0.59 | 2 |
+
+Every one of these is an unusually wide strip (a freeway frontage, an
+overpass, an arterial), which is exactly where the "half the strip" rule is
+least likely to hold; `data/field/candidates_2026-10-30.csv` lists them with
+Street View links as the field-verification list. This is consistent with the
+field survey's finding that the corridor has fewer than fifteen usable
+locations, and it is the list to take a tape to.
+
 ## 5. Margin of error, stated honestly
 
 - **Width.** Where a sidewalk exists, the imagery's width class agrees with the
@@ -275,7 +323,8 @@ bash tools/tile2net/run_area.sh nw    "37.8750, -122.3070, 37.8840, -122.2920"
 bash tools/tile2net/run_area.sh ninth "37.8515, -122.2975, 37.8590, -122.2895"
 python3 tools/tile2net_eval.py data/tile2net/eval nw=data/tile2net/nw/polygons.parquet ninth=data/tile2net/ninth/polygons.parquet
 python3 tools/clear_width.py nw ninth              # clear-walk width profile every metre (needs the tiles)
-python3 tools/campable_sites.py                    # tent model: tape > reviewer > imagery > building face > GIS
+python3 tools/calibrate_gis.py                     # tape/GIS factor -> data/field/gis_calibration.json
+python3 tools/campable_sites.py                    # tent model: tape > reviewer > imagery > GIS x factor
 python3 tools/inject_sources.py                    # write the evidence table into index.html
 ```
 
