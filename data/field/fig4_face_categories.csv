@@ -1,0 +1,2039 @@
+face,street,side,cat,zone,gis_width_ft,gis_source,model_spots,fig4,fig4_share,fig4_red_share,n_samples
+8R,UNIVERSITY AVE,R,other,SP,16.7,gis,0,none,1.0,0.0,24
+9L,UNIVERSITY AVE,L,other,SP,12.7,gis,0,trail,1.0,0.0,21
+10L,CEDAR ST,L,com,C-W,10.3,gis,0,5ft_or_wider,1.0,0.0,13
+10R,CEDAR ST,R,com,C-W,11.8,gis,0,5ft_or_wider,1.0,0.0,13
+12L,ADDISON ST,L,com,C-W,7.0,gis,0,5ft_or_wider,1.0,0.0,2
+12R,ADDISON ST,R,man,MULI,7.8,osm-building,0,5ft_or_wider,1.0,0.0,2
+13L,ADDISON ST,L,com,C-W,8.8,gis,0,5ft_or_wider,1.0,0.0,9
+13R,ADDISON ST,R,man,MULI,10.9,gis,0,5ft_or_wider,1.0,0.0,9
+14L,ADDISON ST,L,com,C-U,11.3,gis,0,5ft_or_wider,1.0,0.0,16
+14R,ADDISON ST,R,res,R-3,12.5,gis,0,5ft_or_wider,1.0,0.0,16
+19L,UNIVERSITY AVE,L,com,C-W,5.0,default,0,width_unknown,0.65,0.0,17
+19R,UNIVERSITY AVE,R,com,C-W,36.4,osm-building,0,width_unknown,1.0,0.0,13
+30R,SEAWALL DR,R,other,U,22.3,gis,0,5ft_or_wider,0.83,0.0,6
+31R,SEAWALL DR,R,other,U,23.2,gis,0,trail,0.67,0.0,6
+32L,ADDISON ST,L,man,MULI,10.6,gis,0,no_sidewalk,1.0,1.0,4
+32R,ADDISON ST,R,com,C-W,9.8,gis,0,no_sidewalk,1.0,1.0,4
+53R,I80 EAST (OFF RAMP) UNIV,R,other,U,15.3,default,0,width_unknown,1.0,0.0,2
+54L,BOLIVAR DR,L,man,MULI,8.5,default,0,no_sidewalk,0.5,0.5,2
+54R,BOLIVAR DR,R,other,U,27.9,default,0,no_sidewalk,0.5,0.5,2
+55L,BOLIVAR DR,L,man,MULI,23.5,osm-building,0,5ft_or_wider,0.32,0.0,56
+56L,UNIVERSITY AVE,L,other,U,17.2,default,0,trail,0.85,0.0,20
+58L,BONAR ST,L,com,C-U,9.4,gis,0,trail,0.69,0.0,13
+58R,BONAR ST,R,com,C-U,16.0,gis,0,width_unknown,0.31,0.0,13
+59L,BONAR ST,L,res,R-2A,27.4,gis,0,trail,1.0,0.0,2
+59R,BONAR ST,R,res,R-2A,29.3,gis,0,5ft_or_wider,1.0,0.0,2
+60L,DELAWARE ST,L,res,R-2,16.9,gis,0,5ft_or_wider,1.0,0.0,12
+60R,DELAWARE ST,R,res,R-2,15.7,gis,0,5ft_or_wider,1.0,0.0,12
+61L,ACTON ST,L,res,R-2,10.4,gis,0,5ft_or_wider,0.44,0.0,16
+61R,ACTON ST,R,res,R-2,15.5,gis,0,5ft_or_wider,0.59,0.0,22
+62R,EASTSHORE HWY,R,man,M,9.1,gis,0,width_unknown,0.32,0.0,25
+63L,DELAWARE ST,L,mixres,R-BMU,19.3,gis,0,5ft_or_wider,0.42,0.0,12
+63R,DELAWARE ST,R,res,R-2,16.9,gis,0,5ft_or_wider,0.67,0.0,12
+65L,CEDAR ST,L,res,R-2,9.7,gis,0,width_unknown,0.67,0.17,12
+65R,CEDAR ST,R,res,R-2,13.7,gis,0,5ft_or_wider,1.0,0.0,12
+87R,CAL SAILING LOOP,R,other,U,33.2,default,0,5ft_or_wider,0.36,0.0,90
+90L,UNIVERSITY AVE OVERPASS,L,man,MULI,22.5,gis,0,none,1.0,0.0,2
+90R,UNIVERSITY AVE OVERPASS,R,man,MULI,26.0,gis,0,none,1.0,0.0,2
+91R,UNIVERSITY AVE OVERPASS,R,man,MULI,31.2,default,0,no_sidewalk,0.43,0.43,7
+92L,I80 EAST (OFF RAMP) UNIV,L,man,MULI,24.6,default,0,no_sidewalk,0.55,0.55,11
+93L,I80 EAST (ON RAMP) UNIV,L,man,MULI,11.6,default,0,width_unknown,0.5,0.0,14
+94L,UNIVERSITY AVE,L,man,MULI,25.5,default,0,width_unknown,0.53,0.07,15
+94R,UNIVERSITY AVE,R,man,MULI,15.1,default,0,width_unknown,0.45,0.0,11
+95L,UNNAMED ALLEY,L,res,R-2,24.5,osm-building,0,5ft_or_wider,0.38,0.0,16
+95R,UNNAMED ALLEY,R,com,C-W,31.1,osm-building,1,5ft_or_wider,0.94,0.0,16
+98L,VIRGINIA ST,L,res,R-2,11.2,gis,0,5ft_or_wider,1.0,0.0,9
+98R,VIRGINIA ST,R,res,R-2,14.5,gis,0,5ft_or_wider,1.0,0.0,9
+102L,VIRGINIA ST,L,com,C-W,10.2,gis,0,5ft_or_wider,1.0,0.0,13
+102R,VIRGINIA ST,R,res,R-2,12.0,gis,0,5ft_or_wider,1.0,0.0,13
+103L,VIRGINIA ST,L,com,C-W,11.6,gis,0,5ft_or_wider,1.0,0.0,10
+103R,VIRGINIA ST,R,com,C-W,14.1,gis,0,5ft_or_wider,1.0,0.0,10
+104L,LINCOLN ST,L,res,R-2,9.8,gis,0,5ft_or_wider,0.62,0.0,16
+104R,LINCOLN ST,R,res,R-2,15.1,gis,0,5ft_or_wider,0.69,0.0,16
+119L,M DOCK,L,other,U,22.7,default,0,trail,0.5,0.0,2
+119R,M DOCK,R,other,U,21.0,default,0,trail,1.0,0.0,2
+125L,CEDAR ST,L,res,R-1,10.5,gis,0,5ft_or_wider,0.54,0.0,13
+125R,CEDAR ST,R,res,R-1,12.6,gis,0,5ft_or_wider,0.85,0.0,13
+126L,HOPKINS ST,L,res,R-2,13.2,gis,0,5ft_or_wider,1.0,0.0,10
+126R,HOPKINS ST,R,res,R-2,16.3,gis,0,5ft_or_wider,1.0,0.0,10
+127L,CORNELL AVE,L,res,R-2,9.2,gis,0,5ft_or_wider,0.5,0.0,12
+127R,CORNELL AVE,R,res,R-2,12.4,gis,0,5ft_or_wider,1.0,0.0,12
+138L,BREAKWATER DR,L,other,U,16.3,default,0,none,1.0,0.0,11
+138R,BREAKWATER DR,R,other,U,11.0,default,0,none,1.0,0.0,17
+148L,BATAAN AVE,L,res,R-2,5.0,gis,0,no_sidewalk,0.58,0.58,12
+148R,BATAAN AVE,R,res,R-2,9.1,gis,0,no_sidewalk,0.58,0.58,12
+153L,SACRAMENTO ST,L,res,R-2,14.5,gis,0,5ft_or_wider,0.67,0.0,12
+153R,SACRAMENTO ST,R,mixres,R-BMU,17.5,gis,0,5ft_or_wider,1.0,0.0,12
+154L,HEARST AVE,L,res,R-2,12.0,gis,0,5ft_or_wider,1.0,0.0,16
+154R,HEARST AVE,R,res,R-2,12.2,gis,0,5ft_or_wider,1.0,0.0,16
+155L,CHESTNUT ST,L,res,R-2,9.7,gis,0,5ft_or_wider,0.67,0.0,9
+155R,CHESTNUT ST,R,res,R-2,16.6,gis,0,5ft_or_wider,0.78,0.0,9
+156L,DELAWARE ST,L,res,R-2,13.3,gis,0,5ft_or_wider,1.0,0.0,12
+156R,DELAWARE ST,R,res,R-2,17.1,gis,0,5ft_or_wider,1.0,0.0,12
+159L,HOPKINS ST,L,res,R-2,12.7,gis,0,5ft_or_wider,0.6,0.0,10
+159R,HOPKINS ST,R,res,R-2,16.6,gis,0,5ft_or_wider,0.5,0.0,10
+160L,JONES ST,L,res,R-2,10.5,gis,0,5ft_or_wider,0.58,0.42,12
+160R,JONES ST,R,res,R-2,13.8,gis,0,no_sidewalk,0.58,0.58,12
+161L,CURTIS ST,L,res,R-2,10.6,gis,0,5ft_or_wider,0.28,0.0,25
+161R,CURTIS ST,R,res,R-2,10.1,gis,0,5ft_or_wider,0.8,0.0,25
+166L,ALLSTON WAY,L,res,R-2,11.6,gis,0,5ft_or_wider,0.91,0.09,11
+166R,ALLSTON WAY,R,res,R-2,13.8,gis,0,5ft_or_wider,1.0,0.0,11
+177L,FRANCISCO ST,L,res,R-2,10.7,gis,0,5ft_or_wider,1.0,0.0,16
+177R,FRANCISCO ST,R,res,R-2,11.7,gis,0,5ft_or_wider,1.0,0.0,16
+178L,CHESTNUT ST,L,res,R-2,9.8,gis,0,5ft_or_wider,0.58,0.0,12
+178R,CHESTNUT ST,R,res,R-2,14.7,gis,0,5ft_or_wider,0.58,0.0,12
+179R,I80 EAST (OFF RAMP) UNIV,R,other,U,36.6,default,0,width_unknown,0.75,0.25,8
+180R,I80 EAST (OFF RAMP) UNIV,R,com,C-W,35.6,default,6,no_sidewalk,1.0,1.0,3
+181L,W FRONTAGE RD,L,other,SP,31.2,default,0,width_unknown,1.0,0.0,2
+182R,M DOCK,R,other,U,28.0,default,0,trail,1.0,0.0,2
+183R,M DOCK,R,other,U,31.1,default,0,trail,1.0,0.0,2
+304R,UNIVERSITY AVE,R,other,SP,13.7,gis,0,5ft_or_wider,0.44,0.0,45
+305L,BYRON ST,L,res,R-2,9.1,gis,0,5ft_or_wider,1.0,0.0,12
+305R,BYRON ST,R,res,R-2,15.5,gis,0,5ft_or_wider,0.67,0.0,12
+306L,ALLSTON WAY,L,res,R-2,11.5,gis,0,5ft_or_wider,1.0,0.0,11
+306R,ALLSTON WAY,R,res,R-2,13.7,gis,0,5ft_or_wider,1.0,0.0,11
+307R,I80 EAST HWY,R,other,U,38.0,default,0,width_unknown,0.67,0.0,15
+320L,CEDAR ST,L,man,M,10.3,gis,0,width_unknown,0.54,0.0,13
+320R,CEDAR ST,R,man,M,6.8,gis,0,width_unknown,0.54,0.0,13
+321L,CALIFORNIA ST,L,res,R-2,6.1,gis,0,5ft_or_wider,0.67,0.0,6
+321R,CALIFORNIA ST,R,res,R-2,9.6,gis,0,5ft_or_wider,0.67,0.0,6
+322L,UNIVERSITY AVE,L,other,SP,13.3,gis,0,trail,1.0,0.0,45
+323L,ALLSTON WAY,L,res,R-2,13.1,gis,0,5ft_or_wider,1.0,0.0,13
+323R,ALLSTON WAY,R,com,C-W,11.4,gis,0,5ft_or_wider,1.0,0.0,13
+326L,W FRONTAGE RD,L,other,SP,35.4,gis,0,width_unknown,0.65,0.0,20
+326R,W FRONTAGE RD,R,other,SP,5.3,gis,0,width_unknown,0.85,0.0,20
+333L,ADDISON ST,L,man,MULI,9.8,gis,0,5ft_or_wider,0.93,0.07,14
+333R,ADDISON ST,R,com,C-W,9.6,gis,0,5ft_or_wider,0.93,0.07,14
+334L,ADDISON ST,L,com,C-W,10.2,gis,0,5ft_or_wider,1.0,0.0,11
+334R,ADDISON ST,R,man,MULI,11.1,osm-building,0,5ft_or_wider,1.0,0.0,11
+335L,ADDISON ST,L,mixres,MUR,11.5,gis,0,5ft_or_wider,1.0,0.0,13
+335R,ADDISON ST,R,mixres,MUR,13.1,gis,0,5ft_or_wider,1.0,0.0,13
+336L,ALLSTON WAY,L,res,R-2,10.9,gis,0,5ft_or_wider,1.0,0.0,11
+336R,ALLSTON WAY,R,res,R-2,12.4,gis,0,5ft_or_wider,1.0,0.0,11
+344L,UNIVERSITY AVE,L,other,U,24.3,default,0,5ft_or_wider,0.54,0.0,39
+350L,PARK ST,L,res,R-1,14.5,gis,0,5ft_or_wider,0.31,0.0,26
+350R,PARK ST,R,res,R-1,9.8,gis,0,5ft_or_wider,0.23,0.0,26
+352L,UNIVERSITY AVE,L,com,C-W,30.0,default,0,width_unknown,0.91,0.09,11
+352R,UNIVERSITY AVE,R,com,C-W,10.1,default,0,width_unknown,0.82,0.18,11
+353L,ADDISON ST,L,com,C-W,12.2,gis,0,5ft_or_wider,0.69,0.0,13
+353R,ADDISON ST,R,com,C-W,13.0,gis,0,5ft_or_wider,0.69,0.0,13
+354R,UNIVERSITY AVE,R,com,C-W,1.5,default,0,width_unknown,1.0,0.0,11
+356L,BERKELEY WAY,L,res,R-2A,9.1,gis,0,5ft_or_wider,0.5,0.0,16
+356R,BERKELEY WAY,R,res,R-4,9.5,gis,0,5ft_or_wider,0.5,0.0,16
+357L,DELAWARE ST,L,res,R-2,13.9,gis,0,5ft_or_wider,0.82,0.0,11
+357R,DELAWARE ST,R,res,R-2,16.4,gis,0,5ft_or_wider,0.45,0.0,11
+358L,VIRGINIA ST,L,man,MULI,13.4,gis,0,5ft_or_wider,0.64,0.0,11
+358R,VIRGINIA ST,R,mixres,MUR,16.6,gis,0,5ft_or_wider,0.55,0.0,11
+359L,I80 EAST (OFF RAMP) UNIV,L,com,C-W,38.6,default,0,no_sidewalk,0.97,0.97,38
+359R,I80 EAST (OFF RAMP) UNIV,R,com,C-W,3.0,default,0,no_sidewalk,1.0,1.0,22
+364L,UNIVERSITY AVE,L,man,MULI,7.9,default,0,no_sidewalk,0.14,0.14,7
+364R,UNIVERSITY AVE,R,man,MULI,32.2,default,0,none,1.0,0.0,11
+367L,M DOCK,L,other,U,36.1,default,0,trail,1.0,0.0,2
+368L,M DOCK,L,other,U,37.0,default,0,trail,1.0,0.0,2
+369R,L DOCK,R,other,U,32.2,default,0,trail,1.0,0.0,2
+370L,J DOCK,L,other,U,35.3,default,0,trail,1.0,0.0,3
+375R,L DOCK,R,other,U,30.9,default,0,trail,1.0,0.0,2
+376L,L DOCK,L,other,U,21.7,default,0,trail,1.0,0.0,2
+376R,L DOCK,R,other,U,18.2,default,0,trail,1.0,0.0,2
+377L,L DOCK,L,other,U,32.6,default,0,trail,1.0,0.0,2
+378L,L DOCK,L,other,U,35.3,default,0,trail,1.0,0.0,2
+379R,J DOCK,R,other,U,34.4,default,0,trail,1.0,0.0,3
+380L,J DOCK,L,other,U,23.4,default,0,trail,1.0,0.0,2
+380R,J DOCK,R,other,U,25.5,default,0,trail,0.5,0.0,2
+381L,N DOCK,L,other,U,31.9,default,0,none,1.0,0.0,3
+381R,N DOCK,R,other,U,31.7,default,0,none,1.0,0.0,3
+396L,EOLA ST,L,res,R-2,11.9,osm-building,0,5ft_or_wider,0.58,0.0,12
+396R,EOLA ST,R,res,R-2,14.9,gis,0,5ft_or_wider,0.58,0.0,12
+397L,BROWNING ST,L,res,R-2,7.0,gis,0,5ft_or_wider,1.0,0.0,3
+397R,BROWNING ST,R,res,R-2A,16.8,gis,0,5ft_or_wider,1.0,0.0,3
+398L,BROWNING ST,L,res,R-2,8.0,gis,0,5ft_or_wider,1.0,0.0,21
+398R,BROWNING ST,R,res,R-2,14.9,gis,0,5ft_or_wider,0.67,0.0,21
+404R,I80 EAST (OFF RAMP) UNIV,R,com,C-W,31.4,default,0,no_sidewalk,1.0,1.0,5
+405R,I80 EAST (OFF RAMP) UNIV,R,other,U,28.4,default,0,width_unknown,1.0,0.0,4
+408L,ADDISON ST,L,res,R-4,10.4,gis,0,5ft_or_wider,1.0,0.0,12
+408R,ADDISON ST,R,res,R-2,14.3,gis,0,5ft_or_wider,1.0,0.0,12
+411L,CORNELL AVE,L,res,R-2,6.4,gis,0,5ft_or_wider,0.63,0.0,30
+411R,CORNELL AVE,R,res,R-2,11.2,gis,0,5ft_or_wider,0.68,0.0,34
+412L,TALBOT AVE,L,res,R-2,7.0,gis,0,5ft_or_wider,0.69,0.0,26
+412R,TALBOT AVE,R,res,R-2,13.3,gis,0,5ft_or_wider,0.69,0.0,26
+413L,PAGE ST,L,man,MRD,21.4,gis,20,no_sidewalk,0.69,0.69,13
+413R,PAGE ST,R,man,M,19.1,gis,0,no_sidewalk,0.69,0.69,13
+415L,BELVEDERE AVE,L,res,R-2,8.7,gis,0,5ft_or_wider,0.24,0.0,25
+415R,BELVEDERE AVE,R,res,R-2,11.8,gis,0,width_unknown,0.16,0.0,25
+416L,GILMAN ST,L,man,M,21.9,gis,26,5ft_or_wider,0.92,0.08,12
+416R,GILMAN ST,R,man,MRD,11.9,osm-building,0,5ft_or_wider,0.67,0.17,12
+418L,ORDWAY ST,L,res,R-2,19.1,gis,0,5ft_or_wider,0.41,0.0,27
+418R,ORDWAY ST,R,res,R-2,7.1,gis,0,5ft_or_wider,0.37,0.0,27
+419L,ADA ST,L,res,R-1,8.9,gis,0,5ft_or_wider,1.0,0.0,10
+419R,ADA ST,R,res,R-1,21.9,gis,0,5ft_or_wider,1.0,0.0,10
+420L,CALIFORNIA ST,L,res,R-1,12.9,gis,0,5ft_or_wider,0.27,0.0,15
+420R,CALIFORNIA ST,R,res,R-1,2.6,gis,0,5ft_or_wider,0.2,0.0,15
+423L,ACTON ST,L,res,R-1,15.2,gis,0,5ft_or_wider,0.38,0.0,16
+423R,ACTON ST,R,res,R-1,12.1,gis,0,5ft_or_wider,0.88,0.0,16
+424L,LINCOLN ST,L,res,R-2,12.9,gis,0,5ft_or_wider,1.0,0.0,24
+424R,LINCOLN ST,R,res,R-2,11.8,gis,0,5ft_or_wider,1.0,0.0,24
+427L,CAMELIA ST,L,com,C-W,10.7,gis,0,5ft_or_wider,1.0,0.0,6
+427R,CAMELIA ST,R,com,C-W,13.9,gis,0,5ft_or_wider,1.0,0.0,6
+428L,HOPKINS ST,L,res,R-2,9.2,gis,0,5ft_or_wider,0.84,0.0,19
+428R,HOPKINS ST,R,res,R-2,21.6,gis,0,5ft_or_wider,0.74,0.0,19
+429L,ORDWAY ST,L,res,R-2,12.5,gis,0,5ft_or_wider,1.0,0.0,8
+429R,ORDWAY ST,R,res,R-2,7.3,gis,0,5ft_or_wider,1.0,0.0,21
+432L,GILMAN ST,L,man,M,21.1,gis,5,5ft_or_wider,1.0,0.0,7
+432R,GILMAN ST,R,man,M,13.8,gis,0,5ft_or_wider,0.86,0.0,7
+433L,GILMAN ST,L,man,M,16.8,gis,0,5ft_or_wider,1.0,0.0,5
+433R,GILMAN ST,R,man,M,17.0,gis,0,5ft_or_wider,1.0,0.0,5
+434L,GILMAN ST,L,res,R-2,10.9,gis,0,5ft_or_wider,0.5,0.5,4
+434R,GILMAN ST,R,com,C-N,7.7,osm-building,0,width_unknown,0.5,0.5,4
+435L,TALBOT AVE,L,res,R-2,7.5,gis,0,5ft_or_wider,1.0,0.0,23
+435R,TALBOT AVE,R,res,R-2,13.6,gis,0,5ft_or_wider,1.0,0.0,23
+438L,ADA ST,L,res,R-2,9.6,gis,0,5ft_or_wider,1.0,0.0,13
+438R,ADA ST,R,res,R-1,21.5,gis,0,5ft_or_wider,1.0,0.0,13
+441L,VIRGINIA ST,L,res,R-2,11.3,gis,0,5ft_or_wider,1.0,0.0,13
+441R,VIRGINIA ST,R,res,R-2,12.4,gis,0,5ft_or_wider,1.0,0.0,13
+442L,VIRGINIA ST,L,res,R-2,11.6,gis,0,5ft_or_wider,1.0,0.0,10
+442R,VIRGINIA ST,R,res,R-2,13.2,gis,0,5ft_or_wider,1.0,0.0,10
+443L,FRANCISCO ST,L,res,R-2,10.2,gis,0,5ft_or_wider,0.92,0.0,12
+443R,FRANCISCO ST,R,res,R-2,9.1,gis,0,5ft_or_wider,0.92,0.0,12
+444L,ACTON ST,L,mixres,R-BMU,11.4,gis,0,5ft_or_wider,0.44,0.0,16
+444R,ACTON ST,R,res,R-2,15.6,gis,0,5ft_or_wider,0.25,0.0,12
+446L,HORNBLOWER DOCK,L,other,U,32.9,default,0,trail,0.67,0.0,3
+447L,HORNBLOWER DOCK,L,other,U,21.4,default,0,no_data,1.0,0.0,2
+447R,HORNBLOWER DOCK,R,other,U,17.0,default,0,trail,1.0,0.0,2
+448L,HORNBLOWER DOCK,L,other,U,22.7,default,0,trail,0.5,0.0,2
+448R,HORNBLOWER DOCK,R,other,U,25.8,default,0,trail,1.0,0.0,2
+449L,HEARST AVE,L,res,R-2A,12.7,gis,0,5ft_or_wider,0.71,0.0,24
+449R,HEARST AVE,R,res,R-2A,10.6,gis,0,5ft_or_wider,0.71,0.0,24
+452R,EASTSHORE HWY,R,man,MRD,10.9,gis,0,5ft_or_wider,0.35,0.12,52
+454L,CEDAR ST,L,res,R-2,11.4,gis,0,width_unknown,0.56,0.0,9
+454R,CEDAR ST,R,res,R-2,15.2,gis,0,5ft_or_wider,0.56,0.0,9
+458L,CARLETON ST,L,man,MULI,15.4,gis,0,5ft_or_wider,1.0,0.0,12
+458R,CARLETON ST,R,mixres,MUR,19.0,osm-building,0,5ft_or_wider,0.83,0.0,12
+461L,WARD ST,L,res,R-1,12.6,gis,0,5ft_or_wider,1.0,0.0,12
+461R,WARD ST,R,res,R-1,12.3,gis,0,5ft_or_wider,1.0,0.0,12
+462L,W FRONTAGE RD,L,other,SP,31.4,gis,0,width_unknown,0.82,0.0,11
+462R,W FRONTAGE RD,R,other,SP,4.3,gis,0,width_unknown,1.0,0.0,23
+470L,VIRGINIA ST,L,res,R-2,12.3,gis,0,5ft_or_wider,1.0,0.0,9
+470R,VIRGINIA ST,R,res,R-2,14.2,gis,0,5ft_or_wider,1.0,0.0,9
+472L,CEDAR ST,L,res,R-1,10.0,gis,0,5ft_or_wider,0.8,0.0,5
+472R,CEDAR ST,R,res,R-1,13.1,gis,0,5ft_or_wider,0.8,0.0,5
+473L,WEST ST,L,res,R-1,11.3,default,0,5ft_or_wider,0.5,0.0,12
+473R,WEST ST,R,res,R-1,25.0,default,0,5ft_or_wider,0.5,0.0,12
+476L,SANTA FE AVE,L,res,R-2,11.1,gis,0,5ft_or_wider,1.0,0.0,13
+476R,SANTA FE AVE,R,res,R-2,9.9,gis,0,5ft_or_wider,1.0,0.0,13
+480R,G DOCK,R,other,U,32.9,default,0,trail,1.0,0.0,9
+481L, F AND G DOCK,L,other,U,17.9,default,0,trail,1.0,0.0,2
+481R, F AND G DOCK,R,other,U,20.5,default,0,trail,1.0,0.0,2
+486L,ADDISON ST,L,res,R-3,11.0,gis,0,5ft_or_wider,1.0,0.0,12
+486R,ADDISON ST,R,res,R-2,14.0,gis,0,5ft_or_wider,1.0,0.0,12
+487L,UNIVERSITY AVE,L,com,C-W,4.9,default,0,width_unknown,1.0,0.0,10
+487R,UNIVERSITY AVE,R,com,C-W,33.3,osm-building,0,width_unknown,1.0,0.0,12
+488L,COWPER ST,L,res,R-2,7.8,gis,0,5ft_or_wider,0.79,0.0,14
+488R,COWPER ST,R,res,R-2,11.9,gis,0,5ft_or_wider,0.64,0.0,14
+489L,BYRON ST,L,res,R-2,9.6,gis,0,5ft_or_wider,1.0,0.0,12
+489R,BYRON ST,R,res,R-2,15.3,gis,0,5ft_or_wider,0.83,0.0,12
+490L,ADDISON ST,L,res,R-3,10.9,gis,0,5ft_or_wider,1.0,0.0,12
+490R,ADDISON ST,R,res,R-2,14.2,gis,0,5ft_or_wider,1.0,0.0,12
+491L,UNIVERSITY AVE,L,com,C-W,3.9,osm-building,0,width_unknown,0.85,0.0,13
+491R,UNIVERSITY AVE,R,com,C-W,36.6,osm-building,0,width_unknown,1.0,0.0,11
+493R,UNIVERSITY AVE,R,com,C-W,2.3,default,0,width_unknown,1.0,0.0,17
+495L,CURTIS ST,L,res,R-2,8.6,gis,0,5ft_or_wider,0.96,0.0,24
+495R,CURTIS ST,R,res,R-2,14.4,gis,0,5ft_or_wider,0.33,0.0,24
+496L,HEARST AVE,L,man,MULI,5.8,gis,0,5ft_or_wider,0.64,0.0,14
+496R,HEARST AVE,R,man,MULI,10.1,gis,0,5ft_or_wider,0.64,0.0,14
+497L,ADDISON ST,L,res,R-2,14.2,gis,0,5ft_or_wider,1.0,0.0,11
+497R,ADDISON ST,R,res,R-2A,12.0,gis,0,5ft_or_wider,0.91,0.0,11
+498L,BONAR ST,L,res,R-2,5.0,osm-building,0,no_sidewalk,0.76,0.76,25
+498R,BONAR ST,R,res,R-2,15.5,gis,0,no_sidewalk,0.24,0.24,25
+499L,HEARST AVE,L,com,C-W,3.9,gis,0,5ft_or_wider,0.73,0.0,11
+499R,HEARST AVE,R,com,C-W,12.7,gis,0,width_unknown,0.55,0.0,11
+500L,HEARST AVE,L,com,C-W,10.5,gis,0,5ft_or_wider,1.0,0.0,8
+500R,HEARST AVE,R,com,C-W,12.3,gis,0,5ft_or_wider,1.0,0.0,6
+501L,CHESTNUT ST,L,com,C-U,11.5,gis,0,width_unknown,0.57,0.0,14
+501R,CHESTNUT ST,R,com,C-U,16.2,gis,0,5ft_or_wider,0.44,0.0,9
+502L,DELAWARE ST,L,res,R-2,15.3,gis,0,5ft_or_wider,1.0,0.0,35
+502R,DELAWARE ST,R,res,R-2,17.3,gis,0,5ft_or_wider,1.0,0.0,35
+503L,CURTIS ST,L,res,R-2,8.2,gis,0,5ft_or_wider,0.44,0.0,16
+503R,CURTIS ST,R,res,R-2,13.8,gis,0,5ft_or_wider,0.44,0.0,16
+505L,F DOCK,L,other,U,39.2,default,0,trail,1.0,0.0,6
+507L,BREAKWATER DR,L,other,U,5.5,default,0,none,1.0,0.0,6
+507R,BREAKWATER DR,R,other,U,8.8,default,0,none,1.0,0.0,24
+508L,ADDISON ST,L,res,R-2A,11.3,gis,0,5ft_or_wider,1.0,0.0,23
+508R,ADDISON ST,R,res,R-2A,12.2,gis,0,5ft_or_wider,1.0,0.0,23
+509L,CURTIS ST,L,com,C-U,6.2,gis,0,5ft_or_wider,0.23,0.0,13
+509R,CURTIS ST,R,com,C-U,19.3,gis,0,5ft_or_wider,0.23,0.0,13
+510L,HEARST AVE,L,res,R-2,11.6,gis,0,5ft_or_wider,0.82,0.0,11
+510R,HEARST AVE,R,res,R-2,13.5,gis,0,5ft_or_wider,1.0,0.0,11
+512L,HEARST AVE,L,res,R-2,10.7,gis,0,5ft_or_wider,1.0,0.0,12
+512R,HEARST AVE,R,res,R-2,13.2,gis,0,5ft_or_wider,1.0,0.0,12
+514L,HEARST AVE,L,res,R-2A,10.6,gis,0,5ft_or_wider,1.0,0.0,32
+514R,HEARST AVE,R,res,R-3,13.3,gis,0,5ft_or_wider,1.0,0.0,32
+515L,CURTIS ST,L,res,R-4,10.6,gis,0,width_unknown,0.22,0.0,18
+515R,CURTIS ST,R,res,R-4,13.2,gis,0,width_unknown,0.22,0.0,18
+516L,BERKELEY WAY,L,res,R-2A,9.4,gis,0,5ft_or_wider,0.52,0.0,25
+516R,BERKELEY WAY,R,res,R-2A,9.2,gis,0,5ft_or_wider,0.52,0.0,25
+517L,CURTIS ST,L,res,R-2,9.6,gis,0,5ft_or_wider,1.0,0.0,2
+517R,CURTIS ST,R,res,R-2,13.7,gis,0,5ft_or_wider,1.0,0.0,2
+518L,DELAWARE ST,L,res,R-2,13.7,gis,0,5ft_or_wider,1.0,0.0,12
+518R,DELAWARE ST,R,res,R-2,17.5,gis,0,5ft_or_wider,1.0,0.0,12
+519R,EASTSHORE,R,man,MULI,11.3,gis,0,no_sidewalk,0.3,0.3,56
+520L,VIRGINIA ST,L,res,R-2,10.7,gis,0,5ft_or_wider,1.0,0.0,12
+520R,VIRGINIA ST,R,res,R-2,14.7,gis,0,5ft_or_wider,1.0,0.0,12
+521L,GILMAN ST,L,com,C-W,13.0,gis,0,5ft_or_wider,0.67,0.33,6
+521R,GILMAN ST,R,com,C-W,17.9,gis,0,5ft_or_wider,0.67,0.33,6
+523L,FRANCISCO ST,L,res,R-2,11.2,gis,0,5ft_or_wider,1.0,0.0,13
+523R,FRANCISCO ST,R,res,R-2,11.1,gis,0,5ft_or_wider,1.0,0.0,13
+524L,VIRGINIA ST,L,res,R-1,12.5,gis,0,5ft_or_wider,1.0,0.0,9
+524R,VIRGINIA ST,R,mixres,R-BMU,12.7,gis,0,5ft_or_wider,1.0,0.0,9
+525L,HEARST AVE,L,res,R-2,11.2,gis,0,5ft_or_wider,0.56,0.0,16
+525R,HEARST AVE,R,res,R-2,12.6,gis,0,5ft_or_wider,0.5,0.0,16
+526L,HEARST AVE,L,res,R-2,12.2,gis,0,trail,0.83,0.0,12
+526R,HEARST AVE,R,res,R-2,11.6,gis,0,trail,0.67,0.0,12
+527L,VIRGINIA ST,L,man,M,13.2,gis,0,width_unknown,1.0,0.0,13
+527R,VIRGINIA ST,R,man,MULI,18.4,gis,0,width_unknown,0.69,0.0,13
+528L,HEARST AVE,L,res,R-2,12.0,gis,0,5ft_or_wider,0.92,0.0,12
+528R,HEARST AVE,R,res,R-2,12.2,gis,0,5ft_or_wider,0.92,0.0,12
+529L,DELAWARE ST,L,res,R-2,15.4,gis,0,5ft_or_wider,1.0,0.0,13
+529R,DELAWARE ST,R,res,R-2,15.1,gis,0,5ft_or_wider,1.0,0.0,13
+530L,VIRGINIA ST,L,man,MULI,14.0,gis,0,5ft_or_wider,0.55,0.0,11
+530R,VIRGINIA ST,R,man,MULI,17.3,gis,0,5ft_or_wider,0.64,0.0,11
+532L,HEARST AVE,L,res,R-2,12.7,gis,0,5ft_or_wider,1.0,0.0,13
+532R,HEARST AVE,R,res,R-2,11.9,gis,0,5ft_or_wider,0.92,0.0,13
+533L,SACRAMENTO ST,L,res,R-2A,12.8,gis,0,5ft_or_wider,0.38,0.0,8
+533R,SACRAMENTO ST,R,res,R-2,18.9,gis,0,5ft_or_wider,0.5,0.0,8
+534L,VIRGINIA ST,L,mixres,MUR,13.6,gis,0,width_unknown,0.83,0.0,6
+534R,VIRGINIA ST,R,mixres,MUR,18.4,gis,0,width_unknown,0.83,0.0,6
+535L,CHESTNUT ST,L,res,R-2,10.4,gis,0,5ft_or_wider,0.5,0.0,16
+535R,CHESTNUT ST,R,res,R-2,14.8,gis,0,5ft_or_wider,0.5,0.0,16
+536L,DELAWARE ST,L,res,R-2,16.9,gis,0,5ft_or_wider,0.73,0.0,15
+536R,DELAWARE ST,R,res,R-2,17.5,gis,0,5ft_or_wider,0.67,0.07,15
+537L,DELAWARE ST,L,res,R-2,27.4,gis,0,5ft_or_wider,1.0,0.0,2
+537R,DELAWARE ST,R,res,R-2,24.6,gis,0,5ft_or_wider,1.0,0.0,2
+538L,DELAWARE ST,L,res,R-2,23.7,gis,0,5ft_or_wider,1.0,0.0,2
+538R,DELAWARE ST,R,res,R-2,20.8,gis,0,5ft_or_wider,1.0,0.0,2
+539L,VIRGINIA ST,L,res,R-2,10.7,gis,0,5ft_or_wider,0.45,0.0,11
+539R,VIRGINIA ST,R,res,R-2,14.3,gis,0,5ft_or_wider,0.45,0.0,11
+540L,FRANKLIN ST,L,res,R-2,8.4,gis,0,trail,0.31,0.0,16
+540R,FRANKLIN ST,R,res,R-2,19.2,gis,0,trail,0.31,0.0,16
+541L,SHORT ST,L,res,R-2,9.8,gis,0,5ft_or_wider,0.31,0.0,16
+541R,SHORT ST,R,res,R-2,14.0,gis,0,5ft_or_wider,0.31,0.0,16
+542L,FRANCISCO ST,L,res,R-2,8.7,gis,0,5ft_or_wider,1.0,0.0,37
+542R,FRANCISCO ST,R,res,R-2,9.3,gis,0,5ft_or_wider,1.0,0.0,37
+543L,CURTIS ST,L,res,R-2,10.0,gis,0,5ft_or_wider,0.5,0.0,12
+543R,CURTIS ST,R,res,R-2,13.9,gis,0,5ft_or_wider,0.5,0.0,12
+545L,VIRGINIA ST,L,res,R-1,14.5,gis,0,under_5ft,0.67,0.0,3
+545R,VIRGINIA ST,R,res,R-1,12.8,gis,0,5ft_or_wider,1.0,0.0,3
+547L,KAINS AVE,L,res,R-2,8.3,gis,0,5ft_or_wider,0.25,0.0,24
+547R,KAINS AVE,R,res,R-2,11.5,gis,0,5ft_or_wider,0.58,0.0,24
+551L,CEDAR ST,L,man,M,9.4,gis,0,width_unknown,0.92,0.08,13
+551R,CEDAR ST,R,man,M,15.5,gis,0,width_unknown,0.77,0.23,13
+552L,SACRAMENTO ST,L,res,R-2A,12.3,osm-building,0,5ft_or_wider,0.17,0.0,12
+552R,SACRAMENTO ST,R,res,R-2,18.6,gis,0,5ft_or_wider,0.67,0.0,12
+554L,FRANCISCO ST,L,res,R-2,9.1,gis,0,5ft_or_wider,0.71,0.0,17
+554R,FRANCISCO ST,R,res,R-2,11.0,gis,0,5ft_or_wider,0.71,0.0,17
+557L,ROSE ST,L,res,R-1,7.7,gis,0,5ft_or_wider,0.6,0.0,10
+557R,ROSE ST,R,res,R-2,14.2,gis,0,5ft_or_wider,1.0,0.0,10
+560L,ACTON ST,L,res,R-2A,18.7,gis,0,5ft_or_wider,0.18,0.0,11
+560R,ACTON ST,R,res,R-2,6.4,gis,0,5ft_or_wider,0.18,0.0,11
+561L,HARRISON ST,L,man,MULI,12.7,gis,0,no_sidewalk,1.0,1.0,12
+561R,HARRISON ST,R,man,MULI,16.5,gis,0,no_sidewalk,1.0,1.0,12
+562L,TEVLIN ST,L,res,R-2,4.7,gis,0,no_sidewalk,0.9,0.9,10
+562R,TEVLIN ST,R,res,R-2,2.7,osm-building,0,no_sidewalk,0.9,0.9,10
+568L,VIRGINIA ST,L,res,R-2,12.8,gis,0,5ft_or_wider,1.0,0.0,9
+568R,VIRGINIA ST,R,res,R-2,14.5,gis,0,5ft_or_wider,1.0,0.0,9
+569L,VIRGINIA ST,L,res,R-2,22.5,gis,0,5ft_or_wider,1.0,0.0,2
+569R,VIRGINIA ST,R,res,R-2,31.4,gis,0,5ft_or_wider,1.0,0.0,2
+570L,CURTIS ST,L,res,R-2,10.5,gis,0,5ft_or_wider,0.58,0.0,12
+570R,CURTIS ST,R,res,R-2,14.4,gis,0,5ft_or_wider,0.67,0.0,12
+571L,CEDAR ST,L,mixres,MUR,15.1,gis,0,5ft_or_wider,1.0,0.0,6
+571R,CEDAR ST,R,mixres,MUR,19.1,gis,0,5ft_or_wider,1.0,0.0,6
+572L,VIRGINIA ST,L,mixres,R-BMU,12.7,gis,0,5ft_or_wider,0.75,0.0,12
+572R,VIRGINIA ST,R,res,R-1,11.2,gis,0,5ft_or_wider,0.67,0.0,12
+573L,STANNAGE AVE,L,res,R-2,8.3,gis,0,5ft_or_wider,0.2,0.0,25
+573R,STANNAGE AVE,R,res,R-2,11.0,gis,0,5ft_or_wider,0.56,0.0,25
+575L,FRANCISCO ST,L,res,R-2,8.5,gis,0,5ft_or_wider,1.0,0.0,11
+575R,FRANCISCO ST,R,res,R-2,7.7,gis,0,5ft_or_wider,1.0,0.0,11
+576L,FRANKLIN ST,L,res,R-2,13.2,gis,0,5ft_or_wider,0.58,0.0,12
+576R,FRANKLIN ST,R,res,R-2,14.5,gis,0,5ft_or_wider,0.58,0.0,12
+579L,CEDAR ST,L,man,MULI,7.8,gis,0,5ft_or_wider,1.0,0.0,11
+579R,CEDAR ST,R,man,MULI,10.5,gis,0,5ft_or_wider,1.0,0.0,11
+580L,DELAWARE ST,L,res,R-2,11.7,gis,0,5ft_or_wider,1.0,0.0,25
+580R,DELAWARE ST,R,res,R-2,10.0,gis,0,5ft_or_wider,1.0,0.0,25
+583L,CEDAR ST,L,man,MULI,29.4,gis,0,5ft_or_wider,1.0,0.0,2
+583R,CEDAR ST,R,man,MULI,26.2,osm-building,0,5ft_or_wider,1.0,0.0,2
+584L,CEDAR ST,L,mixres,MUR,15.2,gis,0,5ft_or_wider,1.0,0.0,11
+584R,CEDAR ST,R,mixres,MUR,14.1,osm-building,0,5ft_or_wider,1.0,0.0,11
+586L,VIRGINIA ST,L,res,R-2,12.4,gis,0,5ft_or_wider,1.0,0.0,7
+586R,VIRGINIA ST,R,res,R-2,13.5,gis,0,5ft_or_wider,1.0,0.0,7
+587L,CHESTNUT ST,L,res,R-2,9.0,gis,0,5ft_or_wider,0.58,0.0,12
+587R,CHESTNUT ST,R,res,R-2,15.2,gis,0,5ft_or_wider,0.58,0.0,12
+588L,VIRGINIA ST,L,res,R-2,13.0,gis,0,5ft_or_wider,0.65,0.0,17
+588R,VIRGINIA ST,R,res,R-2,13.1,gis,0,5ft_or_wider,0.71,0.0,17
+589L,FRANCISCO ST,L,res,R-2,11.7,gis,0,5ft_or_wider,1.0,0.0,10
+589R,FRANCISCO ST,R,res,R-2,11.1,gis,0,5ft_or_wider,1.0,0.0,10
+590L,CALIFORNIA ST,L,res,R-2,7.3,gis,0,5ft_or_wider,0.5,0.0,12
+590R,CALIFORNIA ST,R,res,R-2,9.4,gis,0,5ft_or_wider,0.5,0.0,12
+592L,FRANKLIN ST,L,res,R-2,12.0,gis,0,5ft_or_wider,0.58,0.0,12
+592R,FRANKLIN ST,R,res,R-1,16.6,gis,0,5ft_or_wider,0.58,0.0,12
+594L,FRANCISCO ST,L,res,R-2,11.4,gis,0,5ft_or_wider,1.0,0.0,25
+594R,FRANCISCO ST,R,res,R-2,13.2,gis,0,5ft_or_wider,1.0,0.0,25
+599L,JONES ST,L,man,MULI,10.1,gis,0,5ft_or_wider,1.0,0.0,11
+599R,JONES ST,R,mixres,MUR,5.0,osm-building,0,5ft_or_wider,1.0,0.0,11
+601L,CHESTNUT ST,L,res,R-2,10.4,gis,0,5ft_or_wider,0.54,0.0,13
+601R,CHESTNUT ST,R,res,R-2,14.0,gis,0,5ft_or_wider,0.69,0.0,13
+602L,CALIFORNIA ST,L,res,R-2,7.0,gis,0,5ft_or_wider,0.5,0.0,12
+602R,CALIFORNIA ST,R,res,R-2,9.7,gis,0,5ft_or_wider,0.75,0.0,12
+603R,EASTSHORE HWY,R,man,M,11.1,gis,0,5ft_or_wider,0.38,0.06,16
+604L,ACTON ST,L,res,R-1,14.7,gis,0,5ft_or_wider,0.62,0.0,8
+604R,ACTON ST,R,res,R-1,14.0,gis,0,5ft_or_wider,0.62,0.0,8
+606L,SHORT ST,L,res,R-1,11.3,gis,0,5ft_or_wider,0.46,0.0,13
+606R,SHORT ST,R,res,R-1,12.0,gis,0,width_unknown,0.54,0.0,13
+609L,BERK MARINE CTR WAYS,L,other,U,21.3,default,0,none,1.0,0.0,2
+609R,BERK MARINE CTR WAYS,R,other,U,25.6,default,0,none,1.0,0.0,2
+614L,HORNBLOWER DOCK,L,other,U,21.9,default,0,none,1.0,0.0,2
+614R,HORNBLOWER DOCK,R,other,U,23.1,default,0,none,1.0,0.0,2
+618L,HORNBLOWER DOCK,L,other,U,31.2,default,0,none,1.0,0.0,3
+619L,SACRAMENTO ST,L,res,R-1,25.9,gis,0,5ft_or_wider,0.95,0.0,22
+619R,SACRAMENTO ST,R,res,R-1,17.8,gis,0,5ft_or_wider,1.0,0.0,22
+620L,TALBOT AVE,L,res,R-2,12.4,gis,0,5ft_or_wider,1.0,0.0,2
+620R,TALBOT AVE,R,res,R-2,35.3,gis,0,5ft_or_wider,1.0,0.0,2
+623L,CEDAR ST,L,res,R-2,11.1,gis,0,5ft_or_wider,0.56,0.0,9
+623R,CEDAR ST,R,res,R-2,10.7,gis,0,5ft_or_wider,1.0,0.0,9
+624L,PAGE ST,L,com,C-W,10.7,gis,0,5ft_or_wider,1.0,0.0,10
+624R,PAGE ST,R,com,C-W,13.7,gis,0,5ft_or_wider,1.0,0.0,10
+625L,KAINS AVE,L,res,R-2,9.8,gis,0,5ft_or_wider,1.0,0.0,16
+625R,KAINS AVE,R,res,R-2,11.1,gis,0,5ft_or_wider,1.0,0.0,16
+628L,CEDAR ST,L,res,R-2,11.3,gis,0,width_unknown,0.7,0.3,10
+628R,CEDAR ST,R,res,R-2,12.9,gis,0,width_unknown,0.6,0.4,10
+636L,SANTA FE AVE,L,res,R-2,14.2,gis,0,5ft_or_wider,0.67,0.0,18
+636R,SANTA FE AVE,R,res,R-2,4.0,gis,0,trail,0.56,0.0,18
+637L,MASONIC AVE,L,res,R-2,11.6,gis,0,5ft_or_wider,0.94,0.0,18
+637R,MASONIC AVE,R,res,R-2,9.4,gis,0,5ft_or_wider,0.61,0.0,18
+646L,CHESTNUT ST,L,res,R-2,11.4,gis,0,no_sidewalk,0.61,0.61,18
+646R,CHESTNUT ST,R,res,R-2,13.7,gis,0,5ft_or_wider,0.58,0.42,12
+647L,PAGE ST,L,man,M,16.4,gis,0,5ft_or_wider,1.0,0.0,12
+647R,PAGE ST,R,man,MULI,8.0,gis,0,5ft_or_wider,1.0,0.0,12
+649L,LINCOLN ST,L,res,R-2,12.1,gis,0,5ft_or_wider,1.0,0.0,23
+649R,LINCOLN ST,R,res,R-2,12.4,gis,0,5ft_or_wider,1.0,0.0,29
+651L,PAGE ST,L,man,MULI,15.9,gis,0,5ft_or_wider,1.0,0.0,2
+651R,PAGE ST,R,man,MULI,13.4,osm-building,0,5ft_or_wider,1.0,0.0,2
+652L,PAGE ST,L,mixres,MUR,13.2,gis,0,5ft_or_wider,1.0,0.0,10
+652R,PAGE ST,R,mixres,MUR,17.3,gis,0,5ft_or_wider,1.0,0.0,10
+653L,CEDAR ST,L,res,R-2,13.2,gis,0,no_sidewalk,0.54,0.54,24
+653R,CEDAR ST,R,res,R-2,15.5,gis,0,no_sidewalk,0.67,0.67,24
+654L,FRANKLIN ST,L,res,R-1,14.7,gis,0,trail,0.6,0.0,25
+654R,FRANKLIN ST,R,res,R-1,14.9,gis,0,trail,0.6,0.0,25
+656L,JONES ST,L,com,C-W,8.3,gis,0,5ft_or_wider,1.0,0.0,10
+656R,JONES ST,R,com,C-W,13.5,osm-building,0,5ft_or_wider,1.0,0.0,10
+659L,ROSE ST,L,res,R-2,36.2,gis,0,no_sidewalk,0.67,0.67,6
+659R,ROSE ST,R,res,R-2,23.4,gis,0,no_sidewalk,0.5,0.5,6
+660L,CURTIS ST,L,res,R-2,10.0,gis,0,5ft_or_wider,0.54,0.0,13
+660R,CURTIS ST,R,res,R-2,11.2,gis,0,5ft_or_wider,1.0,0.0,13
+663L,UNIVERSITY AVE OVERPASS,L,com,C-W,30.0,gis,0,width_unknown,0.82,0.18,11
+663R,UNIVERSITY AVE OVERPASS,R,com,C-W,30.9,osm-building,0,width_unknown,1.0,0.0,11
+664R,UNIVERSITY AVE OVERPASS,R,com,C-W,32.4,osm-building,0,width_unknown,1.0,0.0,11
+665L,UNIVERSITY AVE OVERPASS,L,com,C-W,27.1,gis,0,width_unknown,1.0,0.0,12
+665R,UNIVERSITY AVE OVERPASS,R,com,C-W,26.2,osm-building,0,width_unknown,1.0,0.0,16
+671L,HORNBLOWER DOCK,L,other,U,32.3,default,0,trail,0.93,0.0,15
+674L,HOLLY ST,L,res,R-1,14.4,gis,0,5ft_or_wider,0.65,0.0,17
+674R,HOLLY ST,R,res,R-1,12.0,gis,0,5ft_or_wider,1.0,0.0,17
+678R,EASTSHORE HWY,R,man,MULI,8.5,default,0,width_unknown,1.0,0.0,20
+679L,HEARST AVE,L,man,MULI,21.4,default,0,no_sidewalk,0.95,0.95,20
+679R,HEARST AVE,R,man,MULI,24.8,default,1,width_unknown,1.0,0.0,6
+680L,WEST ST,L,res,R-2,6.3,default,0,5ft_or_wider,0.36,0.0,11
+680R,WEST ST,R,res,R-2,1.2,default,0,5ft_or_wider,0.36,0.0,11
+681L,WEST ST,L,res,R-2,4.8,default,0,5ft_or_wider,0.08,0.0,13
+681R,WEST ST,R,res,R-2,1.0,default,0,none,1.0,0.0,13
+693L,JONES ST,L,man,M,9.8,osm-building,0,no_sidewalk,0.46,0.46,13
+693R,JONES ST,R,man,M,11.6,default,0,no_sidewalk,0.46,0.46,13
+694L,JONES ST,L,man,MULI,11.1,default,0,no_sidewalk,0.75,0.75,12
+694R,JONES ST,R,man,MULI,15.4,default,0,no_sidewalk,0.58,0.58,12
+699R,OCSC SCHOOL DOCK,R,other,U,26.5,default,0,none,1.0,0.0,26
+703L,BERK MARINE CTR WAYS,L,other,U,24.0,default,0,none,1.0,0.0,4
+703R,BERK MARINE CTR WAYS,R,other,U,22.9,default,0,none,1.0,0.0,6
+705L,CAMELIA ST,L,man,M,17.6,gis,0,5ft_or_wider,1.0,0.0,2
+705R,CAMELIA ST,R,man,MULI,19.1,gis,0,5ft_or_wider,1.0,0.0,2
+706L,CAMELIA ST,L,man,M,8.5,gis,0,5ft_or_wider,1.0,0.0,10
+706R,CAMELIA ST,R,mixres,MUR,15.3,gis,0,5ft_or_wider,1.0,0.0,10
+707L,ACTON ST,L,res,R-1,15.3,gis,0,5ft_or_wider,0.8,0.0,10
+707R,ACTON ST,R,res,R-1,14.5,gis,0,5ft_or_wider,1.0,0.0,8
+708L,PAGE ST,L,res,R-2,12.8,gis,0,no_sidewalk,0.5,0.5,12
+708R,PAGE ST,R,res,R-2,17.2,gis,0,no_sidewalk,0.5,0.5,12
+709L,JUANITA WAY,L,res,R-1,8.3,gis,0,trail,0.89,0.0,9
+709R,JUANITA WAY,R,res,R-1,11.4,gis,0,trail,1.0,0.0,9
+717L,PAGE ST,L,res,R-2,9.6,gis,0,5ft_or_wider,1.0,0.0,9
+717R,PAGE ST,R,res,R-2,13.8,gis,0,5ft_or_wider,1.0,0.0,9
+723L,MONTEREY AVE,L,res,R-1,24.6,gis,0,5ft_or_wider,0.94,0.04,47
+723R,MONTEREY AVE,R,res,R-1,8.1,gis,0,5ft_or_wider,0.73,0.0,70
+728L,WEST ST,L,com,C-U,4.8,default,0,trail,0.8,0.0,10
+728R,WEST ST,R,com,C-U,11.0,default,0,trail,1.0,0.0,12
+730L,WEST ST,L,res,R-2,5.0,default,0,trail,1.0,0.0,9
+730R,WEST ST,R,res,R-2,9.8,default,0,trail,1.0,0.0,9
+731L,WEST ST,L,res,R-2,4.4,default,0,trail,0.44,0.0,16
+731R,WEST ST,R,res,R-2,9.4,default,0,trail,0.44,0.0,16
+732L,WEST ST,L,res,R-2,10.2,default,0,5ft_or_wider,0.5,0.0,12
+732R,WEST ST,R,res,R-2,26.1,default,0,5ft_or_wider,0.58,0.0,12
+736L,WEST ST,L,res,R-1,8.1,osm-building,0,under_5ft,1.0,0.0,22
+736R,WEST ST,R,res,R-1,25.2,default,0,under_5ft,1.0,0.0,14
+738L,WEST ST,L,res,R-1,2.1,default,0,under_5ft,1.0,0.0,2
+738R,WEST ST,R,res,R-2,5.2,default,0,under_5ft,1.0,0.0,2
+748L,UNNAMED ALLEY,L,mixres,MUR,16.9,default,0,5ft_or_wider,1.0,0.0,22
+748R,UNNAMED ALLEY,R,mixres,MUR,8.9,default,0,5ft_or_wider,1.0,0.0,18
+758L,ROSE ST,L,res,R-2,6.6,gis,0,5ft_or_wider,1.0,0.0,9
+758R,ROSE ST,R,res,R-2,15.7,gis,0,5ft_or_wider,1.0,0.0,9
+759L,BELVEDERE AVE,L,res,R-2,9.4,gis,0,5ft_or_wider,0.46,0.0,13
+759R,BELVEDERE AVE,R,res,R-2,10.9,gis,0,5ft_or_wider,0.77,0.0,13
+760L,JONES ST,L,res,R-2,12.3,gis,0,5ft_or_wider,1.0,0.0,9
+760R,JONES ST,R,res,R-2,9.6,osm-building,0,5ft_or_wider,1.0,0.0,9
+771L,CEDAR ST,L,res,R-1,7.0,gis,0,5ft_or_wider,1.0,0.0,28
+771R,CEDAR ST,R,res,R-1,11.2,gis,0,5ft_or_wider,1.0,0.0,26
+772L,PAGE ST,L,res,R-2,12.4,gis,0,5ft_or_wider,0.5,0.5,12
+772R,PAGE ST,R,res,R-2,17.3,gis,0,5ft_or_wider,0.5,0.5,12
+774L,CALIFORNIA ST,L,res,R-1,8.5,gis,0,5ft_or_wider,1.0,0.0,8
+774R,CALIFORNIA ST,R,res,R-1,7.5,gis,0,5ft_or_wider,1.0,0.0,8
+776L,GILMAN ST,L,man,MULI,13.6,gis,0,width_unknown,0.75,0.25,12
+776R,GILMAN ST,R,man,MULI,14.0,osm-building,0,5ft_or_wider,0.67,0.33,12
+777L,ROSE ST,L,res,R-1,15.7,gis,0,no_data,1.0,0.0,2
+777R,ROSE ST,R,res,R-1,23.9,gis,0,5ft_or_wider,1.0,0.0,2
+778L,EVELYN AVE,L,res,R-2,12.5,gis,0,5ft_or_wider,1.0,0.0,11
+778R,EVELYN AVE,R,res,R-2,11.2,gis,0,5ft_or_wider,1.0,0.0,11
+781L,ACTON ST,L,res,R-2,21.7,gis,0,5ft_or_wider,0.79,0.0,28
+781R,ACTON ST,R,res,R-2,3.5,gis,0,5ft_or_wider,0.79,0.0,28
+789L,CHESTNUT ST,L,res,R-2,12.2,gis,0,5ft_or_wider,0.46,0.23,13
+789R,CHESTNUT ST,R,res,R-2,15.2,gis,0,5ft_or_wider,0.77,0.23,13
+790L,CEDAR ST,L,res,R-1,7.3,gis,0,5ft_or_wider,1.0,0.0,12
+790R,CEDAR ST,R,res,R-2,15.5,gis,0,5ft_or_wider,1.0,0.0,12
+793L,CALIFORNIA ST,L,res,R-2,9.9,gis,0,5ft_or_wider,0.67,0.0,12
+793R,CALIFORNIA ST,R,res,R-2,9.1,gis,0,5ft_or_wider,1.0,0.0,12
+795L,CAMELIA ST,L,man,M,9.9,gis,0,5ft_or_wider,1.0,0.0,10
+795R,CAMELIA ST,R,man,M,12.7,gis,0,5ft_or_wider,1.0,0.0,12
+796L,CAMELIA ST,L,man,M,21.4,gis,0,5ft_or_wider,1.0,0.0,2
+796R,CAMELIA ST,R,man,M,23.2,gis,1,5ft_or_wider,1.0,0.0,2
+797L,PAGE ST,L,res,R-2,12.4,gis,0,5ft_or_wider,0.92,0.08,12
+797R,PAGE ST,R,res,R-2,18.4,gis,0,5ft_or_wider,0.92,0.08,12
+800L,SACRAMENTO ST,L,res,R-1,23.9,gis,0,5ft_or_wider,0.88,0.0,8
+800R,SACRAMENTO ST,R,res,R-1,20.9,gis,0,5ft_or_wider,1.0,0.0,8
+801L,HOPKINS ST,L,res,R-2,14.4,gis,0,width_unknown,1.0,0.0,6
+801R,HOPKINS ST,R,res,R-2,13.7,gis,0,width_unknown,0.83,0.0,6
+803L,PAGE ST,L,res,R-2,11.7,gis,0,5ft_or_wider,1.0,0.0,6
+803R,PAGE ST,R,res,R-2,14.3,osm-building,0,5ft_or_wider,1.0,0.0,6
+807L,ROSE ST,L,res,R-2,10.8,gis,0,5ft_or_wider,0.5,0.0,24
+807R,ROSE ST,R,res,R-2,12.4,gis,0,5ft_or_wider,0.68,0.0,31
+814L,CAMELIA ST,L,man,MULI,10.2,gis,0,5ft_or_wider,0.82,0.18,11
+814R,CAMELIA ST,R,res,R-2,14.9,gis,0,5ft_or_wider,1.0,0.0,11
+817L,PAGE ST,L,res,R-2,9.7,gis,0,5ft_or_wider,1.0,0.0,9
+817R,PAGE ST,R,res,R-2,15.1,gis,0,5ft_or_wider,1.0,0.0,9
+818R,GILMAN ST,R,other,SP,20.0,osm-building,0,trail,0.88,0.0,17
+820L,KEONCREST DR,L,res,R-1,12.0,gis,0,trail,0.47,0.0,15
+820R,KEONCREST DR,R,res,R-1,7.9,gis,0,5ft_or_wider,0.73,0.0,11
+821L,HOPKINS ST,L,res,R-2,14.4,gis,0,5ft_or_wider,1.0,0.0,14
+821R,HOPKINS ST,R,res,R-2,17.7,gis,0,5ft_or_wider,1.0,0.0,14
+823L,CORNELL AVE,L,res,R-2,9.1,gis,0,5ft_or_wider,0.91,0.0,22
+823R,CORNELL AVE,R,res,R-2,11.5,gis,0,5ft_or_wider,1.0,0.0,22
+829L,ACTON ST,L,res,R-1,15.6,gis,0,5ft_or_wider,0.7,0.0,10
+829R,ACTON ST,R,res,R-1,13.3,gis,0,5ft_or_wider,1.0,0.0,10
+833L,ORDWAY ST,L,res,R-1,13.7,gis,0,trail,0.73,0.0,11
+833R,ORDWAY ST,R,res,R-1,6.8,gis,0,5ft_or_wider,0.64,0.0,11
+836L,CURTIS ST,L,res,R-2,13.6,gis,0,5ft_or_wider,0.87,0.0,68
+836R,CURTIS ST,R,res,R-2,8.7,gis,0,5ft_or_wider,0.86,0.0,86
+837L,GILMAN ST,L,com,C-N,11.3,gis,0,5ft_or_wider,0.56,0.0,9
+837R,GILMAN ST,R,com,C-N,14.5,gis,0,5ft_or_wider,0.56,0.0,9
+839L,KAINS AVE,L,res,R-2,9.0,gis,0,5ft_or_wider,1.0,0.0,16
+839R,KAINS AVE,R,res,R-2,11.9,gis,0,5ft_or_wider,1.0,0.0,16
+847L,BUENA AVE,L,res,R-1,9.3,gis,0,5ft_or_wider,1.0,0.0,11
+847R,BUENA AVE,R,res,R-1,13.9,gis,0,5ft_or_wider,1.0,0.0,21
+848L,CALIFORNIA ST,L,res,R-1,16.8,gis,0,5ft_or_wider,1.0,0.0,15
+848R,CALIFORNIA ST,R,res,R-1,12.4,gis,0,5ft_or_wider,1.0,0.0,19
+856L,ADA ST,L,res,R-1,5.0,gis,0,5ft_or_wider,0.91,0.0,23
+856R,ADA ST,R,res,R-1,15.3,gis,0,5ft_or_wider,1.0,0.0,27
+857L,ACTON ST,L,res,R-1,21.5,gis,0,5ft_or_wider,1.0,0.0,12
+857R,ACTON ST,R,res,R-1,12.4,gis,0,5ft_or_wider,0.92,0.0,12
+861L,STANNAGE AVE,L,res,R-2,10.7,gis,0,5ft_or_wider,1.0,0.0,16
+861R,STANNAGE AVE,R,res,R-2,11.4,gis,0,5ft_or_wider,1.0,0.0,16
+867L,BUENA AVE,L,res,R-1,10.2,gis,0,5ft_or_wider,1.0,0.0,18
+867R,BUENA AVE,R,res,R-2,15.6,gis,0,5ft_or_wider,1.0,0.0,16
+868L,CORNELL AVE,L,res,R-2,9.9,gis,0,5ft_or_wider,1.0,0.0,16
+868R,CORNELL AVE,R,res,R-2,11.4,gis,0,5ft_or_wider,1.0,0.0,16
+869L,SANTA FE AVE,L,res,R-2,16.2,gis,0,5ft_or_wider,1.0,0.0,18
+869R,SANTA FE AVE,R,res,R-2,4.9,gis,0,5ft_or_wider,1.0,0.0,18
+874L,GILMAN ST,L,man,MULI,11.6,gis,0,5ft_or_wider,0.85,0.0,13
+874R,GILMAN ST,R,man,MULI,19.8,gis,16,5ft_or_wider,1.0,0.0,13
+875L,ROSE ST,L,res,R-1,8.0,gis,0,5ft_or_wider,0.31,0.0,13
+875R,ROSE ST,R,res,R-1,16.6,gis,0,5ft_or_wider,1.0,0.0,13
+876L,HOLLY ST,L,res,R-1,16.4,gis,0,5ft_or_wider,1.0,0.0,17
+876R,HOLLY ST,R,res,R-1,8.1,gis,0,5ft_or_wider,0.94,0.0,17
+877L,CAMELIA ST,L,res,R-2,7.6,gis,0,5ft_or_wider,1.0,0.0,9
+877R,CAMELIA ST,R,res,R-2,13.7,osm-building,0,5ft_or_wider,1.0,0.0,9
+886L,HOPKINS ST,L,res,R-2,8.0,gis,0,5ft_or_wider,1.0,0.0,20
+886R,HOPKINS ST,R,res,R-2,23.9,gis,0,5ft_or_wider,1.0,0.0,20
+889L,NORTHSIDE AVE,L,res,R-2,13.0,gis,0,5ft_or_wider,0.62,0.0,34
+889R,NORTHSIDE AVE,R,res,R-2,8.3,gis,0,5ft_or_wider,0.81,0.0,42
+890L,ROSE ST,L,res,R-1,7.6,gis,0,5ft_or_wider,0.4,0.0,10
+890R,ROSE ST,R,res,R-1,15.5,gis,0,5ft_or_wider,1.0,0.0,10
+891L,CALIFORNIA ST,L,res,R-1,11.9,gis,0,5ft_or_wider,0.95,0.0,22
+891R,CALIFORNIA ST,R,res,R-1,3.4,gis,0,5ft_or_wider,0.94,0.0,16
+894L,ACTON ST,L,res,R-1,24.7,gis,0,width_unknown,1.0,0.0,12
+894R,ACTON ST,R,res,R-2,10.3,gis,0,width_unknown,1.0,0.0,12
+901L,ADA ST,L,res,R-1,8.8,gis,0,5ft_or_wider,0.93,0.0,27
+901R,ADA ST,R,res,R-1,22.6,gis,0,5ft_or_wider,0.85,0.0,27
+902L,SACRAMENTO ST,L,res,R-1,17.0,gis,0,5ft_or_wider,0.14,0.0,14
+904L,ROSE ST,L,res,R-1,21.6,gis,0,no_data,1.0,0.0,2
+905L,CAMELIA ST,L,res,R-2,17.8,gis,0,5ft_or_wider,1.0,0.0,2
+905R,CAMELIA ST,R,res,R-2,31.4,gis,0,5ft_or_wider,1.0,0.0,2
+941L,ALBINA AVE,L,res,R-2,23.7,gis,0,5ft_or_wider,1.0,0.0,6
+941R,ALBINA AVE,R,res,R-2,5.9,gis,0,5ft_or_wider,1.0,0.0,6
+942L,LINCOLN ST,L,res,R-1,10.0,gis,0,5ft_or_wider,1.0,0.0,13
+942R,LINCOLN ST,R,res,R-1,10.3,gis,0,5ft_or_wider,1.0,0.0,9
+943L,SACRAMENTO ST,L,res,R-2A,12.9,gis,0,5ft_or_wider,1.0,0.0,3
+943R,SACRAMENTO ST,R,res,R-2,18.7,gis,0,5ft_or_wider,1.0,0.0,3
+944L,HEARST AVE,L,res,R-2,11.5,gis,0,5ft_or_wider,1.0,0.0,12
+944R,HEARST AVE,R,res,R-2,11.3,gis,0,5ft_or_wider,1.0,0.0,12
+945L,JONES ST,L,res,R-2,10.8,gis,0,5ft_or_wider,1.0,0.0,6
+945R,JONES ST,R,res,R-2,12.9,gis,0,5ft_or_wider,1.0,0.0,6
+946L,VIRGINIA ST,L,man,M,15.2,gis,0,width_unknown,1.0,0.0,13
+946R,VIRGINIA ST,R,man,MULI,10.1,osm-building,0,width_unknown,1.0,0.0,13
+947L,HEARST AVE,L,res,R-2,11.3,gis,0,5ft_or_wider,1.0,0.0,12
+947R,HEARST AVE,R,res,R-2,14.3,gis,0,5ft_or_wider,1.0,0.0,12
+948L,JONES ST,L,com,C-W,9.8,gis,0,5ft_or_wider,1.0,0.0,6
+948R,JONES ST,R,com,C-W,4.4,osm-building,0,5ft_or_wider,1.0,0.0,6
+950L,NEILSON ST,L,res,R-2,10.8,gis,0,5ft_or_wider,1.0,0.0,14
+950R,NEILSON ST,R,res,R-2,5.5,gis,0,5ft_or_wider,1.0,0.0,14
+952L,VIRGINIA ST,L,res,R-1,13.2,gis,0,5ft_or_wider,1.0,0.0,7
+952R,VIRGINIA ST,R,res,R-1,12.7,gis,0,5ft_or_wider,1.0,0.0,7
+953L,ACTON ST,L,mixres,R-BMU,11.4,gis,0,5ft_or_wider,0.75,0.0,12
+953R,ACTON ST,R,res,R-1,14.8,gis,0,5ft_or_wider,0.33,0.0,12
+958L,GILMAN ST,L,man,M,13.0,gis,0,width_unknown,0.67,0.33,9
+958R,GILMAN ST,R,man,MRD,19.4,gis,0,no_sidewalk,0.56,0.56,9
+960L,GILMAN ST,L,res,R-2,9.9,gis,0,5ft_or_wider,0.67,0.33,6
+960R,GILMAN ST,R,res,R-2,14.6,gis,0,5ft_or_wider,0.67,0.33,6
+961L,GILMAN ST,L,res,R-2,12.2,gis,0,5ft_or_wider,1.0,0.0,12
+961R,GILMAN ST,R,res,R-2,12.3,gis,0,5ft_or_wider,1.0,0.0,12
+962L,SACRAMENTO ST,L,res,R-2,21.0,osm-building,0,5ft_or_wider,0.83,0.0,12
+962R,SACRAMENTO ST,R,res,R-1,21.9,gis,0,5ft_or_wider,1.0,0.0,12
+963L,GILMAN ST,L,res,R-2,10.5,gis,0,5ft_or_wider,0.67,0.0,12
+963R,GILMAN ST,R,res,R-2,13.9,gis,0,5ft_or_wider,0.5,0.0,12
+965L,CEDAR ST,L,res,R-2,9.8,gis,0,width_unknown,0.92,0.0,12
+965R,CEDAR ST,R,res,R-2,13.4,gis,0,5ft_or_wider,0.67,0.0,12
+967L,DELAWARE ST,L,res,R-2,14.2,gis,0,5ft_or_wider,1.0,0.0,12
+967R,DELAWARE ST,R,res,R-2,17.0,gis,0,5ft_or_wider,1.0,0.0,12
+968L,CAMELIA ST,L,man,MULI,8.5,gis,0,5ft_or_wider,1.0,0.0,6
+968R,CAMELIA ST,R,mixres,MUR,15.8,gis,0,5ft_or_wider,0.83,0.0,6
+977L,JONES ST,L,man,M,11.7,osm-building,0,width_unknown,0.58,0.0,12
+977R,JONES ST,R,man,M,5.2,gis,0,width_unknown,0.5,0.0,12
+980L,CEDAR ST,L,mixres,MUR,16.0,gis,0,width_unknown,0.67,0.0,6
+980R,CEDAR ST,R,mixres,MUR,14.7,osm-building,0,5ft_or_wider,0.5,0.0,6
+981L,JONES ST,L,mixres,MUR,9.3,gis,0,5ft_or_wider,1.0,0.0,6
+981R,JONES ST,R,mixres,MUR,14.7,gis,0,5ft_or_wider,1.0,0.0,6
+982L,JONES ST,L,res,R-2,10.1,gis,0,width_unknown,0.91,0.0,11
+982R,JONES ST,R,res,R-2,14.7,gis,0,width_unknown,1.0,0.0,11
+983L,STANNAGE AVE,L,res,R-2,10.6,gis,0,5ft_or_wider,0.75,0.0,16
+983R,STANNAGE AVE,R,res,R-2,11.0,gis,0,5ft_or_wider,1.0,0.0,16
+984L,CATHERINE DR,L,res,R-1,5.5,gis,0,5ft_or_wider,1.0,0.0,52
+984R,CATHERINE DR,R,res,R-1,11.1,gis,0,5ft_or_wider,0.9,0.0,20
+986L,JONES ST,L,mixres,MUR,10.2,gis,0,5ft_or_wider,0.67,0.0,6
+986R,JONES ST,R,mixres,MUR,13.7,gis,0,5ft_or_wider,0.5,0.0,6
+991L,SANTA FE AVE,L,com,C-N,26.5,gis,3,5ft_or_wider,1.0,0.0,4
+991R,SANTA FE AVE,R,res,R-2A,9.2,gis,0,5ft_or_wider,0.25,0.0,4
+993L,GILMAN ST,L,com,C-N,13.9,default,0,5ft_or_wider,0.84,0.0,19
+993R,GILMAN ST,R,com,C-N,13.8,default,0,5ft_or_wider,0.78,0.0,9
+994L,GILMAN ST,L,res,R-2,11.1,gis,0,5ft_or_wider,1.0,0.0,9
+994R,GILMAN ST,R,res,R-2,15.2,gis,0,5ft_or_wider,1.0,0.0,9
+995L,GILMAN ST,L,com,C-N,11.1,gis,0,5ft_or_wider,1.0,0.0,4
+995R,GILMAN ST,R,com,C-N,14.4,gis,0,5ft_or_wider,0.5,0.0,4
+1001L,PAGE ST,L,res,R-2,14.2,gis,0,5ft_or_wider,1.0,0.0,11
+1001R,PAGE ST,R,res,R-2,18.5,gis,0,5ft_or_wider,1.0,0.0,11
+1002L,ADDISON ST,L,res,R-3,10.9,gis,0,5ft_or_wider,0.64,0.0,11
+1002R,ADDISON ST,R,res,R-3,12.9,gis,0,5ft_or_wider,0.64,0.0,11
+1003L,KEONCREST DR,L,res,R-1,14.6,gis,0,5ft_or_wider,1.0,0.0,17
+1003R,KEONCREST DR,R,res,R-1,4.4,gis,0,5ft_or_wider,1.0,0.0,9
+1004L,HOPKINS ST,L,res,R-2A,13.4,gis,0,5ft_or_wider,1.0,0.0,7
+1004R,HOPKINS ST,R,res,R-2A,21.2,gis,0,5ft_or_wider,1.0,0.0,7
+1006L,KEONCREST DR,L,res,R-1,7.1,gis,0,5ft_or_wider,1.0,0.0,8
+1006R,KEONCREST DR,R,res,R-1,12.6,gis,0,5ft_or_wider,1.0,0.0,8
+1007L,CAMELIA ST,L,man,MULI,9.5,gis,0,5ft_or_wider,1.0,0.0,6
+1007R,CAMELIA ST,R,res,R-2,14.6,gis,0,5ft_or_wider,1.0,0.0,6
+1008L,CURTIS ST,L,res,R-2,10.5,default,0,width_unknown,1.0,0.0,2
+1008R,CURTIS ST,R,res,R-2,36.8,default,0,width_unknown,0.5,0.0,2
+1009L,WATKINS ST,L,res,R-2,13.0,gis,0,5ft_or_wider,1.0,0.0,9
+1009R,WATKINS ST,R,res,R-2,12.8,osm-building,0,5ft_or_wider,1.0,0.0,9
+1010L,HOPKINS CT,L,res,R-2,14.9,gis,0,5ft_or_wider,1.0,0.0,70
+1010R,HOPKINS CT,R,res,R-2,4.9,gis,0,5ft_or_wider,1.0,0.0,50
+1011L,GILMAN ST,L,res,R-2,8.9,gis,0,5ft_or_wider,0.86,0.0,7
+1011R,GILMAN ST,R,res,R-2,16.4,gis,0,5ft_or_wider,1.0,0.0,7
+1012L,VIRGINIA ST,L,res,R-2,11.8,gis,0,5ft_or_wider,1.0,0.0,25
+1012R,VIRGINIA ST,R,res,R-2,12.5,gis,0,5ft_or_wider,1.0,0.0,25
+1016L,PAGE ST,L,com,C-W,12.3,gis,0,5ft_or_wider,1.0,0.0,6
+1016R,PAGE ST,R,com,C-W,17.3,gis,0,5ft_or_wider,1.0,0.0,6
+1017L,HARRISON ST,L,man,M,7.1,default,0,no_sidewalk,1.0,1.0,9
+1017R,HARRISON ST,R,man,M,11.4,osm-building,0,no_sidewalk,1.0,1.0,9
+1018L,CORNELL AVE,L,res,R-2,7.8,gis,0,5ft_or_wider,0.28,0.0,25
+1018R,CORNELL AVE,R,res,R-2,12.0,gis,0,5ft_or_wider,0.8,0.0,25
+1027L,LINCOLN ST,L,res,R-1,13.5,gis,0,5ft_or_wider,0.89,0.0,54
+1027R,LINCOLN ST,R,res,R-1,14.8,gis,0,5ft_or_wider,0.5,0.0,56
+1031L,BUENA AVE,L,res,R-1,9.4,gis,0,5ft_or_wider,1.0,0.0,4
+1031R,BUENA AVE,R,res,R-1,13.0,gis,0,5ft_or_wider,1.0,0.0,4
+1045L,PAGE ST,L,mixres,MUR,12.4,gis,0,5ft_or_wider,1.0,0.0,6
+1045R,PAGE ST,R,mixres,MUR,12.0,osm-building,0,5ft_or_wider,1.0,0.0,6
+1046L,PAGE ST,L,mixres,MUR,14.6,gis,0,5ft_or_wider,1.0,0.0,6
+1046R,PAGE ST,R,mixres,MUR,16.8,gis,0,5ft_or_wider,1.0,0.0,6
+1048L,HOPKINS ST,L,res,R-2A,10.3,gis,0,width_unknown,0.5,0.0,8
+1048R,HOPKINS ST,R,res,R-2,22.6,gis,0,width_unknown,0.88,0.0,8
+1049L,CORNELL AVE,L,res,R-2,24.7,osm-building,0,5ft_or_wider,1.0,0.0,2
+1049R,CORNELL AVE,R,res,R-2,22.3,gis,0,5ft_or_wider,1.0,0.0,2
+1050L,KEONCREST DR,L,res,R-1,6.8,gis,0,5ft_or_wider,0.67,0.0,9
+1050R,KEONCREST DR,R,res,R-1,10.7,gis,0,trail,0.71,0.0,21
+1051L,ACTON ST,L,res,R-1,16.1,gis,0,5ft_or_wider,0.8,0.0,5
+1051R,ACTON ST,R,res,R-1,13.1,gis,0,5ft_or_wider,1.0,0.0,5
+1053L,ROSE ST,L,res,R-2,7.5,gis,0,5ft_or_wider,1.0,0.0,10
+1053R,ROSE ST,R,res,R-2,12.1,gis,0,5ft_or_wider,1.0,0.0,10
+1064L,HEARST AVE,L,mixres,MUR,6.8,gis,0,5ft_or_wider,0.75,0.25,12
+1064R,HEARST AVE,R,mixres,MUR,9.9,gis,0,5ft_or_wider,0.58,0.42,12
+1075L,CEDAR ST,L,res,R-2,9.6,gis,0,5ft_or_wider,0.67,0.0,9
+1075R,CEDAR ST,R,res,R-2,13.0,gis,0,5ft_or_wider,0.56,0.0,9
+1080L,VIRGINIA ST,L,res,R-1,12.6,gis,0,5ft_or_wider,0.62,0.0,16
+1080R,VIRGINIA ST,R,mixres,R-BMU,13.2,gis,0,5ft_or_wider,0.81,0.0,16
+1081L,KAINS AVE,L,res,R-2,9.2,gis,0,5ft_or_wider,0.85,0.0,13
+1081R,KAINS AVE,R,res,R-2,10.4,gis,0,5ft_or_wider,1.0,0.0,13
+1082L,HEARST AVE,L,res,R-2,10.7,gis,0,5ft_or_wider,1.0,0.0,12
+1082R,HEARST AVE,R,res,R-2,13.6,gis,0,5ft_or_wider,1.0,0.0,12
+1083L,UNNAMED ALLEY,L,man,MULI,11.7,default,0,5ft_or_wider,1.0,0.0,5
+1083R,UNNAMED ALLEY,R,man,MULI,13.4,default,0,5ft_or_wider,1.0,0.0,5
+1084L,CAMELIA ST,L,man,MRD,12.9,osm-building,0,no_sidewalk,0.62,0.62,13
+1084R,CAMELIA ST,R,man,MRD,12.0,measured,0,no_sidewalk,0.62,0.62,13
+1116L,HOPKINS ST,L,res,R-2,12.3,gis,0,width_unknown,1.0,0.0,8
+1116R,HOPKINS ST,R,res,R-2,13.4,gis,0,width_unknown,1.0,0.0,8
+1120R,EASTSHORE HWY,R,man,M,9.0,gis,0,width_unknown,0.38,0.0,16
+1126L,GILMAN ST,L,res,R-2,9.1,gis,0,5ft_or_wider,1.0,0.0,9
+1126R,GILMAN ST,R,res,R-2,16.2,gis,0,5ft_or_wider,1.0,0.0,9
+1128L,PERALTA AVE,L,res,R-2,15.6,gis,0,5ft_or_wider,1.0,0.0,23
+1128R,PERALTA AVE,R,res,R-2,13.5,gis,0,5ft_or_wider,1.0,0.0,23
+1129L,GILMAN ST,L,man,MULI,13.7,gis,0,width_unknown,0.58,0.42,12
+1129R,GILMAN ST,R,man,MULI,16.8,osm-building,0,no_sidewalk,0.5,0.5,12
+1130L,ADDISON ST,L,res,R-2A,12.0,gis,0,5ft_or_wider,0.58,0.0,12
+1130R,ADDISON ST,R,res,R-2A,13.0,gis,0,5ft_or_wider,0.58,0.42,12
+1132L,STANNAGE AVE,L,res,R-2,9.6,gis,0,5ft_or_wider,0.8,0.0,10
+1132R,STANNAGE AVE,R,res,R-2,11.7,gis,0,5ft_or_wider,1.0,0.0,10
+1133L,DELAWARE ST,L,mixres,R-BMU,15.6,gis,0,no_data,0.71,0.0,14
+1133R,DELAWARE ST,R,res,R-2,18.1,gis,0,no_data,0.71,0.0,14
+1134L,DELAWARE ST,L,res,R-2,16.5,gis,0,5ft_or_wider,1.0,0.0,16
+1134R,DELAWARE ST,R,res,R-2,16.9,gis,0,5ft_or_wider,1.0,0.0,16
+1141L,CEDAR ST,L,res,R-2,10.0,gis,0,width_unknown,1.0,0.0,11
+1141R,CEDAR ST,R,res,R-2,14.2,gis,0,width_unknown,1.0,0.0,11
+1149L,CALIFORNIA ST,L,res,R-2,8.6,gis,0,5ft_or_wider,0.58,0.0,12
+1149R,CALIFORNIA ST,R,res,R-2,8.6,gis,0,5ft_or_wider,1.0,0.0,12
+1161L,ROSE ST,L,res,R-1,10.3,gis,0,trail,1.0,0.0,4
+1161R,ROSE ST,R,res,R-1,14.3,gis,0,trail,0.75,0.0,4
+1162L,CAMELIA ST,L,res,R-2,9.3,gis,0,5ft_or_wider,1.0,0.0,9
+1162R,CAMELIA ST,R,res,R-2,11.2,osm-building,0,5ft_or_wider,1.0,0.0,9
+1163L,CAMELIA ST,L,res,R-2,10.1,gis,0,5ft_or_wider,1.0,0.0,9
+1163R,CAMELIA ST,R,res,R-2,13.8,gis,0,5ft_or_wider,1.0,0.0,9
+1167L,PAGE ST,L,man,MRD,18.3,gis,0,no_sidewalk,1.0,1.0,12
+1167R,PAGE ST,R,man,M,15.3,gis,0,no_sidewalk,0.58,0.58,12
+1168L,UNNAMED ALLEY,L,com,C-W,14.8,default,0,5ft_or_wider,1.0,0.0,6
+1168R,UNNAMED ALLEY,R,res,R-2,7.3,default,0,5ft_or_wider,1.0,0.0,6
+1169L,DELAWARE ST,L,mixres,MUR,21.4,osm-building,0,width_unknown,0.67,0.0,30
+1170L,UNNAMED ALLEY,L,man,MULI,10.2,osm-building,0,5ft_or_wider,1.0,0.0,4
+1170R,UNNAMED ALLEY,R,man,MULI,8.7,default,0,5ft_or_wider,1.0,0.0,4
+1171L,UNNAMED ALLEY,L,mixres,MUR,12.6,default,0,5ft_or_wider,1.0,0.0,25
+1171R,UNNAMED ALLEY,R,mixres,MUR,10.6,default,0,5ft_or_wider,1.0,0.0,25
+1172L,HEARST AVE,L,res,R-2,9.9,gis,0,5ft_or_wider,1.0,0.0,6
+1172R,HEARST AVE,R,res,R-2,12.2,gis,0,5ft_or_wider,1.0,0.0,6
+1173L,VIRGINIA ST,L,res,R-2,12.8,gis,0,5ft_or_wider,1.0,0.0,12
+1173R,VIRGINIA ST,R,res,R-2,12.4,gis,0,5ft_or_wider,1.0,0.0,12
+1174L,CAMELIA ST,L,com,C-W,9.4,gis,0,5ft_or_wider,0.75,0.25,12
+1174R,CAMELIA ST,R,res,R-2,15.1,gis,0,5ft_or_wider,1.0,0.0,12
+1178L,JUANITA WAY,L,res,R-1,9.0,gis,0,trail,0.67,0.0,33
+1178R,JUANITA WAY,R,res,R-1,8.1,gis,0,trail,0.53,0.0,43
+1179L,ROSE ST,L,res,R-1,7.8,gis,0,5ft_or_wider,1.0,0.0,16
+1179R,ROSE ST,R,res,R-1,16.8,gis,0,5ft_or_wider,1.0,0.0,16
+1197L,VIRGINIA ST,L,mixres,MUR,13.7,gis,0,5ft_or_wider,0.33,0.0,6
+1197R,VIRGINIA ST,R,mixres,MUR,16.9,gis,0,5ft_or_wider,0.33,0.0,6
+1199L,VIRGINIA ST,L,res,R-2,9.9,gis,0,5ft_or_wider,1.0,0.0,12
+1199R,VIRGINIA ST,R,res,R-2,14.1,gis,0,5ft_or_wider,1.0,0.0,12
+1203L,MIRAMONTE CT,L,res,R-1,6.3,gis,0,5ft_or_wider,0.4,0.0,5
+1203R,MIRAMONTE CT,R,res,R-1,3.2,gis,0,5ft_or_wider,0.4,0.0,5
+1211L,HARRISON ST,L,man,MULI,9.1,gis,0,no_sidewalk,1.0,1.0,13
+1211R,HARRISON ST,R,man,MULI,12.0,osm-building,0,no_sidewalk,1.0,1.0,13
+1212L,CEDARWOOD LN,L,man,M,7.8,gis,0,no_sidewalk,1.0,1.0,12
+1212R,CEDARWOOD LN,R,man,M,3.2,gis,0,no_sidewalk,1.0,1.0,12
+1213L,HARRISON ST,L,man,MULI,9.4,gis,0,no_sidewalk,1.0,1.0,8
+1213R,HARRISON ST,R,man,M,7.8,osm-building,0,no_sidewalk,1.0,1.0,8
+1217L,CAMELIA ST,L,man,MULI,8.6,gis,0,5ft_or_wider,1.0,0.0,6
+1217R,CAMELIA ST,R,res,R-2,15.9,gis,0,5ft_or_wider,1.0,0.0,6
+1218L,CEDAR ST,L,res,R-2,9.9,gis,0,width_unknown,0.67,0.0,12
+1218R,CEDAR ST,R,res,R-2,14.0,gis,0,5ft_or_wider,0.83,0.0,12
+1222L,JAYNES ST,L,res,R-1,9.4,gis,0,5ft_or_wider,0.89,0.0,9
+1222R,JAYNES ST,R,res,R-2,11.2,gis,0,5ft_or_wider,0.7,0.0,10
+1223L,CEDAR ST,L,res,R-1,7.7,gis,0,5ft_or_wider,1.0,0.0,11
+1223R,CEDAR ST,R,res,R-2,13.9,gis,0,5ft_or_wider,1.0,0.0,11
+1225L,CAMELIA ST,L,com,C-W,10.9,gis,0,5ft_or_wider,1.0,0.0,6
+1225R,CAMELIA ST,R,res,R-2,14.2,gis,0,5ft_or_wider,1.0,0.0,6
+1226L,GILMAN ST,L,man,MULI,13.1,gis,0,5ft_or_wider,1.0,0.0,2
+1226R,GILMAN ST,R,man,M,14.4,osm-building,0,5ft_or_wider,1.0,0.0,2
+1227L,GILMAN ST,L,man,MULI,13.6,gis,0,5ft_or_wider,1.0,0.0,9
+1227R,GILMAN ST,R,man,M,13.6,osm-building,0,5ft_or_wider,1.0,0.0,9
+1228L,UNNAMED ALLEY,L,mixres,MUR,16.3,default,0,5ft_or_wider,1.0,0.0,16
+1228R,UNNAMED ALLEY,R,mixres,MUR,6.5,default,0,5ft_or_wider,1.0,0.0,16
+1231L,CAMELIA ST,L,man,MULI,8.6,gis,0,5ft_or_wider,1.0,0.0,6
+1231R,CAMELIA ST,R,mixres,MUR,16.8,gis,0,5ft_or_wider,1.0,0.0,6
+1253L,ALLSTON WAY,L,res,R-2,10.5,gis,0,no_sidewalk,0.5,0.5,10
+1253R,ALLSTON WAY,R,res,R-2,13.8,gis,0,5ft_or_wider,0.5,0.4,10
+1254L,STANNAGE AVE,L,res,R-2,10.1,gis,0,width_unknown,0.5,0.0,8
+1254R,STANNAGE AVE,R,res,R-2,11.1,gis,0,width_unknown,0.88,0.0,8
+1255L,ROSE ST,L,res,R-1,8.9,gis,0,5ft_or_wider,0.87,0.0,15
+1255R,ROSE ST,R,res,R-1,15.2,gis,0,5ft_or_wider,0.93,0.0,15
+1256L,ACTON ST,L,res,R-2,10.6,gis,0,5ft_or_wider,0.56,0.0,9
+1256R,ACTON ST,R,res,R-2,15.7,gis,0,5ft_or_wider,0.56,0.0,9
+1257L,SACRAMENTO ST,L,res,R-2,20.3,osm-building,0,5ft_or_wider,0.54,0.0,13
+1257R,SACRAMENTO ST,R,res,R-1,22.3,gis,0,5ft_or_wider,1.0,0.0,13
+1292L,DELAWARE ST,L,res,R-2,11.2,gis,0,5ft_or_wider,1.0,0.0,14
+1292R,DELAWARE ST,R,res,R-2,13.0,gis,0,5ft_or_wider,1.0,0.0,14
+1301L,SACRAMENTO ST,L,res,R-2,14.3,gis,0,5ft_or_wider,0.25,0.0,12
+1301R,SACRAMENTO ST,R,mixres,R-BMU,16.2,gis,0,5ft_or_wider,0.25,0.0,12
+1302L,CAMELIA ST,L,man,MULI,9.5,gis,0,5ft_or_wider,0.83,0.17,12
+1302R,CAMELIA ST,R,res,R-2,15.3,gis,0,5ft_or_wider,1.0,0.0,12
+1303L,JONES ST,L,res,R-2,10.0,gis,0,5ft_or_wider,0.5,0.5,12
+1303R,JONES ST,R,res,R-2,15.4,gis,0,5ft_or_wider,0.5,0.5,12
+1319L,HOPKINS ST,L,com,C-N,7.4,gis,0,5ft_or_wider,1.0,0.0,9
+1319R,HOPKINS ST,R,com,C-N,12.3,osm-building,0,5ft_or_wider,1.0,0.0,9
+1322L,HOPKINS ST,L,res,R-2A,9.6,gis,0,5ft_or_wider,1.0,0.0,6
+1322R,HOPKINS ST,R,res,R-2,23.5,gis,0,width_unknown,0.67,0.0,6
+1323L,ROSE ST,L,res,R-1,7.7,gis,0,5ft_or_wider,0.8,0.0,10
+1323R,ROSE ST,R,res,R-1,20.5,gis,0,5ft_or_wider,1.0,0.0,10
+1324L,VIRGINIA ST,L,res,R-2,13.3,gis,0,5ft_or_wider,1.0,0.0,9
+1324R,VIRGINIA ST,R,res,R-2,14.4,gis,0,5ft_or_wider,1.0,0.0,9
+1325L,HOPKINS ST,L,res,R-2,13.3,gis,0,no_sidewalk,0.8,0.8,5
+1326L,HOPKINS ST,L,res,R-2,12.3,gis,0,5ft_or_wider,0.67,0.33,3
+1326R,HOPKINS ST,R,res,R-2,15.7,gis,0,5ft_or_wider,1.0,0.0,3
+1328L,DELAWARE ST,L,res,R-2,16.6,gis,0,5ft_or_wider,1.0,0.0,11
+1328R,DELAWARE ST,R,res,R-2,16.9,gis,0,5ft_or_wider,1.0,0.0,11
+1329L,GILMAN ST,L,man,MULI,13.9,gis,0,width_unknown,0.82,0.18,11
+1329R,GILMAN ST,R,man,MULI,18.1,gis,0,5ft_or_wider,0.55,0.45,11
+1330L,HEARST AVE,L,mixres,MUR,5.7,gis,0,width_unknown,0.55,0.0,11
+1330R,HEARST AVE,R,com,C-W,10.2,gis,0,width_unknown,0.64,0.0,11
+1336L,HEARST AVE,L,man,MULI,8.5,gis,0,width_unknown,1.0,0.0,8
+1336R,HEARST AVE,R,man,MULI,8.3,gis,0,width_unknown,1.0,0.0,8
+1337L,JONES ST,L,res,R-2,9.0,gis,0,5ft_or_wider,1.0,0.0,12
+1337R,JONES ST,R,res,R-2,13.8,gis,0,5ft_or_wider,1.0,0.0,12
+1350L,PARK WAY,L,man,M,9.2,gis,0,no_sidewalk,1.0,1.0,2
+1350R,PARK WAY,R,man,M,12.2,gis,0,no_sidewalk,1.0,1.0,2
+1353L,ADA ST,L,res,R-1,8.7,gis,0,5ft_or_wider,1.0,0.0,11
+1353R,ADA ST,R,res,R-1,21.3,gis,0,5ft_or_wider,1.0,0.0,9
+1354L,CEDAR ST,L,res,R-2,11.6,gis,0,5ft_or_wider,1.0,0.0,9
+1354R,CEDAR ST,R,res,R-2,11.1,gis,0,5ft_or_wider,1.0,0.0,9
+1355L,HOPKINS ST,L,res,R-2A,9.2,gis,0,5ft_or_wider,0.43,0.0,14
+1355R,HOPKINS ST,R,res,R-2A,24.9,gis,0,5ft_or_wider,1.0,0.0,14
+1356L,SANTA FE AVE,L,res,R-2,18.1,gis,0,5ft_or_wider,1.0,0.0,2
+1356R,SANTA FE AVE,R,res,R-2,25.7,gis,0,5ft_or_wider,1.0,0.0,2
+1357L,TEVLIN ST,L,com,C-N,4.2,osm-building,0,no_sidewalk,1.0,1.0,5
+1357R,TEVLIN ST,R,res,R-2,6.7,gis,0,no_sidewalk,1.0,1.0,5
+1358L,CAMELIA ST,L,com,C-W,9.1,gis,0,5ft_or_wider,1.0,0.0,10
+1358R,CAMELIA ST,R,com,C-W,14.6,gis,0,5ft_or_wider,1.0,0.0,10
+1359L,HOPKINS ST,L,res,R-2A,8.4,gis,0,5ft_or_wider,1.0,0.0,6
+1359R,HOPKINS ST,R,res,R-2A,23.2,gis,0,5ft_or_wider,1.0,0.0,6
+1360L,SANTA FE AVE,L,res,R-2,15.1,gis,0,5ft_or_wider,1.0,0.0,15
+1360R,SANTA FE AVE,R,res,R-2,3.3,gis,0,5ft_or_wider,1.0,0.0,15
+1361L,VIRGINIA GDNS,L,res,R-1,3.4,gis,0,5ft_or_wider,0.59,0.0,17
+1361R,VIRGINIA GDNS,R,res,R-1,11.0,gis,0,trail,0.41,0.0,17
+1362L,TOMLEE DR,L,res,R-1,6.2,gis,0,5ft_or_wider,0.65,0.0,31
+1362R,TOMLEE DR,R,res,R-1,10.9,gis,0,5ft_or_wider,0.8,0.0,15
+1363L,PARK WAY,L,man,M,8.8,gis,0,no_sidewalk,1.0,1.0,6
+1363R,PARK WAY,R,man,M,12.1,gis,0,no_sidewalk,1.0,1.0,6
+1364L,PARK WAY,L,man,M,11.1,gis,0,no_sidewalk,1.0,1.0,2
+1364R,PARK WAY,R,man,M,14.4,gis,0,no_sidewalk,0.5,0.5,2
+1365L,GILMAN ST,L,com,C-W,12.0,gis,0,width_unknown,0.67,0.33,12
+1365R,GILMAN ST,R,com,C-W,15.7,osm-building,0,no_sidewalk,0.58,0.58,12
+1366L,ADDISON ST,L,res,R-4,10.5,gis,0,5ft_or_wider,1.0,0.0,11
+1366R,ADDISON ST,R,res,R-2,13.1,gis,0,5ft_or_wider,1.0,0.0,11
+1409L,EASTSHORE HWY,L,man,M,36.8,gis,20,width_unknown,1.0,0.0,28
+1409R,EASTSHORE HWY,R,man,M,5.0,gis,0,width_unknown,0.96,0.04,28
+1415L,GILMAN ST,L,res,R-2,11.5,gis,0,no_data,1.0,0.0,9
+1415R,GILMAN ST,R,res,R-2A,14.0,gis,0,5ft_or_wider,0.11,0.0,9
+1416L,GILMAN ST,L,com,C-W,14.4,gis,0,5ft_or_wider,1.0,0.0,8
+1416R,GILMAN ST,R,com,C-W,18.2,gis,0,5ft_or_wider,1.0,0.0,6
+1417L,HARRISON ST,L,man,M,9.7,gis,0,no_sidewalk,1.0,1.0,4
+1417R,HARRISON ST,R,man,M,13.0,gis,0,no_sidewalk,1.0,1.0,4
+1421L,GILMAN ST,L,com,C-W,9.9,gis,0,5ft_or_wider,1.0,0.0,12
+1421R,GILMAN ST,R,com,C-W,15.3,gis,0,5ft_or_wider,1.0,0.0,10
+1422L,KAINS AVE,L,res,R-2,11.2,gis,0,5ft_or_wider,1.0,0.0,24
+1422R,KAINS AVE,R,res,R-2,10.4,gis,0,5ft_or_wider,1.0,0.0,24
+1426L,HARRISON ST,L,man,MULI,11.4,gis,0,no_sidewalk,1.0,1.0,12
+1426R,HARRISON ST,R,man,MULI,17.6,gis,0,no_sidewalk,0.5,0.5,12
+1432L,PERALTA AVE,L,res,R-2,21.2,gis,0,5ft_or_wider,0.52,0.0,42
+1432R,PERALTA AVE,R,res,R-2,9.6,gis,0,5ft_or_wider,0.62,0.0,42
+1434L,GILMAN ST,L,res,R-2,8.1,gis,0,5ft_or_wider,1.0,0.0,9
+1434R,GILMAN ST,R,res,R-2,14.3,gis,0,5ft_or_wider,1.0,0.0,9
+1435L,CORNELL AVE,L,res,R-2,10.0,gis,0,5ft_or_wider,1.0,0.0,24
+1435R,CORNELL AVE,R,res,R-2,10.5,gis,0,5ft_or_wider,1.0,0.0,24
+1444L,HOPKINS ST,L,com,C-N,29.2,gis,0,5ft_or_wider,1.0,0.0,2
+1444R,HOPKINS ST,R,com,C-N,25.6,osm-building,0,5ft_or_wider,1.0,0.0,2
+1446L,TEVLIN ST,L,res,R-2,9.5,gis,0,under_5ft,0.92,0.0,13
+1446R,TEVLIN ST,R,res,R-2,4.6,gis,0,under_5ft,0.92,0.0,13
+1458L,GILMAN ST,L,res,R-2,8.5,gis,0,5ft_or_wider,1.0,0.0,9
+1458R,GILMAN ST,R,res,R-2,17.9,gis,0,5ft_or_wider,1.0,0.0,9
+1459L,STANNAGE AVE,L,res,R-2,8.8,gis,0,5ft_or_wider,1.0,0.0,24
+1459R,STANNAGE AVE,R,res,R-2,9.0,gis,0,5ft_or_wider,1.0,0.0,24
+1461L,HARRISON ST,L,man,MULI,10.5,gis,0,no_sidewalk,1.0,1.0,11
+1461R,HARRISON ST,R,man,MULI,15.2,gis,0,no_sidewalk,1.0,1.0,11
+1462L,SACRAMENTO ST,L,res,R-1,18.9,gis,0,5ft_or_wider,1.0,0.0,14
+1462R,SACRAMENTO ST,R,res,R-1,4.4,gis,0,5ft_or_wider,1.0,0.0,14
+1463L,HARRISON ST,L,man,MULI,10.4,gis,0,no_sidewalk,1.0,1.0,12
+1463R,HARRISON ST,R,man,MULI,17.0,gis,0,no_sidewalk,0.67,0.67,12
+1464L,,L,res,R-2,6.0,default,0,trail,0.86,0.0,7
+1464R,,R,res,R-2,7.0,default,0,trail,0.57,0.0,7
+1465L,EASTSHORE HWY,L,man,M,36.6,osm-building,62,no_sidewalk,1.0,1.0,24
+1465R,EASTSHORE HWY,R,man,M,5.7,gis,0,no_sidewalk,1.0,1.0,24
+1472L,NEILSON ST,L,res,R-2,5.3,default,0,5ft_or_wider,0.79,0.0,43
+1472R,NEILSON ST,R,res,R-2,1.7,default,0,5ft_or_wider,0.87,0.0,54
+1494L,BUCHANAN ST,L,other,SP,21.2,default,0,trail,1.0,0.0,70
+1497L,UNNAMED ALLEY,L,com,C-W,16.9,default,0,5ft_or_wider,1.0,0.0,16
+1497R,UNNAMED ALLEY,R,res,R-2,2.5,default,0,5ft_or_wider,0.61,0.0,18
+1498L,UNNAMED ALLEY,L,mixres,MUR,13.8,default,0,5ft_or_wider,1.0,0.0,16
+1498R,UNNAMED ALLEY,R,mixres,MUR,7.8,default,0,5ft_or_wider,0.75,0.0,16
+1507L,HOPKINS ST,L,com,C-N,13.8,gis,0,5ft_or_wider,1.0,0.0,9
+1507R,HOPKINS ST,R,com,C-N,22.5,gis,8,5ft_or_wider,1.0,0.0,9
+1508L,CALIFORNIA ST,L,com,C-N,12.8,gis,0,5ft_or_wider,1.0,0.0,25
+1508R,CALIFORNIA ST,R,com,C-N,1.1,gis,0,5ft_or_wider,1.0,0.0,22
+1511L,ALBINA AVE,L,res,R-2,24.1,gis,0,5ft_or_wider,0.38,0.0,26
+1511R,ALBINA AVE,R,res,R-2,7.8,gis,0,5ft_or_wider,0.25,0.0,32
+1512L,NEILSON ST,L,com,C-N,15.0,gis,0,5ft_or_wider,1.0,0.0,10
+1512R,NEILSON ST,R,res,R-2,1.4,gis,0,5ft_or_wider,0.8,0.0,10
+1514L,HARRISON ST,L,man,MULI,11.4,gis,0,no_sidewalk,1.0,1.0,12
+1514R,HARRISON ST,R,man,MULI,13.8,osm-building,0,no_sidewalk,1.0,1.0,12
+1532L,EVELYN AVE,L,res,R-2,14.1,gis,0,5ft_or_wider,0.56,0.0,25
+1532R,EVELYN AVE,R,res,R-2,6.0,gis,0,5ft_or_wider,0.68,0.0,25
+1533L,CURTIS ST,L,res,R-2,10.3,gis,0,5ft_or_wider,0.5,0.0,24
+1533R,CURTIS ST,R,res,R-2,9.1,gis,0,5ft_or_wider,0.58,0.0,24
+1543L,KAINS AVE,L,res,R-2,10.5,gis,0,5ft_or_wider,0.6,0.0,25
+1543R,KAINS AVE,R,res,R-2,10.4,gis,0,5ft_or_wider,0.52,0.0,25
+1544L,ORDWAY ST,L,res,R-2,15.0,gis,0,5ft_or_wider,1.0,0.0,27
+1544R,ORDWAY ST,R,res,R-2,9.3,gis,0,5ft_or_wider,1.0,0.0,29
+1551L,STANNAGE AVE,L,res,R-2,10.7,gis,0,5ft_or_wider,0.52,0.0,25
+1551R,STANNAGE AVE,R,res,R-2,9.9,gis,0,5ft_or_wider,0.56,0.0,25
+1673L,OREGON ST,L,res,R-1,10.6,gis,0,5ft_or_wider,1.0,0.0,9
+1673R,OREGON ST,R,res,R-1,14.3,gis,0,5ft_or_wider,1.0,0.0,9
+1764L,BANCROFT WAY,L,res,R-2,13.0,gis,0,5ft_or_wider,1.0,0.0,11
+1764R,BANCROFT WAY,R,res,R-2,10.7,gis,0,5ft_or_wider,1.0,0.0,11
+1855L,BONAR ST,L,res,R-2,10.4,gis,0,5ft_or_wider,1.0,0.0,12
+1855R,BONAR ST,R,res,R-2,16.2,gis,0,5ft_or_wider,0.83,0.0,12
+1892L,DOHR ST,L,res,R-1,15.0,gis,0,5ft_or_wider,1.0,0.0,16
+1892R,DOHR ST,R,res,R-1,9.1,gis,0,5ft_or_wider,1.0,0.0,16
+1893L,CURTIS ST,L,res,R-2,9.3,gis,0,5ft_or_wider,1.0,0.0,13
+1893R,CURTIS ST,R,res,R-2,16.2,gis,0,5ft_or_wider,1.0,0.0,13
+1999L,WARD ST,L,res,R-1,10.2,gis,0,5ft_or_wider,0.54,0.0,13
+1999R,WARD ST,R,res,R-1,8.1,gis,0,no_data,1.0,0.0,19
+2001L,DERBY ST,L,res,R-1,11.1,gis,0,5ft_or_wider,1.0,0.0,20
+2001R,DERBY ST,R,res,R-1,13.6,gis,0,5ft_or_wider,1.0,0.0,20
+2036L,PARKER ST,L,man,MULI,10.6,gis,0,5ft_or_wider,1.0,0.0,12
+2036R,PARKER ST,R,man,MULI,14.4,gis,0,5ft_or_wider,1.0,0.0,12
+2055L,W FRONTAGE RD,L,other,U,8.2,gis,0,trail,0.1,0.0,226
+2055R,W FRONTAGE RD,R,other,U,31.3,gis,0,trail,0.12,0.0,208
+2058L,DERBY ST,L,res,R-2,12.7,gis,0,5ft_or_wider,0.96,0.0,24
+2058R,DERBY ST,R,res,R-2,11.1,gis,0,5ft_or_wider,0.96,0.0,24
+2066L,CURTIS ST,L,res,R-2,10.0,gis,0,5ft_or_wider,1.0,0.0,25
+2066R,CURTIS ST,R,res,R-2,15.3,gis,0,5ft_or_wider,1.0,0.0,25
+2081L,MABEL ST,L,res,R-1,10.5,gis,0,5ft_or_wider,0.5,0.0,12
+2081R,MABEL ST,R,res,R-2,13.6,gis,0,5ft_or_wider,0.58,0.0,12
+2082L,BANCROFT WAY,L,res,R-2,10.2,gis,0,5ft_or_wider,1.0,0.0,13
+2082R,BANCROFT WAY,R,res,R-2,13.4,gis,0,5ft_or_wider,1.0,0.0,13
+2124L,PARKER ST,L,res,R-1,11.2,gis,0,5ft_or_wider,0.75,0.0,24
+2124R,PARKER ST,R,res,R-1,13.1,gis,0,5ft_or_wider,0.79,0.08,24
+2134L,PARDEE ST,L,com,C-W,9.6,gis,0,5ft_or_wider,0.31,0.0,13
+2134R,PARDEE ST,R,com,C-W,14.2,gis,0,5ft_or_wider,0.69,0.0,13
+2136L,CARLETON ST,L,man,MULI,16.1,gis,0,5ft_or_wider,1.0,0.0,12
+2136R,CARLETON ST,R,mixres,MUR,20.6,gis,15,5ft_or_wider,0.83,0.0,12
+2148L,PARDEE ST,L,mixres,MUR,6.6,gis,0,5ft_or_wider,1.0,0.0,12
+2148R,PARDEE ST,R,mixres,MUR,11.7,gis,0,5ft_or_wider,0.92,0.0,12
+2149L,CARLETON ST,L,man,MM,6.2,gis,0,5ft_or_wider,0.5,0.0,8
+2149R,CARLETON ST,R,man,MM,18.3,gis,0,none,1.0,0.0,8
+2150L,CARLETON ST,L,man,MM,11.9,gis,0,5ft_or_wider,0.68,0.0,37
+2150R,CARLETON ST,R,man,MM,20.2,gis,129,5ft_or_wider,0.46,0.0,37
+2151L,SPAULDING AVE,L,res,R-2,15.2,gis,0,5ft_or_wider,1.0,0.0,25
+2151R,SPAULDING AVE,R,res,R-2,19.0,gis,0,5ft_or_wider,1.0,0.0,25
+2153L,BANCROFT WAY,L,com,C-W,14.4,gis,0,5ft_or_wider,1.0,0.0,11
+2153R,BANCROFT WAY,R,com,C-W,10.5,gis,0,5ft_or_wider,1.0,0.0,11
+2154L,ALLSTON WAY,L,man,MULI,18.1,gis,0,5ft_or_wider,1.0,0.0,2
+2154R,ALLSTON WAY,R,man,MULI,1.8,gis,0,5ft_or_wider,1.0,0.0,2
+2155L,ALLSTON WAY,L,man,MULI,16.5,gis,0,5ft_or_wider,1.0,0.0,8
+2155R,ALLSTON WAY,R,man,MULI,5.1,gis,0,5ft_or_wider,1.0,0.0,8
+2162L,CARLETON ST,L,res,R-1,10.7,gis,0,5ft_or_wider,0.84,0.16,25
+2162R,CARLETON ST,R,res,R-1,12.7,gis,0,5ft_or_wider,1.0,0.0,25
+2170L,GRAYSON ST,L,mixres,MUR,9.1,gis,0,5ft_or_wider,1.0,0.0,12
+2170R,GRAYSON ST,R,mixres,MUR,13.7,gis,0,5ft_or_wider,1.0,0.0,12
+2171L,OREGON ST,L,res,R-3,11.1,gis,0,5ft_or_wider,0.11,0.0,9
+2171R,OREGON ST,R,res,R-1,12.4,gis,0,5ft_or_wider,0.11,0.0,9
+2182L,DWIGHT WAY,L,res,R-2,11.7,gis,0,5ft_or_wider,1.0,0.0,11
+2182R,DWIGHT WAY,R,res,R-2,12.3,gis,0,5ft_or_wider,1.0,0.0,11
+2184L,BLAKE ST,L,res,R-2,13.5,gis,0,5ft_or_wider,0.96,0.0,24
+2184R,BLAKE ST,R,res,R-2,11.0,gis,0,5ft_or_wider,0.92,0.0,24
+2186L,ACTON ST,L,res,R-1,12.8,gis,0,no_sidewalk,0.46,0.46,26
+2186R,ACTON ST,R,res,R-1,11.5,gis,0,5ft_or_wider,0.32,0.24,34
+2187L,SOJOURNER TRUTH WAY,L,res,R-3,12.2,gis,0,5ft_or_wider,0.12,0.0,24
+2187R,SOJOURNER TRUTH WAY,R,res,R-3,21.5,gis,0,5ft_or_wider,0.62,0.0,34
+2189L,PARKER ST,L,res,R-1,11.1,gis,0,5ft_or_wider,1.0,0.0,20
+2189R,PARKER ST,R,res,R-1,14.2,gis,0,5ft_or_wider,1.0,0.0,20
+2200L,DWIGHT WAY,L,res,R-2,11.5,gis,0,5ft_or_wider,1.0,0.0,10
+2200R,DWIGHT WAY,R,res,R-2,12.6,gis,0,5ft_or_wider,1.0,0.0,10
+2211L,WARD ST,L,res,R-1,11.4,gis,0,5ft_or_wider,1.0,0.0,8
+2211R,WARD ST,R,res,R-1,14.7,gis,0,5ft_or_wider,1.0,0.0,8
+2215L,BLAKE ST,L,res,R-1,12.1,gis,0,5ft_or_wider,0.88,0.0,24
+2215R,BLAKE ST,R,res,R-1,12.4,gis,0,5ft_or_wider,0.75,0.0,24
+2216L,ACTON ST,L,res,R-1,11.7,gis,0,5ft_or_wider,0.5,0.0,12
+2216R,ACTON ST,R,res,R-1,13.5,gis,0,5ft_or_wider,0.5,0.0,12
+2223L,WARD ST,L,res,R-1,13.9,gis,0,no_sidewalk,1.0,1.0,11
+2223R,WARD ST,R,res,R-1,11.2,gis,0,no_sidewalk,1.0,1.0,11
+2224L,MABEL ST,L,res,R-1,14.1,gis,0,no_sidewalk,0.48,0.48,27
+2224R,MABEL ST,R,res,R-1,9.6,gis,0,no_sidewalk,0.15,0.15,27
+2235L,CHANNING WAY,L,res,R-2,10.4,gis,0,5ft_or_wider,1.0,0.0,11
+2235R,CHANNING WAY,R,res,R-2,13.4,gis,0,5ft_or_wider,1.0,0.0,11
+2247L,BANCROFT WAY,L,res,R-2,11.8,gis,0,5ft_or_wider,1.0,0.0,11
+2247R,BANCROFT WAY,R,res,R-2,12.5,gis,0,5ft_or_wider,1.0,0.0,11
+2252L,PARKER ST,L,man,MM,10.9,gis,0,5ft_or_wider,0.67,0.0,36
+2252R,PARKER ST,R,man,MM,14.4,gis,0,5ft_or_wider,0.64,0.0,36
+2255L,BLAKE ST,L,res,R-1,11.0,gis,0,5ft_or_wider,1.0,0.0,20
+2255R,BLAKE ST,R,res,R-1,11.8,gis,0,5ft_or_wider,1.0,0.0,20
+2256L,MABEL ST,L,res,R-1,9.6,osm-building,0,5ft_or_wider,0.58,0.0,12
+2256R,MABEL ST,R,res,R-1,15.0,gis,0,5ft_or_wider,0.58,0.0,12
+2257L,PARKER ST,L,res,R-2,13.1,gis,0,5ft_or_wider,0.96,0.0,23
+2257R,PARKER ST,R,res,R-2,12.0,gis,0,5ft_or_wider,0.96,0.0,23
+2259L,DWIGHT WAY,L,res,R-2,11.7,gis,0,5ft_or_wider,1.0,0.0,12
+2259R,DWIGHT WAY,R,man,MULI,13.5,gis,0,5ft_or_wider,1.0,0.0,12
+2265L,BYRON ST,L,res,R-2,7.9,gis,0,5ft_or_wider,1.0,0.0,25
+2265R,BYRON ST,R,res,R-2,15.3,gis,0,5ft_or_wider,1.0,0.0,25
+2274L,WALLACE ST,L,res,R-1,12.6,gis,0,5ft_or_wider,0.26,0.0,27
+2274R,WALLACE ST,R,res,R-1,13.1,gis,0,5ft_or_wider,0.22,0.0,27
+2276L,MATHEWS ST,L,res,R-1,15.8,gis,0,no_sidewalk,0.23,0.23,35
+2276R,MATHEWS ST,R,res,R-1,10.4,gis,0,no_sidewalk,0.15,0.15,27
+2286L,DOHR ST,L,res,R-1,14.1,gis,0,5ft_or_wider,0.81,0.0,26
+2286R,DOHR ST,R,res,R-1,11.2,gis,0,5ft_or_wider,0.54,0.04,26
+2287L,CARLETON ST,L,man,MULI,15.6,gis,0,5ft_or_wider,1.0,0.0,12
+2287R,CARLETON ST,R,mixres,MUR,20.3,gis,15,5ft_or_wider,1.0,0.0,12
+2289L,WARD ST,L,res,R-1,12.1,gis,0,5ft_or_wider,1.0,0.0,12
+2289R,WARD ST,R,res,R-1,10.7,osm-building,0,5ft_or_wider,1.0,0.0,6
+2291L,CARLETON ST,L,com,C-W,16.1,gis,0,5ft_or_wider,0.31,0.0,13
+2291R,CARLETON ST,R,com,C-W,17.2,osm-building,0,5ft_or_wider,0.31,0.0,13
+2294L,DERBY ST,L,res,R-1,10.7,gis,0,5ft_or_wider,1.0,0.0,20
+2294R,DERBY ST,R,res,R-1,13.2,gis,0,5ft_or_wider,1.0,0.0,20
+2296L,MABEL ST,L,res,R-1,12.9,gis,0,5ft_or_wider,0.64,0.0,11
+2296R,MABEL ST,R,res,R-1,11.8,gis,0,5ft_or_wider,0.64,0.0,11
+2307L,DERBY ST,L,res,R-1,11.6,gis,0,5ft_or_wider,1.0,0.0,25
+2307R,DERBY ST,R,res,R-1,12.3,gis,0,5ft_or_wider,1.0,0.0,25
+2308L,ACTON ST,L,res,R-1,14.2,gis,0,5ft_or_wider,0.43,0.0,14
+2308R,ACTON ST,R,res,R-1,10.7,gis,0,5ft_or_wider,0.6,0.0,10
+2317L,DERBY ST,L,res,R-1,12.4,gis,0,5ft_or_wider,0.69,0.0,26
+2317R,DERBY ST,R,res,R-1,12.9,gis,0,5ft_or_wider,0.58,0.0,26
+2320L,CARLETON ST,L,res,R-1,9.7,gis,0,5ft_or_wider,1.0,0.0,21
+2320R,CARLETON ST,R,res,R-1,14.8,gis,0,5ft_or_wider,1.0,0.0,21
+2321L,MATHEWS ST,L,res,R-1,11.1,osm-building,0,5ft_or_wider,0.58,0.0,12
+2321R,MATHEWS ST,R,res,R-1,12.0,gis,0,5ft_or_wider,0.58,0.0,12
+2327L,CARLETON ST,L,res,R-1,11.6,gis,0,5ft_or_wider,1.0,0.0,20
+2327R,CARLETON ST,R,res,R-1,13.7,gis,0,5ft_or_wider,1.0,0.0,20
+2328L,MABEL ST,L,res,R-1,11.0,gis,0,5ft_or_wider,0.58,0.0,12
+2328R,MABEL ST,R,res,R-1,12.4,gis,0,5ft_or_wider,0.58,0.0,12
+2344L,ACTON ST,L,res,R-1,13.4,gis,0,5ft_or_wider,0.58,0.0,12
+2344R,ACTON ST,R,res,R-1,12.8,gis,0,5ft_or_wider,0.5,0.0,12
+2383R,SACRAMENTO ST,R,res,R-3,39.2,gis,0,5ft_or_wider,0.67,0.0,12
+2407L,PARDEE ST,L,mixres,MUR,6.6,gis,0,5ft_or_wider,1.0,0.0,12
+2407R,PARDEE ST,R,mixres,MUR,11.2,gis,0,5ft_or_wider,0.83,0.0,12
+2435L,DWIGHT WAY,L,mixres,MUR,9.6,gis,0,no_data,1.0,0.0,11
+2435R,DWIGHT WAY,R,man,MM,13.4,gis,0,no_data,1.0,0.0,11
+2456L,PARKER ST,L,man,MULI,10.5,gis,0,5ft_or_wider,1.0,0.0,12
+2456R,PARKER ST,R,man,MULI,12.1,osm-building,0,5ft_or_wider,1.0,0.0,12
+2481L,STANTON ST,L,res,R-1,14.0,gis,0,5ft_or_wider,0.27,0.0,15
+2481R,STANTON ST,R,res,R-1,7.1,gis,0,5ft_or_wider,0.2,0.0,15
+2490L,CHANNING WAY,L,man,MULI,10.2,gis,0,5ft_or_wider,1.0,0.0,11
+2490R,CHANNING WAY,R,mixres,MUR,13.1,gis,0,5ft_or_wider,1.0,0.0,11
+2524L,DWIGHT WAY,L,res,R-2,12.5,gis,0,5ft_or_wider,1.0,0.0,5
+2524R,DWIGHT WAY,R,res,R-2,13.5,gis,0,5ft_or_wider,1.0,0.0,5
+2525L,ACROFT CT,L,res,R-2,6.6,gis,0,5ft_or_wider,0.6,0.0,10
+2525R,ACROFT CT,R,res,R-2,7.7,gis,0,5ft_or_wider,0.5,0.0,10
+2530L,OREGON ST,L,res,R-1,11.3,gis,0,5ft_or_wider,0.44,0.0,9
+2530R,OREGON ST,R,res,R-1,12.6,gis,0,5ft_or_wider,0.44,0.0,9
+2577L,WARD ST,L,res,R-1,13.0,gis,0,no_sidewalk,0.83,0.83,6
+2577R,WARD ST,R,res,R-1,11.1,gis,0,no_sidewalk,1.0,1.0,6
+2578L,MATHEWS ST,L,res,R-1,12.8,gis,0,5ft_or_wider,0.62,0.08,13
+2578R,MATHEWS ST,R,res,R-1,11.7,gis,0,5ft_or_wider,0.74,0.04,27
+2586L,GRAYSON ST,L,com,C-W,9.1,gis,0,5ft_or_wider,0.69,0.0,13
+2586R,GRAYSON ST,R,com,C-W,14.9,gis,0,5ft_or_wider,0.62,0.0,13
+2632L,WARD ST,L,res,R-1,13.7,gis,0,5ft_or_wider,0.75,0.25,8
+2632R,WARD ST,R,res,R-1,10.3,gis,0,5ft_or_wider,0.75,0.25,8
+2633L,CHANNING WAY,L,res,R-2,11.1,gis,0,5ft_or_wider,1.0,0.0,9
+2633R,CHANNING WAY,R,res,R-2,12.7,gis,0,5ft_or_wider,1.0,0.0,9
+2642L,WARD ST,L,res,R-1,12.0,gis,0,5ft_or_wider,1.0,0.0,13
+2642R,WARD ST,R,res,R-1,13.4,gis,0,5ft_or_wider,1.0,0.0,13
+2653L,WARD ST,L,res,R-1,11.9,gis,0,5ft_or_wider,1.0,0.0,11
+2653R,WARD ST,R,res,R-1,13.7,gis,0,5ft_or_wider,1.0,0.0,11
+2658L,PARKER ST,L,man,MULI,10.2,gis,0,5ft_or_wider,1.0,0.0,12
+2658R,PARKER ST,R,man,MULI,13.5,gis,0,5ft_or_wider,1.0,0.0,12
+2707L,CHANNING WAY,L,res,R-2,13.3,gis,0,5ft_or_wider,1.0,0.0,11
+2707R,CHANNING WAY,R,res,R-2,13.3,gis,0,5ft_or_wider,1.0,0.0,11
+2719L,ACTON ST,L,res,R-1,13.1,gis,0,5ft_or_wider,0.5,0.0,12
+2719R,ACTON ST,R,res,R-1,12.9,gis,0,5ft_or_wider,0.67,0.0,12
+2743L,DWIGHT WAY,L,res,R-2,13.2,gis,0,5ft_or_wider,1.0,0.0,3
+2743R,DWIGHT WAY,R,res,R-2,13.0,gis,0,5ft_or_wider,1.0,0.0,3
+2789L,BANCROFT WAY,L,res,R-2,9.8,gis,0,5ft_or_wider,1.0,0.0,12
+2789R,BANCROFT WAY,R,res,R-2,15.7,gis,0,5ft_or_wider,1.0,0.0,12
+2790L,PARDEE ST,L,mixres,MUR,7.9,gis,0,5ft_or_wider,1.0,0.0,12
+2790R,PARDEE ST,R,mixres,MUR,12.7,gis,0,5ft_or_wider,0.92,0.0,12
+2828L,CARLETON ST,L,res,R-1,13.3,gis,0,5ft_or_wider,0.54,0.0,26
+2828R,CARLETON ST,R,res,R-1,12.0,gis,0,5ft_or_wider,0.54,0.0,26
+2864L,SACRAMENTO ST,L,res,R-2,21.6,gis,0,5ft_or_wider,1.0,0.0,15
+2864R,SACRAMENTO ST,R,res,R-2,33.8,gis,0,5ft_or_wider,0.27,0.0,15
+2865L,SACRAMENTO ST,L,res,R-2,22.8,gis,0,5ft_or_wider,1.0,0.0,12
+2865R,SACRAMENTO ST,R,res,R-2,32.8,gis,0,5ft_or_wider,0.25,0.0,12
+2866L,DWIGHT WAY,L,res,R-2,12.4,gis,0,5ft_or_wider,1.0,0.0,9
+2866R,DWIGHT WAY,R,res,R-2,13.3,gis,0,5ft_or_wider,1.0,0.0,9
+2875L,MATHEWS ST,L,res,R-1,11.0,gis,0,5ft_or_wider,0.58,0.0,12
+2875R,MATHEWS ST,R,res,R-2,12.3,gis,0,5ft_or_wider,0.58,0.0,12
+2894L,PARKER ST,L,man,MM,19.6,default,1,5ft_or_wider,1.0,0.0,2
+2894R,PARKER ST,R,man,MM,19.7,default,1,5ft_or_wider,1.0,0.0,2
+2916L,PARKER ST,L,com,C-W,6.4,gis,0,5ft_or_wider,1.0,0.0,13
+2916R,PARKER ST,R,com,C-W,17.4,gis,0,5ft_or_wider,1.0,0.0,13
+2918L,DWIGHT WAY,L,man,MULI,10.4,gis,0,5ft_or_wider,1.0,0.0,2
+2918R,DWIGHT WAY,R,man,MM,4.7,gis,0,5ft_or_wider,1.0,0.0,2
+2919L,DWIGHT WAY,L,man,MULI,10.4,gis,0,5ft_or_wider,1.0,0.0,8
+2919R,DWIGHT WAY,R,man,MM,5.8,gis,0,5ft_or_wider,0.88,0.0,8
+2920L,MATHEWS ST,L,res,R-1,12.9,gis,0,5ft_or_wider,0.58,0.0,12
+2920R,MATHEWS ST,R,res,R-1,12.4,gis,0,5ft_or_wider,0.58,0.0,12
+2921L,DWIGHT WAY,L,mixres,MUR,9.3,gis,0,5ft_or_wider,1.0,0.0,11
+2921R,DWIGHT WAY,R,man,MM,8.1,gis,0,5ft_or_wider,1.0,0.0,11
+2924L,MABEL ST,L,res,R-1,10.9,gis,0,5ft_or_wider,0.5,0.0,12
+2924R,MABEL ST,R,res,R-1,11.7,gis,0,5ft_or_wider,0.5,0.0,12
+2925L,CARLETON ST,L,res,R-2,12.3,gis,0,5ft_or_wider,1.0,0.0,24
+2925R,CARLETON ST,R,res,R-2,12.0,gis,0,5ft_or_wider,1.0,0.0,24
+2928L,DWIGHT WAY,L,mixres,MUR,8.3,gis,0,5ft_or_wider,0.92,0.0,12
+2928R,DWIGHT WAY,R,man,MM,10.8,gis,0,5ft_or_wider,1.0,0.0,12
+2947L,DWIGHT WAY,L,res,R-2,10.0,gis,0,5ft_or_wider,0.92,0.0,12
+2947R,DWIGHT WAY,R,man,MULI,14.4,gis,0,5ft_or_wider,1.0,0.0,12
+2960L,PARKER ST,L,res,R-1,12.9,gis,0,5ft_or_wider,0.62,0.0,26
+2960R,PARKER ST,R,res,R-1,12.1,gis,0,5ft_or_wider,0.62,0.0,26
+2961L,SACRAMENTO ST,L,res,R-3,34.0,osm-building,0,5ft_or_wider,0.83,0.0,12
+2962L,BLAKE ST,L,res,R-1,10.2,gis,0,5ft_or_wider,1.0,0.0,23
+2962R,BLAKE ST,R,res,R-1,13.2,gis,0,5ft_or_wider,1.0,0.0,23
+2963L,MATHEWS ST,L,res,R-1,10.8,gis,0,5ft_or_wider,0.58,0.0,12
+2963R,MATHEWS ST,R,res,R-1,12.7,gis,0,5ft_or_wider,0.58,0.0,12
+2970L,BERKELEY WAY,L,res,R-2A,11.5,gis,0,5ft_or_wider,1.0,0.0,24
+2970R,BERKELEY WAY,R,res,R-2A,11.0,gis,0,5ft_or_wider,0.46,0.0,24
+2977L,DWIGHT WAY,L,res,R-2,12.8,gis,0,5ft_or_wider,1.0,0.0,9
+2977R,DWIGHT WAY,R,res,R-2,12.0,gis,0,5ft_or_wider,1.0,0.0,9
+2979L,CURTIS ST,L,res,R-2,8.7,gis,0,5ft_or_wider,1.0,0.0,24
+2979R,CURTIS ST,R,res,R-2,16.0,gis,0,5ft_or_wider,1.0,0.0,24
+2988R,I80 EAST HWY,R,other,U,4.4,default,0,none,1.0,0.0,163
+2996L,DWIGHT WAY,L,res,R-2,10.2,gis,0,5ft_or_wider,1.0,0.0,12
+2996R,DWIGHT WAY,R,man,MULI,14.2,gis,0,5ft_or_wider,1.0,0.0,12
+3003L,DWIGHT WAY,L,com,C-W,9.9,gis,0,5ft_or_wider,1.0,0.0,13
+3003R,DWIGHT WAY,R,com,C-W,7.9,osm-building,0,5ft_or_wider,1.0,0.0,13
+3007L,DWIGHT WAY,L,com,C-W,13.1,gis,0,5ft_or_wider,1.0,0.0,9
+3007R,DWIGHT WAY,R,com,C-W,12.0,gis,0,5ft_or_wider,1.0,0.0,9
+3012L,CHANNING WAY,L,man,MULI,12.7,gis,0,5ft_or_wider,1.0,0.0,9
+3012R,CHANNING WAY,R,man,MULI,9.7,gis,0,5ft_or_wider,1.0,0.0,9
+3016L,BLAKE ST,L,res,R-1,12.9,gis,0,5ft_or_wider,0.68,0.0,25
+3016R,BLAKE ST,R,res,R-1,12.0,gis,0,5ft_or_wider,0.64,0.0,25
+3027L,BANCROFT WAY,L,res,R-2,11.6,gis,0,5ft_or_wider,1.0,0.0,11
+3027R,BANCROFT WAY,R,res,R-2,12.6,gis,0,5ft_or_wider,1.0,0.0,11
+3045L,ACTON ST,L,res,R-1,10.1,gis,0,5ft_or_wider,0.67,0.0,12
+3045R,ACTON ST,R,res,R-1,13.8,gis,0,5ft_or_wider,0.58,0.0,12
+3048L,CHANNING WAY,L,res,R-2,12.6,gis,0,5ft_or_wider,1.0,0.0,12
+3048R,CHANNING WAY,R,res,R-2,15.5,gis,0,5ft_or_wider,1.0,0.0,12
+3049L,BANCROFT WAY,L,mixres,MUR,10.0,gis,0,5ft_or_wider,1.0,0.0,13
+3049R,BANCROFT WAY,R,mixres,MUR,11.4,osm-building,0,5ft_or_wider,1.0,0.0,13
+3053L,ALLSTON WAY,L,res,R-2,8.3,gis,0,5ft_or_wider,1.0,0.0,25
+3053R,ALLSTON WAY,R,res,R-2,16.0,gis,0,5ft_or_wider,1.0,0.0,25
+3054L,SACRAMENTO ST,L,res,R-2,23.7,gis,0,5ft_or_wider,1.0,0.0,21
+3054R,SACRAMENTO ST,R,res,R-2,30.7,gis,0,5ft_or_wider,0.81,0.0,21
+3059L,ALLSTON WAY,L,mixres,MUR,12.5,gis,0,5ft_or_wider,1.0,0.0,12
+3059R,ALLSTON WAY,R,mixres,MUR,14.0,gis,0,5ft_or_wider,1.0,0.0,12
+3060L,BANCROFT WAY,L,res,R-2,10.5,gis,0,5ft_or_wider,1.0,0.0,12
+3060R,BANCROFT WAY,R,res,R-2,13.5,gis,0,5ft_or_wider,1.0,0.0,12
+3061L,EDWARDS ST,L,res,R-2,9.5,gis,0,5ft_or_wider,1.0,0.0,30
+3061R,EDWARDS ST,R,res,R-2,15.9,gis,0,5ft_or_wider,1.0,0.0,26
+3064L,ACTON ST,L,res,R-2,10.7,gis,0,5ft_or_wider,0.31,0.0,13
+3064R,ACTON ST,R,res,R-2,23.0,gis,0,5ft_or_wider,0.38,0.0,13
+3065L,ACTON ST,L,res,R-2,11.8,gis,0,width_unknown,1.0,0.0,6
+3065R,ACTON ST,R,res,R-2,22.3,gis,0,width_unknown,1.0,0.0,6
+3066L,DWIGHT WAY,L,res,R-2,17.0,gis,0,5ft_or_wider,0.91,0.0,11
+3066R,DWIGHT WAY,R,com,C-SA,16.0,gis,0,5ft_or_wider,1.0,0.0,11
+3068L,BONAR ST,L,res,R-2,9.1,gis,0,5ft_or_wider,1.0,0.0,12
+3068R,BONAR ST,R,res,R-2,15.5,gis,0,5ft_or_wider,0.58,0.0,12
+3069L,VALLEY ST,L,res,R-1,8.5,gis,0,5ft_or_wider,1.0,0.0,21
+3069R,VALLEY ST,R,res,R-1,15.6,gis,0,5ft_or_wider,1.0,0.0,21
+3071L,ACTON ST,L,res,R-2,13.7,gis,0,5ft_or_wider,1.0,0.0,6
+3071R,ACTON ST,R,res,R-2,21.2,gis,0,5ft_or_wider,1.0,0.0,6
+3085L,DWIGHT WAY,L,res,R-2,18.0,gis,0,5ft_or_wider,0.85,0.0,13
+3085R,DWIGHT WAY,R,res,R-2,15.1,gis,0,5ft_or_wider,1.0,0.0,13
+3095L,BANCROFT WAY,L,man,MULI,0.5,gis,0,5ft_or_wider,0.86,0.0,14
+3095R,BANCROFT WAY,R,man,MULI,13.9,gis,0,5ft_or_wider,0.71,0.0,14
+3101L,CHANNING WAY,L,res,R-2,14.1,gis,0,5ft_or_wider,1.0,0.0,11
+3101R,CHANNING WAY,R,com,C-W,10.7,gis,0,5ft_or_wider,1.0,0.0,11
+3102L,BYRON ST,L,res,R-2,8.2,gis,0,5ft_or_wider,1.0,0.0,25
+3102R,BYRON ST,R,res,R-2,11.7,gis,0,5ft_or_wider,1.0,0.0,25
+3103L,BANCROFT WAY,L,man,MULI,20.1,gis,3,5ft_or_wider,1.0,0.0,2
+3103R,BANCROFT WAY,R,man,MULI,1.0,gis,0,5ft_or_wider,1.0,0.0,2
+3104L,BANCROFT WAY,L,man,MULI,19.0,gis,0,5ft_or_wider,1.0,0.0,8
+3104R,BANCROFT WAY,R,man,MULI,1.5,osm-building,0,5ft_or_wider,1.0,0.0,8
+3108L,BROWNING ST,L,res,R-2,9.1,gis,0,5ft_or_wider,1.0,0.0,25
+3108R,BROWNING ST,R,res,R-2,15.2,gis,0,5ft_or_wider,1.0,0.0,25
+3110L,BONAR ST,L,res,R-2,9.2,gis,0,5ft_or_wider,1.0,0.0,25
+3110R,BONAR ST,R,res,R-2,16.3,gis,0,5ft_or_wider,1.0,0.0,25
+3112L,CHANNING WAY,L,res,R-2,11.1,gis,0,5ft_or_wider,1.0,0.0,13
+3112R,CHANNING WAY,R,res,R-2,13.2,gis,0,5ft_or_wider,1.0,0.0,13
+3113L,WEST ST,L,res,R-2,11.1,gis,0,5ft_or_wider,0.92,0.0,25
+3113R,WEST ST,R,res,R-2,17.0,gis,0,5ft_or_wider,1.0,0.0,25
+3116L,CHANNING WAY,L,res,R-1,10.5,gis,0,5ft_or_wider,1.0,0.0,9
+3116R,CHANNING WAY,R,res,R-2,9.3,osm-building,0,5ft_or_wider,1.0,0.0,9
+3117L,VALLEY ST,L,res,R-2,9.5,gis,0,5ft_or_wider,0.79,0.0,24
+3117R,VALLEY ST,R,res,R-2,14.9,gis,0,5ft_or_wider,1.0,0.0,24
+3118L,BANCROFT WAY,L,res,R-2,10.3,gis,0,5ft_or_wider,1.0,0.0,11
+3118R,BANCROFT WAY,R,res,R-2,14.2,gis,0,5ft_or_wider,1.0,0.0,11
+3122L,CHAUCER ST,L,res,R-2,10.6,gis,0,5ft_or_wider,0.76,0.0,21
+3122R,CHAUCER ST,R,res,R-2,11.3,gis,0,5ft_or_wider,0.76,0.0,21
+3123L,BANCROFT WAY,L,res,R-2,9.7,gis,0,5ft_or_wider,1.0,0.0,12
+3123R,BANCROFT WAY,R,res,R-2,15.0,gis,0,5ft_or_wider,1.0,0.0,12
+3124L,CHANNING WAY,L,res,R-2,11.6,gis,0,5ft_or_wider,1.0,0.0,10
+3124R,CHANNING WAY,R,res,R-2,11.9,gis,0,5ft_or_wider,1.0,0.0,10
+3125L,EDWARDS ST,L,res,R-2,10.1,gis,0,5ft_or_wider,0.88,0.0,25
+3125R,EDWARDS ST,R,res,R-2,15.1,gis,0,5ft_or_wider,1.0,0.0,25
+3126L,CHANNING WAY,L,res,R-2,13.6,gis,0,5ft_or_wider,1.0,0.0,10
+3126R,CHANNING WAY,R,res,R-2,12.0,gis,0,5ft_or_wider,1.0,0.0,10
+3127L,SACRAMENTO ST,L,res,R-2,20.0,osm-building,0,5ft_or_wider,0.48,0.0,25
+3127R,SACRAMENTO ST,R,res,R-2,30.3,gis,0,5ft_or_wider,0.4,0.0,25
+3128L,CHANNING WAY,L,res,R-2,11.2,gis,0,5ft_or_wider,1.0,0.0,12
+3128R,CHANNING WAY,R,res,R-2,14.0,gis,0,5ft_or_wider,1.0,0.0,12
+3130L,POE ST,L,res,R-2,8.6,gis,0,5ft_or_wider,1.0,0.0,5
+3130R,POE ST,R,res,R-2,10.7,gis,0,5ft_or_wider,1.0,0.0,5
+3131L,BANCROFT WAY,L,res,R-2,11.9,gis,0,5ft_or_wider,1.0,0.0,12
+3131R,BANCROFT WAY,R,res,R-2,12.7,osm-building,0,5ft_or_wider,1.0,0.0,12
+3134L,BANCROFT WAY,L,res,R-2,10.9,gis,0,5ft_or_wider,1.0,0.0,13
+3134R,BANCROFT WAY,R,res,R-2,13.3,gis,0,5ft_or_wider,1.0,0.0,13
+3139L,BROWNING ST,L,res,R-2,9.2,gis,0,5ft_or_wider,1.0,0.0,25
+3139R,BROWNING ST,R,res,R-2,17.4,gis,0,5ft_or_wider,1.0,0.0,25
+3148L,ALLSTON WAY,L,res,R-2,12.2,gis,0,5ft_or_wider,1.0,0.0,12
+3148R,ALLSTON WAY,R,res,R-2,13.9,gis,0,5ft_or_wider,1.0,0.0,12
+3151L,BANCROFT WAY,L,res,R-2,11.8,gis,0,5ft_or_wider,1.0,0.0,12
+3151R,BANCROFT WAY,R,res,R-2,13.9,gis,0,5ft_or_wider,1.0,0.0,12
+3152L,SACRAMENTO ST,L,res,R-2,24.9,gis,0,5ft_or_wider,1.0,0.0,25
+3152R,SACRAMENTO ST,R,res,R-2,30.7,gis,0,5ft_or_wider,1.0,0.0,25
+3156L,SPAULDING AVE,L,res,R-2,13.3,gis,0,5ft_or_wider,1.0,0.0,25
+3156R,SPAULDING AVE,R,res,R-2,19.8,gis,0,5ft_or_wider,0.64,0.0,25
+3162L,BANCROFT WAY,L,res,R-2,12.4,gis,0,5ft_or_wider,1.0,0.0,12
+3162R,BANCROFT WAY,R,res,R-2,11.3,gis,0,5ft_or_wider,1.0,0.0,12
+3180L,MATHEWS ST,L,res,R-1,14.1,gis,0,no_sidewalk,0.24,0.24,17
+3180R,MATHEWS ST,R,res,R-1,11.8,gis,0,no_sidewalk,0.24,0.24,17
+3181L,ASHBY AVE,L,res,R-3,11.0,default,0,width_unknown,0.6,0.0,5
+3181R,ASHBY AVE,R,res,R-3,10.1,default,0,width_unknown,0.6,0.0,5
+3192L,PRINCE ST,L,res,R-2A,6.9,gis,0,5ft_or_wider,0.6,0.0,10
+3192R,PRINCE ST,R,res,R-2A,7.6,gis,0,5ft_or_wider,0.7,0.0,10
+3227R,I80 WEST HWY,R,other,U,24.8,default,0,none,1.0,0.0,134
+3259L,ALLSTON WAY,L,res,R-2,12.2,gis,0,5ft_or_wider,1.0,0.0,13
+3259R,ALLSTON WAY,R,res,R-2,13.3,gis,0,5ft_or_wider,1.0,0.0,13
+3269L,BROWNING ST,L,res,R-2,8.1,gis,0,5ft_or_wider,1.0,0.0,24
+3269R,BROWNING ST,R,res,R-2,15.5,gis,0,5ft_or_wider,1.0,0.0,24
+3271L,BONAR ST,L,res,R-2,8.9,gis,0,5ft_or_wider,0.28,0.08,25
+3271R,BONAR ST,R,res,R-2,15.6,gis,0,5ft_or_wider,0.32,0.04,25
+3277L,ACTON ST,L,res,R-2,13.5,gis,0,5ft_or_wider,0.47,0.0,15
+3277R,ACTON ST,R,res,R-2,21.7,gis,0,5ft_or_wider,0.53,0.0,15
+3286L,SPAULDING AVE,L,res,R-2,13.9,gis,0,5ft_or_wider,1.0,0.0,23
+3286R,SPAULDING AVE,R,res,R-2,20.0,gis,0,5ft_or_wider,0.3,0.0,23
+3291L,ACTON ST,L,res,R-2,12.8,gis,0,width_unknown,0.38,0.0,8
+3291R,ACTON ST,R,res,R-2,21.8,gis,0,width_unknown,0.5,0.0,8
+3324L,ADDISON ST,L,res,R-2,12.6,gis,0,5ft_or_wider,1.0,0.0,11
+3324R,ADDISON ST,R,res,R-2,12.2,gis,0,5ft_or_wider,1.0,0.0,11
+3325L,SPAULDING AVE,L,res,R-2,13.4,gis,0,5ft_or_wider,0.29,0.0,14
+3325R,SPAULDING AVE,R,res,R-2,20.5,gis,0,5ft_or_wider,0.29,0.0,14
+3326L,SPAULDING AVE,L,res,R-2,12.9,gis,0,5ft_or_wider,0.45,0.0,11
+3326R,SPAULDING AVE,R,res,R-2,20.7,gis,0,5ft_or_wider,0.36,0.0,11
+3337L,ADDISON ST,L,res,R-2,12.8,gis,0,5ft_or_wider,1.0,0.0,13
+3337R,ADDISON ST,R,res,R-2,11.7,gis,0,5ft_or_wider,1.0,0.0,13
+3361L,SACRAMENTO ST,L,com,C-U,28.4,gis,22,5ft_or_wider,0.62,0.0,13
+3361R,SACRAMENTO ST,R,com,C-U,28.2,gis,8,5ft_or_wider,0.54,0.0,13
+3363L,BERKELEY WAY,L,res,R-2A,10.8,gis,0,5ft_or_wider,0.15,0.0,26
+3363R,BERKELEY WAY,R,res,R-2A,9.7,gis,0,5ft_or_wider,0.04,0.0,26
+3364L,SACRAMENTO ST,L,com,C-U,14.6,gis,0,no_data,1.0,0.0,10
+3364R,SACRAMENTO ST,R,com,C-U,19.2,gis,0,5ft_or_wider,0.2,0.0,10
+3406L,POTTER ST,L,man,MULI,19.4,gis,0,trail,0.5,0.11,28
+3406R,POTTER ST,R,com,C-W,26.1,gis,27,5ft_or_wider,0.4,0.1,20
+3407L,CARRISON ST,L,res,R-2A,11.6,gis,0,5ft_or_wider,1.0,0.0,32
+3407R,CARRISON ST,R,res,R-2A,14.6,gis,0,5ft_or_wider,1.0,0.0,32
+3431L,ACTON ST,L,res,R-2,9.5,gis,0,5ft_or_wider,1.0,0.0,25
+3431R,ACTON ST,R,res,R-2,13.7,gis,0,5ft_or_wider,1.0,0.0,25
+3442L,DOHR ST,L,res,R-2A,12.5,gis,0,width_unknown,0.57,0.0,28
+3442R,DOHR ST,R,res,R-2A,4.7,gis,0,width_unknown,0.57,0.0,28
+3479L,BANCROFT WAY,L,res,R-2,11.4,gis,0,5ft_or_wider,1.0,0.0,17
+3479R,BANCROFT WAY,R,res,R-2,13.4,gis,0,5ft_or_wider,1.0,0.0,17
+3480L,ACTON ST,L,res,R-2,9.4,gis,0,5ft_or_wider,1.0,0.0,29
+3480R,ACTON ST,R,res,R-2,15.5,gis,0,5ft_or_wider,1.0,0.0,29
+3486L,ALLSTON WAY,L,res,R-2,10.2,gis,0,5ft_or_wider,1.0,0.0,12
+3486R,ALLSTON WAY,R,res,R-2,13.3,gis,0,5ft_or_wider,1.0,0.0,12
+3495L,POTTER ST,L,man,MULI,19.6,gis,42,5ft_or_wider,1.0,0.0,18
+3495R,POTTER ST,R,com,C-W,19.7,gis,32,5ft_or_wider,1.0,0.0,18
+3496L,ACTON ST,L,res,R-2A,14.5,gis,0,5ft_or_wider,0.8,0.0,5
+3496R,ACTON ST,R,res,R-2A,3.0,gis,0,5ft_or_wider,0.8,0.0,5
+3546L,ALLSTON WAY,L,res,R-2,11.3,gis,0,5ft_or_wider,1.0,0.0,12
+3546R,ALLSTON WAY,R,res,R-2,13.9,gis,0,5ft_or_wider,1.0,0.0,12
+3560R,I80 EAST (OFF RAMP) UNIV,R,other,U,8.9,default,0,trail,0.14,0.0,21
+3566L,ALLSTON WAY,L,res,R-2,11.6,gis,0,5ft_or_wider,1.0,0.0,20
+3566R,ALLSTON WAY,R,res,R-2,13.2,gis,0,5ft_or_wider,0.98,0.0,54
+3568L,ALLSTON WAY,L,res,R-2,12.1,gis,0,5ft_or_wider,1.0,0.0,11
+3568R,ALLSTON WAY,R,res,R-2,12.5,gis,0,5ft_or_wider,1.0,0.0,11
+3582L,FOLGER AVE,L,man,MULI,8.1,gis,0,width_unknown,0.6,0.0,50
+3582R,FOLGER AVE,R,man,MULI,13.4,osm-building,0,width_unknown,0.58,0.0,50
+3632L,SAN PABLO AVE,L,com,C-W,31.8,default,6,5ft_or_wider,0.83,0.0,6
+3632R,SAN PABLO AVE,R,com,C-W,26.7,default,7,5ft_or_wider,0.67,0.0,6
+3633L,ASHBY AVE,L,com,C-W,13.6,default,0,width_unknown,0.47,0.0,47
+3633R,ASHBY AVE,R,man,MULI,30.2,default,3,width_unknown,0.45,0.0,47
+3635L,ASHBY AVE,L,com,C-W,39.5,default,6,5ft_or_wider,1.0,0.0,3
+3635R,ASHBY AVE,R,man,MULI,28.2,default,5,5ft_or_wider,1.0,0.0,3
+3652L,UNIVERSITY AVE OVERPASS,L,man,MULI,39.0,gis,8,width_unknown,0.33,0.0,3
+3652R,UNIVERSITY AVE OVERPASS,R,man,MULI,39.4,gis,7,width_unknown,0.33,0.0,3
+3668L,RUSSELL ST,L,res,R-1,9.8,gis,0,5ft_or_wider,0.92,0.0,13
+3668R,RUSSELL ST,R,res,R-1,15.5,gis,0,5ft_or_wider,0.69,0.0,13
+3675L,OREGON ST,L,res,R-1,32.1,gis,0,5ft_or_wider,1.0,0.0,2
+3675R,OREGON ST,R,res,R-1,31.8,gis,0,5ft_or_wider,1.0,0.0,2
+3676L,WALLACE ST,L,res,R-1,15.2,gis,0,5ft_or_wider,1.0,0.0,18
+3676R,WALLACE ST,R,res,R-1,10.9,gis,0,5ft_or_wider,0.44,0.0,18
+3680L,OREGON ST,L,res,R-1,14.5,gis,0,5ft_or_wider,0.78,0.0,9
+3680R,OREGON ST,R,res,R-1,19.2,gis,0,5ft_or_wider,0.78,0.11,9
+3697L,HASKELL ST,L,res,R-2A,9.3,gis,0,5ft_or_wider,1.0,0.0,32
+3697R,HASKELL ST,R,res,R-2A,15.3,gis,0,5ft_or_wider,1.0,0.0,34
+3813R,I80 EAST (ON RAMP) ASHBY HWY,R,other,U,5.2,default,0,trail,0.64,0.0,11
+3819L,ASHBY AVE,L,res,R-3,9.7,default,0,5ft_or_wider,0.81,0.0,26
+3819R,ASHBY AVE,R,res,R-3,11.5,default,0,5ft_or_wider,1.0,0.0,26
+3824L,UNIVERSITY AVE OVERPASS,L,man,MULI,21.9,gis,0,none,1.0,0.0,11
+3824R,UNIVERSITY AVE OVERPASS,R,man,MULI,22.5,gis,0,none,1.0,0.0,11
+3942L,MABEL ST,L,res,R-2A,15.4,gis,0,5ft_or_wider,0.5,0.0,10
+3942R,MABEL ST,R,res,R-2A,10.4,gis,0,5ft_or_wider,0.4,0.0,10
+4007L,FOLGER AVE,L,man,MULI,7.3,gis,0,width_unknown,0.56,0.0,16
+4007R,FOLGER AVE,R,man,MULI,17.7,gis,0,5ft_or_wider,0.94,0.0,16
+4032L,ACTON ST,L,res,R-2A,16.9,gis,0,5ft_or_wider,1.0,0.0,11
+4032R,ACTON ST,R,res,R-3,12.4,gis,0,5ft_or_wider,1.0,0.0,11
+4039L,HASKELL ST,L,res,R-2A,9.4,gis,0,5ft_or_wider,0.76,0.0,25
+4039R,HASKELL ST,R,res,R-2A,14.8,gis,0,5ft_or_wider,0.72,0.0,25
+4040L,ACTON ST,L,res,R-2A,19.4,gis,0,5ft_or_wider,0.62,0.0,8
+4040R,ACTON ST,R,res,R-2A,6.7,gis,0,5ft_or_wider,0.62,0.0,8
+4056L,HEINZ AVE,L,mixres,MUR,7.9,gis,0,5ft_or_wider,1.0,0.0,12
+4056R,HEINZ AVE,R,man,MULI,15.8,gis,0,5ft_or_wider,1.0,0.0,12
+4070L,MABEL ST,L,res,R-2A,16.0,gis,0,5ft_or_wider,0.69,0.0,13
+4070R,MABEL ST,R,res,R-2A,8.2,gis,0,5ft_or_wider,0.69,0.0,13
+4071L,ACTON ST,L,res,R-2A,13.8,gis,0,5ft_or_wider,0.67,0.0,9
+4071R,ACTON ST,R,res,R-2A,2.5,gis,0,5ft_or_wider,0.67,0.0,9
+4076L,MURRAY ST,L,man,MULI,8.7,gis,0,5ft_or_wider,0.35,0.25,20
+4076R,MURRAY ST,R,man,MULI,15.4,gis,0,trail,0.35,0.25,20
+4078L,POTTER ST,L,com,C-W,21.7,gis,39,width_unknown,0.68,0.0,25
+4078R,POTTER ST,R,com,C-W,17.8,gis,0,width_unknown,0.64,0.0,25
+4102R,I80 EAST (ON RAMP) ASHBY HWY,R,man,MULI,16.9,default,0,width_unknown,0.45,0.0,40
+4125L,MABEL ST,L,res,R-3,15.6,gis,0,5ft_or_wider,0.64,0.0,11
+4125R,MABEL ST,R,res,R-3,9.0,gis,0,5ft_or_wider,0.73,0.0,11
+4128L,RUSSELL ST,L,res,R-1,8.9,gis,0,5ft_or_wider,1.0,0.0,7
+4128R,RUSSELL ST,R,res,R-1,15.0,gis,0,width_unknown,0.57,0.0,7
+4131L,HEINZ AVE,L,man,MM,4.9,gis,0,5ft_or_wider,1.0,0.0,45
+4131R,HEINZ AVE,R,man,MULI,1.9,gis,0,5ft_or_wider,0.84,0.0,45
+4197L,SAN PABLO AVE,L,com,C-W,24.7,osm-building,0,5ft_or_wider,0.8,0.0,5
+4208L,I80 WEST (OFF RAMP) ASHBY HWY,L,,,26.8,default,0,width_unknown,0.2,0.0,59
+4277L,POTTER ST,L,other,U,12.6,default,0,5ft_or_wider,0.52,0.0,31
+4278L,POTTER ST,L,other,U,22.5,default,0,5ft_or_wider,1.0,0.0,12
+4281L,SAN PABLO AVE,L,com,C-W,12.2,default,0,5ft_or_wider,1.0,0.0,2
+4281R,SAN PABLO AVE,R,com,C-W,11.4,default,0,5ft_or_wider,1.0,0.0,2
+4283L,I80 EAST (ON RAMP) ASHBY HWY,L,other,U,14.6,default,0,width_unknown,0.65,0.0,26
+4291L,BURNETT ST,L,res,R-2A,9.7,gis,0,5ft_or_wider,0.7,0.3,33
+4291R,BURNETT ST,R,res,R-2A,14.5,gis,0,5ft_or_wider,1.0,0.0,33
+4294L,ASHBY AVE,L,com,C-W,19.1,osm-building,0,5ft_or_wider,0.91,0.0,32
+4294R,ASHBY AVE,R,man,MULI,26.6,osm-building,90,5ft_or_wider,0.85,0.0,26
+4312L,ASHBY AVE,L,com,C-W,18.6,default,0,width_unknown,0.8,0.0,5
+4312R,ASHBY AVE,R,man,MULI,23.5,default,6,width_unknown,1.0,0.0,5
+4313L,ASHBY AVE,L,com,C-W,18.9,default,0,trail,0.56,0.0,16
+4313R,ASHBY AVE,R,man,MULI,22.8,default,23,5ft_or_wider,0.5,0.07,14
+4320L,MABEL ST,L,res,R-2A,18.5,gis,0,5ft_or_wider,0.55,0.0,11
+4320R,MABEL ST,R,res,R-2A,8.7,gis,0,5ft_or_wider,0.64,0.0,11
+4322L,ANTHONY ST,L,man,MULI,1.0,gis,0,5ft_or_wider,1.0,0.0,25
+4322R,ANTHONY ST,R,man,MULI,11.7,gis,0,5ft_or_wider,0.96,0.0,25
+4326L,CARRISON ST,L,res,R-2A,9.8,gis,0,5ft_or_wider,0.81,0.0,27
+4326R,CARRISON ST,R,res,R-2A,14.3,gis,0,5ft_or_wider,0.76,0.0,25
+4327L,ACTON ST,L,res,R-2A,15.1,gis,0,5ft_or_wider,1.0,0.0,13
+4327R,ACTON ST,R,res,R-2A,10.7,gis,0,5ft_or_wider,1.0,0.0,15
+4346L,MABEL ST,L,res,R-3,14.0,gis,0,5ft_or_wider,0.58,0.0,12
+4346R,MABEL ST,R,res,R-3,11.3,gis,0,5ft_or_wider,0.58,0.0,12
+4353L,RUSSELL ST,L,res,R-1,11.2,gis,0,no_sidewalk,0.56,0.56,9
+4353R,RUSSELL ST,R,res,R-1,14.1,gis,0,5ft_or_wider,1.0,0.0,9
+4360L,BURNETT ST,L,res,R-1,10.3,gis,0,5ft_or_wider,0.44,0.0,16
+4360R,BURNETT ST,R,res,R-2A,14.0,gis,0,5ft_or_wider,0.44,0.0,16
+4361L,ACTON ST,L,res,R-3,17.2,gis,0,5ft_or_wider,1.0,0.0,12
+4361R,ACTON ST,R,res,R-3,8.6,gis,0,5ft_or_wider,1.0,0.0,12
+4362L,RUSSELL ST,L,res,R-1,11.3,gis,0,no_sidewalk,0.85,0.85,13
+4362R,RUSSELL ST,R,res,R-1,14.8,gis,0,no_sidewalk,0.69,0.69,13
+4363L,MABEL ST,L,res,R-1,14.5,gis,0,5ft_or_wider,1.0,0.0,7
+4363R,MABEL ST,R,res,R-1,10.1,gis,0,5ft_or_wider,1.0,0.0,7
+4364L,HEINZ AVE,L,mixres,MUR,9.4,gis,0,5ft_or_wider,1.0,0.0,12
+4364R,HEINZ AVE,R,man,MULI,14.4,gis,0,5ft_or_wider,1.0,0.0,12
+4373L,RUSSELL ST,L,res,R-1,6.7,gis,0,5ft_or_wider,1.0,0.0,10
+4373R,RUSSELL ST,R,res,R-1,16.2,gis,0,5ft_or_wider,1.0,0.0,10
+4374L,PARK ST,L,res,R-1,11.0,default,0,5ft_or_wider,1.0,0.0,6
+4374R,PARK ST,R,res,R-1,7.3,default,0,5ft_or_wider,1.0,0.0,6
+4382L,RUSSELL ST,L,res,R-1,9.0,gis,0,5ft_or_wider,1.0,0.0,6
+4382R,RUSSELL ST,R,res,R-1,15.2,gis,0,5ft_or_wider,1.0,0.0,6
+4386L,DOHR ST,L,res,R-2A,14.9,gis,0,width_unknown,1.0,0.0,19
+4386R,DOHR ST,R,res,R-2A,8.1,gis,0,width_unknown,0.84,0.0,19
+4388L,STANTON ST,L,res,R-2A,15.7,gis,0,5ft_or_wider,0.57,0.0,21
+4388R,STANTON ST,R,res,R-2A,7.3,gis,0,5ft_or_wider,0.62,0.0,21
+4395L,OREGON ST,L,com,C-W,15.2,gis,0,5ft_or_wider,1.0,0.0,10
+4395R,OREGON ST,R,com,C-W,19.0,gis,0,5ft_or_wider,1.0,0.0,10
+4398L,OREGON ST,L,res,R-1,14.4,gis,0,none,1.0,0.0,9
+4398R,OREGON ST,R,res,R-1,21.5,gis,0,none,1.0,0.0,9
+4399L,MABEL ST,L,res,R-1,11.9,gis,0,no_sidewalk,0.76,0.76,21
+4399R,MABEL ST,R,res,R-1,12.3,gis,0,no_sidewalk,0.53,0.53,45
+4406L,PARK ST,L,res,R-1,13.8,gis,0,5ft_or_wider,0.92,0.0,36
+4406R,PARK ST,R,res,R-1,11.3,gis,0,5ft_or_wider,0.55,0.0,22
+4411L,ACTON ST,L,res,R-1,14.5,gis,0,5ft_or_wider,0.82,0.0,17
+4411R,ACTON ST,R,res,R-1,10.5,gis,0,5ft_or_wider,0.61,0.0,23
+4412L,GRAYSON ST,L,mixres,MUR,8.1,gis,0,5ft_or_wider,1.0,0.0,12
+4412R,GRAYSON ST,R,mixres,MUR,15.5,gis,0,5ft_or_wider,1.0,0.0,12
+4420L,ASHBY AVE,L,res,R-3,8.1,default,0,5ft_or_wider,1.0,0.0,33
+4420R,ASHBY AVE,R,res,R-3,12.9,default,0,5ft_or_wider,1.0,0.0,33
+4481L,,L,man,MULI,10.2,default,0,width_unknown,1.0,0.0,2
+4485L,,L,man,MULI,39.5,default,0,width_unknown,0.5,0.5,2
+4679R,UNIVERSITY AVE OVERPASS,R,man,MULI,35.3,default,0,no_sidewalk,0.71,0.71,7
+4680L,UNIVERSITY AVE OVERPASS,L,man,MULI,38.9,default,0,none,1.0,0.0,3
+4680R,UNIVERSITY AVE OVERPASS,R,man,MULI,26.4,default,0,none,1.0,0.0,3
+4681L,UNIVERSITY AVE OVERPASS,L,man,MULI,38.9,default,8,none,1.0,0.0,14
+4681R,UNIVERSITY AVE OVERPASS,R,man,MULI,22.8,default,7,none,1.0,0.0,14
+4682R,UNIVERSITY AVE OVERPASS,R,com,C-W,27.8,osm-building,0,width_unknown,1.0,0.0,11
+4683R,UNIVERSITY AVE OVERPASS,R,com,C-W,26.8,osm-building,0,width_unknown,1.0,0.0,11
+4684R,UNIVERSITY AVE OVERPASS,R,com,C-W,20.1,osm-building,0,width_unknown,1.0,0.0,11
+4685R,UNIVERSITY AVE,R,com,C-W,37.4,osm-building,0,width_unknown,1.0,0.0,2
+4686L,UNIVERSITY AVE,L,com,C-W,38.3,gis,0,width_unknown,1.0,0.0,2
+4686R,UNIVERSITY AVE,R,com,C-W,35.9,gis,0,width_unknown,1.0,0.0,2
+4687L,EASTSHORE PEDESTRIAN OVRPAS,L,other,U,23.0,default,0,width_unknown,0.63,0.37,27
+4687R,EASTSHORE PEDESTRIAN OVRPAS,R,other,U,17.4,default,0,width_unknown,0.58,0.42,73
+4688L,BOLIVAR DR,L,other,U,9.9,default,0,no_sidewalk,0.69,0.69,87
+4688R,BOLIVAR DR,R,other,U,38.3,default,0,width_unknown,0.52,0.48,29
+4689R,EASTSHORE PEDESTRIAN OVRPAS,R,other,U,17.9,default,0,width_unknown,1.0,0.0,6
+4690R,EASTSHORE PEDESTRIAN OVRPAS,R,other,U,34.0,default,0,width_unknown,1.0,0.0,12
+4691L,EASTSHORE PEDESTRIAN OVRPAS,L,other,U,10.2,default,0,width_unknown,1.0,0.0,2
+4691R,EASTSHORE PEDESTRIAN OVRPAS,R,other,U,14.5,default,0,width_unknown,1.0,0.0,2
+4692L,I80 EAST (OFF RAMP) UNIV,L,other,U,36.2,default,0,width_unknown,0.58,0.0,12
+4692R,I80 EAST (OFF RAMP) UNIV,R,other,U,2.5,default,0,width_unknown,1.0,0.0,12
+4693L,EASTSHORE PEDESTRIAN OVRPAS,L,other,U,28.6,default,0,none,1.0,0.0,2
+4693R,EASTSHORE PEDESTRIAN OVRPAS,R,other,U,35.5,default,0,none,1.0,0.0,2
+4694R,I80 EAST HWY,R,other,U,13.1,default,0,trail,0.05,0.0,21
+4699R,W FRONTAGE RD,R,other,SP,15.7,gis,0,width_unknown,0.79,0.0,48
+4700L,W FRONTAGE RD,L,other,SP,35.6,gis,0,trail,1.0,0.0,10
+4700R,W FRONTAGE RD,R,other,SP,9.8,gis,0,trail,1.0,0.0,6
+4708L,BYC GUEST DOCK,L,other,U,12.9,default,0,none,1.0,0.0,5
+4708R,BYC GUEST DOCK,R,other,U,23.5,osm-building,0,none,1.0,0.0,5
+4709L,O DOCK,L,other,U,23.3,default,0,none,1.0,0.0,10
+4709R,O DOCK,R,other,U,16.4,default,0,none,1.0,0.0,4
+4711L,H AND I DOCK,L,other,U,14.1,default,0,trail,1.0,0.0,2
+4711R,H AND I DOCK,R,other,U,13.3,default,0,trail,1.0,0.0,2
+4713R,H DOCK,R,other,U,39.0,default,0,trail,1.0,0.0,32
+4714L,I DOCK,L,other,U,5.7,default,0,trail,1.0,0.0,46
+4715L,I DOCK,L,other,U,8.9,default,0,trail,1.0,0.0,2
+4722R,OCSC SCHOOL DOCK,R,other,U,22.7,default,0,none,1.0,0.0,2
+4723R,OCSC SCHOOL DOCK,R,other,U,25.5,default,0,none,1.0,0.0,32
+4724R,OCSC SCHOOL DOCK,R,other,U,24.9,default,0,none,1.0,0.0,2
+4725L,FUEL DOCK,L,other,U,29.7,default,0,none,1.0,0.0,23
+4725R,FUEL DOCK,R,other,U,25.3,default,0,none,1.0,0.0,5
+4728L,TRAIL,L,,,7.2,default,0,width_unknown,0.2,0.0,302
+4728R,TRAIL,R,other,U,28.4,default,0,width_unknown,0.16,0.0,289
+4729L,EASTSHORE PEDESTRIAN OVRPAS,L,other,SP,19.5,default,0,trail,1.0,0.0,2
+4729R,EASTSHORE PEDESTRIAN OVRPAS,R,other,SP,16.4,default,0,trail,1.0,0.0,2
+4730L,TRAIL,L,other,SP,7.9,default,0,trail,1.0,0.0,6
+4730R,TRAIL,R,other,SP,28.3,default,0,trail,1.0,0.0,10
+4731L,TRAIL,L,other,SP,3.2,default,0,width_unknown,0.59,0.0,22
+4731R,TRAIL,R,other,SP,32.8,default,0,trail,0.62,0.0,32
+4732L,UNIVERSITY AVE,L,other,SP,34.4,gis,0,width_unknown,1.0,0.0,4
+4732R,UNIVERSITY AVE,R,other,SP,25.7,gis,0,width_unknown,0.56,0.0,16
+5010L,OREGON ST,L,res,R-1,11.0,gis,0,5ft_or_wider,1.0,0.0,9
+5010R,OREGON ST,R,res,R-1,15.7,gis,0,5ft_or_wider,1.0,0.0,9
+5011L,ACTON ST,L,com,C-U,10.8,gis,0,no_data,1.0,0.0,10
+5011R,ACTON ST,R,com,C-U,17.5,gis,0,no_data,1.0,0.0,10
+5012L,CHANNING WAY,L,res,R-2,10.4,gis,0,5ft_or_wider,1.0,0.0,12
+5012R,CHANNING WAY,R,res,R-2,13.1,gis,0,5ft_or_wider,1.0,0.0,12
+5025L,CHANNING WAY,L,res,R-1,11.7,gis,0,5ft_or_wider,1.0,0.0,9
+5025R,CHANNING WAY,R,res,R-2,13.1,gis,0,5ft_or_wider,1.0,0.0,9
+5026L,CURTIS ST,L,res,R-2,9.3,gis,0,5ft_or_wider,1.0,0.0,11
+5026R,CURTIS ST,R,res,R-2,15.5,gis,0,5ft_or_wider,1.0,0.0,11
+5027L,ACTON ST,L,com,C-U,13.1,osm-building,0,width_unknown,0.38,0.0,13
+5027R,ACTON ST,R,com,C-U,17.8,gis,0,width_unknown,0.31,0.0,13
+5028L,CHANNING WAY,L,mixres,MUR,10.6,gis,0,5ft_or_wider,1.0,0.0,13
+5028R,CHANNING WAY,R,mixres,MUR,13.6,gis,0,5ft_or_wider,1.0,0.0,13
+5029L,UNIVERSITY AVE,L,other,SP,32.3,gis,0,width_unknown,1.0,0.0,7
+5029R,UNIVERSITY AVE,R,other,SP,37.6,osm-building,0,width_unknown,1.0,0.0,9
+5032L,DWIGHT WAY,L,com,C-SA,10.8,gis,0,5ft_or_wider,0.36,0.0,11
+5032R,DWIGHT WAY,R,res,R-2A,12.1,gis,0,5ft_or_wider,0.27,0.0,11
+5035L,DWIGHT CRES,L,res,R-2,14.4,gis,0,5ft_or_wider,0.38,0.0,16
+5035R,DWIGHT CRES,R,mixres,MUR,11.5,gis,0,5ft_or_wider,0.44,0.0,16
+5042R,BAY ST,R,other,U,30.1,default,0,width_unknown,0.42,0.0,19
+5049L,DWIGHT WAY,L,res,R-2,12.5,gis,0,5ft_or_wider,1.0,0.0,6
+5049R,DWIGHT WAY,R,res,R-2,11.6,gis,0,5ft_or_wider,1.0,0.0,6
+5056L,RUSSELL ST,L,res,R-1,9.6,gis,0,5ft_or_wider,1.0,0.0,2
+5056R,RUSSELL ST,R,res,R-1,18.2,gis,0,5ft_or_wider,1.0,0.0,2
+5063L,ANTHONY ST,L,man,MULI,2.9,gis,0,5ft_or_wider,0.35,0.0,20
+5063R,ANTHONY ST,R,man,MULI,11.8,gis,0,5ft_or_wider,0.35,0.0,20
+5069L,CHANNING WAY,L,res,R-2,8.4,gis,0,5ft_or_wider,1.0,0.0,12
+5069R,CHANNING WAY,R,res,R-2,11.5,osm-building,0,5ft_or_wider,1.0,0.0,12
+5075L,BANCROFT WAY,L,res,R-2,10.5,gis,0,5ft_or_wider,1.0,0.0,11
+5075R,BANCROFT WAY,R,res,R-2,13.4,gis,0,5ft_or_wider,1.0,0.0,11
+5079L,DWIGHT WAY,L,res,R-2,12.3,gis,0,5ft_or_wider,1.0,0.0,6
+5079R,DWIGHT WAY,R,res,R-2,13.0,gis,0,5ft_or_wider,1.0,0.0,6
+5080L,PARKER ST,L,res,R-1,10.5,gis,0,5ft_or_wider,0.77,0.0,26
+5080R,PARKER ST,R,res,R-1,14.1,gis,0,5ft_or_wider,0.73,0.0,22
+5081L,RUSSELL ST,L,res,R-1,10.5,gis,0,5ft_or_wider,1.0,0.0,9
+5081R,RUSSELL ST,R,com,C-W,15.4,gis,0,5ft_or_wider,1.0,0.0,9
+5089L,ACTON CIR,L,res,R-2,5.9,gis,0,width_unknown,1.0,0.0,14
+5089R,ACTON CIR,R,res,R-2,6.5,gis,0,width_unknown,1.0,0.0,26
+5090L,CHANNING WAY,L,com,C-W,10.0,gis,0,5ft_or_wider,1.0,0.0,13
+5090R,CHANNING WAY,R,com,C-W,6.2,osm-building,0,5ft_or_wider,1.0,0.0,13
+5091L,SACRAMENTO ST,L,com,C-SA,32.1,osm-building,28,5ft_or_wider,0.09,0.0,11
+5096L,GRAYSON ST,L,mixres,MUR,9.4,gis,0,width_unknown,0.67,0.0,12
+5096R,GRAYSON ST,R,mixres,MUR,14.6,gis,0,width_unknown,0.67,0.0,12
+5105L,HEINZ AVE,L,com,C-W,8.3,gis,0,5ft_or_wider,0.62,0.0,13
+5105R,HEINZ AVE,R,com,C-W,14.7,gis,0,5ft_or_wider,0.62,0.0,13
+5109L,WEST ST,L,res,R-2,10.4,gis,0,5ft_or_wider,1.0,0.0,25
+5109R,WEST ST,R,res,R-2,17.9,gis,0,5ft_or_wider,1.0,0.0,25
+5110L,RUSSELL ST,L,res,R-1,18.7,gis,0,width_unknown,1.0,0.0,2
+5110R,RUSSELL ST,R,res,R-1,15.7,gis,0,5ft_or_wider,1.0,0.0,2
+5114L,CHANNING WAY,L,res,R-2,10.6,gis,0,5ft_or_wider,1.0,0.0,11
+5114R,CHANNING WAY,R,res,R-2,13.6,gis,0,5ft_or_wider,1.0,0.0,11
+5116L,GRAYSON ST,L,man,MM,3.2,gis,0,5ft_or_wider,0.38,0.0,45
+5116R,GRAYSON ST,R,man,MM,17.9,gis,0,5ft_or_wider,0.47,0.0,45
+5126L,ALLSTON WAY,L,res,R-2,11.7,gis,0,5ft_or_wider,1.0,0.0,13
+5126R,ALLSTON WAY,R,res,R-2,12.9,gis,0,5ft_or_wider,1.0,0.0,13
+5127L,HEINZ AVE,L,mixres,MUR,8.1,gis,0,5ft_or_wider,1.0,0.0,12
+5127R,HEINZ AVE,R,com,C-W,15.8,gis,0,5ft_or_wider,1.0,0.0,12
+5136L,DWIGHT WAY,L,res,R-2,12.1,gis,0,5ft_or_wider,1.0,0.0,9
+5136R,DWIGHT WAY,R,res,R-2,12.4,gis,0,5ft_or_wider,1.0,0.0,9
+5137L,ALLSTON WAY,L,res,R-2,10.9,gis,0,5ft_or_wider,1.0,0.0,9
+5137R,ALLSTON WAY,R,res,R-2,13.1,gis,0,5ft_or_wider,1.0,0.0,9
+5138L,RUSSELL ST,L,res,R-1,9.2,gis,0,5ft_or_wider,1.0,0.0,2
+5138R,RUSSELL ST,R,res,R-1,18.9,gis,0,5ft_or_wider,1.0,0.0,2
+5139L,ACTON CIR,L,res,R-2,10.6,gis,0,width_unknown,1.0,0.0,2
+5139R,ACTON CIR,R,res,R-2,2.5,gis,0,width_unknown,1.0,0.0,2
+5140L,ACTON CIR,L,res,R-2,10.2,gis,0,width_unknown,0.5,0.0,2
+5140R,ACTON CIR,R,res,R-2,2.5,gis,0,width_unknown,0.5,0.0,2
+5153L,DWIGHT WAY,L,res,R-2,18.0,gis,0,5ft_or_wider,1.0,0.0,2
+5153R,DWIGHT WAY,R,res,R-2,17.1,gis,0,5ft_or_wider,1.0,0.0,2
+5154L,ACTON ST,L,res,R-1,17.0,gis,0,5ft_or_wider,1.0,0.0,6
+5154R,ACTON ST,R,res,R-1,10.2,gis,0,5ft_or_wider,1.0,0.0,6
+5158L,ACTON CIR,L,res,R-2,7.6,gis,0,5ft_or_wider,0.57,0.0,14
+5158R,ACTON CIR,R,res,R-2,5.3,gis,0,5ft_or_wider,0.64,0.0,44
+5161L,RUSSELL ST,L,res,R-1,21.9,gis,0,5ft_or_wider,1.0,0.0,2
+5161R,RUSSELL ST,R,res,R-1,27.9,gis,0,5ft_or_wider,1.0,0.0,2
+5170L,ALLSTON WAY,L,res,R-2,10.7,gis,0,5ft_or_wider,1.0,0.0,11
+5170R,ALLSTON WAY,R,res,R-2,13.8,gis,0,5ft_or_wider,1.0,0.0,11
+5178L,ASHBY AVE,L,res,R-3,12.4,default,0,width_unknown,1.0,0.0,3
+5178R,ASHBY AVE,R,res,R-3,10.2,default,0,width_unknown,1.0,0.0,3
+5179L,ASHBY AVE,L,res,R-3,12.4,default,0,5ft_or_wider,0.83,0.0,6
+5179R,ASHBY AVE,R,res,R-3,9.6,default,0,5ft_or_wider,0.83,0.0,6
+5180L,ADDISON ST,L,res,R-4,10.8,gis,0,5ft_or_wider,1.0,0.0,25
+5180R,ADDISON ST,R,res,R-2A,12.8,gis,0,5ft_or_wider,1.0,0.0,25
+5181L,BURNETT ST,L,res,R-2A,7.9,gis,0,5ft_or_wider,1.0,0.0,10
+5181R,BURNETT ST,R,res,R-2A,15.2,gis,0,5ft_or_wider,1.0,0.0,10
+5182L,RUSSELL ST,L,com,C-SA,11.0,gis,0,5ft_or_wider,1.0,0.0,8
+5182R,RUSSELL ST,R,com,C-SA,15.2,gis,0,5ft_or_wider,1.0,0.0,8
+5185L,RUSSELL ST,L,res,R-1,8.6,gis,0,5ft_or_wider,1.0,0.0,2
+5185R,RUSSELL ST,R,res,R-1,14.7,gis,0,5ft_or_wider,1.0,0.0,2
+5186L,SACRAMENTO ST,L,res,R-2A,17.9,gis,0,no_data,1.0,0.0,2
+5186R,SACRAMENTO ST,R,res,R-2A,9.8,osm-building,0,no_data,1.0,0.0,2
+5187L,ALLSTON WAY,L,mixres,MUR,11.0,gis,0,5ft_or_wider,1.0,0.0,11
+5187R,ALLSTON WAY,R,man,MULI,13.8,gis,0,5ft_or_wider,1.0,0.0,11
+5188L,CHANNING WAY,L,res,R-2,13.1,gis,0,5ft_or_wider,1.0,0.0,11
+5188R,CHANNING WAY,R,res,R-2,14.3,gis,0,5ft_or_wider,1.0,0.0,11
+5189L,BANCROFT WAY,L,mixres,MUR,14.4,gis,0,5ft_or_wider,1.0,0.0,11
+5189R,BANCROFT WAY,R,man,MULI,12.4,gis,0,5ft_or_wider,1.0,0.0,11
+5212R,SEAWALL DR,R,other,U,38.7,gis,0,trail,0.82,0.0,17
+5215R,TRAIL,R,other,U,18.2,default,0,none,1.0,0.0,2
+5216R,TRAIL,R,other,U,15.8,default,0,5ft_or_wider,1.0,0.0,2
+5217L,PUBLIC BOAT RAMP,L,other,U,35.2,default,0,5ft_or_wider,0.5,0.0,4
+5217R,PUBLIC BOAT RAMP,R,other,U,34.9,default,0,5ft_or_wider,0.25,0.0,4
+5219L,UNIVERSITY AVE,L,other,SP,35.5,gis,0,width_unknown,1.0,0.0,10
+5219R,UNIVERSITY AVE,R,other,SP,27.2,gis,0,width_unknown,1.0,0.0,8
+5632R,SAN PABLO AVE,R,com,C-W,14.6,default,0,5ft_or_wider,0.57,0.43,47
+5633R,SAN PABLO AVE,R,com,C-W,11.6,default,0,5ft_or_wider,0.75,0.0,53
+5634L,SAN PABLO AVE,L,com,C-W,30.8,default,6,5ft_or_wider,1.0,0.0,6
+5634R,SAN PABLO AVE,R,com,C-W,31.5,default,5,5ft_or_wider,1.0,0.0,6
+5635R,SAN PABLO AVE,R,com,C-W,13.3,default,0,5ft_or_wider,1.0,0.0,47
+5636R,SAN PABLO AVE,R,com,C-W,11.1,osm-building,0,5ft_or_wider,1.0,0.0,44
+5637R,SAN PABLO AVE,R,com,C-W,15.9,default,0,5ft_or_wider,1.0,0.0,47
+5638R,SAN PABLO AVE,R,com,C-W,14.2,default,0,5ft_or_wider,1.0,0.0,42
+5641R,SAN PABLO AVE,R,com,C-W,15.5,default,0,5ft_or_wider,1.0,0.0,45
+5642R,SAN PABLO AVE,R,com,C-W,8.9,default,0,5ft_or_wider,1.0,0.0,51
+5643R,SAN PABLO AVE,R,com,C-W,15.5,default,0,5ft_or_wider,1.0,0.0,49
+5644R,SAN PABLO AVE,R,com,C-W,7.8,osm-building,0,5ft_or_wider,0.87,0.0,55
+5645R,SAN PABLO AVE,R,com,C-W,15.1,default,0,5ft_or_wider,1.0,0.0,45
+5646R,SAN PABLO AVE,R,com,C-W,6.7,osm-building,0,5ft_or_wider,0.85,0.0,47
+5647L,HOPKINS,L,res,R-2,16.5,gis,0,5ft_or_wider,1.0,0.0,4
+5647R,HOPKINS,R,res,R-2,35.1,gis,0,5ft_or_wider,1.0,0.0,8
+5648R,CEDAR ST,R,res,R-2,7.7,gis,0,5ft_or_wider,1.0,0.0,5
+5649L,,L,res,R-2,31.1,default,0,5ft_or_wider,1.0,0.0,9
+5650L,CEDAR ST,L,res,R-2,7.6,gis,0,5ft_or_wider,0.67,0.0,12
+5650R,CEDAR ST,R,res,R-2,14.8,gis,0,5ft_or_wider,0.62,0.0,8
+5651R,CEDAR ST,R,com,C-W,10.8,gis,0,5ft_or_wider,1.0,0.0,13
+5652R,CEDAR ST,R,com,C-W,8.4,gis,0,5ft_or_wider,1.0,0.0,26
+5654L,CEDAR ST,L,com,C-W,37.0,osm-building,0,5ft_or_wider,1.0,0.0,2
+5654R,CEDAR ST,R,com,C-W,35.4,gis,0,5ft_or_wider,1.0,0.0,2
+5655R,SAN PABLO AVE,R,com,C-W,12.7,default,0,5ft_or_wider,1.0,0.0,31
+5656L,SAN PABLO AVE,L,com,C-W,37.1,osm-building,0,5ft_or_wider,1.0,0.0,2
+5656R,SAN PABLO AVE,R,com,C-W,38.7,default,0,5ft_or_wider,1.0,0.0,2
+5657R,SAN PABLO AVE,R,com,C-W,7.3,osm-building,0,5ft_or_wider,0.43,0.0,51
+5658L,SAN PABLO AVE,L,com,C-W,32.5,default,10,5ft_or_wider,0.5,0.0,8
+5658R,SAN PABLO AVE,R,com,C-W,29.0,default,8,5ft_or_wider,1.0,0.0,8
+5659R,SAN PABLO AVE,R,com,C-W,10.6,default,0,5ft_or_wider,0.89,0.0,46
+5660R,SAN PABLO AVE,R,com,C-W,14.6,default,0,5ft_or_wider,1.0,0.0,30
+5661R,SAN PABLO AVE,R,com,C-W,29.5,default,0,5ft_or_wider,1.0,0.0,2
+5662R,SAN PABLO AVE,R,com,C-W,8.8,default,0,5ft_or_wider,0.87,0.0,45
+5663R,SAN PABLO AVE,R,com,C-W,15.8,default,0,5ft_or_wider,0.93,0.0,29
+5665R,SAN PABLO AVE,R,com,C-W,10.0,default,0,5ft_or_wider,0.77,0.0,48
+5666R,SAN PABLO AVE,R,com,C-W,13.6,default,0,5ft_or_wider,0.72,0.0,32
+5667R,SAN PABLO AVE,R,com,C-W,34.8,default,0,5ft_or_wider,1.0,0.0,2
+5668R,SAN PABLO AVE,R,com,C-W,6.6,osm-building,0,5ft_or_wider,0.45,0.0,40
+5669R,SAN PABLO AVE,R,com,C-W,12.9,default,0,5ft_or_wider,0.82,0.0,28
+5670L,SAN PABLO AVE,L,com,C-W,38.7,osm-building,0,none,1.0,0.0,2
+5670R,SAN PABLO AVE,R,com,C-W,29.8,default,3,none,1.0,0.0,2
+5671L,SAN PABLO AVE,L,com,C-W,27.5,default,10,5ft_or_wider,0.55,0.0,11
+5671R,SAN PABLO AVE,R,com,C-W,37.7,default,7,5ft_or_wider,0.44,0.0,9
+5672L,SAN PABLO AVE,L,com,C-W,25.2,osm-building,21,5ft_or_wider,0.5,0.0,8
+5672R,SAN PABLO AVE,R,com,C-W,30.5,default,7,5ft_or_wider,0.5,0.0,8
+5674R,SAN PABLO AVE,R,com,C-W,9.0,osm-building,0,5ft_or_wider,0.49,0.0,39
+5675R,SAN PABLO AVE,R,com,C-W,25.9,default,0,none,1.0,0.0,2
+5676R,SAN PABLO AVE,R,com,C-W,10.7,default,0,5ft_or_wider,0.96,0.0,25
+5677R,SAN PABLO AVE,R,com,C-W,31.8,default,0,5ft_or_wider,1.0,0.0,2
+5678R,SAN PABLO AVE,R,com,C-W,9.1,default,0,5ft_or_wider,0.12,0.0,25
+5679R,SAN PABLO AVE,R,com,C-W,16.8,default,0,5ft_or_wider,0.55,0.0,33
+5680R,SAN PABLO AVE,R,com,C-W,35.6,default,0,none,1.0,0.0,2
+5681R,SAN PABLO AVE,R,com,C-W,10.9,default,0,5ft_or_wider,0.85,0.0,26
+5682R,SAN PABLO AVE,R,com,C-W,5.0,osm-building,0,5ft_or_wider,0.47,0.0,40
+5683R,SAN PABLO AVE,R,com,C-W,30.5,default,0,5ft_or_wider,1.0,0.0,2
+5684R,SAN PABLO AVE,R,com,C-W,11.4,default,0,5ft_or_wider,0.83,0.0,30
+5685R,SAN PABLO AVE,R,com,C-W,16.1,default,0,5ft_or_wider,0.85,0.0,39
+5686R,SAN PABLO AVE,R,com,C-W,38.5,default,0,5ft_or_wider,1.0,0.0,2
+5687R,SAN PABLO AVE,R,com,C-W,9.8,default,0,5ft_or_wider,0.66,0.0,41
+5688R,SAN PABLO AVE,R,com,C-W,15.4,default,0,5ft_or_wider,1.0,0.0,53
+5689R,SAN PABLO AVE,R,com,C-W,9.8,osm-building,0,5ft_or_wider,0.81,0.0,42
+5690R,SAN PABLO AVE,R,com,C-W,34.5,default,0,5ft_or_wider,1.0,0.0,2
+5691R,SAN PABLO AVE,R,com,C-W,10.5,default,0,5ft_or_wider,0.77,0.0,30
+5692L,SAN PABLO AVE,L,com,C-W,38.2,osm-building,0,5ft_or_wider,1.0,0.0,2
+5692R,SAN PABLO AVE,R,com,C-W,29.9,default,0,5ft_or_wider,1.0,0.0,2
+5693R,SAN PABLO AVE,R,com,C-W,11.2,default,0,5ft_or_wider,0.89,0.0,27
+5694R,SAN PABLO AVE,R,com,C-W,2.2,osm-building,0,5ft_or_wider,0.88,0.0,43
+5695R,SAN PABLO AVE,R,com,C-W,38.0,default,0,5ft_or_wider,1.0,0.0,2
+5696R,SAN PABLO AVE,R,com,C-W,12.9,default,0,5ft_or_wider,1.0,0.0,39
+5697R,SAN PABLO AVE,R,com,C-W,7.4,default,0,5ft_or_wider,0.87,0.0,61
+5698R,SAN PABLO AVE,R,com,C-W,7.1,osm-building,0,5ft_or_wider,0.89,0.0,44
+5699L,SAN PABLO AVE,L,com,C-W,39.3,osm-building,0,5ft_or_wider,1.0,0.0,2
+5699R,SAN PABLO AVE,R,com,C-W,37.6,default,0,5ft_or_wider,1.0,0.0,2
+5700R,SAN PABLO AVE,R,com,C-W,11.6,default,0,5ft_or_wider,0.86,0.0,28
+5701R,SAN PABLO AVE,R,com,C-W,10.2,default,0,5ft_or_wider,0.89,0.0,45
+5702R,SAN PABLO AVE,R,com,C-W,14.9,default,0,5ft_or_wider,0.89,0.0,45
+5703R,SAN PABLO AVE,R,com,C-W,9.0,default,0,5ft_or_wider,0.42,0.0,43
+5704R,SAN PABLO AVE,R,com,C-W,10.2,default,0,5ft_or_wider,0.49,0.0,43
+5705R,SAN PABLO AVE,R,com,C-W,11.1,default,0,5ft_or_wider,0.47,0.0,40
+5706R,SAN PABLO AVE,R,com,C-W,13.0,default,0,5ft_or_wider,0.5,0.0,40
+5707R,SAN PABLO AVE,R,com,C-W,11.8,osm-building,0,5ft_or_wider,0.53,0.0,34
+5708R,SAN PABLO AVE,R,com,C-W,10.3,default,0,5ft_or_wider,0.53,0.0,38
+5709R,SAN PABLO AVE,R,com,C-W,9.0,osm-building,0,5ft_or_wider,0.56,0.0,41
+5710R,SAN PABLO AVE,R,com,C-W,13.0,default,0,5ft_or_wider,0.56,0.0,43
+5711R,SAN PABLO AVE,R,com,C-W,9.7,default,0,5ft_or_wider,1.0,0.0,44
+5712R,SAN PABLO AVE,R,com,C-W,10.1,default,0,5ft_or_wider,0.52,0.0,42
+5713L,SAN PABLO AVE,L,com,C-W,30.0,osm-building,0,5ft_or_wider,1.0,0.0,2
+5713R,SAN PABLO AVE,R,com,C-W,30.0,default,1,5ft_or_wider,1.0,0.0,2
+5714R,SAN PABLO AVE,R,com,C-W,10.8,default,0,5ft_or_wider,1.0,0.0,57
+5715R,SAN PABLO AVE,R,com,C-W,12.8,osm-building,0,5ft_or_wider,0.47,0.0,53
+5716R,SAN PABLO AVE,R,com,C-W,9.1,default,0,5ft_or_wider,0.98,0.0,41
+5717R,SAN PABLO AVE,R,com,C-W,10.8,default,0,5ft_or_wider,0.48,0.0,44
+5718R,SAN PABLO AVE,R,com,C-W,10.6,default,0,5ft_or_wider,0.5,0.0,50
+5719R,SAN PABLO AVE,R,com,C-W,9.0,osm-building,0,5ft_or_wider,1.0,0.0,49
+5720R,SAN PABLO AVE,R,com,C-W,14.7,default,0,5ft_or_wider,0.98,0.0,45
+5721R,SAN PABLO AVE,R,com,C-W,11.8,default,0,5ft_or_wider,1.0,0.0,51
+5722R,SAN PABLO AVE,R,com,C-W,12.0,default,0,5ft_or_wider,0.88,0.0,42
+5723R,SAN PABLO AVE,R,com,C-W,10.4,default,0,5ft_or_wider,0.89,0.0,38
+5724R,SAN PABLO AVE,R,com,C-W,12.0,default,0,5ft_or_wider,0.83,0.0,18
+5725R,SAN PABLO AVE,R,com,C-W,6.5,osm-building,0,5ft_or_wider,0.83,0.0,18
+5726R,SAN PABLO AVE,R,com,C-W,10.1,default,0,5ft_or_wider,1.0,0.0,5
+5727R,SAN PABLO AVE,R,com,C-W,6.0,osm-building,0,5ft_or_wider,1.0,0.0,5
+5728R,SAN PABLO AVE,R,com,C-W,9.6,default,0,5ft_or_wider,0.09,0.0,22
+5729R,SAN PABLO AVE,R,com,C-W,13.5,default,0,5ft_or_wider,0.1,0.0,20
+5782R,UNIVERSITY AVE,R,com,C-W,3.0,osm-building,0,width_unknown,0.96,0.0,46
+5783R,UNIVERSITY AVE,R,com,C-W,4.3,gis,0,width_unknown,1.0,0.0,42
+5784R,UNIVERSITY AVE,R,com,C-W,4.6,gis,0,no_sidewalk,0.49,0.49,49
+5785R,UNIVERSITY AVE,R,com,C-W,2.1,gis,0,width_unknown,0.93,0.07,46
+5786R,UNIVERSITY AVE,R,com,C-W,4.4,gis,0,width_unknown,0.89,0.11,47
+5787R,UNIVERSITY AVE,R,com,C-W,8.0,gis,0,no_sidewalk,0.51,0.51,47
+5788R,UNIVERSITY AVE,R,com,C-U,9.5,gis,0,width_unknown,0.54,0.0,65
+5789R,UNIVERSITY AVE,R,com,C-U,10.3,gis,0,width_unknown,1.0,0.0,47
+5790R,UNIVERSITY AVE,R,com,C-U,5.6,gis,0,width_unknown,0.69,0.0,29
+5791R,UNIVERSITY AVE,R,com,C-U,6.5,gis,0,width_unknown,0.79,0.0,38
+5792R,UNIVERSITY AVE,R,com,C-U,4.5,gis,0,width_unknown,1.0,0.0,61
+5793R,UNIVERSITY AVE,R,com,C-U,5.2,gis,0,width_unknown,0.7,0.0,27
+5794R,UNIVERSITY AVE,R,com,C-U,4.9,gis,0,5ft_or_wider,0.16,0.0,57
+5795R,UNIVERSITY AVE,R,com,C-U,4.0,osm-building,0,width_unknown,0.73,0.0,55
+5796R,UNIVERSITY AVE,R,com,C-U,4.5,gis,0,width_unknown,0.33,0.0,42
+5797L,UNIVERSITY AVE,L,com,C-U,39.5,osm-building,0,width_unknown,1.0,0.0,8
+5797R,UNIVERSITY AVE,R,com,C-U,6.5,gis,0,width_unknown,1.0,0.0,38
+5798R,UNIVERSITY AVE,R,com,C-U,1.8,gis,0,5ft_or_wider,0.07,0.0,54
+5801R,UNIVERSITY AVE,R,com,C-U,7.0,gis,0,5ft_or_wider,1.0,0.0,48
+6449L,EASTSHORE PEDESTRIAN OVRPAS,L,other,U,32.7,default,0,no_sidewalk,0.97,0.97,33
+6457L,BOLIVAR DR,L,other,U,32.2,default,0,width_unknown,1.0,0.0,5
+6457R,BOLIVAR DR,R,other,U,2.2,default,0,width_unknown,1.0,0.0,5
+6458L,BOLIVAR DR,L,other,U,38.0,default,0,trail,0.14,0.0,203
+6458R,BOLIVAR DR,R,other,U,8.0,default,0,width_unknown,0.1,0.0,231
+6464L,EASTSHORE PEDESTRIAN OVRPAS,L,other,U,36.6,default,0,none,1.0,0.0,159
+6467L,MURRAY ST,L,man,MULI,9.0,gis,0,5ft_or_wider,0.28,0.0,32
+6467R,MURRAY ST,R,man,MULI,16.8,gis,0,5ft_or_wider,0.7,0.0,30
+6558L,MCGEE AVE,L,res,R-2,16.7,gis,0,5ft_or_wider,0.35,0.0,17
+6558R,MCGEE AVE,R,res,R-2,9.2,gis,0,5ft_or_wider,0.29,0.0,17
+6564L,MCGEE AVE,L,res,R-2,18.5,gis,0,5ft_or_wider,0.85,0.0,13
+6564R,MCGEE AVE,R,com,C-N,7.8,gis,0,5ft_or_wider,1.0,0.0,13
+6603L,TENTH ST,L,res,R-2,9.2,gis,0,5ft_or_wider,0.41,0.0,17
+6603R,TENTH ST,R,res,R-2,15.9,gis,0,5ft_or_wider,0.41,0.0,17
+6604L,TENTH ST,L,res,R-2,9.8,gis,0,5ft_or_wider,1.0,0.0,20
+6604R,TENTH ST,R,res,R-2,17.8,gis,0,5ft_or_wider,0.45,0.0,20
+6605L,TENTH ST,L,com,C-W,9.0,osm-building,0,5ft_or_wider,0.6,0.0,5
+6605R,TENTH ST,R,com,C-W,16.2,gis,0,width_unknown,0.6,0.0,5
+6606L,TENTH ST,L,res,R-3,9.6,gis,0,5ft_or_wider,0.75,0.0,12
+6606R,TENTH ST,R,res,R-3,15.8,gis,0,5ft_or_wider,0.33,0.0,12
+6607L,TENTH ST,L,res,R-3,9.4,gis,0,width_unknown,0.28,0.0,18
+6607R,TENTH ST,R,res,R-3,15.9,gis,0,width_unknown,0.28,0.0,18
+6608L,TENTH ST,L,res,R-2,9.1,gis,0,5ft_or_wider,0.3,0.0,23
+6608R,TENTH ST,R,res,R-2,15.2,gis,0,5ft_or_wider,0.26,0.0,23
+6609L,TENTH ST,L,res,R-2,11.3,gis,0,5ft_or_wider,0.38,0.0,16
+6609R,TENTH ST,R,res,R-2,14.6,gis,0,5ft_or_wider,0.94,0.0,16
+6610L,TENTH ST,L,res,R-2,12.0,gis,0,5ft_or_wider,0.28,0.0,25
+6610R,TENTH ST,R,res,R-2,15.9,gis,0,5ft_or_wider,0.36,0.0,25
+6611L,TENTH ST,L,res,R-2,13.6,gis,0,5ft_or_wider,1.0,0.0,16
+6611R,TENTH ST,R,res,R-2,15.3,gis,0,5ft_or_wider,1.0,0.0,16
+6612L,TENTH ST,L,res,R-2,13.2,gis,0,5ft_or_wider,0.56,0.0,16
+6612R,TENTH ST,R,res,R-2,14.4,gis,0,5ft_or_wider,1.0,0.0,16
+6613L,TENTH ST,L,com,C-W,10.7,osm-building,0,no_sidewalk,0.96,0.96,24
+6613R,TENTH ST,R,com,C-W,14.9,gis,0,no_sidewalk,1.0,1.0,24
+6614L,TENTH ST,L,man,MULI,12.9,gis,0,no_sidewalk,1.0,1.0,25
+6614R,TENTH ST,R,com,C-W,15.3,gis,0,no_sidewalk,1.0,1.0,25
+6617L,TENTH ST,L,mixres,MUR,10.9,osm-building,0,5ft_or_wider,1.0,0.0,13
+6617R,TENTH ST,R,mixres,MUR,12.8,gis,0,5ft_or_wider,1.0,0.0,13
+6618L,TENTH ST,L,mixres,MUR,9.7,osm-building,0,5ft_or_wider,1.0,0.0,25
+6618R,TENTH ST,R,mixres,MUR,12.4,gis,0,5ft_or_wider,1.0,0.0,25
+6619L,TENTH ST,L,com,C-W,11.7,gis,0,5ft_or_wider,1.0,0.0,24
+6619R,TENTH ST,R,com,C-W,13.5,gis,0,5ft_or_wider,1.0,0.0,24
+6620L,TENTH ST,L,mixres,MUR,11.5,osm-building,0,5ft_or_wider,1.0,0.0,12
+6620R,TENTH ST,R,mixres,MUR,13.1,gis,0,5ft_or_wider,1.0,0.0,12
+6621L,TENTH ST,L,com,C-W,10.7,gis,0,5ft_or_wider,1.0,0.0,19
+6621R,TENTH ST,R,man,MULI,12.8,gis,0,5ft_or_wider,1.0,0.0,19
+6622L,TENTH ST,L,res,R-2,9.8,gis,0,5ft_or_wider,1.0,0.0,25
+6622R,TENTH ST,R,res,R-2,13.8,gis,0,5ft_or_wider,1.0,0.0,25
+6623L,TENTH ST,L,res,R-2,10.3,gis,0,5ft_or_wider,1.0,0.0,24
+6623R,TENTH ST,R,res,R-2,14.2,gis,0,5ft_or_wider,1.0,0.0,24
+6624L,TENTH ST,L,res,R-2,10.6,gis,0,5ft_or_wider,1.0,0.0,25
+6624R,TENTH ST,R,res,R-2,15.3,gis,0,5ft_or_wider,0.6,0.0,25
+6625L,TENTH ST,L,res,R-2,23.3,gis,0,5ft_or_wider,1.0,0.0,2
+6625R,TENTH ST,R,res,R-2,26.9,gis,0,5ft_or_wider,1.0,0.0,2
+6626L,SECOND ST,L,man,MULI,37.6,default,0,none,1.0,0.0,2
+6626R,SECOND ST,R,man,MULI,39.8,default,0,none,1.0,0.0,2
+6627L,SECOND ST,L,man,MULI,12.4,default,0,width_unknown,0.19,0.0,42
+6627R,SECOND ST,R,man,MULI,12.2,default,0,width_unknown,0.17,0.0,42
+6628L,SECOND ST,L,man,MULI,11.5,gis,0,width_unknown,0.12,0.0,17
+6628R,SECOND ST,R,man,MULI,9.0,gis,0,width_unknown,0.18,0.0,17
+6629L,SECOND ST,L,man,M,8.3,gis,0,no_sidewalk,0.92,0.92,25
+6629R,SECOND ST,R,man,M,3.2,gis,0,no_sidewalk,1.0,1.0,25
+6630L,SECOND ST,L,man,MULI,15.6,gis,0,no_sidewalk,0.31,0.31,16
+6630R,SECOND ST,R,man,MULI,13.1,gis,0,no_sidewalk,0.31,0.31,16
+6632L,SECOND ST,L,man,MULI,37.1,default,0,none,1.0,0.0,2
+6632R,SECOND ST,R,man,MULI,36.0,default,0,none,1.0,0.0,2
+6633L,SECOND ST,L,man,M,7.9,gis,0,width_unknown,0.28,0.0,25
+6633R,SECOND ST,R,man,M,10.4,gis,0,width_unknown,0.28,0.0,25
+6634L,SECOND ST,L,man,M,7.6,gis,0,width_unknown,0.31,0.0,16
+6634R,SECOND ST,R,man,M,11.9,gis,0,width_unknown,0.44,0.0,16
+6635L,SECOND ST,L,man,M,5.0,default,0,no_sidewalk,0.22,0.22,23
+6635R,SECOND ST,R,man,M,11.9,default,0,no_sidewalk,0.22,0.22,23
+6636L,SECOND ST,L,man,MRD,4.4,gis,0,no_sidewalk,0.83,0.83,24
+6636R,SECOND ST,R,man,MRD,15.7,gis,0,no_sidewalk,1.0,1.0,24
+6637L,SECOND ST,L,man,M,7.3,gis,0,no_sidewalk,0.12,0.12,16
+6637R,SECOND ST,R,man,M,13.8,gis,0,width_unknown,0.25,0.12,16
+6638L,SECOND ST,L,man,MRD,5.6,gis,0,no_sidewalk,0.5,0.5,16
+6638R,SECOND ST,R,man,MRD,17.1,gis,0,no_sidewalk,1.0,1.0,16
+6639L,FOURTH ST,L,man,MULI,10.3,gis,0,5ft_or_wider,0.44,0.0,16
+6639R,FOURTH ST,R,man,MULI,13.1,gis,0,5ft_or_wider,0.56,0.0,16
+6640L,FOURTH ST,L,com,C-W,10.9,gis,0,width_unknown,0.33,0.0,18
+6640R,FOURTH ST,R,com,C-W,13.0,gis,0,5ft_or_wider,0.28,0.0,18
+6641L,FOURTH ST,L,man,M,10.4,gis,0,5ft_or_wider,1.0,0.0,24
+6641R,FOURTH ST,R,man,M,16.2,gis,0,5ft_or_wider,1.0,0.0,24
+6644L,FOURTH ST,L,man,MULI,10.9,gis,0,5ft_or_wider,0.28,0.0,25
+6644R,FOURTH ST,R,man,MULI,13.0,gis,0,5ft_or_wider,0.32,0.0,25
+6645L,FOURTH ST,L,com,C-W,3.8,osm-building,0,5ft_or_wider,0.67,0.0,3
+6645R,FOURTH ST,R,com,C-W,14.3,gis,0,width_unknown,0.67,0.0,3
+6646L,FOURTH ST,L,com,C-W,8.7,osm-building,0,5ft_or_wider,1.0,0.0,12
+6646R,FOURTH ST,R,com,C-W,13.5,gis,0,5ft_or_wider,0.83,0.0,12
+6647L,FOURTH ST,L,com,C-W,10.8,gis,0,width_unknown,0.94,0.0,17
+6647R,FOURTH ST,R,com,C-W,12.0,gis,0,width_unknown,0.47,0.0,17
+6648L,FOURTH ST,L,man,MULI,10.7,gis,0,5ft_or_wider,0.08,0.0,24
+6648R,FOURTH ST,R,man,MULI,14.7,gis,0,5ft_or_wider,0.12,0.0,24
+6649L,FOURTH ST,L,man,MULI,8.0,gis,0,5ft_or_wider,0.56,0.0,16
+6649R,FOURTH ST,R,man,M,19.3,gis,0,5ft_or_wider,1.0,0.0,16
+6650L,FOURTH ST,L,man,MULI,7.6,osm-building,0,5ft_or_wider,0.38,0.0,16
+6650R,FOURTH ST,R,man,MULI,16.6,gis,0,5ft_or_wider,0.94,0.0,16
+6651L,FOURTH ST,L,man,MULI,7.3,gis,0,5ft_or_wider,1.0,0.0,12
+6651R,FOURTH ST,R,man,M,15.1,gis,0,5ft_or_wider,1.0,0.0,12
+6652L,FOURTH ST,L,man,MULI,21.8,default,0,no_sidewalk,1.0,1.0,2
+6652R,FOURTH ST,R,man,MULI,20.5,default,0,no_sidewalk,1.0,1.0,2
+6653L,FOURTH ST,L,man,MULI,5.1,gis,0,5ft_or_wider,0.83,0.17,12
+6653R,FOURTH ST,R,man,M,15.7,osm-building,0,no_sidewalk,0.5,0.5,12
+6654L,FOURTH ST,L,man,MULI,5.4,osm-building,0,5ft_or_wider,1.0,0.0,25
+6654R,FOURTH ST,R,man,MULI,12.8,gis,0,5ft_or_wider,1.0,0.0,25
+6655L,FOURTH ST,L,man,MM,15.0,default,0,5ft_or_wider,0.4,0.0,15
+6655R,FOURTH ST,R,man,MM,9.4,default,0,5ft_or_wider,0.4,0.0,15
+6656R,FOURTH ST,R,man,MM,18.1,osm-building,0,5ft_or_wider,0.11,0.0,9
+6657L,FOURTH ST,L,man,MULI,5.8,osm-building,0,5ft_or_wider,1.0,0.0,24
+6657R,FOURTH ST,R,man,MULI,13.5,gis,0,5ft_or_wider,1.0,0.0,24
+6658L,FOURTH ST,L,man,MULI,8.1,osm-building,0,5ft_or_wider,1.0,0.0,20
+6658R,FOURTH ST,R,man,MULI,14.7,gis,0,5ft_or_wider,1.0,0.0,20
+6659L,FOURTH ST,L,man,MULI,7.2,osm-building,0,5ft_or_wider,1.0,0.0,25
+6659R,FOURTH ST,R,man,MULI,11.8,gis,0,5ft_or_wider,1.0,0.0,25
+6661L,FIFTH ST,L,mixres,MUR,12.7,gis,0,5ft_or_wider,1.0,0.0,20
+6661R,FIFTH ST,R,mixres,MUR,14.7,gis,0,5ft_or_wider,0.6,0.0,20
+6662L,FIFTH ST,L,com,C-W,36.5,osm-building,0,width_unknown,1.0,0.0,2
+6662R,FIFTH ST,R,com,C-W,39.3,osm-building,0,width_unknown,1.0,0.0,2
+6663L,FIFTH ST,L,mixres,MUR,17.9,gis,0,width_unknown,0.12,0.0,24
+6663R,FIFTH ST,R,mixres,MUR,17.8,gis,0,width_unknown,0.08,0.0,24
+6664L,FIFTH ST,L,mixres,MUR,12.4,osm-building,0,5ft_or_wider,0.28,0.0,18
+6664R,FIFTH ST,R,mixres,MUR,19.0,gis,0,5ft_or_wider,0.28,0.0,18
+6665L,FIFTH ST,L,com,C-W,3.0,osm-building,0,width_unknown,0.33,0.0,3
+6665R,FIFTH ST,R,com,C-W,13.9,gis,0,width_unknown,0.67,0.0,3
+6666L,FIFTH ST,L,mixres,MUR,11.5,gis,0,5ft_or_wider,1.0,0.0,12
+6666R,FIFTH ST,R,com,C-W,14.4,gis,0,5ft_or_wider,0.42,0.0,12
+6667L,FIFTH ST,L,mixres,MUR,14.5,gis,0,width_unknown,0.41,0.06,17
+6667R,FIFTH ST,R,com,C-W,18.3,gis,0,width_unknown,0.24,0.0,17
+6668L,FIFTH ST,L,mixres,MUR,13.7,gis,0,5ft_or_wider,0.2,0.0,25
+6668R,FIFTH ST,R,mixres,MUR,18.9,gis,0,5ft_or_wider,0.16,0.0,25
+6669L,FIFTH ST,L,mixres,MUR,10.7,gis,0,5ft_or_wider,0.44,0.0,16
+6669R,FIFTH ST,R,mixres,MUR,15.3,gis,0,5ft_or_wider,0.5,0.0,16
+6670L,FIFTH ST,L,mixres,MUR,11.1,gis,0,5ft_or_wider,0.38,0.0,16
+6670R,FIFTH ST,R,mixres,MUR,15.9,gis,0,5ft_or_wider,0.94,0.0,16
+6671L,FIFTH ST,L,man,MULI,10.6,gis,0,5ft_or_wider,0.88,0.0,24
+6671R,FIFTH ST,R,man,M,16.1,gis,0,5ft_or_wider,1.0,0.0,24
+6672L,FIFTH ST,L,mixres,MUR,10.4,osm-building,0,5ft_or_wider,0.5,0.0,16
+6672R,FIFTH ST,R,mixres,MUR,17.6,gis,0,5ft_or_wider,1.0,0.0,16
+6673L,FIFTH ST,L,man,MULI,7.0,gis,0,no_sidewalk,1.0,1.0,18
+6673R,FIFTH ST,R,man,MULI,16.2,gis,0,no_sidewalk,1.0,1.0,18
+6674L,FIFTH ST,L,man,MULI,9.0,osm-building,0,5ft_or_wider,0.8,0.2,25
+6674R,FIFTH ST,R,man,MULI,14.7,gis,0,no_sidewalk,0.76,0.76,25
+6675L,FIFTH ST,L,mixres,MUR,9.8,osm-building,0,5ft_or_wider,1.0,0.0,25
+6675R,FIFTH ST,R,mixres,MUR,14.6,gis,0,5ft_or_wider,0.96,0.0,25
+6676L,FIFTH ST,L,mixres,MUR,12.2,gis,0,5ft_or_wider,1.0,0.0,25
+6676R,FIFTH ST,R,mixres,MUR,13.5,gis,0,5ft_or_wider,1.0,0.0,25
+6677L,FIFTH ST,L,mixres,MUR,12.2,gis,0,5ft_or_wider,1.0,0.0,25
+6677R,FIFTH ST,R,mixres,MUR,13.4,gis,0,5ft_or_wider,1.0,0.0,25
+6678L,FIFTH ST,L,com,C-W,4.3,osm-building,0,5ft_or_wider,0.7,0.0,10
+6678R,FIFTH ST,R,man,MULI,3.4,gis,0,5ft_or_wider,0.7,0.0,10
+6679L,FIFTH ST,L,man,MULI,8.0,osm-building,0,5ft_or_wider,1.0,0.0,3
+6679R,FIFTH ST,R,man,MULI,3.0,gis,0,5ft_or_wider,1.0,0.0,3
+6692L,SIXTY-SIXTH ST,L,res,R-2A,10.7,gis,0,5ft_or_wider,0.76,0.0,21
+6692R,SIXTY-SIXTH ST,R,res,R-2A,12.9,gis,0,5ft_or_wider,0.52,0.0,21
+6704R,SIXTY-SEVENTH ST,R,res,R-2A,18.4,osm-building,0,5ft_or_wider,1.0,0.0,27
+6705L,SIXTY-SEVENTH ST,L,res,R-2A,9.4,gis,0,5ft_or_wider,0.38,0.0,26
+6705R,SIXTY-SEVENTH ST,R,res,R-2A,11.9,gis,0,5ft_or_wider,0.5,0.0,26
+6707L,SIXTY-SEVENTH ST,L,res,R-2A,6.3,gis,0,5ft_or_wider,1.0,0.0,4
+6707R,SIXTY-SEVENTH ST,R,res,R-2A,6.8,gis,0,5ft_or_wider,1.0,0.0,4
+6708L,SIXTY-SEVENTH ST,L,res,R-2A,9.3,gis,0,5ft_or_wider,0.61,0.0,49
+6708R,SIXTY-SEVENTH ST,R,res,R-2A,11.8,gis,0,5ft_or_wider,0.88,0.0,51
+6709R,SIXTY-SEVENTH ST,R,man,MULI,27.6,osm-building,0,5ft_or_wider,0.24,0.0,34
+6723L,SIXTH ST,L,com,C-W,5.5,osm-building,0,5ft_or_wider,0.6,0.0,5
+6723R,SIXTH ST,R,com,C-W,16.9,gis,0,width_unknown,0.6,0.0,5
+6724L,SIXTH ST,L,res,R-4,14.1,gis,0,5ft_or_wider,1.0,0.0,12
+6724R,SIXTH ST,R,mixres,MUR,17.5,gis,0,5ft_or_wider,0.5,0.0,12
+6725L,SIXTH ST,L,res,R-3,13.5,gis,0,5ft_or_wider,0.72,0.0,18
+6725R,SIXTH ST,R,mixres,MUR,17.8,gis,0,width_unknown,0.33,0.0,18
+6726L,SIXTH ST,L,res,R-2,15.2,gis,0,width_unknown,0.5,0.0,16
+6726R,SIXTH ST,R,mixres,MUR,18.2,gis,0,5ft_or_wider,0.5,0.0,16
+6727L,SIXTH ST,L,res,R-2,14.4,gis,0,5ft_or_wider,1.0,0.0,20
+6727R,SIXTH ST,R,mixres,MUR,18.3,gis,0,5ft_or_wider,0.85,0.0,20
+6728L,SIXTH ST,L,res,R-2,13.2,gis,0,5ft_or_wider,0.2,0.0,25
+6728R,SIXTH ST,R,mixres,MUR,17.2,gis,0,5ft_or_wider,0.16,0.0,25
+6729L,SIXTH ST,L,res,R-2,13.8,gis,0,5ft_or_wider,0.25,0.0,16
+6729R,SIXTH ST,R,mixres,MUR,17.9,gis,0,5ft_or_wider,0.81,0.0,16
+6730L,SIXTH ST,L,man,MULI,15.0,gis,0,5ft_or_wider,0.83,0.0,24
+6730R,SIXTH ST,R,man,MULI,17.9,gis,0,5ft_or_wider,1.0,0.0,24
+6731L,SIXTH ST,L,res,R-2,12.6,gis,0,5ft_or_wider,0.44,0.0,16
+6731R,SIXTH ST,R,mixres,MUR,17.0,gis,0,under_5ft,0.75,0.0,16
+6732L,SIXTH ST,L,res,R-2,13.2,gis,0,5ft_or_wider,0.12,0.0,17
+6732R,SIXTH ST,R,mixres,MUR,16.2,gis,0,5ft_or_wider,0.06,0.0,17
+6733L,SIXTH ST,L,res,R-2,13.1,gis,0,width_unknown,0.12,0.0,25
+6733R,SIXTH ST,R,mixres,MUR,15.4,gis,0,width_unknown,0.12,0.0,25
+6736L,SIXTH ST,L,man,MULI,17.9,gis,0,no_sidewalk,0.8,0.8,25
+6736R,SIXTH ST,R,man,MULI,23.0,gis,38,no_sidewalk,0.76,0.76,25
+6737L,SIXTH ST,L,man,MULI,15.7,gis,0,no_sidewalk,1.0,1.0,17
+6737R,SIXTH ST,R,man,MULI,22.9,gis,29,no_sidewalk,1.0,1.0,17
+6738L,SIXTH ST,L,res,R-2,15.8,gis,0,5ft_or_wider,1.0,0.0,14
+6738R,SIXTH ST,R,mixres,MUR,18.2,gis,0,5ft_or_wider,1.0,0.0,14
+6739L,SIXTH ST,L,res,R-2,14.8,gis,0,5ft_or_wider,1.0,0.0,25
+6739R,SIXTH ST,R,mixres,MUR,17.8,gis,0,5ft_or_wider,1.0,0.0,25
+6740L,SIXTH ST,L,res,R-2,14.3,gis,0,5ft_or_wider,1.0,0.0,24
+6740R,SIXTH ST,R,mixres,MUR,17.3,gis,0,5ft_or_wider,1.0,0.0,24
+6741L,SIXTH ST,L,mixres,MUR,15.5,gis,0,5ft_or_wider,0.7,0.0,10
+6741R,SIXTH ST,R,mixres,MUR,16.7,gis,0,5ft_or_wider,0.8,0.0,10
+6743L,SEVENTH ST,L,com,C-W,10.5,gis,0,width_unknown,0.6,0.0,5
+6743R,SEVENTH ST,R,com,C-W,13.7,gis,0,width_unknown,0.8,0.0,5
+6744L,SEVENTH ST,L,res,R-4,10.2,gis,0,5ft_or_wider,0.92,0.0,12
+6744R,SEVENTH ST,R,res,R-4,13.9,gis,0,5ft_or_wider,0.33,0.0,12
+6745L,SEVENTH ST,L,res,R-2,11.1,gis,0,5ft_or_wider,1.0,0.0,20
+6745R,SEVENTH ST,R,res,R-2,12.9,gis,0,5ft_or_wider,0.55,0.0,20
+6746L,SEVENTH ST,L,res,R-3,12.8,gis,0,width_unknown,0.28,0.0,18
+6746R,SEVENTH ST,R,res,R-3,14.8,gis,0,width_unknown,0.33,0.0,18
+6747L,SEVENTH ST,L,res,R-2,12.8,gis,0,5ft_or_wider,0.47,0.0,17
+6747R,SEVENTH ST,R,res,R-2,15.5,gis,0,5ft_or_wider,0.41,0.0,17
+6748L,SEVENTH ST,L,res,R-2,11.2,gis,0,5ft_or_wider,0.32,0.0,25
+6748R,SEVENTH ST,R,res,R-2,14.7,gis,0,5ft_or_wider,0.36,0.0,25
+6749L,SEVENTH ST,L,res,R-2,8.9,gis,0,5ft_or_wider,0.28,0.0,25
+6749R,SEVENTH ST,R,res,R-2,15.6,gis,0,5ft_or_wider,0.2,0.0,25
+6750L,SEVENTH ST,L,res,R-2,11.3,gis,0,width_unknown,0.62,0.0,8
+6750R,SEVENTH ST,R,res,R-2,14.5,gis,0,width_unknown,0.5,0.0,8
+6751L,SEVENTH ST,L,man,MULI,2.6,osm-building,0,no_sidewalk,0.8,0.8,25
+6751R,SEVENTH ST,R,man,MULI,16.7,gis,0,no_sidewalk,0.84,0.84,25
+6752L,SEVENTH ST,L,res,R-2,8.8,gis,0,5ft_or_wider,0.75,0.0,16
+6752R,SEVENTH ST,R,res,R-2,13.3,gis,0,5ft_or_wider,1.0,0.0,16
+6753L,SEVENTH ST,L,man,MULI,10.2,osm-building,0,no_sidewalk,0.79,0.79,24
+6753R,SEVENTH ST,R,man,MULI,15.8,gis,0,no_sidewalk,0.96,0.96,24
+6754L,SEVENTH ST,L,res,R-2,9.1,gis,0,5ft_or_wider,0.5,0.0,16
+6754R,SEVENTH ST,R,res,R-2,11.5,gis,0,5ft_or_wider,1.0,0.0,16
+6755L,SEVENTH ST,L,res,R-2,11.5,gis,0,5ft_or_wider,0.75,0.0,8
+6755R,SEVENTH ST,R,res,R-2,13.2,gis,0,5ft_or_wider,0.75,0.0,8
+6756L,SEVENTH ST,L,man,MULI,11.3,gis,0,5ft_or_wider,1.0,0.0,11
+6756R,SEVENTH ST,R,man,MM,11.3,gis,0,5ft_or_wider,1.0,0.0,11
+6757L,SEVENTH ST,L,mixres,MUR,11.2,gis,0,5ft_or_wider,0.55,0.0,11
+6757R,SEVENTH ST,R,man,MM,12.6,gis,0,5ft_or_wider,0.73,0.0,11
+6758L,SEVENTH ST,L,man,MULI,11.2,gis,0,5ft_or_wider,1.0,0.0,21
+6758R,SEVENTH ST,R,man,MM,12.7,gis,0,5ft_or_wider,0.9,0.0,21
+6759L,SEVENTH ST,L,mixres,MUR,12.6,gis,0,5ft_or_wider,1.0,0.0,12
+6759R,SEVENTH ST,R,man,MM,12.4,gis,0,5ft_or_wider,1.0,0.0,12
+6760L,SEVENTH ST,L,man,MULI,11.3,gis,0,5ft_or_wider,1.0,0.0,9
+6760R,SEVENTH ST,R,man,MM,13.8,gis,0,5ft_or_wider,0.56,0.0,9
+6761L,SEVENTH ST,L,man,MULI,11.2,gis,0,5ft_or_wider,1.0,0.0,4
+6761R,SEVENTH ST,R,man,MM,12.1,gis,0,5ft_or_wider,0.5,0.0,4
+6762L,SEVENTH ST,L,res,R-2,11.2,gis,0,5ft_or_wider,1.0,0.0,24
+6762R,SEVENTH ST,R,res,R-2,15.1,gis,0,5ft_or_wider,1.0,0.0,24
+6763L,SEVENTH ST,L,res,R-2,9.3,osm-building,0,5ft_or_wider,0.92,0.0,25
+6763R,SEVENTH ST,R,res,R-2,14.0,gis,0,5ft_or_wider,0.76,0.0,25
+6764L,SEVENTH ST,L,man,MULI,9.7,osm-building,0,width_unknown,0.7,0.0,10
+6764R,SEVENTH ST,R,man,MULI,13.0,gis,0,width_unknown,0.7,0.0,10
+6765L,SEVENTH ST,L,man,MULI,13.0,gis,0,5ft_or_wider,0.41,0.0,17
+6765R,SEVENTH ST,R,man,MULI,2.3,gis,0,5ft_or_wider,0.41,0.0,17
+6766L,SEVENTH ST,L,com,C-W,15.1,gis,0,5ft_or_wider,0.6,0.0,10
+6766R,SEVENTH ST,R,com,C-W,11.3,gis,0,5ft_or_wider,0.5,0.0,10
+6767L,SEVENTH ST,L,mixres,MUR,11.9,gis,0,5ft_or_wider,0.16,0.0,25
+6767R,SEVENTH ST,R,man,MM,10.8,gis,0,5ft_or_wider,0.92,0.0,25
+6768L,SEVENTH ST,L,res,R-2,11.7,gis,0,5ft_or_wider,1.0,0.0,25
+6768R,SEVENTH ST,R,res,R-2,13.3,gis,0,5ft_or_wider,0.88,0.0,25
+6769L,SEVENTH ST,L,com,C-W,16.1,gis,0,width_unknown,0.71,0.0,7
+6769R,SEVENTH ST,R,com,C-W,10.3,gis,0,width_unknown,0.71,0.0,7
+6770L,SEVENTH ST,L,man,MULI,19.5,gis,0,width_unknown,1.0,0.0,2
+6770R,SEVENTH ST,R,man,MULI,33.2,gis,2,width_unknown,1.0,0.0,2
+6771L,EIGHTH ST,L,res,R-3,11.2,gis,0,width_unknown,0.22,0.06,18
+6771R,EIGHTH ST,R,res,R-3,15.1,gis,0,width_unknown,0.22,0.06,18
+6772L,EIGHTH ST,L,res,R-2,12.0,gis,0,width_unknown,0.5,0.0,8
+6772R,EIGHTH ST,R,res,R-2,16.0,gis,0,width_unknown,0.5,0.38,8
+6773L,EIGHTH ST,L,com,C-W,9.7,gis,0,no_sidewalk,0.6,0.6,5
+6773R,EIGHTH ST,R,com,C-W,14.9,gis,0,no_sidewalk,0.8,0.8,5
+6774L,EIGHTH ST,L,res,R-4,10.0,gis,0,5ft_or_wider,0.92,0.0,12
+6774R,EIGHTH ST,R,res,R-4,14.6,gis,0,5ft_or_wider,0.33,0.0,12
+6775L,EIGHTH ST,L,res,R-2,9.5,gis,0,5ft_or_wider,1.0,0.0,20
+6775R,EIGHTH ST,R,res,R-2,13.8,gis,0,5ft_or_wider,0.55,0.0,20
+6776L,EIGHTH ST,L,res,R-2,9.0,gis,0,5ft_or_wider,0.47,0.0,17
+6776R,EIGHTH ST,R,res,R-2,14.7,gis,0,5ft_or_wider,0.41,0.0,17
+6777L,EIGHTH ST,L,res,R-2,9.6,gis,0,5ft_or_wider,0.32,0.0,25
+6777R,EIGHTH ST,R,res,R-2,14.1,gis,0,5ft_or_wider,0.28,0.0,25
+6778L,EIGHTH ST,L,res,R-2,12.1,gis,0,5ft_or_wider,0.25,0.0,8
+6778R,EIGHTH ST,R,res,R-2,16.1,gis,0,no_sidewalk,0.75,0.75,8
+6779L,EIGHTH ST,L,res,R-2,10.7,gis,0,5ft_or_wider,0.94,0.0,16
+6779R,EIGHTH ST,R,res,R-2,13.8,gis,0,5ft_or_wider,1.0,0.0,16
+6780L,EIGHTH ST,L,res,R-2,17.1,gis,0,5ft_or_wider,0.38,0.19,16
+6780R,EIGHTH ST,R,res,R-2,21.9,gis,0,no_sidewalk,0.88,0.88,16
+6781L,EIGHTH ST,L,man,MULI,9.1,gis,0,no_sidewalk,0.96,0.96,24
+6781R,EIGHTH ST,R,man,MULI,15.3,gis,0,no_sidewalk,0.96,0.96,24
+6782L,EIGHTH ST,L,res,R-2,11.4,gis,0,5ft_or_wider,0.24,0.0,25
+6782R,EIGHTH ST,R,res,R-2,17.3,gis,0,5ft_or_wider,0.28,0.0,25
+6783L,EIGHTH ST,L,man,MULI,9.7,gis,0,no_sidewalk,0.92,0.92,25
+6783R,EIGHTH ST,R,man,MULI,12.6,gis,0,no_sidewalk,1.0,1.0,25
+6784L,EIGHTH ST,L,man,MULI,12.0,osm-building,0,5ft_or_wider,1.0,0.0,20
+6784R,EIGHTH ST,R,man,MULI,15.7,gis,0,5ft_or_wider,1.0,0.0,20
+6785L,EIGHTH ST,L,mixres,MUR,12.3,gis,0,5ft_or_wider,1.0,0.0,11
+6785R,EIGHTH ST,R,mixres,MUR,11.2,gis,0,5ft_or_wider,1.0,0.0,11
+6786L,EIGHTH ST,L,mixres,MUR,9.8,osm-building,0,5ft_or_wider,1.0,0.0,12
+6786R,EIGHTH ST,R,mixres,MUR,13.8,gis,0,5ft_or_wider,1.0,0.0,12
+6787L,EIGHTH ST,L,res,R-2,10.3,gis,0,5ft_or_wider,1.0,0.0,25
+6787R,EIGHTH ST,R,res,R-2,14.4,gis,0,5ft_or_wider,1.0,0.0,25
+6788L,EIGHTH ST,L,res,R-2,9.6,gis,0,5ft_or_wider,1.0,0.0,24
+6788R,EIGHTH ST,R,res,R-2,13.6,gis,0,5ft_or_wider,1.0,0.0,24
+6789L,EIGHTH ST,L,res,R-2,8.9,gis,0,5ft_or_wider,1.0,0.0,25
+6789R,EIGHTH ST,R,res,R-2,14.9,gis,0,5ft_or_wider,0.96,0.0,25
+6790L,EIGHTH ST,L,mixres,MUR,13.2,gis,0,5ft_or_wider,0.44,0.0,25
+6790R,EIGHTH ST,R,mixres,MUR,11.3,gis,0,5ft_or_wider,1.0,0.0,25
+6791L,EIGHTH ST,L,man,MULI,12.1,gis,0,5ft_or_wider,1.0,0.0,25
+6791R,EIGHTH ST,R,man,MULI,13.2,gis,0,5ft_or_wider,1.0,0.0,25
+6792L,EIGHTH ST,L,man,MULI,11.4,gis,0,no_sidewalk,1.0,1.0,25
+6792R,EIGHTH ST,R,man,MULI,13.5,gis,0,no_sidewalk,1.0,1.0,23
+6793L,NINTH ST,L,res,R-2,11.3,gis,0,5ft_or_wider,0.24,0.0,25
+6793R,NINTH ST,R,res,R-2,18.7,gis,0,5ft_or_wider,0.52,0.0,25
+6794L,NINTH ST,L,res,R-2,12.6,gis,0,5ft_or_wider,1.0,0.0,20
+6794R,NINTH ST,R,res,R-2,17.9,gis,0,5ft_or_wider,0.4,0.0,20
+6795L,NINTH ST,L,com,C-W,13.2,gis,0,5ft_or_wider,0.6,0.0,5
+6795R,NINTH ST,R,com,C-W,17.8,gis,0,5ft_or_wider,0.6,0.0,5
+6796L,NINTH ST,L,res,R-3,13.0,gis,0,5ft_or_wider,0.67,0.0,12
+6796R,NINTH ST,R,res,R-3,18.7,gis,0,5ft_or_wider,0.42,0.0,12
+6797L,NINTH ST,L,res,R-3,13.7,gis,0,width_unknown,0.28,0.0,18
+6797R,NINTH ST,R,res,R-3,18.7,gis,0,width_unknown,0.28,0.0,18
+6798L,NINTH ST,L,res,R-2,13.6,gis,0,5ft_or_wider,0.47,0.0,17
+6798R,NINTH ST,R,res,R-2,19.3,gis,0,5ft_or_wider,0.41,0.0,17
+6799L,NINTH ST,L,res,R-2,13.8,gis,0,5ft_or_wider,0.28,0.0,25
+6799R,NINTH ST,R,res,R-2,18.7,gis,0,5ft_or_wider,0.28,0.0,25
+6800L,NINTH ST,L,com,C-W,20.3,gis,38,no_sidewalk,1.0,1.0,25
+6800R,NINTH ST,R,man,MULI,27.0,gis,6,no_sidewalk,1.0,1.0,25
+6801L,NINTH ST,L,res,R-2,17.0,gis,0,5ft_or_wider,0.94,0.0,17
+6801R,NINTH ST,R,res,R-2,18.6,gis,0,5ft_or_wider,0.94,0.06,17
+6802L,NINTH ST,L,res,R-2,16.0,gis,0,width_unknown,0.25,0.0,16
+6802R,NINTH ST,R,res,R-2,19.1,gis,0,no_sidewalk,0.75,0.75,16
+6803L,NINTH ST,L,res,R-2,15.8,gis,0,5ft_or_wider,0.38,0.19,16
+6803R,NINTH ST,R,res,R-2,21.3,gis,0,no_sidewalk,1.0,1.0,16
+6804L,NINTH ST,L,mixres,MUR,19.5,gis,13,5ft_or_wider,1.0,0.0,12
+6804R,NINTH ST,R,mixres,MUR,18.5,gis,0,5ft_or_wider,1.0,0.0,12
+6805L,NINTH ST,L,man,MULI,18.4,gis,0,no_sidewalk,0.92,0.92,24
+6805R,NINTH ST,R,man,MULI,20.7,gis,48,no_sidewalk,0.96,0.96,24
+6806L,NINTH ST,L,man,MULI,22.4,gis,0,no_sidewalk,1.0,1.0,15
+6806R,NINTH ST,R,man,MULI,14.3,osm-building,0,no_sidewalk,1.0,1.0,15
+6807L,NINTH ST,L,com,C-W,9.8,gis,0,trail,0.4,0.0,10
+6807R,NINTH ST,R,man,MULI,7.0,gis,0,trail,0.6,0.0,10
+6808L,NINTH ST,L,res,R-2,14.3,gis,0,5ft_or_wider,1.0,0.0,25
+6808R,NINTH ST,R,res,R-2,18.1,gis,0,5ft_or_wider,1.0,0.0,25
+6809L,NINTH ST,L,man,MULI,19.8,gis,60,5ft_or_wider,1.0,0.0,19
+6809R,NINTH ST,R,man,MULI,19.9,gis,62,5ft_or_wider,1.0,0.0,19
+6810L,NINTH ST,L,mixres,MUR,12.3,osm-building,0,5ft_or_wider,0.75,0.0,12
+6810R,NINTH ST,R,mixres,MUR,15.6,gis,0,5ft_or_wider,1.0,0.0,12
+6811L,NINTH ST,L,man,MULI,19.0,gis,0,5ft_or_wider,1.0,0.0,25
+6811R,NINTH ST,R,man,MULI,18.7,gis,0,5ft_or_wider,1.0,0.0,25
+6812L,NINTH ST,L,res,R-2,15.0,gis,0,5ft_or_wider,1.0,0.0,25
+6812R,NINTH ST,R,res,R-2,19.0,gis,0,5ft_or_wider,1.0,0.0,25
+6813L,NINTH ST,L,res,R-2,12.5,gis,0,5ft_or_wider,1.0,0.0,25
+6813R,NINTH ST,R,res,R-2,19.1,gis,0,5ft_or_wider,0.76,0.0,25
+6814L,NINTH ST,L,man,MULI,1.8,osm-building,0,5ft_or_wider,1.0,0.0,8
+6814R,NINTH ST,R,man,MULI,5.5,gis,0,5ft_or_wider,1.0,0.0,6
+6815R,NINTH ST,R,com,C-W,19.8,gis,0,5ft_or_wider,1.0,0.0,2
+6816L,NINTH ST,L,mixres,MUR,15.7,gis,0,5ft_or_wider,0.24,0.0,25
+6816R,NINTH ST,R,mixres,MUR,15.1,gis,0,5ft_or_wider,1.0,0.0,25
+6817L,NINTH ST,L,com,C-W,8.3,gis,0,none,1.0,0.0,4
+6817R,NINTH ST,R,man,MULI,5.1,gis,0,none,1.0,0.0,4
+6818L,VALLEY ST,L,res,R-2,9.9,gis,0,5ft_or_wider,1.0,0.0,11
+6818R,VALLEY ST,R,res,R-2,17.3,gis,0,5ft_or_wider,1.0,0.0,11
+6943R,UNIVERSITY AVE,R,com,C-W,6.3,gis,0,width_unknown,0.74,0.0,78
+6944R,UNIVERSITY AVE,R,com,C-W,2.9,gis,0,5ft_or_wider,0.65,0.0,48
+6945R,UNIVERSITY AVE,R,com,C-W,3.7,gis,0,5ft_or_wider,0.96,0.0,45
+6946R,UNIVERSITY AVE,R,com,C-W,4.5,gis,0,width_unknown,0.56,0.0,43
+6947R,UNIVERSITY AVE,R,com,C-U,4.2,gis,0,5ft_or_wider,1.0,0.0,60
+6948L,UNIVERSITY AVE,L,com,C-U,39.9,osm-building,0,5ft_or_wider,0.77,0.0,30
+6948R,UNIVERSITY AVE,R,com,C-U,4.5,gis,0,5ft_or_wider,0.56,0.0,61
+6949R,SAN PABLO AVE,R,com,C-W,10.4,default,0,5ft_or_wider,0.9,0.0,50
+6950R,SAN PABLO AVE,R,com,C-W,7.6,osm-building,0,5ft_or_wider,0.9,0.0,50
+6962L,ESSEX WAY,L,com,C-W,24.0,osm-building,0,width_unknown,0.88,0.0,52
+6962R,ESSEX WAY,R,com,C-W,28.3,osm-building,0,width_unknown,0.61,0.0,18
+6964L,UNIVERSITY AVE,L,man,MULI,25.5,default,0,none,1.0,0.0,10
+6964R,UNIVERSITY AVE,R,man,MULI,14.9,default,0,none,1.0,0.0,10
+6965L,UNIVERSITY AVE,L,man,MULI,26.5,default,0,none,1.0,0.0,12
+6965R,UNIVERSITY AVE,R,man,MULI,14.1,default,0,none,1.0,0.0,12
+6968L,NORTHSIDE AVE,L,res,R-2,15.2,gis,0,width_unknown,0.93,0.0,14
+6968R,NORTHSIDE AVE,R,res,R-2,4.5,gis,0,width_unknown,1.0,0.0,14
+6969L,NEILSON ST,L,res,R-2,11.5,gis,0,5ft_or_wider,1.0,0.0,9
+6969R,NEILSON ST,R,com,C-N,5.8,gis,0,5ft_or_wider,0.89,0.0,9
