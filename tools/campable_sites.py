@@ -462,6 +462,24 @@ def main():
                 measured[(r["centerlineid"].strip(), r["side"].strip().upper()[0])] = float(r["width_ft"])
         print("  %d measured block-face widths" % len(measured), file=sys.stderr)
 
+    # ---- imagery clear widths (tools/clear_width.py) ----------------------
+    # data/tile2net/<area>/clear_width_faces.csv: governing_ft is the clear
+    # paved walk between obstructions read from the 2023 aerial, or empty where
+    # street trees hide the pinch point. Priority: tape > reviewed/drawn >
+    # imagery > OSM building face > GIS. Faces the imagery finds no sidewalk on
+    # (n_measured 0) get width 0 so no footprint is placed there.
+    imagery = {}
+    for cw in glob.glob(os.path.join(os.path.dirname(field), "tile2net", "*", "clear_width_faces.csv")):
+        with open(cw, encoding="utf-8") as fh:
+            for r in csv.DictReader(fh):
+                g = r.get("governing_ft") or ""
+                if r.get("governing_source", "").startswith("imagery") and g not in ("", "nan"):
+                    imagery[r["face"]] = (float(g), "imagery")
+                elif r.get("governing_source", "").startswith("tape needed"):
+                    imagery.setdefault(r["face"], (None, "imagery-trees"))
+    if imagery:
+        print("  %d block faces with an imagery clear width" % sum(1 for v in imagery.values() if v[0] is not None), file=sys.stderr)
+
     # ---- block faces ----------------------------------------------------
     PT = R["path_of_travel"]
     bset = ft(R["building_setback"]["ft"]) if R["building_setback"].get("enabled", True) else 0
@@ -506,6 +524,8 @@ def main():
                     w_m, w_src = 0.0, "reviewed"
                 elif rv.get("width_ft") not in (None, ""):
                     w_m, w_src = ft(float(rv["width_ft"])), "reviewed-" + (rv.get("method") or "imagery")
+            if fid in imagery and imagery[fid][0] is not None and not (status or fid in drawn):
+                w_m, w_src = ft(imagery[fid][0]), "imagery"
             if key in measured:
                 w_m, w_src = ft(measured[key]), "measured"
             w_ft = w_m / FT

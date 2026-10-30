@@ -167,7 +167,7 @@ every popup shows them) and applies this rule:
 > map shows no sidewalk and the side has not been checked, are drawn red-dashed
 > and their tent boxes amber-dotted: **not counted until verified on the ground.**
 
-Applied to the 1,038 tent locations in commercial and manufacturing districts:
+Applied to the 1,038 tent locations in commercial and manufacturing districts (before the width re-run in 4b):
 
 | status | faces | tent locations |
 |---|---|---|
@@ -185,6 +185,47 @@ This is what "meeting the City's map" means in practice: the map defers to the
 City's characterisation wherever it is the only source, overrides it only where
 later imagery and a dated street-level photograph both show otherwise, and
 flags everything in between for the tape measure.
+
+## 4b. Width along the block, not per block: the clear-walk profile
+
+A tape measurement at 1409 Fourth St (east side, face 6649L) on 30 October
+2026 read **4 ft** of clear concrete walk. The GIS estimate for that face was
+8.0 ft and the tile2net polygon 10.4 ft. The aerial shows why: the polygon
+spans curb to property line and so includes the row of tree wells; the usable
+walk is the strip between the tree wells and the fence. Two consequences
+were built in (`tools/clear_width.py`):
+
+1. **Width is now read every metre along each face**, on a cross-section
+   perpendicular to the curb line, as the longest contiguous run of paved
+   pixels (low colour saturation, not dark) inside the detected sidewalk
+   polygon. Planting strips, tree wells, dirt and parked cars break the run;
+   sections within 4 m of an OSM driveway or a detected crosswalk are
+   excluded as driveway aprons. Adjacent sections are smoothed with a 5 m
+   rolling median and merged into runs, drawn on the map as the "Clear walk
+   width" layer so the width is seen to change along the block.
+2. **The governing width is the pinch point, and the aerial cannot see it
+   under a tree.** At a street tree the canopy hides both the tree well and
+   the walk beside it. So the rule is: a tape measurement governs; otherwise,
+   on faces with essentially no canopy (under 10 % of sections hidden), the
+   median clear width between obstructions from the aerial; otherwise no
+   imagery number, and the face is flagged *tape needed: street trees hide
+   the pinch point*. In the two imagery areas this gives 151 faces an
+   imagery width (median 6.0 ft in `nw`, 7.1 ft in `ninth`) and flags 213 for
+   tape. The tent model takes widths in the order tape > reviewer >
+   imagery > OSM building face > GIS.
+
+Calibration so far (n = 2): Fourth St 6649L tape 4.0 ft vs imagery
+between-obstruction median 7.5 ft (the 4 ft is at the tree wells, which the
+imagery cannot read — hence the rule above); Camelia St 1084R tape 12.0 ft vs
+imagery 7.5 ft (the detector outlines less than the tape covered; that face
+has 34 % canopy). Neither is a width error of the method as adopted, because
+both faces are governed by their tape values, but they show the two ways the
+aerial can be wrong and why the n ≥ 30 tape sample is still required before
+any imagery width is presented as a measurement rather than a screen.
+
+Effect on the count: re-running the model with the imagery widths and the
+Fourth St tape moved the pilot total from 1,081 to **991** tent locations
+(Ninth St 227 → 166, Carleton 159 → 144, Gilman 47 → 39, San Pablo 91 → 85).
 
 ## 5. Margin of error, stated honestly
 
@@ -233,6 +274,8 @@ bash tools/tile2net/fetch_eval_tiles.sh            # 2023 aerial tiles (run on a
 bash tools/tile2net/run_area.sh nw    "37.8750, -122.3070, 37.8840, -122.2920"
 bash tools/tile2net/run_area.sh ninth "37.8515, -122.2975, 37.8590, -122.2895"
 python3 tools/tile2net_eval.py data/tile2net/eval nw=data/tile2net/nw/polygons.parquet ninth=data/tile2net/ninth/polygons.parquet
+python3 tools/clear_width.py nw ninth              # clear-walk width profile every metre (needs the tiles)
+python3 tools/campable_sites.py                    # tent model: tape > reviewer > imagery > building face > GIS
 python3 tools/inject_sources.py                    # write the evidence table into index.html
 ```
 

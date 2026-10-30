@@ -1,2 +1,3 @@
 centerlineid,side,width_ft,street,where,date,notes
 1084,R,12,CAMELIA ST,"north side, between Fourth St and the railroad tracks",2026-09-21,"field measurement (GIS estimate was 11.8 ft)"
+6649,L,4,FOURTH ST,"east side at 1409 Fourth St (37.87673, -122.30281), clear concrete walk between tree wells and the property line",2026-10-30,"field measurement by Robbie Powelson; tree wells and driveways excluded (GIS estimate 8.0 ft, 2023-imagery polygon 10.4 ft)"

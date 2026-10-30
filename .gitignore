@@ -3,7 +3,7 @@ __pycache__/
 survey.config.json
 _to_delete/
 data/campable/check_*.png
-tile2net/weights/
+tile2net/weights
 data/tile2net/tiles/
 *.tgz
 *.part0*
