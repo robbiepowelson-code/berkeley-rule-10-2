@@ -1,0 +1,2039 @@
+face,ramps,fig4,zcat,street,side,spots,has_ramp
+8R,0,none,other,UNIVERSITY AVE,R,0,False
+9L,1,trail,other,UNIVERSITY AVE,L,0,True
+10L,3,5ft_or_wider,com,CEDAR ST,L,0,True
+10R,2,5ft_or_wider,com,CEDAR ST,R,0,True
+12L,1,5ft_or_wider,com,ADDISON ST,L,0,True
+12R,1,5ft_or_wider,man,ADDISON ST,R,0,True
+13L,2,5ft_or_wider,com,ADDISON ST,L,0,True
+13R,2,5ft_or_wider,man,ADDISON ST,R,0,True
+14L,3,5ft_or_wider,com,ADDISON ST,L,0,True
+14R,3,5ft_or_wider,res,ADDISON ST,R,0,True
+19L,3,width_unknown,com,UNIVERSITY AVE,L,0,True
+19R,1,width_unknown,com,UNIVERSITY AVE,R,0,True
+30R,0,5ft_or_wider,other,SEAWALL DR,R,0,False
+31R,0,trail,other,SEAWALL DR,R,0,False
+32L,2,no_sidewalk,man,ADDISON ST,L,0,True
+32R,2,no_sidewalk,com,ADDISON ST,R,0,True
+53R,0,width_unknown,other,I80 EAST (OFF RAMP) UNIV,R,0,False
+54L,0,no_sidewalk,man,BOLIVAR DR,L,0,False
+54R,0,no_sidewalk,other,BOLIVAR DR,R,0,False
+55L,1,5ft_or_wider,man,BOLIVAR DR,L,0,True
+56L,0,trail,other,UNIVERSITY AVE,L,0,False
+58L,2,trail,com,BONAR ST,L,0,True
+58R,2,width_unknown,com,BONAR ST,R,0,True
+59L,2,trail,res,BONAR ST,L,0,True
+59R,2,5ft_or_wider,res,BONAR ST,R,0,True
+60L,3,5ft_or_wider,res,DELAWARE ST,L,0,True
+60R,2,5ft_or_wider,res,DELAWARE ST,R,0,True
+61L,3,5ft_or_wider,res,ACTON ST,L,0,True
+61R,3,5ft_or_wider,res,ACTON ST,R,0,True
+62R,2,width_unknown,man,EASTSHORE HWY,R,0,True
+63L,1,5ft_or_wider,mixres,DELAWARE ST,L,0,True
+63R,1,5ft_or_wider,res,DELAWARE ST,R,0,True
+65L,4,width_unknown,res,CEDAR ST,L,0,True
+65R,4,5ft_or_wider,res,CEDAR ST,R,0,True
+87R,2,5ft_or_wider,other,CAL SAILING LOOP,R,0,True
+90L,2,none,man,UNIVERSITY AVE OVERPASS,L,0,True
+90R,2,none,man,UNIVERSITY AVE OVERPASS,R,0,True
+91R,2,no_sidewalk,man,UNIVERSITY AVE OVERPASS,R,0,True
+92L,1,no_sidewalk,man,I80 EAST (OFF RAMP) UNIV,L,0,True
+93L,2,width_unknown,man,I80 EAST (ON RAMP) UNIV,L,0,True
+94L,2,width_unknown,man,UNIVERSITY AVE,L,0,True
+94R,2,width_unknown,man,UNIVERSITY AVE,R,0,True
+95L,0,5ft_or_wider,res,UNNAMED ALLEY,L,0,False
+95R,0,5ft_or_wider,com,UNNAMED ALLEY,R,1,False
+98L,4,5ft_or_wider,res,VIRGINIA ST,L,0,True
+98R,4,5ft_or_wider,res,VIRGINIA ST,R,0,True
+102L,3,5ft_or_wider,com,VIRGINIA ST,L,0,True
+102R,2,5ft_or_wider,res,VIRGINIA ST,R,0,True
+103L,3,5ft_or_wider,com,VIRGINIA ST,L,0,True
+103R,2,5ft_or_wider,com,VIRGINIA ST,R,0,True
+104L,2,5ft_or_wider,res,LINCOLN ST,L,0,True
+104R,2,5ft_or_wider,res,LINCOLN ST,R,0,True
+119L,0,trail,other,M DOCK,L,0,False
+119R,0,trail,other,M DOCK,R,0,False
+125L,4,5ft_or_wider,res,CEDAR ST,L,0,True
+125R,4,5ft_or_wider,res,CEDAR ST,R,0,True
+126L,4,5ft_or_wider,res,HOPKINS ST,L,0,True
+126R,4,5ft_or_wider,res,HOPKINS ST,R,0,True
+127L,3,5ft_or_wider,res,CORNELL AVE,L,0,True
+127R,4,5ft_or_wider,res,CORNELL AVE,R,0,True
+138L,0,none,other,BREAKWATER DR,L,0,False
+138R,0,none,other,BREAKWATER DR,R,0,False
+148L,4,no_sidewalk,res,BATAAN AVE,L,0,True
+148R,4,no_sidewalk,res,BATAAN AVE,R,0,True
+153L,4,5ft_or_wider,res,SACRAMENTO ST,L,0,True
+153R,3,5ft_or_wider,mixres,SACRAMENTO ST,R,0,True
+154L,4,5ft_or_wider,res,HEARST AVE,L,0,True
+154R,4,5ft_or_wider,res,HEARST AVE,R,0,True
+155L,4,5ft_or_wider,res,CHESTNUT ST,L,0,True
+155R,4,5ft_or_wider,res,CHESTNUT ST,R,0,True
+156L,3,5ft_or_wider,res,DELAWARE ST,L,0,True
+156R,2,5ft_or_wider,res,DELAWARE ST,R,0,True
+159L,4,5ft_or_wider,res,HOPKINS ST,L,0,True
+159R,4,5ft_or_wider,res,HOPKINS ST,R,0,True
+160L,4,5ft_or_wider,res,JONES ST,L,0,True
+160R,4,no_sidewalk,res,JONES ST,R,0,True
+161L,4,5ft_or_wider,res,CURTIS ST,L,0,True
+161R,4,5ft_or_wider,res,CURTIS ST,R,0,True
+166L,4,5ft_or_wider,res,ALLSTON WAY,L,0,True
+166R,4,5ft_or_wider,res,ALLSTON WAY,R,0,True
+177L,4,5ft_or_wider,res,FRANCISCO ST,L,0,True
+177R,4,5ft_or_wider,res,FRANCISCO ST,R,0,True
+178L,4,5ft_or_wider,res,CHESTNUT ST,L,0,True
+178R,4,5ft_or_wider,res,CHESTNUT ST,R,0,True
+179R,0,width_unknown,other,I80 EAST (OFF RAMP) UNIV,R,0,False
+180R,0,no_sidewalk,com,I80 EAST (OFF RAMP) UNIV,R,6,False
+181L,1,width_unknown,other,W FRONTAGE RD,L,0,True
+182R,0,trail,other,M DOCK,R,0,False
+183R,0,trail,other,M DOCK,R,0,False
+304R,0,5ft_or_wider,other,UNIVERSITY AVE,R,0,False
+305L,4,5ft_or_wider,res,BYRON ST,L,0,True
+305R,4,5ft_or_wider,res,BYRON ST,R,0,True
+306L,4,5ft_or_wider,res,ALLSTON WAY,L,0,True
+306R,4,5ft_or_wider,res,ALLSTON WAY,R,0,True
+307R,0,width_unknown,other,I80 EAST HWY,R,0,False
+320L,3,width_unknown,man,CEDAR ST,L,0,True
+320R,2,width_unknown,man,CEDAR ST,R,0,True
+321L,2,5ft_or_wider,res,CALIFORNIA ST,L,0,True
+321R,2,5ft_or_wider,res,CALIFORNIA ST,R,0,True
+322L,0,trail,other,UNIVERSITY AVE,L,0,False
+323L,3,5ft_or_wider,res,ALLSTON WAY,L,0,True
+323R,3,5ft_or_wider,com,ALLSTON WAY,R,0,True
+326L,0,width_unknown,other,W FRONTAGE RD,L,0,False
+326R,0,width_unknown,other,W FRONTAGE RD,R,0,False
+333L,3,5ft_or_wider,man,ADDISON ST,L,0,True
+333R,3,5ft_or_wider,com,ADDISON ST,R,0,True
+334L,4,5ft_or_wider,com,ADDISON ST,L,0,True
+334R,4,5ft_or_wider,man,ADDISON ST,R,0,True
+335L,3,5ft_or_wider,mixres,ADDISON ST,L,0,True
+335R,3,5ft_or_wider,mixres,ADDISON ST,R,0,True
+336L,4,5ft_or_wider,res,ALLSTON WAY,L,0,True
+336R,4,5ft_or_wider,res,ALLSTON WAY,R,0,True
+344L,0,5ft_or_wider,other,UNIVERSITY AVE,L,0,False
+350L,4,5ft_or_wider,res,PARK ST,L,0,True
+350R,4,5ft_or_wider,res,PARK ST,R,0,True
+352L,2,width_unknown,com,UNIVERSITY AVE,L,0,True
+352R,2,width_unknown,com,UNIVERSITY AVE,R,0,True
+353L,2,5ft_or_wider,com,ADDISON ST,L,0,True
+353R,3,5ft_or_wider,com,ADDISON ST,R,0,True
+354R,4,width_unknown,com,UNIVERSITY AVE,R,0,True
+356L,2,5ft_or_wider,res,BERKELEY WAY,L,0,True
+356R,2,5ft_or_wider,res,BERKELEY WAY,R,0,True
+357L,3,5ft_or_wider,res,DELAWARE ST,L,0,True
+357R,4,5ft_or_wider,res,DELAWARE ST,R,0,True
+358L,4,5ft_or_wider,man,VIRGINIA ST,L,0,True
+358R,3,5ft_or_wider,mixres,VIRGINIA ST,R,0,True
+359L,0,no_sidewalk,com,I80 EAST (OFF RAMP) UNIV,L,0,False
+359R,0,no_sidewalk,com,I80 EAST (OFF RAMP) UNIV,R,0,False
+364L,2,no_sidewalk,man,UNIVERSITY AVE,L,0,True
+364R,0,none,man,UNIVERSITY AVE,R,0,False
+367L,0,trail,other,M DOCK,L,0,False
+368L,0,trail,other,M DOCK,L,0,False
+369R,0,trail,other,L DOCK,R,0,False
+370L,0,trail,other,J DOCK,L,0,False
+375R,0,trail,other,L DOCK,R,0,False
+376L,0,trail,other,L DOCK,L,0,False
+376R,0,trail,other,L DOCK,R,0,False
+377L,0,trail,other,L DOCK,L,0,False
+378L,0,trail,other,L DOCK,L,0,False
+379R,0,trail,other,J DOCK,R,0,False
+380L,0,trail,other,J DOCK,L,0,False
+380R,0,trail,other,J DOCK,R,0,False
+381L,0,none,other,N DOCK,L,0,False
+381R,0,none,other,N DOCK,R,0,False
+396L,4,5ft_or_wider,res,EOLA ST,L,0,True
+396R,3,5ft_or_wider,res,EOLA ST,R,0,True
+397L,1,5ft_or_wider,res,BROWNING ST,L,0,True
+397R,1,5ft_or_wider,res,BROWNING ST,R,0,True
+398L,2,5ft_or_wider,res,BROWNING ST,L,0,True
+398R,2,5ft_or_wider,res,BROWNING ST,R,0,True
+404R,2,no_sidewalk,com,I80 EAST (OFF RAMP) UNIV,R,0,True
+405R,0,width_unknown,other,I80 EAST (OFF RAMP) UNIV,R,0,False
+408L,4,5ft_or_wider,res,ADDISON ST,L,0,True
+408R,4,5ft_or_wider,res,ADDISON ST,R,0,True
+411L,2,5ft_or_wider,res,CORNELL AVE,L,0,True
+411R,2,5ft_or_wider,res,CORNELL AVE,R,0,True
+412L,2,5ft_or_wider,res,TALBOT AVE,L,0,True
+412R,2,5ft_or_wider,res,TALBOT AVE,R,0,True
+413L,1,no_sidewalk,man,PAGE ST,L,20,True
+413R,2,no_sidewalk,man,PAGE ST,R,0,True
+415L,4,5ft_or_wider,res,BELVEDERE AVE,L,0,True
+415R,4,width_unknown,res,BELVEDERE AVE,R,0,True
+416L,2,5ft_or_wider,man,GILMAN ST,L,26,True
+416R,2,5ft_or_wider,man,GILMAN ST,R,0,True
+418L,3,5ft_or_wider,res,ORDWAY ST,L,0,True
+418R,3,5ft_or_wider,res,ORDWAY ST,R,0,True
+419L,3,5ft_or_wider,res,ADA ST,L,0,True
+419R,3,5ft_or_wider,res,ADA ST,R,0,True
+420L,3,5ft_or_wider,res,CALIFORNIA ST,L,0,True
+420R,4,5ft_or_wider,res,CALIFORNIA ST,R,0,True
+423L,4,5ft_or_wider,res,ACTON ST,L,0,True
+423R,4,5ft_or_wider,res,ACTON ST,R,0,True
+424L,2,5ft_or_wider,res,LINCOLN ST,L,0,True
+424R,2,5ft_or_wider,res,LINCOLN ST,R,0,True
+427L,0,5ft_or_wider,com,CAMELIA ST,L,0,False
+427R,0,5ft_or_wider,com,CAMELIA ST,R,0,False
+428L,2,5ft_or_wider,res,HOPKINS ST,L,0,True
+428R,2,5ft_or_wider,res,HOPKINS ST,R,0,True
+429L,3,5ft_or_wider,res,ORDWAY ST,L,0,True
+429R,3,5ft_or_wider,res,ORDWAY ST,R,0,True
+432L,0,5ft_or_wider,man,GILMAN ST,L,5,False
+432R,0,5ft_or_wider,man,GILMAN ST,R,0,False
+433L,2,5ft_or_wider,man,GILMAN ST,L,0,True
+433R,2,5ft_or_wider,man,GILMAN ST,R,0,True
+434L,2,5ft_or_wider,res,GILMAN ST,L,0,True
+434R,2,width_unknown,com,GILMAN ST,R,0,True
+435L,3,5ft_or_wider,res,TALBOT AVE,L,0,True
+435R,3,5ft_or_wider,res,TALBOT AVE,R,0,True
+438L,3,5ft_or_wider,res,ADA ST,L,0,True
+438R,3,5ft_or_wider,res,ADA ST,R,0,True
+441L,1,5ft_or_wider,res,VIRGINIA ST,L,0,True
+441R,2,5ft_or_wider,res,VIRGINIA ST,R,0,True
+442L,3,5ft_or_wider,res,VIRGINIA ST,L,0,True
+442R,4,5ft_or_wider,res,VIRGINIA ST,R,0,True
+443L,2,5ft_or_wider,res,FRANCISCO ST,L,0,True
+443R,4,5ft_or_wider,res,FRANCISCO ST,R,0,True
+444L,2,5ft_or_wider,mixres,ACTON ST,L,0,True
+444R,2,5ft_or_wider,res,ACTON ST,R,0,True
+446L,0,trail,other,HORNBLOWER DOCK,L,0,False
+447L,0,no_data,other,HORNBLOWER DOCK,L,0,False
+447R,0,trail,other,HORNBLOWER DOCK,R,0,False
+448L,0,trail,other,HORNBLOWER DOCK,L,0,False
+448R,0,trail,other,HORNBLOWER DOCK,R,0,False
+449L,2,5ft_or_wider,res,HEARST AVE,L,0,True
+449R,3,5ft_or_wider,res,HEARST AVE,R,0,True
+452R,3,5ft_or_wider,man,EASTSHORE HWY,R,0,True
+454L,4,width_unknown,res,CEDAR ST,L,0,True
+454R,4,5ft_or_wider,res,CEDAR ST,R,0,True
+458L,4,5ft_or_wider,man,CARLETON ST,L,0,True
+458R,4,5ft_or_wider,mixres,CARLETON ST,R,0,True
+461L,3,5ft_or_wider,res,WARD ST,L,0,True
+461R,3,5ft_or_wider,res,WARD ST,R,0,True
+462L,0,width_unknown,other,W FRONTAGE RD,L,0,False
+462R,1,width_unknown,other,W FRONTAGE RD,R,0,True
+470L,4,5ft_or_wider,res,VIRGINIA ST,L,0,True
+470R,4,5ft_or_wider,res,VIRGINIA ST,R,0,True
+472L,4,5ft_or_wider,res,CEDAR ST,L,0,True
+472R,4,5ft_or_wider,res,CEDAR ST,R,0,True
+473L,0,5ft_or_wider,res,WEST ST,L,0,False
+473R,0,5ft_or_wider,res,WEST ST,R,0,False
+476L,3,5ft_or_wider,res,SANTA FE AVE,L,0,True
+476R,2,5ft_or_wider,res,SANTA FE AVE,R,0,True
+480R,0,trail,other,G DOCK,R,0,False
+481L,0,trail,other, F AND G DOCK,L,0,False
+481R,0,trail,other, F AND G DOCK,R,0,False
+486L,4,5ft_or_wider,res,ADDISON ST,L,0,True
+486R,3,5ft_or_wider,res,ADDISON ST,R,0,True
+487L,3,width_unknown,com,UNIVERSITY AVE,L,0,True
+487R,2,width_unknown,com,UNIVERSITY AVE,R,0,True
+488L,3,5ft_or_wider,res,COWPER ST,L,0,True
+488R,3,5ft_or_wider,res,COWPER ST,R,0,True
+489L,4,5ft_or_wider,res,BYRON ST,L,0,True
+489R,4,5ft_or_wider,res,BYRON ST,R,0,True
+490L,3,5ft_or_wider,res,ADDISON ST,L,0,True
+490R,3,5ft_or_wider,res,ADDISON ST,R,0,True
+491L,5,width_unknown,com,UNIVERSITY AVE,L,0,True
+491R,3,width_unknown,com,UNIVERSITY AVE,R,0,True
+493R,3,width_unknown,com,UNIVERSITY AVE,R,0,True
+495L,4,5ft_or_wider,res,CURTIS ST,L,0,True
+495R,4,5ft_or_wider,res,CURTIS ST,R,0,True
+496L,2,5ft_or_wider,man,HEARST AVE,L,0,True
+496R,2,5ft_or_wider,man,HEARST AVE,R,0,True
+497L,3,5ft_or_wider,res,ADDISON ST,L,0,True
+497R,3,5ft_or_wider,res,ADDISON ST,R,0,True
+498L,4,no_sidewalk,res,BONAR ST,L,0,True
+498R,4,no_sidewalk,res,BONAR ST,R,0,True
+499L,3,5ft_or_wider,com,HEARST AVE,L,0,True
+499R,3,width_unknown,com,HEARST AVE,R,0,True
+500L,2,5ft_or_wider,com,HEARST AVE,L,0,True
+500R,2,5ft_or_wider,com,HEARST AVE,R,0,True
+501L,4,width_unknown,com,CHESTNUT ST,L,0,True
+501R,2,5ft_or_wider,com,CHESTNUT ST,R,0,True
+502L,2,5ft_or_wider,res,DELAWARE ST,L,0,True
+502R,3,5ft_or_wider,res,DELAWARE ST,R,0,True
+503L,4,5ft_or_wider,res,CURTIS ST,L,0,True
+503R,4,5ft_or_wider,res,CURTIS ST,R,0,True
+505L,0,trail,other,F DOCK,L,0,False
+507L,0,none,other,BREAKWATER DR,L,0,False
+507R,0,none,other,BREAKWATER DR,R,0,False
+508L,4,5ft_or_wider,res,ADDISON ST,L,0,True
+508R,4,5ft_or_wider,res,ADDISON ST,R,0,True
+509L,2,5ft_or_wider,com,CURTIS ST,L,0,True
+509R,2,5ft_or_wider,com,CURTIS ST,R,0,True
+510L,3,5ft_or_wider,res,HEARST AVE,L,0,True
+510R,3,5ft_or_wider,res,HEARST AVE,R,0,True
+512L,4,5ft_or_wider,res,HEARST AVE,L,0,True
+512R,4,5ft_or_wider,res,HEARST AVE,R,0,True
+514L,2,5ft_or_wider,res,HEARST AVE,L,0,True
+514R,2,5ft_or_wider,res,HEARST AVE,R,0,True
+515L,2,width_unknown,res,CURTIS ST,L,0,True
+515R,2,width_unknown,res,CURTIS ST,R,0,True
+516L,2,5ft_or_wider,res,BERKELEY WAY,L,0,True
+516R,2,5ft_or_wider,res,BERKELEY WAY,R,0,True
+517L,3,5ft_or_wider,res,CURTIS ST,L,0,True
+517R,3,5ft_or_wider,res,CURTIS ST,R,0,True
+518L,3,5ft_or_wider,res,DELAWARE ST,L,0,True
+518R,4,5ft_or_wider,res,DELAWARE ST,R,0,True
+519R,1,no_sidewalk,man,EASTSHORE,R,0,True
+520L,4,5ft_or_wider,res,VIRGINIA ST,L,0,True
+520R,4,5ft_or_wider,res,VIRGINIA ST,R,0,True
+521L,2,5ft_or_wider,com,GILMAN ST,L,0,True
+521R,2,5ft_or_wider,com,GILMAN ST,R,0,True
+523L,2,5ft_or_wider,res,FRANCISCO ST,L,0,True
+523R,3,5ft_or_wider,res,FRANCISCO ST,R,0,True
+524L,1,5ft_or_wider,res,VIRGINIA ST,L,0,True
+524R,1,5ft_or_wider,mixres,VIRGINIA ST,R,0,True
+525L,2,5ft_or_wider,res,HEARST AVE,L,0,True
+525R,4,5ft_or_wider,res,HEARST AVE,R,0,True
+526L,2,trail,res,HEARST AVE,L,0,True
+526R,4,trail,res,HEARST AVE,R,0,True
+527L,1,width_unknown,man,VIRGINIA ST,L,0,True
+527R,3,width_unknown,man,VIRGINIA ST,R,0,True
+528L,4,5ft_or_wider,res,HEARST AVE,L,0,True
+528R,4,5ft_or_wider,res,HEARST AVE,R,0,True
+529L,2,5ft_or_wider,res,DELAWARE ST,L,0,True
+529R,3,5ft_or_wider,res,DELAWARE ST,R,0,True
+530L,2,5ft_or_wider,man,VIRGINIA ST,L,0,True
+530R,3,5ft_or_wider,man,VIRGINIA ST,R,0,True
+532L,4,5ft_or_wider,res,HEARST AVE,L,0,True
+532R,2,5ft_or_wider,res,HEARST AVE,R,0,True
+533L,2,5ft_or_wider,res,SACRAMENTO ST,L,0,True
+533R,4,5ft_or_wider,res,SACRAMENTO ST,R,0,True
+534L,2,width_unknown,mixres,VIRGINIA ST,L,0,True
+534R,1,width_unknown,mixres,VIRGINIA ST,R,0,True
+535L,4,5ft_or_wider,res,CHESTNUT ST,L,0,True
+535R,4,5ft_or_wider,res,CHESTNUT ST,R,0,True
+536L,4,5ft_or_wider,res,DELAWARE ST,L,0,True
+536R,4,5ft_or_wider,res,DELAWARE ST,R,0,True
+537L,2,5ft_or_wider,res,DELAWARE ST,L,0,True
+537R,2,5ft_or_wider,res,DELAWARE ST,R,0,True
+538L,2,5ft_or_wider,res,DELAWARE ST,L,0,True
+538R,2,5ft_or_wider,res,DELAWARE ST,R,0,True
+539L,3,5ft_or_wider,res,VIRGINIA ST,L,0,True
+539R,3,5ft_or_wider,res,VIRGINIA ST,R,0,True
+540L,3,trail,res,FRANKLIN ST,L,0,True
+540R,3,trail,res,FRANKLIN ST,R,0,True
+541L,2,5ft_or_wider,res,SHORT ST,L,0,True
+541R,2,5ft_or_wider,res,SHORT ST,R,0,True
+542L,2,5ft_or_wider,res,FRANCISCO ST,L,0,True
+542R,2,5ft_or_wider,res,FRANCISCO ST,R,0,True
+543L,4,5ft_or_wider,res,CURTIS ST,L,0,True
+543R,4,5ft_or_wider,res,CURTIS ST,R,0,True
+545L,2,under_5ft,res,VIRGINIA ST,L,0,True
+545R,2,5ft_or_wider,res,VIRGINIA ST,R,0,True
+547L,4,5ft_or_wider,res,KAINS AVE,L,0,True
+547R,3,5ft_or_wider,res,KAINS AVE,R,0,True
+551L,4,width_unknown,man,CEDAR ST,L,0,True
+551R,3,width_unknown,man,CEDAR ST,R,0,True
+552L,4,5ft_or_wider,res,SACRAMENTO ST,L,0,True
+552R,1,5ft_or_wider,res,SACRAMENTO ST,R,0,True
+554L,2,5ft_or_wider,res,FRANCISCO ST,L,0,True
+554R,2,5ft_or_wider,res,FRANCISCO ST,R,0,True
+557L,3,5ft_or_wider,res,ROSE ST,L,0,True
+557R,4,5ft_or_wider,res,ROSE ST,R,0,True
+560L,3,5ft_or_wider,res,ACTON ST,L,0,True
+560R,3,5ft_or_wider,res,ACTON ST,R,0,True
+561L,2,no_sidewalk,man,HARRISON ST,L,0,True
+561R,4,no_sidewalk,man,HARRISON ST,R,0,True
+562L,2,no_sidewalk,res,TEVLIN ST,L,0,True
+562R,2,no_sidewalk,res,TEVLIN ST,R,0,True
+568L,4,5ft_or_wider,res,VIRGINIA ST,L,0,True
+568R,4,5ft_or_wider,res,VIRGINIA ST,R,0,True
+569L,2,5ft_or_wider,res,VIRGINIA ST,L,0,True
+569R,2,5ft_or_wider,res,VIRGINIA ST,R,0,True
+570L,4,5ft_or_wider,res,CURTIS ST,L,0,True
+570R,4,5ft_or_wider,res,CURTIS ST,R,0,True
+571L,2,5ft_or_wider,mixres,CEDAR ST,L,0,True
+571R,2,5ft_or_wider,mixres,CEDAR ST,R,0,True
+572L,4,5ft_or_wider,mixres,VIRGINIA ST,L,0,True
+572R,4,5ft_or_wider,res,VIRGINIA ST,R,0,True
+573L,4,5ft_or_wider,res,STANNAGE AVE,L,0,True
+573R,4,5ft_or_wider,res,STANNAGE AVE,R,0,True
+575L,2,5ft_or_wider,res,FRANCISCO ST,L,0,True
+575R,2,5ft_or_wider,res,FRANCISCO ST,R,0,True
+576L,3,5ft_or_wider,res,FRANKLIN ST,L,0,True
+576R,3,5ft_or_wider,res,FRANKLIN ST,R,0,True
+579L,3,5ft_or_wider,man,CEDAR ST,L,0,True
+579R,3,5ft_or_wider,man,CEDAR ST,R,0,True
+580L,2,5ft_or_wider,res,DELAWARE ST,L,0,True
+580R,2,5ft_or_wider,res,DELAWARE ST,R,0,True
+583L,2,5ft_or_wider,man,CEDAR ST,L,0,True
+583R,2,5ft_or_wider,man,CEDAR ST,R,0,True
+584L,4,5ft_or_wider,mixres,CEDAR ST,L,0,True
+584R,4,5ft_or_wider,mixres,CEDAR ST,R,0,True
+586L,4,5ft_or_wider,res,VIRGINIA ST,L,0,True
+586R,4,5ft_or_wider,res,VIRGINIA ST,R,0,True
+587L,4,5ft_or_wider,res,CHESTNUT ST,L,0,True
+587R,4,5ft_or_wider,res,CHESTNUT ST,R,0,True
+588L,2,5ft_or_wider,res,VIRGINIA ST,L,0,True
+588R,2,5ft_or_wider,res,VIRGINIA ST,R,0,True
+589L,4,5ft_or_wider,res,FRANCISCO ST,L,0,True
+589R,4,5ft_or_wider,res,FRANCISCO ST,R,0,True
+590L,4,5ft_or_wider,res,CALIFORNIA ST,L,0,True
+590R,4,5ft_or_wider,res,CALIFORNIA ST,R,0,True
+592L,4,5ft_or_wider,res,FRANKLIN ST,L,0,True
+592R,4,5ft_or_wider,res,FRANKLIN ST,R,0,True
+594L,2,5ft_or_wider,res,FRANCISCO ST,L,0,True
+594R,2,5ft_or_wider,res,FRANCISCO ST,R,0,True
+599L,4,5ft_or_wider,man,JONES ST,L,0,True
+599R,4,5ft_or_wider,mixres,JONES ST,R,0,True
+601L,4,5ft_or_wider,res,CHESTNUT ST,L,0,True
+601R,4,5ft_or_wider,res,CHESTNUT ST,R,0,True
+602L,4,5ft_or_wider,res,CALIFORNIA ST,L,0,True
+602R,4,5ft_or_wider,res,CALIFORNIA ST,R,0,True
+603R,6,5ft_or_wider,man,EASTSHORE HWY,R,0,True
+604L,4,5ft_or_wider,res,ACTON ST,L,0,True
+604R,4,5ft_or_wider,res,ACTON ST,R,0,True
+606L,2,5ft_or_wider,res,SHORT ST,L,0,True
+606R,3,width_unknown,res,SHORT ST,R,0,True
+609L,0,none,other,BERK MARINE CTR WAYS,L,0,False
+609R,0,none,other,BERK MARINE CTR WAYS,R,0,False
+614L,0,none,other,HORNBLOWER DOCK,L,0,False
+614R,0,none,other,HORNBLOWER DOCK,R,0,False
+618L,0,none,other,HORNBLOWER DOCK,L,0,False
+619L,2,5ft_or_wider,res,SACRAMENTO ST,L,0,True
+619R,1,5ft_or_wider,res,SACRAMENTO ST,R,0,True
+620L,2,5ft_or_wider,res,TALBOT AVE,L,0,True
+620R,1,5ft_or_wider,res,TALBOT AVE,R,0,True
+623L,2,5ft_or_wider,res,CEDAR ST,L,0,True
+623R,2,5ft_or_wider,res,CEDAR ST,R,0,True
+624L,2,5ft_or_wider,com,PAGE ST,L,0,True
+624R,3,5ft_or_wider,com,PAGE ST,R,0,True
+625L,4,5ft_or_wider,res,KAINS AVE,L,0,True
+625R,4,5ft_or_wider,res,KAINS AVE,R,0,True
+628L,4,width_unknown,res,CEDAR ST,L,0,True
+628R,4,width_unknown,res,CEDAR ST,R,0,True
+636L,2,5ft_or_wider,res,SANTA FE AVE,L,0,True
+636R,2,trail,res,SANTA FE AVE,R,0,True
+637L,1,5ft_or_wider,res,MASONIC AVE,L,0,True
+637R,1,5ft_or_wider,res,MASONIC AVE,R,0,True
+646L,4,no_sidewalk,res,CHESTNUT ST,L,0,True
+646R,4,5ft_or_wider,res,CHESTNUT ST,R,0,True
+647L,2,5ft_or_wider,man,PAGE ST,L,0,True
+647R,2,5ft_or_wider,man,PAGE ST,R,0,True
+649L,2,5ft_or_wider,res,LINCOLN ST,L,0,True
+649R,2,5ft_or_wider,res,LINCOLN ST,R,0,True
+651L,2,5ft_or_wider,man,PAGE ST,L,0,True
+651R,2,5ft_or_wider,man,PAGE ST,R,0,True
+652L,2,5ft_or_wider,mixres,PAGE ST,L,0,True
+652R,2,5ft_or_wider,mixres,PAGE ST,R,0,True
+653L,4,no_sidewalk,res,CEDAR ST,L,0,True
+653R,4,no_sidewalk,res,CEDAR ST,R,0,True
+654L,4,trail,res,FRANKLIN ST,L,0,True
+654R,4,trail,res,FRANKLIN ST,R,0,True
+656L,3,5ft_or_wider,com,JONES ST,L,0,True
+656R,2,5ft_or_wider,com,JONES ST,R,0,True
+659L,2,no_sidewalk,res,ROSE ST,L,0,True
+659R,3,no_sidewalk,res,ROSE ST,R,0,True
+660L,4,5ft_or_wider,res,CURTIS ST,L,0,True
+660R,3,5ft_or_wider,res,CURTIS ST,R,0,True
+663L,2,width_unknown,com,UNIVERSITY AVE OVERPASS,L,0,True
+663R,3,width_unknown,com,UNIVERSITY AVE OVERPASS,R,0,True
+664R,4,width_unknown,com,UNIVERSITY AVE OVERPASS,R,0,True
+665L,2,width_unknown,com,UNIVERSITY AVE OVERPASS,L,0,True
+665R,2,width_unknown,com,UNIVERSITY AVE OVERPASS,R,0,True
+671L,0,trail,other,HORNBLOWER DOCK,L,0,False
+674L,4,5ft_or_wider,res,HOLLY ST,L,0,True
+674R,4,5ft_or_wider,res,HOLLY ST,R,0,True
+678R,2,width_unknown,man,EASTSHORE HWY,R,0,True
+679L,1,no_sidewalk,man,HEARST AVE,L,0,True
+679R,1,width_unknown,man,HEARST AVE,R,1,True
+680L,2,5ft_or_wider,res,WEST ST,L,0,True
+680R,2,5ft_or_wider,res,WEST ST,R,0,True
+681L,0,5ft_or_wider,res,WEST ST,L,0,False
+681R,0,none,res,WEST ST,R,0,False
+693L,2,no_sidewalk,man,JONES ST,L,0,True
+693R,2,no_sidewalk,man,JONES ST,R,0,True
+694L,2,no_sidewalk,man,JONES ST,L,0,True
+694R,2,no_sidewalk,man,JONES ST,R,0,True
+699R,0,none,other,OCSC SCHOOL DOCK,R,0,False
+703L,0,none,other,BERK MARINE CTR WAYS,L,0,False
+703R,0,none,other,BERK MARINE CTR WAYS,R,0,False
+705L,2,5ft_or_wider,man,CAMELIA ST,L,0,True
+705R,2,5ft_or_wider,man,CAMELIA ST,R,0,True
+706L,3,5ft_or_wider,man,CAMELIA ST,L,0,True
+706R,3,5ft_or_wider,mixres,CAMELIA ST,R,0,True
+707L,4,5ft_or_wider,res,ACTON ST,L,0,True
+707R,3,5ft_or_wider,res,ACTON ST,R,0,True
+708L,3,no_sidewalk,res,PAGE ST,L,0,True
+708R,4,no_sidewalk,res,PAGE ST,R,0,True
+709L,4,trail,res,JUANITA WAY,L,0,True
+709R,5,trail,res,JUANITA WAY,R,0,True
+717L,3,5ft_or_wider,res,PAGE ST,L,0,True
+717R,4,5ft_or_wider,res,PAGE ST,R,0,True
+723L,3,5ft_or_wider,res,MONTEREY AVE,L,0,True
+723R,3,5ft_or_wider,res,MONTEREY AVE,R,0,True
+728L,0,trail,com,WEST ST,L,0,False
+728R,0,trail,com,WEST ST,R,0,False
+730L,1,trail,res,WEST ST,L,0,True
+730R,1,trail,res,WEST ST,R,0,True
+731L,3,trail,res,WEST ST,L,0,True
+731R,3,trail,res,WEST ST,R,0,True
+732L,0,5ft_or_wider,res,WEST ST,L,0,False
+732R,2,5ft_or_wider,res,WEST ST,R,0,True
+736L,0,under_5ft,res,WEST ST,L,0,False
+736R,0,under_5ft,res,WEST ST,R,0,False
+738L,0,under_5ft,res,WEST ST,L,0,False
+738R,0,under_5ft,res,WEST ST,R,0,False
+748L,0,5ft_or_wider,mixres,UNNAMED ALLEY,L,0,False
+748R,0,5ft_or_wider,mixres,UNNAMED ALLEY,R,0,False
+758L,4,5ft_or_wider,res,ROSE ST,L,0,True
+758R,4,5ft_or_wider,res,ROSE ST,R,0,True
+759L,4,5ft_or_wider,res,BELVEDERE AVE,L,0,True
+759R,4,5ft_or_wider,res,BELVEDERE AVE,R,0,True
+760L,4,5ft_or_wider,res,JONES ST,L,0,True
+760R,4,5ft_or_wider,res,JONES ST,R,0,True
+771L,2,5ft_or_wider,res,CEDAR ST,L,0,True
+771R,2,5ft_or_wider,res,CEDAR ST,R,0,True
+772L,4,5ft_or_wider,res,PAGE ST,L,0,True
+772R,4,5ft_or_wider,res,PAGE ST,R,0,True
+774L,3,5ft_or_wider,res,CALIFORNIA ST,L,0,True
+774R,3,5ft_or_wider,res,CALIFORNIA ST,R,0,True
+776L,4,width_unknown,man,GILMAN ST,L,0,True
+776R,3,5ft_or_wider,man,GILMAN ST,R,0,True
+777L,3,no_data,res,ROSE ST,L,0,True
+777R,3,5ft_or_wider,res,ROSE ST,R,0,True
+778L,3,5ft_or_wider,res,EVELYN AVE,L,0,True
+778R,3,5ft_or_wider,res,EVELYN AVE,R,0,True
+781L,2,5ft_or_wider,res,ACTON ST,L,0,True
+781R,2,5ft_or_wider,res,ACTON ST,R,0,True
+789L,3,5ft_or_wider,res,CHESTNUT ST,L,0,True
+789R,4,5ft_or_wider,res,CHESTNUT ST,R,0,True
+790L,2,5ft_or_wider,res,CEDAR ST,L,0,True
+790R,2,5ft_or_wider,res,CEDAR ST,R,0,True
+793L,4,5ft_or_wider,res,CALIFORNIA ST,L,0,True
+793R,4,5ft_or_wider,res,CALIFORNIA ST,R,0,True
+795L,1,5ft_or_wider,man,CAMELIA ST,L,0,True
+795R,1,5ft_or_wider,man,CAMELIA ST,R,0,True
+796L,2,5ft_or_wider,man,CAMELIA ST,L,0,True
+796R,2,5ft_or_wider,man,CAMELIA ST,R,1,True
+797L,3,5ft_or_wider,res,PAGE ST,L,0,True
+797R,4,5ft_or_wider,res,PAGE ST,R,0,True
+800L,2,5ft_or_wider,res,SACRAMENTO ST,L,0,True
+800R,2,5ft_or_wider,res,SACRAMENTO ST,R,0,True
+801L,2,width_unknown,res,HOPKINS ST,L,0,True
+801R,2,width_unknown,res,HOPKINS ST,R,0,True
+803L,2,5ft_or_wider,res,PAGE ST,L,0,True
+803R,2,5ft_or_wider,res,PAGE ST,R,0,True
+807L,3,5ft_or_wider,res,ROSE ST,L,0,True
+807R,3,5ft_or_wider,res,ROSE ST,R,0,True
+814L,3,5ft_or_wider,man,CAMELIA ST,L,0,True
+814R,3,5ft_or_wider,res,CAMELIA ST,R,0,True
+817L,4,5ft_or_wider,res,PAGE ST,L,0,True
+817R,4,5ft_or_wider,res,PAGE ST,R,0,True
+818R,2,trail,other,GILMAN ST,R,0,True
+820L,2,trail,res,KEONCREST DR,L,0,True
+820R,2,5ft_or_wider,res,KEONCREST DR,R,0,True
+821L,2,5ft_or_wider,res,HOPKINS ST,L,0,True
+821R,2,5ft_or_wider,res,HOPKINS ST,R,0,True
+823L,2,5ft_or_wider,res,CORNELL AVE,L,0,True
+823R,3,5ft_or_wider,res,CORNELL AVE,R,0,True
+829L,4,5ft_or_wider,res,ACTON ST,L,0,True
+829R,3,5ft_or_wider,res,ACTON ST,R,0,True
+833L,3,trail,res,ORDWAY ST,L,0,True
+833R,4,5ft_or_wider,res,ORDWAY ST,R,0,True
+836L,4,5ft_or_wider,res,CURTIS ST,L,0,True
+836R,5,5ft_or_wider,res,CURTIS ST,R,0,True
+837L,4,5ft_or_wider,com,GILMAN ST,L,0,True
+837R,4,5ft_or_wider,com,GILMAN ST,R,0,True
+839L,4,5ft_or_wider,res,KAINS AVE,L,0,True
+839R,4,5ft_or_wider,res,KAINS AVE,R,0,True
+847L,3,5ft_or_wider,res,BUENA AVE,L,0,True
+847R,3,5ft_or_wider,res,BUENA AVE,R,0,True
+848L,2,5ft_or_wider,res,CALIFORNIA ST,L,0,True
+848R,2,5ft_or_wider,res,CALIFORNIA ST,R,0,True
+856L,3,5ft_or_wider,res,ADA ST,L,0,True
+856R,4,5ft_or_wider,res,ADA ST,R,0,True
+857L,3,5ft_or_wider,res,ACTON ST,L,0,True
+857R,3,5ft_or_wider,res,ACTON ST,R,0,True
+861L,4,5ft_or_wider,res,STANNAGE AVE,L,0,True
+861R,4,5ft_or_wider,res,STANNAGE AVE,R,0,True
+867L,1,5ft_or_wider,res,BUENA AVE,L,0,True
+867R,1,5ft_or_wider,res,BUENA AVE,R,0,True
+868L,2,5ft_or_wider,res,CORNELL AVE,L,0,True
+868R,4,5ft_or_wider,res,CORNELL AVE,R,0,True
+869L,2,5ft_or_wider,res,SANTA FE AVE,L,0,True
+869R,2,5ft_or_wider,res,SANTA FE AVE,R,0,True
+874L,3,5ft_or_wider,man,GILMAN ST,L,0,True
+874R,3,5ft_or_wider,man,GILMAN ST,R,16,True
+875L,2,5ft_or_wider,res,ROSE ST,L,0,True
+875R,3,5ft_or_wider,res,ROSE ST,R,0,True
+876L,3,5ft_or_wider,res,HOLLY ST,L,0,True
+876R,4,5ft_or_wider,res,HOLLY ST,R,0,True
+877L,3,5ft_or_wider,res,CAMELIA ST,L,0,True
+877R,3,5ft_or_wider,res,CAMELIA ST,R,0,True
+886L,2,5ft_or_wider,res,HOPKINS ST,L,0,True
+886R,2,5ft_or_wider,res,HOPKINS ST,R,0,True
+889L,0,5ft_or_wider,res,NORTHSIDE AVE,L,0,False
+889R,2,5ft_or_wider,res,NORTHSIDE AVE,R,0,True
+890L,3,5ft_or_wider,res,ROSE ST,L,0,True
+890R,4,5ft_or_wider,res,ROSE ST,R,0,True
+891L,3,5ft_or_wider,res,CALIFORNIA ST,L,0,True
+891R,3,5ft_or_wider,res,CALIFORNIA ST,R,0,True
+894L,3,width_unknown,res,ACTON ST,L,0,True
+894R,2,width_unknown,res,ACTON ST,R,0,True
+901L,2,5ft_or_wider,res,ADA ST,L,0,True
+901R,4,5ft_or_wider,res,ADA ST,R,0,True
+902L,4,5ft_or_wider,res,SACRAMENTO ST,L,0,True
+904L,2,no_data,res,ROSE ST,L,0,True
+905L,3,5ft_or_wider,res,CAMELIA ST,L,0,True
+905R,1,5ft_or_wider,res,CAMELIA ST,R,0,True
+941L,3,5ft_or_wider,res,ALBINA AVE,L,0,True
+941R,2,5ft_or_wider,res,ALBINA AVE,R,0,True
+942L,2,5ft_or_wider,res,LINCOLN ST,L,0,True
+942R,1,5ft_or_wider,res,LINCOLN ST,R,0,True
+943L,2,5ft_or_wider,res,SACRAMENTO ST,L,0,True
+943R,3,5ft_or_wider,res,SACRAMENTO ST,R,0,True
+944L,4,5ft_or_wider,res,HEARST AVE,L,0,True
+944R,4,5ft_or_wider,res,HEARST AVE,R,0,True
+945L,2,5ft_or_wider,res,JONES ST,L,0,True
+945R,2,5ft_or_wider,res,JONES ST,R,0,True
+946L,2,width_unknown,man,VIRGINIA ST,L,0,True
+946R,3,width_unknown,man,VIRGINIA ST,R,0,True
+947L,4,5ft_or_wider,res,HEARST AVE,L,0,True
+947R,4,5ft_or_wider,res,HEARST AVE,R,0,True
+948L,1,5ft_or_wider,com,JONES ST,L,0,True
+948R,0,5ft_or_wider,com,JONES ST,R,0,False
+950L,2,5ft_or_wider,res,NEILSON ST,L,0,True
+950R,2,5ft_or_wider,res,NEILSON ST,R,0,True
+952L,4,5ft_or_wider,res,VIRGINIA ST,L,0,True
+952R,4,5ft_or_wider,res,VIRGINIA ST,R,0,True
+953L,3,5ft_or_wider,mixres,ACTON ST,L,0,True
+953R,3,5ft_or_wider,res,ACTON ST,R,0,True
+958L,2,width_unknown,man,GILMAN ST,L,0,True
+958R,3,no_sidewalk,man,GILMAN ST,R,0,True
+960L,2,5ft_or_wider,res,GILMAN ST,L,0,True
+960R,2,5ft_or_wider,res,GILMAN ST,R,0,True
+961L,4,5ft_or_wider,res,GILMAN ST,L,0,True
+961R,4,5ft_or_wider,res,GILMAN ST,R,0,True
+962L,4,5ft_or_wider,res,SACRAMENTO ST,L,0,True
+962R,3,5ft_or_wider,res,SACRAMENTO ST,R,0,True
+963L,4,5ft_or_wider,res,GILMAN ST,L,0,True
+963R,4,5ft_or_wider,res,GILMAN ST,R,0,True
+965L,4,width_unknown,res,CEDAR ST,L,0,True
+965R,4,5ft_or_wider,res,CEDAR ST,R,0,True
+967L,3,5ft_or_wider,res,DELAWARE ST,L,0,True
+967R,2,5ft_or_wider,res,DELAWARE ST,R,0,True
+968L,1,5ft_or_wider,man,CAMELIA ST,L,0,True
+968R,1,5ft_or_wider,mixres,CAMELIA ST,R,0,True
+977L,4,width_unknown,man,JONES ST,L,0,True
+977R,4,width_unknown,man,JONES ST,R,0,True
+980L,2,width_unknown,mixres,CEDAR ST,L,0,True
+980R,1,5ft_or_wider,mixres,CEDAR ST,R,0,True
+981L,2,5ft_or_wider,mixres,JONES ST,L,0,True
+981R,2,5ft_or_wider,mixres,JONES ST,R,0,True
+982L,4,width_unknown,res,JONES ST,L,0,True
+982R,4,width_unknown,res,JONES ST,R,0,True
+983L,4,5ft_or_wider,res,STANNAGE AVE,L,0,True
+983R,4,5ft_or_wider,res,STANNAGE AVE,R,0,True
+984L,4,5ft_or_wider,res,CATHERINE DR,L,0,True
+984R,4,5ft_or_wider,res,CATHERINE DR,R,0,True
+986L,2,5ft_or_wider,mixres,JONES ST,L,0,True
+986R,2,5ft_or_wider,mixres,JONES ST,R,0,True
+991L,3,5ft_or_wider,com,SANTA FE AVE,L,3,True
+991R,2,5ft_or_wider,res,SANTA FE AVE,R,0,True
+993L,4,5ft_or_wider,com,GILMAN ST,L,0,True
+993R,3,5ft_or_wider,com,GILMAN ST,R,0,True
+994L,4,5ft_or_wider,res,GILMAN ST,L,0,True
+994R,4,5ft_or_wider,res,GILMAN ST,R,0,True
+995L,4,5ft_or_wider,com,GILMAN ST,L,0,True
+995R,4,5ft_or_wider,com,GILMAN ST,R,0,True
+1001L,3,5ft_or_wider,res,PAGE ST,L,0,True
+1001R,3,5ft_or_wider,res,PAGE ST,R,0,True
+1002L,4,5ft_or_wider,res,ADDISON ST,L,0,True
+1002R,4,5ft_or_wider,res,ADDISON ST,R,0,True
+1003L,4,5ft_or_wider,res,KEONCREST DR,L,0,True
+1003R,4,5ft_or_wider,res,KEONCREST DR,R,0,True
+1004L,3,5ft_or_wider,res,HOPKINS ST,L,0,True
+1004R,4,5ft_or_wider,res,HOPKINS ST,R,0,True
+1006L,6,5ft_or_wider,res,KEONCREST DR,L,0,True
+1006R,4,5ft_or_wider,res,KEONCREST DR,R,0,True
+1007L,2,5ft_or_wider,man,CAMELIA ST,L,0,True
+1007R,2,5ft_or_wider,res,CAMELIA ST,R,0,True
+1008L,4,width_unknown,res,CURTIS ST,L,0,True
+1008R,4,width_unknown,res,CURTIS ST,R,0,True
+1009L,5,5ft_or_wider,res,WATKINS ST,L,0,True
+1009R,3,5ft_or_wider,res,WATKINS ST,R,0,True
+1010L,5,5ft_or_wider,res,HOPKINS CT,L,0,True
+1010R,3,5ft_or_wider,res,HOPKINS CT,R,0,True
+1011L,4,5ft_or_wider,res,GILMAN ST,L,0,True
+1011R,3,5ft_or_wider,res,GILMAN ST,R,0,True
+1012L,2,5ft_or_wider,res,VIRGINIA ST,L,0,True
+1012R,2,5ft_or_wider,res,VIRGINIA ST,R,0,True
+1016L,0,5ft_or_wider,com,PAGE ST,L,0,False
+1016R,1,5ft_or_wider,com,PAGE ST,R,0,True
+1017L,4,no_sidewalk,man,HARRISON ST,L,0,True
+1017R,4,no_sidewalk,man,HARRISON ST,R,0,True
+1018L,4,5ft_or_wider,res,CORNELL AVE,L,0,True
+1018R,4,5ft_or_wider,res,CORNELL AVE,R,0,True
+1027L,5,5ft_or_wider,res,LINCOLN ST,L,0,True
+1027R,2,5ft_or_wider,res,LINCOLN ST,R,0,True
+1031L,2,5ft_or_wider,res,BUENA AVE,L,0,True
+1031R,2,5ft_or_wider,res,BUENA AVE,R,0,True
+1045L,1,5ft_or_wider,mixres,PAGE ST,L,0,True
+1045R,1,5ft_or_wider,mixres,PAGE ST,R,0,True
+1046L,1,5ft_or_wider,mixres,PAGE ST,L,0,True
+1046R,1,5ft_or_wider,mixres,PAGE ST,R,0,True
+1048L,2,width_unknown,res,HOPKINS ST,L,0,True
+1048R,2,width_unknown,res,HOPKINS ST,R,0,True
+1049L,1,5ft_or_wider,res,CORNELL AVE,L,0,True
+1049R,2,5ft_or_wider,res,CORNELL AVE,R,0,True
+1050L,2,5ft_or_wider,res,KEONCREST DR,L,0,True
+1050R,2,trail,res,KEONCREST DR,R,0,True
+1051L,5,5ft_or_wider,res,ACTON ST,L,0,True
+1051R,3,5ft_or_wider,res,ACTON ST,R,0,True
+1053L,3,5ft_or_wider,res,ROSE ST,L,0,True
+1053R,4,5ft_or_wider,res,ROSE ST,R,0,True
+1064L,2,5ft_or_wider,mixres,HEARST AVE,L,0,True
+1064R,2,5ft_or_wider,mixres,HEARST AVE,R,0,True
+1075L,4,5ft_or_wider,res,CEDAR ST,L,0,True
+1075R,4,5ft_or_wider,res,CEDAR ST,R,0,True
+1080L,3,5ft_or_wider,res,VIRGINIA ST,L,0,True
+1080R,3,5ft_or_wider,mixres,VIRGINIA ST,R,0,True
+1081L,4,5ft_or_wider,res,KAINS AVE,L,0,True
+1081R,4,5ft_or_wider,res,KAINS AVE,R,0,True
+1082L,4,5ft_or_wider,res,HEARST AVE,L,0,True
+1082R,4,5ft_or_wider,res,HEARST AVE,R,0,True
+1083L,0,5ft_or_wider,man,UNNAMED ALLEY,L,0,False
+1083R,0,5ft_or_wider,man,UNNAMED ALLEY,R,0,False
+1084L,2,no_sidewalk,man,CAMELIA ST,L,0,True
+1084R,2,no_sidewalk,man,CAMELIA ST,R,0,True
+1116L,3,width_unknown,res,HOPKINS ST,L,0,True
+1116R,4,width_unknown,res,HOPKINS ST,R,0,True
+1120R,4,width_unknown,man,EASTSHORE HWY,R,0,True
+1126L,4,5ft_or_wider,res,GILMAN ST,L,0,True
+1126R,4,5ft_or_wider,res,GILMAN ST,R,0,True
+1128L,2,5ft_or_wider,res,PERALTA AVE,L,0,True
+1128R,2,5ft_or_wider,res,PERALTA AVE,R,0,True
+1129L,3,width_unknown,man,GILMAN ST,L,0,True
+1129R,4,no_sidewalk,man,GILMAN ST,R,0,True
+1130L,4,5ft_or_wider,res,ADDISON ST,L,0,True
+1130R,4,5ft_or_wider,res,ADDISON ST,R,0,True
+1132L,3,5ft_or_wider,res,STANNAGE AVE,L,0,True
+1132R,4,5ft_or_wider,res,STANNAGE AVE,R,0,True
+1133L,1,no_data,mixres,DELAWARE ST,L,0,True
+1133R,1,no_data,res,DELAWARE ST,R,0,True
+1134L,4,5ft_or_wider,res,DELAWARE ST,L,0,True
+1134R,4,5ft_or_wider,res,DELAWARE ST,R,0,True
+1141L,4,width_unknown,res,CEDAR ST,L,0,True
+1141R,3,width_unknown,res,CEDAR ST,R,0,True
+1149L,4,5ft_or_wider,res,CALIFORNIA ST,L,0,True
+1149R,4,5ft_or_wider,res,CALIFORNIA ST,R,0,True
+1161L,4,trail,res,ROSE ST,L,0,True
+1161R,2,trail,res,ROSE ST,R,0,True
+1162L,4,5ft_or_wider,res,CAMELIA ST,L,0,True
+1162R,4,5ft_or_wider,res,CAMELIA ST,R,0,True
+1163L,4,5ft_or_wider,res,CAMELIA ST,L,0,True
+1163R,4,5ft_or_wider,res,CAMELIA ST,R,0,True
+1167L,4,no_sidewalk,man,PAGE ST,L,0,True
+1167R,4,no_sidewalk,man,PAGE ST,R,0,True
+1168L,2,5ft_or_wider,com,UNNAMED ALLEY,L,0,True
+1168R,2,5ft_or_wider,res,UNNAMED ALLEY,R,0,True
+1169L,3,width_unknown,mixres,DELAWARE ST,L,0,True
+1170L,0,5ft_or_wider,man,UNNAMED ALLEY,L,0,False
+1170R,0,5ft_or_wider,man,UNNAMED ALLEY,R,0,False
+1171L,0,5ft_or_wider,mixres,UNNAMED ALLEY,L,0,False
+1171R,0,5ft_or_wider,mixres,UNNAMED ALLEY,R,0,False
+1172L,4,5ft_or_wider,res,HEARST AVE,L,0,True
+1172R,4,5ft_or_wider,res,HEARST AVE,R,0,True
+1173L,3,5ft_or_wider,res,VIRGINIA ST,L,0,True
+1173R,4,5ft_or_wider,res,VIRGINIA ST,R,0,True
+1174L,4,5ft_or_wider,com,CAMELIA ST,L,0,True
+1174R,4,5ft_or_wider,res,CAMELIA ST,R,0,True
+1178L,4,trail,res,JUANITA WAY,L,0,True
+1178R,3,trail,res,JUANITA WAY,R,0,True
+1179L,4,5ft_or_wider,res,ROSE ST,L,0,True
+1179R,3,5ft_or_wider,res,ROSE ST,R,0,True
+1197L,1,5ft_or_wider,mixres,VIRGINIA ST,L,0,True
+1197R,1,5ft_or_wider,mixres,VIRGINIA ST,R,0,True
+1199L,3,5ft_or_wider,res,VIRGINIA ST,L,0,True
+1199R,4,5ft_or_wider,res,VIRGINIA ST,R,0,True
+1203L,2,5ft_or_wider,res,MIRAMONTE CT,L,0,True
+1203R,2,5ft_or_wider,res,MIRAMONTE CT,R,0,True
+1211L,4,no_sidewalk,man,HARRISON ST,L,0,True
+1211R,3,no_sidewalk,man,HARRISON ST,R,0,True
+1212L,0,no_sidewalk,man,CEDARWOOD LN,L,0,False
+1212R,0,no_sidewalk,man,CEDARWOOD LN,R,0,False
+1213L,2,no_sidewalk,man,HARRISON ST,L,0,True
+1213R,2,no_sidewalk,man,HARRISON ST,R,0,True
+1217L,2,5ft_or_wider,man,CAMELIA ST,L,0,True
+1217R,2,5ft_or_wider,res,CAMELIA ST,R,0,True
+1218L,4,width_unknown,res,CEDAR ST,L,0,True
+1218R,4,5ft_or_wider,res,CEDAR ST,R,0,True
+1222L,1,5ft_or_wider,res,JAYNES ST,L,0,True
+1222R,3,5ft_or_wider,res,JAYNES ST,R,0,True
+1223L,4,5ft_or_wider,res,CEDAR ST,L,0,True
+1223R,4,5ft_or_wider,res,CEDAR ST,R,0,True
+1225L,2,5ft_or_wider,com,CAMELIA ST,L,0,True
+1225R,2,5ft_or_wider,res,CAMELIA ST,R,0,True
+1226L,2,5ft_or_wider,man,GILMAN ST,L,0,True
+1226R,2,5ft_or_wider,man,GILMAN ST,R,0,True
+1227L,2,5ft_or_wider,man,GILMAN ST,L,0,True
+1227R,2,5ft_or_wider,man,GILMAN ST,R,0,True
+1228L,0,5ft_or_wider,mixres,UNNAMED ALLEY,L,0,False
+1228R,0,5ft_or_wider,mixres,UNNAMED ALLEY,R,0,False
+1231L,2,5ft_or_wider,man,CAMELIA ST,L,0,True
+1231R,2,5ft_or_wider,mixres,CAMELIA ST,R,0,True
+1253L,2,no_sidewalk,res,ALLSTON WAY,L,0,True
+1253R,2,5ft_or_wider,res,ALLSTON WAY,R,0,True
+1254L,3,width_unknown,res,STANNAGE AVE,L,0,True
+1254R,4,width_unknown,res,STANNAGE AVE,R,0,True
+1255L,4,5ft_or_wider,res,ROSE ST,L,0,True
+1255R,2,5ft_or_wider,res,ROSE ST,R,0,True
+1256L,4,5ft_or_wider,res,ACTON ST,L,0,True
+1256R,4,5ft_or_wider,res,ACTON ST,R,0,True
+1257L,4,5ft_or_wider,res,SACRAMENTO ST,L,0,True
+1257R,3,5ft_or_wider,res,SACRAMENTO ST,R,0,True
+1292L,2,5ft_or_wider,res,DELAWARE ST,L,0,True
+1292R,2,5ft_or_wider,res,DELAWARE ST,R,0,True
+1301L,4,5ft_or_wider,res,SACRAMENTO ST,L,0,True
+1301R,2,5ft_or_wider,mixres,SACRAMENTO ST,R,0,True
+1302L,4,5ft_or_wider,man,CAMELIA ST,L,0,True
+1302R,4,5ft_or_wider,res,CAMELIA ST,R,0,True
+1303L,4,5ft_or_wider,res,JONES ST,L,0,True
+1303R,4,5ft_or_wider,res,JONES ST,R,0,True
+1319L,2,5ft_or_wider,com,HOPKINS ST,L,0,True
+1319R,3,5ft_or_wider,com,HOPKINS ST,R,0,True
+1322L,2,5ft_or_wider,res,HOPKINS ST,L,0,True
+1322R,2,width_unknown,res,HOPKINS ST,R,0,True
+1323L,4,5ft_or_wider,res,ROSE ST,L,0,True
+1323R,4,5ft_or_wider,res,ROSE ST,R,0,True
+1324L,4,5ft_or_wider,res,VIRGINIA ST,L,0,True
+1324R,4,5ft_or_wider,res,VIRGINIA ST,R,0,True
+1325L,3,no_sidewalk,res,HOPKINS ST,L,0,True
+1326L,2,5ft_or_wider,res,HOPKINS ST,L,0,True
+1326R,3,5ft_or_wider,res,HOPKINS ST,R,0,True
+1328L,3,5ft_or_wider,res,DELAWARE ST,L,0,True
+1328R,2,5ft_or_wider,res,DELAWARE ST,R,0,True
+1329L,3,width_unknown,man,GILMAN ST,L,0,True
+1329R,2,5ft_or_wider,man,GILMAN ST,R,0,True
+1330L,3,width_unknown,mixres,HEARST AVE,L,0,True
+1330R,3,width_unknown,com,HEARST AVE,R,0,True
+1336L,1,width_unknown,man,HEARST AVE,L,0,True
+1336R,1,width_unknown,man,HEARST AVE,R,0,True
+1337L,4,5ft_or_wider,res,JONES ST,L,0,True
+1337R,4,5ft_or_wider,res,JONES ST,R,0,True
+1350L,0,no_sidewalk,man,PARK WAY,L,0,False
+1350R,0,no_sidewalk,man,PARK WAY,R,0,False
+1353L,3,5ft_or_wider,res,ADA ST,L,0,True
+1353R,4,5ft_or_wider,res,ADA ST,R,0,True
+1354L,4,5ft_or_wider,res,CEDAR ST,L,0,True
+1354R,4,5ft_or_wider,res,CEDAR ST,R,0,True
+1355L,2,5ft_or_wider,res,HOPKINS ST,L,0,True
+1355R,3,5ft_or_wider,res,HOPKINS ST,R,0,True
+1356L,2,5ft_or_wider,res,SANTA FE AVE,L,0,True
+1356R,2,5ft_or_wider,res,SANTA FE AVE,R,0,True
+1357L,0,no_sidewalk,com,TEVLIN ST,L,0,False
+1357R,0,no_sidewalk,res,TEVLIN ST,R,0,False
+1358L,2,5ft_or_wider,com,CAMELIA ST,L,0,True
+1358R,2,5ft_or_wider,com,CAMELIA ST,R,0,True
+1359L,2,5ft_or_wider,res,HOPKINS ST,L,0,True
+1359R,2,5ft_or_wider,res,HOPKINS ST,R,0,True
+1360L,2,5ft_or_wider,res,SANTA FE AVE,L,0,True
+1360R,2,5ft_or_wider,res,SANTA FE AVE,R,0,True
+1361L,2,5ft_or_wider,res,VIRGINIA GDNS,L,0,True
+1361R,2,trail,res,VIRGINIA GDNS,R,0,True
+1362L,4,5ft_or_wider,res,TOMLEE DR,L,0,True
+1362R,4,5ft_or_wider,res,TOMLEE DR,R,0,True
+1363L,1,no_sidewalk,man,PARK WAY,L,0,True
+1363R,1,no_sidewalk,man,PARK WAY,R,0,True
+1364L,2,no_sidewalk,man,PARK WAY,L,0,True
+1364R,2,no_sidewalk,man,PARK WAY,R,0,True
+1365L,3,width_unknown,com,GILMAN ST,L,0,True
+1365R,4,no_sidewalk,com,GILMAN ST,R,0,True
+1366L,3,5ft_or_wider,res,ADDISON ST,L,0,True
+1366R,3,5ft_or_wider,res,ADDISON ST,R,0,True
+1409L,2,width_unknown,man,EASTSHORE HWY,L,20,True
+1409R,1,width_unknown,man,EASTSHORE HWY,R,0,True
+1415L,4,no_data,res,GILMAN ST,L,0,True
+1415R,3,5ft_or_wider,res,GILMAN ST,R,0,True
+1416L,1,5ft_or_wider,com,GILMAN ST,L,0,True
+1416R,1,5ft_or_wider,com,GILMAN ST,R,0,True
+1417L,0,no_sidewalk,man,HARRISON ST,L,0,False
+1417R,0,no_sidewalk,man,HARRISON ST,R,0,False
+1421L,2,5ft_or_wider,com,GILMAN ST,L,0,True
+1421R,3,5ft_or_wider,com,GILMAN ST,R,0,True
+1422L,4,5ft_or_wider,res,KAINS AVE,L,0,True
+1422R,4,5ft_or_wider,res,KAINS AVE,R,0,True
+1426L,4,no_sidewalk,man,HARRISON ST,L,0,True
+1426R,3,no_sidewalk,man,HARRISON ST,R,0,True
+1432L,3,5ft_or_wider,res,PERALTA AVE,L,0,True
+1432R,3,5ft_or_wider,res,PERALTA AVE,R,0,True
+1434L,4,5ft_or_wider,res,GILMAN ST,L,0,True
+1434R,4,5ft_or_wider,res,GILMAN ST,R,0,True
+1435L,4,5ft_or_wider,res,CORNELL AVE,L,0,True
+1435R,4,5ft_or_wider,res,CORNELL AVE,R,0,True
+1444L,2,5ft_or_wider,com,HOPKINS ST,L,0,True
+1444R,2,5ft_or_wider,com,HOPKINS ST,R,0,True
+1446L,2,under_5ft,res,TEVLIN ST,L,0,True
+1446R,2,under_5ft,res,TEVLIN ST,R,0,True
+1458L,4,5ft_or_wider,res,GILMAN ST,L,0,True
+1458R,4,5ft_or_wider,res,GILMAN ST,R,0,True
+1459L,4,5ft_or_wider,res,STANNAGE AVE,L,0,True
+1459R,4,5ft_or_wider,res,STANNAGE AVE,R,0,True
+1461L,4,no_sidewalk,man,HARRISON ST,L,0,True
+1461R,4,no_sidewalk,man,HARRISON ST,R,0,True
+1462L,5,5ft_or_wider,res,SACRAMENTO ST,L,0,True
+1462R,2,5ft_or_wider,res,SACRAMENTO ST,R,0,True
+1463L,4,no_sidewalk,man,HARRISON ST,L,0,True
+1463R,2,no_sidewalk,man,HARRISON ST,R,0,True
+1464L,0,trail,res,,L,0,False
+1464R,0,trail,res,,R,0,False
+1465L,2,no_sidewalk,man,EASTSHORE HWY,L,62,True
+1465R,1,no_sidewalk,man,EASTSHORE HWY,R,0,True
+1472L,1,5ft_or_wider,res,NEILSON ST,L,0,True
+1472R,2,5ft_or_wider,res,NEILSON ST,R,0,True
+1494L,2,trail,other,BUCHANAN ST,L,0,True
+1497L,0,5ft_or_wider,com,UNNAMED ALLEY,L,0,False
+1497R,0,5ft_or_wider,res,UNNAMED ALLEY,R,0,False
+1498L,0,5ft_or_wider,mixres,UNNAMED ALLEY,L,0,False
+1498R,0,5ft_or_wider,mixres,UNNAMED ALLEY,R,0,False
+1507L,3,5ft_or_wider,com,HOPKINS ST,L,0,True
+1507R,4,5ft_or_wider,com,HOPKINS ST,R,8,True
+1508L,2,5ft_or_wider,com,CALIFORNIA ST,L,0,True
+1508R,4,5ft_or_wider,com,CALIFORNIA ST,R,0,True
+1511L,4,5ft_or_wider,res,ALBINA AVE,L,0,True
+1511R,3,5ft_or_wider,res,ALBINA AVE,R,0,True
+1512L,4,5ft_or_wider,com,NEILSON ST,L,0,True
+1512R,4,5ft_or_wider,res,NEILSON ST,R,0,True
+1514L,2,no_sidewalk,man,HARRISON ST,L,0,True
+1514R,4,no_sidewalk,man,HARRISON ST,R,0,True
+1532L,2,5ft_or_wider,res,EVELYN AVE,L,0,True
+1532R,2,5ft_or_wider,res,EVELYN AVE,R,0,True
+1533L,2,5ft_or_wider,res,CURTIS ST,L,0,True
+1533R,2,5ft_or_wider,res,CURTIS ST,R,0,True
+1543L,4,5ft_or_wider,res,KAINS AVE,L,0,True
+1543R,4,5ft_or_wider,res,KAINS AVE,R,0,True
+1544L,2,5ft_or_wider,res,ORDWAY ST,L,0,True
+1544R,2,5ft_or_wider,res,ORDWAY ST,R,0,True
+1551L,4,5ft_or_wider,res,STANNAGE AVE,L,0,True
+1551R,4,5ft_or_wider,res,STANNAGE AVE,R,0,True
+1673L,3,5ft_or_wider,res,OREGON ST,L,0,True
+1673R,4,5ft_or_wider,res,OREGON ST,R,0,True
+1764L,4,5ft_or_wider,res,BANCROFT WAY,L,0,True
+1764R,3,5ft_or_wider,res,BANCROFT WAY,R,0,True
+1855L,4,5ft_or_wider,res,BONAR ST,L,0,True
+1855R,4,5ft_or_wider,res,BONAR ST,R,0,True
+1892L,3,5ft_or_wider,res,DOHR ST,L,0,True
+1892R,3,5ft_or_wider,res,DOHR ST,R,0,True
+1893L,4,5ft_or_wider,res,CURTIS ST,L,0,True
+1893R,4,5ft_or_wider,res,CURTIS ST,R,0,True
+1999L,2,5ft_or_wider,res,WARD ST,L,0,True
+1999R,2,no_data,res,WARD ST,R,0,True
+2001L,3,5ft_or_wider,res,DERBY ST,L,0,True
+2001R,2,5ft_or_wider,res,DERBY ST,R,0,True
+2036L,4,5ft_or_wider,man,PARKER ST,L,0,True
+2036R,4,5ft_or_wider,man,PARKER ST,R,0,True
+2055L,0,trail,other,W FRONTAGE RD,L,0,False
+2055R,0,trail,other,W FRONTAGE RD,R,0,False
+2058L,0,5ft_or_wider,res,DERBY ST,L,0,False
+2058R,0,5ft_or_wider,res,DERBY ST,R,0,False
+2066L,4,5ft_or_wider,res,CURTIS ST,L,0,True
+2066R,4,5ft_or_wider,res,CURTIS ST,R,0,True
+2081L,4,5ft_or_wider,res,MABEL ST,L,0,True
+2081R,4,5ft_or_wider,res,MABEL ST,R,0,True
+2082L,3,5ft_or_wider,res,BANCROFT WAY,L,0,True
+2082R,4,5ft_or_wider,res,BANCROFT WAY,R,0,True
+2124L,3,5ft_or_wider,res,PARKER ST,L,0,True
+2124R,4,5ft_or_wider,res,PARKER ST,R,0,True
+2134L,2,5ft_or_wider,com,PARDEE ST,L,0,True
+2134R,3,5ft_or_wider,com,PARDEE ST,R,0,True
+2136L,4,5ft_or_wider,man,CARLETON ST,L,0,True
+2136R,4,5ft_or_wider,mixres,CARLETON ST,R,15,True
+2148L,4,5ft_or_wider,mixres,PARDEE ST,L,0,True
+2148R,4,5ft_or_wider,mixres,PARDEE ST,R,0,True
+2149L,0,5ft_or_wider,man,CARLETON ST,L,0,False
+2149R,0,none,man,CARLETON ST,R,0,False
+2150L,2,5ft_or_wider,man,CARLETON ST,L,0,True
+2150R,2,5ft_or_wider,man,CARLETON ST,R,129,True
+2151L,4,5ft_or_wider,res,SPAULDING AVE,L,0,True
+2151R,3,5ft_or_wider,res,SPAULDING AVE,R,0,True
+2153L,3,5ft_or_wider,com,BANCROFT WAY,L,0,True
+2153R,2,5ft_or_wider,com,BANCROFT WAY,R,0,True
+2154L,0,5ft_or_wider,man,ALLSTON WAY,L,0,False
+2154R,0,5ft_or_wider,man,ALLSTON WAY,R,0,False
+2155L,2,5ft_or_wider,man,ALLSTON WAY,L,0,True
+2155R,2,5ft_or_wider,man,ALLSTON WAY,R,0,True
+2162L,4,5ft_or_wider,res,CARLETON ST,L,0,True
+2162R,4,5ft_or_wider,res,CARLETON ST,R,0,True
+2170L,3,5ft_or_wider,mixres,GRAYSON ST,L,0,True
+2170R,3,5ft_or_wider,mixres,GRAYSON ST,R,0,True
+2171L,2,5ft_or_wider,res,OREGON ST,L,0,True
+2171R,2,5ft_or_wider,res,OREGON ST,R,0,True
+2182L,4,5ft_or_wider,res,DWIGHT WAY,L,0,True
+2182R,4,5ft_or_wider,res,DWIGHT WAY,R,0,True
+2184L,0,5ft_or_wider,res,BLAKE ST,L,0,False
+2184R,0,5ft_or_wider,res,BLAKE ST,R,0,False
+2186L,2,no_sidewalk,res,ACTON ST,L,0,True
+2186R,2,5ft_or_wider,res,ACTON ST,R,0,True
+2187L,2,5ft_or_wider,res,SOJOURNER TRUTH WAY,L,0,True
+2187R,2,5ft_or_wider,res,SOJOURNER TRUTH WAY,R,0,True
+2189L,4,5ft_or_wider,res,PARKER ST,L,0,True
+2189R,5,5ft_or_wider,res,PARKER ST,R,0,True
+2200L,4,5ft_or_wider,res,DWIGHT WAY,L,0,True
+2200R,4,5ft_or_wider,res,DWIGHT WAY,R,0,True
+2211L,4,5ft_or_wider,res,WARD ST,L,0,True
+2211R,3,5ft_or_wider,res,WARD ST,R,0,True
+2215L,4,5ft_or_wider,res,BLAKE ST,L,0,True
+2215R,4,5ft_or_wider,res,BLAKE ST,R,0,True
+2216L,4,5ft_or_wider,res,ACTON ST,L,0,True
+2216R,4,5ft_or_wider,res,ACTON ST,R,0,True
+2223L,3,no_sidewalk,res,WARD ST,L,0,True
+2223R,3,no_sidewalk,res,WARD ST,R,0,True
+2224L,4,no_sidewalk,res,MABEL ST,L,0,True
+2224R,3,no_sidewalk,res,MABEL ST,R,0,True
+2235L,4,5ft_or_wider,res,CHANNING WAY,L,0,True
+2235R,4,5ft_or_wider,res,CHANNING WAY,R,0,True
+2247L,1,5ft_or_wider,res,BANCROFT WAY,L,0,True
+2247R,2,5ft_or_wider,res,BANCROFT WAY,R,0,True
+2252L,1,5ft_or_wider,man,PARKER ST,L,0,True
+2252R,2,5ft_or_wider,man,PARKER ST,R,0,True
+2255L,4,5ft_or_wider,res,BLAKE ST,L,0,True
+2255R,4,5ft_or_wider,res,BLAKE ST,R,0,True
+2256L,4,5ft_or_wider,res,MABEL ST,L,0,True
+2256R,3,5ft_or_wider,res,MABEL ST,R,0,True
+2257L,0,5ft_or_wider,res,PARKER ST,L,0,False
+2257R,0,5ft_or_wider,res,PARKER ST,R,0,False
+2259L,2,5ft_or_wider,res,DWIGHT WAY,L,0,True
+2259R,4,5ft_or_wider,man,DWIGHT WAY,R,0,True
+2265L,4,5ft_or_wider,res,BYRON ST,L,0,True
+2265R,4,5ft_or_wider,res,BYRON ST,R,0,True
+2274L,4,5ft_or_wider,res,WALLACE ST,L,0,True
+2274R,4,5ft_or_wider,res,WALLACE ST,R,0,True
+2276L,3,no_sidewalk,res,MATHEWS ST,L,0,True
+2276R,3,no_sidewalk,res,MATHEWS ST,R,0,True
+2286L,4,5ft_or_wider,res,DOHR ST,L,0,True
+2286R,3,5ft_or_wider,res,DOHR ST,R,0,True
+2287L,4,5ft_or_wider,man,CARLETON ST,L,0,True
+2287R,4,5ft_or_wider,mixres,CARLETON ST,R,15,True
+2289L,4,5ft_or_wider,res,WARD ST,L,0,True
+2289R,4,5ft_or_wider,res,WARD ST,R,0,True
+2291L,2,5ft_or_wider,com,CARLETON ST,L,0,True
+2291R,2,5ft_or_wider,com,CARLETON ST,R,0,True
+2294L,2,5ft_or_wider,res,DERBY ST,L,0,True
+2294R,2,5ft_or_wider,res,DERBY ST,R,0,True
+2296L,2,5ft_or_wider,res,MABEL ST,L,0,True
+2296R,2,5ft_or_wider,res,MABEL ST,R,0,True
+2307L,2,5ft_or_wider,res,DERBY ST,L,0,True
+2307R,2,5ft_or_wider,res,DERBY ST,R,0,True
+2308L,2,5ft_or_wider,res,ACTON ST,L,0,True
+2308R,2,5ft_or_wider,res,ACTON ST,R,0,True
+2317L,2,5ft_or_wider,res,DERBY ST,L,0,True
+2317R,2,5ft_or_wider,res,DERBY ST,R,0,True
+2320L,3,5ft_or_wider,res,CARLETON ST,L,0,True
+2320R,2,5ft_or_wider,res,CARLETON ST,R,0,True
+2321L,4,5ft_or_wider,res,MATHEWS ST,L,0,True
+2321R,4,5ft_or_wider,res,MATHEWS ST,R,0,True
+2327L,4,5ft_or_wider,res,CARLETON ST,L,0,True
+2327R,4,5ft_or_wider,res,CARLETON ST,R,0,True
+2328L,2,5ft_or_wider,res,MABEL ST,L,0,True
+2328R,2,5ft_or_wider,res,MABEL ST,R,0,True
+2344L,4,5ft_or_wider,res,ACTON ST,L,0,True
+2344R,4,5ft_or_wider,res,ACTON ST,R,0,True
+2383R,0,5ft_or_wider,res,SACRAMENTO ST,R,0,False
+2407L,4,5ft_or_wider,mixres,PARDEE ST,L,0,True
+2407R,4,5ft_or_wider,mixres,PARDEE ST,R,0,True
+2435L,3,no_data,mixres,DWIGHT WAY,L,0,True
+2435R,3,no_data,man,DWIGHT WAY,R,0,True
+2456L,4,5ft_or_wider,man,PARKER ST,L,0,True
+2456R,4,5ft_or_wider,man,PARKER ST,R,0,True
+2481L,4,5ft_or_wider,res,STANTON ST,L,0,True
+2481R,4,5ft_or_wider,res,STANTON ST,R,0,True
+2490L,4,5ft_or_wider,man,CHANNING WAY,L,0,True
+2490R,4,5ft_or_wider,mixres,CHANNING WAY,R,0,True
+2524L,4,5ft_or_wider,res,DWIGHT WAY,L,0,True
+2524R,4,5ft_or_wider,res,DWIGHT WAY,R,0,True
+2525L,2,5ft_or_wider,res,ACROFT CT,L,0,True
+2525R,2,5ft_or_wider,res,ACROFT CT,R,0,True
+2530L,3,5ft_or_wider,res,OREGON ST,L,0,True
+2530R,4,5ft_or_wider,res,OREGON ST,R,0,True
+2577L,3,no_sidewalk,res,WARD ST,L,0,True
+2577R,3,no_sidewalk,res,WARD ST,R,0,True
+2578L,3,5ft_or_wider,res,MATHEWS ST,L,0,True
+2578R,3,5ft_or_wider,res,MATHEWS ST,R,0,True
+2586L,3,5ft_or_wider,com,GRAYSON ST,L,0,True
+2586R,3,5ft_or_wider,com,GRAYSON ST,R,0,True
+2632L,3,5ft_or_wider,res,WARD ST,L,0,True
+2632R,3,5ft_or_wider,res,WARD ST,R,0,True
+2633L,4,5ft_or_wider,res,CHANNING WAY,L,0,True
+2633R,4,5ft_or_wider,res,CHANNING WAY,R,0,True
+2642L,3,5ft_or_wider,res,WARD ST,L,0,True
+2642R,3,5ft_or_wider,res,WARD ST,R,0,True
+2653L,4,5ft_or_wider,res,WARD ST,L,0,True
+2653R,3,5ft_or_wider,res,WARD ST,R,0,True
+2658L,3,5ft_or_wider,man,PARKER ST,L,0,True
+2658R,4,5ft_or_wider,man,PARKER ST,R,0,True
+2707L,1,5ft_or_wider,res,CHANNING WAY,L,0,True
+2707R,1,5ft_or_wider,res,CHANNING WAY,R,0,True
+2719L,4,5ft_or_wider,res,ACTON ST,L,0,True
+2719R,4,5ft_or_wider,res,ACTON ST,R,0,True
+2743L,4,5ft_or_wider,res,DWIGHT WAY,L,0,True
+2743R,4,5ft_or_wider,res,DWIGHT WAY,R,0,True
+2789L,3,5ft_or_wider,res,BANCROFT WAY,L,0,True
+2789R,3,5ft_or_wider,res,BANCROFT WAY,R,0,True
+2790L,4,5ft_or_wider,mixres,PARDEE ST,L,0,True
+2790R,4,5ft_or_wider,mixres,PARDEE ST,R,0,True
+2828L,2,5ft_or_wider,res,CARLETON ST,L,0,True
+2828R,2,5ft_or_wider,res,CARLETON ST,R,0,True
+2864L,2,5ft_or_wider,res,SACRAMENTO ST,L,0,True
+2864R,1,5ft_or_wider,res,SACRAMENTO ST,R,0,True
+2865L,2,5ft_or_wider,res,SACRAMENTO ST,L,0,True
+2865R,1,5ft_or_wider,res,SACRAMENTO ST,R,0,True
+2866L,4,5ft_or_wider,res,DWIGHT WAY,L,0,True
+2866R,4,5ft_or_wider,res,DWIGHT WAY,R,0,True
+2875L,4,5ft_or_wider,res,MATHEWS ST,L,0,True
+2875R,4,5ft_or_wider,res,MATHEWS ST,R,0,True
+2894L,0,5ft_or_wider,man,PARKER ST,L,1,False
+2894R,0,5ft_or_wider,man,PARKER ST,R,1,False
+2916L,3,5ft_or_wider,com,PARKER ST,L,0,True
+2916R,3,5ft_or_wider,com,PARKER ST,R,0,True
+2918L,0,5ft_or_wider,man,DWIGHT WAY,L,0,False
+2918R,0,5ft_or_wider,man,DWIGHT WAY,R,0,False
+2919L,2,5ft_or_wider,man,DWIGHT WAY,L,0,True
+2919R,2,5ft_or_wider,man,DWIGHT WAY,R,0,True
+2920L,5,5ft_or_wider,res,MATHEWS ST,L,0,True
+2920R,5,5ft_or_wider,res,MATHEWS ST,R,0,True
+2921L,4,5ft_or_wider,mixres,DWIGHT WAY,L,0,True
+2921R,4,5ft_or_wider,man,DWIGHT WAY,R,0,True
+2924L,4,5ft_or_wider,res,MABEL ST,L,0,True
+2924R,3,5ft_or_wider,res,MABEL ST,R,0,True
+2925L,0,5ft_or_wider,res,CARLETON ST,L,0,False
+2925R,0,5ft_or_wider,res,CARLETON ST,R,0,False
+2928L,4,5ft_or_wider,mixres,DWIGHT WAY,L,0,True
+2928R,4,5ft_or_wider,man,DWIGHT WAY,R,0,True
+2947L,3,5ft_or_wider,res,DWIGHT WAY,L,0,True
+2947R,3,5ft_or_wider,man,DWIGHT WAY,R,0,True
+2960L,2,5ft_or_wider,res,PARKER ST,L,0,True
+2960R,2,5ft_or_wider,res,PARKER ST,R,0,True
+2961L,3,5ft_or_wider,res,SACRAMENTO ST,L,0,True
+2962L,3,5ft_or_wider,res,BLAKE ST,L,0,True
+2962R,3,5ft_or_wider,res,BLAKE ST,R,0,True
+2963L,5,5ft_or_wider,res,MATHEWS ST,L,0,True
+2963R,5,5ft_or_wider,res,MATHEWS ST,R,0,True
+2970L,2,5ft_or_wider,res,BERKELEY WAY,L,0,True
+2970R,2,5ft_or_wider,res,BERKELEY WAY,R,0,True
+2977L,4,5ft_or_wider,res,DWIGHT WAY,L,0,True
+2977R,4,5ft_or_wider,res,DWIGHT WAY,R,0,True
+2979L,4,5ft_or_wider,res,CURTIS ST,L,0,True
+2979R,4,5ft_or_wider,res,CURTIS ST,R,0,True
+2988R,0,none,other,I80 EAST HWY,R,0,False
+2996L,3,5ft_or_wider,res,DWIGHT WAY,L,0,True
+2996R,4,5ft_or_wider,man,DWIGHT WAY,R,0,True
+3003L,2,5ft_or_wider,com,DWIGHT WAY,L,0,True
+3003R,3,5ft_or_wider,com,DWIGHT WAY,R,0,True
+3007L,3,5ft_or_wider,com,DWIGHT WAY,L,0,True
+3007R,3,5ft_or_wider,com,DWIGHT WAY,R,0,True
+3012L,2,5ft_or_wider,man,CHANNING WAY,L,0,True
+3012R,2,5ft_or_wider,man,CHANNING WAY,R,0,True
+3016L,2,5ft_or_wider,res,BLAKE ST,L,0,True
+3016R,2,5ft_or_wider,res,BLAKE ST,R,0,True
+3027L,4,5ft_or_wider,res,BANCROFT WAY,L,0,True
+3027R,4,5ft_or_wider,res,BANCROFT WAY,R,0,True
+3045L,4,5ft_or_wider,res,ACTON ST,L,0,True
+3045R,4,5ft_or_wider,res,ACTON ST,R,0,True
+3048L,4,5ft_or_wider,res,CHANNING WAY,L,0,True
+3048R,4,5ft_or_wider,res,CHANNING WAY,R,0,True
+3049L,3,5ft_or_wider,mixres,BANCROFT WAY,L,0,True
+3049R,4,5ft_or_wider,mixres,BANCROFT WAY,R,0,True
+3053L,2,5ft_or_wider,res,ALLSTON WAY,L,0,True
+3053R,3,5ft_or_wider,res,ALLSTON WAY,R,0,True
+3054L,4,5ft_or_wider,res,SACRAMENTO ST,L,0,True
+3054R,2,5ft_or_wider,res,SACRAMENTO ST,R,0,True
+3059L,3,5ft_or_wider,mixres,ALLSTON WAY,L,0,True
+3059R,4,5ft_or_wider,mixres,ALLSTON WAY,R,0,True
+3060L,3,5ft_or_wider,res,BANCROFT WAY,L,0,True
+3060R,4,5ft_or_wider,res,BANCROFT WAY,R,0,True
+3061L,4,5ft_or_wider,res,EDWARDS ST,L,0,True
+3061R,4,5ft_or_wider,res,EDWARDS ST,R,0,True
+3064L,2,5ft_or_wider,res,ACTON ST,L,0,True
+3064R,2,5ft_or_wider,res,ACTON ST,R,0,True
+3065L,2,width_unknown,res,ACTON ST,L,0,True
+3065R,2,width_unknown,res,ACTON ST,R,0,True
+3066L,1,5ft_or_wider,res,DWIGHT WAY,L,0,True
+3066R,1,5ft_or_wider,com,DWIGHT WAY,R,0,True
+3068L,4,5ft_or_wider,res,BONAR ST,L,0,True
+3068R,4,5ft_or_wider,res,BONAR ST,R,0,True
+3069L,2,5ft_or_wider,res,VALLEY ST,L,0,True
+3069R,2,5ft_or_wider,res,VALLEY ST,R,0,True
+3071L,4,5ft_or_wider,res,ACTON ST,L,0,True
+3071R,4,5ft_or_wider,res,ACTON ST,R,0,True
+3085L,1,5ft_or_wider,res,DWIGHT WAY,L,0,True
+3085R,1,5ft_or_wider,res,DWIGHT WAY,R,0,True
+3095L,2,5ft_or_wider,man,BANCROFT WAY,L,0,True
+3095R,1,5ft_or_wider,man,BANCROFT WAY,R,0,True
+3101L,3,5ft_or_wider,res,CHANNING WAY,L,0,True
+3101R,3,5ft_or_wider,com,CHANNING WAY,R,0,True
+3102L,4,5ft_or_wider,res,BYRON ST,L,0,True
+3102R,4,5ft_or_wider,res,BYRON ST,R,0,True
+3103L,0,5ft_or_wider,man,BANCROFT WAY,L,3,False
+3103R,0,5ft_or_wider,man,BANCROFT WAY,R,0,False
+3104L,2,5ft_or_wider,man,BANCROFT WAY,L,0,True
+3104R,2,5ft_or_wider,man,BANCROFT WAY,R,0,True
+3108L,4,5ft_or_wider,res,BROWNING ST,L,0,True
+3108R,4,5ft_or_wider,res,BROWNING ST,R,0,True
+3110L,4,5ft_or_wider,res,BONAR ST,L,0,True
+3110R,4,5ft_or_wider,res,BONAR ST,R,0,True
+3112L,4,5ft_or_wider,res,CHANNING WAY,L,0,True
+3112R,4,5ft_or_wider,res,CHANNING WAY,R,0,True
+3113L,4,5ft_or_wider,res,WEST ST,L,0,True
+3113R,4,5ft_or_wider,res,WEST ST,R,0,True
+3116L,4,5ft_or_wider,res,CHANNING WAY,L,0,True
+3116R,4,5ft_or_wider,res,CHANNING WAY,R,0,True
+3117L,4,5ft_or_wider,res,VALLEY ST,L,0,True
+3117R,4,5ft_or_wider,res,VALLEY ST,R,0,True
+3118L,3,5ft_or_wider,res,BANCROFT WAY,L,0,True
+3118R,4,5ft_or_wider,res,BANCROFT WAY,R,0,True
+3122L,3,5ft_or_wider,res,CHAUCER ST,L,0,True
+3122R,3,5ft_or_wider,res,CHAUCER ST,R,0,True
+3123L,4,5ft_or_wider,res,BANCROFT WAY,L,0,True
+3123R,4,5ft_or_wider,res,BANCROFT WAY,R,0,True
+3124L,4,5ft_or_wider,res,CHANNING WAY,L,0,True
+3124R,4,5ft_or_wider,res,CHANNING WAY,R,0,True
+3125L,4,5ft_or_wider,res,EDWARDS ST,L,0,True
+3125R,4,5ft_or_wider,res,EDWARDS ST,R,0,True
+3126L,2,5ft_or_wider,res,CHANNING WAY,L,0,True
+3126R,2,5ft_or_wider,res,CHANNING WAY,R,0,True
+3127L,4,5ft_or_wider,res,SACRAMENTO ST,L,0,True
+3127R,3,5ft_or_wider,res,SACRAMENTO ST,R,0,True
+3128L,1,5ft_or_wider,res,CHANNING WAY,L,0,True
+3128R,1,5ft_or_wider,res,CHANNING WAY,R,0,True
+3130L,2,5ft_or_wider,res,POE ST,L,0,True
+3130R,2,5ft_or_wider,res,POE ST,R,0,True
+3131L,3,5ft_or_wider,res,BANCROFT WAY,L,0,True
+3131R,3,5ft_or_wider,res,BANCROFT WAY,R,0,True
+3134L,3,5ft_or_wider,res,BANCROFT WAY,L,0,True
+3134R,3,5ft_or_wider,res,BANCROFT WAY,R,0,True
+3139L,4,5ft_or_wider,res,BROWNING ST,L,0,True
+3139R,4,5ft_or_wider,res,BROWNING ST,R,0,True
+3148L,4,5ft_or_wider,res,ALLSTON WAY,L,0,True
+3148R,4,5ft_or_wider,res,ALLSTON WAY,R,0,True
+3151L,1,5ft_or_wider,res,BANCROFT WAY,L,0,True
+3151R,3,5ft_or_wider,res,BANCROFT WAY,R,0,True
+3152L,4,5ft_or_wider,res,SACRAMENTO ST,L,0,True
+3152R,2,5ft_or_wider,res,SACRAMENTO ST,R,0,True
+3156L,4,5ft_or_wider,res,SPAULDING AVE,L,0,True
+3156R,3,5ft_or_wider,res,SPAULDING AVE,R,0,True
+3162L,1,5ft_or_wider,res,BANCROFT WAY,L,0,True
+3162R,1,5ft_or_wider,res,BANCROFT WAY,R,0,True
+3180L,4,no_sidewalk,res,MATHEWS ST,L,0,True
+3180R,4,no_sidewalk,res,MATHEWS ST,R,0,True
+3181L,3,width_unknown,res,ASHBY AVE,L,0,True
+3181R,3,width_unknown,res,ASHBY AVE,R,0,True
+3192L,3,5ft_or_wider,res,PRINCE ST,L,0,True
+3192R,3,5ft_or_wider,res,PRINCE ST,R,0,True
+3227R,0,none,other,I80 WEST HWY,R,0,False
+3259L,3,5ft_or_wider,res,ALLSTON WAY,L,0,True
+3259R,2,5ft_or_wider,res,ALLSTON WAY,R,0,True
+3269L,4,5ft_or_wider,res,BROWNING ST,L,0,True
+3269R,4,5ft_or_wider,res,BROWNING ST,R,0,True
+3271L,4,5ft_or_wider,res,BONAR ST,L,0,True
+3271R,4,5ft_or_wider,res,BONAR ST,R,0,True
+3277L,4,5ft_or_wider,res,ACTON ST,L,0,True
+3277R,4,5ft_or_wider,res,ACTON ST,R,0,True
+3286L,4,5ft_or_wider,res,SPAULDING AVE,L,0,True
+3286R,3,5ft_or_wider,res,SPAULDING AVE,R,0,True
+3291L,4,width_unknown,res,ACTON ST,L,0,True
+3291R,4,width_unknown,res,ACTON ST,R,0,True
+3324L,1,5ft_or_wider,res,ADDISON ST,L,0,True
+3324R,1,5ft_or_wider,res,ADDISON ST,R,0,True
+3325L,2,5ft_or_wider,res,SPAULDING AVE,L,0,True
+3325R,2,5ft_or_wider,res,SPAULDING AVE,R,0,True
+3326L,2,5ft_or_wider,res,SPAULDING AVE,L,0,True
+3326R,2,5ft_or_wider,res,SPAULDING AVE,R,0,True
+3337L,1,5ft_or_wider,res,ADDISON ST,L,0,True
+3337R,1,5ft_or_wider,res,ADDISON ST,R,0,True
+3361L,2,5ft_or_wider,com,SACRAMENTO ST,L,22,True
+3361R,1,5ft_or_wider,com,SACRAMENTO ST,R,8,True
+3363L,2,5ft_or_wider,res,BERKELEY WAY,L,0,True
+3363R,3,5ft_or_wider,res,BERKELEY WAY,R,0,True
+3364L,2,no_data,com,SACRAMENTO ST,L,0,True
+3364R,2,5ft_or_wider,com,SACRAMENTO ST,R,0,True
+3406L,2,trail,man,POTTER ST,L,0,True
+3406R,3,5ft_or_wider,com,POTTER ST,R,27,True
+3407L,3,5ft_or_wider,res,CARRISON ST,L,0,True
+3407R,3,5ft_or_wider,res,CARRISON ST,R,0,True
+3431L,4,5ft_or_wider,res,ACTON ST,L,0,True
+3431R,4,5ft_or_wider,res,ACTON ST,R,0,True
+3442L,2,width_unknown,res,DOHR ST,L,0,True
+3442R,4,width_unknown,res,DOHR ST,R,0,True
+3479L,3,5ft_or_wider,res,BANCROFT WAY,L,0,True
+3479R,4,5ft_or_wider,res,BANCROFT WAY,R,0,True
+3480L,4,5ft_or_wider,res,ACTON ST,L,0,True
+3480R,4,5ft_or_wider,res,ACTON ST,R,0,True
+3486L,4,5ft_or_wider,res,ALLSTON WAY,L,0,True
+3486R,3,5ft_or_wider,res,ALLSTON WAY,R,0,True
+3495L,2,5ft_or_wider,man,POTTER ST,L,42,True
+3495R,2,5ft_or_wider,com,POTTER ST,R,32,True
+3496L,4,5ft_or_wider,res,ACTON ST,L,0,True
+3496R,4,5ft_or_wider,res,ACTON ST,R,0,True
+3546L,4,5ft_or_wider,res,ALLSTON WAY,L,0,True
+3546R,2,5ft_or_wider,res,ALLSTON WAY,R,0,True
+3560R,0,trail,other,I80 EAST (OFF RAMP) UNIV,R,0,False
+3566L,2,5ft_or_wider,res,ALLSTON WAY,L,0,True
+3566R,2,5ft_or_wider,res,ALLSTON WAY,R,0,True
+3568L,1,5ft_or_wider,res,ALLSTON WAY,L,0,True
+3568R,2,5ft_or_wider,res,ALLSTON WAY,R,0,True
+3582L,2,width_unknown,man,FOLGER AVE,L,0,True
+3582R,2,width_unknown,man,FOLGER AVE,R,0,True
+3632L,4,5ft_or_wider,com,SAN PABLO AVE,L,6,True
+3632R,2,5ft_or_wider,com,SAN PABLO AVE,R,7,True
+3633L,0,width_unknown,com,ASHBY AVE,L,0,False
+3633R,2,width_unknown,man,ASHBY AVE,R,3,True
+3635L,2,5ft_or_wider,com,ASHBY AVE,L,6,True
+3635R,2,5ft_or_wider,man,ASHBY AVE,R,5,True
+3652L,0,width_unknown,man,UNIVERSITY AVE OVERPASS,L,8,False
+3652R,0,width_unknown,man,UNIVERSITY AVE OVERPASS,R,7,False
+3668L,1,5ft_or_wider,res,RUSSELL ST,L,0,True
+3668R,2,5ft_or_wider,res,RUSSELL ST,R,0,True
+3675L,2,5ft_or_wider,res,OREGON ST,L,0,True
+3675R,2,5ft_or_wider,res,OREGON ST,R,0,True
+3676L,4,5ft_or_wider,res,WALLACE ST,L,0,True
+3676R,4,5ft_or_wider,res,WALLACE ST,R,0,True
+3680L,4,5ft_or_wider,res,OREGON ST,L,0,True
+3680R,4,5ft_or_wider,res,OREGON ST,R,0,True
+3697L,3,5ft_or_wider,res,HASKELL ST,L,0,True
+3697R,3,5ft_or_wider,res,HASKELL ST,R,0,True
+3813R,0,trail,other,I80 EAST (ON RAMP) ASHBY HWY,R,0,False
+3819L,4,5ft_or_wider,res,ASHBY AVE,L,0,True
+3819R,4,5ft_or_wider,res,ASHBY AVE,R,0,True
+3824L,2,none,man,UNIVERSITY AVE OVERPASS,L,0,True
+3824R,2,none,man,UNIVERSITY AVE OVERPASS,R,0,True
+3942L,4,5ft_or_wider,res,MABEL ST,L,0,True
+3942R,4,5ft_or_wider,res,MABEL ST,R,0,True
+4007L,2,width_unknown,man,FOLGER AVE,L,0,True
+4007R,1,5ft_or_wider,man,FOLGER AVE,R,0,True
+4032L,4,5ft_or_wider,res,ACTON ST,L,0,True
+4032R,4,5ft_or_wider,res,ACTON ST,R,0,True
+4039L,4,5ft_or_wider,res,HASKELL ST,L,0,True
+4039R,4,5ft_or_wider,res,HASKELL ST,R,0,True
+4040L,4,5ft_or_wider,res,ACTON ST,L,0,True
+4040R,4,5ft_or_wider,res,ACTON ST,R,0,True
+4056L,4,5ft_or_wider,mixres,HEINZ AVE,L,0,True
+4056R,4,5ft_or_wider,man,HEINZ AVE,R,0,True
+4070L,2,5ft_or_wider,res,MABEL ST,L,0,True
+4070R,2,5ft_or_wider,res,MABEL ST,R,0,True
+4071L,4,5ft_or_wider,res,ACTON ST,L,0,True
+4071R,4,5ft_or_wider,res,ACTON ST,R,0,True
+4076L,3,5ft_or_wider,man,MURRAY ST,L,0,True
+4076R,3,trail,man,MURRAY ST,R,0,True
+4078L,3,width_unknown,com,POTTER ST,L,39,True
+4078R,3,width_unknown,com,POTTER ST,R,0,True
+4102R,0,width_unknown,man,I80 EAST (ON RAMP) ASHBY HWY,R,0,False
+4125L,4,5ft_or_wider,res,MABEL ST,L,0,True
+4125R,4,5ft_or_wider,res,MABEL ST,R,0,True
+4128L,4,5ft_or_wider,res,RUSSELL ST,L,0,True
+4128R,3,width_unknown,res,RUSSELL ST,R,0,True
+4131L,2,5ft_or_wider,man,HEINZ AVE,L,0,True
+4131R,2,5ft_or_wider,man,HEINZ AVE,R,0,True
+4197L,3,5ft_or_wider,com,SAN PABLO AVE,L,0,True
+4208L,0,width_unknown,,I80 WEST (OFF RAMP) ASHBY HWY,L,0,False
+4277L,0,5ft_or_wider,other,POTTER ST,L,0,False
+4278L,2,5ft_or_wider,other,POTTER ST,L,0,True
+4281L,2,5ft_or_wider,com,SAN PABLO AVE,L,0,True
+4281R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+4283L,0,width_unknown,other,I80 EAST (ON RAMP) ASHBY HWY,L,0,False
+4291L,2,5ft_or_wider,res,BURNETT ST,L,0,True
+4291R,2,5ft_or_wider,res,BURNETT ST,R,0,True
+4294L,1,5ft_or_wider,com,ASHBY AVE,L,0,True
+4294R,0,5ft_or_wider,man,ASHBY AVE,R,90,False
+4312L,0,width_unknown,com,ASHBY AVE,L,0,False
+4312R,2,width_unknown,man,ASHBY AVE,R,6,True
+4313L,2,trail,com,ASHBY AVE,L,0,True
+4313R,2,5ft_or_wider,man,ASHBY AVE,R,23,True
+4320L,4,5ft_or_wider,res,MABEL ST,L,0,True
+4320R,4,5ft_or_wider,res,MABEL ST,R,0,True
+4322L,4,5ft_or_wider,man,ANTHONY ST,L,0,True
+4322R,4,5ft_or_wider,man,ANTHONY ST,R,0,True
+4326L,4,5ft_or_wider,res,CARRISON ST,L,0,True
+4326R,4,5ft_or_wider,res,CARRISON ST,R,0,True
+4327L,4,5ft_or_wider,res,ACTON ST,L,0,True
+4327R,4,5ft_or_wider,res,ACTON ST,R,0,True
+4346L,4,5ft_or_wider,res,MABEL ST,L,0,True
+4346R,4,5ft_or_wider,res,MABEL ST,R,0,True
+4353L,4,no_sidewalk,res,RUSSELL ST,L,0,True
+4353R,4,5ft_or_wider,res,RUSSELL ST,R,0,True
+4360L,4,5ft_or_wider,res,BURNETT ST,L,0,True
+4360R,4,5ft_or_wider,res,BURNETT ST,R,0,True
+4361L,4,5ft_or_wider,res,ACTON ST,L,0,True
+4361R,4,5ft_or_wider,res,ACTON ST,R,0,True
+4362L,3,no_sidewalk,res,RUSSELL ST,L,0,True
+4362R,3,no_sidewalk,res,RUSSELL ST,R,0,True
+4363L,4,5ft_or_wider,res,MABEL ST,L,0,True
+4363R,4,5ft_or_wider,res,MABEL ST,R,0,True
+4364L,3,5ft_or_wider,mixres,HEINZ AVE,L,0,True
+4364R,3,5ft_or_wider,man,HEINZ AVE,R,0,True
+4373L,3,5ft_or_wider,res,RUSSELL ST,L,0,True
+4373R,4,5ft_or_wider,res,RUSSELL ST,R,0,True
+4374L,4,5ft_or_wider,res,PARK ST,L,0,True
+4374R,4,5ft_or_wider,res,PARK ST,R,0,True
+4382L,2,5ft_or_wider,res,RUSSELL ST,L,0,True
+4382R,4,5ft_or_wider,res,RUSSELL ST,R,0,True
+4386L,4,width_unknown,res,DOHR ST,L,0,True
+4386R,3,width_unknown,res,DOHR ST,R,0,True
+4388L,2,5ft_or_wider,res,STANTON ST,L,0,True
+4388R,4,5ft_or_wider,res,STANTON ST,R,0,True
+4395L,3,5ft_or_wider,com,OREGON ST,L,0,True
+4395R,2,5ft_or_wider,com,OREGON ST,R,0,True
+4398L,4,none,res,OREGON ST,L,0,True
+4398R,4,none,res,OREGON ST,R,0,True
+4399L,3,no_sidewalk,res,MABEL ST,L,0,True
+4399R,2,no_sidewalk,res,MABEL ST,R,0,True
+4406L,2,5ft_or_wider,res,PARK ST,L,0,True
+4406R,3,5ft_or_wider,res,PARK ST,R,0,True
+4411L,4,5ft_or_wider,res,ACTON ST,L,0,True
+4411R,3,5ft_or_wider,res,ACTON ST,R,0,True
+4412L,4,5ft_or_wider,mixres,GRAYSON ST,L,0,True
+4412R,3,5ft_or_wider,mixres,GRAYSON ST,R,0,True
+4420L,2,5ft_or_wider,res,ASHBY AVE,L,0,True
+4420R,2,5ft_or_wider,res,ASHBY AVE,R,0,True
+4481L,2,width_unknown,man,,L,0,True
+4485L,2,width_unknown,man,,L,0,True
+4679R,2,no_sidewalk,man,UNIVERSITY AVE OVERPASS,R,0,True
+4680L,1,none,man,UNIVERSITY AVE OVERPASS,L,0,True
+4680R,2,none,man,UNIVERSITY AVE OVERPASS,R,0,True
+4681L,1,none,man,UNIVERSITY AVE OVERPASS,L,8,True
+4681R,2,none,man,UNIVERSITY AVE OVERPASS,R,7,True
+4682R,3,width_unknown,com,UNIVERSITY AVE OVERPASS,R,0,True
+4683R,5,width_unknown,com,UNIVERSITY AVE OVERPASS,R,0,True
+4684R,3,width_unknown,com,UNIVERSITY AVE OVERPASS,R,0,True
+4685R,2,width_unknown,com,UNIVERSITY AVE,R,0,True
+4686L,2,width_unknown,com,UNIVERSITY AVE,L,0,True
+4686R,2,width_unknown,com,UNIVERSITY AVE,R,0,True
+4687L,0,width_unknown,other,EASTSHORE PEDESTRIAN OVRPAS,L,0,False
+4687R,0,width_unknown,other,EASTSHORE PEDESTRIAN OVRPAS,R,0,False
+4688L,0,no_sidewalk,other,BOLIVAR DR,L,0,False
+4688R,0,width_unknown,other,BOLIVAR DR,R,0,False
+4689R,0,width_unknown,other,EASTSHORE PEDESTRIAN OVRPAS,R,0,False
+4690R,0,width_unknown,other,EASTSHORE PEDESTRIAN OVRPAS,R,0,False
+4691L,0,width_unknown,other,EASTSHORE PEDESTRIAN OVRPAS,L,0,False
+4691R,0,width_unknown,other,EASTSHORE PEDESTRIAN OVRPAS,R,0,False
+4692L,0,width_unknown,other,I80 EAST (OFF RAMP) UNIV,L,0,False
+4692R,0,width_unknown,other,I80 EAST (OFF RAMP) UNIV,R,0,False
+4693L,0,none,other,EASTSHORE PEDESTRIAN OVRPAS,L,0,False
+4693R,0,none,other,EASTSHORE PEDESTRIAN OVRPAS,R,0,False
+4694R,0,trail,other,I80 EAST HWY,R,0,False
+4699R,0,width_unknown,other,W FRONTAGE RD,R,0,False
+4700L,0,trail,other,W FRONTAGE RD,L,0,False
+4700R,0,trail,other,W FRONTAGE RD,R,0,False
+4708L,0,none,other,BYC GUEST DOCK,L,0,False
+4708R,0,none,other,BYC GUEST DOCK,R,0,False
+4709L,0,none,other,O DOCK,L,0,False
+4709R,0,none,other,O DOCK,R,0,False
+4711L,0,trail,other,H AND I DOCK,L,0,False
+4711R,0,trail,other,H AND I DOCK,R,0,False
+4713R,0,trail,other,H DOCK,R,0,False
+4714L,0,trail,other,I DOCK,L,0,False
+4715L,0,trail,other,I DOCK,L,0,False
+4722R,0,none,other,OCSC SCHOOL DOCK,R,0,False
+4723R,0,none,other,OCSC SCHOOL DOCK,R,0,False
+4724R,0,none,other,OCSC SCHOOL DOCK,R,0,False
+4725L,0,none,other,FUEL DOCK,L,0,False
+4725R,0,none,other,FUEL DOCK,R,0,False
+4728L,0,width_unknown,,TRAIL,L,0,False
+4728R,0,width_unknown,other,TRAIL,R,0,False
+4729L,0,trail,other,EASTSHORE PEDESTRIAN OVRPAS,L,0,False
+4729R,0,trail,other,EASTSHORE PEDESTRIAN OVRPAS,R,0,False
+4730L,0,trail,other,TRAIL,L,0,False
+4730R,0,trail,other,TRAIL,R,0,False
+4731L,0,width_unknown,other,TRAIL,L,0,False
+4731R,0,trail,other,TRAIL,R,0,False
+4732L,0,width_unknown,other,UNIVERSITY AVE,L,0,False
+4732R,2,width_unknown,other,UNIVERSITY AVE,R,0,True
+5010L,4,5ft_or_wider,res,OREGON ST,L,0,True
+5010R,4,5ft_or_wider,res,OREGON ST,R,0,True
+5011L,3,no_data,com,ACTON ST,L,0,True
+5011R,2,no_data,com,ACTON ST,R,0,True
+5012L,4,5ft_or_wider,res,CHANNING WAY,L,0,True
+5012R,3,5ft_or_wider,res,CHANNING WAY,R,0,True
+5025L,4,5ft_or_wider,res,CHANNING WAY,L,0,True
+5025R,4,5ft_or_wider,res,CHANNING WAY,R,0,True
+5026L,4,5ft_or_wider,res,CURTIS ST,L,0,True
+5026R,4,5ft_or_wider,res,CURTIS ST,R,0,True
+5027L,3,width_unknown,com,ACTON ST,L,0,True
+5027R,2,width_unknown,com,ACTON ST,R,0,True
+5028L,4,5ft_or_wider,mixres,CHANNING WAY,L,0,True
+5028R,3,5ft_or_wider,mixres,CHANNING WAY,R,0,True
+5029L,0,width_unknown,other,UNIVERSITY AVE,L,0,False
+5029R,1,width_unknown,other,UNIVERSITY AVE,R,0,True
+5032L,2,5ft_or_wider,com,DWIGHT WAY,L,0,True
+5032R,2,5ft_or_wider,res,DWIGHT WAY,R,0,True
+5035L,2,5ft_or_wider,res,DWIGHT CRES,L,0,True
+5035R,1,5ft_or_wider,mixres,DWIGHT CRES,R,0,True
+5042R,1,width_unknown,other,BAY ST,R,0,True
+5049L,3,5ft_or_wider,res,DWIGHT WAY,L,0,True
+5049R,4,5ft_or_wider,res,DWIGHT WAY,R,0,True
+5056L,2,5ft_or_wider,res,RUSSELL ST,L,0,True
+5056R,2,5ft_or_wider,res,RUSSELL ST,R,0,True
+5063L,2,5ft_or_wider,man,ANTHONY ST,L,0,True
+5063R,2,5ft_or_wider,man,ANTHONY ST,R,0,True
+5069L,4,5ft_or_wider,res,CHANNING WAY,L,0,True
+5069R,3,5ft_or_wider,res,CHANNING WAY,R,0,True
+5075L,4,5ft_or_wider,res,BANCROFT WAY,L,0,True
+5075R,4,5ft_or_wider,res,BANCROFT WAY,R,0,True
+5079L,4,5ft_or_wider,res,DWIGHT WAY,L,0,True
+5079R,4,5ft_or_wider,res,DWIGHT WAY,R,0,True
+5080L,4,5ft_or_wider,res,PARKER ST,L,0,True
+5080R,4,5ft_or_wider,res,PARKER ST,R,0,True
+5081L,3,5ft_or_wider,res,RUSSELL ST,L,0,True
+5081R,2,5ft_or_wider,com,RUSSELL ST,R,0,True
+5089L,5,width_unknown,res,ACTON CIR,L,0,True
+5089R,3,width_unknown,res,ACTON CIR,R,0,True
+5090L,3,5ft_or_wider,com,CHANNING WAY,L,0,True
+5090R,3,5ft_or_wider,com,CHANNING WAY,R,0,True
+5091L,2,5ft_or_wider,com,SACRAMENTO ST,L,28,True
+5096L,4,width_unknown,mixres,GRAYSON ST,L,0,True
+5096R,4,width_unknown,mixres,GRAYSON ST,R,0,True
+5105L,3,5ft_or_wider,com,HEINZ AVE,L,0,True
+5105R,3,5ft_or_wider,com,HEINZ AVE,R,0,True
+5109L,4,5ft_or_wider,res,WEST ST,L,0,True
+5109R,3,5ft_or_wider,res,WEST ST,R,0,True
+5110L,2,width_unknown,res,RUSSELL ST,L,0,True
+5110R,2,5ft_or_wider,res,RUSSELL ST,R,0,True
+5114L,4,5ft_or_wider,res,CHANNING WAY,L,0,True
+5114R,4,5ft_or_wider,res,CHANNING WAY,R,0,True
+5116L,2,5ft_or_wider,man,GRAYSON ST,L,0,True
+5116R,2,5ft_or_wider,man,GRAYSON ST,R,0,True
+5126L,1,5ft_or_wider,res,ALLSTON WAY,L,0,True
+5126R,1,5ft_or_wider,res,ALLSTON WAY,R,0,True
+5127L,3,5ft_or_wider,mixres,HEINZ AVE,L,0,True
+5127R,3,5ft_or_wider,com,HEINZ AVE,R,0,True
+5136L,4,5ft_or_wider,res,DWIGHT WAY,L,0,True
+5136R,4,5ft_or_wider,res,DWIGHT WAY,R,0,True
+5137L,4,5ft_or_wider,res,ALLSTON WAY,L,0,True
+5137R,4,5ft_or_wider,res,ALLSTON WAY,R,0,True
+5138L,2,5ft_or_wider,res,RUSSELL ST,L,0,True
+5138R,2,5ft_or_wider,res,RUSSELL ST,R,0,True
+5139L,2,width_unknown,res,ACTON CIR,L,0,True
+5139R,2,width_unknown,res,ACTON CIR,R,0,True
+5140L,0,width_unknown,res,ACTON CIR,L,0,False
+5140R,1,width_unknown,res,ACTON CIR,R,0,True
+5153L,2,5ft_or_wider,res,DWIGHT WAY,L,0,True
+5153R,3,5ft_or_wider,res,DWIGHT WAY,R,0,True
+5154L,3,5ft_or_wider,res,ACTON ST,L,0,True
+5154R,4,5ft_or_wider,res,ACTON ST,R,0,True
+5158L,2,5ft_or_wider,res,ACTON CIR,L,0,True
+5158R,2,5ft_or_wider,res,ACTON CIR,R,0,True
+5161L,2,5ft_or_wider,res,RUSSELL ST,L,0,True
+5161R,1,5ft_or_wider,res,RUSSELL ST,R,0,True
+5170L,3,5ft_or_wider,res,ALLSTON WAY,L,0,True
+5170R,4,5ft_or_wider,res,ALLSTON WAY,R,0,True
+5178L,4,width_unknown,res,ASHBY AVE,L,0,True
+5178R,4,width_unknown,res,ASHBY AVE,R,0,True
+5179L,4,5ft_or_wider,res,ASHBY AVE,L,0,True
+5179R,4,5ft_or_wider,res,ASHBY AVE,R,0,True
+5180L,2,5ft_or_wider,res,ADDISON ST,L,0,True
+5180R,2,5ft_or_wider,res,ADDISON ST,R,0,True
+5181L,4,5ft_or_wider,res,BURNETT ST,L,0,True
+5181R,4,5ft_or_wider,res,BURNETT ST,R,0,True
+5182L,2,5ft_or_wider,com,RUSSELL ST,L,0,True
+5182R,2,5ft_or_wider,com,RUSSELL ST,R,0,True
+5185L,4,5ft_or_wider,res,RUSSELL ST,L,0,True
+5185R,4,5ft_or_wider,res,RUSSELL ST,R,0,True
+5186L,3,no_data,res,SACRAMENTO ST,L,0,True
+5186R,3,no_data,res,SACRAMENTO ST,R,0,True
+5187L,4,5ft_or_wider,mixres,ALLSTON WAY,L,0,True
+5187R,4,5ft_or_wider,man,ALLSTON WAY,R,0,True
+5188L,4,5ft_or_wider,res,CHANNING WAY,L,0,True
+5188R,3,5ft_or_wider,res,CHANNING WAY,R,0,True
+5189L,4,5ft_or_wider,mixres,BANCROFT WAY,L,0,True
+5189R,4,5ft_or_wider,man,BANCROFT WAY,R,0,True
+5212R,4,trail,other,SEAWALL DR,R,0,True
+5215R,0,none,other,TRAIL,R,0,False
+5216R,0,5ft_or_wider,other,TRAIL,R,0,False
+5217L,0,5ft_or_wider,other,PUBLIC BOAT RAMP,L,0,False
+5217R,0,5ft_or_wider,other,PUBLIC BOAT RAMP,R,0,False
+5219L,1,width_unknown,other,UNIVERSITY AVE,L,0,True
+5219R,0,width_unknown,other,UNIVERSITY AVE,R,0,False
+5632R,0,5ft_or_wider,com,SAN PABLO AVE,R,0,False
+5633R,1,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5634L,2,5ft_or_wider,com,SAN PABLO AVE,L,6,True
+5634R,1,5ft_or_wider,com,SAN PABLO AVE,R,5,True
+5635R,0,5ft_or_wider,com,SAN PABLO AVE,R,0,False
+5636R,1,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5637R,1,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5638R,0,5ft_or_wider,com,SAN PABLO AVE,R,0,False
+5641R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5642R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5643R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5644R,1,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5645R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5646R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5647L,1,5ft_or_wider,res,HOPKINS,L,0,True
+5647R,2,5ft_or_wider,res,HOPKINS,R,0,True
+5648R,2,5ft_or_wider,res,CEDAR ST,R,0,True
+5649L,2,5ft_or_wider,res,,L,0,True
+5650L,3,5ft_or_wider,res,CEDAR ST,L,0,True
+5650R,4,5ft_or_wider,res,CEDAR ST,R,0,True
+5651R,1,5ft_or_wider,com,CEDAR ST,R,0,True
+5652R,1,5ft_or_wider,com,CEDAR ST,R,0,True
+5654L,1,5ft_or_wider,com,CEDAR ST,L,0,True
+5654R,1,5ft_or_wider,com,CEDAR ST,R,0,True
+5655R,1,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5656L,1,5ft_or_wider,com,SAN PABLO AVE,L,0,True
+5656R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5657R,1,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5658L,1,5ft_or_wider,com,SAN PABLO AVE,L,10,True
+5658R,1,5ft_or_wider,com,SAN PABLO AVE,R,8,True
+5659R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5660R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5661R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5662R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5663R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5665R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5666R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5667R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5668R,1,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5669R,0,5ft_or_wider,com,SAN PABLO AVE,R,0,False
+5670L,0,none,com,SAN PABLO AVE,L,0,False
+5670R,0,none,com,SAN PABLO AVE,R,3,False
+5671L,2,5ft_or_wider,com,SAN PABLO AVE,L,10,True
+5671R,0,5ft_or_wider,com,SAN PABLO AVE,R,7,False
+5672L,1,5ft_or_wider,com,SAN PABLO AVE,L,21,True
+5672R,0,5ft_or_wider,com,SAN PABLO AVE,R,7,False
+5674R,1,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5675R,0,none,com,SAN PABLO AVE,R,0,False
+5676R,1,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5677R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5678R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5679R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5680R,2,none,com,SAN PABLO AVE,R,0,True
+5681R,1,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5682R,4,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5683R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5684R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5685R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5686R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5687R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5688R,3,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5689R,3,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5690R,1,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5691R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5692L,2,5ft_or_wider,com,SAN PABLO AVE,L,0,True
+5692R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5693R,3,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5694R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5695R,1,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5696R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5697R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5698R,3,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5699L,1,5ft_or_wider,com,SAN PABLO AVE,L,0,True
+5699R,1,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5700R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5701R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5702R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5703R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5704R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5705R,3,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5706R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5707R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5708R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5709R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5710R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5711R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5712R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5713L,2,5ft_or_wider,com,SAN PABLO AVE,L,0,True
+5713R,1,5ft_or_wider,com,SAN PABLO AVE,R,1,True
+5714R,1,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5715R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5716R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5717R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5718R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5719R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5720R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5721R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5722R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5723R,1,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5724R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5725R,3,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5726R,4,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5727R,4,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5728R,3,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5729R,3,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+5782R,1,width_unknown,com,UNIVERSITY AVE,R,0,True
+5783R,1,width_unknown,com,UNIVERSITY AVE,R,0,True
+5784R,2,no_sidewalk,com,UNIVERSITY AVE,R,0,True
+5785R,1,width_unknown,com,UNIVERSITY AVE,R,0,True
+5786R,2,width_unknown,com,UNIVERSITY AVE,R,0,True
+5787R,2,no_sidewalk,com,UNIVERSITY AVE,R,0,True
+5788R,2,width_unknown,com,UNIVERSITY AVE,R,0,True
+5789R,2,width_unknown,com,UNIVERSITY AVE,R,0,True
+5790R,1,width_unknown,com,UNIVERSITY AVE,R,0,True
+5791R,1,width_unknown,com,UNIVERSITY AVE,R,0,True
+5792R,2,width_unknown,com,UNIVERSITY AVE,R,0,True
+5793R,1,width_unknown,com,UNIVERSITY AVE,R,0,True
+5794R,1,5ft_or_wider,com,UNIVERSITY AVE,R,0,True
+5795R,1,width_unknown,com,UNIVERSITY AVE,R,0,True
+5796R,1,width_unknown,com,UNIVERSITY AVE,R,0,True
+5797L,3,width_unknown,com,UNIVERSITY AVE,L,0,True
+5797R,2,width_unknown,com,UNIVERSITY AVE,R,0,True
+5798R,0,5ft_or_wider,com,UNIVERSITY AVE,R,0,False
+5801R,0,5ft_or_wider,com,UNIVERSITY AVE,R,0,False
+6449L,0,no_sidewalk,other,EASTSHORE PEDESTRIAN OVRPAS,L,0,False
+6457L,0,width_unknown,other,BOLIVAR DR,L,0,False
+6457R,0,width_unknown,other,BOLIVAR DR,R,0,False
+6458L,0,trail,other,BOLIVAR DR,L,0,False
+6458R,0,width_unknown,other,BOLIVAR DR,R,0,False
+6464L,0,none,other,EASTSHORE PEDESTRIAN OVRPAS,L,0,False
+6467L,3,5ft_or_wider,man,MURRAY ST,L,0,True
+6467R,3,5ft_or_wider,man,MURRAY ST,R,0,True
+6558L,2,5ft_or_wider,res,MCGEE AVE,L,0,True
+6558R,4,5ft_or_wider,res,MCGEE AVE,R,0,True
+6564L,4,5ft_or_wider,res,MCGEE AVE,L,0,True
+6564R,3,5ft_or_wider,com,MCGEE AVE,R,0,True
+6603L,4,5ft_or_wider,res,TENTH ST,L,0,True
+6603R,4,5ft_or_wider,res,TENTH ST,R,0,True
+6604L,4,5ft_or_wider,res,TENTH ST,L,0,True
+6604R,3,5ft_or_wider,res,TENTH ST,R,0,True
+6605L,0,5ft_or_wider,com,TENTH ST,L,0,False
+6605R,0,width_unknown,com,TENTH ST,R,0,False
+6606L,2,5ft_or_wider,res,TENTH ST,L,0,True
+6606R,1,5ft_or_wider,res,TENTH ST,R,0,True
+6607L,2,width_unknown,res,TENTH ST,L,0,True
+6607R,2,width_unknown,res,TENTH ST,R,0,True
+6608L,3,5ft_or_wider,res,TENTH ST,L,0,True
+6608R,3,5ft_or_wider,res,TENTH ST,R,0,True
+6609L,4,5ft_or_wider,res,TENTH ST,L,0,True
+6609R,4,5ft_or_wider,res,TENTH ST,R,0,True
+6610L,4,5ft_or_wider,res,TENTH ST,L,0,True
+6610R,4,5ft_or_wider,res,TENTH ST,R,0,True
+6611L,4,5ft_or_wider,res,TENTH ST,L,0,True
+6611R,4,5ft_or_wider,res,TENTH ST,R,0,True
+6612L,4,5ft_or_wider,res,TENTH ST,L,0,True
+6612R,4,5ft_or_wider,res,TENTH ST,R,0,True
+6613L,4,no_sidewalk,com,TENTH ST,L,0,True
+6613R,4,no_sidewalk,com,TENTH ST,R,0,True
+6614L,4,no_sidewalk,man,TENTH ST,L,0,True
+6614R,4,no_sidewalk,com,TENTH ST,R,0,True
+6617L,4,5ft_or_wider,mixres,TENTH ST,L,0,True
+6617R,4,5ft_or_wider,mixres,TENTH ST,R,0,True
+6618L,4,5ft_or_wider,mixres,TENTH ST,L,0,True
+6618R,4,5ft_or_wider,mixres,TENTH ST,R,0,True
+6619L,4,5ft_or_wider,com,TENTH ST,L,0,True
+6619R,4,5ft_or_wider,com,TENTH ST,R,0,True
+6620L,4,5ft_or_wider,mixres,TENTH ST,L,0,True
+6620R,4,5ft_or_wider,mixres,TENTH ST,R,0,True
+6621L,4,5ft_or_wider,com,TENTH ST,L,0,True
+6621R,4,5ft_or_wider,man,TENTH ST,R,0,True
+6622L,4,5ft_or_wider,res,TENTH ST,L,0,True
+6622R,4,5ft_or_wider,res,TENTH ST,R,0,True
+6623L,4,5ft_or_wider,res,TENTH ST,L,0,True
+6623R,4,5ft_or_wider,res,TENTH ST,R,0,True
+6624L,4,5ft_or_wider,res,TENTH ST,L,0,True
+6624R,4,5ft_or_wider,res,TENTH ST,R,0,True
+6625L,2,5ft_or_wider,res,TENTH ST,L,0,True
+6625R,2,5ft_or_wider,res,TENTH ST,R,0,True
+6626L,1,none,man,SECOND ST,L,0,True
+6626R,1,none,man,SECOND ST,R,0,True
+6627L,4,width_unknown,man,SECOND ST,L,0,True
+6627R,1,width_unknown,man,SECOND ST,R,0,True
+6628L,3,width_unknown,man,SECOND ST,L,0,True
+6628R,1,width_unknown,man,SECOND ST,R,0,True
+6629L,4,no_sidewalk,man,SECOND ST,L,0,True
+6629R,4,no_sidewalk,man,SECOND ST,R,0,True
+6630L,3,no_sidewalk,man,SECOND ST,L,0,True
+6630R,3,no_sidewalk,man,SECOND ST,R,0,True
+6632L,1,none,man,SECOND ST,L,0,True
+6632R,1,none,man,SECOND ST,R,0,True
+6633L,4,width_unknown,man,SECOND ST,L,0,True
+6633R,3,width_unknown,man,SECOND ST,R,0,True
+6634L,4,width_unknown,man,SECOND ST,L,0,True
+6634R,4,width_unknown,man,SECOND ST,R,0,True
+6635L,2,no_sidewalk,man,SECOND ST,L,0,True
+6635R,2,no_sidewalk,man,SECOND ST,R,0,True
+6636L,4,no_sidewalk,man,SECOND ST,L,0,True
+6636R,3,no_sidewalk,man,SECOND ST,R,0,True
+6637L,4,no_sidewalk,man,SECOND ST,L,0,True
+6637R,4,width_unknown,man,SECOND ST,R,0,True
+6638L,4,no_sidewalk,man,SECOND ST,L,0,True
+6638R,3,no_sidewalk,man,SECOND ST,R,0,True
+6639L,4,5ft_or_wider,man,FOURTH ST,L,0,True
+6639R,4,5ft_or_wider,man,FOURTH ST,R,0,True
+6640L,2,width_unknown,com,FOURTH ST,L,0,True
+6640R,1,5ft_or_wider,com,FOURTH ST,R,0,True
+6641L,4,5ft_or_wider,man,FOURTH ST,L,0,True
+6641R,4,5ft_or_wider,man,FOURTH ST,R,0,True
+6644L,4,5ft_or_wider,man,FOURTH ST,L,0,True
+6644R,4,5ft_or_wider,man,FOURTH ST,R,0,True
+6645L,2,5ft_or_wider,com,FOURTH ST,L,0,True
+6645R,3,width_unknown,com,FOURTH ST,R,0,True
+6646L,2,5ft_or_wider,com,FOURTH ST,L,0,True
+6646R,2,5ft_or_wider,com,FOURTH ST,R,0,True
+6647L,3,width_unknown,com,FOURTH ST,L,0,True
+6647R,2,width_unknown,com,FOURTH ST,R,0,True
+6648L,3,5ft_or_wider,man,FOURTH ST,L,0,True
+6648R,3,5ft_or_wider,man,FOURTH ST,R,0,True
+6649L,4,5ft_or_wider,man,FOURTH ST,L,0,True
+6649R,4,5ft_or_wider,man,FOURTH ST,R,0,True
+6650L,4,5ft_or_wider,man,FOURTH ST,L,0,True
+6650R,4,5ft_or_wider,man,FOURTH ST,R,0,True
+6651L,4,5ft_or_wider,man,FOURTH ST,L,0,True
+6651R,4,5ft_or_wider,man,FOURTH ST,R,0,True
+6652L,2,no_sidewalk,man,FOURTH ST,L,0,True
+6652R,2,no_sidewalk,man,FOURTH ST,R,0,True
+6653L,4,5ft_or_wider,man,FOURTH ST,L,0,True
+6653R,4,no_sidewalk,man,FOURTH ST,R,0,True
+6654L,4,5ft_or_wider,man,FOURTH ST,L,0,True
+6654R,4,5ft_or_wider,man,FOURTH ST,R,0,True
+6655L,0,5ft_or_wider,man,FOURTH ST,L,0,False
+6655R,0,5ft_or_wider,man,FOURTH ST,R,0,False
+6656R,2,5ft_or_wider,man,FOURTH ST,R,0,True
+6657L,4,5ft_or_wider,man,FOURTH ST,L,0,True
+6657R,4,5ft_or_wider,man,FOURTH ST,R,0,True
+6658L,4,5ft_or_wider,man,FOURTH ST,L,0,True
+6658R,4,5ft_or_wider,man,FOURTH ST,R,0,True
+6659L,4,5ft_or_wider,man,FOURTH ST,L,0,True
+6659R,4,5ft_or_wider,man,FOURTH ST,R,0,True
+6661L,4,5ft_or_wider,mixres,FIFTH ST,L,0,True
+6661R,4,5ft_or_wider,mixres,FIFTH ST,R,0,True
+6662L,0,width_unknown,com,FIFTH ST,L,0,False
+6662R,3,width_unknown,com,FIFTH ST,R,0,True
+6663L,3,width_unknown,mixres,FIFTH ST,L,0,True
+6663R,3,width_unknown,mixres,FIFTH ST,R,0,True
+6664L,2,5ft_or_wider,mixres,FIFTH ST,L,0,True
+6664R,1,5ft_or_wider,mixres,FIFTH ST,R,0,True
+6665L,1,width_unknown,com,FIFTH ST,L,0,True
+6665R,2,width_unknown,com,FIFTH ST,R,0,True
+6666L,2,5ft_or_wider,mixres,FIFTH ST,L,0,True
+6666R,2,5ft_or_wider,com,FIFTH ST,R,0,True
+6667L,2,width_unknown,mixres,FIFTH ST,L,0,True
+6667R,2,width_unknown,com,FIFTH ST,R,0,True
+6668L,4,5ft_or_wider,mixres,FIFTH ST,L,0,True
+6668R,4,5ft_or_wider,mixres,FIFTH ST,R,0,True
+6669L,4,5ft_or_wider,mixres,FIFTH ST,L,0,True
+6669R,4,5ft_or_wider,mixres,FIFTH ST,R,0,True
+6670L,4,5ft_or_wider,mixres,FIFTH ST,L,0,True
+6670R,4,5ft_or_wider,mixres,FIFTH ST,R,0,True
+6671L,4,5ft_or_wider,man,FIFTH ST,L,0,True
+6671R,4,5ft_or_wider,man,FIFTH ST,R,0,True
+6672L,4,5ft_or_wider,mixres,FIFTH ST,L,0,True
+6672R,3,5ft_or_wider,mixres,FIFTH ST,R,0,True
+6673L,2,no_sidewalk,man,FIFTH ST,L,0,True
+6673R,2,no_sidewalk,man,FIFTH ST,R,0,True
+6674L,4,5ft_or_wider,man,FIFTH ST,L,0,True
+6674R,4,no_sidewalk,man,FIFTH ST,R,0,True
+6675L,4,5ft_or_wider,mixres,FIFTH ST,L,0,True
+6675R,4,5ft_or_wider,mixres,FIFTH ST,R,0,True
+6676L,4,5ft_or_wider,mixres,FIFTH ST,L,0,True
+6676R,4,5ft_or_wider,mixres,FIFTH ST,R,0,True
+6677L,4,5ft_or_wider,mixres,FIFTH ST,L,0,True
+6677R,4,5ft_or_wider,mixres,FIFTH ST,R,0,True
+6678L,4,5ft_or_wider,com,FIFTH ST,L,0,True
+6678R,4,5ft_or_wider,man,FIFTH ST,R,0,True
+6679L,2,5ft_or_wider,man,FIFTH ST,L,0,True
+6679R,2,5ft_or_wider,man,FIFTH ST,R,0,True
+6692L,2,5ft_or_wider,res,SIXTY-SIXTH ST,L,0,True
+6692R,2,5ft_or_wider,res,SIXTY-SIXTH ST,R,0,True
+6704R,1,5ft_or_wider,res,SIXTY-SEVENTH ST,R,0,True
+6705L,2,5ft_or_wider,res,SIXTY-SEVENTH ST,L,0,True
+6705R,2,5ft_or_wider,res,SIXTY-SEVENTH ST,R,0,True
+6707L,2,5ft_or_wider,res,SIXTY-SEVENTH ST,L,0,True
+6707R,2,5ft_or_wider,res,SIXTY-SEVENTH ST,R,0,True
+6708L,4,5ft_or_wider,res,SIXTY-SEVENTH ST,L,0,True
+6708R,4,5ft_or_wider,res,SIXTY-SEVENTH ST,R,0,True
+6709R,1,5ft_or_wider,man,SIXTY-SEVENTH ST,R,0,True
+6723L,0,5ft_or_wider,com,SIXTH ST,L,0,False
+6723R,0,width_unknown,com,SIXTH ST,R,0,False
+6724L,2,5ft_or_wider,res,SIXTH ST,L,0,True
+6724R,2,5ft_or_wider,mixres,SIXTH ST,R,0,True
+6725L,2,5ft_or_wider,res,SIXTH ST,L,0,True
+6725R,1,width_unknown,mixres,SIXTH ST,R,0,True
+6726L,4,width_unknown,res,SIXTH ST,L,0,True
+6726R,4,5ft_or_wider,mixres,SIXTH ST,R,0,True
+6727L,4,5ft_or_wider,res,SIXTH ST,L,0,True
+6727R,4,5ft_or_wider,mixres,SIXTH ST,R,0,True
+6728L,4,5ft_or_wider,res,SIXTH ST,L,0,True
+6728R,4,5ft_or_wider,mixres,SIXTH ST,R,0,True
+6729L,4,5ft_or_wider,res,SIXTH ST,L,0,True
+6729R,4,5ft_or_wider,mixres,SIXTH ST,R,0,True
+6730L,4,5ft_or_wider,man,SIXTH ST,L,0,True
+6730R,3,5ft_or_wider,man,SIXTH ST,R,0,True
+6731L,4,5ft_or_wider,res,SIXTH ST,L,0,True
+6731R,4,under_5ft,mixres,SIXTH ST,R,0,True
+6732L,4,5ft_or_wider,res,SIXTH ST,L,0,True
+6732R,3,5ft_or_wider,mixres,SIXTH ST,R,0,True
+6733L,4,width_unknown,res,SIXTH ST,L,0,True
+6733R,4,width_unknown,mixres,SIXTH ST,R,0,True
+6736L,4,no_sidewalk,man,SIXTH ST,L,0,True
+6736R,3,no_sidewalk,man,SIXTH ST,R,38,True
+6737L,3,no_sidewalk,man,SIXTH ST,L,0,True
+6737R,3,no_sidewalk,man,SIXTH ST,R,29,True
+6738L,2,5ft_or_wider,res,SIXTH ST,L,0,True
+6738R,3,5ft_or_wider,mixres,SIXTH ST,R,0,True
+6739L,4,5ft_or_wider,res,SIXTH ST,L,0,True
+6739R,4,5ft_or_wider,mixres,SIXTH ST,R,0,True
+6740L,4,5ft_or_wider,res,SIXTH ST,L,0,True
+6740R,4,5ft_or_wider,mixres,SIXTH ST,R,0,True
+6741L,2,5ft_or_wider,mixres,SIXTH ST,L,0,True
+6741R,3,5ft_or_wider,mixres,SIXTH ST,R,0,True
+6743L,0,width_unknown,com,SEVENTH ST,L,0,False
+6743R,0,width_unknown,com,SEVENTH ST,R,0,False
+6744L,2,5ft_or_wider,res,SEVENTH ST,L,0,True
+6744R,2,5ft_or_wider,res,SEVENTH ST,R,0,True
+6745L,4,5ft_or_wider,res,SEVENTH ST,L,0,True
+6745R,4,5ft_or_wider,res,SEVENTH ST,R,0,True
+6746L,2,width_unknown,res,SEVENTH ST,L,0,True
+6746R,2,width_unknown,res,SEVENTH ST,R,0,True
+6747L,3,5ft_or_wider,res,SEVENTH ST,L,0,True
+6747R,4,5ft_or_wider,res,SEVENTH ST,R,0,True
+6748L,3,5ft_or_wider,res,SEVENTH ST,L,0,True
+6748R,4,5ft_or_wider,res,SEVENTH ST,R,0,True
+6749L,4,5ft_or_wider,res,SEVENTH ST,L,0,True
+6749R,4,5ft_or_wider,res,SEVENTH ST,R,0,True
+6750L,4,width_unknown,res,SEVENTH ST,L,0,True
+6750R,4,width_unknown,res,SEVENTH ST,R,0,True
+6751L,4,no_sidewalk,man,SEVENTH ST,L,0,True
+6751R,3,no_sidewalk,man,SEVENTH ST,R,0,True
+6752L,4,5ft_or_wider,res,SEVENTH ST,L,0,True
+6752R,4,5ft_or_wider,res,SEVENTH ST,R,0,True
+6753L,4,no_sidewalk,man,SEVENTH ST,L,0,True
+6753R,3,no_sidewalk,man,SEVENTH ST,R,0,True
+6754L,4,5ft_or_wider,res,SEVENTH ST,L,0,True
+6754R,4,5ft_or_wider,res,SEVENTH ST,R,0,True
+6755L,4,5ft_or_wider,res,SEVENTH ST,L,0,True
+6755R,4,5ft_or_wider,res,SEVENTH ST,R,0,True
+6756L,2,5ft_or_wider,man,SEVENTH ST,L,0,True
+6756R,1,5ft_or_wider,man,SEVENTH ST,R,0,True
+6757L,4,5ft_or_wider,mixres,SEVENTH ST,L,0,True
+6757R,4,5ft_or_wider,man,SEVENTH ST,R,0,True
+6758L,4,5ft_or_wider,man,SEVENTH ST,L,0,True
+6758R,3,5ft_or_wider,man,SEVENTH ST,R,0,True
+6759L,4,5ft_or_wider,mixres,SEVENTH ST,L,0,True
+6759R,4,5ft_or_wider,man,SEVENTH ST,R,0,True
+6760L,2,5ft_or_wider,man,SEVENTH ST,L,0,True
+6760R,0,5ft_or_wider,man,SEVENTH ST,R,0,False
+6761L,0,5ft_or_wider,man,SEVENTH ST,L,0,False
+6761R,0,5ft_or_wider,man,SEVENTH ST,R,0,False
+6762L,4,5ft_or_wider,res,SEVENTH ST,L,0,True
+6762R,4,5ft_or_wider,res,SEVENTH ST,R,0,True
+6763L,4,5ft_or_wider,res,SEVENTH ST,L,0,True
+6763R,4,5ft_or_wider,res,SEVENTH ST,R,0,True
+6764L,4,width_unknown,man,SEVENTH ST,L,0,True
+6764R,0,width_unknown,man,SEVENTH ST,R,0,False
+6765L,4,5ft_or_wider,man,SEVENTH ST,L,0,True
+6765R,4,5ft_or_wider,man,SEVENTH ST,R,0,True
+6766L,3,5ft_or_wider,com,SEVENTH ST,L,0,True
+6766R,4,5ft_or_wider,com,SEVENTH ST,R,0,True
+6767L,4,5ft_or_wider,mixres,SEVENTH ST,L,0,True
+6767R,4,5ft_or_wider,man,SEVENTH ST,R,0,True
+6768L,4,5ft_or_wider,res,SEVENTH ST,L,0,True
+6768R,2,5ft_or_wider,res,SEVENTH ST,R,0,True
+6769L,2,width_unknown,com,SEVENTH ST,L,0,True
+6769R,2,width_unknown,com,SEVENTH ST,R,0,True
+6770L,3,width_unknown,man,SEVENTH ST,L,0,True
+6770R,0,width_unknown,man,SEVENTH ST,R,2,False
+6771L,2,width_unknown,res,EIGHTH ST,L,0,True
+6771R,2,width_unknown,res,EIGHTH ST,R,0,True
+6772L,4,width_unknown,res,EIGHTH ST,L,0,True
+6772R,4,width_unknown,res,EIGHTH ST,R,0,True
+6773L,0,no_sidewalk,com,EIGHTH ST,L,0,False
+6773R,0,no_sidewalk,com,EIGHTH ST,R,0,False
+6774L,2,5ft_or_wider,res,EIGHTH ST,L,0,True
+6774R,2,5ft_or_wider,res,EIGHTH ST,R,0,True
+6775L,4,5ft_or_wider,res,EIGHTH ST,L,0,True
+6775R,4,5ft_or_wider,res,EIGHTH ST,R,0,True
+6776L,4,5ft_or_wider,res,EIGHTH ST,L,0,True
+6776R,3,5ft_or_wider,res,EIGHTH ST,R,0,True
+6777L,4,5ft_or_wider,res,EIGHTH ST,L,0,True
+6777R,3,5ft_or_wider,res,EIGHTH ST,R,0,True
+6778L,4,5ft_or_wider,res,EIGHTH ST,L,0,True
+6778R,4,no_sidewalk,res,EIGHTH ST,R,0,True
+6779L,4,5ft_or_wider,res,EIGHTH ST,L,0,True
+6779R,4,5ft_or_wider,res,EIGHTH ST,R,0,True
+6780L,4,5ft_or_wider,res,EIGHTH ST,L,0,True
+6780R,4,no_sidewalk,res,EIGHTH ST,R,0,True
+6781L,4,no_sidewalk,man,EIGHTH ST,L,0,True
+6781R,3,no_sidewalk,man,EIGHTH ST,R,0,True
+6782L,4,5ft_or_wider,res,EIGHTH ST,L,0,True
+6782R,4,5ft_or_wider,res,EIGHTH ST,R,0,True
+6783L,4,no_sidewalk,man,EIGHTH ST,L,0,True
+6783R,3,no_sidewalk,man,EIGHTH ST,R,0,True
+6784L,4,5ft_or_wider,man,EIGHTH ST,L,0,True
+6784R,4,5ft_or_wider,man,EIGHTH ST,R,0,True
+6785L,4,5ft_or_wider,mixres,EIGHTH ST,L,0,True
+6785R,4,5ft_or_wider,mixres,EIGHTH ST,R,0,True
+6786L,4,5ft_or_wider,mixres,EIGHTH ST,L,0,True
+6786R,4,5ft_or_wider,mixres,EIGHTH ST,R,0,True
+6787L,4,5ft_or_wider,res,EIGHTH ST,L,0,True
+6787R,4,5ft_or_wider,res,EIGHTH ST,R,0,True
+6788L,4,5ft_or_wider,res,EIGHTH ST,L,0,True
+6788R,4,5ft_or_wider,res,EIGHTH ST,R,0,True
+6789L,4,5ft_or_wider,res,EIGHTH ST,L,0,True
+6789R,4,5ft_or_wider,res,EIGHTH ST,R,0,True
+6790L,4,5ft_or_wider,mixres,EIGHTH ST,L,0,True
+6790R,4,5ft_or_wider,mixres,EIGHTH ST,R,0,True
+6791L,4,5ft_or_wider,man,EIGHTH ST,L,0,True
+6791R,4,5ft_or_wider,man,EIGHTH ST,R,0,True
+6792L,4,no_sidewalk,man,EIGHTH ST,L,0,True
+6792R,4,no_sidewalk,man,EIGHTH ST,R,0,True
+6793L,4,5ft_or_wider,res,NINTH ST,L,0,True
+6793R,4,5ft_or_wider,res,NINTH ST,R,0,True
+6794L,4,5ft_or_wider,res,NINTH ST,L,0,True
+6794R,4,5ft_or_wider,res,NINTH ST,R,0,True
+6795L,0,5ft_or_wider,com,NINTH ST,L,0,False
+6795R,0,5ft_or_wider,com,NINTH ST,R,0,False
+6796L,2,5ft_or_wider,res,NINTH ST,L,0,True
+6796R,2,5ft_or_wider,res,NINTH ST,R,0,True
+6797L,2,width_unknown,res,NINTH ST,L,0,True
+6797R,2,width_unknown,res,NINTH ST,R,0,True
+6798L,4,5ft_or_wider,res,NINTH ST,L,0,True
+6798R,4,5ft_or_wider,res,NINTH ST,R,0,True
+6799L,4,5ft_or_wider,res,NINTH ST,L,0,True
+6799R,4,5ft_or_wider,res,NINTH ST,R,0,True
+6800L,3,no_sidewalk,com,NINTH ST,L,38,True
+6800R,3,no_sidewalk,man,NINTH ST,R,6,True
+6801L,4,5ft_or_wider,res,NINTH ST,L,0,True
+6801R,4,5ft_or_wider,res,NINTH ST,R,0,True
+6802L,4,width_unknown,res,NINTH ST,L,0,True
+6802R,4,no_sidewalk,res,NINTH ST,R,0,True
+6803L,4,5ft_or_wider,res,NINTH ST,L,0,True
+6803R,4,no_sidewalk,res,NINTH ST,R,0,True
+6804L,4,5ft_or_wider,mixres,NINTH ST,L,13,True
+6804R,4,5ft_or_wider,mixres,NINTH ST,R,0,True
+6805L,3,no_sidewalk,man,NINTH ST,L,0,True
+6805R,4,no_sidewalk,man,NINTH ST,R,48,True
+6806L,2,no_sidewalk,man,NINTH ST,L,0,True
+6806R,1,no_sidewalk,man,NINTH ST,R,0,True
+6807L,0,trail,com,NINTH ST,L,0,False
+6807R,1,trail,man,NINTH ST,R,0,True
+6808L,4,5ft_or_wider,res,NINTH ST,L,0,True
+6808R,4,5ft_or_wider,res,NINTH ST,R,0,True
+6809L,4,5ft_or_wider,man,NINTH ST,L,60,True
+6809R,4,5ft_or_wider,man,NINTH ST,R,62,True
+6810L,4,5ft_or_wider,mixres,NINTH ST,L,0,True
+6810R,4,5ft_or_wider,mixres,NINTH ST,R,0,True
+6811L,4,5ft_or_wider,man,NINTH ST,L,0,True
+6811R,4,5ft_or_wider,man,NINTH ST,R,0,True
+6812L,4,5ft_or_wider,res,NINTH ST,L,0,True
+6812R,4,5ft_or_wider,res,NINTH ST,R,0,True
+6813L,4,5ft_or_wider,res,NINTH ST,L,0,True
+6813R,4,5ft_or_wider,res,NINTH ST,R,0,True
+6814L,3,5ft_or_wider,man,NINTH ST,L,0,True
+6814R,3,5ft_or_wider,man,NINTH ST,R,0,True
+6815R,2,5ft_or_wider,com,NINTH ST,R,0,True
+6816L,4,5ft_or_wider,mixres,NINTH ST,L,0,True
+6816R,4,5ft_or_wider,mixres,NINTH ST,R,0,True
+6817L,0,none,com,NINTH ST,L,0,False
+6817R,0,none,man,NINTH ST,R,0,False
+6818L,2,5ft_or_wider,res,VALLEY ST,L,0,True
+6818R,2,5ft_or_wider,res,VALLEY ST,R,0,True
+6943R,2,width_unknown,com,UNIVERSITY AVE,R,0,True
+6944R,2,5ft_or_wider,com,UNIVERSITY AVE,R,0,True
+6945R,2,5ft_or_wider,com,UNIVERSITY AVE,R,0,True
+6946R,2,width_unknown,com,UNIVERSITY AVE,R,0,True
+6947R,2,5ft_or_wider,com,UNIVERSITY AVE,R,0,True
+6948L,2,5ft_or_wider,com,UNIVERSITY AVE,L,0,True
+6948R,1,5ft_or_wider,com,UNIVERSITY AVE,R,0,True
+6949R,2,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+6950R,4,5ft_or_wider,com,SAN PABLO AVE,R,0,True
+6962L,1,width_unknown,com,ESSEX WAY,L,0,True
+6962R,0,width_unknown,com,ESSEX WAY,R,0,False
+6964L,0,none,man,UNIVERSITY AVE,L,0,False
+6964R,2,none,man,UNIVERSITY AVE,R,0,True
+6965L,0,none,man,UNIVERSITY AVE,L,0,False
+6965R,2,none,man,UNIVERSITY AVE,R,0,True
+6968L,2,width_unknown,res,NORTHSIDE AVE,L,0,True
+6968R,2,width_unknown,res,NORTHSIDE AVE,R,0,True
+6969L,2,5ft_or_wider,res,NEILSON ST,L,0,True
+6969R,2,5ft_or_wider,com,NEILSON ST,R,0,True

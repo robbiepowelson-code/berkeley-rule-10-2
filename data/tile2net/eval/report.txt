@@ -1,0 +1,153 @@
+
+== nw: 271 faces scored ==
+{
+ "presence": {
+  "n": 271,
+  "city_sidewalk_detected": 192,
+  "city_none_detected_none": 11,
+  "city_none_but_detected": 58,
+  "city_sidewalk_but_missed": 10,
+  "accuracy": 0.7490774907749077,
+  "accuracy_ci95": [
+   0.6942215179194812,
+   0.7969704995916961
+  ],
+  "no_sidewalk_sensitivity": 0.15942028985507245,
+  "no_sidewalk_specificity": 0.9504950495049505,
+  "kappa": 0.14256467522799168
+ },
+ "segment": {
+  "n_segments": 145,
+  "city_red": 39,
+  "red_detected": 8,
+  "red_missed": 31,
+  "nonred_false_missing": 6,
+  "accuracy": 0.7448275862068966,
+  "accuracy_ci95": [
+   0.6681853208498835,
+   0.8088318571433658
+  ],
+  "red_sensitivity": 0.20512820512820512,
+  "kappa": 0.18625815258607617
+ },
+ "width_class": {
+  "n": 183,
+  "agree": 182,
+  "accuracy": 0.994535519125683,
+  "accuracy_ci95": [
+   0.9697002564186018,
+   0.9990347576253801
+  ],
+  "kappa": 0.0,
+  "city_under5_n": 1,
+  "t2n_width_on_city_5plus_median": 9.149312748486949
+ },
+ "cover_sweep": {
+  "0.1": 0.7601476014760148,
+  "0.2": 0.7527675276752768,
+  "0.3": 0.7490774907749077,
+  "0.4": 0.7453874538745388,
+  "0.5": 0.7527675276752768,
+  "0.6": 0.7453874538745388
+ }
+}
+
+== ninth: 78 faces scored ==
+{
+ "presence": {
+  "n": 72,
+  "city_sidewalk_detected": 71,
+  "city_none_detected_none": 0,
+  "city_none_but_detected": 0,
+  "city_sidewalk_but_missed": 1,
+  "accuracy": 0.9861111111111112,
+  "accuracy_ci95": [
+   0.9254321971571302,
+   0.9975441113595678
+  ],
+  "no_sidewalk_sensitivity": NaN,
+  "no_sidewalk_specificity": 0.9861111111111112,
+  "kappa": 0.0
+ },
+ "segment": {
+  "n_segments": 37,
+  "city_red": 0,
+  "red_detected": 0,
+  "red_missed": 0,
+  "nonred_false_missing": 1,
+  "accuracy": 0.972972972972973,
+  "accuracy_ci95": [
+   0.8617562156243666,
+   0.9952131489450924
+  ],
+  "red_sensitivity": NaN,
+  "kappa": 0.0
+ },
+ "width_class": {
+  "n": 69,
+  "agree": 69,
+  "accuracy": 1.0,
+  "accuracy_ci95": [
+   0.9472609058559944,
+   1.0
+  ],
+  "kappa": NaN,
+  "city_under5_n": 0,
+  "t2n_width_on_city_5plus_median": 10.037440308585452
+ },
+ "cover_sweep": {
+  "0.1": 1.0,
+  "0.2": 1.0,
+  "0.3": 0.9861111111111112,
+  "0.4": 0.9166666666666666,
+  "0.5": 0.8611111111111112,
+  "0.6": 0.7222222222222222
+ }
+}
+
+== all areas ==
+{
+ "presence": {
+  "n": 343,
+  "city_sidewalk_detected": 263,
+  "city_none_detected_none": 11,
+  "city_none_but_detected": 58,
+  "city_sidewalk_but_missed": 11,
+  "accuracy": 0.7988338192419825,
+  "accuracy_ci95": [
+   0.75320560982599,
+   0.8378422921557791
+  ],
+  "no_sidewalk_sensitivity": 0.15942028985507245,
+  "no_sidewalk_specificity": 0.9598540145985401,
+  "kappa": 0.16005962309685193
+ },
+ "segment": {
+  "n_segments": 182,
+  "city_red": 39,
+  "red_detected": 8,
+  "red_missed": 31,
+  "nonred_false_missing": 7,
+  "accuracy": 0.7912087912087912,
+  "accuracy_ci95": [
+   0.7264430982605574,
+   0.8439351163049651
+  ],
+  "red_sensitivity": 0.20512820512820512,
+  "kappa": 0.20120120120120105
+ },
+ "width_class": {
+  "n": 252,
+  "agree": 251,
+  "accuracy": 0.996031746031746,
+  "accuracy_ci95": [
+   0.9778679421784356,
+   0.9992991799783989
+  ],
+  "kappa": 0.0,
+  "city_under5_n": 1,
+  "t2n_width_on_city_5plus_median": 9.355689530957115
+ }
+}
+
+model tent spots on faces the City marks no-sidewalk: 179; of those faces tile2net also finds no sidewalk on 11 of 69

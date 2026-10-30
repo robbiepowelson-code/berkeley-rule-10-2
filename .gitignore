@@ -8,3 +8,4 @@ data/tile2net/tiles/
 *.tgz
 *.part0*
 _to_delete/
+data/tile2net/runs/

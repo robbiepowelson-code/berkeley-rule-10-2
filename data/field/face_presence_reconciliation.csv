@@ -1,0 +1,641 @@
+face,street,side,zone,gis_width_ft,model_spots,fig4,fig4_share,t2n,sv,status
+10L,CEDAR ST,L,C-W,10.3,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+10R,CEDAR ST,R,C-W,11.8,0,5ft_or_wider,1.0,,,sidewalk (City map)
+12L,ADDISON ST,L,C-W,7.0,0,5ft_or_wider,1.0,,,sidewalk (City map)
+12R,ADDISON ST,R,MULI,7.8,0,5ft_or_wider,1.0,,,sidewalk (City map)
+13L,ADDISON ST,L,C-W,8.8,0,5ft_or_wider,1.0,,,sidewalk (City map)
+13R,ADDISON ST,R,MULI,10.9,0,5ft_or_wider,1.0,,,sidewalk (City map)
+14L,ADDISON ST,L,C-U,11.3,0,5ft_or_wider,1.0,,,sidewalk (City map)
+19L,UNIVERSITY AVE,L,C-W,5.0,0,width_unknown,0.65,,,sidewalk (City map)
+19R,UNIVERSITY AVE,R,C-W,36.4,0,width_unknown,1.0,,,sidewalk (City map)
+32L,ADDISON ST,L,MULI,10.6,0,no_sidewalk,1.0,,,City map: no sidewalk - unverified
+32R,ADDISON ST,R,C-W,9.8,0,no_sidewalk,1.0,,,City map: no sidewalk - unverified
+54L,BOLIVAR DR,L,MULI,8.5,0,no_sidewalk,0.5,,,City map: no sidewalk - unverified
+55L,BOLIVAR DR,L,MULI,23.5,0,5ft_or_wider,0.32,,,sidewalk (City map)
+58L,BONAR ST,L,C-U,9.4,0,trail,0.69,,,City map: no data
+58R,BONAR ST,R,C-U,16.0,0,width_unknown,0.31,,,sidewalk (City map)
+62R,EASTSHORE HWY,R,M,9.1,0,width_unknown,0.32,,,sidewalk (City map)
+90L,UNIVERSITY AVE OVERPASS,L,MULI,22.5,0,none,1.0,,,City map: no data
+90R,UNIVERSITY AVE OVERPASS,R,MULI,26.0,0,none,1.0,,,City map: no data
+91R,UNIVERSITY AVE OVERPASS,R,MULI,31.2,0,no_sidewalk,0.43,,,City map: no sidewalk - unverified
+92L,I80 EAST (OFF RAMP) UNIV,L,MULI,24.6,0,no_sidewalk,0.55,,,City map: no sidewalk - unverified
+93L,I80 EAST (ON RAMP) UNIV,L,MULI,11.6,0,width_unknown,0.5,,,sidewalk (City map)
+94L,UNIVERSITY AVE,L,MULI,25.5,0,width_unknown,0.53,,,sidewalk (City map)
+94R,UNIVERSITY AVE,R,MULI,15.1,0,width_unknown,0.45,,,sidewalk (City map)
+95R,UNNAMED ALLEY,R,C-W,31.1,1,5ft_or_wider,0.94,False,,imagery finds no sidewalk - unverified
+102L,VIRGINIA ST,L,C-W,10.2,0,5ft_or_wider,1.0,,,sidewalk (City map)
+103L,VIRGINIA ST,L,C-W,11.6,0,5ft_or_wider,1.0,,,sidewalk (City map)
+103R,VIRGINIA ST,R,C-W,14.1,0,5ft_or_wider,1.0,,,sidewalk (City map)
+180R,I80 EAST (OFF RAMP) UNIV,R,C-W,35.6,6,no_sidewalk,1.0,,,City map: no sidewalk - unverified
+320L,CEDAR ST,L,M,10.3,0,width_unknown,0.54,,,sidewalk (City map)
+320R,CEDAR ST,R,M,6.8,0,width_unknown,0.54,,,sidewalk (City map)
+323R,ALLSTON WAY,R,C-W,11.4,0,5ft_or_wider,1.0,,,sidewalk (City map)
+333L,ADDISON ST,L,MULI,9.8,0,5ft_or_wider,0.93,,,sidewalk (City map)
+333R,ADDISON ST,R,C-W,9.6,0,5ft_or_wider,0.93,,,sidewalk (City map)
+334L,ADDISON ST,L,C-W,10.2,0,5ft_or_wider,1.0,,,sidewalk (City map)
+334R,ADDISON ST,R,MULI,11.1,0,5ft_or_wider,1.0,,,sidewalk (City map)
+352L,UNIVERSITY AVE,L,C-W,30.0,0,width_unknown,0.91,,,sidewalk (City map)
+352R,UNIVERSITY AVE,R,C-W,10.1,0,width_unknown,0.82,,,sidewalk (City map)
+353L,ADDISON ST,L,C-W,12.2,0,5ft_or_wider,0.69,,,sidewalk (City map)
+353R,ADDISON ST,R,C-W,13.0,0,5ft_or_wider,0.69,,,sidewalk (City map)
+354R,UNIVERSITY AVE,R,C-W,1.5,0,width_unknown,1.0,,,sidewalk (City map)
+358L,VIRGINIA ST,L,MULI,13.4,0,5ft_or_wider,0.64,,,sidewalk (City map)
+359L,I80 EAST (OFF RAMP) UNIV,L,C-W,38.6,0,no_sidewalk,0.97,,,City map: no sidewalk - unverified
+359R,I80 EAST (OFF RAMP) UNIV,R,C-W,3.0,0,no_sidewalk,1.0,,,City map: no sidewalk - unverified
+364L,UNIVERSITY AVE,L,MULI,7.9,0,no_sidewalk,0.14,,,City map: no sidewalk - unverified
+364R,UNIVERSITY AVE,R,MULI,32.2,0,none,1.0,,,City map: no data
+404R,I80 EAST (OFF RAMP) UNIV,R,C-W,31.4,0,no_sidewalk,1.0,,,City map: no sidewalk - unverified
+413L,PAGE ST,L,MRD,21.4,20,no_sidewalk,0.69,False,no_sidewalk,no sidewalk (Street View)
+413R,PAGE ST,R,M,19.1,0,no_sidewalk,0.69,True,,City map: no sidewalk - unverified
+416L,GILMAN ST,L,M,21.9,26,5ft_or_wider,0.92,True,,sidewalk (City map + imagery)
+416R,GILMAN ST,R,MRD,11.9,0,5ft_or_wider,0.67,True,,sidewalk (City map + imagery)
+427L,CAMELIA ST,L,C-W,10.7,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+427R,CAMELIA ST,R,C-W,13.9,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+432L,GILMAN ST,L,M,21.1,5,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+432R,GILMAN ST,R,M,13.8,0,5ft_or_wider,0.86,True,,sidewalk (City map + imagery)
+433L,GILMAN ST,L,M,16.8,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+433R,GILMAN ST,R,M,17.0,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+434R,GILMAN ST,R,C-N,7.7,0,width_unknown,0.5,,,sidewalk (City map)
+452R,EASTSHORE HWY,R,MRD,10.9,0,5ft_or_wider,0.35,True,,sidewalk (City map + imagery)
+458L,CARLETON ST,L,MULI,15.4,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+487L,UNIVERSITY AVE,L,C-W,4.9,0,width_unknown,1.0,,,sidewalk (City map)
+487R,UNIVERSITY AVE,R,C-W,33.3,0,width_unknown,1.0,,,sidewalk (City map)
+491L,UNIVERSITY AVE,L,C-W,3.9,0,width_unknown,0.85,,,sidewalk (City map)
+491R,UNIVERSITY AVE,R,C-W,36.6,0,width_unknown,1.0,,,sidewalk (City map)
+493R,UNIVERSITY AVE,R,C-W,2.3,0,width_unknown,1.0,,,sidewalk (City map)
+496L,HEARST AVE,L,MULI,5.8,0,5ft_or_wider,0.64,,,sidewalk (City map)
+496R,HEARST AVE,R,MULI,10.1,0,5ft_or_wider,0.64,,,sidewalk (City map)
+499L,HEARST AVE,L,C-W,3.9,0,5ft_or_wider,0.73,,,sidewalk (City map)
+499R,HEARST AVE,R,C-W,12.7,0,width_unknown,0.55,,,sidewalk (City map)
+500L,HEARST AVE,L,C-W,10.5,0,5ft_or_wider,1.0,,,sidewalk (City map)
+500R,HEARST AVE,R,C-W,12.3,0,5ft_or_wider,1.0,,,sidewalk (City map)
+501L,CHESTNUT ST,L,C-U,11.5,0,width_unknown,0.57,,,sidewalk (City map)
+501R,CHESTNUT ST,R,C-U,16.2,0,5ft_or_wider,0.44,,,sidewalk (City map)
+509L,CURTIS ST,L,C-U,6.2,0,5ft_or_wider,0.23,,,sidewalk (City map)
+509R,CURTIS ST,R,C-U,19.3,0,5ft_or_wider,0.23,,,sidewalk (City map)
+519R,EASTSHORE,R,MULI,11.3,0,no_sidewalk,0.3,,,City map: no sidewalk - unverified
+521L,GILMAN ST,L,C-W,13.0,0,5ft_or_wider,0.67,True,,sidewalk (City map + imagery)
+521R,GILMAN ST,R,C-W,17.9,0,5ft_or_wider,0.67,True,,sidewalk (City map + imagery)
+527L,VIRGINIA ST,L,M,13.2,0,width_unknown,1.0,,,sidewalk (City map)
+527R,VIRGINIA ST,R,MULI,18.4,0,width_unknown,0.69,,,sidewalk (City map)
+530L,VIRGINIA ST,L,MULI,14.0,0,5ft_or_wider,0.55,,,sidewalk (City map)
+530R,VIRGINIA ST,R,MULI,17.3,0,5ft_or_wider,0.64,,,sidewalk (City map)
+551L,CEDAR ST,L,M,9.4,0,width_unknown,0.92,,,sidewalk (City map)
+551R,CEDAR ST,R,M,15.5,0,width_unknown,0.77,,,sidewalk (City map)
+561L,HARRISON ST,L,MULI,12.7,0,no_sidewalk,1.0,True,,City map: no sidewalk - unverified
+561R,HARRISON ST,R,MULI,16.5,0,no_sidewalk,1.0,True,,City map: no sidewalk - unverified
+579L,CEDAR ST,L,MULI,7.8,0,5ft_or_wider,1.0,,,sidewalk (City map)
+579R,CEDAR ST,R,MULI,10.5,0,5ft_or_wider,1.0,,,sidewalk (City map)
+583L,CEDAR ST,L,MULI,29.4,0,5ft_or_wider,1.0,,,sidewalk (City map)
+583R,CEDAR ST,R,MULI,26.2,0,5ft_or_wider,1.0,,,sidewalk (City map)
+599L,JONES ST,L,MULI,10.1,0,5ft_or_wider,1.0,,,sidewalk (City map)
+603R,EASTSHORE HWY,R,M,11.1,0,5ft_or_wider,0.38,,,sidewalk (City map)
+624L,PAGE ST,L,C-W,10.7,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+624R,PAGE ST,R,C-W,13.7,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+647L,PAGE ST,L,M,16.4,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+647R,PAGE ST,R,MULI,8.0,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+651L,PAGE ST,L,MULI,15.9,0,5ft_or_wider,1.0,,,sidewalk (City map)
+651R,PAGE ST,R,MULI,13.4,0,5ft_or_wider,1.0,,,sidewalk (City map)
+656L,JONES ST,L,C-W,8.3,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+656R,JONES ST,R,C-W,13.5,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+663L,UNIVERSITY AVE OVERPASS,L,C-W,30.0,0,width_unknown,0.82,,,sidewalk (City map)
+663R,UNIVERSITY AVE OVERPASS,R,C-W,30.9,0,width_unknown,1.0,,,sidewalk (City map)
+664R,UNIVERSITY AVE OVERPASS,R,C-W,32.4,0,width_unknown,1.0,,,sidewalk (City map)
+665L,UNIVERSITY AVE OVERPASS,L,C-W,27.1,0,width_unknown,1.0,,,sidewalk (City map)
+665R,UNIVERSITY AVE OVERPASS,R,C-W,26.2,0,width_unknown,1.0,,,sidewalk (City map)
+678R,EASTSHORE HWY,R,MULI,8.5,0,width_unknown,1.0,,,sidewalk (City map)
+679L,HEARST AVE,L,MULI,21.4,0,no_sidewalk,0.95,,,City map: no sidewalk - unverified
+679R,HEARST AVE,R,MULI,24.8,1,width_unknown,1.0,,,sidewalk (City map)
+693L,JONES ST,L,M,9.8,0,no_sidewalk,0.46,,,City map: no sidewalk - unverified
+693R,JONES ST,R,M,11.6,0,no_sidewalk,0.46,,,City map: no sidewalk - unverified
+694L,JONES ST,L,MULI,11.1,0,no_sidewalk,0.75,,,City map: no sidewalk - unverified
+694R,JONES ST,R,MULI,15.4,0,no_sidewalk,0.58,,,City map: no sidewalk - unverified
+705L,CAMELIA ST,L,M,17.6,0,5ft_or_wider,1.0,,,sidewalk (City map)
+705R,CAMELIA ST,R,MULI,19.1,0,5ft_or_wider,1.0,,,sidewalk (City map)
+706L,CAMELIA ST,L,M,8.5,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+728L,WEST ST,L,C-U,4.8,0,trail,0.8,,,City map: no data
+728R,WEST ST,R,C-U,11.0,0,trail,1.0,,,City map: no data
+776L,GILMAN ST,L,MULI,13.6,0,width_unknown,0.75,True,,sidewalk (City map + imagery)
+776R,GILMAN ST,R,MULI,14.0,0,5ft_or_wider,0.67,True,,sidewalk (City map + imagery)
+795L,CAMELIA ST,L,M,9.9,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+795R,CAMELIA ST,R,M,12.7,0,5ft_or_wider,1.0,False,,imagery finds no sidewalk - unverified
+796L,CAMELIA ST,L,M,21.4,0,5ft_or_wider,1.0,,,sidewalk (City map)
+796R,CAMELIA ST,R,M,23.2,1,5ft_or_wider,1.0,,,sidewalk (City map)
+814L,CAMELIA ST,L,MULI,10.2,0,5ft_or_wider,0.82,True,,sidewalk (City map + imagery)
+837L,GILMAN ST,L,C-N,11.3,0,5ft_or_wider,0.56,,,sidewalk (City map)
+837R,GILMAN ST,R,C-N,14.5,0,5ft_or_wider,0.56,,,sidewalk (City map)
+874L,GILMAN ST,L,MULI,11.6,0,5ft_or_wider,0.85,True,,sidewalk (City map + imagery)
+874R,GILMAN ST,R,MULI,19.8,16,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+946L,VIRGINIA ST,L,M,15.2,0,width_unknown,1.0,,,sidewalk (City map)
+946R,VIRGINIA ST,R,MULI,10.1,0,width_unknown,1.0,,,sidewalk (City map)
+948L,JONES ST,L,C-W,9.8,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+948R,JONES ST,R,C-W,4.4,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+958L,GILMAN ST,L,M,13.0,0,width_unknown,0.67,True,,sidewalk (City map + imagery)
+958R,GILMAN ST,R,MRD,19.4,0,no_sidewalk,0.56,True,,City map: no sidewalk - unverified
+968L,CAMELIA ST,L,MULI,8.5,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+977L,JONES ST,L,M,11.7,0,width_unknown,0.58,,,sidewalk (City map)
+977R,JONES ST,R,M,5.2,0,width_unknown,0.5,,,sidewalk (City map)
+991L,SANTA FE AVE,L,C-N,26.5,3,5ft_or_wider,1.0,,,sidewalk (City map)
+993L,GILMAN ST,L,C-N,13.9,0,5ft_or_wider,0.84,,,sidewalk (City map)
+993R,GILMAN ST,R,C-N,13.8,0,5ft_or_wider,0.78,,,sidewalk (City map)
+995L,GILMAN ST,L,C-N,11.1,0,5ft_or_wider,1.0,,,sidewalk (City map)
+995R,GILMAN ST,R,C-N,14.4,0,5ft_or_wider,0.5,,,sidewalk (City map)
+1007L,CAMELIA ST,L,MULI,9.5,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+1016L,PAGE ST,L,C-W,12.3,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+1016R,PAGE ST,R,C-W,17.3,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+1017L,HARRISON ST,L,M,7.1,0,no_sidewalk,1.0,,,City map: no sidewalk - unverified
+1017R,HARRISON ST,R,M,11.4,0,no_sidewalk,1.0,,,City map: no sidewalk - unverified
+1083L,UNNAMED ALLEY,L,MULI,11.7,0,5ft_or_wider,1.0,False,,imagery finds no sidewalk - unverified
+1083R,UNNAMED ALLEY,R,MULI,13.4,0,5ft_or_wider,1.0,False,,imagery finds no sidewalk - unverified
+1084L,CAMELIA ST,L,MRD,12.9,0,no_sidewalk,0.62,False,,City map: no sidewalk - unverified
+1084R,CAMELIA ST,R,MRD,12.0,0,no_sidewalk,0.62,True,,City map: no sidewalk - unverified
+1120R,EASTSHORE HWY,R,M,9.0,0,width_unknown,0.38,,,sidewalk (City map)
+1129L,GILMAN ST,L,MULI,13.7,0,width_unknown,0.58,True,,sidewalk (City map + imagery)
+1129R,GILMAN ST,R,MULI,16.8,0,no_sidewalk,0.5,True,,City map: no sidewalk - unverified
+1167L,PAGE ST,L,MRD,18.3,0,no_sidewalk,1.0,True,,City map: no sidewalk - unverified
+1167R,PAGE ST,R,M,15.3,0,no_sidewalk,0.58,True,,City map: no sidewalk - unverified
+1168L,UNNAMED ALLEY,L,C-W,14.8,0,5ft_or_wider,1.0,,,sidewalk (City map)
+1170L,UNNAMED ALLEY,L,MULI,10.2,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+1170R,UNNAMED ALLEY,R,MULI,8.7,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+1174L,CAMELIA ST,L,C-W,9.4,0,5ft_or_wider,0.75,True,,sidewalk (City map + imagery)
+1211L,HARRISON ST,L,MULI,9.1,0,no_sidewalk,1.0,True,no_sidewalk,no sidewalk (Street View)
+1211R,HARRISON ST,R,MULI,12.0,0,no_sidewalk,1.0,True,sidewalk,"sidewalk now (City map outdated, Street View)"
+1212L,CEDARWOOD LN,L,M,7.8,0,no_sidewalk,1.0,False,,City map: no sidewalk - unverified
+1212R,CEDARWOOD LN,R,M,3.2,0,no_sidewalk,1.0,True,,City map: no sidewalk - unverified
+1213L,HARRISON ST,L,MULI,9.4,0,no_sidewalk,1.0,True,,City map: no sidewalk - unverified
+1213R,HARRISON ST,R,M,7.8,0,no_sidewalk,1.0,True,,City map: no sidewalk - unverified
+1217L,CAMELIA ST,L,MULI,8.6,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+1225L,CAMELIA ST,L,C-W,10.9,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+1226L,GILMAN ST,L,MULI,13.1,0,5ft_or_wider,1.0,,,sidewalk (City map)
+1226R,GILMAN ST,R,M,14.4,0,5ft_or_wider,1.0,,,sidewalk (City map)
+1227L,GILMAN ST,L,MULI,13.6,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+1227R,GILMAN ST,R,M,13.6,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+1231L,CAMELIA ST,L,MULI,8.6,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+1302L,CAMELIA ST,L,MULI,9.5,0,5ft_or_wider,0.83,True,,sidewalk (City map + imagery)
+1319L,HOPKINS ST,L,C-N,7.4,0,5ft_or_wider,1.0,,,sidewalk (City map)
+1319R,HOPKINS ST,R,C-N,12.3,0,5ft_or_wider,1.0,,,sidewalk (City map)
+1329L,GILMAN ST,L,MULI,13.9,0,width_unknown,0.82,True,,sidewalk (City map + imagery)
+1329R,GILMAN ST,R,MULI,18.1,0,5ft_or_wider,0.55,True,,sidewalk (City map + imagery)
+1330R,HEARST AVE,R,C-W,10.2,0,width_unknown,0.64,,,sidewalk (City map)
+1336L,HEARST AVE,L,MULI,8.5,0,width_unknown,1.0,,,sidewalk (City map)
+1336R,HEARST AVE,R,MULI,8.3,0,width_unknown,1.0,,,sidewalk (City map)
+1350L,PARK WAY,L,M,9.2,0,no_sidewalk,1.0,,,City map: no sidewalk - unverified
+1350R,PARK WAY,R,M,12.2,0,no_sidewalk,1.0,,,City map: no sidewalk - unverified
+1357L,TEVLIN ST,L,C-N,4.2,0,no_sidewalk,1.0,,,City map: no sidewalk - unverified
+1358L,CAMELIA ST,L,C-W,9.1,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+1358R,CAMELIA ST,R,C-W,14.6,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+1363L,PARK WAY,L,M,8.8,0,no_sidewalk,1.0,False,,City map: no sidewalk - unverified
+1363R,PARK WAY,R,M,12.1,0,no_sidewalk,1.0,False,,City map: no sidewalk - unverified
+1364L,PARK WAY,L,M,11.1,0,no_sidewalk,1.0,,,City map: no sidewalk - unverified
+1364R,PARK WAY,R,M,14.4,0,no_sidewalk,0.5,,,City map: no sidewalk - unverified
+1365L,GILMAN ST,L,C-W,12.0,0,width_unknown,0.67,True,,sidewalk (City map + imagery)
+1365R,GILMAN ST,R,C-W,15.7,0,no_sidewalk,0.58,True,,City map: no sidewalk - unverified
+1409L,EASTSHORE HWY,L,M,36.8,20,width_unknown,1.0,,,sidewalk (City map)
+1409R,EASTSHORE HWY,R,M,5.0,0,width_unknown,0.96,,,sidewalk (City map)
+1416L,GILMAN ST,L,C-W,14.4,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+1416R,GILMAN ST,R,C-W,18.2,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+1417L,HARRISON ST,L,M,9.7,0,no_sidewalk,1.0,False,,City map: no sidewalk - unverified
+1417R,HARRISON ST,R,M,13.0,0,no_sidewalk,1.0,False,,City map: no sidewalk - unverified
+1421L,GILMAN ST,L,C-W,9.9,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+1421R,GILMAN ST,R,C-W,15.3,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+1426L,HARRISON ST,L,MULI,11.4,0,no_sidewalk,1.0,True,,City map: no sidewalk - unverified
+1426R,HARRISON ST,R,MULI,17.6,0,no_sidewalk,0.5,True,,City map: no sidewalk - unverified
+1444L,HOPKINS ST,L,C-N,29.2,0,5ft_or_wider,1.0,,,sidewalk (City map)
+1444R,HOPKINS ST,R,C-N,25.6,0,5ft_or_wider,1.0,,,sidewalk (City map)
+1461L,HARRISON ST,L,MULI,10.5,0,no_sidewalk,1.0,True,,City map: no sidewalk - unverified
+1461R,HARRISON ST,R,MULI,15.2,0,no_sidewalk,1.0,True,,City map: no sidewalk - unverified
+1463L,HARRISON ST,L,MULI,10.4,0,no_sidewalk,1.0,True,,City map: no sidewalk - unverified
+1463R,HARRISON ST,R,MULI,17.0,0,no_sidewalk,0.67,True,,City map: no sidewalk - unverified
+1465L,EASTSHORE HWY,L,M,36.6,62,no_sidewalk,1.0,,no_sidewalk,no sidewalk (Street View)
+1465R,EASTSHORE HWY,R,M,5.7,0,no_sidewalk,1.0,,,City map: no sidewalk - unverified
+1497L,UNNAMED ALLEY,L,C-W,16.9,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+1507L,HOPKINS ST,L,C-N,13.8,0,5ft_or_wider,1.0,,,sidewalk (City map)
+1507R,HOPKINS ST,R,C-N,22.5,8,5ft_or_wider,1.0,,,sidewalk (City map)
+1508L,CALIFORNIA ST,L,C-N,12.8,0,5ft_or_wider,1.0,,,sidewalk (City map)
+1508R,CALIFORNIA ST,R,C-N,1.1,0,5ft_or_wider,1.0,,,sidewalk (City map)
+1512L,NEILSON ST,L,C-N,15.0,0,5ft_or_wider,1.0,,,sidewalk (City map)
+1514L,HARRISON ST,L,MULI,11.4,0,no_sidewalk,1.0,True,,City map: no sidewalk - unverified
+1514R,HARRISON ST,R,MULI,13.8,0,no_sidewalk,1.0,True,,City map: no sidewalk - unverified
+2036L,PARKER ST,L,MULI,10.6,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+2036R,PARKER ST,R,MULI,14.4,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+2134L,PARDEE ST,L,C-W,9.6,0,5ft_or_wider,0.31,,,sidewalk (City map)
+2134R,PARDEE ST,R,C-W,14.2,0,5ft_or_wider,0.69,,,sidewalk (City map)
+2136L,CARLETON ST,L,MULI,16.1,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+2149L,CARLETON ST,L,MM,6.2,0,5ft_or_wider,0.5,True,,sidewalk (City map + imagery)
+2149R,CARLETON ST,R,MM,18.3,0,none,1.0,True,,City map: no data
+2150L,CARLETON ST,L,MM,11.9,0,5ft_or_wider,0.68,True,,sidewalk (City map + imagery)
+2150R,CARLETON ST,R,MM,20.2,129,5ft_or_wider,0.46,True,,sidewalk (City map + imagery)
+2153L,BANCROFT WAY,L,C-W,14.4,0,5ft_or_wider,1.0,,,sidewalk (City map)
+2153R,BANCROFT WAY,R,C-W,10.5,0,5ft_or_wider,1.0,,,sidewalk (City map)
+2154L,ALLSTON WAY,L,MULI,18.1,0,5ft_or_wider,1.0,,,sidewalk (City map)
+2154R,ALLSTON WAY,R,MULI,1.8,0,5ft_or_wider,1.0,,,sidewalk (City map)
+2155L,ALLSTON WAY,L,MULI,16.5,0,5ft_or_wider,1.0,,,sidewalk (City map)
+2155R,ALLSTON WAY,R,MULI,5.1,0,5ft_or_wider,1.0,,,sidewalk (City map)
+2252L,PARKER ST,L,MM,10.9,0,5ft_or_wider,0.67,True,,sidewalk (City map + imagery)
+2252R,PARKER ST,R,MM,14.4,0,5ft_or_wider,0.64,True,,sidewalk (City map + imagery)
+2259R,DWIGHT WAY,R,MULI,13.5,0,5ft_or_wider,1.0,,,sidewalk (City map)
+2287L,CARLETON ST,L,MULI,15.6,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+2291L,CARLETON ST,L,C-W,16.1,0,5ft_or_wider,0.31,,,sidewalk (City map)
+2291R,CARLETON ST,R,C-W,17.2,0,5ft_or_wider,0.31,,,sidewalk (City map)
+2435R,DWIGHT WAY,R,MM,13.4,0,no_data,1.0,,,City map: no data
+2456L,PARKER ST,L,MULI,10.5,0,5ft_or_wider,1.0,,,sidewalk (City map)
+2456R,PARKER ST,R,MULI,12.1,0,5ft_or_wider,1.0,,,sidewalk (City map)
+2490L,CHANNING WAY,L,MULI,10.2,0,5ft_or_wider,1.0,,,sidewalk (City map)
+2586L,GRAYSON ST,L,C-W,9.1,0,5ft_or_wider,0.69,,,sidewalk (City map)
+2586R,GRAYSON ST,R,C-W,14.9,0,5ft_or_wider,0.62,,,sidewalk (City map)
+2658L,PARKER ST,L,MULI,10.2,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+2658R,PARKER ST,R,MULI,13.5,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+2894L,PARKER ST,L,MM,19.6,1,5ft_or_wider,1.0,,,sidewalk (City map)
+2894R,PARKER ST,R,MM,19.7,1,5ft_or_wider,1.0,,,sidewalk (City map)
+2916L,PARKER ST,L,C-W,6.4,0,5ft_or_wider,1.0,,,sidewalk (City map)
+2916R,PARKER ST,R,C-W,17.4,0,5ft_or_wider,1.0,,,sidewalk (City map)
+2918L,DWIGHT WAY,L,MULI,10.4,0,5ft_or_wider,1.0,,,sidewalk (City map)
+2918R,DWIGHT WAY,R,MM,4.7,0,5ft_or_wider,1.0,,,sidewalk (City map)
+2919L,DWIGHT WAY,L,MULI,10.4,0,5ft_or_wider,1.0,,,sidewalk (City map)
+2919R,DWIGHT WAY,R,MM,5.8,0,5ft_or_wider,0.88,,,sidewalk (City map)
+2921R,DWIGHT WAY,R,MM,8.1,0,5ft_or_wider,1.0,,,sidewalk (City map)
+2928R,DWIGHT WAY,R,MM,10.8,0,5ft_or_wider,1.0,,,sidewalk (City map)
+2947R,DWIGHT WAY,R,MULI,14.4,0,5ft_or_wider,1.0,,,sidewalk (City map)
+2996R,DWIGHT WAY,R,MULI,14.2,0,5ft_or_wider,1.0,,,sidewalk (City map)
+3003L,DWIGHT WAY,L,C-W,9.9,0,5ft_or_wider,1.0,,,sidewalk (City map)
+3003R,DWIGHT WAY,R,C-W,7.9,0,5ft_or_wider,1.0,,,sidewalk (City map)
+3007L,DWIGHT WAY,L,C-W,13.1,0,5ft_or_wider,1.0,,,sidewalk (City map)
+3007R,DWIGHT WAY,R,C-W,12.0,0,5ft_or_wider,1.0,,,sidewalk (City map)
+3012L,CHANNING WAY,L,MULI,12.7,0,5ft_or_wider,1.0,,,sidewalk (City map)
+3012R,CHANNING WAY,R,MULI,9.7,0,5ft_or_wider,1.0,,,sidewalk (City map)
+3066R,DWIGHT WAY,R,C-SA,16.0,0,5ft_or_wider,1.0,,,sidewalk (City map)
+3095L,BANCROFT WAY,L,MULI,0.5,0,5ft_or_wider,0.86,,,sidewalk (City map)
+3095R,BANCROFT WAY,R,MULI,13.9,0,5ft_or_wider,0.71,,,sidewalk (City map)
+3101R,CHANNING WAY,R,C-W,10.7,0,5ft_or_wider,1.0,,,sidewalk (City map)
+3103L,BANCROFT WAY,L,MULI,20.1,3,5ft_or_wider,1.0,,,sidewalk (City map)
+3103R,BANCROFT WAY,R,MULI,1.0,0,5ft_or_wider,1.0,,,sidewalk (City map)
+3104L,BANCROFT WAY,L,MULI,19.0,0,5ft_or_wider,1.0,,,sidewalk (City map)
+3104R,BANCROFT WAY,R,MULI,1.5,0,5ft_or_wider,1.0,,,sidewalk (City map)
+3361L,SACRAMENTO ST,L,C-U,28.4,22,5ft_or_wider,0.62,,,sidewalk (City map)
+3361R,SACRAMENTO ST,R,C-U,28.2,8,5ft_or_wider,0.54,,,sidewalk (City map)
+3364L,SACRAMENTO ST,L,C-U,14.6,0,no_data,1.0,,,City map: no data
+3364R,SACRAMENTO ST,R,C-U,19.2,0,5ft_or_wider,0.2,,,sidewalk (City map)
+3406L,POTTER ST,L,MULI,19.4,0,trail,0.5,True,,City map: no data
+3406R,POTTER ST,R,C-W,26.1,27,5ft_or_wider,0.4,True,,sidewalk (City map + imagery)
+3495L,POTTER ST,L,MULI,19.6,42,5ft_or_wider,1.0,,,sidewalk (City map)
+3495R,POTTER ST,R,C-W,19.7,32,5ft_or_wider,1.0,,,sidewalk (City map)
+3582L,FOLGER AVE,L,MULI,8.1,0,width_unknown,0.6,,,sidewalk (City map)
+3582R,FOLGER AVE,R,MULI,13.4,0,width_unknown,0.58,,,sidewalk (City map)
+3632L,SAN PABLO AVE,L,C-W,31.8,6,5ft_or_wider,0.83,,,sidewalk (City map)
+3632R,SAN PABLO AVE,R,C-W,26.7,7,5ft_or_wider,0.67,,,sidewalk (City map)
+3633L,ASHBY AVE,L,C-W,13.6,0,width_unknown,0.47,,,sidewalk (City map)
+3633R,ASHBY AVE,R,MULI,30.2,3,width_unknown,0.45,,,sidewalk (City map)
+3635L,ASHBY AVE,L,C-W,39.5,6,5ft_or_wider,1.0,,,sidewalk (City map)
+3635R,ASHBY AVE,R,MULI,28.2,5,5ft_or_wider,1.0,,,sidewalk (City map)
+3652L,UNIVERSITY AVE OVERPASS,L,MULI,39.0,8,width_unknown,0.33,,,sidewalk (City map)
+3652R,UNIVERSITY AVE OVERPASS,R,MULI,39.4,7,width_unknown,0.33,,,sidewalk (City map)
+3824L,UNIVERSITY AVE OVERPASS,L,MULI,21.9,0,none,1.0,,,City map: no data
+3824R,UNIVERSITY AVE OVERPASS,R,MULI,22.5,0,none,1.0,,,City map: no data
+4007L,FOLGER AVE,L,MULI,7.3,0,width_unknown,0.56,,,sidewalk (City map)
+4007R,FOLGER AVE,R,MULI,17.7,0,5ft_or_wider,0.94,,,sidewalk (City map)
+4056R,HEINZ AVE,R,MULI,15.8,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+4076L,MURRAY ST,L,MULI,8.7,0,5ft_or_wider,0.35,,,sidewalk (City map)
+4076R,MURRAY ST,R,MULI,15.4,0,trail,0.35,,,City map: no data
+4078L,POTTER ST,L,C-W,21.7,39,width_unknown,0.68,,,sidewalk (City map)
+4078R,POTTER ST,R,C-W,17.8,0,width_unknown,0.64,,,sidewalk (City map)
+4102R,I80 EAST (ON RAMP) ASHBY HWY,R,MULI,16.9,0,width_unknown,0.45,,,sidewalk (City map)
+4131L,HEINZ AVE,L,MM,4.9,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+4131R,HEINZ AVE,R,MULI,1.9,0,5ft_or_wider,0.84,True,,sidewalk (City map + imagery)
+4197L,SAN PABLO AVE,L,C-W,24.7,0,5ft_or_wider,0.8,,,sidewalk (City map)
+4281L,SAN PABLO AVE,L,C-W,12.2,0,5ft_or_wider,1.0,,,sidewalk (City map)
+4281R,SAN PABLO AVE,R,C-W,11.4,0,5ft_or_wider,1.0,,,sidewalk (City map)
+4294L,ASHBY AVE,L,C-W,19.1,0,5ft_or_wider,0.91,,,sidewalk (City map)
+4294R,ASHBY AVE,R,MULI,26.6,90,5ft_or_wider,0.85,,,sidewalk (City map)
+4312L,ASHBY AVE,L,C-W,18.6,0,width_unknown,0.8,,,sidewalk (City map)
+4312R,ASHBY AVE,R,MULI,23.5,6,width_unknown,1.0,,,sidewalk (City map)
+4313L,ASHBY AVE,L,C-W,18.9,0,trail,0.56,,,City map: no data
+4313R,ASHBY AVE,R,MULI,22.8,23,5ft_or_wider,0.5,,,sidewalk (City map)
+4322L,ANTHONY ST,L,MULI,1.0,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+4322R,ANTHONY ST,R,MULI,11.7,0,5ft_or_wider,0.96,False,,imagery finds no sidewalk - unverified
+4364R,HEINZ AVE,R,MULI,14.4,0,5ft_or_wider,1.0,,,sidewalk (City map)
+4395L,OREGON ST,L,C-W,15.2,0,5ft_or_wider,1.0,,,sidewalk (City map)
+4395R,OREGON ST,R,C-W,19.0,0,5ft_or_wider,1.0,,,sidewalk (City map)
+4481L,,L,MULI,10.2,0,width_unknown,1.0,,,sidewalk (City map)
+4485L,,L,MULI,39.5,0,width_unknown,0.5,,,sidewalk (City map)
+4679R,UNIVERSITY AVE OVERPASS,R,MULI,35.3,0,no_sidewalk,0.71,,,City map: no sidewalk - unverified
+4680L,UNIVERSITY AVE OVERPASS,L,MULI,38.9,0,none,1.0,,,City map: no data
+4680R,UNIVERSITY AVE OVERPASS,R,MULI,26.4,0,none,1.0,,,City map: no data
+4681L,UNIVERSITY AVE OVERPASS,L,MULI,38.9,8,none,1.0,,,City map: no data
+4681R,UNIVERSITY AVE OVERPASS,R,MULI,22.8,7,none,1.0,,,City map: no data
+4682R,UNIVERSITY AVE OVERPASS,R,C-W,27.8,0,width_unknown,1.0,,,sidewalk (City map)
+4683R,UNIVERSITY AVE OVERPASS,R,C-W,26.8,0,width_unknown,1.0,,,sidewalk (City map)
+4684R,UNIVERSITY AVE OVERPASS,R,C-W,20.1,0,width_unknown,1.0,,,sidewalk (City map)
+4685R,UNIVERSITY AVE,R,C-W,37.4,0,width_unknown,1.0,,,sidewalk (City map)
+4686L,UNIVERSITY AVE,L,C-W,38.3,0,width_unknown,1.0,,,sidewalk (City map)
+4686R,UNIVERSITY AVE,R,C-W,35.9,0,width_unknown,1.0,,,sidewalk (City map)
+5011L,ACTON ST,L,C-U,10.8,0,no_data,1.0,,,City map: no data
+5011R,ACTON ST,R,C-U,17.5,0,no_data,1.0,,,City map: no data
+5027L,ACTON ST,L,C-U,13.1,0,width_unknown,0.38,,,sidewalk (City map)
+5027R,ACTON ST,R,C-U,17.8,0,width_unknown,0.31,,,sidewalk (City map)
+5032L,DWIGHT WAY,L,C-SA,10.8,0,5ft_or_wider,0.36,,,sidewalk (City map)
+5063L,ANTHONY ST,L,MULI,2.9,0,5ft_or_wider,0.35,True,,sidewalk (City map + imagery)
+5063R,ANTHONY ST,R,MULI,11.8,0,5ft_or_wider,0.35,True,,sidewalk (City map + imagery)
+5081R,RUSSELL ST,R,C-W,15.4,0,5ft_or_wider,1.0,,,sidewalk (City map)
+5090L,CHANNING WAY,L,C-W,10.0,0,5ft_or_wider,1.0,,,sidewalk (City map)
+5090R,CHANNING WAY,R,C-W,6.2,0,5ft_or_wider,1.0,,,sidewalk (City map)
+5091L,SACRAMENTO ST,L,C-SA,32.1,28,5ft_or_wider,0.09,,,sidewalk (City map)
+5105L,HEINZ AVE,L,C-W,8.3,0,5ft_or_wider,0.62,,,sidewalk (City map)
+5105R,HEINZ AVE,R,C-W,14.7,0,5ft_or_wider,0.62,,,sidewalk (City map)
+5116L,GRAYSON ST,L,MM,3.2,0,5ft_or_wider,0.38,True,,sidewalk (City map + imagery)
+5116R,GRAYSON ST,R,MM,17.9,0,5ft_or_wider,0.47,True,,sidewalk (City map + imagery)
+5127R,HEINZ AVE,R,C-W,15.8,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+5182L,RUSSELL ST,L,C-SA,11.0,0,5ft_or_wider,1.0,,,sidewalk (City map)
+5182R,RUSSELL ST,R,C-SA,15.2,0,5ft_or_wider,1.0,,,sidewalk (City map)
+5187R,ALLSTON WAY,R,MULI,13.8,0,5ft_or_wider,1.0,,,sidewalk (City map)
+5189R,BANCROFT WAY,R,MULI,12.4,0,5ft_or_wider,1.0,,,sidewalk (City map)
+5632R,SAN PABLO AVE,R,C-W,14.6,0,5ft_or_wider,0.57,True,,sidewalk (City map + imagery)
+5633R,SAN PABLO AVE,R,C-W,11.6,0,5ft_or_wider,0.75,True,,sidewalk (City map + imagery)
+5634L,SAN PABLO AVE,L,C-W,30.8,6,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+5634R,SAN PABLO AVE,R,C-W,31.5,5,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+5635R,SAN PABLO AVE,R,C-W,13.3,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+5636R,SAN PABLO AVE,R,C-W,11.1,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+5637R,SAN PABLO AVE,R,C-W,15.9,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+5638R,SAN PABLO AVE,R,C-W,14.2,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+5641R,SAN PABLO AVE,R,C-W,15.5,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+5642R,SAN PABLO AVE,R,C-W,8.9,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+5643R,SAN PABLO AVE,R,C-W,15.5,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+5644R,SAN PABLO AVE,R,C-W,7.8,0,5ft_or_wider,0.87,True,,sidewalk (City map + imagery)
+5645R,SAN PABLO AVE,R,C-W,15.1,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+5646R,SAN PABLO AVE,R,C-W,6.7,0,5ft_or_wider,0.85,True,,sidewalk (City map + imagery)
+5651R,CEDAR ST,R,C-W,10.8,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+5652R,CEDAR ST,R,C-W,8.4,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+5654L,CEDAR ST,L,C-W,37.0,0,5ft_or_wider,1.0,,,sidewalk (City map)
+5654R,CEDAR ST,R,C-W,35.4,0,5ft_or_wider,1.0,,,sidewalk (City map)
+5655R,SAN PABLO AVE,R,C-W,12.7,0,5ft_or_wider,1.0,,,sidewalk (City map)
+5656L,SAN PABLO AVE,L,C-W,37.1,0,5ft_or_wider,1.0,,,sidewalk (City map)
+5656R,SAN PABLO AVE,R,C-W,38.7,0,5ft_or_wider,1.0,,,sidewalk (City map)
+5657R,SAN PABLO AVE,R,C-W,7.3,0,5ft_or_wider,0.43,,,sidewalk (City map)
+5658L,SAN PABLO AVE,L,C-W,32.5,10,5ft_or_wider,0.5,,,sidewalk (City map)
+5658R,SAN PABLO AVE,R,C-W,29.0,8,5ft_or_wider,1.0,,,sidewalk (City map)
+5659R,SAN PABLO AVE,R,C-W,10.6,0,5ft_or_wider,0.89,,,sidewalk (City map)
+5660R,SAN PABLO AVE,R,C-W,14.6,0,5ft_or_wider,1.0,,,sidewalk (City map)
+5661R,SAN PABLO AVE,R,C-W,29.5,0,5ft_or_wider,1.0,,,sidewalk (City map)
+5662R,SAN PABLO AVE,R,C-W,8.8,0,5ft_or_wider,0.87,,,sidewalk (City map)
+5663R,SAN PABLO AVE,R,C-W,15.8,0,5ft_or_wider,0.93,,,sidewalk (City map)
+5665R,SAN PABLO AVE,R,C-W,10.0,0,5ft_or_wider,0.77,,,sidewalk (City map)
+5666R,SAN PABLO AVE,R,C-W,13.6,0,5ft_or_wider,0.72,,,sidewalk (City map)
+5667R,SAN PABLO AVE,R,C-W,34.8,0,5ft_or_wider,1.0,,,sidewalk (City map)
+5668R,SAN PABLO AVE,R,C-W,6.6,0,5ft_or_wider,0.45,,,sidewalk (City map)
+5669R,SAN PABLO AVE,R,C-W,12.9,0,5ft_or_wider,0.82,,,sidewalk (City map)
+5670L,SAN PABLO AVE,L,C-W,38.7,0,none,1.0,,,City map: no data
+5670R,SAN PABLO AVE,R,C-W,29.8,3,none,1.0,,,City map: no data
+5671L,SAN PABLO AVE,L,C-W,27.5,10,5ft_or_wider,0.55,,,sidewalk (City map)
+5671R,SAN PABLO AVE,R,C-W,37.7,7,5ft_or_wider,0.44,,,sidewalk (City map)
+5672L,SAN PABLO AVE,L,C-W,25.2,21,5ft_or_wider,0.5,,,sidewalk (City map)
+5672R,SAN PABLO AVE,R,C-W,30.5,7,5ft_or_wider,0.5,,,sidewalk (City map)
+5674R,SAN PABLO AVE,R,C-W,9.0,0,5ft_or_wider,0.49,,,sidewalk (City map)
+5675R,SAN PABLO AVE,R,C-W,25.9,0,none,1.0,,,City map: no data
+5676R,SAN PABLO AVE,R,C-W,10.7,0,5ft_or_wider,0.96,,,sidewalk (City map)
+5677R,SAN PABLO AVE,R,C-W,31.8,0,5ft_or_wider,1.0,,,sidewalk (City map)
+5678R,SAN PABLO AVE,R,C-W,9.1,0,5ft_or_wider,0.12,,,sidewalk (City map)
+5679R,SAN PABLO AVE,R,C-W,16.8,0,5ft_or_wider,0.55,,,sidewalk (City map)
+5680R,SAN PABLO AVE,R,C-W,35.6,0,none,1.0,,,City map: no data
+5681R,SAN PABLO AVE,R,C-W,10.9,0,5ft_or_wider,0.85,,,sidewalk (City map)
+5682R,SAN PABLO AVE,R,C-W,5.0,0,5ft_or_wider,0.47,,,sidewalk (City map)
+5683R,SAN PABLO AVE,R,C-W,30.5,0,5ft_or_wider,1.0,,,sidewalk (City map)
+5684R,SAN PABLO AVE,R,C-W,11.4,0,5ft_or_wider,0.83,,,sidewalk (City map)
+5685R,SAN PABLO AVE,R,C-W,16.1,0,5ft_or_wider,0.85,,,sidewalk (City map)
+5686R,SAN PABLO AVE,R,C-W,38.5,0,5ft_or_wider,1.0,,,sidewalk (City map)
+5687R,SAN PABLO AVE,R,C-W,9.8,0,5ft_or_wider,0.66,,,sidewalk (City map)
+5688R,SAN PABLO AVE,R,C-W,15.4,0,5ft_or_wider,1.0,,,sidewalk (City map)
+5689R,SAN PABLO AVE,R,C-W,9.8,0,5ft_or_wider,0.81,,,sidewalk (City map)
+5690R,SAN PABLO AVE,R,C-W,34.5,0,5ft_or_wider,1.0,,,sidewalk (City map)
+5691R,SAN PABLO AVE,R,C-W,10.5,0,5ft_or_wider,0.77,,,sidewalk (City map)
+5692L,SAN PABLO AVE,L,C-W,38.2,0,5ft_or_wider,1.0,,,sidewalk (City map)
+5692R,SAN PABLO AVE,R,C-W,29.9,0,5ft_or_wider,1.0,,,sidewalk (City map)
+5693R,SAN PABLO AVE,R,C-W,11.2,0,5ft_or_wider,0.89,,,sidewalk (City map)
+5694R,SAN PABLO AVE,R,C-W,2.2,0,5ft_or_wider,0.88,,,sidewalk (City map)
+5695R,SAN PABLO AVE,R,C-W,38.0,0,5ft_or_wider,1.0,,,sidewalk (City map)
+5696R,SAN PABLO AVE,R,C-W,12.9,0,5ft_or_wider,1.0,,,sidewalk (City map)
+5697R,SAN PABLO AVE,R,C-W,7.4,0,5ft_or_wider,0.87,,,sidewalk (City map)
+5698R,SAN PABLO AVE,R,C-W,7.1,0,5ft_or_wider,0.89,,,sidewalk (City map)
+5699L,SAN PABLO AVE,L,C-W,39.3,0,5ft_or_wider,1.0,,,sidewalk (City map)
+5699R,SAN PABLO AVE,R,C-W,37.6,0,5ft_or_wider,1.0,,,sidewalk (City map)
+5700R,SAN PABLO AVE,R,C-W,11.6,0,5ft_or_wider,0.86,,,sidewalk (City map)
+5701R,SAN PABLO AVE,R,C-W,10.2,0,5ft_or_wider,0.89,,,sidewalk (City map)
+5702R,SAN PABLO AVE,R,C-W,14.9,0,5ft_or_wider,0.89,,,sidewalk (City map)
+5703R,SAN PABLO AVE,R,C-W,9.0,0,5ft_or_wider,0.42,,,sidewalk (City map)
+5704R,SAN PABLO AVE,R,C-W,10.2,0,5ft_or_wider,0.49,,,sidewalk (City map)
+5705R,SAN PABLO AVE,R,C-W,11.1,0,5ft_or_wider,0.47,,,sidewalk (City map)
+5706R,SAN PABLO AVE,R,C-W,13.0,0,5ft_or_wider,0.5,,,sidewalk (City map)
+5707R,SAN PABLO AVE,R,C-W,11.8,0,5ft_or_wider,0.53,,,sidewalk (City map)
+5708R,SAN PABLO AVE,R,C-W,10.3,0,5ft_or_wider,0.53,,,sidewalk (City map)
+5709R,SAN PABLO AVE,R,C-W,9.0,0,5ft_or_wider,0.56,,,sidewalk (City map)
+5710R,SAN PABLO AVE,R,C-W,13.0,0,5ft_or_wider,0.56,,,sidewalk (City map)
+5711R,SAN PABLO AVE,R,C-W,9.7,0,5ft_or_wider,1.0,,,sidewalk (City map)
+5712R,SAN PABLO AVE,R,C-W,10.1,0,5ft_or_wider,0.52,,,sidewalk (City map)
+5713L,SAN PABLO AVE,L,C-W,30.0,0,5ft_or_wider,1.0,,,sidewalk (City map)
+5713R,SAN PABLO AVE,R,C-W,30.0,1,5ft_or_wider,1.0,,,sidewalk (City map)
+5714R,SAN PABLO AVE,R,C-W,10.8,0,5ft_or_wider,1.0,,,sidewalk (City map)
+5715R,SAN PABLO AVE,R,C-W,12.8,0,5ft_or_wider,0.47,,,sidewalk (City map)
+5716R,SAN PABLO AVE,R,C-W,9.1,0,5ft_or_wider,0.98,,,sidewalk (City map)
+5717R,SAN PABLO AVE,R,C-W,10.8,0,5ft_or_wider,0.48,,,sidewalk (City map)
+5718R,SAN PABLO AVE,R,C-W,10.6,0,5ft_or_wider,0.5,,,sidewalk (City map)
+5719R,SAN PABLO AVE,R,C-W,9.0,0,5ft_or_wider,1.0,,,sidewalk (City map)
+5720R,SAN PABLO AVE,R,C-W,14.7,0,5ft_or_wider,0.98,,,sidewalk (City map)
+5721R,SAN PABLO AVE,R,C-W,11.8,0,5ft_or_wider,1.0,,,sidewalk (City map)
+5722R,SAN PABLO AVE,R,C-W,12.0,0,5ft_or_wider,0.88,,,sidewalk (City map)
+5723R,SAN PABLO AVE,R,C-W,10.4,0,5ft_or_wider,0.89,,,sidewalk (City map)
+5724R,SAN PABLO AVE,R,C-W,12.0,0,5ft_or_wider,0.83,,,sidewalk (City map)
+5725R,SAN PABLO AVE,R,C-W,6.5,0,5ft_or_wider,0.83,,,sidewalk (City map)
+5726R,SAN PABLO AVE,R,C-W,10.1,0,5ft_or_wider,1.0,,,sidewalk (City map)
+5727R,SAN PABLO AVE,R,C-W,6.0,0,5ft_or_wider,1.0,,,sidewalk (City map)
+5728R,SAN PABLO AVE,R,C-W,9.6,0,5ft_or_wider,0.09,,,sidewalk (City map)
+5729R,SAN PABLO AVE,R,C-W,13.5,0,5ft_or_wider,0.1,,,sidewalk (City map)
+5782R,UNIVERSITY AVE,R,C-W,3.0,0,width_unknown,0.96,,,sidewalk (City map)
+5783R,UNIVERSITY AVE,R,C-W,4.3,0,width_unknown,1.0,,,sidewalk (City map)
+5784R,UNIVERSITY AVE,R,C-W,4.6,0,no_sidewalk,0.49,,,City map: no sidewalk - unverified
+5785R,UNIVERSITY AVE,R,C-W,2.1,0,width_unknown,0.93,,,sidewalk (City map)
+5786R,UNIVERSITY AVE,R,C-W,4.4,0,width_unknown,0.89,,,sidewalk (City map)
+5787R,UNIVERSITY AVE,R,C-W,8.0,0,no_sidewalk,0.51,,,City map: no sidewalk - unverified
+5788R,UNIVERSITY AVE,R,C-U,9.5,0,width_unknown,0.54,,,sidewalk (City map)
+5789R,UNIVERSITY AVE,R,C-U,10.3,0,width_unknown,1.0,,,sidewalk (City map)
+5790R,UNIVERSITY AVE,R,C-U,5.6,0,width_unknown,0.69,,,sidewalk (City map)
+5791R,UNIVERSITY AVE,R,C-U,6.5,0,width_unknown,0.79,,,sidewalk (City map)
+5792R,UNIVERSITY AVE,R,C-U,4.5,0,width_unknown,1.0,,,sidewalk (City map)
+5793R,UNIVERSITY AVE,R,C-U,5.2,0,width_unknown,0.7,,,sidewalk (City map)
+5794R,UNIVERSITY AVE,R,C-U,4.9,0,5ft_or_wider,0.16,,,sidewalk (City map)
+5795R,UNIVERSITY AVE,R,C-U,4.0,0,width_unknown,0.73,,,sidewalk (City map)
+5796R,UNIVERSITY AVE,R,C-U,4.5,0,width_unknown,0.33,,,sidewalk (City map)
+5797L,UNIVERSITY AVE,L,C-U,39.5,0,width_unknown,1.0,,,sidewalk (City map)
+5797R,UNIVERSITY AVE,R,C-U,6.5,0,width_unknown,1.0,,,sidewalk (City map)
+5798R,UNIVERSITY AVE,R,C-U,1.8,0,5ft_or_wider,0.07,,,sidewalk (City map)
+5801R,UNIVERSITY AVE,R,C-U,7.0,0,5ft_or_wider,1.0,,,sidewalk (City map)
+6467L,MURRAY ST,L,MULI,9.0,0,5ft_or_wider,0.28,,,sidewalk (City map)
+6467R,MURRAY ST,R,MULI,16.8,0,5ft_or_wider,0.7,,,sidewalk (City map)
+6564R,MCGEE AVE,R,C-N,7.8,0,5ft_or_wider,1.0,,,sidewalk (City map)
+6605L,TENTH ST,L,C-W,9.0,0,5ft_or_wider,0.6,,,sidewalk (City map)
+6605R,TENTH ST,R,C-W,16.2,0,width_unknown,0.6,,,sidewalk (City map)
+6613L,TENTH ST,L,C-W,10.7,0,no_sidewalk,0.96,True,,City map: no sidewalk - unverified
+6613R,TENTH ST,R,C-W,14.9,0,no_sidewalk,1.0,True,,City map: no sidewalk - unverified
+6614L,TENTH ST,L,MULI,12.9,0,no_sidewalk,1.0,True,,City map: no sidewalk - unverified
+6614R,TENTH ST,R,C-W,15.3,0,no_sidewalk,1.0,True,,City map: no sidewalk - unverified
+6619L,TENTH ST,L,C-W,11.7,0,5ft_or_wider,1.0,,,sidewalk (City map)
+6619R,TENTH ST,R,C-W,13.5,0,5ft_or_wider,1.0,,,sidewalk (City map)
+6621L,TENTH ST,L,C-W,10.7,0,5ft_or_wider,1.0,,,sidewalk (City map)
+6621R,TENTH ST,R,MULI,12.8,0,5ft_or_wider,1.0,,,sidewalk (City map)
+6626L,SECOND ST,L,MULI,37.6,0,none,1.0,,,City map: no data
+6626R,SECOND ST,R,MULI,39.8,0,none,1.0,,,City map: no data
+6627L,SECOND ST,L,MULI,12.4,0,width_unknown,0.19,,,sidewalk (City map)
+6627R,SECOND ST,R,MULI,12.2,0,width_unknown,0.17,,,sidewalk (City map)
+6628L,SECOND ST,L,MULI,11.5,0,width_unknown,0.12,,,sidewalk (City map)
+6628R,SECOND ST,R,MULI,9.0,0,width_unknown,0.18,,,sidewalk (City map)
+6629L,SECOND ST,L,M,8.3,0,no_sidewalk,0.92,False,,City map: no sidewalk - unverified
+6629R,SECOND ST,R,M,3.2,0,no_sidewalk,1.0,True,,City map: no sidewalk - unverified
+6630L,SECOND ST,L,MULI,15.6,0,no_sidewalk,0.31,,,City map: no sidewalk - unverified
+6630R,SECOND ST,R,MULI,13.1,0,no_sidewalk,0.31,,,City map: no sidewalk - unverified
+6632L,SECOND ST,L,MULI,37.1,0,none,1.0,,,City map: no data
+6632R,SECOND ST,R,MULI,36.0,0,none,1.0,,,City map: no data
+6633L,SECOND ST,L,M,7.9,0,width_unknown,0.28,,,sidewalk (City map)
+6633R,SECOND ST,R,M,10.4,0,width_unknown,0.28,,,sidewalk (City map)
+6634L,SECOND ST,L,M,7.6,0,width_unknown,0.31,,,sidewalk (City map)
+6634R,SECOND ST,R,M,11.9,0,width_unknown,0.44,,,sidewalk (City map)
+6635L,SECOND ST,L,M,5.0,0,no_sidewalk,0.22,,,City map: no sidewalk - unverified
+6635R,SECOND ST,R,M,11.9,0,no_sidewalk,0.22,,,City map: no sidewalk - unverified
+6636L,SECOND ST,L,MRD,4.4,0,no_sidewalk,0.83,True,,City map: no sidewalk - unverified
+6636R,SECOND ST,R,MRD,15.7,0,no_sidewalk,1.0,True,,City map: no sidewalk - unverified
+6637L,SECOND ST,L,M,7.3,0,no_sidewalk,0.12,,,City map: no sidewalk - unverified
+6637R,SECOND ST,R,M,13.8,0,width_unknown,0.25,,,sidewalk (City map)
+6638L,SECOND ST,L,MRD,5.6,0,no_sidewalk,0.5,False,,City map: no sidewalk - unverified
+6638R,SECOND ST,R,MRD,17.1,0,no_sidewalk,1.0,False,,City map: no sidewalk - unverified
+6639L,FOURTH ST,L,MULI,10.3,0,5ft_or_wider,0.44,,,sidewalk (City map)
+6639R,FOURTH ST,R,MULI,13.1,0,5ft_or_wider,0.56,,,sidewalk (City map)
+6640L,FOURTH ST,L,C-W,10.9,0,width_unknown,0.33,,,sidewalk (City map)
+6640R,FOURTH ST,R,C-W,13.0,0,5ft_or_wider,0.28,,,sidewalk (City map)
+6641L,FOURTH ST,L,M,10.4,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+6641R,FOURTH ST,R,M,16.2,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+6644L,FOURTH ST,L,MULI,10.9,0,5ft_or_wider,0.28,,,sidewalk (City map)
+6644R,FOURTH ST,R,MULI,13.0,0,5ft_or_wider,0.32,,,sidewalk (City map)
+6645L,FOURTH ST,L,C-W,3.8,0,5ft_or_wider,0.67,,,sidewalk (City map)
+6645R,FOURTH ST,R,C-W,14.3,0,width_unknown,0.67,,,sidewalk (City map)
+6646L,FOURTH ST,L,C-W,8.7,0,5ft_or_wider,1.0,,,sidewalk (City map)
+6646R,FOURTH ST,R,C-W,13.5,0,5ft_or_wider,0.83,,,sidewalk (City map)
+6647L,FOURTH ST,L,C-W,10.8,0,width_unknown,0.94,,,sidewalk (City map)
+6647R,FOURTH ST,R,C-W,12.0,0,width_unknown,0.47,,,sidewalk (City map)
+6648L,FOURTH ST,L,MULI,10.7,0,5ft_or_wider,0.08,,,sidewalk (City map)
+6648R,FOURTH ST,R,MULI,14.7,0,5ft_or_wider,0.12,,,sidewalk (City map)
+6649L,FOURTH ST,L,MULI,8.0,0,5ft_or_wider,0.56,True,,sidewalk (City map + imagery)
+6649R,FOURTH ST,R,M,19.3,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+6650L,FOURTH ST,L,MULI,7.6,0,5ft_or_wider,0.38,,,sidewalk (City map)
+6650R,FOURTH ST,R,MULI,16.6,0,5ft_or_wider,0.94,,,sidewalk (City map)
+6651L,FOURTH ST,L,MULI,7.3,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+6651R,FOURTH ST,R,M,15.1,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+6652L,FOURTH ST,L,MULI,21.8,0,no_sidewalk,1.0,,,City map: no sidewalk - unverified
+6652R,FOURTH ST,R,MULI,20.5,0,no_sidewalk,1.0,,,City map: no sidewalk - unverified
+6653L,FOURTH ST,L,MULI,5.1,0,5ft_or_wider,0.83,True,,sidewalk (City map + imagery)
+6653R,FOURTH ST,R,M,15.7,0,no_sidewalk,0.5,True,,City map: no sidewalk - unverified
+6654L,FOURTH ST,L,MULI,5.4,0,5ft_or_wider,1.0,,,sidewalk (City map)
+6654R,FOURTH ST,R,MULI,12.8,0,5ft_or_wider,1.0,,,sidewalk (City map)
+6655L,FOURTH ST,L,MM,15.0,0,5ft_or_wider,0.4,True,,sidewalk (City map + imagery)
+6655R,FOURTH ST,R,MM,9.4,0,5ft_or_wider,0.4,True,,sidewalk (City map + imagery)
+6656R,FOURTH ST,R,MM,18.1,0,5ft_or_wider,0.11,,,sidewalk (City map)
+6657L,FOURTH ST,L,MULI,5.8,0,5ft_or_wider,1.0,,,sidewalk (City map)
+6657R,FOURTH ST,R,MULI,13.5,0,5ft_or_wider,1.0,,,sidewalk (City map)
+6658L,FOURTH ST,L,MULI,8.1,0,5ft_or_wider,1.0,,,sidewalk (City map)
+6658R,FOURTH ST,R,MULI,14.7,0,5ft_or_wider,1.0,,,sidewalk (City map)
+6659L,FOURTH ST,L,MULI,7.2,0,5ft_or_wider,1.0,,,sidewalk (City map)
+6659R,FOURTH ST,R,MULI,11.8,0,5ft_or_wider,1.0,,,sidewalk (City map)
+6662L,FIFTH ST,L,C-W,36.5,0,width_unknown,1.0,,,sidewalk (City map)
+6662R,FIFTH ST,R,C-W,39.3,0,width_unknown,1.0,,,sidewalk (City map)
+6665L,FIFTH ST,L,C-W,3.0,0,width_unknown,0.33,,,sidewalk (City map)
+6665R,FIFTH ST,R,C-W,13.9,0,width_unknown,0.67,,,sidewalk (City map)
+6666R,FIFTH ST,R,C-W,14.4,0,5ft_or_wider,0.42,,,sidewalk (City map)
+6667R,FIFTH ST,R,C-W,18.3,0,width_unknown,0.24,,,sidewalk (City map)
+6671L,FIFTH ST,L,MULI,10.6,0,5ft_or_wider,0.88,True,,sidewalk (City map + imagery)
+6671R,FIFTH ST,R,M,16.1,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+6673L,FIFTH ST,L,MULI,7.0,0,no_sidewalk,1.0,True,,City map: no sidewalk - unverified
+6673R,FIFTH ST,R,MULI,16.2,0,no_sidewalk,1.0,True,,City map: no sidewalk - unverified
+6674L,FIFTH ST,L,MULI,9.0,0,5ft_or_wider,0.8,True,,sidewalk (City map + imagery)
+6674R,FIFTH ST,R,MULI,14.7,0,no_sidewalk,0.76,True,,City map: no sidewalk - unverified
+6678L,FIFTH ST,L,C-W,4.3,0,5ft_or_wider,0.7,,,sidewalk (City map)
+6678R,FIFTH ST,R,MULI,3.4,0,5ft_or_wider,0.7,,,sidewalk (City map)
+6679L,FIFTH ST,L,MULI,8.0,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+6679R,FIFTH ST,R,MULI,3.0,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+6709R,SIXTY-SEVENTH ST,R,MULI,27.6,0,5ft_or_wider,0.24,,,sidewalk (City map)
+6723L,SIXTH ST,L,C-W,5.5,0,5ft_or_wider,0.6,,,sidewalk (City map)
+6723R,SIXTH ST,R,C-W,16.9,0,width_unknown,0.6,,,sidewalk (City map)
+6730L,SIXTH ST,L,MULI,15.0,0,5ft_or_wider,0.83,True,,sidewalk (City map + imagery)
+6730R,SIXTH ST,R,MULI,17.9,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+6736L,SIXTH ST,L,MULI,17.9,0,no_sidewalk,0.8,True,sidewalk,"sidewalk now (City map outdated, Street View)"
+6736R,SIXTH ST,R,MULI,23.0,38,no_sidewalk,0.76,True,sidewalk,"sidewalk now (City map outdated, Street View)"
+6737L,SIXTH ST,L,MULI,15.7,0,no_sidewalk,1.0,True,,City map: no sidewalk - unverified
+6737R,SIXTH ST,R,MULI,22.9,29,no_sidewalk,1.0,True,sidewalk,"sidewalk now (City map outdated, Street View)"
+6743L,SEVENTH ST,L,C-W,10.5,0,width_unknown,0.6,,,sidewalk (City map)
+6743R,SEVENTH ST,R,C-W,13.7,0,width_unknown,0.8,,,sidewalk (City map)
+6751L,SEVENTH ST,L,MULI,2.6,0,no_sidewalk,0.8,True,,City map: no sidewalk - unverified
+6751R,SEVENTH ST,R,MULI,16.7,0,no_sidewalk,0.84,True,,City map: no sidewalk - unverified
+6753L,SEVENTH ST,L,MULI,10.2,0,no_sidewalk,0.79,True,,City map: no sidewalk - unverified
+6753R,SEVENTH ST,R,MULI,15.8,0,no_sidewalk,0.96,True,,City map: no sidewalk - unverified
+6756L,SEVENTH ST,L,MULI,11.3,0,5ft_or_wider,1.0,,,sidewalk (City map)
+6756R,SEVENTH ST,R,MM,11.3,0,5ft_or_wider,1.0,,,sidewalk (City map)
+6757R,SEVENTH ST,R,MM,12.6,0,5ft_or_wider,0.73,True,,sidewalk (City map + imagery)
+6758L,SEVENTH ST,L,MULI,11.2,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+6758R,SEVENTH ST,R,MM,12.7,0,5ft_or_wider,0.9,True,,sidewalk (City map + imagery)
+6759R,SEVENTH ST,R,MM,12.4,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+6760L,SEVENTH ST,L,MULI,11.3,0,5ft_or_wider,1.0,,,sidewalk (City map)
+6760R,SEVENTH ST,R,MM,13.8,0,5ft_or_wider,0.56,,,sidewalk (City map)
+6761L,SEVENTH ST,L,MULI,11.2,0,5ft_or_wider,1.0,,,sidewalk (City map)
+6761R,SEVENTH ST,R,MM,12.1,0,5ft_or_wider,0.5,,,sidewalk (City map)
+6764L,SEVENTH ST,L,MULI,9.7,0,width_unknown,0.7,,,sidewalk (City map)
+6764R,SEVENTH ST,R,MULI,13.0,0,width_unknown,0.7,,,sidewalk (City map)
+6765L,SEVENTH ST,L,MULI,13.0,0,5ft_or_wider,0.41,True,,sidewalk (City map + imagery)
+6765R,SEVENTH ST,R,MULI,2.3,0,5ft_or_wider,0.41,True,,sidewalk (City map + imagery)
+6766L,SEVENTH ST,L,C-W,15.1,0,5ft_or_wider,0.6,True,,sidewalk (City map + imagery)
+6766R,SEVENTH ST,R,C-W,11.3,0,5ft_or_wider,0.5,True,,sidewalk (City map + imagery)
+6767R,SEVENTH ST,R,MM,10.8,0,5ft_or_wider,0.92,True,,sidewalk (City map + imagery)
+6769L,SEVENTH ST,L,C-W,16.1,0,width_unknown,0.71,,,sidewalk (City map)
+6769R,SEVENTH ST,R,C-W,10.3,0,width_unknown,0.71,,,sidewalk (City map)
+6770L,SEVENTH ST,L,MULI,19.5,0,width_unknown,1.0,,,sidewalk (City map)
+6770R,SEVENTH ST,R,MULI,33.2,2,width_unknown,1.0,,,sidewalk (City map)
+6773L,EIGHTH ST,L,C-W,9.7,0,no_sidewalk,0.6,,,City map: no sidewalk - unverified
+6773R,EIGHTH ST,R,C-W,14.9,0,no_sidewalk,0.8,,,City map: no sidewalk - unverified
+6781L,EIGHTH ST,L,MULI,9.1,0,no_sidewalk,0.96,True,,City map: no sidewalk - unverified
+6781R,EIGHTH ST,R,MULI,15.3,0,no_sidewalk,0.96,True,,City map: no sidewalk - unverified
+6783L,EIGHTH ST,L,MULI,9.7,0,no_sidewalk,0.92,True,,City map: no sidewalk - unverified
+6783R,EIGHTH ST,R,MULI,12.6,0,no_sidewalk,1.0,True,,City map: no sidewalk - unverified
+6784L,EIGHTH ST,L,MULI,12.0,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+6784R,EIGHTH ST,R,MULI,15.7,0,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+6791L,EIGHTH ST,L,MULI,12.1,0,5ft_or_wider,1.0,,,sidewalk (City map)
+6791R,EIGHTH ST,R,MULI,13.2,0,5ft_or_wider,1.0,,,sidewalk (City map)
+6792L,EIGHTH ST,L,MULI,11.4,0,no_sidewalk,1.0,True,,City map: no sidewalk - unverified
+6792R,EIGHTH ST,R,MULI,13.5,0,no_sidewalk,1.0,True,,City map: no sidewalk - unverified
+6795L,NINTH ST,L,C-W,13.2,0,5ft_or_wider,0.6,,,sidewalk (City map)
+6795R,NINTH ST,R,C-W,17.8,0,5ft_or_wider,0.6,,,sidewalk (City map)
+6800L,NINTH ST,L,C-W,20.3,38,no_sidewalk,1.0,True,sidewalk,"sidewalk now (City map outdated, Street View)"
+6800R,NINTH ST,R,MULI,27.0,6,no_sidewalk,1.0,True,,City map: no sidewalk - unverified
+6805L,NINTH ST,L,MULI,18.4,0,no_sidewalk,0.92,True,,City map: no sidewalk - unverified
+6805R,NINTH ST,R,MULI,20.7,48,no_sidewalk,0.96,True,sidewalk,"sidewalk now (City map outdated, Street View)"
+6806L,NINTH ST,L,MULI,22.4,0,no_sidewalk,1.0,True,,City map: no sidewalk - unverified
+6806R,NINTH ST,R,MULI,14.3,0,no_sidewalk,1.0,False,,City map: no sidewalk - unverified
+6807L,NINTH ST,L,C-W,9.8,0,trail,0.4,True,,City map: no data
+6807R,NINTH ST,R,MULI,7.0,0,trail,0.6,True,,City map: no data
+6809L,NINTH ST,L,MULI,19.8,60,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+6809R,NINTH ST,R,MULI,19.9,62,5ft_or_wider,1.0,True,,sidewalk (City map + imagery)
+6811L,NINTH ST,L,MULI,19.0,0,5ft_or_wider,1.0,,,sidewalk (City map)
+6811R,NINTH ST,R,MULI,18.7,0,5ft_or_wider,1.0,,,sidewalk (City map)
+6814L,NINTH ST,L,MULI,1.8,0,5ft_or_wider,1.0,,,sidewalk (City map)
+6814R,NINTH ST,R,MULI,5.5,0,5ft_or_wider,1.0,,,sidewalk (City map)
+6815R,NINTH ST,R,C-W,19.8,0,5ft_or_wider,1.0,,,sidewalk (City map)
+6817L,NINTH ST,L,C-W,8.3,0,none,1.0,True,,City map: no data
+6817R,NINTH ST,R,MULI,5.1,0,none,1.0,False,,City map: no data
+6943R,UNIVERSITY AVE,R,C-W,6.3,0,width_unknown,0.74,,,sidewalk (City map)
+6944R,UNIVERSITY AVE,R,C-W,2.9,0,5ft_or_wider,0.65,,,sidewalk (City map)
+6945R,UNIVERSITY AVE,R,C-W,3.7,0,5ft_or_wider,0.96,,,sidewalk (City map)
+6946R,UNIVERSITY AVE,R,C-W,4.5,0,width_unknown,0.56,,,sidewalk (City map)
+6947R,UNIVERSITY AVE,R,C-U,4.2,0,5ft_or_wider,1.0,,,sidewalk (City map)
+6948L,UNIVERSITY AVE,L,C-U,39.9,0,5ft_or_wider,0.77,,,sidewalk (City map)
+6948R,UNIVERSITY AVE,R,C-U,4.5,0,5ft_or_wider,0.56,,,sidewalk (City map)
+6949R,SAN PABLO AVE,R,C-W,10.4,0,5ft_or_wider,0.9,,,sidewalk (City map)
+6950R,SAN PABLO AVE,R,C-W,7.6,0,5ft_or_wider,0.9,,,sidewalk (City map)
+6962L,ESSEX WAY,L,C-W,24.0,0,width_unknown,0.88,,,sidewalk (City map)
+6962R,ESSEX WAY,R,C-W,28.3,0,width_unknown,0.61,,,sidewalk (City map)
+6964L,UNIVERSITY AVE,L,MULI,25.5,0,none,1.0,,,City map: no data
+6964R,UNIVERSITY AVE,R,MULI,14.9,0,none,1.0,,,City map: no data
+6965L,UNIVERSITY AVE,L,MULI,26.5,0,none,1.0,,,City map: no data
+6965R,UNIVERSITY AVE,R,MULI,14.1,0,none,1.0,,,City map: no data
+6969R,NEILSON ST,R,C-N,5.8,0,5ft_or_wider,0.89,,,sidewalk (City map)

@@ -94,6 +94,21 @@ def presence_metrics(df):
                 kappa=kappa(ref.values, det.values))
 
 
+def segment_metrics(df):
+    """Figure 4 draws one line per street, not per side: a red street means at least
+    one side lacks a sidewalk. So compare at segment level: City red vs 'tile2net
+    finds no sidewalk on at least one side'."""
+    d = df[df.fig4.isin(['5ft_or_wider', 'under_5ft', 'width_unknown', 'no_sidewalk'])].copy()
+    d['seg'] = d.face.str[:-1]
+    seg = d.groupby('seg').agg(red=('fig4', lambda x: bool((x == 'no_sidewalk').any())),
+                               missing=('t2n_sidewalk', lambda x: bool((~x).any())))
+    ref, det = seg.red, seg.missing; n = len(seg)
+    tp = int((ref & det).sum()); tn = int((~ref & ~det).sum()); fp = int((~ref & det).sum()); fn = int((ref & ~det).sum())
+    return dict(n_segments=n, city_red=int(ref.sum()), red_detected=tp, red_missed=fn, nonred_false_missing=fp,
+                accuracy=(tp + tn) / n if n else float('nan'), accuracy_ci95=wilson(tp + tn, n),
+                red_sensitivity=tp / (tp + fn) if tp + fn else float('nan'), kappa=kappa(ref.values, det.values))
+
+
 def width_metrics(df):
     d = df[df.fig4.isin(['5ft_or_wider', 'under_5ft']) & df.t2n_sidewalk & df.t2n_width_ft.notna()]
     ref = d.fig4 == '5ft_or_wider'; det = d.t2n_width_ft >= 5
@@ -112,7 +127,7 @@ def main(outdir, runs):
     for name, path in runs.items():
         g, sw = load_polys(path)
         df = score_faces(sw, g.total_bounds, faces, fig4); df.insert(0, 'area', name); frames.append(df)
-        rep = {'presence': presence_metrics(df), 'width_class': width_metrics(df),
+        rep = {'presence': presence_metrics(df), 'segment': segment_metrics(df), 'width_class': width_metrics(df),
                'cover_sweep': {str(c): presence_metrics(score_faces(sw, g.total_bounds, faces, fig4, c))['accuracy']
                                for c in (0.1, 0.2, 0.3, 0.4, 0.5, 0.6)}}
         report['areas'][name] = rep
@@ -120,7 +135,7 @@ def main(outdir, runs):
         print(json.dumps(rep, indent=1, default=float))
     all_df = pd.concat(frames)
     all_df.round(2).to_csv(outdir / 'face_scores.csv', index=False)
-    report['all'] = {'presence': presence_metrics(all_df), 'width_class': width_metrics(all_df)}
+    report['all'] = {'presence': presence_metrics(all_df), 'segment': segment_metrics(all_df), 'width_class': width_metrics(all_df)}
     print("\n== all areas ==\n" + json.dumps(report['all'], indent=1, default=float))
     print("\nmodel tent spots on faces the City marks no-sidewalk: "
           f"{int(all_df[all_df.fig4 == 'no_sidewalk'].model_spots.sum())}; "
