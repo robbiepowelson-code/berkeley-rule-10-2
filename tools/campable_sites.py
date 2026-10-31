@@ -141,6 +141,51 @@ def rnd(coords, nd=5):
     return [[round(x, nd), round(y, nd)] for x, y in coords]
 
 
+def number_sites(sites, faces, out, to_ll):
+    """Assign k = 1..N to the locations (by street, side, face, then along the face)
+    and write checklist.csv: one row per location with coordinates, a Street View
+    link facing the spot from the road, the width source, and blank verdict columns."""
+    from shapely.geometry import shape as _shape
+    from shapely.ops import nearest_points
+    fprop = {f["properties"]["id"]: f for f in faces}
+    def key(f):
+        p = f["properties"]
+        return (p.get("street") or "~", p.get("side") or "", p["face"], p["n"])
+    sites.sort(key=key)
+    rows = []
+    for k, f in enumerate(sites, 1):
+        p = f["properties"]
+        p["k"] = k
+        poly = _shape(f["geometry"])            # lon/lat
+        c = poly.centroid
+        fe = fprop.get(p["face"])
+        fp_ = fe["properties"] if fe else {}
+        heading = ""
+        if fe:
+            curb = _shape(fe["geometry"])
+            q = nearest_points(curb, c)[0]       # point on the curb line nearest the box
+            # look from the curb toward the box, i.e. from the road at the sidewalk
+            dx = (c.x - q.x) * math.cos(math.radians(c.y)) * 111320
+            dy = (c.y - q.y) * 110540
+            heading = int(round(math.degrees(math.atan2(dx, dy)) % 360))
+        sv = ("https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=%.6f,%.6f&fov=80&pitch=0" % (c.y, c.x)
+              + ("&heading=%d" % heading if heading != "" else ""))
+        sat = "https://www.google.com/maps/@?api=1&map_action=map&center=%.6f,%.6f&zoom=20&basemap=satellite" % (c.y, c.x)
+        rows.append({
+            "no": k, "id": "tent:%s-%s" % (p["face"], p["n"]), "face": p["face"],
+            "street": p.get("street", ""), "side": p.get("side", ""), "zone": p.get("zone") or "",
+            "category": CAT_NAME.get(p.get("cat"), p.get("cat") or ""),
+            "model_width_ft": fp_.get("width_ft", ""), "width_source": p.get("width_source", ""),
+            "placement": p.get("placement", ""),
+            "lat": round(c.y, 6), "lon": round(c.x, 6), "street_view": sv, "satellite": sat,
+            "fits_5x7 (Y/N)": "", "clear_width_ft_taped": "", "reason_if_no": "", "note": "", "checked_by": "", "date": "",
+        })
+    with open(os.path.join(out, "checklist.csv"), "w", newline="", encoding="utf-8") as fh:
+        w = csv.DictWriter(fh, fieldnames=list(rows[0].keys()) if rows else ["no"])
+        w.writeheader(); w.writerows(rows)
+    print("  numbered %d locations -> %s" % (len(rows), os.path.join(out, "checklist.csv")), file=sys.stderr)
+
+
 def inject(index_html, sites, faces, summary, area_name, block_name="CAMPABLE"):
     """Rewrite the CAMPABLE block in index.html with a compact copy of the results."""
     keep = {"id": "f", "street": "st", "side": "sd", "width_ft": "w", "width_source": "ws",
@@ -155,7 +200,7 @@ def inject(index_html, sites, faces, summary, area_name, block_name="CAMPABLE"):
     fc_sites = {"type": "FeatureCollection", "features": [
         {"type": "Feature",
          "geometry": {"type": "Polygon", "coordinates": [rnd(f["geometry"]["coordinates"][0], 6)]},
-         "properties": {"f": f["properties"]["face"], "n": f["properties"]["n"]}}
+         "properties": {"f": f["properties"]["face"], "n": f["properties"]["n"], "k": f["properties"].get("k")}}
         for f in sites]}
     payload = {"total": summary["total_locations"], "footprint_ft": summary["footprint_ft"],
                "area": area_name, "bbox": summary["bbox"], "by_category": summary["by_category"],
@@ -644,6 +689,12 @@ def main():
         for fc_ in faces:
             fc_["properties"]["count"] = counts.get(fc_["properties"]["id"], 0)
         print("  editor: %d boxes turned off, %d moved, %d added" % (dropped, moved, added), file=sys.stderr)
+
+    # ---- location numbers + review checklist ------------------------------
+    # Every location gets a stable number (1..N) in street order, written to the
+    # map label, the popup and data/<out>/checklist.csv so a reviewer can walk
+    # the list on the ground and record a verdict against the number.
+    number_sites(sites, faces, out, to_ll)
 
     # ---- outputs --------------------------------------------------------
     total = sum(f["properties"]["count"] for f in faces)
