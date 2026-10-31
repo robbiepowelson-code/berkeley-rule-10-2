@@ -971,7 +971,7 @@ th.num{text-align:right; padding-right:0}
       <button class="lg" id="wcToggle" aria-pressed="true"><span class="sw" id="wcSw"></span><span class="tt"><span class="name">Toilets</span><br><span class="sub">OpenStreetMap restrooms — zoom in to see them</span></span><span class="ac" id="wcCount"></span></button>
       <button class="lg" id="campToggle" aria-pressed="true"><span class="sw" id="campSw"></span><span class="tt"><span class="name">Campable locations</span><br><span class="sub">Where a <span id="campFp">7×16 ft</span> footprint fits under AR 10.2's clearances — <span id="campCount">…</span>. Zoom in, then <b>click a box to mark it good (green) or not (red)</b>; click again to switch back. Shift-click for details. Your marks save on this device; use Export checks to send them in.</span></span></button>
       <button class="lg off" id="editToggle" aria-pressed="false"><span class="sw" id="editSw"></span><span class="tt"><span class="name">Editor mode</span><br><span class="sub">Click a box to turn it off or on, drag to move it, use the toolbar to rotate, add or delete. Edits export to a file the model reads.</span></span></button>
-      <button class="lg" id="cwToggle" aria-pressed="true"><span class="sw" id="cwSw" style="background:linear-gradient(90deg,#c0392b 0 25%,#e67e22 25% 50%,#27ae60 50% 75%,#2980b9 75% 100%)"></span><span class="tt"><span class="name">Clear walk width, 2023 aerial</span><br><span class="sub">The paved walk a person can use, read every metre along the block from the county aerial with tree wells and driveways taken out — so the width changes along the block as it does on the ground. <span style="color:#c0392b">Under 5 ft</span>, <span style="color:#e67e22">5–6 ft</span>, <span style="color:#27ae60">6–10 ft</span>, <span style="color:#2980b9">10 ft+</span>; grey = driveway, dotted = hidden under trees. Hover for the number. Zoom in to see it. <span id="cwCount">…</span></span></span></button>
+      <button class="lg" id="cwToggle" aria-pressed="true"><span class="sw" id="cwSw" style="background:linear-gradient(90deg,#c0392b 0 25%,#e67e22 25% 50%,#27ae60 50% 75%,#2980b9 75% 100%)"></span><span class="tt"><span class="name">Clear walk width, 2023 aerial</span><br><span class="sub">The paved walk a person can use, read every metre along the block from the county aerial with tree wells and driveways taken out — so the width changes along the block as it does on the ground. <span style="color:#c0392b">Under 5 ft</span>, <span style="color:#e67e22">5–6 ft</span>, <span style="color:#27ae60">6–10 ft</span>, <span style="color:#2980b9">10 ft+</span>; grey = driveway, dotted = hidden under trees. Hover for the number; click for the evidence. Shows at street-level zoom. <span id="cwCount">…</span></span></span></button>
       <button class="lg" id="pinToggle" aria-pressed="true"><span class="sw" id="pinSw"></span><span class="tt"><span class="name">Larger footprint</span><br><span class="sub"><span id="pinCount">…</span>. Click a pin to remove it (click again to restore); shift-click a pin for details and a button that removes the whole street.</span></span></button>
       <div class="vsum" id="vsum">Tap any location to mark it right or wrong. <button id="vExport">Export checks</button><button id="vImport">Import</button><input type="file" id="vFile" accept=".geojson,.json" style="display:none"></div>
     </div>
@@ -1815,11 +1815,17 @@ if(window.CAMPABLE && CAMPABLE.sites){
     if(on && editOn) setEdit(false);
   }
   if(svFab) svFab.addEventListener("click", function(){ setSv(!svOn); });
-  map.on("click", function(ev){
-    if(!svOn) return;
-    var ll = ev.latlng;
-    window.open(svUrl(ll.lat, ll.lng, svHeading(ll.lat, ll.lng)), "_blank", "noopener");
-  });
+  /* capture the click before any layer gets it, so a face, box or district under the cursor does not swallow it */
+  mapEl.addEventListener("click", function(e){
+    if(!svOn || e.target.closest(".leaflet-control, .leaflet-popup, #svFab, #edFab")) return;
+    e.stopPropagation(); e.preventDefault();
+    var ll = map.mouseEventToLatLng(e), hd = svHeading(ll.lat, ll.lng);
+    var h = '<div class="pp"><div class="code">STREET VIEW MODE</div><h3>Look at this spot</h3>' +
+      '<div class="vl"><a class="sv" href="' + svUrl(ll.lat, ll.lng, hd) + '" target="_blank" rel="noopener" style="font-size:14px;padding:8px 14px">Open Street View here \u2197</a>' +
+      '<a href="' + satUrl(ll.lat, ll.lng) + '" target="_blank" rel="noopener">Satellite \u2197</a>' +
+      '<div class="hd">' + ll.lat.toFixed(5) + ', ' + ll.lng.toFixed(5) + (typeof hd === "number" ? ' \u00b7 facing ' + facing(hd) : '') + '. Opens in a new tab.</div></div></div>';
+    L.popup({maxWidth: 300, minWidth: 220}).setLatLng(ll).setContent(h).openOn(map);
+  }, true);
   map.on("keydown", function(ev){ if(svOn && ev.originalEvent && ev.originalEvent.key === "Escape") setSv(false); });
   window.__setEdit = setEdit;
   function rotateSel(deg){
@@ -1932,12 +1938,16 @@ map.on("zoomend", syncCamp);
 
 /* ---- clear walk width profile (tools/clear_width.py -> data/tile2net/clear_width_runs.geojson) ---- */
 map.createPane("cw").style.zIndex = 641;
+var cwRenderer = L.canvas({pane: "cw", padding: 0.3});   /* canvas, not SVG: thousands of short strokes in one SVG draw seams in some browsers */
 var cwBtn = document.getElementById("cwToggle"), cwCt = document.getElementById("cwCount"), cwOn = true, cwGroup = L.layerGroup();
-function cwColor(f){ var p = f.properties; if(p.kind === "driveway") return "#8d8d8d"; if(p.kind === "canopy") return "#7d5aa6"; var w = p.clear_ft; return w < 5 ? "#c0392b" : w < 6 ? "#e67e22" : w < 10 ? "#27ae60" : "#2980b9"; }
+var CW_MIN_ZOOM = 17;
+function cwColor(f){ var p = f.properties; if(p.kind === "driveway") return "#9a9a9a"; if(p.kind === "canopy") return "#9b7bbf"; var w = p.clear_ft; return w < 5 ? "#d64545" : w < 6 ? "#e39b2f" : w < 10 ? "#3aa66a" : "#3b86c6"; }
+function cwStyle(f){ var k = f.properties.kind, z = map.getZoom(); var w = z >= 19 ? 6 : z >= 18 ? 4 : 3;
+  return {renderer: cwRenderer, color: cwColor(f), weight: k === "walk" ? w : Math.max(2, w - 1), opacity: k === "walk" ? 0.95 : 0.7, dashArray: k === "canopy" ? "3 5" : null, lineCap: "butt", lineJoin: "round"}; }
 fetch("./data/tile2net/clear_width_runs.geojson").then(function(r){ return r.ok ? r.json() : null; }).then(function(gj){
   if(!gj) return;
   var n = 0;
-  L.geoJSON(gj, {pane:"cw", style:function(f){ return {color: cwColor(f), weight: 5, opacity: 0.9, dashArray: f.properties.kind === "canopy" ? "2 6" : (f.properties.kind === "driveway" ? "8 4" : null), lineCap: "butt"}; },
+  var cwLayer = L.geoJSON(gj, {pane:"cw", style: cwStyle,
     onEachFeature:function(f, ly){ var p = f.properties; n++;
       var t = p.kind === "driveway" ? "driveway apron (not counted)" : p.kind === "canopy" ? "hidden under tree canopy - tape needed" : "clear walk " + p.clear_ft + " ft";
       ly.bindTooltip("<b>" + esc(p.street) + "</b> (" + (p.side === "L" ? "left" : "right") + " side) · " + t + " · " + p.len_ft + " ft long", {sticky:true, direction:"top", opacity:0.95});
@@ -1951,10 +1961,11 @@ fetch("./data/tile2net/clear_width_runs.geojson").then(function(r){ return r.ok 
         L.popup({maxWidth: 320, minWidth: 240}).setLatLng(ev.latlng).setContent(h).openOn(map);
       });
     }}).addTo(cwGroup);
-  if(cwCt) cwCt.textContent = n.toLocaleString() + " runs on " + (new Set(gj.features.map(function(f){ return f.properties.face; }))).size + " block faces so far.";
+  window.__cwLayer = cwLayer;
+  if(cwCt) cwCt.textContent = n.toLocaleString() + " runs on " + (new Set(gj.features.map(function(f){ return f.properties.face; }))).size + " block faces so far; the rest of the corridor is queued for the same imagery run.";
   syncCw();
 }).catch(function(){ if(cwCt) cwCt.textContent = "(profile file not reachable - serve the map over http)"; });
-function syncCw(){ var show = cwOn && map.getZoom() >= 16; if(show && !map.hasLayer(cwGroup)) cwGroup.addTo(map); if(!show && map.hasLayer(cwGroup)) map.removeLayer(cwGroup); if(cwBtn) cwBtn.classList.toggle("dim", map.getZoom() < 16); }
+function syncCw(){ var show = cwOn && map.getZoom() >= CW_MIN_ZOOM; if(show && !map.hasLayer(cwGroup)) cwGroup.addTo(map); if(!show && map.hasLayer(cwGroup)) map.removeLayer(cwGroup); if(show && window.__cwLayer) window.__cwLayer.setStyle(cwStyle); if(cwBtn) cwBtn.classList.toggle("dim", map.getZoom() < CW_MIN_ZOOM); }
 if(cwBtn) cwBtn.addEventListener("click", function(){ cwOn = !cwOn; cwBtn.classList.toggle("off", !cwOn); cwBtn.setAttribute("aria-pressed", String(cwOn)); syncCw(); });
 map.on("zoomend", syncCw);
 

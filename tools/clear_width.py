@@ -161,16 +161,23 @@ def run(area):
     return finish(df, out, area, prof)
 
 
-def merge_runs(prof, out, window=5):
+def band(w):
+    return 0 if w < 5 else 1 if w < 6 else 2 if w < 10 else 3
+
+
+def merge_runs(prof, out, window=11):
     """Smooth each face's profile with a rolling median over `window` sections
-    (5 m) and merge adjacent sections of the same rounded width into runs."""
+    (11 m) and merge adjacent sections that fall in the same width band
+    (under 5 ft, 5-6, 6-10, 10 ft and over) into runs; the run carries the
+    median width of its sections. Bands rather than feet so a run only breaks
+    where the width crosses a threshold that matters under AR 10.2."""
     runs = []
     for fid, g in prof.groupby('face', sort=False):
         g = g.sort_values('s_m').copy()
         g['clear_ft'] = g.clear_ft.astype(float).rolling(window, center=True, min_periods=1).median()
         cur = None
         for _, r in g.iterrows():
-            key = ('drive' if r.driveway else ('canopy' if r.clear_ft is None or (isinstance(r.clear_ft, float) and np.isnan(r.clear_ft)) else int(round(r.clear_ft))))
+            key = ('drive' if r.driveway else ('canopy' if r.clear_ft is None or (isinstance(r.clear_ft, float) and np.isnan(r.clear_ft)) else band(r.clear_ft)))
             if cur and cur['key'] == key:
                 cur['geoms'].append(r.geometry); cur['vals'].append(r.clear_ft)
             else:
