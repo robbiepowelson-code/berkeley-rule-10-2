@@ -146,8 +146,14 @@ def number_sites(sites, faces, out, to_ll):
     and write checklist.csv: one row per location with coordinates, a Street View
     link facing the spot from the road, the width source, and blank verdict columns."""
     from shapely.geometry import shape as _shape
-    from shapely.ops import nearest_points
+    from shapely.ops import nearest_points, unary_union
     fprop = {f["properties"]["id"]: f for f in faces}
+    centerlines = None
+    try:
+        cl = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data/gis/centerlines.geojson"), encoding="utf-8"))
+        centerlines = unary_union([_shape(f["geometry"]) for f in cl["features"] if f.get("geometry")])
+    except Exception as e:                       # noqa: BLE001
+        print("  no centerlines for Street View viewpoints:", e, file=sys.stderr)
     def key(f):
         p = f["properties"]
         return (p.get("street") or "~", p.get("side") or "", p["face"], p["n"])
@@ -160,15 +166,15 @@ def number_sites(sites, faces, out, to_ll):
         c = poly.centroid
         fe = fprop.get(p["face"])
         fp_ = fe["properties"] if fe else {}
-        heading = ""
-        if fe:
-            curb = _shape(fe["geometry"])
-            q = nearest_points(curb, c)[0]       # point on the curb line nearest the box
-            # look from the curb toward the box, i.e. from the road at the sidewalk
+        heading, vp = "", c
+        q = nearest_points(centerlines, c)[0] if centerlines is not None else None
+        if q is not None and q.distance(c) * 111320 < 45:
+            # Street View is shot from the roadway: put the viewpoint on the centerline, look toward the box
+            vp = q
             dx = (c.x - q.x) * math.cos(math.radians(c.y)) * 111320
             dy = (c.y - q.y) * 110540
             heading = int(round(math.degrees(math.atan2(dx, dy)) % 360))
-        sv = ("https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=%.6f,%.6f&fov=80&pitch=0" % (c.y, c.x)
+        sv = ("https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=%.6f,%.6f&fov=80&pitch=0" % (vp.y, vp.x)
               + ("&heading=%d" % heading if heading != "" else ""))
         sat = "https://www.google.com/maps/@?api=1&map_action=map&center=%.6f,%.6f&zoom=20&basemap=satellite" % (c.y, c.x)
         rows.append({
