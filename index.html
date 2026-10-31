@@ -986,7 +986,7 @@ th.num{text-align:right; padding-right:0}
       <button class="lg off" id="bmToggle" aria-pressed="false"><span class="sw" style="border-color:var(--ink-3)"></span><span class="tt"><span class="name">Street basemap (OpenStreetMap)</span><br><span class="sub">Raster streets &amp; buildings under the districts</span></span></button>
       <button class="lg off" id="aerialToggle" aria-pressed="false"><span class="sw" id="aerialSw" style="border-color:var(--ink-3)"></span><span class="tt"><span class="name">Aerial imagery</span><br><span class="sub">City of Berkeley 3-inch orthophoto (2020). Districts go see-through so the sidewalks show.</span></span></button>
       <p class="sub" id="bmNote" style="display:none;font-size:12px;color:var(--ink-3);margin:2px 0 0 9px">Basemap tiles are blocked on this hosted page — open the downloadable copy of the map to use it. Street names here are built in: zoom in for labels, hover any street.</p>
-      <button class="lg" id="siteToggle" aria-pressed="true"><span class="sw" id="siteSw"></span><span class="tt"><span class="name">Surveyed sites</span><br><span class="sub">Field photos with GPS — click a pin for the photo and its district</span></span><span class="ac" id="siteCount"></span></button>
+      <button class="lg off" id="siteToggle" aria-pressed="false"><span class="sw" id="siteSw"></span><span class="tt"><span class="name">Surveyed sites</span><br><span class="sub">Field photos with GPS — click a pin for the photo and its district</span></span><span class="ac" id="siteCount"></span></button>
       <button class="lg" id="waterToggle" aria-pressed="true"><span class="sw" id="waterSw"></span><span class="tt"><span class="name">Drinking water</span><br><span class="sub">OpenStreetMap fountains &amp; taps — zoom in to see them</span></span><span class="ac" id="waterCount"></span></button>
       <button class="lg" id="wcToggle" aria-pressed="true"><span class="sw" id="wcSw"></span><span class="tt"><span class="name">Toilets</span><br><span class="sub">OpenStreetMap restrooms — zoom in to see them</span></span><span class="ac" id="wcCount"></span></button>
       <button class="lg" id="campToggle" aria-pressed="true"><span class="sw" id="campSw"></span><span class="tt"><span class="name">Campable locations</span><br><span class="sub">Where a <span id="campFp">7×16 ft</span> footprint fits under AR 10.2's clearances — <span id="campCount">…</span>. Zoom in, then <b>click a box to mark it good (green) or not (red)</b>; click again to switch back. Shift-click for details. Your marks save on this device; use Export checks to send them in.</span></span></button>
@@ -1455,10 +1455,10 @@ var sitePins = (window.SITES || []).filter(function(s){ return !s.hidden; }).map
   m.bindTooltip(s.label || s.district || "Surveyed site", {direction:"top", offset:[0,-16]});
   return m;
 });
-var siteLayer = L.layerGroup(sitePins).addTo(map);
+var siteLayer = L.layerGroup(sitePins);          // off by default; the legend switch turns the photo pins on
 
 if(siteBtn){
-  var siteOn = true;
+  var siteOn = false; siteBtn.classList.add("off"); siteBtn.setAttribute("aria-pressed", "false");
   var siteSw = document.getElementById("siteSw");
   var siteCt = document.getElementById("siteCount");
   if(siteCt) siteCt.textContent = sitePins.length ? sitePins.length + "\u00a0pins" : "none\u00a0yet";
