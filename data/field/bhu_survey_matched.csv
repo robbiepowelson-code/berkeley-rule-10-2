@@ -1,60 +1,134 @@
-street,block,lat,lon,face,face_street,side,dist_m,side_ambiguous,zone_cat,bhu_total_ft,bhu_clear_path_ft,gis_raw_ft,gis_cal_ft,t2n_poly_ft,t2n_clear_med_ft,t2n_governing_ft,model_width_ft,model_source
-Parker,"Shattuck, Milvia",37.86205,-122.26875,2257L,PARKER ST,L,856.2,True,res,9.833333333333334,6.0,13.028764805414552,7.699999999999999,,,,7.7,gis-calibrated
-Parker,"Shattuck, Milvia",37.86205,-122.26875,2257R,PARKER ST,R,856.2,True,res,9.833333333333334,6.0,12.013536379018612,7.1,,,,7.1,gis-calibrated
-Oregon,"Milvia, Shattuck",37.85745,-122.2688,2058R,DERBY ST,R,823.4,False,res,6.0,4.0,10.998307952622675,6.5,,,,6.5,gis-calibrated
-Derby Street,Shattuck and Milvia,37.860252,-122.268356,2058L,DERBY ST,L,858.0,True,res,10.166666666666666,6.0,12.69035532994924,7.5,,,,7.5,gis-calibrated
-Derby Street,Shattuck and Milvia,37.860252,-122.268356,2058R,DERBY ST,R,858.1,True,res,10.166666666666666,6.0,10.998307952622675,6.5,,,,6.5,gis-calibrated
-Oregon,"Milvia, Shattuck",37.85727,-122.26876,2058R,DERBY ST,R,831.1,False,res,10.0,6.0,10.998307952622675,6.5,,,,6.5,gis-calibrated
-Parker,"Shattuck, Milvia",37.86189,-122.26873,2257R,PARKER ST,R,855.0,True,res,9.833333333333334,6.0,12.013536379018612,7.1,,,,7.1,gis-calibrated
-Parker,"Shattuck, Milvia",37.86189,-122.26873,2257L,PARKER ST,L,855.2,True,res,9.833333333333334,6.0,13.028764805414552,7.699999999999999,,,,7.7,gis-calibrated
-Derby Street,Shattuck and Milvia,37.860163,-122.268039,2058R,DERBY ST,R,884.0,True,res,14.0,6.0,10.998307952622675,6.5,,,,6.5,gis-calibrated
-Derby Street,Shattuck and Milvia,37.860163,-122.268039,2058L,DERBY ST,L,884.1,True,res,14.0,6.0,12.69035532994924,7.5,,,,7.5,gis-calibrated
-Carleton,Shattuck milvia,37.8612443,-122.2674023,2925L,CARLETON ST,L,959.0,True,res,8.416666666666666,6.0,12.351945854483926,7.3,,,,7.3,gis-calibrated
-Carleton,Shattuck milvia,37.8612443,-122.2674023,2925R,CARLETON ST,R,959.0,True,res,8.416666666666666,6.0,12.013536379018612,7.1,,,,7.1,gis-calibrated
-Carleton,Shattuck milvia,37.8610164,-122.2681023,2925R,CARLETON ST,R,894.2,True,res,9.416666666666666,6.0,12.013536379018612,7.1,,,,7.1,gis-calibrated
-Carleton,Shattuck milvia,37.8610164,-122.2681023,2925L,CARLETON ST,L,894.4,True,res,9.416666666666666,6.0,12.351945854483926,7.3,,,,7.3,gis-calibrated
-Dwight Way,Eighth and Seventh,37.860261,-122.29346,2947R,DWIGHT WAY,R,0.4,False,man,11.916666666666666,6.0,14.382402707275805,8.5,,,,8.5,gis-calibrated
-Fifth Street,Dwight and Channing Way,37.860363,-122.296517,6676R,FIFTH ST,R,2.0,False,mixres,10.083333333333334,6.083333333333333,13.536379018612521,8.0,,,,8.0,gis-calibrated
-Fourth Street,Bancroft and Channing Way,37.862447,-122.298174,6657L,FOURTH ST,L,2.3,False,man,9.916666666666666,6.0,5.752961082910321,3.4,,,,3.4,gis-calibrated
-Fourth Street,Bancroft and Channing Way,37.862551,-122.298337,6657R,FOURTH ST,R,2.4,False,man,12.0,6.0,13.536379018612521,8.0,,,,8.0,gis-calibrated
-Bancroft,Fourth and Bolivar,37.862727,-122.29982,3095L,BANCROFT WAY,L,3.2,False,man,9.916666666666666,5.916666666666667,0.5076142131979695,0.3,,,,0.3,gis-calibrated
-Grayson Street,Seventh Street and Train tracks (aquatic park),37.85475,-122.295027,5116R,GRAYSON ST,R,1.3,False,man,13.583333333333334,6.0,17.93570219966159,10.6,10.5,10.8,,10.6,gis-calibrated
-Anthony Street,Seventh and Fifth Streets,37.85204,-122.29226,4322R,ANTHONY ST,R,2.1,False,man,4.916666666666667,4.916666666666667,11.6751269035533,6.9,13.1,1.6,,6.9,gis-calibrated
-Anthony Street,Seventh Street,37.85188,-122.293039,4322R,ANTHONY ST,R,1.9,False,man,4.916666666666667,4.916666666666667,11.6751269035533,6.9,13.1,1.6,,6.9,gis-calibrated
-Heinz Avenue,Seventh and training tracks (aquatic park),37.857104,-122.289593,6620R,TENTH ST,R,0.9,False,mixres,10.0,5.75,13.028764805414552,7.699999999999999,10.2,1.6,,7.7,gis-calibrated
-8th,dwight + parker,37.859964,-122.293879,6760L,SEVENTH ST,L,3.0,False,man,9.0,4.0,11.336717428087987,6.699999999999999,,,,6.7,gis-calibrated
-5th,dwight + channing,37.863031,-122.2985581,3104L,BANCROFT WAY,L,3.8,False,man,9.0,6.0,19.120135363790187,11.299999999999999,,,,11.3,gis-calibrated
-4th,bancroft + bolivar,37.863049,-122.298773,3104L,BANCROFT WAY,L,3.2,False,man,11.0,6.0,19.120135363790187,11.299999999999999,,,,11.3,gis-calibrated
-4th,bancroft allston,37.863249,-122.298424,6654L,FOURTH ST,L,1.7,False,man,9.583333333333334,6.0,5.414551607445009,3.2,,,,3.2,gis-calibrated
-Heinz Avenue,Seventh Street and Train tracks (aquatic park),37.853165,-122.293039,4131R,HEINZ AVE,R,3.7,False,man,5.0,5.0,1.8612521150592218,1.1,8.6,6.2,,1.1,gis-calibrated
-Potter Street,Seventh and ninth street,37.851556,-122.290787,3406R,POTTER ST,R,1.1,False,com,21.75,6.0,26.057529610829103,15.399999999999999,7.9,6.6,,15.4,gis-calibrated
-Ninth,Ninth Gilman,37.87986,-122.29806,6805R,NINTH ST,R,3.3,False,man,6.0,6.0,,,8.7,5.6,5.6,5.6,imagery
-Ninth Strewt,Ninth and Camelia,37.87835,-122.29768,1302L,CAMELIA ST,L,5.3,False,man,18.0,16.0,,,9.1,8.5,8.5,7.5,imagery
-Eighth Street,Jackson and Harrison,37.881985,-122.299969,6792R,EIGHTH ST,R,2.2,False,man,10.083333333333334,6.0,13.536379018612521,8.0,9.7,6.2,,8.0,gis-calibrated
-Eighth Street,Harrison and Gilman,37.880893,-122.299634,6783R,EIGHTH ST,R,3.1,False,man,9.5,6.0,12.521150592216584,7.4,9.0,1.3,,7.4,gis-calibrated
-Eighth Street,Gilman and Camelia,37.87898,-122.299022,6781R,EIGHTH ST,R,2.5,False,man,10.5,5.916666666666667,15.397631133671743,9.1,9.6,6.6,,9.1,gis-calibrated
-Eighth Street,Gilman and Camelia,37.879049,-122.298903,6781L,EIGHTH ST,L,0.5,False,man,11.916666666666666,4.916666666666667,,,9.9,7.9,7.9,7.7,imagery
-Eighth Street,Camelia and Page,37.877388,-122.298492,6779R,EIGHTH ST,R,0.1,False,res,10.0,6.0,13.705583756345177,8.1,8.7,1.6,1.6,8.1,gis-calibrated
-Eighth Street,Camelia and Page,37.877635,-122.298431,6779L,EIGHTH ST,L,1.6,False,res,10.25,5.083333333333333,,,8.4,5.6,5.6,5.6,imagery
-Eighth Street,Page and Jones,37.876252,-122.298136,6780R,EIGHTH ST,R,2.1,False,res,10.083333333333334,6.0,21.99661590524535,13.0,7.8,3.9,,13.0,gis-calibrated
-Eighth Street,Page and Jones,37.876297,-122.298017,6780L,EIGHTH ST,L,0.5,False,res,10.166666666666666,6.0,17.089678510998308,10.1,7.2,4.9,,10.1,gis-calibrated
-Eighth Street,Jones and Cedar,37.875298,-122.297818,6778R,EIGHTH ST,R,2.7,False,res,10.0,6.0,16.07445008460237,9.5,7.9,1.8,,9.5,gis-calibrated
-Eighth Street,Jones and Cedar,37.87537,-122.297714,6778L,EIGHTH ST,L,1.6,False,res,10.166666666666666,6.166666666666667,,,9.9,5.9,5.9,5.9,imagery
-Cedar Street,Fourth and Fifth,37.873733,-122.301314,584R,CEDAR ST,R,1.9,False,mixres,9.916666666666666,6.0,14.043993231810493,8.3,,,,8.3,gis-calibrated
-San Pablo,University & Hearst,37.86991666666667,-122.29258333333333,5669R,SAN PABLO AVE,R,4.0,False,com,13.0,6.0,12.859560067681896,7.6,,,,7.6,gis-calibrated
-San Pablo,Hearst & Delaware,37.870916666666666,-122.29255555555555,5665R,SAN PABLO AVE,R,2.0,False,com,13.0,6.0,9.983079526226735,5.9,,,,5.9,gis-calibrated
-San Pablo,Hearst & University,37.87002777777778,-122.29230555555556,5668R,SAN PABLO AVE,R,0.7,False,com,13.0,6.0,6.598984771573604,3.8999999999999995,,,,3.9,gis-calibrated
-Bancroft Way,Ellsworth and Oxford,37.868107,-122.2647,5126R,ALLSTON WAY,R,1297.7,True,res,7.833333333333333,7.833333333333333,12.859560067681896,7.6,,,,7.6,gis-calibrated
-Bancroft Way,Ellsworth and Oxford,37.868107,-122.2647,5126L,ALLSTON WAY,L,1300.7,True,res,7.833333333333333,7.833333333333333,11.6751269035533,6.9,,,,6.9,gis-calibrated
-San Pablo,Hearst & Delaware,37.87108333333333,-122.29294444444444,5666R,SAN PABLO AVE,R,3.0,False,com,13.0,6.0,13.536379018612521,8.0,,,,8.0,gis-calibrated
-San Pablo,Delaware & Virginia,37.872194444444446,-122.29330555555555,5663R,SAN PABLO AVE,R,3.7,False,com,13.0,6.0,15.905245346869714,9.4,,,,9.4,gis-calibrated
-Jones,4th 5th,37.8749362,-122.3019917,599L,JONES ST,L,2.7,False,man,12.0,6.0,10.152284263959391,6.0,9.4,,,6.0,gis-calibrated
-Jones,Fourth and Fifth,37.874886,-122.30175,599R,JONES ST,R,3.0,False,mixres,11.75,6.0,5.0761421319796955,3.0,6.5,,,3.0,gis-calibrated
-4th,Jones Page,37.8750056,-122.3021915,6650L,FOURTH ST,L,0.3,False,man,12.0,6.0,7.614213197969543,4.5,9.4,,,4.5,gis-calibrated
-Eastshore,Cedar virginia,37.8727893,-122.305149,62R,EASTSHORE HWY,R,0.9,False,man,9.0,6.0,9.137055837563453,5.4,,,,5.4,gis-calibrated
-Virginia,Eastshore 4th,37.871348,-122.304293,946L,VIRGINIA ST,L,4.4,False,man,7.583333333333333,6.0,15.228426395939087,9.0,,,,9.0,gis-calibrated
-Eastshore Highway,Cedar and Jones,37.873214,-122.305284,1120R,EASTSHORE HWY,R,2.2,False,man,9.583333333333334,6.0,8.967851099830796,5.3,,,,5.3,gis-calibrated
-Addison,4th 5th,37.8662702,-122.2991237,334R,ADDISON ST,R,0.8,False,man,12.0,6.0,11.16751269035533,6.6,,,,6.6,gis-calibrated
-Allston,4th and dead end,37.864698,-122.2993252,2155R,ALLSTON WAY,R,0.3,False,man,13.0,6.0,5.0761421319796955,3.0,,,,3.0,gis-calibrated
-Bancroft,4th 5th,37.8632862,-122.2976445,5189L,BANCROFT WAY,L,2.2,False,mixres,14.0,6.0,14.382402707275805,8.5,,,,8.5,gis-calibrated
-5th,Bancroft allston,37.8634098,-122.2975097,6675R,FIFTH ST,R,3.5,False,mixres,15.0,6.0,14.551607445008461,8.6,,,,8.6,gis-calibrated
+street,block,side_txt,obstacles,surface,survey,lat,lon,face,face_street,side,area,dist_m,side_ambiguous,zone_cat,bhu_total_ft,bhu_clear_path_ft,gis_raw_ft,gis_cal_ft,t2n_poly_ft,t2n_clear_med_ft,t2n_governing_ft,model_width_ft,model_source
+Shattuck,Blake and parker,Even numbers,,"Yes, flat pavement",form 2026-08,37.8627978,-122.2673218,2264R,BLAKE ST,R,south,22.1,False,com,14.0,6.0,17.8,10.5198,,,,8.3,strip-tape-calibrated
+Parker,"Shattuck, Milvia",Odd numbers,"No parking, plants, fence, dirt, poles","Yes, flat pavement",form 2026-08,37.86205,-122.26875,3057L,PARKER ST,L,south,5.7,False,res,9.833333333333334,6.0,16.9,9.987899999999998,,,,7.9,strip-tape-calibrated
+Oregon,"Milvia, Shattuck",Odd numbers,Tree well/roots,"No, uneven/broken",form 2026-08,37.85745,-122.2688,2442L,OREGON ST,L,south,3.5,False,com,6.0,4.0,16.0,9.456,,,,3.5,strip-tape-calibrated
+Shattuck,Parker,Even numbers,,"Yes, flat pavement",form 2026-08,37.8623346,-122.2672608,3057L,PARKER ST,L,south,15.0,False,res,17.0,6.0,16.9,9.987899999999998,,,,7.9,strip-tape-calibrated
+Milvia and Blake,Blake Street and Milvia,Odd numbers,No Camping sign,"Yes, flat pavement",form 2026-08,37.86279,-122.27011,3430L,BLAKE ST,L,south,4.4,False,res,10.0,6.0,20.2,11.938199999999998,,,,5.9,strip-tape-calibrated
+Derby Street,Shattuck and Milvia,Odd numbers,Tree well/roots,"Yes, flat pavement",form 2026-08,37.860252,-122.268356,2959L,DERBY ST,L,south,2.8,False,res,10.166666666666666,6.0,14.0,8.274,,,,6.0,strip-tape-calibrated
+Oregon,"Milvia, Shattuck",Even numbers,Tree well/roots,"No, uneven/broken",form 2026-08,37.85727,-122.26876,2442R,OREGON ST,R,south,4.0,False,com,10.0,6.0,13.7,8.096699999999998,,,,5.9,strip-tape-calibrated
+Oregon,"MLK, Milvia",Even numbers,Tree well/roots,"No, uneven/broken",form 2026-08,37.85724,-122.26935,2618R,OREGON ST,R,south,0.9,False,res,9.0,6.0,15.0,8.865,,,,5.3,strip-tape-calibrated
+Parker,"Shattuck, Milvia",Even numbers,Tree well/roots,"Yes, flat dirt/gravel",form 2026-08,37.86189,-122.26873,3057R,PARKER ST,R,south,0.7,False,res,9.833333333333334,6.0,11.9,7.0329,,,,4.7,strip-tape-calibrated
+Derby Street,Shattuck and Milvia,Even numbers,"Tree well/roots, Green parcels on both sides of sidewalk ","Yes, flat dirt/gravel, No, uneven/broken",form 2026-08,37.860163,-122.268039,2959R,DERBY ST,R,south,1.4,False,com,14.0,6.0,13.3,7.8603,,,,8.3,strip-tape-calibrated
+Oregon,"MLK, Milvia",Odd numbers,Tree well/roots,"No, uneven/broken",form 2026-08,37.85733,-122.26971,2618L,OREGON ST,L,south,3.3,False,res,10.0,6.0,18.6,10.9926,,,,5.9,strip-tape-calibrated
+Blake,Martin Luther King,Odd numbers,Tree well/roots,"Only the top corner of the block has spac for the tent, the rest is drive ways or blocked by trees",form 2026-08,37.86253,-122.27226,3387L,BLAKE ST,L,south,6.2,False,res,11.0,4.0,20.2,11.938199999999998,,,,6.5,strip-tape-calibrated
+Carleton,Shattuck milvia,Odd numbers,,Tress and bark/mulch,form 2026-08,37.8612443,-122.2674023,3015L,CARLETON ST,L,south,0.1,False,res,8.5,6.0,19.6,11.5836,,,,5.0,strip-tape-calibrated
+Parker,"Milvia, MLK",Even numbers,Tree well/roots,"Yes, flat dirt/gravel",form 2026-08,37.86159,-122.27095,2830R,PARKER ST,R,south,0.6,False,res,9.833333333333334,6.0,12.9,7.6239,,,,5.8,strip-tape-calibrated
+Blake,Blake and grant,Odd numbers,"Planters, Tree well/roots","No, uneven/broken, No usable narrow sidewalk or landscaping",form 2026-08,37.86233,-122.27523,3056L,BLAKE ST,L,south,22.7,False,res,11.0,5.0,10.0,5.91,,,,6.5,strip-tape-calibrated
+Carleton,Shattuck milvia,Even numbers,,"Yes, flat pavement",form 2026-08,37.8610164,-122.2681023,3015R,CARLETON ST,R,south,4.2,False,res,9.5,6.0,14.1,8.3331,,,,5.6,strip-tape-calibrated
+Parker,"Milvia, MLK",Odd numbers,"Planters, Tree well/roots, Fence, Driveway/curb cut","No, uneven/broken",form 2026-08,37.86181,-122.27056,2830L,PARKER ST,L,south,5.2,False,res,10.833333333333334,6.0,15.2,8.983199999999998,,,,6.4,strip-tape-calibrated
+Derby Street,Milvia and Martin Luther King,Even numbers,Sidewalk is too narrow,"Yes, flat pavement",form 2026-08,37.859753,-122.270283,2337R,DERBY ST,R,south,13.0,False,res,6.0,6.0,19.4,11.465399999999999,,,,4.7,strip-tape-calibrated
+Oregon,"Grant, MLK",Odd numbers,Planters,"No, uneven/broken",form 2026-08,37.85695,-122.27205,2277R,OREGON ST,R,south,2.0,False,res,10.0,6.0,11.3,6.6783,,,,6.2,strip-tape-calibrated
+Blake,McGee,Odd numbers,"None, Tree well/roots","No, on a slope, No, uneven/broken",form 2026-08,37.86197,-122.27656,3046L,BLAKE ST,L,south,3.4,False,res,11.0,5.0,13.3,7.8603,,,,6.5,strip-tape-calibrated
+Oregon,"Grant, MLK",Even numbers,None,"Yes, flat pavement",form 2026-08,37.85696,-122.27184,2277R,OREGON ST,R,south,0.1,False,res,10.5,6.0,11.3,6.6783,,,,6.2,strip-tape-calibrated
+Derby Street,Milvia and Martin Luther King,Odd numbers,None,"Yes, flat pavement",form 2026-08,37.85984,-122.270461,2337R,DERBY ST,R,south,1.2,False,res,10.0,6.0,19.4,11.465399999999999,,,,4.7,strip-tape-calibrated
+Parker,"MLK, Grant",Odd numbers,"Tree well/roots, Driveway/curb cut, Large plants","No, uneven/broken",form 2026-08,37.86148,-122.27286,2183L,PARKER ST,L,south,2.8,False,res,10.083333333333334,6.0,18.6,10.9926,,,,6.0,strip-tape-calibrated
+Blake,Blake and California,Odd numbers,"Planters, Tree well/roots, Driveway/curb cut","No, uneven/broken",form 2026-08,37.86153,-122.27981,2184L,BLAKE ST,L,pilot,1.6,True,res,11.0,5.0,13.5,7.9784999999999995,,,,8.0,gis-calibrated
+Blake,Blake and California,Odd numbers,"Planters, Tree well/roots, Driveway/curb cut","No, uneven/broken",form 2026-08,37.86153,-122.27981,2184L,BLAKE ST,L,south,1.6,True,res,11.0,5.0,13.5,7.9784999999999995,,,,8.0,gis-calibrated
+Oregon,"McGee, Grant",Even numbers,"Planters, Tree well/roots","No, uneven/broken",form 2026-08,37.85683,-122.27285,2277R,OREGON ST,R,south,0.4,False,res,11.0,6.0,11.3,6.6783,,,,6.2,strip-tape-calibrated
+Parker,"MLK, Grant",Even numbers,"Tree well/roots, Driveway/curb cut, Large plants","No, uneven/broken",form 2026-08,37.86132,-122.27282,2183R,PARKER ST,R,south,4.3,False,res,10.833333333333334,6.0,14.9,8.8059,,,,6.4,strip-tape-calibrated
+Blake,Sacramento,Even numbers,"Tree well/roots, Driveway/curb cut","No, on a slope, No, uneven/broken",form 2026-08,37.86133,-122.28059,2184R,BLAKE ST,R,pilot,1.8,True,res,10.0,4.0,11.0,6.5009999999999994,,,,6.5,gis-calibrated
+Blake,Sacramento,Even numbers,"Tree well/roots, Driveway/curb cut","No, on a slope, No, uneven/broken",form 2026-08,37.86133,-122.28059,2184R,BLAKE ST,R,south,1.8,True,res,10.0,4.0,11.0,6.5009999999999994,,,,6.5,gis-calibrated
+Oregon,"McGee, Grant",Odd numbers,Tree well/roots,"No, uneven/broken",form 2026-08,37.85691,-122.27317,2270L,OREGON ST,L,south,2.7,False,res,7.0,3.0,13.4,7.9193999999999996,,,,4.1,strip-tape-calibrated
+Parker,"Grant, McGee",Even numbers,"Tree well/roots, Fence, Driveway/curb cut","No, uneven/broken",form 2026-08,37.86109,-122.27502,3013R,PARKER ST,R,south,4.2,False,res,10.0,6.0,15.3,9.0423,,,,5.9,strip-tape-calibrated
+Derby Street,Martin Luther King and Grant,Odd numbers,"Tree well/roots, Driveway/curb cut","Yes, flat pavement",form 2026-08,37.859593,-122.272874,2923R,DERBY ST,R,south,1.9,False,res,11.833333333333334,6.0,8.6,5.082599999999999,,,,6.1,strip-tape-calibrated
+Blake,Blake and California,Even numbers,"Planters, Tree well/roots, Boulders, Driveway/curb cut","No, on a slope, No, uneven/broken",form 2026-08,37.86174,-122.27741,3046R,BLAKE ST,R,south,1.4,False,res,10.0,5.0,11.0,6.5009999999999994,,,,5.9,strip-tape-calibrated
+Derby Street,Martin Luther King and Grant,Even numbers,"Tree well/roots, Driveway/curb cut","Yes, flat pavement",form 2026-08,37.859597,-122.272815,2923R,DERBY ST,R,south,1.5,False,res,8.75,5.916666666666667,8.6,5.082599999999999,,,,6.1,strip-tape-calibrated
+Oregon,"California, McGee",Odd numbers,"Tree well/roots, Driveway/curb cut","No, uneven/broken",form 2026-08,37.85663,-122.27597,2250L,OREGON ST,L,south,11.8,False,res,10.0,6.0,18.3,10.8153,,,,5.9,strip-tape-calibrated
+Blake,Blake and McGee,Even numbers,"None, Planters, Tree well/roots","No, uneven/broken",form 2026-08,37.86189,-122.2762,3056R,BLAKE ST,R,south,1.7,False,res,10.0,4.0,10.3,6.0873,,,,5.9,strip-tape-calibrated
+Parker,"Grant, McGee",Odd numbers,"Tree well/roots, Fence, ","No, uneven/broken",form 2026-08,37.86124,-122.27508,3013L,PARKER ST,L,south,2.1,False,res,9.75,6.0,12.9,7.6239,,,,5.8,strip-tape-calibrated
+Oregon,"California, McGee",Even numbers,"Planters, Tree well/roots","No, uneven/broken",form 2026-08,37.85639,-122.27613,2250R,OREGON ST,R,south,1.3,False,res,10.0,6.0,11.0,6.5009999999999994,,,,5.9,strip-tape-calibrated
+Derby Street,Grant and McGee,Even numbers,Tree well/roots,"Yes, flat pavement",form 2026-08,37.859402,-122.274558,2336R,DERBY ST,R,south,4.3,True,res,,6.0,11.8,6.9738,,,,7.0,gis-calibrated
+Derby Street,Grant and McGee,Even numbers,Tree well/roots,"Yes, flat pavement",form 2026-08,37.859402,-122.274558,2336L,DERBY ST,L,south,6.7,True,res,,6.0,20.0,11.82,,,,6.4,strip-tape-calibrated
+Parker,"McGee, California",Odd numbers,"Tree well/roots, Fence, Driveway/curb cut, Poles","No, uneven/broken",form 2026-08,37.86097,-122.27734,3004L,PARKER ST,L,south,4.2,False,res,10.166666666666666,6.0,13.7,8.096699999999998,,,,6.0,strip-tape-calibrated
+Oregon,"MLK, California",Even numbers,None,"Yes, flat pavement",form 2026-08,37.8563,-122.27769,2065L,OREGON ST,L,south,2.7,False,res,10.0,6.0,13.3,7.8603,,,,5.9,strip-tape-calibrated
+Milvia,Blake parker,Odd numbers,Tree well/roots,"Yes, flat pavement",form 2026-08,37.8625358,-122.2696868,5052L,MILVIA ST,L,south,5.4,True,res,9.25,5.5,13.1,7.7421,,,,7.8,gis-calibrated
+Milvia,Blake parker,Odd numbers,Tree well/roots,"Yes, flat pavement",form 2026-08,37.8625358,-122.2696868,5052R,MILVIA ST,R,south,5.6,True,res,9.25,5.5,11.4,6.7374,,,,6.7,gis-calibrated
+Oregon,"MLK, California",Odd numbers,None,"Yes, flat pavement",form 2026-08,37.85633,-122.2781,2065L,OREGON ST,L,south,6.5,False,res,10.0,4.0,13.3,7.8603,,,,5.9,strip-tape-calibrated
+Derby Street,Grant and Mc Gee,Odd numbers,"Tree well/roots, Driveway/curb cut","Yes, flat pavement, No, uneven/broken",form 2026-08,37.859491,-122.27464,2336L,DERBY ST,L,south,4.1,False,res,10.75,5.916666666666667,20.0,11.82,,,,6.4,strip-tape-calibrated
+Milvia,Parker derby,Odd numbers,Bushes,"No, uneven/broken",form 2026-08,37.8617832,-122.2696298,3057R,PARKER ST,R,south,2.3,False,res,6.0,6.0,11.9,7.0329,,,,4.7,strip-tape-calibrated
+Parker,"McGee, California",Even numbers,"Tree well/roots, Fence, Driveway/curb cut","No, uneven/broken",form 2026-08,37.86084,-122.27731,3004R,PARKER ST,R,south,0.5,False,res,9.75,6.0,10.7,6.3237,,,,5.8,strip-tape-calibrated
+Blake,Martin Luther King,Even numbers,None,"Yes, flat pavement",form 2026-08,37.86239,-122.27214,3387R,BLAKE ST,R,south,2.5,False,res,15.0,15.0,13.0,7.683,,,,9.2,strip-tape-calibrated
+Parker,"California, Sacramento",Even numbers,Tree well/roots,"Yes, flat pavement",form 2026-08,37.86059,-122.2793,2257R,PARKER ST,R,pilot,1.5,True,res,10.083333333333334,6.0,12.0,7.092,,,,7.1,gis-calibrated
+Parker,"California, Sacramento",Even numbers,Tree well/roots,"Yes, flat pavement",form 2026-08,37.86059,-122.2793,2257R,PARKER ST,R,south,1.5,True,res,10.083333333333334,6.0,12.0,7.092,,,,7.1,gis-calibrated
+Milvia,Carleton derby,Odd numbers,Tree well/roots,"No, uneven/broken",form 2026-08,37.8607122,-122.2694283,2965L,MILVIA ST,L,south,0.7,False,res,4.5,,12.4,7.3284,,,,2.7,strip-tape-calibrated
+Blake,Blake and Martin Luther king,Even numbers,"Planters, Tree well/roots, Driveway/curb cut","No, uneven/broken",form 2026-08,37.86243,-122.27185,3430R,BLAKE ST,R,south,2.5,False,res,10.0,6.0,18.2,10.7562,,,,5.9,strip-tape-calibrated
+Parker,"California, Sacramento",Odd numbers,"Tree well/roots, Driveway/curb cut","No, uneven/broken",form 2026-08,27.86065,-122.27966,4728L,TRAIL,L,pilot,1107072.4,False,,10.0,6.0,7.2,4.2552,,,,4.3,gis-calibrated
+Derby Street,McGee and California,Odd numbers,"Tree well/roots, Driveway/curb cut","Yes, flat dirt/gravel, No, uneven/broken",form 2026-08,37.859192,-122.276982,2345L,DERBY ST,L,south,3.1,False,res,11.25,6.083333333333333,15.8,9.3378,,,,6.6,strip-tape-calibrated
+Carleton,Milvia mlk,Even numbers,,Grass,form 2026-08,37.8608676,-122.2697348,2964R,CARLETON ST,R,south,3.7,False,res,9.333333333333334,6.0,13.0,7.683,,,,5.5,strip-tape-calibrated
+Blake,Blake and Milvia,Even numbers,None,"Yes, flat pavement",form 2026-08,37.8624,-122.27177,3430R,BLAKE ST,R,south,1.9,False,res,10.0,6.0,18.2,10.7562,,,,5.9,strip-tape-calibrated
+Carleton,Milvia mlk,Odd numbers,"Rocks, bushes","No, uneven/broken, Rocks+ bushes. Some grassy sections",form 2026-08,37.8609695,-122.2696453,2964L,CARLETON ST,L,south,0.8,False,res,9.5,6.0,14.2,8.392199999999999,,,,5.6,strip-tape-calibrated
+Derby Street,McGee and California,Even numbers,"Tree well/roots, Driveway/curb cut","Yes, flat dirt/gravel, No, uneven/broken",form 2026-08,37.859078,-122.276857,2345R,DERBY ST,R,south,0.1,False,res,10.916666666666666,6.0,17.3,10.2243,,,,6.5,strip-tape-calibrated
+Mlk,Carleton Parker,Odd numbers,Tree well/roots,"No, uneven/broken",form 2026-08,37.8607326,-122.2717297,6496L,M L KING JR WAY,L,south,1.3,False,res,9.0,6.0,13.5,7.9784999999999995,,,,5.3,strip-tape-calibrated
+Blake,"MLK, Grant",Even numbers,"None, 24 hour surveillance ","Yes, flat pavement",form 2026-08,37.86236,-122.27229,3387R,BLAKE ST,R,south,1.4,False,res,16.0,6.0,13.0,7.683,,,,9.2,strip-tape-calibrated
+Derby Street,California and Sacramento,Even numbers,Tree well/roots,"Yes, flat pavement, Yes, flat dirt/gravel",form 2026-08,37.858845,-122.278988,2058R,DERBY ST,R,pilot,3.7,True,res,10.0,6.0,11.1,6.560099999999999,,,,6.5,gis-calibrated
+Derby Street,California and Sacramento,Even numbers,Tree well/roots,"Yes, flat pavement, Yes, flat dirt/gravel",form 2026-08,37.858845,-122.278988,2058R,DERBY ST,R,south,3.7,True,res,10.0,6.0,11.1,6.560099999999999,,,,6.5,gis-calibrated
+Mlk,Carleton derby,"Even numbers, Park",,Yes. Grass,form 2026-08,37.8604523,-122.2717072,6506L,M L KING JR WAY,L,south,2.2,False,res,13.0,6.0,15.1,8.9241,,,,7.7,strip-tape-calibrated
+Derby Street,California and Sacramento,Odd numbers,"Tree well/roots, Driveway/curb cut","Yes, flat pavement, Yes, flat dirt/gravel, No, uneven/broken",form 2026-08,37.858942,-122.279032,2058L,DERBY ST,L,pilot,4.0,True,res,10.833333333333334,5.916666666666667,12.7,7.505699999999999,,,,7.5,gis-calibrated
+Derby Street,California and Sacramento,Odd numbers,"Tree well/roots, Driveway/curb cut","Yes, flat pavement, Yes, flat dirt/gravel, No, uneven/broken",form 2026-08,37.858942,-122.279032,2058L,DERBY ST,L,south,4.0,True,res,10.833333333333334,5.916666666666667,12.7,7.505699999999999,,,,7.5,gis-calibrated
+Mlk,Carleton derby,Odd numbers,None,Grass,form 2026-08,37.8598239,-122.2716737,2337L,DERBY ST,L,south,0.3,False,res,27.0,6.0,10.2,6.028199999999999,,,,16.0,strip-tape-calibrated
+Mlk,Carleton derby,Even numbers,Bus stop/signage,"No, uneven/broken",form 2026-08,37.8599364,-122.2717511,6506R,M L KING JR WAY,R,south,5.5,False,res,8.833333333333334,5.833333333333333,12.7,7.505699999999999,,,,5.2,strip-tape-calibrated
+Carleton,Mlk grant,Even numbers,"Tree well/roots, Bushes","Yes, flat pavement, No, uneven/broken",form 2026-08,37.8606027,-122.2719546,2999R,CARLETON ST,R,south,5.1,False,res,10.5,6.0,15.6,9.2196,,,,6.2,strip-tape-calibrated
+Carleton,Mlk grant,Odd numbers,"Tree well/roots, Bushes","No, uneven/broken, Some grassy area",form 2026-08,37.860649,-122.2719422,2999L,CARLETON ST,L,south,0.9,False,res,10.5,6.0,18.6,10.9926,,,,6.2,strip-tape-calibrated
+Grant,Parker carleton,Odd numbers,Tree well/roots,"No, uneven/broken",form 2026-08,37.8604692,-122.2736297,3014L,GRANT ST,L,south,2.3,False,res,7.75,6.0,13.9,8.2149,,,,4.6,strip-tape-calibrated
+Carleton,Grant mcgee,Odd numbers,"Tree well/roots, Bushes","Yes, flat dirt/gravel, No, uneven/broken",form 2026-08,37.860425,-122.2737795,3014R,GRANT ST,R,south,0.6,False,res,10.25,6.0,10.6,6.2646,,,,6.1,strip-tape-calibrated
+Carelton,Grant mcgee,Even numbers,None,"Yes, flat pavement",form 2026-08,37.8602204,-122.2753667,2958R,CARLETON ST,R,south,4.7,True,res,9.5,6.0,21.0,12.411,,,,12.4,gis-calibrated
+Carelton,Grant mcgee,Even numbers,None,"Yes, flat pavement",form 2026-08,37.8602204,-122.2753667,2958L,CARLETON ST,L,south,6.3,True,res,9.5,6.0,11.6,6.855599999999999,,,,6.9,gis-calibrated
+Bancroft,Bowditch,University buildings,"None, Some hard landscaping but area towards bowditch has area a tent would fit","Yes, flat pavement",form 2026-08,37.86903,-122.25603,3153L,HASTE ST,L,south,560.9,False,mixres,15.0,15.0,10.9,6.4418999999999995,,,,6.5,gis-calibrated
+Mcgee,Carelton derby,Odd numbers,Tree well/roots,"Yes, flat pavement",form 2026-08,37.8601092,-122.2759357,2958R,CARLETON ST,R,south,0.6,False,res,9.0,6.0,21.0,12.411,,,,12.4,gis-calibrated
+College,College and Bancroft,Odd numbers,Tree well/roots,"Yes, flat pavement",form 2026-08,37.86914,-122.25468,3153L,HASTE ST,L,south,663.0,False,mixres,,6.0,10.9,6.4418999999999995,,,,6.5,gis-calibrated
+Carleton,California and Sacramento,Odd numbers,"Tree well/roots, Boulders/rocks, Driveway/curb cut","Yes, flat pavement, Yes, flat dirt/gravel",form 2026-08,37.860087,-122.277132,2944L,CARLETON ST,L,south,3.9,False,res,10.0,6.0,13.6,8.0376,,,,5.9,strip-tape-calibrated
+Carleton Street,California and Sacramento,Even numbers,"Tree well/roots, Boulders/rocks, Driveway/curb cut","Yes, flat pavement, Yes, flat dirt/gravel",form 2026-08,37.859692,-122.279256,2925R,CARLETON ST,R,pilot,0.9,True,res,9.833333333333334,6.0,12.0,7.092,,,,7.1,gis-calibrated
+Carleton Street,California and Sacramento,Even numbers,"Tree well/roots, Boulders/rocks, Driveway/curb cut","Yes, flat pavement, Yes, flat dirt/gravel",form 2026-08,37.859692,-122.279256,2925R,CARLETON ST,R,south,0.9,True,res,9.833333333333334,6.0,12.0,7.092,,,,7.1,gis-calibrated
+Dwight Way,Eighth and Seventh,Even numbers,"Tree well/roots, Boulders/rocks","Yes, flat dirt/gravel, No, on a slope, No, uneven/broken",form 2026-08,37.860261,-122.29346,2947R,DWIGHT WAY,R,pilot,0.4,False,man,11.916666666666666,6.0,14.4,8.5104,,,,7.0,strip-tape-calibrated
+Fifth Street,Dwight and Channing Way,Even numbers,"Tree well/roots, Boulders/rocks, Driveway/curb cut","Yes, flat pavement, No, uneven/broken",form 2026-08,37.860363,-122.296517,6676R,FIFTH ST,R,pilot,2.0,False,mixres,10.083333333333334,6.083333333333333,13.5,7.9784999999999995,,,,6.0,strip-tape-calibrated
+Fourth Street,Bancroft and Channing Way,Odd numbers,"Planters, Tree well/roots","Yes, flat pavement",form 2026-08,37.862447,-122.298174,6657L,FOURTH ST,L,pilot,2.3,False,man,9.916666666666666,6.0,5.8,3.4277999999999995,,,,5.9,strip-tape-calibrated
+Fourth Street,Bancroft and Channing Way,Even numbers,"Tree well/roots, Driveway/curb cut","Yes, flat pavement, Yes, flat dirt/gravel, Dirt patches uneven",form 2026-08,37.862551,-122.298337,6657R,FOURTH ST,R,pilot,2.4,False,man,12.0,6.0,13.5,7.9784999999999995,,,,7.1,strip-tape-calibrated
+Bancroft,Fourth and Bolivar,Even numbers,Tree well/roots,"Yes, flat pavement, Woodchips",form 2026-08,37.862727,-122.29982,3095L,BANCROFT WAY,L,pilot,3.2,False,man,9.916666666666666,5.916666666666667,0.5,0.2955,,,,5.9,strip-tape-calibrated
+Grayson Street,Seventh Street and Train tracks (aquatic park),Even numbers,Tree well/roots,"Yes, flat dirt/gravel, No, uneven/broken",form 2026-08,37.85475,-122.295027,5116R,GRAYSON ST,R,pilot,1.3,False,man,13.583333333333334,6.0,17.9,10.578899999999999,10.5,10.8,,8.0,strip-tape-calibrated
+Anthony Street,Seventh and Fifth Streets,Even numbers,No space,"Yes, flat pavement",form 2026-08,37.85204,-122.29226,4322R,ANTHONY ST,R,pilot,2.1,False,man,4.916666666666667,4.916666666666667,11.7,6.914699999999999,13.1,1.6,,2.9,strip-tape-calibrated
+Anthony Street,Seventh Street,Odd numbers,Too narrow ,"Yes, flat pavement",form 2026-08,37.85188,-122.293039,4322R,ANTHONY ST,R,pilot,1.9,False,man,4.916666666666667,4.916666666666667,11.7,6.914699999999999,13.1,1.6,,2.9,strip-tape-calibrated
+Durant,Durant and Telegraph,Odd numbers,None,"Yes, flat pavement",form 2026-08,37.86841,-122.25476,3153L,HASTE ST,L,south,614.8,False,mixres,,6.0,10.9,6.4418999999999995,,,,6.5,gis-calibrated
+California,Carleton + parker,Odd numbers,Tree well/roots,no space,form 2026-08,37.8599885,-122.2781764,2258L,CALIFORNIA ST,L,south,5.3,True,res,2.0,4.0,10.9,6.4418999999999995,,,,6.4,gis-calibrated
+California,Carleton + parker,Odd numbers,Tree well/roots,no space,form 2026-08,37.8599885,-122.2781764,2258R,CALIFORNIA ST,R,south,7.5,True,res,2.0,4.0,8.3,4.9053,,,,4.9,gis-calibrated
+California,Carleton + parker,Even numbers,Tree well/roots,"Yes, flat pavement, No, uneven/broken",form 2026-08,37.8600507,-122.2782411,2258R,CALIFORNIA ST,R,south,3.0,False,res,6.666666666666667,4.0,8.3,4.9053,,,,4.9,gis-calibrated
+Heinz Avenue,Seventh and training tracks (aquatic park),Even numbers,"Planters, Tree well/roots","Yes, flat dirt/gravel",form 2026-08,37.857104,-122.289593,6620R,TENTH ST,R,pilot,0.9,False,mixres,10.0,5.75,13.1,7.7421,10.2,1.6,,5.9,strip-tape-calibrated
+California,carleton + derby,Even numbers,Tree well/roots,"Yes, flat pavement, No, uneven/broken",form 2026-08,37.859709,-122.278079,5195L,CALIFORNIA ST,L,south,1.9,False,res,7.0,4.0,10.6,6.2646,,,,4.1,strip-tape-calibrated
+Calfornia,carleton and derby,Odd numbers,Tree well/roots,"Yes, flat pavement, No, uneven/broken",form 2026-08,37.85969,-122.278226,5195R,CALIFORNIA ST,R,south,2.2,False,res,7.0,4.0,8.6,5.082599999999999,,,,4.1,strip-tape-calibrated
+8th,dwight + parker,Even numbers,Tree well/roots,"Yes, flat pavement",form 2026-08,37.859964,-122.293879,6760L,SEVENTH ST,L,pilot,3.0,False,man,9.0,4.0,11.3,6.6783,,,,5.3,strip-tape-calibrated
+5th,dwight + channing,Odd numbers,,"Yes, flat dirt/gravel, No, uneven/broken",form 2026-08,37.863031,-122.2985581,3104L,BANCROFT WAY,L,pilot,3.8,False,man,9.0,6.0,19.0,11.229,,,,5.9,strip-tape-calibrated
+4th,bancroft + bolivar,Odd numbers,,"Yes, flat pavement",form 2026-08,37.863049,-122.298773,3104L,BANCROFT WAY,L,pilot,3.2,False,man,11.0,6.0,19.0,11.229,,,,5.9,strip-tape-calibrated
+4th,bancroft allston,Odd numbers,,"Yes, flat pavement",form 2026-08,37.863249,-122.298424,6654L,FOURTH ST,L,pilot,1.7,False,man,9.583333333333334,6.0,5.4,3.1914000000000002,,,,5.7,strip-tape-calibrated
+Heinz Avenue,Seventh Street and Train tracks (aquatic park),Odd numbers,No extra space in the sidewalk,"Yes, flat pavement",form 2026-08,37.853165,-122.293039,4131R,HEINZ AVE,R,pilot,3.7,False,man,5.0,5.0,1.9,1.1228999999999998,8.6,6.2,,3.0,strip-tape-calibrated
+Potter Street,Seventh and ninth street,Odd numbers,"None, Sidewalk becomes parking spaces ","Yes, flat pavement",form 2026-08,37.851556,-122.290787,3406R,POTTER ST,R,pilot,1.1,False,com,21.75,6.0,26.1,15.4251,7.9,6.6,,12.9,strip-tape-calibrated
+Folger Avenue,San Pablo and Seventh,Odd numbers,Signage,"Yes, flat pavement",form 2026-08,37.850469,-122.28921,3582L,FOLGER AVE,L,pilot,3.3,False,man,13.5,6.0,8.1,4.7871,,,,8.0,strip-tape-calibrated
+Folger Avenue,San Pablo and Seventh,Even numbers,Signage,"Yes, flat pavement",form 2026-08,37.850339,-122.289164,3582R,FOLGER AVE,R,pilot,1.1,False,man,13.25,6.0,13.4,7.9193999999999996,,,,7.8,strip-tape-calibrated
+Ninth,Ninth Gilman,"Even numbers, Odd numbers",None,"Yes, flat pavement",form 2026-08,37.87986,-122.29806,6805R,NINTH ST,R,pilot,3.3,False,man,6.0,6.0,20.7,12.233699999999999,8.7,5.6,5.6,5.6,imagery
+Ninth Strewt,Ninth and Camelia,Even numbers,None,"Yes, flat pavement",form 2026-08,37.87835,-122.29768,1302L,CAMELIA ST,L,pilot,5.3,False,man,18.0,16.0,9.5,5.6145,9.1,8.5,8.5,8.5,imagery
+Eighth Street,Jackson and Harrison,Even numbers,"Tree well/roots, Driveway/curb cut","Yes, flat pavement",form 2026-08,37.881985,-122.299969,6792R,EIGHTH ST,R,pilot,2.2,False,man,10.083333333333334,6.0,13.5,7.9784999999999995,9.7,6.2,,6.0,strip-tape-calibrated
+Eighth Street,Harrison and Gilman,Odd numbers,"Tree well/roots, Signage","Yes, flat pavement",form 2026-08,37.880893,-122.299634,6783R,EIGHTH ST,R,pilot,3.1,False,man,9.5,6.0,12.6,7.446599999999999,9.0,1.3,,5.6,strip-tape-calibrated
+Eighth Street,Gilman and Camelia,,,,clean 2026-09,37.87898,-122.299022,6781R,EIGHTH ST,R,pilot,2.5,False,man,10.5,5.916666666666667,15.3,9.0423,9.6,6.6,,6.2,strip-tape-calibrated
+Eighth Street,Gilman and Camelia,,,,clean 2026-09,37.879049,-122.298903,6781L,EIGHTH ST,L,pilot,0.5,False,man,11.916666666666666,4.916666666666667,9.1,5.3781,9.9,7.9,7.9,7.9,imagery
+Eighth Street,Camelia and Page,,,,clean 2026-09,37.877388,-122.298492,6779R,EIGHTH ST,R,pilot,0.1,False,res,10.0,6.0,13.8,8.1558,8.7,1.6,1.6,1.6,imagery
+Eighth Street,Camelia and Page,,,,clean 2026-09,37.877635,-122.298431,6779L,EIGHTH ST,L,pilot,1.6,False,res,10.25,5.083333333333333,10.7,6.3237,8.4,5.6,5.6,5.6,imagery
+Eighth Street,Page and Jones,,,,clean 2026-09,37.876252,-122.298136,6780R,EIGHTH ST,R,pilot,2.1,False,res,10.083333333333334,6.0,21.9,12.942899999999998,7.8,3.9,,6.0,strip-tape-calibrated
+Eighth Street,Page and Jones,,,,clean 2026-09,37.876297,-122.298017,6780L,EIGHTH ST,L,pilot,0.5,False,res,10.166666666666666,6.0,17.1,10.1061,7.2,4.9,,6.0,strip-tape-calibrated
+Eighth Street,Jones and Cedar,,,,clean 2026-09,37.875298,-122.297818,6778R,EIGHTH ST,R,pilot,2.7,False,res,10.0,6.0,16.1,9.5151,7.9,1.8,,5.9,strip-tape-calibrated
+Eighth Street,Jones and Cedar,,,,clean 2026-09,37.87537,-122.297714,6778L,EIGHTH ST,L,pilot,1.6,False,res,10.166666666666666,6.166666666666667,12.1,7.1511,9.9,5.9,5.9,5.9,imagery
+Cedar Street,Fourth and Fifth,,,,clean 2026-09,37.873733,-122.301314,584R,CEDAR ST,R,pilot,1.9,False,mixres,9.916666666666666,6.0,14.1,8.3331,,,,5.9,strip-tape-calibrated
+San Pablo,University & Hearst,,,,clean 2026-09,37.86991666666667,-122.29258333333333,5669R,SAN PABLO AVE,R,pilot,4.0,False,com,13.0,6.0,12.9,7.6239,,,,7.7,strip-tape-calibrated
+San Pablo,Hearst & Delaware,,,,clean 2026-09,37.870916666666666,-122.29255555555555,5665R,SAN PABLO AVE,R,pilot,2.0,False,com,13.0,6.0,10.0,5.91,,,,7.7,strip-tape-calibrated
+San Pablo,Hearst & University,,,,clean 2026-09,37.87002777777778,-122.29230555555556,5668R,SAN PABLO AVE,R,pilot,0.7,False,com,13.0,6.0,6.6,3.9005999999999994,,,,7.7,strip-tape-calibrated
+Bancroft Way,Ellsworth and Oxford,,,,clean 2026-09,37.868107,-122.2647,3165L,ATHERTON ST,L,south,214.6,True,mixres,7.833333333333333,7.833333333333333,14.9,8.8059,,,,8.8,gis-calibrated
+Bancroft Way,Ellsworth and Oxford,,,,clean 2026-09,37.868107,-122.2647,3165R,ATHERTON ST,R,south,215.3,True,res,7.833333333333333,7.833333333333333,10.4,6.1464,,,,6.2,gis-calibrated
+San Pablo,Hearst & Delaware,,,,clean 2026-09,37.87108333333333,-122.29294444444444,5666R,SAN PABLO AVE,R,pilot,3.0,False,com,13.0,6.0,13.6,8.0376,,,,7.7,strip-tape-calibrated
+San Pablo,Delaware & Virginia,,,,clean 2026-09,37.872194444444446,-122.29330555555555,5663R,SAN PABLO AVE,R,pilot,3.7,False,com,13.0,6.0,15.8,9.3378,,,,7.7,strip-tape-calibrated
+Jones,4th 5th,,,,clean 2026-09,37.8749362,-122.3019917,599L,JONES ST,L,pilot,2.7,False,man,12.0,6.0,10.1,5.969099999999999,9.4,,,7.1,strip-tape-calibrated
+Jones,Fourth and Fifth,,,,clean 2026-09,37.874886,-122.30175,599R,JONES ST,R,pilot,3.0,False,mixres,11.75,6.0,5.0,2.955,6.5,,,6.9,strip-tape-calibrated
+4th,Jones Page,,,,clean 2026-09,37.8750056,-122.3021915,6650L,FOURTH ST,L,pilot,0.3,False,man,12.0,6.0,7.6,4.491599999999999,9.4,,,7.1,strip-tape-calibrated
+Eastshore,Cedar virginia,,,,clean 2026-09,37.8727893,-122.305149,62R,EASTSHORE HWY,R,pilot,0.9,False,man,9.0,6.0,9.1,5.3781,,,,5.3,strip-tape-calibrated
+Virginia,Eastshore 4th,,,,clean 2026-09,37.871348,-122.304293,946L,VIRGINIA ST,L,pilot,4.4,False,man,7.583333333333333,6.0,15.2,8.983199999999998,,,,4.5,strip-tape-calibrated
+Eastshore Highway,Cedar and Jones,,,,clean 2026-09,37.873214,-122.305284,1120R,EASTSHORE HWY,R,pilot,2.2,False,man,9.583333333333334,6.0,9.0,5.319,,,,5.7,strip-tape-calibrated
+Addison,4th 5th,,,,clean 2026-09,37.8662702,-122.2991237,334R,ADDISON ST,R,pilot,0.8,False,man,12.0,6.0,11.1,6.560099999999999,,,,7.1,strip-tape-calibrated
+Allston,4th and dead end,,,,clean 2026-09,37.864698,-122.2993252,2155R,ALLSTON WAY,R,pilot,0.3,False,man,13.0,6.0,5.1,3.0140999999999996,,,,7.7,strip-tape-calibrated
+Bancroft,4th 5th,,,,clean 2026-09,37.8632862,-122.2976445,5189L,BANCROFT WAY,L,pilot,2.2,False,mixres,14.0,6.0,14.4,8.5104,,,,8.3,strip-tape-calibrated
+5th,Bancroft allston,,,,clean 2026-09,37.8634098,-122.2975097,6675R,FIFTH ST,R,pilot,3.5,False,mixres,15.0,6.0,14.6,8.628599999999999,,,,8.9,strip-tape-calibrated

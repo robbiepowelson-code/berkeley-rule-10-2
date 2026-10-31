@@ -534,6 +534,7 @@ def main():
                     w_m, w_src = bm, "osm-building"
             key = (s["id"], side)
             fid = key[0] + side
+            gis_est_ft = round(w_m / FT, 1)       # the GIS/OSM strip estimate before any field input, kept for calibration
             status = None
             if fid in drawn and drawn[fid]["curb"] and drawn[fid]["building"]:
                 cl = unary_union(drawn[fid]["curb"]); bl = unary_union(drawn[fid]["building"])
@@ -572,7 +573,7 @@ def main():
 
             face = {
                 "id": key[0] + side, "street": s["street"], "side": side,
-                "pavement_ft": s["pav_ft"], "width_ft": round(w_ft, 1), "width_source": w_src,
+                "pavement_ft": s["pav_ft"], "width_ft": round(w_ft, 1), "width_source": w_src, "gis_width_ft": gis_est_ft,
                 "path_ft": path_ft, "depth_ft": round(depth_m / FT, 1),
                 "zone": zp["z"] if zp else None, "district": zp["d"] if zp else None,
                 "cat": cat, "zone_dist_m": round(zd, 1) if zp else None,

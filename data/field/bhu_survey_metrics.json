@@ -1,20 +1,20 @@
 {
  "all": {
   "gis_raw_ft": {
-   "n": 54,
-   "mean_err": 1.73,
-   "mae": 3.86,
-   "rmse": 4.66,
-   "within_2ft": 0.22,
-   "within_1ft": 0.17
+   "n": 125,
+   "mean_err": 2.88,
+   "mae": 4.43,
+   "rmse": 5.61,
+   "within_2ft": 0.28,
+   "within_1ft": 0.18
   },
   "gis_cal_ft": {
-   "n": 54,
-   "mean_err": -3.28,
-   "mae": 3.71,
-   "rmse": 4.5,
-   "within_2ft": 0.26,
-   "within_1ft": 0.11
+   "n": 125,
+   "mean_err": -2.54,
+   "mae": 3.48,
+   "rmse": 4.47,
+   "within_2ft": 0.33,
+   "within_1ft": 0.14
   },
   "t2n_poly_ft": {
    "n": 21,
@@ -33,32 +33,32 @@
    "within_1ft": 0.06
   },
   "model_width_ft": {
-   "n": 59,
-   "mean_err": -3.41,
-   "mae": 3.8,
-   "rmse": 4.62,
-   "within_2ft": 0.25,
-   "within_1ft": 0.12
+   "n": 125,
+   "mean_err": -3.95,
+   "mae": 4.17,
+   "rmse": 4.44,
+   "within_2ft": 0.06,
+   "within_1ft": 0.01
   },
-  "bhu_total_median": 10.083333333333334,
-  "rows": 59
+  "bhu_total_median": 10.0,
+  "rows": 127
  },
  "west_berkeley": {
   "gis_raw_ft": {
-   "n": 38,
-   "mean_err": 1.47,
-   "mae": 4.27,
+   "n": 51,
+   "mean_err": 1.31,
+   "mae": 4.05,
    "rmse": 5.17,
-   "within_2ft": 0.24,
-   "within_1ft": 0.18
+   "within_2ft": 0.31,
+   "within_1ft": 0.2
   },
   "gis_cal_ft": {
-   "n": 38,
-   "mean_err": -3.59,
-   "mae": 4.16,
-   "rmse": 4.93,
-   "within_2ft": 0.24,
-   "within_1ft": 0.08
+   "n": 51,
+   "mean_err": -3.71,
+   "mae": 4.37,
+   "rmse": 5.14,
+   "within_2ft": 0.18,
+   "within_1ft": 0.06
   },
   "t2n_poly_ft": {
    "n": 21,
@@ -77,32 +77,32 @@
    "within_1ft": 0.06
   },
   "model_width_ft": {
-   "n": 43,
-   "mean_err": -3.73,
-   "mae": 4.23,
-   "rmse": 5.04,
-   "within_2ft": 0.23,
-   "within_1ft": 0.09
+   "n": 51,
+   "mean_err": -4.43,
+   "mae": 4.43,
+   "rmse": 4.7,
+   "within_2ft": 0.04,
+   "within_1ft": 0.02
   },
   "bhu_total_median": 10.166666666666666,
-  "rows": 43
+  "rows": 51
  },
  "west_com_man": {
   "gis_raw_ft": {
-   "n": 28,
-   "mean_err": 0.83,
-   "mae": 4.12,
-   "rmse": 4.98,
-   "within_2ft": 0.25,
+   "n": 33,
+   "mean_err": 0.64,
+   "mae": 4.44,
+   "rmse": 5.54,
+   "within_2ft": 0.24,
    "within_1ft": 0.18
   },
   "gis_cal_ft": {
-   "n": 28,
-   "mean_err": -3.93,
-   "mae": 4.5,
-   "rmse": 5.18,
-   "within_2ft": 0.18,
-   "within_1ft": 0.04
+   "n": 33,
+   "mean_err": -4.15,
+   "mae": 5.01,
+   "rmse": 5.75,
+   "within_2ft": 0.15,
+   "within_1ft": 0.03
   },
   "t2n_poly_ft": {
    "n": 13,
@@ -121,14 +121,48 @@
    "within_1ft": 0.09
   },
   "model_width_ft": {
-   "n": 31,
-   "mean_err": -4.04,
-   "mae": 4.55,
-   "rmse": 5.33,
-   "within_2ft": 0.19,
-   "within_1ft": 0.06
+   "n": 33,
+   "mean_err": -4.5,
+   "mae": 4.5,
+   "rmse": 4.81,
+   "within_2ft": 0.06,
+   "within_1ft": 0.03
   },
-  "bhu_total_median": 11.0,
-  "rows": 31
+  "bhu_total_median": 11.916666666666666,
+  "rows": 33
+ },
+ "south_berkeley": {
+  "gis_raw_ft": {
+   "n": 74,
+   "mean_err": 3.97,
+   "mae": 4.7,
+   "rmse": 5.9,
+   "within_2ft": 0.26,
+   "within_1ft": 0.16
+  },
+  "gis_cal_ft": {
+   "n": 74,
+   "mean_err": -1.74,
+   "mae": 2.86,
+   "rmse": 3.95,
+   "within_2ft": 0.43,
+   "within_1ft": 0.19
+  },
+  "t2n_poly_ft": {
+   "n": 0
+  },
+  "t2n_clear_med_ft": {
+   "n": 0
+  },
+  "model_width_ft": {
+   "n": 74,
+   "mean_err": -3.62,
+   "mae": 3.99,
+   "rmse": 4.25,
+   "within_2ft": 0.08,
+   "within_1ft": 0.0
+  },
+  "bhu_total_median": 10.0,
+  "rows": 76
  }
 }

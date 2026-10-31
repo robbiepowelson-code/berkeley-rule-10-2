@@ -314,6 +314,31 @@ the GIS curb line, which on Eighth St sits several feet inside the sidewalk;
 the section now spans 6 m on the road side as well, so it finds the walk
 wherever the curb actually is.
 
+**South Berkeley as a calibration area.** The full August form export has
+99 rows, 76 of them on residential streets between Oregon and Blake, Shattuck
+and Sacramento, each with the side of the street and obstacle notes. The
+model's inputs were extended to that box (City centerlines, transit stops
+and bike racks; OpenStreetMap buildings, driveways and street trees;
+`data/campable_south/`) so those rows could be matched to block faces too.
+They separate three quantities that the West Berkeley rows could not:
+
+| quantity | measured by | typical share of the GIS strip |
+|---|---|---|
+| curb-to-property strip | City GIS (right-of-way minus pavement) | 1.00 (over-reads: +4.0 ft mean in South Berkeley, +1.3 ft in West) |
+| paved sidewalk, tree wells included | BHU "total width" | 0.84 West Berkeley (n=49, IQR 0.75–1.06); 0.73 South Berkeley (n=74, IQR 0.55–0.86) |
+| clear walk, tree wells and landscaping out | October tapes | 0.59 (n=5, sd 0.26) |
+
+West Berkeley's industrial sidewalks run from the curb face to the building,
+so paved ≈ strip there; residential South Berkeley has a planting strip
+between curb and walk, so paved is three-quarters of the strip. Tree wells
+were noted on 53 of the 76 South Berkeley rows and the BHU totals are the
+same with and without them (median 10.0 ft both), confirming the survey
+measured across the tree-well zone. The model's clear-walk factor (0.59) is
+therefore applied to the strip, or to the BHU paved width where one exists;
+on a residential face with a planting strip that double-counts the
+reduction and is conservative, which is acceptable because those faces are
+calibration only and are not counted under AR 10.2.
+
 After adding the strip widths the pilot count is **97 locations on 9 block
 faces** (Gilman 20, Eastshore 20, San Pablo 20, University overpass 14,
 Ashby 11, I-80 off-ramp 10, Seventh 2) — the same short list, to be walked.
