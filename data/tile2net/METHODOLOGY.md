@@ -275,6 +275,49 @@ Street View links as the field-verification list. This is consistent with the
 field survey's finding that the corridor has fewer than fifteen usable
 locations, and it is the list to take a tape to.
 
+## 4d. Testing against the Berkeley Homeless Union survey (52 measurements)
+
+On 21 September 2026 the Berkeley Homeless Union sent its volunteer tape
+survey (`data/field/bhu_sidewalk_measurements_2026-09.tsv`): 52 block faces
+with a mid-block map pin, "clear path of travel", "total width of sidewalk"
+and "available space remaining". 43 rows fall in West Berkeley, 9 in South
+Berkeley outside the pilot. Each pin was matched to the nearest block face
+(`tools/bhu_survey_eval.py`; pins within 3 m of equidistant between the two
+sides are flagged side-ambiguous).
+
+**The two surveys measure different things.** The BHU "total width" tracks
+the curb-to-property strip — it agrees with the raw GIS strip (mean error
++1.5 ft) and with the tile2net polygon (−1.3 ft) — while the October tapes
+in `sidewalk_widths.csv` are the clear paved walk with tree wells and
+landscaping excluded (about 0.59 × the strip). Camelia St's 12 ft of
+September is a strip figure. Both are legitimate; the model needs the clear
+walk, because a tent cannot stand in a tree well, so the BHU totals enter it
+as **measured strip widths** (`data/field/strip_widths.csv`, 41 faces),
+replacing the GIS estimate there, with the clear-walk factor applied on top
+(`width_source = strip-tape-calibrated`).
+
+How well each estimate of the strip matches the BHU tapes, West Berkeley:
+
+| estimate | n | mean error | mean abs. error | within 2 ft |
+|---|---|---|---|---|
+| tile2net polygon width (2023 aerial) | 21 | −1.3 ft | 3.5 ft | 33 % |
+| raw GIS strip (right-of-way − pavement) | 38 | +1.5 ft | 4.3 ft | 24 % |
+
+Neither is good enough on its own at the block-face level — a ±4 ft typical
+error on a 10 ft strip — which is the quantitative case for measuring rather
+than estimating, and for the per-metre clear-walk profile. The profile's
+median on tree-lined faces (Eighth St) read 1–6 ft against BHU totals of
+10 ft: those faces are the ones the method already flags "tape needed",
+and the comparison confirms the flag is right. The run also exposed a defect
+in the first version of `clear_width.py`: it started each cross-section at
+the GIS curb line, which on Eighth St sits several feet inside the sidewalk;
+the section now spans 6 m on the road side as well, so it finds the walk
+wherever the curb actually is.
+
+After adding the strip widths the pilot count is **97 locations on 9 block
+faces** (Gilman 20, Eastshore 20, San Pablo 20, University overpass 14,
+Ashby 11, I-80 off-ramp 10, Seventh 2) — the same short list, to be walked.
+
 ## 5. Margin of error, stated honestly
 
 - **Width.** Where a sidewalk exists, the imagery's width class agrees with the
@@ -324,6 +367,7 @@ bash tools/tile2net/run_area.sh ninth "37.8515, -122.2975, 37.8590, -122.2895"
 python3 tools/tile2net_eval.py data/tile2net/eval nw=data/tile2net/nw/polygons.parquet ninth=data/tile2net/ninth/polygons.parquet
 python3 tools/clear_width.py nw ninth              # clear-walk width profile every metre (needs the tiles)
 python3 tools/calibrate_gis.py                     # tape/GIS factor -> data/field/gis_calibration.json
+python3 tools/bhu_survey_eval.py                   # BHU survey vs every source; writes data/field/strip_widths.csv
 python3 tools/campable_sites.py                    # tent model: tape > reviewer > imagery > GIS x factor
 python3 tools/inject_sources.py                    # write the evidence table into index.html
 ```

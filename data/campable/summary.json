@@ -9,22 +9,22 @@
   5,
   7
  ],
- "total_locations": 90,
+ "total_locations": 97,
  "by_category": {
   "Manufacturing district": 49,
-  "Commercial district": 41
+  "Commercial district": 48
  },
  "by_zoning_district": {
-  "C-W": 41,
+  "C-W": 48,
   "M": 33,
   "MULI": 16,
   "C-U": 0
  },
  "by_street": {
+  "GILMAN ST": 20,
   "EASTSHORE HWY": 20,
   "SAN PABLO AVE": 20,
   "UNIVERSITY AVE OVERPASS": 14,
-  "GILMAN ST": 13,
   "ASHBY AVE": 11,
   "I80 EAST (OFF RAMP) UNIV": 10,
   "SEVENTH ST": 2,
@@ -35,14 +35,14 @@
   "FIFTH ST": 0
  },
  "block_faces": 2038,
- "faces_with_locations": 8,
+ "faces_with_locations": 9,
  "faces_using_default_pavement_width": 0,
  "faces_skipped": {
   "no property line within 40 ft": 551,
-  "strip too shallow for footprint": 1963,
-  "no full footprint clears the exclusions": 32,
+  "strip too shallow for footprint": 1962,
+  "no full footprint clears the exclusions": 33,
   "not a campable zoning category": 31,
-  "reviewed: no sidewalk": 4
+  "reviewed: no sidewalk": 3
  },
  "sidewalk_area_ha": 122.49,
  "usable_area_ha": 89.5,

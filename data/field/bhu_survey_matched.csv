@@ -1,0 +1,60 @@
+street,block,lat,lon,face,face_street,side,dist_m,side_ambiguous,zone_cat,bhu_total_ft,bhu_clear_path_ft,gis_raw_ft,gis_cal_ft,t2n_poly_ft,t2n_clear_med_ft,t2n_governing_ft,model_width_ft,model_source
+Parker,"Shattuck, Milvia",37.86205,-122.26875,2257L,PARKER ST,L,856.2,True,res,9.833333333333334,6.0,13.028764805414552,7.699999999999999,,,,7.7,gis-calibrated
+Parker,"Shattuck, Milvia",37.86205,-122.26875,2257R,PARKER ST,R,856.2,True,res,9.833333333333334,6.0,12.013536379018612,7.1,,,,7.1,gis-calibrated
+Oregon,"Milvia, Shattuck",37.85745,-122.2688,2058R,DERBY ST,R,823.4,False,res,6.0,4.0,10.998307952622675,6.5,,,,6.5,gis-calibrated
+Derby Street,Shattuck and Milvia,37.860252,-122.268356,2058L,DERBY ST,L,858.0,True,res,10.166666666666666,6.0,12.69035532994924,7.5,,,,7.5,gis-calibrated
+Derby Street,Shattuck and Milvia,37.860252,-122.268356,2058R,DERBY ST,R,858.1,True,res,10.166666666666666,6.0,10.998307952622675,6.5,,,,6.5,gis-calibrated
+Oregon,"Milvia, Shattuck",37.85727,-122.26876,2058R,DERBY ST,R,831.1,False,res,10.0,6.0,10.998307952622675,6.5,,,,6.5,gis-calibrated
+Parker,"Shattuck, Milvia",37.86189,-122.26873,2257R,PARKER ST,R,855.0,True,res,9.833333333333334,6.0,12.013536379018612,7.1,,,,7.1,gis-calibrated
+Parker,"Shattuck, Milvia",37.86189,-122.26873,2257L,PARKER ST,L,855.2,True,res,9.833333333333334,6.0,13.028764805414552,7.699999999999999,,,,7.7,gis-calibrated
+Derby Street,Shattuck and Milvia,37.860163,-122.268039,2058R,DERBY ST,R,884.0,True,res,14.0,6.0,10.998307952622675,6.5,,,,6.5,gis-calibrated
+Derby Street,Shattuck and Milvia,37.860163,-122.268039,2058L,DERBY ST,L,884.1,True,res,14.0,6.0,12.69035532994924,7.5,,,,7.5,gis-calibrated
+Carleton,Shattuck milvia,37.8612443,-122.2674023,2925L,CARLETON ST,L,959.0,True,res,8.416666666666666,6.0,12.351945854483926,7.3,,,,7.3,gis-calibrated
+Carleton,Shattuck milvia,37.8612443,-122.2674023,2925R,CARLETON ST,R,959.0,True,res,8.416666666666666,6.0,12.013536379018612,7.1,,,,7.1,gis-calibrated
+Carleton,Shattuck milvia,37.8610164,-122.2681023,2925R,CARLETON ST,R,894.2,True,res,9.416666666666666,6.0,12.013536379018612,7.1,,,,7.1,gis-calibrated
+Carleton,Shattuck milvia,37.8610164,-122.2681023,2925L,CARLETON ST,L,894.4,True,res,9.416666666666666,6.0,12.351945854483926,7.3,,,,7.3,gis-calibrated
+Dwight Way,Eighth and Seventh,37.860261,-122.29346,2947R,DWIGHT WAY,R,0.4,False,man,11.916666666666666,6.0,14.382402707275805,8.5,,,,8.5,gis-calibrated
+Fifth Street,Dwight and Channing Way,37.860363,-122.296517,6676R,FIFTH ST,R,2.0,False,mixres,10.083333333333334,6.083333333333333,13.536379018612521,8.0,,,,8.0,gis-calibrated
+Fourth Street,Bancroft and Channing Way,37.862447,-122.298174,6657L,FOURTH ST,L,2.3,False,man,9.916666666666666,6.0,5.752961082910321,3.4,,,,3.4,gis-calibrated
+Fourth Street,Bancroft and Channing Way,37.862551,-122.298337,6657R,FOURTH ST,R,2.4,False,man,12.0,6.0,13.536379018612521,8.0,,,,8.0,gis-calibrated
+Bancroft,Fourth and Bolivar,37.862727,-122.29982,3095L,BANCROFT WAY,L,3.2,False,man,9.916666666666666,5.916666666666667,0.5076142131979695,0.3,,,,0.3,gis-calibrated
+Grayson Street,Seventh Street and Train tracks (aquatic park),37.85475,-122.295027,5116R,GRAYSON ST,R,1.3,False,man,13.583333333333334,6.0,17.93570219966159,10.6,10.5,10.8,,10.6,gis-calibrated
+Anthony Street,Seventh and Fifth Streets,37.85204,-122.29226,4322R,ANTHONY ST,R,2.1,False,man,4.916666666666667,4.916666666666667,11.6751269035533,6.9,13.1,1.6,,6.9,gis-calibrated
+Anthony Street,Seventh Street,37.85188,-122.293039,4322R,ANTHONY ST,R,1.9,False,man,4.916666666666667,4.916666666666667,11.6751269035533,6.9,13.1,1.6,,6.9,gis-calibrated
+Heinz Avenue,Seventh and training tracks (aquatic park),37.857104,-122.289593,6620R,TENTH ST,R,0.9,False,mixres,10.0,5.75,13.028764805414552,7.699999999999999,10.2,1.6,,7.7,gis-calibrated
+8th,dwight + parker,37.859964,-122.293879,6760L,SEVENTH ST,L,3.0,False,man,9.0,4.0,11.336717428087987,6.699999999999999,,,,6.7,gis-calibrated
+5th,dwight + channing,37.863031,-122.2985581,3104L,BANCROFT WAY,L,3.8,False,man,9.0,6.0,19.120135363790187,11.299999999999999,,,,11.3,gis-calibrated
+4th,bancroft + bolivar,37.863049,-122.298773,3104L,BANCROFT WAY,L,3.2,False,man,11.0,6.0,19.120135363790187,11.299999999999999,,,,11.3,gis-calibrated
+4th,bancroft allston,37.863249,-122.298424,6654L,FOURTH ST,L,1.7,False,man,9.583333333333334,6.0,5.414551607445009,3.2,,,,3.2,gis-calibrated
+Heinz Avenue,Seventh Street and Train tracks (aquatic park),37.853165,-122.293039,4131R,HEINZ AVE,R,3.7,False,man,5.0,5.0,1.8612521150592218,1.1,8.6,6.2,,1.1,gis-calibrated
+Potter Street,Seventh and ninth street,37.851556,-122.290787,3406R,POTTER ST,R,1.1,False,com,21.75,6.0,26.057529610829103,15.399999999999999,7.9,6.6,,15.4,gis-calibrated
+Ninth,Ninth Gilman,37.87986,-122.29806,6805R,NINTH ST,R,3.3,False,man,6.0,6.0,,,8.7,5.6,5.6,5.6,imagery
+Ninth Strewt,Ninth and Camelia,37.87835,-122.29768,1302L,CAMELIA ST,L,5.3,False,man,18.0,16.0,,,9.1,8.5,8.5,7.5,imagery
+Eighth Street,Jackson and Harrison,37.881985,-122.299969,6792R,EIGHTH ST,R,2.2,False,man,10.083333333333334,6.0,13.536379018612521,8.0,9.7,6.2,,8.0,gis-calibrated
+Eighth Street,Harrison and Gilman,37.880893,-122.299634,6783R,EIGHTH ST,R,3.1,False,man,9.5,6.0,12.521150592216584,7.4,9.0,1.3,,7.4,gis-calibrated
+Eighth Street,Gilman and Camelia,37.87898,-122.299022,6781R,EIGHTH ST,R,2.5,False,man,10.5,5.916666666666667,15.397631133671743,9.1,9.6,6.6,,9.1,gis-calibrated
+Eighth Street,Gilman and Camelia,37.879049,-122.298903,6781L,EIGHTH ST,L,0.5,False,man,11.916666666666666,4.916666666666667,,,9.9,7.9,7.9,7.7,imagery
+Eighth Street,Camelia and Page,37.877388,-122.298492,6779R,EIGHTH ST,R,0.1,False,res,10.0,6.0,13.705583756345177,8.1,8.7,1.6,1.6,8.1,gis-calibrated
+Eighth Street,Camelia and Page,37.877635,-122.298431,6779L,EIGHTH ST,L,1.6,False,res,10.25,5.083333333333333,,,8.4,5.6,5.6,5.6,imagery
+Eighth Street,Page and Jones,37.876252,-122.298136,6780R,EIGHTH ST,R,2.1,False,res,10.083333333333334,6.0,21.99661590524535,13.0,7.8,3.9,,13.0,gis-calibrated
+Eighth Street,Page and Jones,37.876297,-122.298017,6780L,EIGHTH ST,L,0.5,False,res,10.166666666666666,6.0,17.089678510998308,10.1,7.2,4.9,,10.1,gis-calibrated
+Eighth Street,Jones and Cedar,37.875298,-122.297818,6778R,EIGHTH ST,R,2.7,False,res,10.0,6.0,16.07445008460237,9.5,7.9,1.8,,9.5,gis-calibrated
+Eighth Street,Jones and Cedar,37.87537,-122.297714,6778L,EIGHTH ST,L,1.6,False,res,10.166666666666666,6.166666666666667,,,9.9,5.9,5.9,5.9,imagery
+Cedar Street,Fourth and Fifth,37.873733,-122.301314,584R,CEDAR ST,R,1.9,False,mixres,9.916666666666666,6.0,14.043993231810493,8.3,,,,8.3,gis-calibrated
+San Pablo,University & Hearst,37.86991666666667,-122.29258333333333,5669R,SAN PABLO AVE,R,4.0,False,com,13.0,6.0,12.859560067681896,7.6,,,,7.6,gis-calibrated
+San Pablo,Hearst & Delaware,37.870916666666666,-122.29255555555555,5665R,SAN PABLO AVE,R,2.0,False,com,13.0,6.0,9.983079526226735,5.9,,,,5.9,gis-calibrated
+San Pablo,Hearst & University,37.87002777777778,-122.29230555555556,5668R,SAN PABLO AVE,R,0.7,False,com,13.0,6.0,6.598984771573604,3.8999999999999995,,,,3.9,gis-calibrated
+Bancroft Way,Ellsworth and Oxford,37.868107,-122.2647,5126R,ALLSTON WAY,R,1297.7,True,res,7.833333333333333,7.833333333333333,12.859560067681896,7.6,,,,7.6,gis-calibrated
+Bancroft Way,Ellsworth and Oxford,37.868107,-122.2647,5126L,ALLSTON WAY,L,1300.7,True,res,7.833333333333333,7.833333333333333,11.6751269035533,6.9,,,,6.9,gis-calibrated
+San Pablo,Hearst & Delaware,37.87108333333333,-122.29294444444444,5666R,SAN PABLO AVE,R,3.0,False,com,13.0,6.0,13.536379018612521,8.0,,,,8.0,gis-calibrated
+San Pablo,Delaware & Virginia,37.872194444444446,-122.29330555555555,5663R,SAN PABLO AVE,R,3.7,False,com,13.0,6.0,15.905245346869714,9.4,,,,9.4,gis-calibrated
+Jones,4th 5th,37.8749362,-122.3019917,599L,JONES ST,L,2.7,False,man,12.0,6.0,10.152284263959391,6.0,9.4,,,6.0,gis-calibrated
+Jones,Fourth and Fifth,37.874886,-122.30175,599R,JONES ST,R,3.0,False,mixres,11.75,6.0,5.0761421319796955,3.0,6.5,,,3.0,gis-calibrated
+4th,Jones Page,37.8750056,-122.3021915,6650L,FOURTH ST,L,0.3,False,man,12.0,6.0,7.614213197969543,4.5,9.4,,,4.5,gis-calibrated
+Eastshore,Cedar virginia,37.8727893,-122.305149,62R,EASTSHORE HWY,R,0.9,False,man,9.0,6.0,9.137055837563453,5.4,,,,5.4,gis-calibrated
+Virginia,Eastshore 4th,37.871348,-122.304293,946L,VIRGINIA ST,L,4.4,False,man,7.583333333333333,6.0,15.228426395939087,9.0,,,,9.0,gis-calibrated
+Eastshore Highway,Cedar and Jones,37.873214,-122.305284,1120R,EASTSHORE HWY,R,2.2,False,man,9.583333333333334,6.0,8.967851099830796,5.3,,,,5.3,gis-calibrated
+Addison,4th 5th,37.8662702,-122.2991237,334R,ADDISON ST,R,0.8,False,man,12.0,6.0,11.16751269035533,6.6,,,,6.6,gis-calibrated
+Allston,4th and dead end,37.864698,-122.2993252,2155R,ALLSTON WAY,R,0.3,False,man,13.0,6.0,5.0761421319796955,3.0,,,,3.0,gis-calibrated
+Bancroft,4th 5th,37.8632862,-122.2976445,5189L,BANCROFT WAY,L,2.2,False,mixres,14.0,6.0,14.382402707275805,8.5,,,,8.5,gis-calibrated
+5th,Bancroft allston,37.8634098,-122.2975097,6675R,FIFTH ST,R,3.5,False,mixres,15.0,6.0,14.551607445008461,8.6,,,,8.6,gis-calibrated

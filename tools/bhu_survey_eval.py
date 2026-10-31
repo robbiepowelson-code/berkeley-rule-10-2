@@ -1,0 +1,119 @@
+#!/usr/bin/env python3
+"""Score every width source against the Berkeley Homeless Union tape survey.
+
+Input: data/field/bhu_sidewalk_measurements_2026-09.tsv, the BHU volunteer
+survey (one row per measured block face: street, cross streets, a Google
+Maps pin at mid-block, clear path of travel, total sidewalk width, space
+remaining). Each row is matched to the nearest block face in
+data/campable/faces.geojson (the pin is on the street, so the nearest face
+is taken; when the pin is within 3 m of equidistant between the two sides
+the row is flagged side-ambiguous and both faces are kept).
+
+Compared, per matched face: raw GIS strip width, GIS x calibration factor,
+tile2net polygon width, imagery clear-walk median (where an imagery run
+covers the face). Reports mean error, mean absolute error, RMSE and the
+share within 2 ft for each source, overall and for West Berkeley only.
+
+Usage: python3 tools/bhu_survey_eval.py
+"""
+import re, json, csv, pathlib
+import numpy as np, pandas as pd, geopandas as gpd
+from shapely.geometry import Point
+
+ROOT = pathlib.Path(__file__).resolve().parents[1]
+
+
+def parse_ft(s):
+    s = str(s).strip().replace('’', "'").replace('"', '')
+    if not s: return np.nan
+    m = re.match(r"^\s*(\d+(?:\.\d+)?)\s*(?:feet|ft|')?\s*(?:(\d+)\s*(?:inches|inch|in|\")?)?\s*$", s)
+    if m:
+        ft = float(m.group(1)); inch = float(m.group(2)) if m.group(2) else 0
+        return ft + inch / 12
+    return np.nan
+
+
+def parse_latlon(s):
+    s = str(s).replace('°', ' ').replace('′', "'").replace('″', '"')
+    dms = re.findall(r"(\d+)\s*[° ]\s*(\d+)'\s*([\d.]+)\"?\s*([NSEW])", s)
+    if len(dms) == 2:
+        out = []
+        for d, m, sec, h in dms:
+            v = float(d) + float(m) / 60 + float(sec) / 3600
+            out.append(-v if h in 'SW' else v)
+        return out[0], out[1]
+    nums = re.findall(r"-?\d+\.\d+", s)
+    if len(nums) >= 2:
+        lat, lon = float(nums[0]), float(nums[1])
+        if lon > 0: lon = -lon
+        return lat, lon
+    return None, None
+
+
+def main():
+    rows = list(csv.DictReader(open(ROOT / 'data/field/bhu_sidewalk_measurements_2026-09.tsv', encoding='utf-8'), delimiter='\t'))
+    cols = list(rows[0].keys())
+    faces = gpd.read_file(ROOT / 'data/campable/faces.geojson').to_crs(26910)
+    cl = gpd.read_file(ROOT / 'data/gis/centerlines.geojson').to_crs(26910)
+    cal = json.load(open(ROOT / 'data/field/gis_calibration.json'))['factor']
+    # GIS baseline widths before any tape: faces.geojson now carries calibrated/measured widths, so recover raw GIS
+    raw = {}
+    for _, f in faces.iterrows():
+        w, src = f['width_ft'], f['width_source']
+        raw[f['id']] = w / cal if src == 'gis-calibrated' else (w if src in ('gis', 'default', 'osm-building') else np.nan)
+    t2n = {}
+    for a in ('nw', 'ninth'):
+        p = ROOT / 'data/tile2net' / a / 'clear_width_faces.csv'
+        if p.exists():
+            for _, r in pd.read_csv(p).iterrows(): t2n[r.face] = r
+        p = ROOT / 'data/tile2net' / a / 'face_compare.csv'
+        if p.exists():
+            for _, r in pd.read_csv(p).iterrows(): t2n.setdefault(r.face, pd.Series(dtype=object)); t2n[r.face] = t2n[r.face].copy(); t2n[r.face]['poly_ft'] = r.tile2net_width_ft
+    out = []
+    for r in rows:
+        lat, lon = parse_latlon(r[cols[2]])
+        if lat is None: continue
+        pt = gpd.GeoSeries([Point(lon, lat)], crs=4326).to_crs(26910)[0]
+        faces['d'] = faces.distance(pt)
+        near = faces.nsmallest(2, 'd')
+        f0 = near.iloc[0]; f1 = near.iloc[1]
+        ambiguous = f1['id'][:-1] == f0['id'][:-1] and abs(f1.d - f0.d) < 3
+        total = parse_ft(r[cols[4]]); clear = parse_ft(r[cols[3]])
+        for f in ([f0, f1] if ambiguous else [f0]):
+            fid = f['id']; tr = t2n.get(fid)
+            out.append(dict(street=r[cols[0]], block=r[cols[1]], lat=lat, lon=lon, face=fid, face_street=f['street'], side=f['side'],
+                            dist_m=round(f.d, 1), side_ambiguous=ambiguous, zone_cat=f['cat'],
+                            bhu_total_ft=total, bhu_clear_path_ft=clear,
+                            gis_raw_ft=raw.get(fid), gis_cal_ft=raw.get(fid) * cal if raw.get(fid) == raw.get(fid) else np.nan,
+                            t2n_poly_ft=(tr.get('poly_ft') if tr is not None else np.nan),
+                            t2n_clear_med_ft=(tr.get('clear_med_ft') if tr is not None else np.nan),
+                            t2n_governing_ft=(tr.get('governing_ft') if tr is not None else np.nan),
+                            model_width_ft=f['width_ft'], model_source=f['width_source']))
+    df = pd.DataFrame(out)
+    df.to_csv(ROOT / 'data/field/bhu_survey_matched.csv', index=False)
+    # strip widths the model can use: BHU 'total width' is curb to property line (it tracks the GIS strip
+    # and the tile2net polygon, not the clear walk). One row per matched face within 50 m of the pin.
+    sw = df[(df.dist_m < 50) & df.bhu_total_ft.notna()].copy()
+    sw = sw.groupby('face').agg(strip_ft=('bhu_total_ft', 'median'), street=('street', 'first'), block=('block', 'first'),
+                                n=('bhu_total_ft', 'size'), side_ambiguous=('side_ambiguous', 'any')).reset_index()
+    sw['source'] = 'BHU volunteer tape survey, Sept 2026 (total width, curb to property line)'
+    sw.round(2).to_csv(ROOT / 'data/field/strip_widths.csv', index=False)
+    print(len(sw), 'faces with a BHU strip width -> data/field/strip_widths.csv')
+    west = df[df.lon < -122.285]
+
+    def stats(d, col):
+        e = (d[col] - d.bhu_total_ft).dropna()
+        if not len(e): return dict(n=0)
+        return dict(n=int(len(e)), mean_err=round(e.mean(), 2), mae=round(e.abs().mean(), 2), rmse=round(float(np.sqrt((e ** 2).mean())), 2),
+                    within_2ft=round(float((e.abs() <= 2).mean()), 2), within_1ft=round(float((e.abs() <= 1).mean()), 2))
+    report = {}
+    for name, d in (('all', df), ('west_berkeley', west), ('west_com_man', west[west.zone_cat.isin(['com', 'man'])])):
+        report[name] = {c: stats(d, c) for c in ('gis_raw_ft', 'gis_cal_ft', 't2n_poly_ft', 't2n_clear_med_ft', 'model_width_ft')}
+        report[name]['bhu_total_median'] = float(d.bhu_total_ft.median()); report[name]['rows'] = int(len(d))
+    json.dump(report, open(ROOT / 'data/field/bhu_survey_metrics.json', 'w'), indent=1)
+    print(json.dumps(report, indent=1))
+    print(df[['street', 'block', 'face', 'side', 'dist_m', 'side_ambiguous', 'bhu_total_ft', 'gis_raw_ft', 'gis_cal_ft', 't2n_poly_ft', 't2n_clear_med_ft', 'model_width_ft', 'model_source']].round(1).to_string(index=False))
+
+
+if __name__ == '__main__':
+    main()

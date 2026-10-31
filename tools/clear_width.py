@@ -9,8 +9,11 @@ flare at the corner). One number per block face is not good enough.
 
 Method, per block face (the curb-side line in data/campable/faces.geojson):
   1. Every STEP m along the face, take a cross-section perpendicular to it,
-     from the curb line outward to OUT_M, sampled every 0.1 m from the aerial
-     tiles (zoom 20, ~0.12 m/px).
+     from IN_M on the road side of the GIS curb line to OUT_M on the property
+     side (the GIS curb line is often several feet off, so the section must
+     span the whole sidewalk regardless), sampled every 0.1 m from the aerial
+     tiles (zoom 20, ~0.12 m/px). The sidewalk is wherever the section lies
+     inside a tile2net sidewalk polygon.
   2. Classify each sample as paved or not. Paved = low colour saturation and
      not dark (concrete, asphalt); vegetation, bark, dirt and mulch are
      saturated (green/brown) and are not paved. Tree canopy over the walk is
@@ -48,7 +51,8 @@ TO4326 = Transformer.from_crs(26910, 4326, always_xy=True)
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 FT = 3.28084
 STEP = 1.0        # m between cross-sections along the face
-OUT_M = 9.0       # m outward from the curb line to sample
+OUT_M = 9.0       # m outward (toward the property) from the GIS curb line to sample
+IN_M = 6.0        # m inward (toward the road) as well: the GIS curb line can sit inside the sidewalk, so the section spans both ways
 SAMPLE = 0.1      # m between samples across the section
 DRIVE_M = 4.0     # sections within this of a driveway/crossing are excluded
 MIN_VALID = 0.5   # section dropped if fewer than this share of samples are classifiable (canopy/shadow)
@@ -112,11 +116,11 @@ def run(area):
             dx, dy = p2.x - p1.x, p2.y - p1.y; nrm = math.hypot(dx, dy) or 1
             nx, ny = -dy / nrm, dx / nrm
             if tw is not None and Point(p.x + nx, p.y + ny).distance(tw) < Point(p.x - nx, p.y - ny).distance(tw): nx, ny = -nx, -ny
-            sec = LineString([(p.x, p.y), (p.x + nx * OUT_M, p.y + ny * OUT_M)])
+            sec = LineString([(p.x - nx * IN_M, p.y - ny * IN_M), (p.x + nx * OUT_M, p.y + ny * OUT_M)])
             drive = bool(extree is not None and any(excl[i].distance(p) < DRIVE_M for i in extree.query(p.buffer(DRIVE_M))))
             cand = [sw.geometry.values[i] for i in swtree.query(sec)]
             insw = [g for g in cand if g.intersects(sec)]
-            ks = np.arange(int(OUT_M / SAMPLE)) * SAMPLE
+            ks = np.arange(-int(IN_M / SAMPLE), int(OUT_M / SAMPLE)) * SAMPLE
             qx, qy = p.x + nx * ks, p.y + ny * ks
             inside_arr = np.zeros(len(ks), bool)
             for g in insw: inside_arr |= contains_xy(g, qx, qy)

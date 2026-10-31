@@ -1,287 +1,287 @@
 face,street,side,face_len_ft,n_sections,n_measured,driveway_share,canopy_share,clear_min_ft,clear_p10_ft,clear_med_ft,clear_max_ft,tape_ft,diff_ft,governing_ft,governing_source
-10L,CEDAR ST,L,348,106,81,0.19,0.05,0.0,1.0,8.9,22.6,,,8.9,imagery median between obstructions (no street trees)
+10L,CEDAR ST,L,348,106,82,0.19,0.04,0.0,0.7,8.9,22.6,,,8.9,imagery median between obstructions (no street trees)
 95L,UNNAMED ALLEY,L,447,136,4,0.0,0.97,2.6,2.7,4.9,8.2,,,,tape needed: street trees hide the pinch point
-95R,UNNAMED ALLEY,R,447,136,6,0.0,0.96,1.0,1.1,29.0,29.5,,,,tape needed: street trees hide the pinch point
+95R,UNNAMED ALLEY,R,447,136,6,0.0,0.96,1.0,1.1,33.3,42.7,,,,tape needed: street trees hide the pinch point
 159L,HOPKINS ST,L,265,81,57,0.3,0.0,0.0,2.6,6.2,10.5,,,6.2,imagery median between obstructions (no street trees)
-159R,HOPKINS ST,R,265,81,63,0.2,0.02,0.0,0.7,6.9,9.8,,,6.9,imagery median between obstructions (no street trees)
+159R,HOPKINS ST,R,265,81,65,0.2,0.0,0.0,0.7,7.2,9.8,,,7.2,imagery median between obstructions (no street trees)
 160L,JONES ST,L,332,101,75,0.26,0.0,0.0,1.6,5.6,10.8,,,5.6,imagery median between obstructions (no street trees)
-160R,JONES ST,R,332,101,70,0.26,0.05,0.0,0.0,6.1,9.2,,,6.1,imagery median between obstructions (no street trees)
-411L,CORNELL AVE,L,751,229,170,0.08,0.18,0.0,0.3,5.6,23.6,,,,tape needed: street trees hide the pinch point
-411R,CORNELL AVE,R,756,230,166,0.13,0.15,0.0,0.0,1.3,12.1,,,,tape needed: street trees hide the pinch point
-412L,TALBOT AVE,L,689,210,188,0.07,0.04,0.0,0.3,5.7,8.5,,,5.7,imagery median between obstructions (no street trees)
-412R,TALBOT AVE,R,689,210,169,0.04,0.16,0.0,0.0,2.0,9.2,,,,tape needed: street trees hide the pinch point
+160R,JONES ST,R,332,101,75,0.26,0.0,0.0,0.0,5.2,9.2,,,5.2,imagery median between obstructions (no street trees)
+411L,CORNELL AVE,L,751,229,172,0.08,0.17,0.0,0.3,5.4,29.5,,,,tape needed: street trees hide the pinch point
+411R,CORNELL AVE,R,756,230,168,0.13,0.14,0.0,0.0,2.0,15.7,,,,tape needed: street trees hide the pinch point
+412L,TALBOT AVE,L,689,210,194,0.07,0.01,0.0,0.0,5.6,12.1,,,5.6,imagery median between obstructions (no street trees)
+412R,TALBOT AVE,R,689,210,189,0.04,0.06,0.0,0.3,3.6,9.2,,,3.6,imagery median between obstructions (no street trees)
 413L,PAGE ST,L,350,107,4,0.07,0.89,1.6,3.1,8.0,11.5,,,,tape needed: street trees hide the pinch point
 413R,PAGE ST,R,350,107,27,0.03,0.72,0.0,0.5,6.9,11.8,,,,tape needed: street trees hide the pinch point
-416L,GILMAN ST,L,329,100,45,0.11,0.44,0.0,1.8,10.2,17.1,,,,tape needed: street trees hide the pinch point
-416R,GILMAN ST,R,329,100,87,0.08,0.05,0.0,1.0,5.6,9.8,,,5.6,imagery median between obstructions (no street trees)
+416L,GILMAN ST,L,329,100,59,0.11,0.3,0.0,0.0,8.5,21.3,,,,tape needed: street trees hide the pinch point
+416R,GILMAN ST,R,329,100,92,0.08,0.0,1.0,1.6,8.4,21.0,,,8.4,imagery median between obstructions (no street trees)
 427L,CAMELIA ST,L,181,55,38,0.31,0.0,5.6,7.5,8.5,9.8,,,8.5,imagery median between obstructions (no street trees)
-427R,CAMELIA ST,R,181,55,29,0.29,0.18,0.0,1.3,5.9,11.2,,,,tape needed: street trees hide the pinch point
+427R,CAMELIA ST,R,181,55,29,0.29,0.18,0.0,1.3,6.9,14.1,,,,tape needed: street trees hide the pinch point
 432L,GILMAN ST,L,203,62,62,0.0,0.0,4.3,5.6,11.2,23.6,,,11.2,imagery median between obstructions (no street trees)
-432R,GILMAN ST,R,203,62,42,0.0,0.32,0.0,0.0,1.3,4.3,,,,tape needed: street trees hide the pinch point
+432R,GILMAN ST,R,203,62,62,0.0,0.0,1.0,2.6,5.9,10.5,,,5.9,imagery median between obstructions (no street trees)
 433L,GILMAN ST,L,135,41,32,0.22,0.0,17.7,18.1,20.3,24.0,,,20.3,imagery median between obstructions (no street trees)
-433R,GILMAN ST,R,135,41,32,0.22,0.0,0.7,1.0,2.1,7.2,,,2.1,imagery median between obstructions (no street trees)
-452R,EASTSHORE HWY,R,1109,338,0,0.06,0.94,,,,,,,,tape needed: street trees hide the pinch point
-521L,GILMAN ST,L,162,49,29,0.41,0.0,13.8,14.4,15.4,17.4,,,15.4,imagery median between obstructions (no street trees)
+433R,GILMAN ST,R,135,41,32,0.22,0.0,0.7,1.3,2.8,7.2,,,2.8,imagery median between obstructions (no street trees)
+452R,EASTSHORE HWY,R,1109,338,208,0.06,0.33,0.0,1.6,9.2,17.4,,,,tape needed: street trees hide the pinch point
+521L,GILMAN ST,L,162,49,29,0.41,0.0,13.8,15.6,24.0,27.6,,,24.0,imagery median between obstructions (no street trees)
 521R,GILMAN ST,R,162,49,34,0.24,0.06,0.3,0.9,2.5,6.6,,,2.5,imagery median between obstructions (no street trees)
-561L,HARRISON ST,L,323,98,65,0.19,0.14,0.0,0.0,3.0,9.8,,,,tape needed: street trees hide the pinch point
+561L,HARRISON ST,L,323,98,75,0.19,0.04,0.0,0.0,4.6,9.8,,,4.6,imagery median between obstructions (no street trees)
 561R,HARRISON ST,R,323,98,5,0.26,0.69,0.0,0.1,0.7,1.3,,,,tape needed: street trees hide the pinch point
-624L,PAGE ST,L,270,82,51,0.24,0.13,0.0,0.3,2.6,10.8,,,,tape needed: street trees hide the pinch point
-624R,PAGE ST,R,270,82,52,0.23,0.13,0.7,2.0,5.6,8.9,,,,tape needed: street trees hide the pinch point
-625L,KAINS AVE,L,440,134,104,0.11,0.11,0.0,0.7,5.9,26.2,,,,tape needed: street trees hide the pinch point
-625R,KAINS AVE,R,440,134,19,0.09,0.77,0.0,0.0,0.3,29.5,,,,tape needed: street trees hide the pinch point
+624L,PAGE ST,L,270,82,52,0.24,0.12,0.0,0.3,2.6,10.8,,,,tape needed: street trees hide the pinch point
+624R,PAGE ST,R,270,82,56,0.23,0.09,0.7,2.0,7.9,9.5,,,7.9,imagery median between obstructions (no street trees)
+625L,KAINS AVE,L,440,134,104,0.11,0.11,0.0,0.7,5.9,35.8,,,,tape needed: street trees hide the pinch point
+625R,KAINS AVE,R,440,134,108,0.09,0.1,0.0,0.0,1.5,49.2,,,,tape needed: street trees hide the pinch point
 647L,PAGE ST,L,322,98,37,0.22,0.4,0.0,2.0,4.6,13.5,,,,tape needed: street trees hide the pinch point
-647R,PAGE ST,R,322,98,19,0.12,0.68,3.9,4.8,7.2,9.2,,,,tape needed: street trees hide the pinch point
+647R,PAGE ST,R,322,98,19,0.12,0.68,4.9,5.8,8.5,10.5,,,,tape needed: street trees hide the pinch point
 651L,PAGE ST,L,36,11,0,1.0,0.0,,,,,,,,tape needed: street trees hide the pinch point
 651R,PAGE ST,R,36,11,0,1.0,0.0,,,,,,,,tape needed: street trees hide the pinch point
 652L,PAGE ST,L,281,86,71,0.14,0.03,0.3,2.3,9.8,13.8,,,9.8,imagery median between obstructions (no street trees)
-652R,PAGE ST,R,281,86,68,0.16,0.05,3.9,5.9,8.7,11.5,,,8.7,imagery median between obstructions (no street trees)
-656L,JONES ST,L,269,82,24,0.37,0.34,0.0,0.3,1.0,3.3,,,,tape needed: street trees hide the pinch point
-656R,JONES ST,R,269,82,54,0.34,0.0,0.0,1.6,10.2,10.8,,,10.2,imagery median between obstructions (no street trees)
+652R,PAGE ST,R,281,86,68,0.16,0.05,3.9,5.9,11.2,15.4,,,11.2,imagery median between obstructions (no street trees)
+656L,JONES ST,L,269,82,27,0.37,0.3,0.0,0.2,1.0,3.6,,,,tape needed: street trees hide the pinch point
+656R,JONES ST,R,269,82,54,0.34,0.0,0.3,1.6,12.6,16.1,,,12.6,imagery median between obstructions (no street trees)
 705L,CAMELIA ST,L,41,12,0,1.0,0.0,,,,,,,,tape needed: street trees hide the pinch point
 705R,CAMELIA ST,R,41,12,0,0.92,0.08,,,,,,,,tape needed: street trees hide the pinch point
 706L,CAMELIA ST,L,277,84,76,0.01,0.08,0.0,2.0,7.9,9.5,,,7.9,imagery median between obstructions (no street trees)
-706R,CAMELIA ST,R,277,84,71,0.01,0.14,0.0,0.3,3.6,8.5,,,,tape needed: street trees hide the pinch point
+706R,CAMELIA ST,R,277,84,74,0.01,0.11,0.0,0.3,3.3,9.5,,,,tape needed: street trees hide the pinch point
 708L,PAGE ST,L,339,103,75,0.27,0.0,0.0,1.8,5.2,11.8,,,5.2,imagery median between obstructions (no street trees)
-708R,PAGE ST,R,339,103,74,0.27,0.01,0.0,0.7,5.4,10.8,,,5.4,imagery median between obstructions (no street trees)
-717L,PAGE ST,L,253,77,40,0.31,0.17,0.0,0.0,4.9,6.6,,,,tape needed: street trees hide the pinch point
-717R,PAGE ST,R,253,77,50,0.3,0.05,0.0,0.0,4.6,9.8,,,4.6,imagery median between obstructions (no street trees)
-748L,UNNAMED ALLEY,L,441,134,8,0.0,0.94,0.3,0.8,4.1,10.2,,,,tape needed: street trees hide the pinch point
-748R,UNNAMED ALLEY,R,435,133,8,0.0,0.94,0.7,0.7,23.8,29.5,,,,tape needed: street trees hide the pinch point
+708R,PAGE ST,R,339,103,75,0.27,0.0,0.0,0.7,5.6,10.8,,,5.6,imagery median between obstructions (no street trees)
+717L,PAGE ST,L,253,77,46,0.31,0.09,0.0,0.0,4.6,6.6,,,4.6,imagery median between obstructions (no street trees)
+717R,PAGE ST,R,253,77,53,0.3,0.01,0.0,0.0,4.3,9.8,,,4.3,imagery median between obstructions (no street trees)
+748L,UNNAMED ALLEY,L,441,134,9,0.0,0.93,1.0,2.0,18.4,29.9,,,,tape needed: street trees hide the pinch point
+748R,UNNAMED ALLEY,R,435,133,8,0.0,0.94,0.7,8.9,34.6,49.2,,,,tape needed: street trees hide the pinch point
 760L,JONES ST,L,252,77,54,0.3,0.0,1.0,3.9,6.4,10.8,,,6.4,imagery median between obstructions (no street trees)
-760R,JONES ST,R,252,77,52,0.31,0.01,0.3,0.7,6.1,8.2,,,6.1,imagery median between obstructions (no street trees)
-772L,PAGE ST,L,321,98,62,0.24,0.12,0.0,1.0,4.9,12.8,,,,tape needed: street trees hide the pinch point
-772R,PAGE ST,R,321,98,75,0.2,0.03,0.0,0.3,5.6,24.6,,,5.6,imagery median between obstructions (no street trees)
-776L,GILMAN ST,L,318,97,12,0.22,0.66,0.3,0.7,2.3,3.6,,,,tape needed: street trees hide the pinch point
-776R,GILMAN ST,R,318,97,78,0.16,0.03,0.0,3.2,6.9,24.0,,,6.9,imagery median between obstructions (no street trees)
-795L,CAMELIA ST,L,296,90,37,0.03,0.56,0.0,1.7,7.2,11.5,,,,tape needed: street trees hide the pinch point
+760R,JONES ST,R,252,77,53,0.31,0.0,0.7,1.0,6.2,11.2,,,6.2,imagery median between obstructions (no street trees)
+772L,PAGE ST,L,321,98,65,0.24,0.09,0.0,0.7,4.6,12.8,,,4.6,imagery median between obstructions (no street trees)
+772R,PAGE ST,R,321,98,78,0.2,0.0,0.0,0.3,5.2,24.6,,,5.2,imagery median between obstructions (no street trees)
+776L,GILMAN ST,L,318,97,48,0.22,0.29,0.0,0.0,2.0,6.6,,,,tape needed: street trees hide the pinch point
+776R,GILMAN ST,R,318,97,78,0.16,0.03,0.0,4.2,7.9,24.0,,,7.9,imagery median between obstructions (no street trees)
+795L,CAMELIA ST,L,296,90,45,0.03,0.47,0.0,0.0,5.9,12.8,,,,tape needed: street trees hide the pinch point
 795R,CAMELIA ST,R,297,91,5,0.04,0.9,0.0,0.0,0.0,0.3,,,,tape needed: street trees hide the pinch point
 797L,PAGE ST,L,330,101,80,0.15,0.06,0.0,0.9,5.2,11.2,,,5.2,imagery median between obstructions (no street trees)
-797R,PAGE ST,R,330,101,78,0.15,0.08,0.0,1.3,5.6,9.2,,,5.6,imagery median between obstructions (no street trees)
-803L,PAGE ST,L,166,51,33,0.16,0.2,0.0,0.4,2.3,8.5,,,,tape needed: street trees hide the pinch point
-803R,PAGE ST,R,166,51,41,0.0,0.2,0.0,0.3,5.2,28.9,,,,tape needed: street trees hide the pinch point
-814L,CAMELIA ST,L,301,92,72,0.13,0.09,0.0,3.0,6.7,14.8,,,6.7,imagery median between obstructions (no street trees)
-814R,CAMELIA ST,R,301,92,67,0.21,0.07,0.0,0.5,4.6,7.9,,,4.6,imagery median between obstructions (no street trees)
-817L,PAGE ST,L,251,76,61,0.08,0.12,0.0,0.0,1.6,14.1,,,,tape needed: street trees hide the pinch point
-817R,PAGE ST,R,251,76,69,0.09,0.0,0.0,1.6,5.2,17.4,,,5.2,imagery median between obstructions (no street trees)
-839L,KAINS AVE,L,446,136,128,0.0,0.06,0.0,0.2,3.9,22.0,,,3.9,imagery median between obstructions (no street trees)
-839R,KAINS AVE,R,446,136,101,0.0,0.26,0.0,0.0,0.7,11.5,,,,tape needed: street trees hide the pinch point
-861L,STANNAGE AVE,L,443,135,81,0.15,0.25,0.0,0.0,0.0,2.3,,,,tape needed: street trees hide the pinch point
-861R,STANNAGE AVE,R,443,135,105,0.17,0.05,0.0,0.3,5.6,8.9,,,5.6,imagery median between obstructions (no street trees)
-868L,CORNELL AVE,L,443,135,98,0.2,0.07,0.0,0.7,4.3,8.9,,,4.3,imagery median between obstructions (no street trees)
-868R,CORNELL AVE,R,443,135,107,0.19,0.01,0.0,0.0,4.6,5.6,,,4.6,imagery median between obstructions (no street trees)
-874L,GILMAN ST,L,350,107,70,0.34,0.01,0.7,1.0,3.0,18.7,,,3.0,imagery median between obstructions (no street trees)
-874R,GILMAN ST,R,350,107,79,0.26,0.0,0.0,0.7,5.2,29.5,,,5.2,imagery median between obstructions (no street trees)
+797R,PAGE ST,R,330,101,81,0.15,0.05,0.0,1.0,5.6,9.2,,,5.6,imagery median between obstructions (no street trees)
+803L,PAGE ST,L,166,51,37,0.16,0.12,0.0,0.3,1.6,8.5,,,,tape needed: street trees hide the pinch point
+803R,PAGE ST,R,166,51,45,0.0,0.12,0.0,0.8,6.2,28.9,,,,tape needed: street trees hide the pinch point
+814L,CAMELIA ST,L,301,92,76,0.13,0.04,0.0,2.6,6.4,14.8,,,6.4,imagery median between obstructions (no street trees)
+814R,CAMELIA ST,R,301,92,70,0.21,0.03,0.0,0.6,4.4,9.2,,,4.4,imagery median between obstructions (no street trees)
+817L,PAGE ST,L,251,76,63,0.08,0.09,0.0,0.0,1.6,14.1,,,1.6,imagery median between obstructions (no street trees)
+817R,PAGE ST,R,251,76,69,0.09,0.0,0.0,1.6,6.9,19.0,,,6.9,imagery median between obstructions (no street trees)
+839L,KAINS AVE,L,446,136,127,0.0,0.07,0.0,0.2,3.9,22.0,,,3.9,imagery median between obstructions (no street trees)
+839R,KAINS AVE,R,446,136,109,0.0,0.2,0.0,0.0,3.6,14.4,,,,tape needed: street trees hide the pinch point
+861L,STANNAGE AVE,L,443,135,97,0.15,0.13,0.0,0.0,0.3,8.9,,,,tape needed: street trees hide the pinch point
+861R,STANNAGE AVE,R,443,135,104,0.17,0.06,0.0,0.3,5.6,8.9,,,5.6,imagery median between obstructions (no street trees)
+868L,CORNELL AVE,L,443,135,101,0.2,0.05,0.0,0.3,4.3,8.9,,,4.3,imagery median between obstructions (no street trees)
+868R,CORNELL AVE,R,443,135,109,0.19,0.0,0.0,0.3,5.2,9.8,,,5.2,imagery median between obstructions (no street trees)
+874L,GILMAN ST,L,350,107,70,0.34,0.01,0.7,1.3,3.1,19.0,,,3.1,imagery median between obstructions (no street trees)
+874R,GILMAN ST,R,350,107,79,0.26,0.0,0.0,1.2,6.6,32.5,,,6.6,imagery median between obstructions (no street trees)
 945L,JONES ST,L,168,51,38,0.25,0.0,1.6,3.6,6.6,9.8,,,6.6,imagery median between obstructions (no street trees)
-945R,JONES ST,R,168,51,31,0.39,0.0,6.6,7.9,10.2,20.7,,,10.2,imagery median between obstructions (no street trees)
+945R,JONES ST,R,168,51,31,0.39,0.0,6.6,7.9,10.5,23.0,,,10.5,imagery median between obstructions (no street trees)
 948L,JONES ST,L,178,54,40,0.26,0.0,0.7,1.0,4.6,9.5,,,4.6,imagery median between obstructions (no street trees)
-948R,JONES ST,R,178,54,39,0.28,0.0,10.8,11.2,12.8,14.1,,,12.8,imagery median between obstructions (no street trees)
-958L,GILMAN ST,L,239,73,48,0.18,0.16,0.7,1.0,3.0,9.5,,,,tape needed: street trees hide the pinch point
-958R,GILMAN ST,R,239,73,33,0.36,0.19,0.7,1.0,4.9,13.5,,,,tape needed: street trees hide the pinch point
-968L,CAMELIA ST,L,176,54,37,0.3,0.02,0.3,0.9,5.2,9.2,,,5.2,imagery median between obstructions (no street trees)
-968R,CAMELIA ST,R,176,54,32,0.3,0.11,0.0,0.0,0.5,7.5,,,,tape needed: street trees hide the pinch point
+948R,JONES ST,R,178,54,39,0.28,0.0,11.2,12.7,14.4,16.7,,,14.4,imagery median between obstructions (no street trees)
+958L,GILMAN ST,L,239,73,49,0.18,0.15,0.7,1.0,2.6,9.5,,,,tape needed: street trees hide the pinch point
+958R,GILMAN ST,R,239,73,37,0.36,0.14,0.7,1.0,4.6,13.5,,,,tape needed: street trees hide the pinch point
+968L,CAMELIA ST,L,176,54,38,0.3,0.0,0.3,0.9,5.2,9.2,,,5.2,imagery median between obstructions (no street trees)
+968R,CAMELIA ST,R,176,54,32,0.3,0.11,0.0,0.0,0.7,7.5,,,,tape needed: street trees hide the pinch point
 981L,JONES ST,L,171,52,42,0.19,0.0,0.3,2.0,8.2,13.1,,,8.2,imagery median between obstructions (no street trees)
-982L,JONES ST,L,308,94,58,0.29,0.1,0.3,1.6,4.9,8.5,,,,tape needed: street trees hide the pinch point
-982R,JONES ST,R,308,94,65,0.26,0.05,0.3,2.9,6.6,9.8,,,6.6,imagery median between obstructions (no street trees)
+982L,JONES ST,L,308,94,67,0.29,0.0,0.0,1.5,4.9,8.5,,,4.9,imagery median between obstructions (no street trees)
+982R,JONES ST,R,308,94,66,0.26,0.04,0.3,3.0,6.4,11.5,,,6.4,imagery median between obstructions (no street trees)
 983L,STANNAGE AVE,L,441,134,114,0.09,0.06,0.0,0.3,4.3,10.8,,,4.3,imagery median between obstructions (no street trees)
-983R,STANNAGE AVE,R,441,134,98,0.12,0.15,0.0,0.0,0.3,8.9,,,,tape needed: street trees hide the pinch point
-986L,JONES ST,L,171,52,32,0.13,0.25,0.0,0.7,2.6,12.8,,,,tape needed: street trees hide the pinch point
-986R,JONES ST,R,171,52,33,0.17,0.19,0.0,0.1,1.0,7.2,,,,tape needed: street trees hide the pinch point
-994L,GILMAN ST,L,247,75,50,0.08,0.25,0.0,0.0,1.6,11.8,,,,tape needed: street trees hide the pinch point
-994R,GILMAN ST,R,247,75,51,0.24,0.08,0.0,0.0,0.7,3.0,,,0.7,imagery median between obstructions (no street trees)
+983R,STANNAGE AVE,R,441,134,114,0.12,0.03,0.0,0.3,2.0,10.5,,,2.0,imagery median between obstructions (no street trees)
+986L,JONES ST,L,171,52,31,0.13,0.27,0.0,0.7,3.0,12.8,,,,tape needed: street trees hide the pinch point
+986R,JONES ST,R,171,52,36,0.17,0.13,0.0,0.0,1.0,7.2,,,,tape needed: street trees hide the pinch point
+994L,GILMAN ST,L,247,75,51,0.08,0.24,0.0,0.0,1.3,11.8,,,,tape needed: street trees hide the pinch point
+994R,GILMAN ST,R,247,75,52,0.24,0.07,0.0,0.0,0.7,6.6,,,0.7,imagery median between obstructions (no street trees)
 1001L,PAGE ST,L,302,92,73,0.13,0.08,0.0,1.0,6.2,11.2,,,6.2,imagery median between obstructions (no street trees)
-1001R,PAGE ST,R,302,92,63,0.25,0.07,0.0,1.6,5.2,9.2,,,5.2,imagery median between obstructions (no street trees)
+1001R,PAGE ST,R,302,92,69,0.25,0.0,0.0,1.6,5.2,9.2,,,5.2,imagery median between obstructions (no street trees)
 1007L,CAMELIA ST,L,160,49,45,0.0,0.08,2.0,4.3,7.5,26.9,,,7.5,imagery median between obstructions (no street trees)
 1007R,CAMELIA ST,R,160,49,44,0.0,0.1,3.9,4.0,7.2,29.5,,,,tape needed: street trees hide the pinch point
 1016L,PAGE ST,L,179,54,31,0.43,0.0,0.0,5.9,11.2,11.8,,,11.2,imagery median between obstructions (no street trees)
-1016R,PAGE ST,R,179,54,17,0.48,0.2,1.0,2.0,3.6,7.5,,,,tape needed: street trees hide the pinch point
+1016R,PAGE ST,R,179,54,17,0.48,0.2,1.0,2.0,3.6,8.5,,,,tape needed: street trees hide the pinch point
 1045L,PAGE ST,L,166,51,43,0.16,0.0,4.6,5.2,7.2,11.2,,,7.2,imagery median between obstructions (no street trees)
-1045R,PAGE ST,R,166,51,42,0.18,0.0,4.3,5.3,6.2,9.5,,,6.2,imagery median between obstructions (no street trees)
-1046L,PAGE ST,L,174,53,29,0.23,0.23,0.0,0.3,4.6,11.2,,,,tape needed: street trees hide the pinch point
-1046R,PAGE ST,R,174,53,33,0.32,0.06,0.0,0.0,1.6,7.9,,,1.6,imagery median between obstructions (no street trees)
+1045R,PAGE ST,R,166,51,42,0.18,0.0,4.3,5.3,6.2,10.5,,,6.2,imagery median between obstructions (no street trees)
+1046L,PAGE ST,L,174,53,31,0.23,0.19,0.0,0.3,4.6,11.2,,,,tape needed: street trees hide the pinch point
+1046R,PAGE ST,R,174,53,34,0.32,0.04,0.0,0.0,1.8,7.9,,,1.8,imagery median between obstructions (no street trees)
 1049L,CORNELL AVE,L,39,12,1,0.92,0.0,9.2,9.2,9.2,9.2,,,,tape needed: street trees hide the pinch point
 1049R,CORNELL AVE,R,39,12,1,0.92,0.0,3.6,3.6,3.6,3.6,,,,tape needed: street trees hide the pinch point
 1081L,KAINS AVE,L,357,109,81,0.22,0.04,2.0,4.9,7.9,9.8,,,7.9,imagery median between obstructions (no street trees)
-1081R,KAINS AVE,R,357,109,70,0.18,0.17,0.0,0.0,1.0,4.9,,,,tape needed: street trees hide the pinch point
-1083L,UNNAMED ALLEY,L,156,48,0,0.0,1.0,,,,,,,,tape needed: street trees hide the pinch point
-1083R,UNNAMED ALLEY,R,156,48,3,0.0,0.94,5.9,9.5,24.0,29.5,,,,tape needed: street trees hide the pinch point
+1081R,KAINS AVE,R,357,109,89,0.18,0.0,0.0,2.0,6.6,12.1,,,6.6,imagery median between obstructions (no street trees)
+1083L,UNNAMED ALLEY,L,156,48,4,0.0,0.92,0.0,0.2,1.0,6.6,,,,tape needed: street trees hide the pinch point
+1083R,UNNAMED ALLEY,R,156,48,4,0.0,0.92,2.6,3.6,14.9,49.2,,,,tape needed: street trees hide the pinch point
 1084L,CAMELIA ST,L,346,105,0,0.0,1.0,,,,,,,,tape needed: street trees hide the pinch point
-1084R,CAMELIA ST,R,346,105,69,0.0,0.34,1.3,5.5,7.5,9.8,12.0,-4.5,12.0,tape
-1129L,GILMAN ST,L,333,101,43,0.27,0.31,0.0,0.0,1.3,6.9,,,,tape needed: street trees hide the pinch point
-1129R,GILMAN ST,R,333,101,54,0.29,0.18,0.3,1.0,4.6,6.2,,,,tape needed: street trees hide the pinch point
+1084R,CAMELIA ST,R,346,105,81,0.0,0.23,1.3,5.6,8.2,10.8,12.0,-3.8000000000000007,12.0,tape
+1129L,GILMAN ST,L,333,101,67,0.27,0.07,0.0,0.9,4.3,16.7,,,4.3,imagery median between obstructions (no street trees)
+1129R,GILMAN ST,R,333,101,55,0.29,0.17,0.0,1.0,5.6,6.9,,,,tape needed: street trees hide the pinch point
 1132L,STANNAGE AVE,L,271,83,70,0.01,0.14,0.0,0.6,3.1,10.2,,,,tape needed: street trees hide the pinch point
-1132R,STANNAGE AVE,R,271,83,45,0.24,0.22,0.0,0.0,0.0,1.0,,,,tape needed: street trees hide the pinch point
+1132R,STANNAGE AVE,R,271,83,59,0.24,0.05,0.0,0.0,1.0,8.5,,,1.0,imagery median between obstructions (no street trees)
 1162L,CAMELIA ST,L,249,76,60,0.13,0.08,2.6,3.9,6.2,23.0,,,6.2,imagery median between obstructions (no street trees)
-1162R,CAMELIA ST,R,249,76,47,0.13,0.25,0.0,0.2,5.6,26.2,,,,tape needed: street trees hide the pinch point
-1163L,CAMELIA ST,L,251,76,52,0.3,0.01,0.0,0.3,3.4,9.5,,,3.4,imagery median between obstructions (no street trees)
-1163R,CAMELIA ST,R,251,76,36,0.29,0.24,0.0,0.0,0.3,7.5,,,,tape needed: street trees hide the pinch point
+1162R,CAMELIA ST,R,249,76,52,0.13,0.18,0.0,0.0,6.1,26.2,,,,tape needed: street trees hide the pinch point
+1163L,CAMELIA ST,L,251,76,53,0.3,0.0,0.0,0.3,3.3,9.5,,,3.3,imagery median between obstructions (no street trees)
+1163R,CAMELIA ST,R,251,76,39,0.29,0.2,0.0,0.0,0.3,10.5,,,,tape needed: street trees hide the pinch point
 1167L,PAGE ST,L,322,98,12,0.0,0.88,0.3,0.3,4.8,9.2,,,,tape needed: street trees hide the pinch point
-1167R,PAGE ST,R,322,98,26,0.08,0.65,0.0,2.1,7.2,24.0,,,,tape needed: street trees hide the pinch point
+1167R,PAGE ST,R,322,98,26,0.08,0.65,0.0,2.1,8.5,24.0,,,,tape needed: street trees hide the pinch point
 1170L,UNNAMED ALLEY,L,115,35,3,0.0,0.91,3.3,4.1,7.5,7.9,,,,tape needed: street trees hide the pinch point
-1170R,UNNAMED ALLEY,R,115,35,3,0.0,0.91,19.4,21.4,29.5,29.5,,,,tape needed: street trees hide the pinch point
-1174L,CAMELIA ST,L,331,101,56,0.19,0.26,0.0,1.0,5.9,12.1,,,,tape needed: street trees hide the pinch point
+1170R,UNNAMED ALLEY,R,115,35,3,0.0,0.91,30.2,32.0,39.0,43.6,,,,tape needed: street trees hide the pinch point
+1174L,CAMELIA ST,L,331,101,56,0.19,0.26,0.0,1.0,6.1,12.5,,,,tape needed: street trees hide the pinch point
 1174R,CAMELIA ST,R,331,101,77,0.24,0.0,0.0,1.6,5.2,8.9,,,5.2,imagery median between obstructions (no street trees)
-1211L,HARRISON ST,L,349,106,78,0.26,0.0,7.5,9.8,10.8,13.1,,,10.8,imagery median between obstructions (no street trees)
-1211R,HARRISON ST,R,349,106,74,0.3,0.0,0.3,1.3,6.2,19.0,,,6.2,imagery median between obstructions (no street trees)
-1212L,CEDARWOOD LN,L,329,100,3,0.0,0.97,13.5,15.6,24.3,29.5,,,,tape needed: street trees hide the pinch point
-1212R,CEDARWOOD LN,R,329,100,20,0.0,0.8,1.6,1.6,4.3,21.3,,,,tape needed: street trees hide the pinch point
-1213L,HARRISON ST,L,219,67,54,0.18,0.01,0.0,2.4,5.4,8.2,,,5.4,imagery median between obstructions (no street trees)
-1213R,HARRISON ST,R,219,67,34,0.18,0.31,3.9,4.0,6.1,9.8,,,,tape needed: street trees hide the pinch point
-1217L,CAMELIA ST,L,162,49,39,0.14,0.06,0.0,1.1,4.9,8.9,,,4.9,imagery median between obstructions (no street trees)
+1211L,HARRISON ST,L,349,106,78,0.26,0.0,7.5,9.8,10.8,13.1,0.0,10.8,0.0,tape
+1211R,HARRISON ST,R,349,106,74,0.3,0.0,1.6,3.5,7.5,19.0,,,7.5,imagery median between obstructions (no street trees)
+1212L,CEDARWOOD LN,L,329,100,3,0.0,0.97,18.4,19.6,24.3,49.2,,,,tape needed: street trees hide the pinch point
+1212R,CEDARWOOD LN,R,329,100,27,0.0,0.73,2.0,5.4,15.4,33.1,,,,tape needed: street trees hide the pinch point
+1213L,HARRISON ST,L,219,67,55,0.18,0.0,0.0,2.1,5.2,8.2,,,5.2,imagery median between obstructions (no street trees)
+1213R,HARRISON ST,R,219,67,38,0.18,0.25,0.0,2.9,5.9,9.8,,,,tape needed: street trees hide the pinch point
+1217L,CAMELIA ST,L,162,49,42,0.14,0.0,0.0,1.3,4.8,9.8,,,4.8,imagery median between obstructions (no street trees)
 1217R,CAMELIA ST,R,162,49,35,0.18,0.1,0.0,0.7,6.9,9.2,,,,tape needed: street trees hide the pinch point
 1225L,CAMELIA ST,L,165,50,28,0.2,0.24,0.3,1.9,4.4,8.2,,,,tape needed: street trees hide the pinch point
-1225R,CAMELIA ST,R,165,50,21,0.2,0.38,0.0,0.0,2.0,6.2,,,,tape needed: street trees hide the pinch point
-1226L,GILMAN ST,L,65,20,6,0.7,0.0,12.5,13.1,15.1,16.1,,,15.1,imagery median between obstructions (no street trees)
+1225R,CAMELIA ST,R,165,50,21,0.2,0.38,0.0,0.0,2.3,10.5,,,,tape needed: street trees hide the pinch point
+1226L,GILMAN ST,L,65,20,6,0.7,0.0,22.3,22.8,24.4,25.9,,,24.4,imagery median between obstructions (no street trees)
 1226R,GILMAN ST,R,65,20,7,0.65,0.0,11.2,11.4,13.5,14.1,,,13.5,imagery median between obstructions (no street trees)
-1227L,GILMAN ST,L,250,76,50,0.25,0.09,0.0,1.6,7.5,18.0,,,7.5,imagery median between obstructions (no street trees)
-1227R,GILMAN ST,R,250,76,64,0.13,0.03,0.0,0.7,2.0,9.2,,,2.0,imagery median between obstructions (no street trees)
-1231L,CAMELIA ST,L,170,52,19,0.0,0.63,0.0,1.0,6.9,20.0,,,,tape needed: street trees hide the pinch point
-1231R,CAMELIA ST,R,170,52,39,0.0,0.25,0.0,0.6,3.9,7.2,,,,tape needed: street trees hide the pinch point
+1227L,GILMAN ST,L,250,76,53,0.25,0.05,0.0,1.4,7.9,28.9,,,7.9,imagery median between obstructions (no street trees)
+1227R,GILMAN ST,R,250,76,64,0.13,0.03,0.0,0.7,2.3,9.2,,,2.3,imagery median between obstructions (no street trees)
+1231L,CAMELIA ST,L,170,52,22,0.0,0.58,0.0,1.0,5.7,20.0,,,,tape needed: street trees hide the pinch point
+1231R,CAMELIA ST,R,170,52,45,0.0,0.13,0.0,0.7,4.3,8.5,,,,tape needed: street trees hide the pinch point
 1254L,STANNAGE AVE,L,213,65,40,0.38,0.0,0.3,0.6,4.8,7.5,,,4.8,imagery median between obstructions (no street trees)
-1254R,STANNAGE AVE,R,213,65,35,0.4,0.06,0.0,0.0,0.0,2.0,,,0.0,imagery median between obstructions (no street trees)
-1302L,CAMELIA ST,L,335,102,81,0.19,0.02,1.6,5.6,7.5,25.6,,,7.5,imagery median between obstructions (no street trees)
+1254R,STANNAGE AVE,R,213,65,36,0.4,0.05,0.0,0.0,0.5,3.9,,,0.5,imagery median between obstructions (no street trees)
+1302L,CAMELIA ST,L,335,102,81,0.19,0.02,1.6,5.9,8.5,25.6,,,8.5,imagery median between obstructions (no street trees)
 1302R,CAMELIA ST,R,335,102,75,0.26,0.0,2.3,5.9,8.2,12.1,,,8.2,imagery median between obstructions (no street trees)
-1303L,JONES ST,L,330,101,69,0.3,0.02,0.0,1.0,5.9,11.5,,,5.9,imagery median between obstructions (no street trees)
-1303R,JONES ST,R,330,101,60,0.28,0.13,0.0,0.3,3.8,9.2,,,,tape needed: street trees hide the pinch point
+1303L,JONES ST,L,330,101,71,0.3,0.0,0.0,1.0,5.9,11.5,,,5.9,imagery median between obstructions (no street trees)
+1303R,JONES ST,R,330,101,65,0.28,0.08,0.0,0.0,3.6,10.8,,,3.6,imagery median between obstructions (no street trees)
 1329L,GILMAN ST,L,306,93,74,0.2,0.0,1.0,5.0,12.5,20.7,,,12.5,imagery median between obstructions (no street trees)
-1329R,GILMAN ST,R,306,93,69,0.26,0.0,0.7,1.0,2.6,4.3,,,2.6,imagery median between obstructions (no street trees)
-1337L,JONES ST,L,329,100,70,0.27,0.03,0.0,0.3,2.3,9.5,,,2.3,imagery median between obstructions (no street trees)
-1337R,JONES ST,R,329,100,60,0.26,0.14,0.0,0.0,1.1,9.5,,,,tape needed: street trees hide the pinch point
-1358L,CAMELIA ST,L,272,83,51,0.33,0.06,1.0,3.3,7.5,26.2,,,7.5,imagery median between obstructions (no street trees)
-1358R,CAMELIA ST,R,272,83,52,0.33,0.05,0.3,2.0,6.7,13.1,,,6.7,imagery median between obstructions (no street trees)
+1329R,GILMAN ST,R,306,93,69,0.26,0.0,0.7,1.6,3.6,7.2,,,3.6,imagery median between obstructions (no street trees)
+1337L,JONES ST,L,329,100,73,0.27,0.0,0.0,0.3,2.0,9.5,,,2.0,imagery median between obstructions (no street trees)
+1337R,JONES ST,R,329,100,65,0.26,0.09,0.0,0.0,1.6,10.5,,,1.6,imagery median between obstructions (no street trees)
+1358L,CAMELIA ST,L,272,83,52,0.33,0.05,1.0,3.3,7.5,26.2,,,7.5,imagery median between obstructions (no street trees)
+1358R,CAMELIA ST,R,272,83,52,0.33,0.05,0.3,2.0,6.7,14.4,,,6.7,imagery median between obstructions (no street trees)
 1363L,PARK WAY,L,170,52,0,0.0,1.0,,,,,,,,tape needed: street trees hide the pinch point
 1363R,PARK WAY,R,170,52,0,0.0,1.0,,,,,,,,tape needed: street trees hide the pinch point
-1364L,PARK WAY,L,52,16,4,0.0,0.75,1.0,3.7,11.0,28.9,,,,tape needed: street trees hide the pinch point
+1364L,PARK WAY,L,52,16,4,0.0,0.75,1.0,4.7,14.1,28.9,,,,tape needed: street trees hide the pinch point
 1364R,PARK WAY,R,52,16,2,0.0,0.88,10.5,11.9,17.4,24.3,,,,tape needed: street trees hide the pinch point
-1365L,GILMAN ST,L,333,102,73,0.28,0.0,0.0,0.7,2.6,8.9,,,2.6,imagery median between obstructions (no street trees)
+1365L,GILMAN ST,L,333,102,73,0.28,0.0,0.0,0.7,3.0,8.9,,,3.0,imagery median between obstructions (no street trees)
 1365R,GILMAN ST,R,333,102,46,0.28,0.26,0.3,1.1,4.6,10.2,,,,tape needed: street trees hide the pinch point
-1416L,GILMAN ST,L,184,56,36,0.36,0.0,7.2,9.4,11.3,14.4,,,11.3,imagery median between obstructions (no street trees)
-1416R,GILMAN ST,R,179,55,21,0.62,0.0,1.0,2.0,5.6,18.0,,,5.6,imagery median between obstructions (no street trees)
+1416L,GILMAN ST,L,184,56,36,0.36,0.0,7.2,11.0,17.6,22.6,,,17.6,imagery median between obstructions (no street trees)
+1416R,GILMAN ST,R,179,55,21,0.62,0.0,1.0,2.0,5.9,19.7,,,5.9,imagery median between obstructions (no street trees)
 1417L,HARRISON ST,L,129,39,2,0.0,0.95,0.0,0.0,0.0,0.0,,,,tape needed: street trees hide the pinch point
 1417R,HARRISON ST,R,129,39,2,0.0,0.95,1.6,2.1,3.8,5.9,,,,tape needed: street trees hide the pinch point
-1421L,GILMAN ST,L,274,83,44,0.43,0.04,0.0,0.0,1.3,14.4,,,1.3,imagery median between obstructions (no street trees)
-1421R,GILMAN ST,R,271,83,54,0.33,0.02,0.3,0.7,8.7,12.1,,,8.7,imagery median between obstructions (no street trees)
+1421L,GILMAN ST,L,274,83,43,0.43,0.05,0.0,0.3,1.6,14.4,,,1.6,imagery median between obstructions (no street trees)
+1421R,GILMAN ST,R,271,83,56,0.33,0.0,0.3,0.8,8.9,13.1,,,8.9,imagery median between obstructions (no street trees)
 1422L,KAINS AVE,L,656,200,181,0.06,0.04,0.0,0.7,4.6,25.3,,,4.6,imagery median between obstructions (no street trees)
-1422R,KAINS AVE,R,656,200,134,0.04,0.28,0.0,0.0,1.0,28.9,,,,tape needed: street trees hide the pinch point
-1426L,HARRISON ST,L,317,97,84,0.13,0.0,0.0,2.7,7.9,15.4,,,7.9,imagery median between obstructions (no street trees)
+1422R,KAINS AVE,R,656,200,152,0.04,0.2,0.0,0.3,2.0,30.5,,,,tape needed: street trees hide the pinch point
+1426L,HARRISON ST,L,317,97,84,0.13,0.0,0.0,2.7,7.9,16.7,,,7.9,imagery median between obstructions (no street trees)
 1426R,HARRISON ST,R,317,97,78,0.2,0.0,5.2,6.1,7.2,18.0,,,7.2,imagery median between obstructions (no street trees)
-1434L,GILMAN ST,L,250,76,30,0.26,0.34,0.0,0.3,7.4,19.4,,,,tape needed: street trees hide the pinch point
-1434R,GILMAN ST,R,250,76,22,0.29,0.42,0.0,0.0,2.3,4.3,,,,tape needed: street trees hide the pinch point
+1434L,GILMAN ST,L,250,76,31,0.26,0.33,0.0,0.3,3.6,18.7,,,,tape needed: street trees hide the pinch point
+1434R,GILMAN ST,R,250,76,20,0.29,0.45,0.0,0.0,2.8,4.3,,,,tape needed: street trees hide the pinch point
 1435L,CORNELL AVE,L,656,200,174,0.12,0.01,0.0,0.0,3.6,10.5,,,3.6,imagery median between obstructions (no street trees)
-1435R,CORNELL AVE,R,656,200,123,0.13,0.26,0.0,0.0,2.0,5.6,,,,tape needed: street trees hide the pinch point
-1458L,GILMAN ST,L,249,76,14,0.14,0.67,0.0,0.0,1.6,5.6,,,,tape needed: street trees hide the pinch point
+1435R,CORNELL AVE,R,656,200,151,0.13,0.12,0.0,0.0,2.3,9.8,,,,tape needed: street trees hide the pinch point
+1458L,GILMAN ST,L,249,76,24,0.14,0.54,0.0,0.6,3.4,9.2,,,,tape needed: street trees hide the pinch point
 1458R,GILMAN ST,R,249,76,58,0.17,0.07,0.0,0.0,1.0,9.8,,,1.0,imagery median between obstructions (no street trees)
-1459L,STANNAGE AVE,L,655,200,156,0.1,0.12,0.0,0.0,3.9,10.5,,,,tape needed: street trees hide the pinch point
-1459R,STANNAGE AVE,R,655,200,157,0.07,0.14,0.0,0.0,0.7,5.2,,,,tape needed: street trees hide the pinch point
+1459L,STANNAGE AVE,L,655,200,171,0.1,0.04,0.0,0.0,3.3,10.5,,,3.3,imagery median between obstructions (no street trees)
+1459R,STANNAGE AVE,R,655,200,165,0.07,0.1,0.0,0.0,2.6,9.5,,,,tape needed: street trees hide the pinch point
 1461L,HARRISON ST,L,308,94,84,0.11,0.0,3.3,5.7,8.5,24.6,,,8.5,imagery median between obstructions (no street trees)
-1461R,HARRISON ST,R,308,94,61,0.13,0.22,0.3,2.0,4.3,27.9,,,,tape needed: street trees hide the pinch point
+1461R,HARRISON ST,R,308,94,61,0.13,0.22,0.3,3.0,4.6,27.9,,,,tape needed: street trees hide the pinch point
 1463L,HARRISON ST,L,318,97,83,0.14,0.0,0.0,0.3,3.6,12.1,,,3.6,imagery median between obstructions (no street trees)
-1463R,HARRISON ST,R,318,97,71,0.27,0.0,4.6,7.2,8.9,11.2,,,8.9,imagery median between obstructions (no street trees)
-1497L,UNNAMED ALLEY,L,437,133,27,0.0,0.8,0.3,1.5,12.8,29.5,,,,tape needed: street trees hide the pinch point
-1497R,UNNAMED ALLEY,R,438,133,6,0.0,0.95,7.2,9.4,17.7,29.5,,,,tape needed: street trees hide the pinch point
-1498L,UNNAMED ALLEY,L,446,136,6,0.0,0.96,1.0,1.1,2.1,20.0,,,,tape needed: street trees hide the pinch point
-1498R,UNNAMED ALLEY,R,446,136,6,0.0,0.96,6.2,8.4,11.5,29.5,,,,tape needed: street trees hide the pinch point
-1514L,HARRISON ST,L,335,102,56,0.45,0.0,0.3,1.6,14.1,29.5,,,14.1,imagery median between obstructions (no street trees)
+1463R,HARRISON ST,R,318,97,71,0.27,0.0,6.2,7.2,9.2,12.8,,,9.2,imagery median between obstructions (no street trees)
+1497L,UNNAMED ALLEY,L,437,133,34,0.0,0.74,0.0,1.3,9.2,40.0,,,,tape needed: street trees hide the pinch point
+1497R,UNNAMED ALLEY,R,438,133,14,0.0,0.89,0.7,2.1,3.4,29.5,,,,tape needed: street trees hide the pinch point
+1498L,UNNAMED ALLEY,L,446,136,6,0.0,0.96,2.0,2.1,4.8,20.0,,,,tape needed: street trees hide the pinch point
+1498R,UNNAMED ALLEY,R,446,136,6,0.0,0.96,6.2,8.4,24.3,49.2,,,,tape needed: street trees hide the pinch point
+1514L,HARRISON ST,L,335,102,56,0.45,0.0,0.3,1.8,14.4,29.9,,,14.4,imagery median between obstructions (no street trees)
 1514R,HARRISON ST,R,335,102,71,0.27,0.03,0.7,1.3,4.9,13.1,,,4.9,imagery median between obstructions (no street trees)
-1543L,KAINS AVE,L,670,204,178,0.1,0.02,0.0,0.3,4.9,14.4,,,4.9,imagery median between obstructions (no street trees)
-1543R,KAINS AVE,R,670,204,151,0.05,0.21,0.0,0.0,0.3,5.6,,,,tape needed: street trees hide the pinch point
-1551L,STANNAGE AVE,L,669,204,190,0.03,0.03,0.0,0.3,5.9,29.5,,,5.9,imagery median between obstructions (no street trees)
-1551R,STANNAGE AVE,R,669,204,156,0.05,0.19,0.0,0.0,1.0,29.5,,,,tape needed: street trees hide the pinch point
-5632R,SAN PABLO AVE,R,538,164,109,0.16,0.18,0.0,0.0,0.7,4.6,,,,tape needed: street trees hide the pinch point
-5633R,SAN PABLO AVE,R,549,167,35,0.12,0.67,0.0,0.0,0.7,1.3,,,,tape needed: street trees hide the pinch point
+1543L,KAINS AVE,L,670,204,181,0.1,0.01,0.0,0.3,4.9,14.4,,,4.9,imagery median between obstructions (no street trees)
+1543R,KAINS AVE,R,670,204,167,0.05,0.13,0.0,0.7,2.6,8.5,,,,tape needed: street trees hide the pinch point
+1551L,STANNAGE AVE,L,669,204,194,0.03,0.01,0.0,0.3,5.7,43.3,,,5.7,imagery median between obstructions (no street trees)
+1551R,STANNAGE AVE,R,669,204,165,0.05,0.14,0.0,0.0,2.3,39.4,,,,tape needed: street trees hide the pinch point
+5632R,SAN PABLO AVE,R,538,164,127,0.16,0.07,0.0,0.2,1.6,16.7,,,1.6,imagery median between obstructions (no street trees)
+5633R,SAN PABLO AVE,R,549,167,69,0.12,0.47,0.0,0.3,3.0,13.5,,,,tape needed: street trees hide the pinch point
 5634L,SAN PABLO AVE,L,172,52,29,0.37,0.08,1.3,3.3,9.8,19.0,,,9.8,imagery median between obstructions (no street trees)
-5634R,SAN PABLO AVE,R,172,52,9,0.21,0.62,0.0,0.0,0.3,2.0,,,,tape needed: street trees hide the pinch point
-5635R,SAN PABLO AVE,R,444,135,26,0.22,0.59,0.0,0.0,0.7,1.6,,,,tape needed: street trees hide the pinch point
-5636R,SAN PABLO AVE,R,296,90,22,0.28,0.48,0.0,0.3,0.7,2.3,,,,tape needed: street trees hide the pinch point
-5637R,SAN PABLO AVE,R,445,136,83,0.28,0.11,0.0,0.0,1.6,4.9,,,,tape needed: street trees hide the pinch point
-5638R,SAN PABLO AVE,R,293,89,37,0.45,0.13,0.0,0.0,1.3,11.5,,,,tape needed: street trees hide the pinch point
-5641R,SAN PABLO AVE,R,485,148,33,0.24,0.54,0.0,0.0,0.3,4.6,,,,tape needed: street trees hide the pinch point
-5642R,SAN PABLO AVE,R,496,151,84,0.38,0.06,0.0,0.0,0.5,3.9,,,0.5,imagery median between obstructions (no street trees)
-5643R,SAN PABLO AVE,R,483,147,70,0.32,0.2,0.0,0.0,0.7,4.3,,,,tape needed: street trees hide the pinch point
-5644R,SAN PABLO AVE,R,491,150,89,0.38,0.03,0.0,0.0,1.3,4.6,,,1.3,imagery median between obstructions (no street trees)
-5645R,SAN PABLO AVE,R,482,147,41,0.31,0.41,0.0,0.0,1.0,2.3,,,,tape needed: street trees hide the pinch point
-5646R,SAN PABLO AVE,R,485,148,68,0.32,0.22,0.0,0.0,1.0,4.6,,,,tape needed: street trees hide the pinch point
+5634R,SAN PABLO AVE,R,172,52,12,0.21,0.56,0.0,0.0,0.7,3.9,,,,tape needed: street trees hide the pinch point
+5635R,SAN PABLO AVE,R,444,135,41,0.22,0.47,0.3,2.6,8.2,12.1,,,,tape needed: street trees hide the pinch point
+5636R,SAN PABLO AVE,R,296,90,60,0.28,0.06,0.7,2.6,7.2,11.2,,,7.2,imagery median between obstructions (no street trees)
+5637R,SAN PABLO AVE,R,445,136,94,0.28,0.03,0.0,2.0,8.7,23.6,,,8.7,imagery median between obstructions (no street trees)
+5638R,SAN PABLO AVE,R,293,89,37,0.45,0.13,0.0,0.0,1.3,18.4,,,,tape needed: street trees hide the pinch point
+5641R,SAN PABLO AVE,R,485,148,33,0.24,0.54,0.0,0.0,1.0,6.6,,,,tape needed: street trees hide the pinch point
+5642R,SAN PABLO AVE,R,496,151,84,0.38,0.06,0.0,0.0,1.3,13.8,,,1.3,imagery median between obstructions (no street trees)
+5643R,SAN PABLO AVE,R,483,147,72,0.32,0.19,0.0,0.0,0.7,10.5,,,,tape needed: street trees hide the pinch point
+5644R,SAN PABLO AVE,R,491,150,92,0.38,0.01,0.0,1.0,6.6,18.0,,,6.6,imagery median between obstructions (no street trees)
+5645R,SAN PABLO AVE,R,482,147,43,0.31,0.4,0.0,0.0,3.6,14.8,,,,tape needed: street trees hide the pinch point
+5646R,SAN PABLO AVE,R,485,148,68,0.32,0.22,0.0,0.7,1.8,12.8,,,,tape needed: street trees hide the pinch point
 5647L,HOPKINS,L,67,20,13,0.35,0.0,5.9,7.0,8.2,10.2,,,8.2,imagery median between obstructions (no street trees)
 5647R,HOPKINS,R,76,23,0,0.52,0.48,,,,,,,,tape needed: street trees hide the pinch point
-5648R,CEDAR ST,R,132,40,34,0.15,0.0,3.9,6.0,8.2,10.2,,,8.2,imagery median between obstructions (no street trees)
-5649L,,L,112,34,19,0.0,0.44,0.0,0.6,4.6,10.5,,,,tape needed: street trees hide the pinch point
-5650L,CEDAR ST,L,253,77,52,0.31,0.01,0.0,0.0,6.2,8.5,,,6.2,imagery median between obstructions (no street trees)
-5650R,CEDAR ST,R,247,75,49,0.33,0.01,3.9,5.6,7.5,10.5,,,7.5,imagery median between obstructions (no street trees)
-5651R,CEDAR ST,R,112,34,23,0.32,0.0,1.0,3.7,5.9,6.6,,,5.9,imagery median between obstructions (no street trees)
-5652R,CEDAR ST,R,190,58,38,0.22,0.12,0.0,0.7,4.3,8.5,,,,tape needed: street trees hide the pinch point
+5648R,CEDAR ST,R,132,40,34,0.15,0.0,4.9,8.6,9.8,10.2,,,9.8,imagery median between obstructions (no street trees)
+5649L,,L,112,34,20,0.0,0.41,0.0,0.6,4.6,10.5,,,,tape needed: street trees hide the pinch point
+5650L,CEDAR ST,L,253,77,53,0.31,0.0,0.0,0.0,6.2,8.5,,,6.2,imagery median between obstructions (no street trees)
+5650R,CEDAR ST,R,247,75,50,0.33,0.0,3.9,5.6,7.5,10.5,,,7.5,imagery median between obstructions (no street trees)
+5651R,CEDAR ST,R,112,34,23,0.32,0.0,1.3,4.2,8.5,9.8,,,8.5,imagery median between obstructions (no street trees)
+5652R,CEDAR ST,R,190,58,45,0.22,0.0,0.0,1.6,6.9,11.8,,,6.9,imagery median between obstructions (no street trees)
 5654L,CEDAR ST,L,35,11,0,1.0,0.0,,,,,,,,tape needed: street trees hide the pinch point
 5654R,CEDAR ST,R,35,11,0,1.0,0.0,,,,,,,,tape needed: street trees hide the pinch point
-6609L,TENTH ST,L,439,134,119,0.07,0.04,0.3,2.2,7.5,29.5,,,7.5,imagery median between obstructions (no street trees)
-6609R,TENTH ST,R,439,134,88,0.06,0.28,0.0,0.3,2.1,16.1,,,,tape needed: street trees hide the pinch point
-6611L,TENTH ST,L,447,136,109,0.15,0.05,0.0,0.3,5.6,12.5,,,5.6,imagery median between obstructions (no street trees)
-6611R,TENTH ST,R,447,136,97,0.08,0.21,0.0,1.0,5.6,21.0,,,,tape needed: street trees hide the pinch point
+6609L,TENTH ST,L,439,134,119,0.07,0.04,0.3,2.2,7.5,29.9,,,7.5,imagery median between obstructions (no street trees)
+6609R,TENTH ST,R,439,134,89,0.06,0.28,0.0,0.3,2.0,16.1,,,,tape needed: street trees hide the pinch point
+6611L,TENTH ST,L,447,136,111,0.15,0.04,0.0,0.3,5.2,12.5,,,5.2,imagery median between obstructions (no street trees)
+6611R,TENTH ST,R,447,136,99,0.08,0.19,0.0,0.9,5.6,21.0,,,,tape needed: street trees hide the pinch point
 6612L,TENTH ST,L,436,133,114,0.11,0.04,0.0,1.0,6.9,24.3,,,6.9,imagery median between obstructions (no street trees)
-6612R,TENTH ST,R,436,133,94,0.1,0.2,0.0,0.0,2.0,10.5,,,,tape needed: street trees hide the pinch point
-6613L,TENTH ST,L,658,201,25,0.17,0.71,0.0,0.0,1.3,10.8,,,,tape needed: street trees hide the pinch point
-6613R,TENTH ST,R,658,201,17,0.07,0.85,0.0,0.0,2.3,6.6,,,,tape needed: street trees hide the pinch point
+6612R,TENTH ST,R,436,133,97,0.1,0.17,0.0,0.2,3.0,13.5,,,,tape needed: street trees hide the pinch point
+6613L,TENTH ST,L,658,201,25,0.17,0.71,0.0,0.0,1.6,10.8,,,,tape needed: street trees hide the pinch point
+6613R,TENTH ST,R,658,201,17,0.07,0.85,0.0,0.0,2.6,6.9,,,,tape needed: street trees hide the pinch point
 6614L,TENTH ST,L,671,204,146,0.13,0.16,0.0,2.8,7.2,18.0,,,,tape needed: street trees hide the pinch point
-6614R,TENTH ST,R,671,204,177,0.12,0.01,0.0,1.3,5.9,19.4,,,5.9,imagery median between obstructions (no street trees)
-6629L,SECOND ST,L,669,204,3,0.03,0.95,0.7,0.7,0.7,3.0,,,,tape needed: street trees hide the pinch point
-6629R,SECOND ST,R,669,204,37,0.0,0.82,0.0,0.0,2.3,20.3,,,,tape needed: street trees hide the pinch point
-6636L,SECOND ST,L,652,199,109,0.08,0.38,0.0,3.9,8.9,18.7,,,,tape needed: street trees hide the pinch point
-6636R,SECOND ST,R,652,199,71,0.08,0.56,0.0,0.0,0.0,4.9,,,,tape needed: street trees hide the pinch point
-6638L,SECOND ST,L,447,136,9,0.06,0.88,0.0,0.5,3.3,10.2,,,,tape needed: street trees hide the pinch point
+6614R,TENTH ST,R,671,204,177,0.12,0.01,0.0,1.6,6.9,19.4,,,6.9,imagery median between obstructions (no street trees)
+6629L,SECOND ST,L,669,204,20,0.03,0.87,0.3,0.7,2.6,6.9,,,,tape needed: street trees hide the pinch point
+6629R,SECOND ST,R,669,204,49,0.0,0.76,0.0,0.0,2.6,21.7,,,,tape needed: street trees hide the pinch point
+6636L,SECOND ST,L,652,199,108,0.08,0.38,2.6,4.9,10.2,18.7,,,,tape needed: street trees hide the pinch point
+6636R,SECOND ST,R,652,199,49,0.08,0.67,0.0,0.0,5.6,6.6,,,,tape needed: street trees hide the pinch point
+6638L,SECOND ST,L,447,136,9,0.06,0.88,0.0,0.5,3.6,10.2,,,,tape needed: street trees hide the pinch point
 6638R,SECOND ST,R,447,136,3,0.1,0.88,0.7,1.4,4.3,7.9,,,,tape needed: street trees hide the pinch point
 6641L,FOURTH ST,L,657,200,163,0.18,0.0,1.3,5.3,11.5,13.8,,,11.5,imagery median between obstructions (no street trees)
-6641R,FOURTH ST,R,657,200,169,0.12,0.04,0.0,0.0,1.6,11.2,,,1.6,imagery median between obstructions (no street trees)
-6649L,FOURTH ST,L,446,136,97,0.17,0.12,0.0,0.3,7.5,11.2,4.0,3.5,4.0,tape
-6649R,FOURTH ST,R,446,136,52,0.16,0.46,0.0,0.0,0.7,17.7,,,,tape needed: street trees hide the pinch point
+6641R,FOURTH ST,R,657,200,169,0.12,0.04,0.0,0.0,2.0,13.8,,,2.0,imagery median between obstructions (no street trees)
+6649L,FOURTH ST,L,446,136,97,0.17,0.12,0.0,0.3,7.5,12.5,4.0,3.5,4.0,tape
+6649R,FOURTH ST,R,446,136,55,0.16,0.43,0.0,0.0,0.7,18.7,,,,tape needed: street trees hide the pinch point
 6651L,FOURTH ST,L,341,104,89,0.14,0.0,7.2,9.8,12.1,25.6,,,12.1,imagery median between obstructions (no street trees)
-6651R,FOURTH ST,R,341,104,82,0.12,0.1,0.0,0.0,1.6,4.9,,,,tape needed: street trees hide the pinch point
-6652L,FOURTH ST,L,61,19,7,0.47,0.16,0.0,1.6,4.9,10.2,,,,tape needed: street trees hide the pinch point
-6652R,FOURTH ST,R,61,19,4,0.0,0.79,14.4,15.6,24.0,29.5,,,,tape needed: street trees hide the pinch point
+6651R,FOURTH ST,R,341,104,82,0.12,0.1,0.0,0.0,4.1,8.9,,,,tape needed: street trees hide the pinch point
+6652L,FOURTH ST,L,61,19,9,0.47,0.05,0.0,0.0,4.9,24.9,,,4.9,imagery median between obstructions (no street trees)
+6652R,FOURTH ST,R,61,19,5,0.0,0.74,10.5,13.6,34.1,49.2,,,,tape needed: street trees hide the pinch point
 6653L,FOURTH ST,L,327,100,78,0.16,0.06,3.0,6.2,8.2,22.6,,,8.2,imagery median between obstructions (no street trees)
-6653R,FOURTH ST,R,327,100,68,0.1,0.22,0.0,0.0,1.1,12.8,,,,tape needed: street trees hide the pinch point
-6670L,FIFTH ST,L,437,133,109,0.15,0.03,1.0,3.0,4.9,10.5,,,4.9,imagery median between obstructions (no street trees)
+6653R,FOURTH ST,R,327,100,71,0.1,0.19,0.0,0.3,2.3,14.4,,,,tape needed: street trees hide the pinch point
+6670L,FIFTH ST,L,437,133,109,0.15,0.03,1.0,4.5,8.9,12.5,,,8.9,imagery median between obstructions (no street trees)
 6670R,FIFTH ST,R,437,133,111,0.16,0.01,0.0,0.3,5.6,17.1,,,5.6,imagery median between obstructions (no street trees)
-6671L,FIFTH ST,L,655,200,169,0.1,0.06,0.0,3.6,7.2,16.1,,,7.2,imagery median between obstructions (no street trees)
-6671R,FIFTH ST,R,655,200,149,0.1,0.15,0.0,0.0,3.0,18.4,,,,tape needed: street trees hide the pinch point
-6672L,FIFTH ST,L,447,136,112,0.1,0.07,0.0,0.0,2.0,23.6,,,2.0,imagery median between obstructions (no street trees)
-6672R,FIFTH ST,R,447,136,101,0.04,0.22,0.0,0.3,2.3,10.2,,,,tape needed: street trees hide the pinch point
-6673L,FIFTH ST,L,492,150,103,0.11,0.21,0.0,3.3,7.9,15.4,,,,tape needed: street trees hide the pinch point
-6673R,FIFTH ST,R,492,150,131,0.07,0.06,1.6,6.6,8.2,29.5,,,8.2,imagery median between obstructions (no street trees)
-6674L,FIFTH ST,L,672,205,178,0.11,0.02,0.3,1.6,6.2,14.4,,,6.2,imagery median between obstructions (no street trees)
-6674R,FIFTH ST,R,672,205,120,0.19,0.23,0.3,1.0,3.6,11.2,,,,tape needed: street trees hide the pinch point
-6729L,SIXTH ST,L,439,134,24,0.19,0.63,0.0,0.0,2.3,7.5,,,,tape needed: street trees hide the pinch point
-6729R,SIXTH ST,R,439,134,100,0.14,0.11,0.0,0.0,0.7,6.2,,,,tape needed: street trees hide the pinch point
-6730L,SIXTH ST,L,655,200,151,0.12,0.12,0.0,0.0,1.0,5.9,,,,tape needed: street trees hide the pinch point
-6730R,SIXTH ST,R,655,200,130,0.17,0.18,0.0,0.3,4.9,19.4,,,,tape needed: street trees hide the pinch point
-6731L,SIXTH ST,L,445,136,98,0.15,0.12,0.0,0.0,1.0,6.6,,,,tape needed: street trees hide the pinch point
-6731R,SIXTH ST,R,445,136,95,0.15,0.15,0.0,0.0,1.0,13.5,,,,tape needed: street trees hide the pinch point
-6736L,SIXTH ST,L,669,204,157,0.17,0.06,0.0,0.7,4.6,29.5,,,4.6,imagery median between obstructions (no street trees)
+6671L,FIFTH ST,L,655,200,172,0.1,0.04,0.0,3.6,8.0,20.3,,,8.0,imagery median between obstructions (no street trees)
+6671R,FIFTH ST,R,655,200,148,0.1,0.15,0.0,0.0,3.0,18.4,,,,tape needed: street trees hide the pinch point
+6672L,FIFTH ST,L,447,136,116,0.1,0.04,0.0,0.0,4.6,23.6,,,4.6,imagery median between obstructions (no street trees)
+6672R,FIFTH ST,R,447,136,108,0.04,0.17,0.0,0.0,2.3,10.2,,,,tape needed: street trees hide the pinch point
+6673L,FIFTH ST,L,492,150,103,0.11,0.21,0.0,3.3,7.9,27.6,,,,tape needed: street trees hide the pinch point
+6673R,FIFTH ST,R,492,150,131,0.07,0.06,1.6,6.6,8.5,41.3,,,8.5,imagery median between obstructions (no street trees)
+6674L,FIFTH ST,L,672,205,178,0.11,0.02,0.3,1.6,6.6,14.4,,,6.6,imagery median between obstructions (no street trees)
+6674R,FIFTH ST,R,672,205,120,0.19,0.23,0.3,1.0,3.9,11.2,,,,tape needed: street trees hide the pinch point
+6729L,SIXTH ST,L,439,134,26,0.19,0.61,0.0,0.0,1.6,8.2,,,,tape needed: street trees hide the pinch point
+6729R,SIXTH ST,R,439,134,99,0.14,0.12,0.0,0.0,0.7,6.2,,,,tape needed: street trees hide the pinch point
+6730L,SIXTH ST,L,655,200,173,0.12,0.01,0.0,0.7,3.9,17.7,,,3.9,imagery median between obstructions (no street trees)
+6730R,SIXTH ST,R,655,200,131,0.17,0.18,0.0,0.3,4.9,19.4,,,,tape needed: street trees hide the pinch point
+6731L,SIXTH ST,L,445,136,111,0.15,0.03,0.0,0.0,2.0,13.5,,,2.0,imagery median between obstructions (no street trees)
+6731R,SIXTH ST,R,445,136,98,0.15,0.12,0.0,0.0,2.0,15.7,,,,tape needed: street trees hide the pinch point
+6736L,SIXTH ST,L,669,204,169,0.17,0.0,1.6,5.6,7.9,31.8,,,7.9,imagery median between obstructions (no street trees)
 6736R,SIXTH ST,R,669,204,127,0.25,0.13,0.0,0.0,5.6,17.1,,,,tape needed: street trees hide the pinch point
-6737L,SIXTH ST,L,466,142,128,0.1,0.0,0.0,2.1,7.2,17.4,,,7.2,imagery median between obstructions (no street trees)
-6737R,SIXTH ST,R,466,142,66,0.15,0.38,0.0,0.3,1.6,11.8,,,,tape needed: street trees hide the pinch point
-6751L,SEVENTH ST,L,669,204,170,0.08,0.08,0.3,3.3,5.9,29.5,,,5.9,imagery median between obstructions (no street trees)
+6737L,SIXTH ST,L,466,142,121,0.1,0.05,0.0,4.6,7.2,17.4,,,7.2,imagery median between obstructions (no street trees)
+6737R,SIXTH ST,R,466,142,120,0.15,0.0,0.0,1.6,7.9,22.0,,,7.9,imagery median between obstructions (no street trees)
+6751L,SEVENTH ST,L,669,204,176,0.08,0.05,1.0,7.7,14.3,38.1,,,14.3,imagery median between obstructions (no street trees)
 6751R,SEVENTH ST,R,669,204,142,0.1,0.2,0.3,3.0,6.2,13.1,,,,tape needed: street trees hide the pinch point
-6752L,SEVENTH ST,L,446,136,100,0.21,0.05,1.3,3.3,6.6,29.5,,,6.6,imagery median between obstructions (no street trees)
-6752R,SEVENTH ST,R,446,136,94,0.07,0.24,0.0,0.0,1.0,7.5,,,,tape needed: street trees hide the pinch point
-6753L,SEVENTH ST,L,655,200,98,0.0,0.51,0.0,0.3,3.0,22.3,,,,tape needed: street trees hide the pinch point
-6753R,SEVENTH ST,R,655,200,80,0.1,0.51,0.0,0.3,3.9,29.5,,,,tape needed: street trees hide the pinch point
-6754L,SEVENTH ST,L,439,134,104,0.19,0.03,0.0,0.3,3.6,10.5,,,3.6,imagery median between obstructions (no street trees)
-6754R,SEVENTH ST,R,439,134,87,0.19,0.16,0.0,0.0,1.6,8.5,,,,tape needed: street trees hide the pinch point
-6778L,EIGHTH ST,L,220,67,54,0.18,0.01,0.0,3.3,5.9,12.5,,,5.9,imagery median between obstructions (no street trees)
+6752L,SEVENTH ST,L,446,136,100,0.21,0.05,1.3,3.3,6.6,30.5,,,6.6,imagery median between obstructions (no street trees)
+6752R,SEVENTH ST,R,446,136,111,0.07,0.12,0.0,0.0,1.3,9.2,,,,tape needed: street trees hide the pinch point
+6753L,SEVENTH ST,L,655,200,105,0.0,0.47,0.0,0.7,5.2,22.3,,,,tape needed: street trees hide the pinch point
+6753R,SEVENTH ST,R,655,200,85,0.1,0.48,0.0,0.1,3.9,31.5,,,,tape needed: street trees hide the pinch point
+6754L,SEVENTH ST,L,439,134,105,0.19,0.02,0.0,0.1,3.6,10.5,,,3.6,imagery median between obstructions (no street trees)
+6754R,SEVENTH ST,R,439,134,86,0.19,0.17,0.0,0.0,2.3,8.9,,,,tape needed: street trees hide the pinch point
+6778L,EIGHTH ST,L,220,67,55,0.18,0.0,0.0,3.1,5.9,12.5,,,5.9,imagery median between obstructions (no street trees)
 6778R,EIGHTH ST,R,220,67,46,0.21,0.1,0.0,0.0,1.8,26.6,,,,tape needed: street trees hide the pinch point
 6779L,EIGHTH ST,L,447,136,112,0.16,0.01,0.0,0.3,5.6,10.2,,,5.6,imagery median between obstructions (no street trees)
-6779R,EIGHTH ST,R,447,136,90,0.2,0.14,0.0,0.0,0.0,3.6,,,,tape needed: street trees hide the pinch point
-6780L,EIGHTH ST,L,439,134,79,0.16,0.25,0.0,0.6,4.9,14.1,,,,tape needed: street trees hide the pinch point
-6780R,EIGHTH ST,R,439,134,81,0.19,0.21,0.0,0.0,1.6,13.1,,,,tape needed: street trees hide the pinch point
-6781L,EIGHTH ST,L,654,199,172,0.11,0.03,0.3,1.6,7.7,23.0,,,7.7,imagery median between obstructions (no street trees)
-6781R,EIGHTH ST,R,654,199,151,0.1,0.14,0.0,2.0,5.9,15.7,,,,tape needed: street trees hide the pinch point
+6779R,EIGHTH ST,R,447,136,101,0.2,0.06,0.0,0.0,1.6,11.8,,,1.6,imagery median between obstructions (no street trees)
+6780L,EIGHTH ST,L,439,134,80,0.16,0.24,0.0,0.3,4.9,14.1,,,,tape needed: street trees hide the pinch point
+6780R,EIGHTH ST,R,439,134,92,0.19,0.13,0.0,0.0,3.9,14.4,,,,tape needed: street trees hide the pinch point
+6781L,EIGHTH ST,L,654,199,172,0.11,0.03,0.3,1.6,7.9,23.0,,,7.9,imagery median between obstructions (no street trees)
+6781R,EIGHTH ST,R,654,199,155,0.1,0.12,0.0,3.4,6.6,21.3,,,,tape needed: street trees hide the pinch point
 6783L,EIGHTH ST,L,669,204,172,0.14,0.01,0.0,1.0,6.1,26.2,,,6.1,imagery median between obstructions (no street trees)
-6783R,EIGHTH ST,R,669,204,108,0.13,0.34,0.0,0.0,0.3,7.9,,,,tape needed: street trees hide the pinch point
-6792L,EIGHTH ST,L,620,189,132,0.07,0.23,0.0,3.0,10.5,18.4,,,,tape needed: street trees hide the pinch point
-6792R,EIGHTH ST,R,619,189,124,0.07,0.27,0.0,0.8,6.1,13.1,,,,tape needed: street trees hide the pinch point
+6783R,EIGHTH ST,R,669,204,108,0.13,0.34,0.0,0.0,1.3,12.8,,,,tape needed: street trees hide the pinch point
+6792L,EIGHTH ST,L,620,189,132,0.07,0.23,0.0,3.0,10.5,22.3,,,,tape needed: street trees hide the pinch point
+6792R,EIGHTH ST,R,619,189,126,0.07,0.26,0.0,0.5,6.2,13.1,,,,tape needed: street trees hide the pinch point
 6800L,NINTH ST,L,670,204,123,0.14,0.26,0.0,1.8,6.9,21.7,,,,tape needed: street trees hide the pinch point
-6800R,NINTH ST,R,670,204,157,0.13,0.1,0.0,0.3,3.0,25.9,,,,tape needed: street trees hide the pinch point
-6801L,NINTH ST,L,449,137,109,0.2,0.01,0.0,0.7,5.9,13.1,,,5.9,imagery median between obstructions (no street trees)
-6801R,NINTH ST,R,449,137,82,0.18,0.22,0.0,0.3,6.2,9.5,,,,tape needed: street trees hide the pinch point
+6800R,NINTH ST,R,670,204,161,0.13,0.08,0.0,1.6,5.2,28.9,,,5.2,imagery median between obstructions (no street trees)
+6801L,NINTH ST,L,449,137,110,0.2,0.0,0.0,0.7,5.9,13.1,,,5.9,imagery median between obstructions (no street trees)
+6801R,NINTH ST,R,449,137,101,0.18,0.08,0.0,0.7,6.2,9.5,,,6.2,imagery median between obstructions (no street trees)
 6803L,NINTH ST,L,438,134,106,0.21,0.0,0.3,1.6,4.9,12.8,,,4.9,imagery median between obstructions (no street trees)
-6803R,NINTH ST,R,438,134,99,0.2,0.06,0.0,0.0,2.6,5.6,,,2.6,imagery median between obstructions (no street trees)
+6803R,NINTH ST,R,438,134,106,0.2,0.01,0.0,0.3,3.6,6.9,,,3.6,imagery median between obstructions (no street trees)
 6805L,NINTH ST,L,654,199,156,0.22,0.0,2.6,5.2,9.8,25.6,,,9.8,imagery median between obstructions (no street trees)
 6805R,NINTH ST,R,654,199,140,0.25,0.05,0.0,0.3,5.6,18.7,,,5.6,imagery median between obstructions (no street trees)
 6806L,NINTH ST,L,404,123,62,0.11,0.39,1.3,8.2,9.5,17.1,,,,tape needed: street trees hide the pinch point

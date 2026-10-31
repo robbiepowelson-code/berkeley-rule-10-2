@@ -480,6 +480,19 @@ def main():
     if imagery:
         print("  %d block faces with an imagery clear width" % sum(1 for v in imagery.values() if v[0] is not None), file=sys.stderr)
 
+    # ---- strip widths measured on the ground (BHU survey) --------------------
+    # data/field/strip_widths.csv: curb-to-property width per face. Not the clear
+    # walk, so the calibration factor still applies, but it replaces the noisy
+    # GIS strip estimate on those faces.
+    strips = {}
+    spath = os.path.join(field, "strip_widths.csv")
+    if os.path.exists(spath):
+        with open(spath, encoding="utf-8") as fh:
+            for r in csv.DictReader(fh):
+                if r.get("side_ambiguous", "False") == "True": continue
+                strips[r["face"]] = float(r["strip_ft"])
+        print("  %d block faces with a measured strip width" % len(strips), file=sys.stderr)
+
     # ---- GIS calibration (tools/calibrate_gis.py) --------------------------
     gis_cal = None
     cpath = os.path.join(field, "gis_calibration.json")
@@ -542,7 +555,10 @@ def main():
             if w_ft > 40:            # curb line is not next to a parcel (park, rail, freeway)
                 why["no property line within 40 ft"] += 1
                 continue
-            if w_src in ("gis", "default", "osm-building") and gis_cal:
+            if fid in strips and w_src in ("gis", "default", "osm-building", "imagery-trees") and gis_cal:
+                w_m, w_src = ft(strips[fid]) * gis_cal, "strip-tape-calibrated"
+                w_ft = w_m / FT
+            elif w_src in ("gis", "default", "osm-building") and gis_cal:
                 # tape measurements show the clear walk is a fraction of the curb-to-property strip
                 w_m, w_src = w_m * gis_cal, "gis-calibrated"
                 w_ft = w_m / FT
