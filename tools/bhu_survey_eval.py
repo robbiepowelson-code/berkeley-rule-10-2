@@ -79,7 +79,7 @@ def main():
         w, src = f['width_ft'], f['width_source']
         raw[f['id']] = f['gis_width_ft'] if 'gis_width_ft' in f and pd.notna(f['gis_width_ft']) else (w / cal if src == 'gis-calibrated' else (w if src in ('gis', 'default', 'osm-building') else np.nan))
     t2n = {}
-    for a in ('nw', 'ninth'):
+    for a in ('nw', 'ninth', 'south'):
         p = ROOT / 'data/tile2net' / a / 'clear_width_faces.csv'
         if p.exists():
             for _, r in pd.read_csv(p).iterrows(): t2n[r.face] = r

@@ -4,8 +4,10 @@ survey.config.json
 _to_delete/
 data/campable/check_*.png
 tile2net/weights
-data/tile2net/tiles/
+data/tile2net/tiles/*/
+data/tile2net/tiles/*.tgz
 *.tgz
 *.part0*
 _to_delete/
 data/tile2net/runs/
+data/tile2net/*/clear_width_profile.geojson

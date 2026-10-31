@@ -343,12 +343,48 @@ After adding the strip widths the pilot count is **97 locations on 9 block
 faces** (Gilman 20, Eastshore 20, San Pablo 20, University overpass 14,
 Ashby 11, I-80 off-ramp 10, Seventh 2) — the same short list, to be walked.
 
+## 4e. Calibrating the imagery width on the residential survey
+
+With aerial tiles over the South Berkeley box the imagery methods could be
+scored against the 76 residential tapes, the hardest case for a top-down
+method (tree-lined, planting strips, driveways every lot). Results, imagery
+versus the BHU paved-sidewalk tape:
+
+| method | n | mean error | mean abs. error | within 2 ft |
+|---|---|---|---|---|
+| raw City GIS strip | 74 | +4.0 ft | 4.7 ft | 26 % |
+| tile2net polygon width (whole face) | 74 | −0.8 ft | 1.9 ft | 72 % |
+| first clear-walk profile (paved-pixel colour test) | 74 | −4.6 ft | 5.0 ft | 20 % |
+| **clear-walk profile, revised** (polygon local width, tree wells and driveways deducted) | 74 | −0.5 ft | **1.8 ft** | 70 % |
+| same, West Berkeley | 24 | −1.8 ft | 2.5 ft | 62 % |
+
+The first version of the per-metre profile classified aerial pixels as paved
+or not by colour. On the 21 faces the surveyors marked free of landscaping
+obstacles it still read 2–5 ft narrow whatever the thresholds (a sweep of
+twelve settings is in the commit history), because parked cars, shade and
+stained concrete all read as "not paved". It was replaced: width along the
+face is now the detected polygon's own local width (twice the inscribed
+radius on a 10 cm distance-transform raster), which the detector draws
+correctly under trees, with a 4 ft tree well deducted wherever OpenStreetMap
+records a street tree within 2.5 m of the section and driveway sections left
+out as before. The tree-well depth is an assumption to be tape-checked; the
+rest is measured. This also removes the "tape needed, street trees" flag:
+356 faces in the three imagery areas now carry an imagery clear width.
+
+The model's width priority is now: tape of the clear walk > imagery
+clear-walk median > BHU paved tape × 0.59 > GIS strip × 0.59. The pilot
+count is unchanged at 97 locations on 9 faces; what changed is that the
+widths behind it are now checked against 127 independent tape measurements
+rather than five.
+
 ## 5. Margin of error, stated honestly
 
 - **Width.** Where a sidewalk exists, the imagery's width class agrees with the
-  City's in 251 of 252 faces (99.6 %, 95 % CI 97.8–99.9 %). The City gives a
-  class, not a number, so the numeric error of the imagery width is not yet
-  measured. The one tape measurement so far (Camelia St north side, 12.0 ft)
+  City's in 251 of 252 faces (99.6 %, 95 % CI 97.8–99.9 %), and its clear-walk
+  width agrees with the BHU paved-sidewalk tapes to a mean absolute error of
+  1.8 ft in South Berkeley (n = 74, 70 % within 2 ft) and 2.5 ft in West
+  Berkeley (n = 24, 62 % within 2 ft), reading slightly narrow on average
+  (−0.5 and −1.8 ft). The one tape measurement so far (Camelia St north side, 12.0 ft)
   reads 8.9 ft in the imagery: the detector outlines the paved walk and leaves
   out the planting strip and curb. Until the volunteer tape sample (target
   n ≥ 30 faces) is in, imagery widths should be presented as **paved-walk

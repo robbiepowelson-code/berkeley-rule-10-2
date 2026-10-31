@@ -39,9 +39,9 @@
  "faces_using_default_pavement_width": 0,
  "faces_skipped": {
   "no property line within 40 ft": 551,
-  "strip too shallow for footprint": 1962,
-  "no full footprint clears the exclusions": 33,
-  "not a campable zoning category": 31,
+  "strip too shallow for footprint": 1963,
+  "no full footprint clears the exclusions": 34,
+  "not a campable zoning category": 29,
   "reviewed: no sidewalk": 3
  },
  "sidewalk_area_ha": 122.49,

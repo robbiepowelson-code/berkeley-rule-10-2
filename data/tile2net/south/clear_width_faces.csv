@@ -1,0 +1,250 @@
+face,street,side,face_len_ft,n_sections,n_measured,driveway_share,canopy_share,tree_share,clear_min_ft,clear_p10_ft,clear_med_ft,clear_max_ft,tape_ft,diff_ft,governing_ft,governing_source
+1999L,WARD ST,L,305,93,74,0.2,0.0,0.0,4.6,5.7,7.9,11.6,,,7.9,imagery: detector polygon width
+1999R,WARD ST,R,316,96,76,0.2,0.0,0.0,0.7,6.9,10.5,12.5,,,10.5,imagery: detector polygon width
+2000R,SACRAMENTO ST,R,331,101,1,0.24,0.0,0.0,0.7,0.7,0.7,0.7,,,,imagery: too little sidewalk detected
+2058L,DERBY ST,L,636,194,152,0.22,0.0,0.0,0.7,7.1,10.2,15.3,,,10.2,imagery: detector polygon width
+2058R,DERBY ST,R,636,194,139,0.18,0.0,0.0,0.7,4.8,8.1,22.0,,,8.1,imagery: detector polygon width
+2171L,OREGON ST,L,238,72,52,0.26,0.0,0.0,3.5,8.1,9.2,12.0,,,9.2,imagery: detector polygon width
+2171R,OREGON ST,R,238,72,44,0.39,0.0,0.0,6.2,7.1,11.9,14.5,,,11.9,imagery: detector polygon width
+2184L,BLAKE ST,L,653,199,166,0.17,0.0,0.0,1.3,6.7,8.0,14.4,,,8.0,imagery: detector polygon width
+2184R,BLAKE ST,R,653,199,163,0.18,0.0,0.0,5.9,7.7,9.3,13.9,,,9.3,imagery: detector polygon width
+2187L,SOJOURNER TRUTH WAY,L,418,127,106,0.0,0.0,0.0,0.7,5.1,6.8,11.2,,,6.8,imagery: detector polygon width
+2187R,SOJOURNER TRUTH WAY,R,436,133,10,0.0,0.0,0.0,0.7,0.7,0.8,3.9,,,0.8,imagery: detector polygon width
+2257L,PARKER ST,L,629,192,150,0.15,0.0,0.0,0.7,5.6,7.9,28.2,,,7.9,imagery: detector polygon width
+2257R,PARKER ST,R,629,192,160,0.15,0.0,0.0,0.7,6.6,9.8,20.6,,,9.8,imagery: detector polygon width
+2299L,WARD ST,L,637,194,148,0.24,0.0,0.0,2.0,8.3,10.8,16.7,,,10.8,imagery: detector polygon width
+2299R,WARD ST,R,637,194,152,0.22,0.0,0.0,7.1,7.9,10.4,21.4,,,10.4,imagery: detector polygon width
+2383R,SACRAMENTO ST,R,331,101,17,0.26,0.0,0.0,0.9,2.0,3.3,3.9,,,3.3,imagery: detector polygon width
+2530L,OREGON ST,L,245,75,57,0.19,0.0,0.0,0.7,2.0,6.9,11.2,,,6.9,imagery: detector polygon width
+2530R,OREGON ST,R,245,75,54,0.28,0.0,0.0,4.8,5.9,6.6,9.8,,,6.6,imagery: detector polygon width
+2925L,CARLETON ST,L,631,192,157,0.18,0.0,0.0,5.2,6.6,7.9,11.8,,,7.9,imagery: detector polygon width
+2925R,CARLETON ST,R,631,192,142,0.17,0.0,0.0,0.7,8.5,9.8,12.5,,,9.8,imagery: detector polygon width
+2961L,SACRAMENTO ST,L,320,98,71,0.24,0.0,0.0,0.7,2.6,5.9,10.5,,,5.9,imagery: detector polygon width
+3066L,DWIGHT WAY,L,302,92,58,0.21,0.0,0.0,2.0,4.3,8.4,13.3,,,8.4,imagery: detector polygon width
+3066R,DWIGHT WAY,R,302,92,73,0.21,0.0,0.0,5.9,6.5,7.9,11.2,,,7.9,imagery: detector polygon width
+3085L,DWIGHT WAY,L,367,112,92,0.08,0.0,0.0,1.3,6.2,10.5,15.4,,,10.5,imagery: detector polygon width
+3085R,DWIGHT WAY,R,367,112,110,0.02,0.0,0.0,3.3,6.0,9.3,11.8,,,9.3,imagery: detector polygon width
+5091L,SACRAMENTO ST,L,324,99,55,0.39,0.0,0.0,0.9,2.7,8.8,12.5,,,8.8,imagery: detector polygon width
+351L,STUART ST,L,641,195,164,0.12,0.0,0.0,0.7,6.5,10.6,17.7,,,10.6,imagery: detector polygon width
+351R,STUART ST,R,642,196,156,0.12,0.0,0.0,0.7,6.6,9.8,18.9,,,9.8,imagery: detector polygon width
+1996L,SHATTUCK AVE,L,327,100,73,0.27,0.0,0.0,9.9,10.7,18.3,19.6,,,18.3,imagery: detector polygon width
+1996R,SHATTUCK AVE,R,327,100,72,0.26,0.0,0.0,6.6,7.2,9.3,15.3,,,9.3,imagery: detector polygon width
+2059L,CALIFORNIA ST,L,328,100,64,0.36,0.0,0.0,6.7,6.9,7.2,8.6,,,7.2,imagery: detector polygon width
+2059R,CALIFORNIA ST,R,328,100,73,0.27,0.0,0.0,6.0,6.5,7.5,9.1,,,7.5,imagery: detector polygon width
+2065L,OREGON ST,L,635,194,160,0.18,0.0,0.0,2.0,8.0,10.5,13.5,,,10.5,imagery: detector polygon width
+2065R,OREGON ST,R,635,194,128,0.34,0.0,0.0,7.3,9.5,11.6,13.4,,,11.6,imagery: detector polygon width
+2067L,STUART ST,L,635,193,151,0.22,0.0,0.0,5.2,9.3,9.6,9.9,,,9.6,imagery: detector polygon width
+2067R,STUART ST,R,637,194,160,0.18,0.0,0.0,6.2,7.9,9.6,13.5,,,9.6,imagery: detector polygon width
+2126L,RUSSELL ST,L,258,79,62,0.19,0.0,0.0,0.7,5.5,10.2,15.8,,,10.2,imagery: detector polygon width
+2126R,RUSSELL ST,R,178,54,41,0.24,0.0,0.0,9.9,11.2,13.3,15.9,,,13.3,imagery: detector polygon width
+2128L,GRANT ST,L,328,100,75,0.25,0.0,0.0,5.9,7.1,9.8,12.0,,,9.8,imagery: detector polygon width
+2128R,GRANT ST,R,328,100,75,0.25,0.0,0.0,7.3,7.9,8.6,10.7,,,8.6,imagery: detector polygon width
+2131L,MILVIA ST,L,331,101,73,0.26,0.0,0.0,7.2,8.5,9.3,10.8,,,9.3,imagery: detector polygon width
+2131R,MILVIA ST,R,332,101,73,0.28,0.0,0.0,6.9,7.7,8.5,12.0,,,8.5,imagery: detector polygon width
+2142L,RUSSELL ST,L,303,92,83,0.1,0.0,0.0,3.3,9.8,11.0,18.1,,,11.0,imagery: detector polygon width
+2142R,RUSSELL ST,R,299,91,67,0.26,0.0,0.0,6.0,7.2,10.5,11.5,,,10.5,imagery: detector polygon width
+2172L,RUSSELL ST,L,127,39,16,0.59,0.0,0.0,9.3,9.4,9.9,10.5,,,9.9,imagery: detector polygon width
+2172R,RUSSELL ST,R,128,39,26,0.33,0.0,0.0,7.7,7.9,9.4,11.2,,,9.4,imagery: detector polygon width
+2175L,RUSSELL ST,L,317,97,79,0.19,0.0,0.0,2.1,7.2,9.6,16.0,,,9.6,imagery: detector polygon width
+2175R,RUSSELL ST,R,316,96,68,0.29,0.0,0.0,6.5,7.3,9.6,10.6,,,9.6,imagery: detector polygon width
+2178L,RUSSELL ST,L,316,96,80,0.17,0.0,0.0,6.7,9.5,11.8,18.1,,,11.8,imagery: detector polygon width
+2178R,RUSSELL ST,R,220,67,43,0.24,0.0,0.0,2.1,6.9,9.8,12.6,,,9.8,imagery: detector polygon width
+2183L,PARKER ST,L,584,178,139,0.13,0.0,0.0,2.4,7.2,10.0,13.1,,,10.0,imagery: detector polygon width
+2183R,PARKER ST,R,581,177,124,0.14,0.0,0.0,0.7,4.1,11.6,13.4,,,11.6,imagery: detector polygon width
+2188L,WARD ST,L,513,156,128,0.18,0.0,0.0,7.2,7.9,9.1,11.3,,,9.1,imagery: detector polygon width
+2188R,WARD ST,R,512,156,117,0.17,0.0,0.0,0.7,6.9,9.8,12.6,,,9.8,imagery: detector polygon width
+2193L,WARD ST,L,312,95,79,0.12,0.0,0.0,4.7,9.9,11.2,12.1,,,11.2,imagery: detector polygon width
+2193R,WARD ST,R,308,94,80,0.15,0.0,0.0,6.9,9.8,10.2,12.9,,,10.2,imagery: detector polygon width
+2213L,STUART ST,L,436,133,88,0.34,0.0,0.0,5.2,7.2,9.9,19.5,,,9.9,imagery: detector polygon width
+2213R,STUART ST,R,438,133,84,0.37,0.0,0.0,6.0,7.9,10.1,27.4,,,10.1,imagery: detector polygon width
+2220L,RUSSELL ST,L,346,106,57,0.1,0.0,0.0,1.3,7.5,10.8,13.3,,,10.8,imagery: detector polygon width
+2220R,RUSSELL ST,R,345,105,73,0.1,0.0,0.0,2.0,7.3,9.2,12.4,,,9.2,imagery: detector polygon width
+2225L,CALIFORNIA ST,L,330,101,73,0.28,0.0,0.0,1.9,4.7,7.9,11.2,,,7.9,imagery: detector polygon width
+2225R,CALIFORNIA ST,R,329,100,60,0.26,0.0,0.0,1.3,6.5,8.5,9.9,,,8.5,imagery: detector polygon width
+2248L,RUSSELL ST,L,163,50,11,0.78,0.0,0.0,11.0,11.5,13.1,13.5,,,13.1,imagery: detector polygon width
+2250L,OREGON ST,L,643,196,168,0.14,0.0,0.0,2.6,6.6,9.3,17.8,,,9.3,imagery: detector polygon width
+2250R,OREGON ST,R,643,196,116,0.18,0.0,0.0,0.7,4.4,9.8,13.4,,,9.8,imagery: detector polygon width
+2254L,WARD ST,L,641,195,151,0.12,0.0,0.0,2.8,6.5,8.8,11.2,,,8.8,imagery: detector polygon width
+2254R,WARD ST,R,641,195,144,0.12,0.0,0.0,3.3,6.9,9.0,13.1,,,9.0,imagery: detector polygon width
+2258L,CALIFORNIA ST,L,325,99,72,0.27,0.0,0.0,6.0,6.6,7.3,8.3,,,7.3,imagery: detector polygon width
+2258R,CALIFORNIA ST,R,325,99,74,0.25,0.0,0.0,6.9,7.1,7.2,13.5,,,7.2,imagery: detector polygon width
+2263L,GRANT ST,L,333,102,73,0.28,0.0,0.0,5.1,6.6,9.1,11.6,,,9.1,imagery: detector polygon width
+2263R,GRANT ST,R,336,103,73,0.22,0.0,0.0,4.6,5.9,7.9,10.0,,,7.9,imagery: detector polygon width
+2264L,BLAKE ST,L,716,218,87,0.24,0.0,0.0,0.7,4.5,13.1,17.9,,,13.1,imagery: detector polygon width
+2264R,BLAKE ST,R,717,219,153,0.18,0.0,0.0,1.5,9.1,12.4,31.8,,,12.4,imagery: detector polygon width
+2266L,RUSSELL ST,L,262,80,50,0.35,0.0,0.0,2.4,9.1,13.1,22.5,,,13.1,imagery: detector polygon width
+2266R,RUSSELL ST,R,261,79,45,0.37,0.0,0.0,5.2,8.8,11.5,13.1,,,11.5,imagery: detector polygon width
+2270L,OREGON ST,L,655,200,153,0.12,0.0,0.0,0.9,6.1,8.1,11.5,,,8.1,imagery: detector polygon width
+2270R,OREGON ST,R,658,200,153,0.11,0.0,0.0,0.7,3.3,7.2,45.5,,,7.2,imagery: detector polygon width
+2271L,GRANT ST,L,346,105,76,0.18,0.0,0.0,0.7,6.9,8.8,34.9,,,8.8,imagery: detector polygon width
+2271R,GRANT ST,R,345,105,73,0.18,0.0,0.0,0.9,7.2,7.9,47.5,,,7.9,imagery: detector polygon width
+2272L,SACRAMENTO ST,L,332,101,20,0.25,0.0,0.0,0.7,0.7,0.7,7.9,,,0.7,imagery: detector polygon width
+2272R,SACRAMENTO ST,R,330,101,74,0.25,0.0,0.0,7.2,7.2,7.9,11.6,,,7.9,imagery: detector polygon width
+2277L,OREGON ST,L,471,144,113,0.22,0.0,0.0,7.2,7.9,9.4,10.7,,,9.4,imagery: detector polygon width
+2277R,OREGON ST,R,467,142,115,0.19,0.0,0.0,7.2,7.9,9.2,33.2,,,9.2,imagery: detector polygon width
+2281L,MILVIA ST,L,329,100,72,0.25,0.0,0.0,7.1,8.0,10.5,19.1,,,10.5,imagery: detector polygon width
+2281R,MILVIA ST,R,329,100,72,0.26,0.0,0.0,4.6,5.9,8.8,11.8,,,8.8,imagery: detector polygon width
+2288L,OREGON ST,L,377,115,34,0.34,0.0,0.0,1.3,8.2,12.0,22.3,,,12.0,imagery: detector polygon width
+2288R,OREGON ST,R,377,115,13,0.37,0.0,0.0,0.7,4.2,8.1,9.6,,,8.1,imagery: detector polygon width
+2290L,STUART ST,L,660,201,145,0.12,0.0,0.0,0.7,6.9,9.9,12.7,,,9.9,imagery: detector polygon width
+2290R,STUART ST,R,658,200,133,0.12,0.0,0.0,0.7,6.0,8.3,10.7,,,8.3,imagery: detector polygon width
+2292L,STUART ST,L,490,150,121,0.18,0.0,0.0,6.0,7.5,10.0,14.5,,,10.0,imagery: detector polygon width
+2292R,STUART ST,R,488,149,121,0.19,0.0,0.0,5.9,7.2,8.5,11.8,,,8.5,imagery: detector polygon width
+2300L,CALIFORNIA ST,L,332,101,73,0.26,0.0,0.0,0.7,5.2,6.9,11.5,,,6.9,imagery: detector polygon width
+2300R,CALIFORNIA ST,R,330,101,73,0.26,0.0,0.0,1.5,6.0,8.6,10.5,,,8.6,imagery: detector polygon width
+2306L,STUART ST,L,658,201,172,0.14,0.0,0.0,1.3,6.6,9.3,10.5,,,9.3,imagery: detector polygon width
+2306R,STUART ST,R,668,204,173,0.15,0.0,0.0,5.2,7.3,12.1,14.2,,,12.1,imagery: detector polygon width
+2311L,STUART ST,L,243,74,25,0.66,0.0,0.0,5.3,5.9,7.9,10.4,,,7.9,imagery: detector polygon width
+2311R,STUART ST,R,243,74,12,0.61,0.0,0.0,3.3,8.2,12.8,13.9,,,12.8,imagery: detector polygon width
+2312L,SHATTUCK AVE,L,330,100,57,0.43,0.0,0.0,9.3,9.8,10.5,16.9,,,10.5,imagery: detector polygon width
+2312R,SHATTUCK AVE,R,323,98,74,0.24,0.0,0.0,5.3,5.9,7.3,16.8,,,7.3,imagery: detector polygon width
+2315L,WARD ST,L,658,201,151,0.22,0.0,0.0,0.7,6.6,9.6,13.7,,,9.6,imagery: detector polygon width
+2315R,WARD ST,R,659,201,135,0.15,0.0,0.0,0.7,5.5,8.1,11.8,,,8.1,imagery: detector polygon width
+2316L,GRANT ST,L,329,100,76,0.24,0.0,0.0,7.7,8.0,8.6,12.9,,,8.6,imagery: detector polygon width
+2316R,GRANT ST,R,331,101,37,0.27,0.0,0.0,0.7,4.2,7.2,12.9,,,7.2,imagery: detector polygon width
+2332L,WARD ST,L,657,200,172,0.14,0.0,0.0,0.7,5.9,7.9,10.7,,,7.9,imagery: detector polygon width
+2332R,WARD ST,R,667,203,172,0.15,0.0,0.0,6.2,7.1,9.8,13.5,,,9.8,imagery: detector polygon width
+2336L,DERBY ST,L,659,201,175,0.0,0.0,0.0,0.7,6.6,9.3,12.4,,,9.3,imagery: detector polygon width
+2336R,DERBY ST,R,659,201,179,0.11,0.0,0.0,5.6,5.9,8.5,12.5,,,8.5,imagery: detector polygon width
+2337L,DERBY ST,L,663,202,129,0.15,0.0,0.0,0.7,5.2,11.8,40.9,,,11.8,imagery: detector polygon width
+2337R,DERBY ST,R,666,203,171,0.13,0.0,0.0,5.2,7.2,9.8,34.1,,,9.8,imagery: detector polygon width
+2345L,DERBY ST,L,640,195,176,0.07,0.0,0.0,1.3,6.2,8.6,11.8,,,8.6,imagery: detector polygon width
+2345R,DERBY ST,R,639,195,173,0.11,0.0,0.0,4.6,7.9,9.9,12.7,,,9.9,imagery: detector polygon width
+2442L,OREGON ST,L,301,92,48,0.48,0.0,0.0,6.9,7.9,9.9,15.1,,,9.9,imagery: detector polygon width
+2442R,OREGON ST,R,303,92,45,0.51,0.0,0.0,7.5,8.8,12.3,23.6,,,12.3,imagery: detector polygon width
+2443L,MILVIA ST,L,328,100,72,0.28,0.0,0.0,6.6,6.6,8.4,11.8,,,8.4,imagery: detector polygon width
+2443R,MILVIA ST,R,329,100,41,0.26,0.0,0.0,0.7,1.3,4.8,8.6,,,4.8,imagery: detector polygon width
+2505L,RUSSELL ST,L,177,54,40,0.19,0.0,0.0,1.3,5.3,10.0,12.1,,,10.0,imagery: detector polygon width
+2505R,RUSSELL ST,R,176,54,44,0.19,0.0,0.0,6.7,7.2,8.8,10.8,,,8.8,imagery: detector polygon width
+2618L,OREGON ST,L,656,200,172,0.14,0.0,0.0,5.2,7.1,9.1,10.6,,,9.1,imagery: detector polygon width
+2618R,OREGON ST,R,667,203,171,0.16,0.0,0.0,2.6,8.3,11.5,13.9,,,11.5,imagery: detector polygon width
+2721L,DWIGHT WAY,L,336,102,77,0.0,0.0,0.0,0.7,3.9,9.1,15.2,,,9.1,imagery: detector polygon width
+2721R,DWIGHT WAY,R,336,102,75,0.1,0.0,0.0,0.7,2.6,8.1,8.8,,,8.1,imagery: detector polygon width
+2725L,RUSSELL ST,L,273,83,68,0.18,0.0,0.0,9.2,10.0,11.4,12.5,,,11.4,imagery: detector polygon width
+2725R,RUSSELL ST,R,266,81,67,0.15,0.0,0.0,0.9,7.5,11.6,12.0,,,11.6,imagery: detector polygon width
+2827L,GRANT ST,L,331,101,73,0.27,0.0,0.0,4.4,8.0,11.2,14.5,,,11.2,imagery: detector polygon width
+2827R,GRANT ST,R,331,101,75,0.26,0.0,0.0,4.8,5.1,5.2,9.4,,,5.2,imagery: detector polygon width
+2830L,PARKER ST,L,665,203,163,0.14,0.0,0.0,0.7,7.2,10.8,12.7,,,10.8,imagery: detector polygon width
+2830R,PARKER ST,R,579,177,161,0.09,0.0,0.0,0.9,7.3,9.9,15.5,,,9.9,imagery: detector polygon width
+2873L,MILVIA ST,L,330,101,31,0.22,0.0,0.0,3.3,6.6,12.5,16.5,,,12.5,imagery: detector polygon width
+2873R,MILVIA ST,R,330,101,45,0.28,0.0,0.0,1.3,3.5,6.6,17.4,,,6.6,imagery: detector polygon width
+2917L,WARD ST,L,539,164,129,0.13,0.0,0.0,0.7,4.1,9.9,32.3,,,9.9,imagery: detector polygon width
+2917R,WARD ST,R,537,164,108,0.18,0.0,0.0,0.7,4.1,7.2,17.4,,,7.2,imagery: detector polygon width
+2923L,DERBY ST,L,538,164,131,0.06,0.0,0.0,0.7,3.3,9.8,17.0,,,9.8,imagery: detector polygon width
+2923R,DERBY ST,R,536,163,142,0.08,0.0,0.0,1.9,6.6,13.1,13.4,,,13.1,imagery: detector polygon width
+2944L,CARLETON ST,L,642,196,159,0.15,0.0,0.0,0.7,8.5,8.6,18.8,,,8.6,imagery: detector polygon width
+2944R,CARLETON ST,R,642,196,162,0.13,0.0,0.0,0.7,7.3,8.8,11.3,,,8.8,imagery: detector polygon width
+2958L,CARLETON ST,L,664,202,180,0.04,0.0,0.0,0.7,3.3,8.5,12.5,,,8.5,imagery: detector polygon width
+2958R,CARLETON ST,R,664,202,176,0.11,0.0,0.0,1.3,7.2,9.1,12.5,,,9.1,imagery: detector polygon width
+2959L,DERBY ST,L,693,211,153,0.26,0.0,0.0,2.0,8.5,9.2,16.2,,,9.2,imagery: detector polygon width
+2959R,DERBY ST,R,693,211,159,0.19,0.0,0.0,0.7,6.5,9.2,31.3,,,9.2,imagery: detector polygon width
+2964L,CARLETON ST,L,666,203,159,0.15,0.0,0.0,2.0,5.2,7.3,12.3,,,7.3,imagery: detector polygon width
+2964R,CARLETON ST,R,666,203,85,0.14,0.0,0.0,0.7,3.8,7.9,12.3,,,7.9,imagery: detector polygon width
+2965L,MILVIA ST,L,325,99,74,0.25,0.0,0.0,4.8,5.9,8.5,11.2,,,8.5,imagery: detector polygon width
+2965R,MILVIA ST,R,326,99,73,0.26,0.0,0.0,5.2,5.9,6.0,13.5,,,6.0,imagery: detector polygon width
+2975L,DERBY ST,L,266,81,21,0.35,0.0,0.0,5.9,11.8,14.5,16.4,,,14.5,imagery: detector polygon width
+2975R,DERBY ST,R,264,81,19,0.4,0.0,0.0,1.3,4.9,10.8,12.5,,,10.8,imagery: detector polygon width
+2995L,WALKER ST,L,326,99,7,0.0,0.0,0.0,0.9,2.9,5.9,10.8,,,5.9,imagery: detector polygon width
+2995R,WALKER ST,R,326,99,4,0.08,0.0,0.0,0.7,1.8,5.8,10.8,,,,imagery: too little sidewalk detected
+2999L,CARLETON ST,L,555,169,141,0.13,0.0,0.0,5.4,6.0,9.8,11.9,,,9.8,imagery: detector polygon width
+2999R,CARLETON ST,R,289,88,51,0.17,0.0,0.0,2.1,7.9,11.2,12.0,,,11.2,imagery: detector polygon width
+3004L,PARKER ST,L,644,196,169,0.14,0.0,0.0,5.3,7.2,8.8,12.5,,,8.8,imagery: detector polygon width
+3004R,PARKER ST,R,642,196,153,0.17,0.0,0.0,1.3,6.0,8.8,18.6,,,8.8,imagery: detector polygon width
+3013L,PARKER ST,L,659,201,176,0.12,0.0,0.0,1.3,7.9,10.2,13.8,,,10.2,imagery: detector polygon width
+3013R,PARKER ST,R,659,201,158,0.12,0.0,0.0,0.7,4.5,9.2,13.5,,,9.2,imagery: detector polygon width
+3014L,GRANT ST,L,330,101,79,0.12,0.0,0.0,5.6,8.6,9.3,12.1,,,9.3,imagery: detector polygon width
+3014R,GRANT ST,R,331,101,80,0.12,0.0,0.0,3.8,8.0,8.9,12.4,,,8.9,imagery: detector polygon width
+3015L,CARLETON ST,L,724,221,166,0.24,0.0,0.0,4.4,5.4,8.7,15.9,,,8.7,imagery: detector polygon width
+3015R,CARLETON ST,R,725,221,120,0.23,0.0,0.0,1.3,7.2,10.5,32.5,,,10.5,imagery: detector polygon width
+3046L,BLAKE ST,L,641,196,172,0.07,0.0,0.0,1.5,5.9,8.0,15.9,,,8.0,imagery: detector polygon width
+3046R,BLAKE ST,R,642,196,140,0.11,0.0,0.0,2.6,7.2,9.8,13.9,,,9.8,imagery: detector polygon width
+3056L,BLAKE ST,L,658,201,175,0.12,0.0,0.0,0.7,5.9,8.0,13.5,,,8.0,imagery: detector polygon width
+3056R,BLAKE ST,R,657,200,178,0.1,0.0,0.0,5.4,7.0,9.4,13.1,,,9.4,imagery: detector polygon width
+3057L,PARKER ST,L,722,220,168,0.24,0.0,0.0,5.9,7.2,8.9,12.9,,,8.9,imagery: detector polygon width
+3057R,PARKER ST,R,725,221,107,0.21,0.0,0.0,0.9,7.8,10.8,17.8,,,10.8,imagery: detector polygon width
+3098L,DWIGHT WAY,L,329,100,94,0.0,0.0,0.0,2.6,4.6,8.8,15.3,,,8.8,imagery: detector polygon width
+3098R,DWIGHT WAY,R,329,100,100,0.0,0.0,0.0,6.0,6.6,7.3,8.6,,,7.3,imagery: detector polygon width
+3105L,DWIGHT WAY,L,287,88,52,0.07,0.0,0.0,0.7,2.8,7.9,15.9,,,7.9,imagery: detector polygon width
+3105R,DWIGHT WAY,R,180,55,33,0.0,0.0,0.0,0.7,2.9,8.3,8.5,,,8.3,imagery: detector polygon width
+3109L,DWIGHT WAY,L,320,97,68,0.14,0.0,0.0,1.3,7.2,7.9,13.1,,,7.9,imagery: detector polygon width
+3109R,DWIGHT WAY,R,320,97,36,0.22,0.0,0.0,0.7,1.3,4.7,9.8,,,4.7,imagery: detector polygon width
+3119L,DWIGHT WAY,L,677,206,68,0.4,0.0,0.0,0.7,1.3,5.4,22.0,,,5.4,imagery: detector polygon width
+3119R,DWIGHT WAY,R,676,206,62,0.16,0.0,0.0,0.7,1.5,7.2,9.6,,,7.2,imagery: detector polygon width
+3120L,MILVIA ST,L,331,101,76,0.25,0.0,0.0,1.5,4.0,8.5,13.9,,,8.5,imagery: detector polygon width
+3120R,MILVIA ST,R,330,101,49,0.29,0.0,0.0,2.4,7.2,11.8,13.3,,,11.8,imagery: detector polygon width
+3387L,BLAKE ST,L,607,185,132,0.24,0.0,0.0,0.7,4.0,7.1,10.8,,,7.1,imagery: detector polygon width
+3387R,BLAKE ST,R,607,185,156,0.16,0.0,0.0,6.7,8.8,11.5,17.0,,,11.5,imagery: detector polygon width
+3428L,CALIFORNIA ST,L,319,97,67,0.28,0.0,0.0,0.7,8.1,8.3,9.3,,,8.3,imagery: detector polygon width
+3428R,CALIFORNIA ST,R,319,97,70,0.27,0.0,0.0,7.3,7.5,7.9,7.9,,,7.9,imagery: detector polygon width
+3430L,BLAKE ST,L,670,204,159,0.2,0.0,0.0,0.7,6.7,9.3,11.8,,,9.3,imagery: detector polygon width
+3430R,BLAKE ST,R,670,204,139,0.16,0.0,0.0,0.7,3.8,9.6,15.2,,,9.6,imagery: detector polygon width
+5052L,MILVIA ST,L,335,102,76,0.25,0.0,0.0,5.9,8.4,9.8,17.0,,,9.8,imagery: detector polygon width
+5052R,MILVIA ST,R,335,102,75,0.26,0.0,0.0,7.9,8.5,9.1,11.5,,,9.1,imagery: detector polygon width
+5053L,MILVIA ST,L,331,101,73,0.28,0.0,0.0,6.6,6.6,8.5,10.5,,,8.5,imagery: detector polygon width
+5053R,MILVIA ST,R,331,101,73,0.28,0.0,0.0,5.2,6.2,9.2,11.8,,,9.2,imagery: detector polygon width
+5058L,GRANT ST,L,309,94,75,0.12,0.0,0.0,0.7,8.6,9.2,14.6,,,9.2,imagery: detector polygon width
+5058R,GRANT ST,R,307,94,66,0.23,0.0,0.0,6.5,6.6,7.8,9.2,,,7.8,imagery: detector polygon width
+5103L,DWIGHT WAY,L,270,82,65,0.15,0.0,0.0,4.6,9.0,11.6,19.9,,,11.6,imagery: detector polygon width
+5103R,DWIGHT WAY,R,272,83,70,0.16,0.0,0.0,4.8,5.2,5.9,8.8,,,5.9,imagery: detector polygon width
+5104L,CALIFORNIA ST,L,326,99,71,0.28,0.0,0.0,5.9,6.5,7.7,9.4,,,7.7,imagery: detector polygon width
+5104R,CALIFORNIA ST,R,323,99,71,0.23,0.0,0.0,0.9,4.8,6.6,8.1,,,6.6,imagery: detector polygon width
+5141L,DWIGHT WAY,L,341,104,69,0.28,0.0,0.0,7.9,8.5,10.4,26.0,,,10.4,imagery: detector polygon width
+5141R,DWIGHT WAY,R,341,104,55,0.38,0.0,0.0,0.7,5.7,7.3,9.8,,,7.3,imagery: detector polygon width
+5165L,GRANT ST,L,333,102,73,0.28,0.0,0.0,6.6,7.9,8.5,12.5,,,8.5,imagery: detector polygon width
+5165R,GRANT ST,R,335,102,73,0.26,0.0,0.0,7.9,8.3,9.4,11.6,,,9.4,imagery: detector polygon width
+5193L,RUSSELL ST,L,178,54,35,0.35,0.0,0.0,7.1,7.2,8.6,11.8,,,8.6,imagery: detector polygon width
+5193R,RUSSELL ST,R,182,55,43,0.22,0.0,0.0,7.3,7.9,10.5,13.8,,,10.5,imagery: detector polygon width
+5194L,DWIGHT WAY,L,42,13,2,0.85,0.0,0.0,0.7,0.9,1.7,2.8,,,,imagery: too little sidewalk detected
+5194R,DWIGHT WAY,R,42,13,5,0.62,0.0,0.0,8.6,8.6,8.6,9.1,,,8.6,imagery: detector polygon width
+5195L,CALIFORNIA ST,L,325,99,72,0.27,0.0,0.0,5.9,6.1,6.6,14.4,,,6.6,imagery: detector polygon width
+5195R,CALIFORNIA ST,R,325,99,32,0.27,0.0,0.0,0.7,1.5,4.5,7.2,,,4.5,imagery: detector polygon width
+5201L,SHATTUCK AVE,L,331,101,67,0.34,0.0,0.0,10.2,10.3,13.5,17.2,,,13.5,imagery: detector polygon width
+5201R,SHATTUCK AVE,R,332,101,73,0.28,0.0,0.0,3.3,6.0,11.2,18.4,,,11.2,imagery: detector polygon width
+5881R,SHATTUCK AVE,R,392,120,69,0.33,0.0,0.0,0.9,5.3,14.0,25.9,,,14.0,imagery: detector polygon width
+5883R,SHATTUCK AVE,R,336,102,63,0.26,0.0,0.0,0.7,7.9,9.6,34.3,,,9.6,imagery: detector polygon width
+5885R,SHATTUCK AVE,R,303,92,70,0.12,0.0,0.0,0.9,8.5,13.2,29.0,,,13.2,imagery: detector polygon width
+5886R,SHATTUCK AVE,R,355,108,47,0.35,0.0,0.0,0.9,4.9,9.1,22.3,,,9.1,imagery: detector polygon width
+5887R,SHATTUCK AVE,R,59,18,11,0.39,0.0,0.0,3.9,5.6,17.3,31.7,,,17.3,imagery: detector polygon width
+5888R,ADELINE ST,R,302,92,63,0.2,0.0,0.15,0.7,4.9,14.4,31.9,,,14.4,"imagery: detector polygon width, tree wells deducted"
+5889R,ADELINE ST,R,343,105,54,0.29,0.0,0.0,0.7,2.2,6.8,25.5,,,6.8,imagery: detector polygon width
+5890R,ADELINE ST,R,536,163,91,0.35,0.0,0.04,2.0,6.6,10.7,18.7,,,10.7,"imagery: detector polygon width, tree wells deducted"
+5891L,SHATTUCK AVE,L,78,24,15,0.38,0.0,0.0,7.9,8.2,9.3,11.2,,,9.3,imagery: detector polygon width
+5892R,ADELINE ST,R,64,19,0,1.0,0.0,0.0,,,,,,,,imagery: too little sidewalk detected
+5893R,ADELINE ST,R,425,129,92,0.28,0.0,0.0,4.7,6.7,10.1,23.0,,,10.1,imagery: detector polygon width
+5894R,ADELINE ST,R,519,158,60,0.44,0.0,0.0,0.7,4.1,13.4,19.7,,,13.4,imagery: detector polygon width
+5895R,ADELINE ST,R,515,157,91,0.36,0.0,0.0,1.3,7.2,10.5,22.0,,,10.5,imagery: detector polygon width
+5896R,ADELINE ST,R,58,18,0,1.0,0.0,0.0,,,,,,,,imagery: too little sidewalk detected
+5897R,ADELINE ST,R,463,141,50,0.28,0.0,0.0,2.0,4.1,9.7,16.9,,,9.7,imagery: detector polygon width
+5899R,ADELINE ST,R,56,17,0,1.0,0.0,0.0,,,,,,,,imagery: too little sidewalk detected
+6496L,M L KING JR WAY,L,330,101,72,0.29,0.0,0.0,5.9,6.6,9.8,11.0,,,9.8,imagery: detector polygon width
+6496R,M L KING JR WAY,R,330,101,67,0.26,0.0,0.0,0.7,0.7,9.1,13.2,,,9.1,imagery: detector polygon width
+6497L,M L KING JR WAY,L,329,100,72,0.28,0.0,0.0,5.2,6.6,11.2,12.4,,,11.2,imagery: detector polygon width
+6497R,M L KING JR WAY,R,329,100,73,0.27,0.0,0.0,8.5,9.1,10.5,13.1,,,10.5,imagery: detector polygon width
+6501L,M L KING JR WAY,L,337,103,72,0.3,0.0,0.0,1.5,7.2,7.9,13.1,,,7.9,imagery: detector polygon width
+6501R,M L KING JR WAY,R,336,103,74,0.26,0.0,0.0,0.7,6.0,8.9,12.5,,,8.9,imagery: detector polygon width
+6502L,M L KING JR WAY,L,327,100,73,0.27,0.0,0.0,2.1,7.9,9.9,12.1,,,9.9,imagery: detector polygon width
+6502R,M L KING JR WAY,R,327,100,64,0.35,0.0,0.0,3.9,7.9,9.9,13.3,,,9.9,imagery: detector polygon width
+6505L,M L KING JR WAY,L,331,101,75,0.26,0.0,0.0,7.3,7.9,9.4,26.8,,,9.4,imagery: detector polygon width
+6505R,M L KING JR WAY,R,332,101,72,0.23,0.0,0.0,4.1,9.9,12.5,22.1,,,12.5,imagery: detector polygon width
+6506L,M L KING JR WAY,L,315,96,71,0.26,0.0,0.0,7.1,7.3,9.8,11.2,,,9.8,imagery: detector polygon width
+6506R,M L KING JR WAY,R,314,96,80,0.12,0.0,0.0,0.7,7.2,9.8,16.4,,,9.8,imagery: detector polygon width
+6508L,M L KING JR WAY,L,332,101,60,0.3,0.0,0.0,1.3,5.8,8.3,11.2,,,8.3,imagery: detector polygon width
+6508R,M L KING JR WAY,R,333,101,21,0.38,0.0,0.0,5.2,6.6,9.1,9.2,,,9.1,imagery: detector polygon width
+6513L,M L KING JR WAY,L,336,102,73,0.28,0.0,0.0,7.2,7.9,9.8,12.5,,,9.8,imagery: detector polygon width
+6513R,M L KING JR WAY,R,334,102,45,0.25,0.0,0.0,1.3,2.9,6.2,10.8,,,6.2,imagery: detector polygon width
+6547L,MCGEE AVE,L,326,99,68,0.22,0.0,0.0,1.9,7.2,9.9,12.5,,,9.9,imagery: detector polygon width
+6547R,MCGEE AVE,R,327,100,63,0.27,0.0,0.0,0.7,5.3,8.3,9.9,,,8.3,imagery: detector polygon width
+6553L,MCGEE AVE,L,326,99,76,0.23,0.0,0.0,4.6,6.0,8.8,11.0,,,8.8,imagery: detector polygon width
+6553R,MCGEE AVE,R,326,99,78,0.12,0.0,0.0,3.9,8.5,10.2,12.5,,,10.2,imagery: detector polygon width
+6555L,MCGEE AVE,L,318,97,74,0.24,0.0,0.0,6.0,7.7,8.9,10.0,,,8.9,imagery: detector polygon width
+6555R,MCGEE AVE,R,318,97,79,0.1,0.0,0.0,0.7,6.9,8.6,13.1,,,8.6,imagery: detector polygon width
+6569L,MCGEE AVE,L,327,100,75,0.22,0.0,0.0,9.8,9.9,9.9,10.2,,,9.9,imagery: detector polygon width
+6569R,MCGEE AVE,R,328,100,75,0.25,0.0,0.0,3.9,5.1,7.2,10.8,,,7.2,imagery: detector polygon width
+6571L,MCGEE AVE,L,370,113,86,0.2,0.0,0.0,7.1,7.6,8.6,9.8,,,8.6,imagery: detector polygon width
+6571R,MCGEE AVE,R,370,113,85,0.21,0.0,0.0,1.3,8.5,10.0,20.5,,,10.0,imagery: detector polygon width
+6572L,MCGEE AVE,L,329,100,75,0.25,0.0,0.0,5.9,6.8,9.1,11.2,,,9.1,imagery: detector polygon width
+6572R,MCGEE AVE,R,331,101,75,0.24,0.0,0.0,7.7,7.9,8.5,10.7,,,8.5,imagery: detector polygon width
+6573L,MCGEE AVE,L,336,102,77,0.23,0.0,0.0,7.2,7.9,9.2,16.4,,,9.2,imagery: detector polygon width
+6573R,MCGEE AVE,R,336,102,72,0.19,0.0,0.0,0.7,6.6,7.9,9.6,,,7.9,imagery: detector polygon width
+6574L,MCGEE AVE,L,327,100,80,0.1,0.0,0.0,0.7,5.4,9.3,11.2,,,9.3,imagery: detector polygon width
+6574R,MCGEE AVE,R,328,100,62,0.1,0.0,0.0,0.7,4.0,8.0,10.8,,,8.0,imagery: detector polygon width

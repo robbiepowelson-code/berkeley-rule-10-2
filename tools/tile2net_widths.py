@@ -65,7 +65,8 @@ def main(src, outdir):
     sw.to_crs(4326).to_file(outdir / 'sidewalks.geojson', driver='GeoJSON')
     sw.drop(columns='geometry').round(1).to_csv(outdir / 'sidewalk_widths.csv', index=True, index_label='poly')
 
-    faces = gpd.read_file(ROOT / 'data/campable/faces.geojson').to_crs(26910)
+    import os
+    faces = gpd.read_file(ROOT / os.environ.get('FACES', 'data/campable/faces.geojson')).to_crs(26910)
     inner = box(*g.total_bounds).buffer(-EDGE_M)
     rows = []
     for i, r in faces[faces.intersects(inner)].iterrows():
