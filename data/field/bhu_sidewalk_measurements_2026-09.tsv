@@ -1,0 +1,53 @@
+Name of street	Cross streets (start and end of block)	GPS coordinates (Use Google Maps and put a pin on the middle of block. Copy and paste coordinates here.)	Clear path of travel (check one)	Total width of sidewalk (in feet)	Available space remaining (after clear path)
+Parker	Shattuck, Milvia	37.86205 N 122.26875 W	6 feet	9 feet 10 inches	3’10
+Oregon	Milvia, Shattuck	37.85745° N, 122.26880° W	4 feet	6 feet	6 feet
+Derby Street	Shattuck and Milvia	37.860252,-122.268356	6 feet	10 feet 2 inches	4 feet 2 inches
+Oregon	Milvia, Shattuck	37.85727° N, 122.26876° W	6 feet	10	6 feet
+Parker	Shattuck, Milvia	37.86189 N 122.26873 W	6 feet	9 feet 10 inches	3’10
+Derby Street	Shattuck and Milvia	37.860163,-122.268039	6 feet	14 feet	4 feet 5 inches
+Carleton	Shattuck milvia	37.8612443, -122.2674023	6 feet	8 feet 5 inches	2 feet 5 inches
+Carleton	Shattuck milvia	37.8610164, -122.2681023	6 feet	9 feet 5 inches	3 feet 5 inches
+Dwight Way	Eighth and Seventh	37.860261,-122.293460	6 feet	11 feet 11 inches	5 feet 11 inches
+Fifth Street	Dwight and Channing Way	37.860363,-122.296517	6 feet 1 inch	10 feet 1 inch	4 feet
+Fourth Street	Bancroft and Channing Way	37.862447,-122.298174	6 feet	9 feet 11 inches	3 feet 11 inches
+Fourth Street	Bancroft and Channing Way	37.862551,-122.298337	6 feet	12 feet	6 feet
+Bancroft	Fourth and Bolivar	37.862727,-122.299820	5 feet 11 inches	9 feet 11 inches	4 feet
+Grayson Street	Seventh Street and Train tracks (aquatic park)	37.854750,-122.295027	6 feet	13 feet 7 inches	7 feet 6 inches
+Anthony Street	Seventh and Fifth Streets	37.852040,-122.292260	4 feet 11 inches	4 feet 11 inches	0
+Anthony Street	Seventh Street	37.851880,-122.293039	4 feet 11 inches	4 feet 11 inches	0
+Heinz Avenue	Seventh and training tracks (aquatic park)	37.857104,-122.289593	5 feet 9 inches	10 feet	4 feet
+8th	dwight + parker	37.859964, -122.293879	4 feet	9 feet	5
+5th	dwight + channing	37.8630310, -122.2985581	6 feet	9 feet	3
+4th	bancroft + bolivar	37.863049, -122.298773	6 feet	11	5
+4th	bancroft allston	37.863249, -122.298424	6 feet	9ft 7 in	3
+Heinz Avenue	Seventh Street and Train tracks (aquatic park)	37.853165,-122.293039	5 feet	5 feet	0
+Potter Street	Seventh and ninth street	37.851556,-122.290787	6 feet	21 feet 9 inches	15 feet 9 inches
+Ninth	Ninth Gilman	37.87986° N, 122.29806° W	6 feet	6 feet	0 feet
+Ninth Strewt	Ninth and Camelia	37.87835° N, 122.29768° W	16 feet	18 feet	9 feet
+Eighth Street	Jackson and Harrison	37.881985,-122.299969	6 feet	10 feet 1 inch	4 feet 1 inch
+Eighth Street	Harrison and Gilman	37.880893,-122.299634	6 feet	9 feet 6 inches	3 feet 6 inches
+Eighth Street	Gilman and Camelia	37.878980,-122.299022	5 feet 11 inches	10 feet 6 inches	4 feet 7 inches
+Eighth Street	Gilman and Camelia	37.879049,-122.298903	4 feet 11 inches	11 feet 11 inches	7 feet
+Eighth Street	Camelia and Page	37.877388,-122.298492	6 feet	10 feet	4 feet
+Eighth Street	Camelia and Page	37.877635,-122.298431	5 feet 1 inch	10 feet 3 inches	5 feet 2 inches
+Eighth Street	Page and Jones	37.876252,-122.298136	6 feet	10 feet 1 inch	4 feet 1 inch
+Eighth Street	Page and Jones	37.876297,-122.298017	6 feet	10 feet 2 inches	4 feet 2 inches
+Eighth Street	Jones and Cedar	37.875298,-122.297818	6 feet	10 feet	4 feet
+Eighth Street	Jones and Cedar	37.875370,-122.297714	6 feet 2 inches	10 feet 2 inches	4 feet
+Cedar Street	Fourth and Fifth	37.873733,-122.301314	6 feet	9 feet 11 inches	3 feet 11 inches
+San Pablo	University & Hearst	37°52'11.7"N 122°17'33.3"W	6 feet	13 feet	7 feet
+San Pablo	Hearst & Delaware	37°52'15.3"N 122°17'33.2"W	6 feet	13 feet	7 feet
+San Pablo	Hearst & University	37°52'12.1"N 122°17'32.3"W	6 feet	13 feet	7 feet
+Bancroft Way	Ellsworth and Oxford	37.868107,-122.264700	7 feet 10 inches	7 feet 10 inches	14 feet 7 inches
+San Pablo	Hearst & Delaware	37°52'15.9"N 122°17'34.6"W	6 feet	13 feet	7 feet
+San Pablo	Delaware & Virginia	37°52'19.9"N 122°17'35.9"W	6 feet	13 feet	7 feet
+Jones	4th 5th	37.8749362, -122.3019917	6 feet	12 feet	6 feet
+Jones	Fourth and Fifth	37.874886,-122.301750	6 feet	11 feet 9 inches	5 feet 9 inches
+4th	Jones Page	37.8750056, -122.3021915	6 feet	12 feet	6 feet
+Eastshore	Cedar virginia	37.8727893, -122.3051490	6 feet	9 feet	3 feet
+Virginia	Eastshore 4th	37.8713480, -122.3042930	6 feet	7 feet 7 in	1 feet 7in
+Eastshore Highway	Cedar and Jones	37.873214,-122.305284	6 feet	9 feet 7 inches	3 feet 7 inches
+Addison	4th 5th	37.8662702, -122.2991237	6 feet	12 feet	6 feet
+Allston	4th and dead end	37.8646980, -122.2993252	6 feet	13 feet	7 feet
+Bancroft	4th 5th	37.8632862, -122.2976445	6 feet	14 feet	8 feet
+5th	Bancroft allston	37.8634098, -122.2975097	6 feet	15 feet	9 feet
