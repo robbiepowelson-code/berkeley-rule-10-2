@@ -79,10 +79,11 @@ def main():
         w, src = f['width_ft'], f['width_source']
         raw[f['id']] = f['gis_width_ft'] if 'gis_width_ft' in f and pd.notna(f['gis_width_ft']) else (w / cal if src == 'gis-calibrated' else (w if src in ('gis', 'default', 'osm-building') else np.nan))
     t2n = {}
-    for a in ('nw', 'ninth', 'south'):
+    for a in ('nw', 'ninth', 'south', 'corridor'):   # corridor last: it pools the others' tiles and governs shared faces
         p = ROOT / 'data/tile2net' / a / 'clear_width_faces.csv'
         if p.exists():
-            for _, r in pd.read_csv(p).iterrows(): t2n[r.face] = r
+            for _, r in pd.read_csv(p).iterrows():
+                if r.face not in t2n or pd.notna(r.governing_ft): t2n[r.face] = r
         p = ROOT / 'data/tile2net' / a / 'face_compare.csv'
         if p.exists():
             for _, r in pd.read_csv(p).iterrows(): t2n.setdefault(r.face, pd.Series(dtype=object)); t2n[r.face] = t2n[r.face].copy(); t2n[r.face]['poly_ft'] = r.tile2net_width_ft

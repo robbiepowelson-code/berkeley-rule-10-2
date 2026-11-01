@@ -28,6 +28,7 @@ from shapely.ops import unary_union
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'tools'))
+from tile_cover import coverage
 from tile2net_widths import width_stats, FT  # noqa: E402
 
 NEAR_M = 5.0      # sidewalk polygon within this of the curb-side face line counts as on that face
@@ -60,8 +61,10 @@ def load_polys(path):
     return g, sw
 
 
-def score_faces(sw, bounds, faces, fig4, cover=COVER):
-    inner = box(*bounds).buffer(-EDGE_M)
+def score_faces(sw, bounds, faces, fig4, cover=COVER, imaged=None):
+    # imaged: union of the tile squares the run had (tools/tile_cover.py); the corridor
+    # tile set is not a rectangle, so a face inside the box but off the tiles is not scored
+    inner = (imaged if imaged is not None else box(*bounds)).buffer(-EDGE_M)
     rows = []
     for _, r in faces[faces.within(inner) & (faces.geometry.length >= MIN_FACE_M)].iterrows():
         line = r.geometry
@@ -126,9 +129,10 @@ def main(outdir, runs):
     frames = []
     for name, path in runs.items():
         g, sw = load_polys(path)
-        df = score_faces(sw, g.total_bounds, faces, fig4); df.insert(0, 'area', name); frames.append(df)
+        imaged = coverage(name)
+        df = score_faces(sw, g.total_bounds, faces, fig4, imaged=imaged); df.insert(0, 'area', name); frames.append(df)
         rep = {'presence': presence_metrics(df), 'segment': segment_metrics(df), 'width_class': width_metrics(df),
-               'cover_sweep': {str(c): presence_metrics(score_faces(sw, g.total_bounds, faces, fig4, c))['accuracy']
+               'cover_sweep': {str(c): presence_metrics(score_faces(sw, g.total_bounds, faces, fig4, c, imaged))['accuracy']
                                for c in (0.1, 0.2, 0.3, 0.4, 0.5, 0.6)}}
         report['areas'][name] = rep
         print(f"\n== {name}: {len(df)} faces scored ==")

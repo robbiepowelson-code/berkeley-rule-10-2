@@ -48,12 +48,26 @@ Cambridge MA, Washington DC and New York; the authors recommend retraining for
 new regions, and note tree canopy and heavy shadow as weak spots.
 
 We ran it, unmodified, on the Alameda County 2023 orthophoto (Pictometry /
-EagleView WMTS, zoom 20, ~0.12 m per pixel) over two areas:
+EagleView WMTS, zoom 20, ~0.12 m per pixel) over two pilot boxes first, then
+over the whole corridor:
 
 | area | extent | tiles | sidewalk polygons | block faces scored |
 |---|---|---|---|---|
-| `nw` | Second St to San Pablo Ave, Gilman St to Camelia St | 1,496 | 595 | 271 |
+| `nw` | Second St to San Pablo Ave, Gilman St to Camelia St | 1,496 | 595 | 267 |
 | `ninth` | Seventh to Tenth St, Carleton St to Potter St | 725 | 298 | 72 |
+| `corridor` | every commercial, manufacturing and mixed-residential block face from Gilman St to Ashby Ave, faces buffered 25 m (`tools/tile2net/tile_list.py`) | 6,395 | 2,103 | 838 |
+
+The corridor tile set is not a rectangle, so faces are scored only where the
+tiles actually are (`tools/tile_cover.py`); the detector ran once over the
+pooled tiles (`tools/tile2net/merge_tiles.sh`, hard links - tile2net reads a
+symlinked tile as black). Against the City's map the corridor run agrees on
+sidewalk presence for 82.9 % of 838 faces (95 % CI 80.2 - 85.3 %, kappa 0.22),
+and on the width class for 99.7 % of 578; the pilot boxes, re-scored on the
+same basis, stay at 74.5 % (`nw`) and 98.6 % (`ninth`). The `nw` and
+`corridor` runs saw the same pixels but stitched them on different grids; on
+the 247 faces both give a clear width the two differ by 1.2 ft on average,
+which is the detector's own repeatability and should be read as part of its
+error.
 
 Width was then measured from each polygon with the method of the open
 *sidewalkwidths* projects (NYC, Boston, Toronto, Berlin): rasterise at 10 cm,
@@ -209,9 +223,16 @@ were built in (`tools/clear_width.py`):
    on faces with essentially no canopy (under 10 % of sections hidden), the
    median clear width between obstructions from the aerial; otherwise no
    imagery number, and the face is flagged *tape needed: street trees hide
-   the pinch point*. In the two imagery areas this gives 151 faces an
-   imagery width (median 6.0 ft in `nw`, 7.1 ft in `ninth`) and flags 213 for
-   tape. The tent model takes widths in the order tape > reviewer >
+   the pinch point*. Over the whole corridor this gives 813 faces an imagery
+   width (median clear walk 8.9 ft) and leaves 91 with too little sidewalk
+   detected to measure; of the 776 commercial, manufacturing and
+   mixed-residential faces the tent model considers, 653 now carry an
+   imagery width and the rest fall back to the GIS strip x 0.59. Where the
+   imagery width runs more than 25 % + 2 ft past the GIS curb-to-property
+   strip the detector has usually merged the walk with a parking lot or
+   driveway apron (Parker St between Seventh and Eighth, 19.7 ft); the model keeps the width
+   but marks the source `imagery-check` so the popup and the checklist say
+   to look first. The tent model takes widths in the order tape > reviewer >
    imagery > OSM building face > GIS.
 
 Calibration so far (n = 2): Fourth St 6649L tape 4.0 ft vs imagery
@@ -425,8 +446,12 @@ python3 tools/fig4_extract.py                      # City map -> data/field/fig4
 bash tools/tile2net/fetch_eval_tiles.sh            # 2023 aerial tiles (run on a machine that can reach the county WMTS)
 bash tools/tile2net/run_area.sh nw    "37.8750, -122.3070, 37.8840, -122.2920"
 bash tools/tile2net/run_area.sh ninth "37.8515, -122.2975, 37.8590, -122.2895"
-python3 tools/tile2net_eval.py data/tile2net/eval nw=data/tile2net/nw/polygons.parquet ninth=data/tile2net/ninth/polygons.parquet
-python3 tools/clear_width.py nw ninth              # clear-walk width profile every metre (needs the tiles)
+python3 tools/tile2net/tile_list.py                # corridor tiles not already on disk -> corridor_tiles.txt
+bash tools/tile2net/fetch_tiles.sh corridor        # on the Mac; then pool the pilot-box tiles in:
+bash tools/tile2net/merge_tiles.sh corridor nw ninth south
+bash tools/tile2net/run_area.sh corridor "37.84856, -122.30804, 37.88244, -122.27886"   # ~2 h 20 min on 2 CPU cores
+python3 tools/tile2net_eval.py data/tile2net/eval nw=data/tile2net/nw/polygons.parquet ninth=data/tile2net/ninth/polygons.parquet corridor=data/tile2net/corridor/polygons.parquet
+python3 tools/clear_width.py nw ninth south corridor   # clear-walk width profile every metre (needs the tiles)
 python3 tools/calibrate_gis.py                     # tape/GIS factor -> data/field/gis_calibration.json
 python3 tools/bhu_survey_eval.py                   # BHU survey vs every source; writes data/field/strip_widths.csv
 python3 tools/campable_sites.py                    # tent model: tape > reviewer > imagery > GIS x factor

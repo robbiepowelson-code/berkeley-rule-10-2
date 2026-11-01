@@ -17,20 +17,20 @@
    "within_1ft": 0.14
   },
   "t2n_poly_ft": {
-   "n": 101,
-   "mean_err": -0.97,
-   "mae": 2.19,
-   "rmse": 3.42,
-   "within_2ft": 0.63,
-   "within_1ft": 0.35
+   "n": 125,
+   "mean_err": -0.85,
+   "mae": 1.98,
+   "rmse": 2.97,
+   "within_2ft": 0.64,
+   "within_1ft": 0.36
   },
   "t2n_clear_med_ft": {
-   "n": 98,
-   "mean_err": -0.83,
-   "mae": 1.99,
-   "rmse": 3.21,
-   "within_2ft": 0.68,
-   "within_1ft": 0.5
+   "n": 124,
+   "mean_err": -0.76,
+   "mae": 1.83,
+   "rmse": 2.83,
+   "within_2ft": 0.73,
+   "within_1ft": 0.52
   },
   "model_width_ft": {
    "n": 125,
@@ -61,20 +61,20 @@
    "within_1ft": 0.06
   },
   "t2n_poly_ft": {
-   "n": 27,
-   "mean_err": -1.41,
-   "mae": 3.1,
-   "rmse": 4.41,
-   "within_2ft": 0.41,
-   "within_1ft": 0.22
+   "n": 51,
+   "mean_err": -0.93,
+   "mae": 2.18,
+   "rmse": 2.96,
+   "within_2ft": 0.55,
+   "within_1ft": 0.29
   },
   "t2n_clear_med_ft": {
-   "n": 24,
-   "mean_err": -1.75,
-   "mae": 2.47,
-   "rmse": 4.02,
-   "within_2ft": 0.62,
-   "within_1ft": 0.42
+   "n": 50,
+   "mean_err": -1.14,
+   "mae": 1.84,
+   "rmse": 2.75,
+   "within_2ft": 0.74,
+   "within_1ft": 0.5
   },
   "model_width_ft": {
    "n": 51,
@@ -105,20 +105,20 @@
    "within_1ft": 0.03
   },
   "t2n_poly_ft": {
-   "n": 13,
-   "mean_err": -0.94,
-   "mae": 4.42,
-   "rmse": 5.91,
-   "within_2ft": 0.23,
-   "within_1ft": 0.23
+   "n": 33,
+   "mean_err": -0.55,
+   "mae": 2.46,
+   "rmse": 3.39,
+   "within_2ft": 0.58,
+   "within_1ft": 0.27
   },
   "t2n_clear_med_ft": {
-   "n": 11,
-   "mean_err": -2.22,
-   "mae": 3.61,
-   "rmse": 5.46,
-   "within_2ft": 0.45,
-   "within_1ft": 0.27
+   "n": 32,
+   "mean_err": -1.02,
+   "mae": 2.08,
+   "rmse": 3.08,
+   "within_2ft": 0.72,
+   "within_1ft": 0.47
   },
   "model_width_ft": {
    "n": 33,
@@ -150,18 +150,18 @@
   },
   "t2n_poly_ft": {
    "n": 74,
-   "mean_err": -0.8,
-   "mae": 1.86,
-   "rmse": 2.98,
-   "within_2ft": 0.72,
-   "within_1ft": 0.39
+   "mean_err": -0.79,
+   "mae": 1.85,
+   "rmse": 2.97,
+   "within_2ft": 0.7,
+   "within_1ft": 0.41
   },
   "t2n_clear_med_ft": {
    "n": 74,
-   "mean_err": -0.53,
-   "mae": 1.83,
-   "rmse": 2.89,
-   "within_2ft": 0.7,
+   "mean_err": -0.51,
+   "mae": 1.82,
+   "rmse": 2.88,
+   "within_2ft": 0.72,
    "within_1ft": 0.53
   },
   "model_width_ft": {

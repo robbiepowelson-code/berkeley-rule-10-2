@@ -525,7 +525,9 @@ def main():
     # imagery > OSM building face > GIS. Faces the imagery finds no sidewalk on
     # (n_measured 0) get width 0 so no footprint is placed there.
     imagery = {}
-    for cw in glob.glob(os.path.join(os.path.dirname(field), "tile2net", "*", "clear_width_faces.csv")):
+    # Areas overlap (the corridor run pools the nw/ninth/south tiles); the
+    # corridor run is read last so it governs any face it shares with a pilot box.
+    for cw in sorted(glob.glob(os.path.join(os.path.dirname(field), "tile2net", "*", "clear_width_faces.csv")), key=lambda q: ("corridor" in q, q)):
         with open(cw, encoding="utf-8") as fh:
             for r in csv.DictReader(fh):
                 g = r.get("governing_ft") or ""
@@ -606,6 +608,13 @@ def main():
                     w_m, w_src = ft(float(rv["width_ft"])), "reviewed-" + (rv.get("method") or "imagery")
             if fid in imagery and imagery[fid][0] is not None and not (status or fid in drawn):
                 w_m, w_src = ft(imagery[fid][0]), "imagery"
+                # A clear walk cannot be wider than the strip it sits in. Where the
+                # imagery width runs well past the GIS/OSM strip estimate (> 125 % + 2 ft)
+                # the detector has probably merged the walk with a parking lot or
+                # apron (seen on Parker St). The width is kept, the source is flagged
+                # so the popup and checklist say to look before relying on it.
+                if gis_est_ft > 0 and imagery[fid][0] > gis_est_ft * 1.25 + 2:
+                    w_src = "imagery-check"
             if key in measured:
                 w_m, w_src = ft(measured[key]), "measured"
             w_ft = w_m / FT

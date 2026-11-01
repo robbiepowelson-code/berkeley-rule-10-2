@@ -52,6 +52,7 @@ from shapely import contains_xy
 TO4326 = Transformer.from_crs(26910, 4326, always_xy=True)
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / 'tools')); from tile_cover import coverage
 FT = 3.28084
 STEP = 1.0        # m between cross-sections along the face
 OUT_M = 9.0       # m outward (toward the property) from the GIS curb line to sample
@@ -108,7 +109,8 @@ def run(area):
     excl = list(drives.geometry.values) + list(cw.geometry.values)
     extree = STRtree(excl) if excl else None
     faces = gpd.read_file(ROOT / os.environ.get('FACES', 'data/campable/faces.geojson')).to_crs(26910)
-    inner = sw_all.unary_union.envelope.buffer(-20)
+    imaged = coverage(area)                      # tile squares the run had (not a rectangle for the corridor)
+    inner = (imaged if imaged is not None else sw_all.unary_union.envelope).buffer(-20)
     faces = faces[faces.within(inner)]
     twin = {r['id']: r.geometry for _, r in faces.iterrows()}
     dtcache = {}
@@ -202,7 +204,9 @@ def merge_runs(prof, out, window=11):
         rr.append(dict(face=u['face'], street=u['street'], side=u['side'], kind='driveway' if u['key'] == 'drive' else ('canopy' if u['key'] == 'canopy' else 'walk'),
                        clear_ft=round(float(np.median(vals)), 1) if vals else None, len_ft=round(len(u['geoms']) * STEP * FT),
                        geometry=linemerge(unary_union(u['geoms'])) if len(u['geoms']) > 1 else u['geoms'][0]))
-    gpd.GeoDataFrame(rr, crs=4326).to_file(out / 'clear_width_runs.geojson', driver='GeoJSON')
+    g = gpd.GeoDataFrame(rr, crs=4326)
+    g['geometry'] = g.to_crs(26910).simplify(0.25).to_crs(4326)   # runs are straight: drop the per-metre vertices
+    g.to_file(out / 'clear_width_runs.geojson', driver='GeoJSON', COORDINATE_PRECISION=6)
     return len(rr)
 
 
