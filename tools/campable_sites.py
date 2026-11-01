@@ -42,7 +42,7 @@ Usage:
 Needs shapely>=2 and pyproj.
 """
 
-import argparse
+import datetime, argparse
 import csv
 import glob
 import json
@@ -211,7 +211,7 @@ def inject(index_html, sites, faces, summary, area_name, block_name="CAMPABLE"):
     payload = {"total": summary["total_locations"], "footprint_ft": summary["footprint_ft"],
                "area": area_name, "bbox": summary["bbox"], "by_category": summary["by_category"],
                "sites": fc_sites, "faces": fc_faces,
-               "clear": {"curb_ft": summary["rules"]["curb_setback"]["ft"] if summary["rules"]["curb_setback"].get("enabled", True) else 0,
+               "stamp": datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d%H%M"), "clear": {"curb_ft": summary["rules"]["curb_setback"]["ft"] if summary["rules"]["curb_setback"].get("enabled", True) else 0,
                          "building_ft": summary["rules"]["building_setback"]["ft"] if summary["rules"]["building_setback"].get("enabled", True) else 0,
                          "path_narrow_ft": summary["rules"]["path_of_travel"]["narrow_sidewalk_path_ft"],
                          "path_wide_ft": summary["rules"]["path_of_travel"]["wide_sidewalk_path_ft"],
